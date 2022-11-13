@@ -6,9 +6,9 @@ using data from [alloc8r's nativedb](https://github.com/alloc8or/gta5-nativedb-d
 
 # Options 
 
-You can specify generaring options in commandline, e.g.
+You can specify generating options with commandline, e.g.
 ```
-SHVDN-NativeGen Parameters Returns
+SHVDN-NativeGen.exe Parameters Returns
 ```
 
 
