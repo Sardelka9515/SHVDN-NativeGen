@@ -3,6 +3,7 @@ Source generator for SHVDN3 native hashes
 
 This program generates C# source file **NativeHashes.cs** for ScriptHookVDotNet3 with parameters, return type and comments,
 using data from [alloc8r's nativedb](https://github.com/alloc8or/gta5-nativedb-data/).
+Pre-generated file can be found in the main folder, along with source code.
 
 # Options 
 
