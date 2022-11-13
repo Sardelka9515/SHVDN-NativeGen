@@ -32,4 +32,4 @@ Generate legacy native name with same hash
 Make old native name as obsolete and points to the updated one in remarks. 
 
 ## All 
-All the above
+All the above, the default generating config.
