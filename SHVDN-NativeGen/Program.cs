@@ -1,8 +1,10 @@
 ﻿using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using GTA.Native;
 using Microsoft.VisualBasic;
 using Newtonsoft.Json;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace NativeGen
 {
@@ -54,21 +56,22 @@ namespace NativeGen
                 Add($"/// </summary>");
             }
 
-            if (o.HasFlag(GenOptions.Comments))
+            if (o.HasFlag(GenOptions.Comments) && !string.IsNullOrEmpty(Comment))
             {
+                Add($"/// <remarks>");
 
-                if (Comment != null)
+                foreach (var s in Comment.Split('\n', StringSplitOptions.RemoveEmptyEntries))
                 {
-                    Add($"/// <remarks>");
-
-                    foreach (var s in Comment.Split('\n', StringSplitOptions.RemoveEmptyEntries))
-                    {
-                        // Escape xml special characters
-                        Add($"/// {s.Replace("<", "&lt;").Replace(">", "&gt;").Replace("&", "&#38;")}");
-                    }
-
-                    Add("/// </remarks>");
+                    // Escape xml special characters
+                    var escaped = s.Replace("<", "&lt;").Replace(">", "&gt;").Replace("&", "&#38;");
+                    // Add url link
+                    var result = Regex.Replace(escaped,
+                    @"((http|ftp|https):\/\/[\w\-_]+(\.[\w\-_]+)+([\w\-\.,@?^=%&amp;:/~\+#]*[\w\-\@?^=%&amp;/~\+#])?)",
+                    "<see href='$1'>$1</see>");
+                    Add($"/// {result}<br/>");
                 }
+
+                Add("/// </remarks>");
             }
 
             if (o.HasFlag(GenOptions.Returns))
