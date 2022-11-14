@@ -15,8 +15,17 @@ namespace NativeGen
 
         public override string ToString()
         {
-            return $"{type} {name}";
+            return $"{ToSharpType(type)} {name}";
         }
+        public static string ToSharpType(string name)
+        => name switch
+        {
+            "Any" or "Any*" => "IntPtr",
+            "Hash" => "uint",
+            "const char*" => "string",
+            "BOOL" => "bool",
+            _ => name,
+        };
     }
 
     class NativeInfo
@@ -42,13 +51,73 @@ namespace NativeGen
 
         [JsonProperty("old_names")]
         public string[] OldNames;
-        public void Format(StringBuilder sb, string hash, HashSet<string> added, GenOptions o)
+
+        StringBuilder _builder;
+
+        void Add(string line = null)
+        {
+            if (string.IsNullOrEmpty(line))
+            {
+                _builder.AppendLine();
+                return;
+            }
+            _builder.AppendLine($"\t\t{line}");
+        }
+
+        public void AddComment()
+        {
+
+            Add($"/// <remarks>");
+
+            foreach (var s in Comment.Split('\n', StringSplitOptions.RemoveEmptyEntries))
+            {
+                // Escape xml special characters
+                var escaped = s.Replace("<", "&lt;").Replace(">", "&gt;").Replace("&", "&#38;");
+                // Add url link
+                var result = Regex.Replace(escaped,
+                @"((http|ftp|https):\/\/[\w\-_]+(\.[\w\-_]+)+([\w\-\.,@?^=%&amp;:/~\+#]*[\w\-\@?^=%&amp;/~\+#])?)",
+                "<see href='$1'>$1</see>");
+                Add($"/// {result}<br/>");
+            }
+
+            Add("/// </remarks>");
+        }
+
+        private void AddObsolete(string name = null)
+        {
+            Add($"///<remarks>This function has been replaced by <see cref=\"{name ?? Name}\"/></remarks>");
+            Add($"[Obsolete]");
+        }
+        
+        // TODO
+        public void WriteInvoker(StringBuilder sb, string hash, HashSet<string> added, GenOptions o)
         {
             if (added.Contains(Name))
             {
                 return;
             }
+            _builder = sb;
 
+            if (o.HasFlag(GenOptions.Parameters) && Parameters is { Length: > 0 })
+            {
+                foreach (var p in Parameters)
+                {
+                    Add($"/// <param name={p.name}></param>");
+                }
+            }
+
+            if (o.HasFlag(GenOptions.Comments) && !string.IsNullOrEmpty(Comment))
+            {
+                AddComment();
+            }
+        }
+        public void WiteHashEnum(StringBuilder sb, string hash, HashSet<string> added, GenOptions o)
+        {
+            if (added.Contains(Name))
+            {
+                return;
+            }
+            _builder = sb;
             if (o.HasFlag(GenOptions.Parameters) && Parameters is { Length: > 0 })
             {
                 Add($"/// <summary>");
@@ -58,27 +127,15 @@ namespace NativeGen
 
             if (o.HasFlag(GenOptions.Comments) && !string.IsNullOrEmpty(Comment))
             {
-                Add($"/// <remarks>");
-
-                foreach (var s in Comment.Split('\n', StringSplitOptions.RemoveEmptyEntries))
-                {
-                    // Escape xml special characters
-                    var escaped = s.Replace("<", "&lt;").Replace(">", "&gt;").Replace("&", "&#38;");
-                    // Add url link
-                    var result = Regex.Replace(escaped,
-                    @"((http|ftp|https):\/\/[\w\-_]+(\.[\w\-_]+)+([\w\-\.,@?^=%&amp;:/~\+#]*[\w\-\@?^=%&amp;/~\+#])?)",
-                    "<see href='$1'>$1</see>");
-                    Add($"/// {result}<br/>");
-                }
-
-                Add("/// </remarks>");
+                AddComment();
             }
 
             if (o.HasFlag(GenOptions.Returns))
             {
                 Add($"/// <returns>{ReturnType}</returns>");
             }
-            Add($"{Name} = {hash}, // {Hash}");
+            var suffix = string.IsNullOrEmpty(Hash) ? "" : $" // {Hash}";
+            Add($"{Name} = {hash},{suffix}");
             added.Add(Name);
             if (OldNames != null && o.HasFlag(GenOptions.OldNames))
             {
@@ -88,24 +145,15 @@ namespace NativeGen
                     Add();
                     if (o.HasFlag(GenOptions.MarkObsolete))
                     {
-                        Add($"///<remarks>This function has been replaced by <see cref=\"{Name}\"/></remarks>");
-                        Add($"[Obsolete]");
+                        AddObsolete();
                     }
-                    Add($"{old} = {hash}, // {Hash}");
+                    Add($"{old} = {hash},{suffix}");
                     added.Add(old);
                 }
             }
 
-            void Add(string line = null)
-            {
-                if (string.IsNullOrEmpty(line))
-                {
-                    sb.AppendLine();
-                    return;
-                }
-                sb.AppendLine($"\t\t\t{line}");
-            }
         }
+
     }
 
     [Flags]
@@ -152,19 +200,22 @@ namespace NativeGen
 
 
             Console.WriteLine("Generating...");
-            var header = "using System;\n\nnamespace GTA\r\n{\r\n\tnamespace Native\r\n\t{\r\n\t\tpublic enum Hash : ulong\r\n\t\t{";
-            var footer = "}\r\n\t}\r\n}";
+            var header = "using System;\n\nnamespace GTA.Native\r\n{\r\n\tpublic enum Hash : ulong\r\n\t{";
+            var footer = "\t}\r\n}";
             var names = new HashSet<string>();
             var sb = new StringBuilder();
             sb.AppendLine(header);
             foreach (var ns in namespaces)
             {
-                sb.AppendLine($"\t\t\t// {ns.Key}");
+                sb.AppendLine($"\t\t#region {ns.Key}");
                 foreach (var n in ns.Value)
                 {
                     sb.AppendLine();
-                    n.Value.Format(sb, n.Key, names, Options);
+                    n.Value.WiteHashEnum(sb, n.Key, names, Options);
                 }
+                sb.AppendLine();
+                sb.AppendLine("\t\t#endregion");
+                sb.AppendLine();
             }
             sb.AppendLine(footer);
 
@@ -173,5 +224,18 @@ namespace NativeGen
             Console.WriteLine("Success!");
         }
 
+    }
+}
+
+// Dummy caller
+namespace GTA.Native
+{
+    public static class Function
+    {
+        public static T Call<T>(Hash hash, params object[] args)
+        {
+            return (T)new object();
+        }
+        public static void Call(Hash hash, params object[] args) { }
     }
 }
