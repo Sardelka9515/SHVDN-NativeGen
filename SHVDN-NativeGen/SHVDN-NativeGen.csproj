@@ -1,15 +1,25 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-	  <OutDir>.\</OutDir>
-	  <OutputType>Exe</OutputType>
-    <TargetFramework>net6.0</TargetFramework>
-    <RootNamespace>SHVDN_NativeGen</RootNamespace>
-    <ImplicitUsings>enable</ImplicitUsings>
-  </PropertyGroup>
+	<PropertyGroup>
+		<OutDir>.\</OutDir>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net6.0</TargetFramework>
+		<RootNamespace>SHVDN_NativeGen</RootNamespace>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
-  </ItemGroup>
+	<ItemGroup>
+		<Compile Remove="NativeHashes.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="NativeHashes.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+		<PackageReference Include="ScriptHookVDotNet3" Version="3.5.1" />
+	</ItemGroup>
 
 </Project>
