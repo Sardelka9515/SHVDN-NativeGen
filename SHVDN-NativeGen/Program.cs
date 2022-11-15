@@ -10,22 +10,26 @@ namespace NativeGen
 {
     class NativeParameter
     {
+        string _name;
+        public string name
+        {
+            get => _name;
+            set
+            {
+                _name = value;
+                _name = _name switch
+                {
+                    "event" or "override" or "base" or "object" or "string" or "out" => "@" + _name,
+                    _ => _name,
+                };
+            }
+        }
         public string type;
-        public string name;
 
         public override string ToString()
         {
-            return $"{ToSharpType(type)} {name}";
+            return $"{type.ToSharpType()} {name}";
         }
-        public static string ToSharpType(string name)
-        => name switch
-        {
-            "Any" or "Any*" => "IntPtr",
-            "Hash" => "uint",
-            "const char*" => "string",
-            "BOOL" => "bool",
-            _ => name,
-        };
     }
 
     class NativeInfo
@@ -88,14 +92,14 @@ namespace NativeGen
             Add($"///<remarks>This function has been replaced by <see cref=\"{name ?? Name}\"/></remarks>");
             Add($"[Obsolete]");
         }
-        
-        // TODO
-        public void WriteInvoker(StringBuilder sb, string hash, HashSet<string> added, GenOptions o)
+
+        public void WriteInvoker(StringBuilder sb,  string hash,HashSet<string> added, GenOptions o)
         {
             if (added.Contains(Name))
             {
                 return;
             }
+
             _builder = sb;
 
             if (o.HasFlag(GenOptions.Parameters) && Parameters is { Length: > 0 })
@@ -105,11 +109,41 @@ namespace NativeGen
                     Add($"/// <param name={p.name}></param>");
                 }
             }
-
             if (o.HasFlag(GenOptions.Comments) && !string.IsNullOrEmpty(Comment))
             {
                 AddComment();
             }
+
+            WriteMethod(hash);
+            added.Add(Name);
+
+            if (OldNames != null && o.HasFlag(GenOptions.OldNames))
+            {
+                foreach (var old in OldNames)
+                {
+                    if (added.Contains(old)) return;
+                    Add();
+                    if (o.HasFlag(GenOptions.MarkObsolete))
+                    {
+                        AddObsolete();
+                    }
+                    WriteMethod(hash,old);
+                    added.Add(old);
+                }
+            }
+        }
+        void WriteMethod(string hash,string name = null)
+        {
+            name ??= Name;
+            Add($"public static {ReturnType.ToSharpType()} {name}({string.Join(", ", (object[])Parameters)})");
+
+            string paras = "";
+            foreach (var p in Parameters)
+            {
+                paras += $", {p.name}";
+            }
+            var ret = ReturnType != "void" ? $"<{ReturnType.ToSharpType()}>" : "";
+            Add($"\t=> Function.Call{ret}((Hash){hash}{paras});");
         }
         public void WiteHashEnum(StringBuilder sb, string hash, HashSet<string> added, GenOptions o)
         {
@@ -167,7 +201,7 @@ namespace NativeGen
         MarkObsolete = 16,
         All = ~0,
     }
-    internal class Program
+    internal static class Program
     {
         public static GenOptions Options = GenOptions.All;
         static void Main(string[] args)
@@ -197,9 +231,15 @@ namespace NativeGen
             Console.WriteLine("Parsing data...");
             var namespaces = JsonConvert.DeserializeObject<Dictionary<string, Dictionary<string, NativeInfo>>>(nativeData);
 
+            // GenEnum(namespaces);
+            GenInvoker(namespaces);
 
+        }
 
-            Console.WriteLine("Generating...");
+        static void GenEnum(Dictionary<string, Dictionary<string, NativeInfo>> namespaces)
+        {
+
+            Console.WriteLine("Generating NativeHashes.cs...");
             var header = "using System;\n\nnamespace GTA.Native\r\n{\r\n\tpublic enum Hash : ulong\r\n\t{";
             var footer = "\t}\r\n}";
             var names = new HashSet<string>();
@@ -218,24 +258,48 @@ namespace NativeGen
                 sb.AppendLine();
             }
             sb.AppendLine(footer);
-
-            Console.WriteLine("Writing to output: NativeHashes.cs");
             File.WriteAllText("NativeHashes.cs", sb.ToString().Replace("\r\n", "\n"));
             Console.WriteLine("Success!");
         }
-
-    }
-}
-
-// Dummy caller
-namespace GTA.Native
-{
-    public static class Function
-    {
-        public static T Call<T>(Hash hash, params object[] args)
+        static void GenInvoker(Dictionary<string, Dictionary<string, NativeInfo>> namespaces)
         {
-            return (T)new object();
+
+            Console.WriteLine("Generating NativInvoker.cs...");
+            var header = "using System;\nusing GTA;\nusing GTA.Math;\n\nnamespace GTA.Native\r\n{\r\n\tpublic static unsafe class NativeInvoker\r\n\t{";
+            var footer = "\t}\r\n}";
+            var names = new HashSet<string>();
+            var sb = new StringBuilder();
+            sb.AppendLine(header);
+            foreach (var ns in namespaces)
+            {
+                sb.AppendLine($"\t\t#region {ns.Key}");
+                foreach (var n in ns.Value)
+                {
+                    sb.AppendLine();
+                    n.Value.WriteInvoker(sb,n.Key, names, Options);
+                }
+                sb.AppendLine();
+                sb.AppendLine("\t\t#endregion");
+                sb.AppendLine();
+            }
+            sb.AppendLine(footer);
+            File.WriteAllText("NativeInvoker.cs", sb.ToString().Replace("\r\n", "\n"));
+            Console.WriteLine("Success!");
         }
-        public static void Call(Hash hash, params object[] args) { }
+
+        public static string ToSharpType(this string name)
+        => name switch
+        {
+            "Any" or "ScrHandle" or "SrcHandle" or "FireId" or "Interior" => "IntPtr",
+            "ScrHandle*" or "SrcHandle*" or "Any*" => "IntPtr*",
+            "BOOL*" =>"bool*",
+            "Ped*" or "Entity*" or "Vehicle*" or "Object*"=>"int*",
+            "Cam"=>"Camera",
+            "Object" => "int",
+            "Hash" => "uint",
+            "const char*" => "string",
+            "BOOL" => "bool",
+            _ => name,
+        };
     }
 }

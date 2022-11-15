@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v6.0": {
       "SHVDN-NativeGen/1.0.0": {
         "dependencies": {
-          "Newtonsoft.Json": "13.0.1"
+          "Newtonsoft.Json": "13.0.1",
+          "ScriptHookVDotNet3": "3.5.1"
         },
         "runtime": {
           "SHVDN-NativeGen.dll": {}
@@ -19,6 +20,14 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {
             "assemblyVersion": "13.0.0.0",
             "fileVersion": "13.0.1.25517"
+          }
+        }
+      },
+      "ScriptHookVDotNet3/3.5.1": {
+        "runtime": {
+          "lib/net48/ScriptHookVDotNet3.dll": {
+            "assemblyVersion": "3.5.1.0",
+            "fileVersion": "3.5.1.0"
           }
         }
       }
@@ -36,6 +45,13 @@
       "sha512": "sha512-ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
       "path": "newtonsoft.json/13.0.1",
       "hashPath": "newtonsoft.json.13.0.1.nupkg.sha512"
+    },
+    "ScriptHookVDotNet3/3.5.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qqo5ETCKqYGvGm/zD7JoDgcmAwwJoIr3IVGFxnrRx5ya4tuj0uId1yy2KGbEX3C3d400gnJKGm44+3r/e2fG3Q==",
+      "path": "scripthookvdotnet3/3.5.1",
+      "hashPath": "scripthookvdotnet3.3.5.1.nupkg.sha512"
     }
   }
 }
