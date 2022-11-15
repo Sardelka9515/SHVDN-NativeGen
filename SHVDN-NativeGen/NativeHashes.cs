@@ -16,7 +16,7 @@ namespace GTA.Native
 		WAIT = 0x4EDE34FBADD967A6, // 0x7715C03B
 
 		/// <summary>
-		/// Parameters: string scriptName, int stackSize
+		/// Parameters: const char* scriptName, int stackSize
 		/// </summary>
 		/// <remarks>
 		/// Examples:<br/>
@@ -53,7 +53,7 @@ namespace GTA.Native
 		START_NEW_SCRIPT = 0xE81651AD79516E48, // 0x3F166D0E
 
 		/// <summary>
-		/// Parameters: string scriptName, IntPtr args, int argCount, int stackSize
+		/// Parameters: const char* scriptName, Any* args, int argCount, int stackSize
 		/// </summary>
 		/// <remarks>
 		/// return : script thread id, 0 if failed<br/>
@@ -63,7 +63,7 @@ namespace GTA.Native
 		START_NEW_SCRIPT_WITH_ARGS = 0xB8BA7F44DF1575E1, // 0x4A2100E4
 
 		/// <summary>
-		/// Parameters: uint scriptHash, int stackSize
+		/// Parameters: Hash scriptHash, int stackSize
 		/// </summary>
 		/// <returns>int</returns>
 		START_NEW_SCRIPT_WITH_NAME_HASH = 0xEB1C67C3A5333A92, // 0x8D15BE5D
@@ -73,7 +73,7 @@ namespace GTA.Native
 		_START_NEW_STREAMED_SCRIPT = 0xEB1C67C3A5333A92, // 0x8D15BE5D
 
 		/// <summary>
-		/// Parameters: uint scriptHash, IntPtr args, int argCount, int stackSize
+		/// Parameters: Hash scriptHash, Any* args, int argCount, int stackSize
 		/// </summary>
 		/// <returns>int</returns>
 		START_NEW_SCRIPT_WITH_NAME_HASH_AND_ARGS = 0xC4BB298BD441BE78, // 0xE38A3AD4
@@ -128,7 +128,7 @@ namespace GTA.Native
 		SQRT = 0x71D93B57D07F9804, // 0x145C7701
 
 		/// <summary>
-		/// Parameters: float base, float exponent
+		/// Parameters: float @base, float exponent
 		/// </summary>
 		/// <returns>float</returns>
 		POW = 0xE3621CC40F31FE2E, // 0x85D134F8
@@ -242,43 +242,43 @@ namespace GTA.Native
 		APP_DATA_VALID = 0x846AA8E7D55EE5B6, // 0x72BDE002
 
 		/// <summary>
-		/// Parameters: string property
+		/// Parameters: const char* property
 		/// </summary>
 		/// <returns>int</returns>
 		APP_GET_INT = 0xD3A58A12C77D9D4B, // 0x2942AAD2
 
 		/// <summary>
-		/// Parameters: string property
+		/// Parameters: const char* property
 		/// </summary>
 		/// <returns>float</returns>
 		APP_GET_FLOAT = 0x1514FB24C02C2322, // 0xD87F3A1C
 
 		/// <summary>
-		/// Parameters: string property
+		/// Parameters: const char* property
 		/// </summary>
 		/// <returns>const char*</returns>
 		APP_GET_STRING = 0x749B023950D2311C, // 0x849CEB80
 
 		/// <summary>
-		/// Parameters: string property, int value
+		/// Parameters: const char* property, int value
 		/// </summary>
 		/// <returns>void</returns>
 		APP_SET_INT = 0x607E8E3D3E4F9611, // 0x1B509C32
 
 		/// <summary>
-		/// Parameters: string property, float value
+		/// Parameters: const char* property, float value
 		/// </summary>
 		/// <returns>void</returns>
 		APP_SET_FLOAT = 0x25D7687C68E0DAA4, // 0xF3076135
 
 		/// <summary>
-		/// Parameters: string property, string value
+		/// Parameters: const char* property, const char* value
 		/// </summary>
 		/// <returns>void</returns>
 		APP_SET_STRING = 0x3FF2FCEC4B7721B4, // 0x23DF19A8
 
 		/// <summary>
-		/// Parameters: string appName
+		/// Parameters: const char* appName
 		/// </summary>
 		/// <remarks>
 		/// Called in the gamescripts like:<br/>
@@ -289,7 +289,7 @@ namespace GTA.Native
 		APP_SET_APP = 0xCFD0406ADAF90D2B, // 0x8BAC4146
 
 		/// <summary>
-		/// Parameters: string blockName
+		/// Parameters: const char* blockName
 		/// </summary>
 		/// <returns>void</returns>
 		APP_SET_BLOCK = 0x262AB456A3D21F93, // 0xC2D54DD9
@@ -307,7 +307,7 @@ namespace GTA.Native
 		APP_HAS_LINKED_SOCIAL_CLUB_ACCOUNT = 0x71EEE69745088DA0, // 0xD368BA15
 
 		/// <summary>
-		/// Parameters: string appName
+		/// Parameters: const char* appName
 		/// </summary>
 		/// <returns>BOOL</returns>
 		APP_HAS_SYNCED_DATA = 0xCA52279A7271517F, // 0x1DE2A63D
@@ -319,7 +319,7 @@ namespace GTA.Native
 		APP_GET_DELETED_FILE_STATUS = 0xC9853A2BE3DED1A6, // 0x784D550B
 
 		/// <summary>
-		/// Parameters: string appName
+		/// Parameters: const char* appName
 		/// </summary>
 		/// <returns>BOOL</returns>
 		APP_DELETE_APP_DATA = 0x44151AEA95C8A003, // 0x2A2FBD1C
@@ -329,7 +329,7 @@ namespace GTA.Native
 		#region AUDIO
 
 		/// <summary>
-		/// Parameters: string ringtoneName, Ped ped, bool p2
+		/// Parameters: const char* ringtoneName, Ped ped, BOOL p2
 		/// </summary>
 		/// <remarks>
 		/// All found occurrences in b617d, sorted alphabetically and identical lines removed: <see href='https://pastebin.com/RFb4GTny'>https://pastebin.com/RFb4GTny</see><br/>
@@ -361,7 +361,7 @@ namespace GTA.Native
 		CREATE_NEW_SCRIPTED_CONVERSATION = 0xD2C91A0B572AAE56, // 0xB2BC25F8
 
 		/// <summary>
-		/// Parameters: int index, string p1, string p2, int p3, int p4, bool p5, bool p6, bool p7, bool p8, int p9, bool p10, bool p11, bool p12
+		/// Parameters: int index, const char* p1, const char* p2, int p3, int p4, BOOL p5, BOOL p6, BOOL p7, BOOL p8, int p9, BOOL p10, BOOL p11, BOOL p12
 		/// </summary>
 		/// <remarks>
 		/// NOTE: ones that are -1, 0 - 35 are determined by a function where it gets a TextLabel from a global then runs,<br/>
@@ -384,7 +384,7 @@ namespace GTA.Native
 		ADD_LINE_TO_CONVERSATION = 0xC5EF963405593646, // 0x96CD0513
 
 		/// <summary>
-		/// Parameters: int index, Ped ped, string p2
+		/// Parameters: int index, Ped ped, const char* p2
 		/// </summary>
 		/// <remarks>
 		/// 4 calls in the b617d scripts. The only one with p0 and p2 in clear text:<br/>
@@ -396,7 +396,7 @@ namespace GTA.Native
 		ADD_PED_TO_CONVERSATION = 0x95D9F4BC443956E7, // 0xF8D5EB86
 
 		/// <summary>
-		/// Parameters: IntPtr p0, float p1, float p2, float p3
+		/// Parameters: Any p0, float p1, float p2, float p3
 		/// </summary>
 		/// <returns>void</returns>
 		SET_POSITION_FOR_NULL_CONV_PED = 0x33E3C6C6F2F0B506, // 0x73C6F979
@@ -408,7 +408,7 @@ namespace GTA.Native
 		SET_ENTITY_FOR_NULL_CONV_PED = 0x892B6AB8F33606F5, // 0x88203DDA
 
 		/// <summary>
-		/// Parameters: bool toggle, float x1, float y1, float z1, float x2, float y2, float z2, float x3, float y3, float z3
+		/// Parameters: BOOL toggle, float x1, float y1, float z1, float x2, float y2, float z2, float x3, float y3, float z3
 		/// </summary>
 		/// <remarks>
 		/// This native controls where the game plays audio from. By default the microphone is positioned on the player.<br/>
@@ -421,37 +421,37 @@ namespace GTA.Native
 		SET_MICROPHONE_POSITION = 0xB6AE90EDDE95C762, // 0xAD7BB191
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>void</returns>
 		SET_CONVERSATION_AUDIO_CONTROLLED_BY_ANIM = 0x0B568201DD99F0EB, // 0x1193ED6E
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>void</returns>
 		SET_CONVERSATION_AUDIO_PLACEHOLDER = 0x61631F5DF50D1C34,
 
 		/// <summary>
-		/// Parameters: bool p0, bool p1
+		/// Parameters: BOOL p0, BOOL p1
 		/// </summary>
 		/// <returns>void</returns>
 		START_SCRIPT_PHONE_CONVERSATION = 0x252E5F915EABB675, // 0x38E42D07
 
 		/// <summary>
-		/// Parameters: bool p0, bool p1
+		/// Parameters: BOOL p0, BOOL p1
 		/// </summary>
 		/// <returns>void</returns>
 		PRELOAD_SCRIPT_PHONE_CONVERSATION = 0x6004BCB0E226AAEA, // 0x9ACB213A
 
 		/// <summary>
-		/// Parameters: bool p0, bool p1, bool p2, bool p3
+		/// Parameters: BOOL p0, BOOL p1, BOOL p2, BOOL p3
 		/// </summary>
 		/// <returns>void</returns>
 		START_SCRIPT_CONVERSATION = 0x6B17C62C9635D2DC, // 0xE5DE7D9D
 
 		/// <summary>
-		/// Parameters: bool p0, bool p1, bool p2, bool p3
+		/// Parameters: BOOL p0, BOOL p1, BOOL p2, BOOL p3
 		/// </summary>
 		/// <returns>void</returns>
 		PRELOAD_SCRIPT_CONVERSATION = 0x3B3CAD6166916D87, // 0xDDF5C579
@@ -472,7 +472,7 @@ namespace GTA.Native
 		GET_CURRENT_SCRIPTED_CONVERSATION_LINE = 0x480357EE890C295A, // 0x9620E41F
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>void</returns>
 		PAUSE_SCRIPTED_CONVERSATION = 0x8530AD776CD72B12, // 0xE2C9C6F8
@@ -481,7 +481,7 @@ namespace GTA.Native
 		RESTART_SCRIPTED_CONVERSATION = 0x9AEB285D1818C9AC, // 0x6CB24B56
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>int</returns>
 		STOP_SCRIPTED_CONVERSATION = 0xD79DEEFB53455EBA, // 0xAB77DA7D
@@ -490,7 +490,7 @@ namespace GTA.Native
 		SKIP_TO_NEXT_SCRIPTED_CONVERSATION_LINE = 0x9663FE6B7A61EB00, // 0x85C98304
 
 		/// <summary>
-		/// Parameters: Ped ped, string voiceline, string speaker
+		/// Parameters: Ped ped, const char* voiceline, const char* speaker
 		/// </summary>
 		/// <remarks>
 		/// Example from carsteal3.c: AUDIO::INTERRUPT_CONVERSATION(PLAYER::PLAYER_PED_ID(), "CST4_CFAA", "FRANKLIN");<br/>
@@ -500,7 +500,7 @@ namespace GTA.Native
 		INTERRUPT_CONVERSATION = 0xA018A12E5C5C2FA6, // 0xF3A67AF3
 
 		/// <summary>
-		/// Parameters: Ped ped, string p1, string speaker
+		/// Parameters: Ped ped, const char* p1, const char* speaker
 		/// </summary>
 		/// <remarks>
 		/// One call found in the b617d scripts:<br/>
@@ -510,13 +510,13 @@ namespace GTA.Native
 		INTERRUPT_CONVERSATION_AND_PAUSE = 0x8A694D7A68F8DC38, // 0xDD4A3F1F
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any* p0
 		/// </summary>
 		/// <returns>int</returns>
 		GET_VARIATION_CHOSEN_FOR_SCRIPTED_LINE = 0xAA19F5572C38B564, // 0xB58B8FF3
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>void</returns>
 		SET_NO_DUCKING_FOR_CONVERSATION = 0xB542DE8C3D1CB210, // 0x789D8C6C
@@ -537,7 +537,7 @@ namespace GTA.Native
 		UNREGISTER_SCRIPT_WITH_AUDIO = 0xA8638BE228D4751A, // 0x66728EFE
 
 		/// <summary>
-		/// Parameters: string p0, bool p1, IntPtr p2
+		/// Parameters: const char* p0, BOOL p1, Any p2
 		/// </summary>
 		/// <remarks>
 		/// All occurrences and usages found in b617d: <see href='https://pastebin.com/NzZZ2Tmm'>https://pastebin.com/NzZZ2Tmm</see><br/>
@@ -547,7 +547,7 @@ namespace GTA.Native
 		REQUEST_MISSION_AUDIO_BANK = 0x7345BDD95E62E0F2, // 0x916E37CA
 
 		/// <summary>
-		/// Parameters: string p0, bool p1, IntPtr p2
+		/// Parameters: const char* p0, BOOL p1, Any p2
 		/// </summary>
 		/// <remarks>
 		/// All occurrences and usages found in b617d, sorted alphabetically and identical lines removed: <see href='https://pastebin.com/XZ1tmGEz'>https://pastebin.com/XZ1tmGEz</see><br/>
@@ -557,7 +557,7 @@ namespace GTA.Native
 		REQUEST_AMBIENT_AUDIO_BANK = 0xFE02FFBED8CA9D99, // 0x23C88BC7
 
 		/// <summary>
-		/// Parameters: string p0, bool p1, int p2
+		/// Parameters: const char* p0, BOOL p1, int p2
 		/// </summary>
 		/// <remarks>
 		/// All occurrences and usages found in b617d, sorted alphabetically and identical lines removed: <see href='https://pastebin.com/AkmDAVn6'>https://pastebin.com/AkmDAVn6</see><br/>
@@ -567,19 +567,19 @@ namespace GTA.Native
 		REQUEST_SCRIPT_AUDIO_BANK = 0x2F844A8B08D76685, // 0x21322887
 
 		/// <summary>
-		/// Parameters: string p0, IntPtr p1, IntPtr p2
+		/// Parameters: const char* p0, Any p1, Any p2
 		/// </summary>
 		/// <returns>BOOL</returns>
 		HINT_MISSION_AUDIO_BANK = 0x40763EA7B9B783E7,
 
 		/// <summary>
-		/// Parameters: string p0, IntPtr p1, IntPtr p2
+		/// Parameters: const char* p0, Any p1, Any p2
 		/// </summary>
 		/// <returns>BOOL</returns>
 		HINT_AMBIENT_AUDIO_BANK = 0x8F8C0E370AE62F5C, // 0xF1850DDC
 
 		/// <summary>
-		/// Parameters: string p0, IntPtr p1, IntPtr p2
+		/// Parameters: const char* p0, Any p1, Any p2
 		/// </summary>
 		/// <returns>BOOL</returns>
 		HINT_SCRIPT_AUDIO_BANK = 0xFB380A29641EC31A, // 0x41FA0E51
@@ -591,7 +591,7 @@ namespace GTA.Native
 		RELEASE_AMBIENT_AUDIO_BANK = 0x65475A218FFAA93D, // 0x8C938784
 
 		/// <summary>
-		/// Parameters: string audioBank
+		/// Parameters: const char* audioBank
 		/// </summary>
 		/// <remarks>
 		/// Full list of script audio bank names by DurtyFree <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/scriptAudioBankNames.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/scriptAudioBankNames.json</see><br/>
@@ -609,7 +609,7 @@ namespace GTA.Native
 		UNHINT_SCRIPT_AUDIO_BANK = 0x9AC92EED5E4793AB, // 0xE67446E9
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		UNHINT_NAMED_SCRIPT_AUDIO_BANK = 0x11579D940949C49E,
@@ -624,7 +624,7 @@ namespace GTA.Native
 		RELEASE_SOUND_ID = 0x353FC880830B88FA, // 0x9C080899
 
 		/// <summary>
-		/// Parameters: int soundId, string audioName, string audioRef, bool p3, IntPtr p4, bool p5
+		/// Parameters: int soundId, const char* audioName, const char* audioRef, BOOL p3, Any p4, BOOL p5
 		/// </summary>
 		/// <remarks>
 		/// All found occurrences in b617d, sorted alphabetically and identical lines removed: <see href='https://pastebin.com/A8Ny8AHZ'>https://pastebin.com/A8Ny8AHZ</see><br/>
@@ -634,7 +634,7 @@ namespace GTA.Native
 		PLAY_SOUND = 0x7FF4944CC209192D, // 0xB6E1917F
 
 		/// <summary>
-		/// Parameters: int soundId, string audioName, string audioRef, bool p3
+		/// Parameters: int soundId, const char* audioName, const char* audioRef, BOOL p3
 		/// </summary>
 		/// <remarks>
 		/// List: <see href='https://pastebin.com/DCeRiaLJ'>https://pastebin.com/DCeRiaLJ</see><br/>
@@ -645,7 +645,7 @@ namespace GTA.Native
 		PLAY_SOUND_FRONTEND = 0x67C540AA08E4A6F5, // 0x2E458F74
 
 		/// <summary>
-		/// Parameters: string soundName, string soundsetName
+		/// Parameters: const char* soundName, const char* soundsetName
 		/// </summary>
 		/// <remarks>
 		/// Only call found in the b617d scripts:<br/>
@@ -656,7 +656,7 @@ namespace GTA.Native
 		PLAY_DEFERRED_SOUND_FRONTEND = 0xCADA5A0D0702381E, // 0xC70E6CFA
 
 		/// <summary>
-		/// Parameters: int soundId, string audioName, Entity entity, string audioRef, bool isNetwork, IntPtr p5
+		/// Parameters: int soundId, const char* audioName, Entity entity, const char* audioRef, BOOL isNetwork, Any p5
 		/// </summary>
 		/// <remarks>
 		/// All found occurrences in b617d, sorted alphabetically and identical lines removed: <see href='https://pastebin.com/f2A7vTj0'>https://pastebin.com/f2A7vTj0</see> <br/>
@@ -668,7 +668,7 @@ namespace GTA.Native
 		PLAY_SOUND_FROM_ENTITY = 0xE65F427EB70AB1ED, // 0x95AE00F8
 
 		/// <summary>
-		/// Parameters: int soundId, uint p1, IntPtr p2, uint soundNameHash, IntPtr p4, IntPtr p5
+		/// Parameters: int soundId, Hash p1, Any p2, Hash soundNameHash, Any p4, Any p5
 		/// </summary>
 		/// <remarks>
 		/// p2 is Entity?<br/>
@@ -677,7 +677,7 @@ namespace GTA.Native
 		PLAY_SOUND_FROM_ENTITY_HASH = 0x5B9853296731E88D,
 
 		/// <summary>
-		/// Parameters: int soundId, string audioName, float x, float y, float z, string audioRef, bool isNetwork, int range, bool p8
+		/// Parameters: int soundId, const char* audioName, float x, float y, float z, const char* audioRef, BOOL isNetwork, int range, BOOL p8
 		/// </summary>
 		/// <remarks>
 		/// All found occurrences in b617d, sorted alphabetically and identical lines removed: <see href='https://pastebin.com/eeFc5DiW'>https://pastebin.com/eeFc5DiW</see><br/>
@@ -716,13 +716,13 @@ namespace GTA.Native
 		GET_SOUND_ID_FROM_NETWORK_ID = 0x75262FD12D0A1C84, // 0xD064D4DC
 
 		/// <summary>
-		/// Parameters: int soundId, string variable, float p2
+		/// Parameters: int soundId, const char* variable, float p2
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VARIABLE_ON_SOUND = 0xAD6B3148A78AE9B6, // 0x606EE5FA
 
 		/// <summary>
-		/// Parameters: string variable, float p1
+		/// Parameters: const char* variable, float p1
 		/// </summary>
 		/// <remarks>
 		/// From the scripts, p0:<br/>
@@ -735,13 +735,13 @@ namespace GTA.Native
 		SET_VARIABLE_ON_STREAM = 0x2F9D3834AEB9EF79, // 0xF67BB44C
 
 		/// <summary>
-		/// Parameters: string p0, bool p1
+		/// Parameters: const char* p0, BOOL p1
 		/// </summary>
 		/// <returns>void</returns>
 		OVERRIDE_UNDERWATER_STREAM = 0xF2A9CDABCEA04BD6, // 0x9A083B7E
 
 		/// <summary>
-		/// Parameters: string variableName, float value
+		/// Parameters: const char* variableName, float value
 		/// </summary>
 		/// <remarks>
 		/// AUDIO::SET_VARIABLE_ON_UNDER_WATER_STREAM("inTunnel", 1.0);<br/>
@@ -757,7 +757,7 @@ namespace GTA.Native
 		HAS_SOUND_FINISHED = 0xFCBDCE714A7C88E5, // 0xE85AEC2E
 
 		/// <summary>
-		/// Parameters: Ped ped, string speechName, string speechParam, IntPtr p3
+		/// Parameters: Ped ped, const char* speechName, const char* speechParam, Any p3
 		/// </summary>
 		/// <remarks>
 		/// Plays ambient speech. See also _0x444180DB.<br/>
@@ -812,7 +812,7 @@ namespace GTA.Native
 		_PLAY_AMBIENT_SPEECH1 = 0x8E04FEDD28D42462, // 0x5C57B85D
 
 		/// <summary>
-		/// Parameters: Ped ped, string speechName, string speechParam, IntPtr p3
+		/// Parameters: Ped ped, const char* speechName, const char* speechParam, Any p3
 		/// </summary>
 		/// <remarks>
 		/// Plays ambient speech. See also _0x5C57B85D.<br/>
@@ -827,7 +827,7 @@ namespace GTA.Native
 		_PLAY_AMBIENT_SPEECH2 = 0xC6941B4A3A8FBBB9, // 0x444180DB
 
 		/// <summary>
-		/// Parameters: Ped ped, string speechName, string voiceName, string speechParam, bool p4
+		/// Parameters: Ped ped, const char* speechName, const char* voiceName, const char* speechParam, BOOL p4
 		/// </summary>
 		/// <remarks>
 		/// This is the same as PLAY_PED_AMBIENT_SPEECH_NATIVE and PLAY_PED_AMBIENT_SPEECH_AND_CLONE_NATIVE but it will allow you to play a speech file from a specific voice file. It works on players and all peds, even animals.<br/>
@@ -844,7 +844,7 @@ namespace GTA.Native
 		_PLAY_AMBIENT_SPEECH_WITH_VOICE = 0x3523634255FC3318, // 0x8386AE28
 
 		/// <summary>
-		/// Parameters: string speechName, string voiceName, float x, float y, float z, string speechParam
+		/// Parameters: const char* speechName, const char* voiceName, float x, float y, float z, const char* speechParam
 		/// </summary>
 		/// <remarks>
 		/// Full list of speeches and voices names by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/speeches.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/speeches.json</see><br/>
@@ -857,7 +857,7 @@ namespace GTA.Native
 		_PLAY_AMBIENT_SPEECH_AT_COORDS = 0xED640017ED337E45, // 0xA1A1402E
 
 		/// <summary>
-		/// Parameters: string voiceEffect
+		/// Parameters: const char* voiceEffect
 		/// </summary>
 		/// <remarks>
 		/// This native enables the audio flag "TrevorRageIsOverridden" and sets the voice effect to `voiceEffect`<br/>
@@ -869,13 +869,13 @@ namespace GTA.Native
 		RESET_TREVOR_RAGE = 0xE78503B10C4314E0, // 0xE80CF0D4
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PLAYER_ANGRY = 0xEA241BB04110F091, // 0x782CA58D
 
 		/// <summary>
-		/// Parameters: Ped ped, int painID, int p1, IntPtr p3
+		/// Parameters: Ped ped, int painID, int p1, Any p3
 		/// </summary>
 		/// <remarks>
 		/// Needs another parameter [int p2]. The signature is PED::PLAY_PAIN(Ped ped, int painID, int p1, int p2);<br/>
@@ -895,7 +895,7 @@ namespace GTA.Native
 		RELEASE_WEAPON_AUDIO = 0xCE4AC0439F607045, // 0x6096504C
 
 		/// <summary>
-		/// Parameters: string mode
+		/// Parameters: const char* mode
 		/// </summary>
 		/// <remarks>
 		/// mode can be any of these: <br/>
@@ -915,7 +915,7 @@ namespace GTA.Native
 		ACTIVATE_AUDIO_SLOWMO_MODE = 0xD01005D2BA2EB778, // 0x59A3A17D
 
 		/// <summary>
-		/// Parameters: string p0
+		/// Parameters: const char* p0
 		/// </summary>
 		/// <remarks>
 		/// see ACTIVATE_AUDIO_SLOWMO_MODE for modes<br/>
@@ -924,7 +924,7 @@ namespace GTA.Native
 		DEACTIVATE_AUDIO_SLOWMO_MODE = 0xDDC635D5B3262C56, // 0x0E387BFE
 
 		/// <summary>
-		/// Parameters: Ped ped, string name
+		/// Parameters: Ped ped, const char* name
 		/// </summary>
 		/// <remarks>
 		/// Audio List<br/>
@@ -935,7 +935,7 @@ namespace GTA.Native
 		SET_AMBIENT_VOICE_NAME = 0x6C8065A3B780185B, // 0xBD2EA1A1
 
 		/// <summary>
-		/// Parameters: Ped ped, uint hash
+		/// Parameters: Ped ped, Hash hash
 		/// </summary>
 		/// <returns>void</returns>
 		SET_AMBIENT_VOICE_NAME_HASH = 0x9A53DED9921DE990,
@@ -968,13 +968,13 @@ namespace GTA.Native
 		_SET_PED_SCREAM = 0x40CF0D12D142A9E8,
 
 		/// <summary>
-		/// Parameters: Ped ped, int p1, uint voiceGroup
+		/// Parameters: Ped ped, int p1, Hash voiceGroup
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_RACE_AND_VOICE_GROUP = 0x1B7ABE26CBCBF8C7,
 
 		/// <summary>
-		/// Parameters: Ped ped, uint voiceGroupHash
+		/// Parameters: Ped ped, Hash voiceGroupHash
 		/// </summary>
 		/// <remarks>
 		/// From the scripts:<br/>
@@ -991,7 +991,7 @@ namespace GTA.Native
 		_SET_PED_VOICE_GROUP = 0x7CDC8C3B89F661B3,
 
 		/// <summary>
-		/// Parameters: Ped ped, uint voiceGroupHash
+		/// Parameters: Ped ped, Hash voiceGroupHash
 		/// </summary>
 		/// <remarks>
 		/// Dat151RelType == 29<br/>
@@ -1004,7 +1004,7 @@ namespace GTA.Native
 		_SET_PED_VOICE_GROUP_RACE = 0x0BABC1345ABBFB16,
 
 		/// <summary>
-		/// Parameters: Ped ped, bool p1
+		/// Parameters: Ped ped, BOOL p1
 		/// </summary>
 		/// <remarks>
 		/// BOOL p1: 0 = Female; 1 = Male<br/>
@@ -1054,7 +1054,7 @@ namespace GTA.Native
 		IS_ANY_POSITIONAL_SPEECH_PLAYING = 0x30CA2EF91D15ADF8,
 
 		/// <summary>
-		/// Parameters: Ped ped, string speechName, bool p2
+		/// Parameters: Ped ped, const char* speechName, BOOL p2
 		/// </summary>
 		/// <remarks>
 		/// Checks if the ped can play the speech or has the speech file, p2 is usually false.<br/>
@@ -1073,7 +1073,7 @@ namespace GTA.Native
 		IS_PED_IN_CURRENT_CONVERSATION = 0x049E937F18F4020C, // 0x7B2F0743
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Sets the ped drunk sounds.  Only works with PLAYER_PED_ID<br/>
@@ -1093,7 +1093,7 @@ namespace GTA.Native
 		SET_PED_IS_DRUNK = 0x95D2D383D5396B8A, // 0xD2EA77A3
 
 		/// <summary>
-		/// Parameters: Ped pedHandle, int p1, string speechName
+		/// Parameters: Ped pedHandle, int p1, const char* speechName
 		/// </summary>
 		/// <remarks>
 		/// Plays sounds from a ped with chop model. For example it used to play bark or sniff sounds. p1 is always 3 or 4294967295 in decompiled scripts. By a quick disassembling I can assume that this arg is unused.<br/>
@@ -1122,7 +1122,7 @@ namespace GTA.Native
 		IS_MOBILE_PHONE_RADIO_ACTIVE = 0xB35CE999E8EF317E, // 0x6E502A5B
 
 		/// <summary>
-		/// Parameters: bool state
+		/// Parameters: BOOL state
 		/// </summary>
 		/// <returns>void</returns>
 		SET_MOBILE_PHONE_RADIO_STATE = 0xBF286C554784F3DF, // 0xE1E0ED34
@@ -1170,7 +1170,7 @@ namespace GTA.Native
 		SET_RADIO_RETUNE_DOWN = 0xDD6BCF9E94425DF9, // 0xD70ECC80
 
 		/// <summary>
-		/// Parameters: string stationName
+		/// Parameters: const char* stationName
 		/// </summary>
 		/// <remarks>
 		/// List of radio stations that are in the wheel, in clockwise order, as of LS Tuners DLC: <see href='https://git.io/J8a3k'>https://git.io/J8a3k</see><br/>
@@ -1180,7 +1180,7 @@ namespace GTA.Native
 		SET_RADIO_TO_STATION_NAME = 0xC69EDA28699D5107, // 0x7B36E35E
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, string radioStation
+		/// Parameters: Vehicle vehicle, const char* radioStation
 		/// </summary>
 		/// <remarks>
 		/// List of radio stations that are in the wheel, in clockwise order, as of LS Tuners DLC: <see href='https://git.io/J8a3k'>https://git.io/J8a3k</see><br/>
@@ -1216,7 +1216,7 @@ namespace GTA.Native
 		SET_VEH_FORCED_RADIO_THIS_FRAME = 0xC1805D05E6D4FE10, // 0x7ABB89D2
 
 		/// <summary>
-		/// Parameters: string emitterName, string radioStation
+		/// Parameters: const char* emitterName, const char* radioStation
 		/// </summary>
 		/// <remarks>
 		/// Full list of static emitters by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/staticEmitters.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/staticEmitters.json</see><br/>
@@ -1225,7 +1225,7 @@ namespace GTA.Native
 		SET_EMITTER_RADIO_STATION = 0xACF57305B12AF907, // 0x87431585
 
 		/// <summary>
-		/// Parameters: string emitterName, bool toggle
+		/// Parameters: const char* emitterName, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Example:<br/>
@@ -1237,7 +1237,7 @@ namespace GTA.Native
 		SET_STATIC_EMITTER_ENABLED = 0x399D2D3B33F1B8EB, // 0x91F72E92
 
 		/// <summary>
-		/// Parameters: string emitterName, Entity entity
+		/// Parameters: const char* emitterName, Entity entity
 		/// </summary>
 		/// <remarks>
 		/// Full list of static emitters by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/staticEmitters.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/staticEmitters.json</see><br/>
@@ -1259,7 +1259,7 @@ namespace GTA.Native
 		SET_RADIO_TO_STATION_INDEX = 0xA619B168B8A8570F, // 0x1D82766D
 
 		/// <summary>
-		/// Parameters: bool active
+		/// Parameters: BOOL active
 		/// </summary>
 		/// <returns>void</returns>
 		SET_FRONTEND_RADIO_ACTIVE = 0xF7F26C6E9CC9EBB8, // 0xB1172075
@@ -1287,7 +1287,7 @@ namespace GTA.Native
 		GET_AUDIBLE_MUSIC_TRACK_TEXT_ID = 0x50B196FC9ED6545B, // 0xA2B88CA7
 
 		/// <summary>
-		/// Parameters: bool play
+		/// Parameters: BOOL play
 		/// </summary>
 		/// <returns>void</returns>
 		PLAY_END_CREDITS_MUSIC = 0xCD536C4D33DCC900, // 0x8E88B3CC
@@ -1296,37 +1296,37 @@ namespace GTA.Native
 		SKIP_RADIO_FORWARD = 0x6DDBBDD98E2E9C25, // 0x10D36630
 
 		/// <summary>
-		/// Parameters: string radioStation
+		/// Parameters: const char* radioStation
 		/// </summary>
 		/// <returns>void</returns>
 		FREEZE_RADIO_STATION = 0x344F393B027E38C3, // 0x286BF543
 
 		/// <summary>
-		/// Parameters: string radioStation
+		/// Parameters: const char* radioStation
 		/// </summary>
 		/// <returns>void</returns>
 		UNFREEZE_RADIO_STATION = 0xFC00454CF60B91DD, // 0x4D46202C
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_RADIO_AUTO_UNFREEZE = 0xC1AA9F53CE982990, // 0xA40196BF
 
 		/// <summary>
-		/// Parameters: string radioStation
+		/// Parameters: const char* radioStation
 		/// </summary>
 		/// <returns>void</returns>
 		SET_INITIAL_PLAYER_STATION = 0x88795F13FACDA88D, // 0x9B069233
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_USER_RADIO_CONTROL_ENABLED = 0x19F21E63AE6EAE4E, // 0x52E054CE
 
 		/// <summary>
-		/// Parameters: string radioStation, string radioTrack
+		/// Parameters: const char* radioStation, const char* radioTrack
 		/// </summary>
 		/// <remarks>
 		/// Only found this one in the decompiled scripts:<br/>
@@ -1336,7 +1336,7 @@ namespace GTA.Native
 		SET_RADIO_TRACK = 0xB39786F201FEE30B, // 0x76E96212
 
 		/// <summary>
-		/// Parameters: string radioStationName, string mixName, int p2
+		/// Parameters: const char* radioStationName, const char* mixName, int p2
 		/// </summary>
 		/// <returns>void</returns>
 		SET_RADIO_TRACK_WITH_START_OFFSET = 0x2CB0075110BE1E56,
@@ -1346,13 +1346,13 @@ namespace GTA.Native
 		_SET_RADIO_TRACK_MIX = 0x2CB0075110BE1E56,
 
 		/// <summary>
-		/// Parameters: string radioName, string radioTrack, string p2, string p3
+		/// Parameters: const char* radioName, const char* radioTrack, const char* p2, const char* p3
 		/// </summary>
 		/// <returns>void</returns>
 		SET_NEXT_RADIO_TRACK = 0x55ECF4D13D9903B0,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_RADIO_LOUD = 0xBB6F1CAEC68B0BCE, // 0x8D9EDD99
@@ -1368,7 +1368,7 @@ namespace GTA.Native
 		_IS_VEHICLE_RADIO_LOUD = 0x032A116663A4D5AC, // 0xCBA99F4A
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_MOBILE_RADIO_ENABLED_DURING_GAMEPLAY = 0x1098355A16064BB3, // 0x990085F0
@@ -1384,7 +1384,7 @@ namespace GTA.Native
 		_IS_PLAYER_VEHICLE_RADIO_ENABLED = 0x5F43D83FD6738741, // 0x2A3E5E8B
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// can't seem to enable radio on cop cars etc<br/>
@@ -1393,13 +1393,13 @@ namespace GTA.Native
 		SET_VEHICLE_RADIO_ENABLED = 0x3B988190C0AA6C0B, // 0x6F812CAB
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		SET_POSITIONED_PLAYER_VEHICLE_RADIO_EMITTER_ENABLED = 0xDA07819E452FFE8F,
 
 		/// <summary>
-		/// Parameters: string radioStation, string trackListName, bool p2
+		/// Parameters: const char* radioStation, const char* trackListName, BOOL p2
 		/// </summary>
 		/// <remarks>
 		/// Examples:<br/>
@@ -1416,7 +1416,7 @@ namespace GTA.Native
 		SET_CUSTOM_RADIO_TRACK_LIST = 0x4E404A9361F75BB2, // 0x128C3873
 
 		/// <summary>
-		/// Parameters: string radioStation
+		/// Parameters: const char* radioStation
 		/// </summary>
 		/// <remarks>
 		/// 3 calls in the b617d scripts, removed duplicate.<br/>
@@ -1434,13 +1434,13 @@ namespace GTA.Native
 		_MAX_RADIO_STATION_INDEX = 0xF1620ECB50E01DE7, // 0xCC91FCF5
 
 		/// <summary>
-		/// Parameters: uint stationNameHash
+		/// Parameters: Hash stationNameHash
 		/// </summary>
 		/// <returns>int</returns>
 		FIND_RADIO_STATION_INDEX = 0x8D67489793FF428B, // 0xECA1512F
 
 		/// <summary>
-		/// Parameters: string radioStation, bool toggle
+		/// Parameters: const char* radioStation, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// 6 calls in the b617d scripts, removed identical lines:<br/>
@@ -1458,7 +1458,7 @@ namespace GTA.Native
 		SET_RADIO_FRONTEND_FADE_TIME = 0x2C96CDB04FCA358E, // 0xC8B514E2
 
 		/// <summary>
-		/// Parameters: string radioStation, string trackListName
+		/// Parameters: const char* radioStation, const char* trackListName
 		/// </summary>
 		/// <remarks>
 		/// AUDIO::UNLOCK_RADIO_STATION_TRACK_LIST("RADIO_16_SILVERLAKE", "MIRRORPARK_LOCKED");<br/>
@@ -1467,7 +1467,7 @@ namespace GTA.Native
 		UNLOCK_RADIO_STATION_TRACK_LIST = 0x031ACB6ABA18C729, // 0xBE998184
 
 		/// <summary>
-		/// Parameters: string radioStation, string trackListName
+		/// Parameters: const char* radioStation, const char* trackListName
 		/// </summary>
 		/// <returns>void</returns>
 		LOCK_RADIO_STATION_TRACK_LIST = 0xFF5E5EA2DCEEACF3,
@@ -1477,7 +1477,7 @@ namespace GTA.Native
 		_LOCK_RADIO_STATION_TRACK_LIST = 0xFF5E5EA2DCEEACF3,
 
 		/// <summary>
-		/// Parameters: bool enableMixes
+		/// Parameters: BOOL enableMixes
 		/// </summary>
 		/// <remarks>
 		/// Just a nullsub (i.e. does absolutely nothing) since build 1604.<br/>
@@ -1490,7 +1490,7 @@ namespace GTA.Native
 		_UPDATE_LSUR = 0x47AED84213A47510,
 
 		/// <summary>
-		/// Parameters: string radioStationName, bool toggle
+		/// Parameters: const char* radioStationName, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Disables the radio station (hides it from the radio wheel).<br/>
@@ -1507,7 +1507,7 @@ namespace GTA.Native
 		_LOCK_RADIO_STATION = 0x477D9DB48F889591,
 
 		/// <summary>
-		/// Parameters: string radioStation, bool toggle
+		/// Parameters: const char* radioStation, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Doesn't have an effect in Story Mode.<br/>
@@ -1520,7 +1520,7 @@ namespace GTA.Native
 		_SET_RADIO_STATION_IS_VISIBLE = 0x4CAFEBFA21EC188D,
 
 		/// <summary>
-		/// Parameters: string radioStation
+		/// Parameters: const char* radioStation
 		/// </summary>
 		/// <returns>BOOL</returns>
 		IS_RADIO_STATION_FAVOURITED = 0x2B1784DB08AFEA79,
@@ -1536,7 +1536,7 @@ namespace GTA.Native
 		GET_NEXT_AUDIBLE_BEAT = 0xC64A06D939F826F5,
 
 		/// <summary>
-		/// Parameters: string radioStation, string trackListName, int milliseconds
+		/// Parameters: const char* radioStation, const char* trackListName, int milliseconds
 		/// </summary>
 		/// <remarks>
 		/// Changes start time of a tracklist (milliseconds)<br/>
@@ -1550,7 +1550,7 @@ namespace GTA.Native
 		_FORCE_RADIO_TRACK_LIST_POSITION = 0x4E0AF9114608257C,
 
 		/// <summary>
-		/// Parameters: string radioStationName
+		/// Parameters: const char* radioStationName
 		/// </summary>
 		/// <returns>int</returns>
 		GET_CURRENT_TRACK_PLAY_TIME = 0x3E65CDE5215832C1,
@@ -1560,7 +1560,7 @@ namespace GTA.Native
 		_GET_CURRENT_RADIO_TRACK_PLAYBACK_TIME = 0x3E65CDE5215832C1,
 
 		/// <summary>
-		/// Parameters: string radioStationName
+		/// Parameters: const char* radioStationName
 		/// </summary>
 		/// <returns>Hash</returns>
 		GET_CURRENT_TRACK_SOUND_NAME = 0x34D66BC058019CE0,
@@ -1570,13 +1570,13 @@ namespace GTA.Native
 		_GET_CURRENT_RADIO_TRACK_NAME = 0x34D66BC058019CE0,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_MISSILE_WARNING_ENABLED = 0xF3365489E0DD50F9, // 0x8AFC488D
 
 		/// <summary>
-		/// Parameters: string zoneName, bool p1, bool p2
+		/// Parameters: const char* zoneName, BOOL p1, BOOL p2
 		/// </summary>
 		/// <remarks>
 		/// Full list of ambient zones by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/ambientZones.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/ambientZones.json</see><br/>
@@ -1585,7 +1585,7 @@ namespace GTA.Native
 		SET_AMBIENT_ZONE_STATE = 0xBDA07E5950085E46, // 0x2849CAC9
 
 		/// <summary>
-		/// Parameters: string zoneName, bool p1
+		/// Parameters: const char* zoneName, BOOL p1
 		/// </summary>
 		/// <remarks>
 		/// This function also has a p2, unknown. Signature AUDIO::CLEAR_AMBIENT_ZONE_STATE(const char* zoneName, bool p1, Any p2);<br/>
@@ -1596,19 +1596,19 @@ namespace GTA.Native
 		CLEAR_AMBIENT_ZONE_STATE = 0x218DD44AAAC964FF, // 0xCDFF3C82
 
 		/// <summary>
-		/// Parameters: IntPtr p0, bool p1, bool p2
+		/// Parameters: Any* p0, BOOL p1, BOOL p2
 		/// </summary>
 		/// <returns>void</returns>
 		SET_AMBIENT_ZONE_LIST_STATE = 0x9748FA4DE50CCE3E, // 0xBF80B412
 
 		/// <summary>
-		/// Parameters: IntPtr p0, bool p1
+		/// Parameters: Any* p0, BOOL p1
 		/// </summary>
 		/// <returns>void</returns>
 		CLEAR_AMBIENT_ZONE_LIST_STATE = 0x120C48C614909FA4, // 0x38B9B8D4
 
 		/// <summary>
-		/// Parameters: string ambientZone, bool p1, bool p2
+		/// Parameters: const char* ambientZone, BOOL p1, BOOL p2
 		/// </summary>
 		/// <remarks>
 		/// Full list of ambient zones by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/ambientZones.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/ambientZones.json</see><br/>
@@ -1617,7 +1617,7 @@ namespace GTA.Native
 		SET_AMBIENT_ZONE_STATE_PERSISTENT = 0x1D6650420CEC9D3B, // 0xC1FFB672
 
 		/// <summary>
-		/// Parameters: string ambientZone, bool p1, bool p2
+		/// Parameters: const char* ambientZone, BOOL p1, BOOL p2
 		/// </summary>
 		/// <remarks>
 		/// Full list of ambient zones by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/ambientZones.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/ambientZones.json</see><br/>
@@ -1626,7 +1626,7 @@ namespace GTA.Native
 		SET_AMBIENT_ZONE_LIST_STATE_PERSISTENT = 0xF3638DAE8C4045E1, // 0x5F5A2605
 
 		/// <summary>
-		/// Parameters: string ambientZone
+		/// Parameters: const char* ambientZone
 		/// </summary>
 		/// <remarks>
 		/// Full list of ambient zones by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/ambientZones.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/ambientZones.json</see><br/>
@@ -1638,7 +1638,7 @@ namespace GTA.Native
 		REFRESH_CLOSEST_OCEAN_SHORELINE = 0x5D2BFAAB8D956E0E,
 
 		/// <summary>
-		/// Parameters: string name
+		/// Parameters: const char* name
 		/// </summary>
 		/// <remarks>
 		/// All occurrences found in b617d, sorted alphabetically and identical lines removed: <br/>
@@ -1651,7 +1651,7 @@ namespace GTA.Native
 		SET_CUTSCENE_AUDIO_OVERRIDE = 0x3B4BF5F0859204D9, // 0xCE1332B7
 
 		/// <summary>
-		/// Parameters: string variableName, float value
+		/// Parameters: const char* variableName, float value
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VARIABLE_ON_SYNCH_SCENE_AUDIO = 0xBCC29F935ED07688, // 0xD63CF33A
@@ -1665,7 +1665,7 @@ namespace GTA.Native
 		_SET_VARIABLE_ON_CUTSCENE_AUDIO = 0xBCC29F935ED07688, // 0xD63CF33A
 
 		/// <summary>
-		/// Parameters: string name, float p1
+		/// Parameters: const char* name, float p1
 		/// </summary>
 		/// <remarks>
 		/// Plays the given police radio message.<br/>
@@ -1697,7 +1697,7 @@ namespace GTA.Native
 		BLIP_SIREN = 0x1B9025BDA76822B6, // 0xC0EB6924
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool override, int hornHash
+		/// Parameters: Vehicle vehicle, BOOL @override, int hornHash
 		/// </summary>
 		/// <remarks>
 		/// Overrides the vehicle's horn hash.<br/>
@@ -1719,7 +1719,7 @@ namespace GTA.Native
 		IS_HORN_ACTIVE = 0x9D6BFC12B05C6121, // 0x20E2BDD0
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Makes pedestrians sound their horn longer, faster and more agressive when they use their horn.<br/>
@@ -1728,7 +1728,7 @@ namespace GTA.Native
 		SET_AGGRESSIVE_HORNS = 0x395BF71085D1B1D9, // 0x01D6EABE
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <remarks>
 		/// Does nothing (it's a nullsub).<br/>
@@ -1737,7 +1737,7 @@ namespace GTA.Native
 		SET_RADIO_POSITION_AUDIO_MUTE = 0x02E93C796ABD3A97, // 0x3C395AEE
 
 		/// <summary>
-		/// Parameters: bool p0, bool p1
+		/// Parameters: BOOL p0, BOOL p1
 		/// </summary>
 		/// <remarks>
 		/// SET_VEHICLE_CONVERSATIONS_PERSIST?<br/>
@@ -1746,7 +1746,7 @@ namespace GTA.Native
 		SET_VEHICLE_CONVERSATIONS_PERSIST = 0x58BB377BEC7CD5F4, // 0x8CE63FA1
 
 		/// <summary>
-		/// Parameters: bool p0, bool p1, bool p2
+		/// Parameters: BOOL p0, BOOL p1, BOOL p2
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_CONVERSATIONS_PERSIST_NEW = 0x9BD7BD55E4533183,
@@ -1758,7 +1758,7 @@ namespace GTA.Native
 		GET_STREAM_PLAY_TIME = 0x4E72BBDBCA58A3DB, // 0xB4F0AD56
 
 		/// <summary>
-		/// Parameters: string streamName, string soundSet
+		/// Parameters: const char* streamName, const char* soundSet
 		/// </summary>
 		/// <remarks>
 		/// Example:<br/>
@@ -1772,7 +1772,7 @@ namespace GTA.Native
 		LOAD_STREAM = 0x1F1F957154EC51DF, // 0x0D89599D
 
 		/// <summary>
-		/// Parameters: string streamName, int startOffset, string soundSet
+		/// Parameters: const char* streamName, int startOffset, const char* soundSet
 		/// </summary>
 		/// <remarks>
 		/// Example:<br/>
@@ -1796,7 +1796,7 @@ namespace GTA.Native
 		PLAY_STREAM_FROM_VEHICLE = 0xB70374A758007DFA, // 0xF8E4BDA2
 
 		/// <summary>
-		/// Parameters: Object object
+		/// Parameters: Object @object
 		/// </summary>
 		/// <remarks>
 		/// Used with AUDIO::LOAD_STREAM<br/>
@@ -1830,25 +1830,25 @@ namespace GTA.Native
 		STOP_STREAM = 0xA4718A1419D18151, // 0xD1E364DE
 
 		/// <summary>
-		/// Parameters: Ped ped, bool shaking
+		/// Parameters: Ped ped, BOOL shaking
 		/// </summary>
 		/// <returns>void</returns>
 		STOP_PED_SPEAKING = 0x9D64D7405520E3D3, // 0xFF92B49D
 
 		/// <summary>
-		/// Parameters: Ped ped, bool p1, bool p2
+		/// Parameters: Ped ped, BOOL p1, BOOL p2
 		/// </summary>
 		/// <returns>void</returns>
 		BLOCK_ALL_SPEECH_FROM_PED = 0xF8AD2EED7C47E8FE,
 
 		/// <summary>
-		/// Parameters: Ped ped, bool p1
+		/// Parameters: Ped ped, BOOL p1
 		/// </summary>
 		/// <returns>void</returns>
 		STOP_PED_SPEAKING_SYNCED = 0xAB6781A5F3101470,
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		DISABLE_PED_PAIN_AUDIO = 0xA9A41C1E940FB0E8, // 0x3B8E2D5F
@@ -1864,25 +1864,25 @@ namespace GTA.Native
 		IS_AMBIENT_SPEECH_DISABLED = 0x932C2D096A2C3FFF, // 0x109D1F89
 
 		/// <summary>
-		/// Parameters: string p0, int p1
+		/// Parameters: const char* p0, int p1
 		/// </summary>
 		/// <returns>void</returns>
 		BLOCK_SPEECH_CONTEXT_GROUP = 0xA8A7D434AFB4B97B,
 
 		/// <summary>
-		/// Parameters: string p0
+		/// Parameters: const char* p0
 		/// </summary>
 		/// <returns>void</returns>
 		UNBLOCK_SPEECH_CONTEXT_GROUP = 0x2ACABED337622DF2,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_SIREN_WITH_NO_DRIVER = 0x1FEF0683B96EBCF2, // 0x77182D58
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_SIREN_BYPASS_MP_DRIVER_CHECK = 0xF584CF8529B51434,
@@ -1912,13 +1912,13 @@ namespace GTA.Native
 		_SOUND_VEHICLE_HORN_THIS_FRAME = 0x9C11908013EA4715, // 0xDE8BA3CD
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_HORN_ENABLED = 0x76D683C108594D0E, // 0x6EB92D05
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, IntPtr p1
+		/// Parameters: Vehicle vehicle, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_AUDIO_VEHICLE_PRIORITY = 0xE5564483E407F914, // 0x271A9766
@@ -1930,13 +1930,13 @@ namespace GTA.Native
 		SET_HORN_PERMANENTLY_ON_TIME = 0x9D3AF56E94C9AE98, // 0x2F0A16D1
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		USE_SIREN_AS_HORN = 0xFA932DE350266EF8, // 0xC6BC16F3
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, string audioName
+		/// Parameters: Vehicle vehicle, const char* audioName
 		/// </summary>
 		/// <remarks>
 		/// This native sets the audio of the specified vehicle to the audioName (p1).<br/>
@@ -1957,7 +1957,7 @@ namespace GTA.Native
 		_FORCE_VEHICLE_ENGINE_AUDIO = 0x4F0C413926060B38, // 0x33B0B007
 
 		/// <summary>
-		/// Parameters: uint vehicleModel
+		/// Parameters: Hash vehicleModel
 		/// </summary>
 		/// <returns>void</returns>
 		PRELOAD_VEHICLE_AUDIO_BANK = 0xCA4CEA6AE0000A7E,
@@ -1967,7 +1967,7 @@ namespace GTA.Native
 		_PRELOAD_VEHICLE_AUDIO = 0xCA4CEA6AE0000A7E,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, string p1, string p2
+		/// Parameters: Vehicle vehicle, const char* p1, const char* p2
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_STARTUP_REV_SOUND = 0xF1F8157B8C3F171C, // 0x1C0C5E4C
@@ -1983,7 +1983,7 @@ namespace GTA.Native
 		_RESET_VEHICLE_STARTUP_REV_SOUND = 0xD2DCCD8E16E20997,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_FORCE_REVERSE_WARNING = 0x97FFB4ADEED08066,
@@ -2011,19 +2011,19 @@ namespace GTA.Native
 		SET_VEHICLE_AUDIO_BODY_DAMAGE_FACTOR = 0x01BB4D577D38BD9E, // 0xE81FAC68
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		ENABLE_VEHICLE_FANBELT_DAMAGE = 0x1C073274E065C6D2, // 0x9365E042
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		ENABLE_VEHICLE_EXHAUST_POPS = 0x2BE4BC731D039D5A, // 0x2A60A90E
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// SET_VEHICLE_BOOST_ACTIVE(vehicle, 1, 0);<br/>
@@ -2034,13 +2034,13 @@ namespace GTA.Native
 		SET_VEHICLE_BOOST_ACTIVE = 0x4A04DE7CAB2739A1, // 0x072F15F2
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PLAYER_VEHICLE_ALARM_AUDIO_ACTIVE = 0x6FDDAD856E36988A, // 0x934BE749
 
 		/// <summary>
-		/// Parameters: uint doorHash, bool toggle
+		/// Parameters: Hash doorHash, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_SCRIPT_UPDATE_DOOR_AUDIO = 0x06C0023BED16DD6B, // 0xE61110A2
@@ -2064,7 +2064,7 @@ namespace GTA.Native
 		PLAY_VEHICLE_DOOR_CLOSE_SOUND = 0x62A456AA4769EF34, // 0xBA2CF407
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Works for planes only.<br/>
@@ -2079,13 +2079,13 @@ namespace GTA.Native
 		IS_GAME_IN_CONTROL_OF_MUSIC = 0x6D28DC1671E334FD, // 0x7643170D
 
 		/// <summary>
-		/// Parameters: bool active
+		/// Parameters: BOOL active
 		/// </summary>
 		/// <returns>void</returns>
 		SET_GPS_ACTIVE = 0x3BD3F52BA9B1E4E8, // 0x0FC3379A
 
 		/// <summary>
-		/// Parameters: string audioName
+		/// Parameters: const char* audioName
 		/// </summary>
 		/// <remarks>
 		/// Called 38 times in the scripts. There are 5 different audioNames used.<br/>
@@ -2105,13 +2105,13 @@ namespace GTA.Native
 		IS_MISSION_COMPLETE_READY_FOR_UI = 0x6F259F82D873B8B8, // 0xCBE09AEC
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		BLOCK_DEATH_JINGLE = 0xF154B8D1775B2DEC, // 0xD2858D8A
 
 		/// <summary>
-		/// Parameters: string scene
+		/// Parameters: const char* scene
 		/// </summary>
 		/// <remarks>
 		/// Used to prepare a scene where the surrounding sound is muted or a bit changed. This does not play any sound.<br/>
@@ -2122,7 +2122,7 @@ namespace GTA.Native
 		START_AUDIO_SCENE = 0x013A80FC08F6E4F2, // 0xE48D757B
 
 		/// <summary>
-		/// Parameters: string scene
+		/// Parameters: const char* scene
 		/// </summary>
 		/// <remarks>
 		/// Full list of audio scene names by DurtyFree <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/audioSceneNames.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/audioSceneNames.json</see><br/>
@@ -2137,7 +2137,7 @@ namespace GTA.Native
 		STOP_AUDIO_SCENES = 0xBAC7FC81A75EC1A1, // 0xF6C7342A
 
 		/// <summary>
-		/// Parameters: string scene
+		/// Parameters: const char* scene
 		/// </summary>
 		/// <remarks>
 		/// Full list of audio scene names by DurtyFree <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/audioSceneNames.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/audioSceneNames.json</see><br/>
@@ -2146,7 +2146,7 @@ namespace GTA.Native
 		IS_AUDIO_SCENE_ACTIVE = 0xB65B60556E2A9225, // 0xACBED05C
 
 		/// <summary>
-		/// Parameters: string scene, string variable, float value
+		/// Parameters: const char* scene, const char* variable, float value
 		/// </summary>
 		/// <remarks>
 		/// Full list of audio scene names by DurtyFree <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/audioSceneNames.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/audioSceneNames.json</see><br/>
@@ -2161,7 +2161,7 @@ namespace GTA.Native
 		SET_AUDIO_SCRIPT_CLEANUP_TIME = 0xA5F377B175A699C5, // 0xE812925D
 
 		/// <summary>
-		/// Parameters: Entity entity, string groupName, float p2
+		/// Parameters: Entity entity, const char* groupName, float p2
 		/// </summary>
 		/// <remarks>
 		/// All found occurrences in b678d:<br/>
@@ -2189,7 +2189,7 @@ namespace GTA.Native
 
 
 		/// <summary>
-		/// Parameters: string eventName
+		/// Parameters: const char* eventName
 		/// </summary>
 		/// <remarks>
 		/// All music event names found in the b617d scripts: <see href='https://pastebin.com/GnYt0R3P'>https://pastebin.com/GnYt0R3P</see><br/>
@@ -2199,7 +2199,7 @@ namespace GTA.Native
 		PREPARE_MUSIC_EVENT = 0x1E5185B72EF5158A, // 0x534A5C1C
 
 		/// <summary>
-		/// Parameters: string eventName
+		/// Parameters: const char* eventName
 		/// </summary>
 		/// <remarks>
 		/// All music event names found in the b617d scripts: <see href='https://pastebin.com/GnYt0R3P'>https://pastebin.com/GnYt0R3P</see><br/>
@@ -2209,7 +2209,7 @@ namespace GTA.Native
 		CANCEL_MUSIC_EVENT = 0x5B17A90291133DA5, // 0x89FF942D
 
 		/// <summary>
-		/// Parameters: string eventName
+		/// Parameters: const char* eventName
 		/// </summary>
 		/// <remarks>
 		/// List of all usable event names found in b617d used with this native. Sorted alphabetically and identical names removed: <see href='https://pastebin.com/RzDFmB1W'>https://pastebin.com/RzDFmB1W</see><br/>
@@ -2226,7 +2226,7 @@ namespace GTA.Native
 		GET_MUSIC_PLAYTIME = 0xE7A0D23DC414507B, // 0xD633C809
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		SET_GLOBAL_RADIO_SIGNAL_LEVEL = 0x159B7318403A1CD8,
@@ -2241,7 +2241,7 @@ namespace GTA.Native
 		CLEAR_ALL_BROKEN_GLASS = 0xB32209EFFDC04913, // 0xE6B033BF
 
 		/// <summary>
-		/// Parameters: bool p0, IntPtr p1
+		/// Parameters: BOOL p0, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		SCRIPT_OVERRIDES_WIND_ELEVATION = 0x70B8EC8FC108A634, // 0x95050CAD
@@ -2262,7 +2262,7 @@ namespace GTA.Native
 		FORCE_PED_PANIC_WALLA = 0x062D5EAD4DA2FA6A, // 0xD87AF337
 
 		/// <summary>
-		/// Parameters: string alarmName
+		/// Parameters: const char* alarmName
 		/// </summary>
 		/// <remarks>
 		/// Example:<br/>
@@ -2273,7 +2273,7 @@ namespace GTA.Native
 		PREPARE_ALARM = 0x9D74AE343DB65533, // 0x084932E8
 
 		/// <summary>
-		/// Parameters: string alarmName, bool p2
+		/// Parameters: const char* alarmName, BOOL p2
 		/// </summary>
 		/// <remarks>
 		/// Example:<br/>
@@ -2304,7 +2304,7 @@ namespace GTA.Native
 		START_ALARM = 0x0355EF116C4C97B2, // 0x703F524B
 
 		/// <summary>
-		/// Parameters: string alarmName, bool toggle
+		/// Parameters: const char* alarmName, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Example:<br/>
@@ -2318,13 +2318,13 @@ namespace GTA.Native
 		STOP_ALARM = 0xA1CADDCD98415A41, // 0xF987BE8C
 
 		/// <summary>
-		/// Parameters: bool stop
+		/// Parameters: BOOL stop
 		/// </summary>
 		/// <returns>void</returns>
 		STOP_ALL_ALARMS = 0x2F794A877ADD4C92, // 0xC3CB9DC6
 
 		/// <summary>
-		/// Parameters: string alarmName
+		/// Parameters: const char* alarmName
 		/// </summary>
 		/// <remarks>
 		/// Example:<br/>
@@ -2361,7 +2361,7 @@ namespace GTA.Native
 		RESET_PED_AUDIO_FLAGS = 0xF54BB7B61036F335, // 0xDF720C86
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Enables/disables ped's "loud" footstep sound.<br/>
@@ -2374,7 +2374,7 @@ namespace GTA.Native
 		_SET_PED_AUDIO_FOOTSTEP_LOUD = 0x0653B735BFBDFE87,
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Enables/disables ped's "quiet" footstep sound.<br/>
@@ -2387,7 +2387,7 @@ namespace GTA.Native
 		_SET_PED_AUDIO_FOOTSTEP_QUIET = 0x29DA3CA8D8B2692D,
 
 		/// <summary>
-		/// Parameters: uint hash, bool toggle
+		/// Parameters: Hash hash, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Sets audio flag "OverridePlayerGroundMaterial"<br/>
@@ -2396,13 +2396,13 @@ namespace GTA.Native
 		OVERRIDE_PLAYER_GROUND_MATERIAL = 0xD2CC78CD3D0B50F9, // 0xC307D531
 
 		/// <summary>
-		/// Parameters: Ped ped, bool p1, uint hash
+		/// Parameters: Ped ped, BOOL p1, Hash hash
 		/// </summary>
 		/// <returns>void</returns>
 		USE_FOOTSTEP_SCRIPT_SWEETENERS = 0xBF4DC1784BE94DFA, // 0xD99E275B
 
 		/// <summary>
-		/// Parameters: uint hash, bool toggle
+		/// Parameters: Hash hash, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Sets audio flag "OverrideMicrophoneSettings"<br/>
@@ -2418,7 +2418,7 @@ namespace GTA.Native
 		FREEZE_MICROPHONE = 0xD57AAAE0E2214D11, // 0x2B9D91E8
 
 		/// <summary>
-		/// Parameters: bool value
+		/// Parameters: BOOL value
 		/// </summary>
 		/// <remarks>
 		/// If value is set to true, and ambient siren sound will be played.<br/>
@@ -2432,7 +2432,7 @@ namespace GTA.Native
 		_FORCE_AMBIENT_SIREN = 0x552369F549563AD5, // 0x13EB5861
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool p1
+		/// Parameters: Vehicle vehicle, BOOL p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_SIREN_CAN_BE_CONTROLLED_BY_AUDIO = 0x43FA0DFC5DF87815, // 0x7BED1872
@@ -2441,7 +2441,7 @@ namespace GTA.Native
 		ENABLE_STUNT_JUMP_AUDIO = 0xB81CF134AEB56FFB,
 
 		/// <summary>
-		/// Parameters: string flagName, bool toggle
+		/// Parameters: const char* flagName, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Possible flag names:<br/>
@@ -2556,37 +2556,37 @@ namespace GTA.Native
 		SET_AUDIO_FLAG = 0xB9EFD5C25018725A, // 0x1C09C9E0
 
 		/// <summary>
-		/// Parameters: string p0, IntPtr p1
+		/// Parameters: const char* p0, Any p1
 		/// </summary>
 		/// <returns>BOOL</returns>
 		PREPARE_SYNCHRONIZED_AUDIO_EVENT = 0xC7ABCACA4985A766, // 0xE1D91FD0
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any* p1
 		/// </summary>
 		/// <returns>BOOL</returns>
 		PREPARE_SYNCHRONIZED_AUDIO_EVENT_FOR_SCENE = 0x029FE7CD1B7E2E75, // 0x7652DD49
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>BOOL</returns>
 		PLAY_SYNCHRONIZED_AUDIO_EVENT = 0x8B2FD4560E55DD2D, // 0x507F3241
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>BOOL</returns>
 		STOP_SYNCHRONIZED_AUDIO_EVENT = 0x92D6A88E64A94430, // 0xADEED2B4
 
 		/// <summary>
-		/// Parameters: IntPtr p0, float x, float y, float z
+		/// Parameters: Any* p0, float x, float y, float z
 		/// </summary>
 		/// <returns>void</returns>
 		INIT_SYNCH_SCENE_AUDIO_WITH_POSITION = 0xC8EDE9BDBCCBA6D4, // 0x55A21772
 
 		/// <summary>
-		/// Parameters: string p0, Entity p1
+		/// Parameters: const char* p0, Entity p1
 		/// </summary>
 		/// <returns>void</returns>
 		INIT_SYNCH_SCENE_AUDIO_WITH_ENTITY = 0x950A154B8DAB6185, // 0xA17F9AB0
@@ -2606,7 +2606,7 @@ namespace GTA.Native
 		SET_AUDIO_SPECIAL_EFFECT_MODE = 0x12561FCBB62D5B9C, // 0x62B43677
 
 		/// <summary>
-		/// Parameters: string p0, string p1
+		/// Parameters: const char* p0, const char* p1
 		/// </summary>
 		/// <remarks>
 		/// Found in the b617d scripts, duplicates removed:  <br/>
@@ -2620,7 +2620,7 @@ namespace GTA.Native
 		SET_PORTAL_SETTINGS_OVERRIDE = 0x044DBAD7A7FA2BE5, // 0x8AD670EC
 
 		/// <summary>
-		/// Parameters: string p0
+		/// Parameters: const char* p0
 		/// </summary>
 		/// <remarks>
 		///  Found in the b617d scripts, duplicates removed: <br/>
@@ -2656,7 +2656,7 @@ namespace GTA.Native
 		UNREQUEST_TENNIS_BANKS = 0x0150B6FF25A9E2E5, // 0x1134F68B
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>void</returns>
 		SET_SKIP_MINIGUN_SPIN_UP_AUDIO = 0xBEF34B1D9624D5DD, // 0xE0047BFD
@@ -2703,7 +2703,7 @@ namespace GTA.Native
 		#region BRAIN
 
 		/// <summary>
-		/// Parameters: string name, uint model, float p2, float p3
+		/// Parameters: const char* name, Hash model, float p2, float p3
 		/// </summary>
 		/// <remarks>
 		/// BRAIN::ADD_SCRIPT_TO_RANDOM_PED("pb_prostitute", ${s_f_y_hooker_01}, 100, 0);<br/>
@@ -2715,7 +2715,7 @@ namespace GTA.Native
 		ADD_SCRIPT_TO_RANDOM_PED = 0x4EE5367468A65CCC, // 0xECC76C3D
 
 		/// <summary>
-		/// Parameters: string scriptName, uint modelHash, int p2, float activationRange, int p4, int p5
+		/// Parameters: const char* scriptName, Hash modelHash, int p2, float activationRange, int p4, int p5
 		/// </summary>
 		/// <remarks>
 		/// Registers a script for any object with a specific model hash.<br/>
@@ -2726,13 +2726,13 @@ namespace GTA.Native
 		REGISTER_OBJECT_SCRIPT_BRAIN = 0x0BE84C318BA6EC22, // 0xB6BCC608
 
 		/// <summary>
-		/// Parameters: Object object
+		/// Parameters: Object @object
 		/// </summary>
 		/// <returns>BOOL</returns>
 		IS_OBJECT_WITHIN_BRAIN_ACTIVATION_RANGE = 0xCCBA154209823057, // 0xBA4CAA56
 
 		/// <summary>
-		/// Parameters: string scriptName, float activationRange, int p2
+		/// Parameters: const char* scriptName, float activationRange, int p2
 		/// </summary>
 		/// <returns>void</returns>
 		REGISTER_WORLD_POINT_SCRIPT_BRAIN = 0x3CDC7136613284BD, // 0x725D91F7
@@ -2766,7 +2766,7 @@ namespace GTA.Native
 		_PREPARE_SCRIPT_BRAIN = 0x4D953DF78EBF8158, // 0xF3A3AB08
 
 		/// <summary>
-		/// Parameters: string scriptName
+		/// Parameters: const char* scriptName
 		/// </summary>
 		/// <remarks>
 		/// Possible values:<br/>
@@ -2801,7 +2801,7 @@ namespace GTA.Native
 		REACTIVATE_NAMED_WORLD_BRAINS_WAITING_TILL_OUT_OF_RANGE = 0x6D6840CEE8845831, // 0x949FE53E
 
 		/// <summary>
-		/// Parameters: string scriptName
+		/// Parameters: const char* scriptName
 		/// </summary>
 		/// <remarks>
 		/// Looks like a cousin of above function _6D6840CEE8845831 as it was found among them. Must be similar<br/>
@@ -2817,7 +2817,7 @@ namespace GTA.Native
 		#region CAM
 
 		/// <summary>
-		/// Parameters: bool render, bool ease, int easeTime, bool p3, bool p4, IntPtr p5
+		/// Parameters: BOOL render, BOOL ease, int easeTime, BOOL p3, BOOL p4, Any p5
 		/// </summary>
 		/// <remarks>
 		/// ease - smooth transition between the camera's positions<br/>
@@ -2830,7 +2830,7 @@ namespace GTA.Native
 		RENDER_SCRIPT_CAMS = 0x07E5B515DB0636FC, // 0x74337969
 
 		/// <summary>
-		/// Parameters: bool render, float p1, int p2, IntPtr p3
+		/// Parameters: BOOL render, float p1, int p2, Any p3
 		/// </summary>
 		/// <remarks>
 		/// This native makes the gameplay camera zoom into first person/third person with a special effect.<br/>
@@ -2843,7 +2843,7 @@ namespace GTA.Native
 		_RENDER_FIRST_PERSON_CAM = 0xC819F3CBB62BF692, // 0xD3C08183
 
 		/// <summary>
-		/// Parameters: string camName, bool p1
+		/// Parameters: const char* camName, BOOL p1
 		/// </summary>
 		/// <remarks>
 		/// "DEFAULT_SCRIPTED_CAMERA"<br/>
@@ -2856,7 +2856,7 @@ namespace GTA.Native
 		CREATE_CAM = 0xC3981DCE61D9E13F, // 0xE9BF2A7D
 
 		/// <summary>
-		/// Parameters: string camName, float posX, float posY, float posZ, float rotX, float rotY, float rotZ, float fov, bool p8, int p9
+		/// Parameters: const char* camName, float posX, float posY, float posZ, float rotX, float rotY, float rotZ, float fov, BOOL p8, int p9
 		/// </summary>
 		/// <remarks>
 		/// camName is always set to "DEFAULT_SCRIPTED_CAMERA" in Rockstar's scripts.<br/>
@@ -2873,13 +2873,13 @@ namespace GTA.Native
 		CREATE_CAM_WITH_PARAMS = 0xB51194800B257161, // 0x23B02F15
 
 		/// <summary>
-		/// Parameters: uint camHash, bool p1
+		/// Parameters: Hash camHash, BOOL p1
 		/// </summary>
 		/// <returns>Cam</returns>
 		CREATE_CAMERA = 0x5E3CF89C6BCCA67D, // 0x5D6739AE
 
 		/// <summary>
-		/// Parameters: uint camHash, float posX, float posY, float posZ, float rotX, float rotY, float rotZ, float fov, bool p8, IntPtr p9
+		/// Parameters: Hash camHash, float posX, float posY, float posZ, float rotX, float rotY, float rotZ, float fov, BOOL p8, Any p9
 		/// </summary>
 		/// <remarks>
 		/// p9 uses 2 by default<br/>
@@ -2888,7 +2888,7 @@ namespace GTA.Native
 		CREATE_CAMERA_WITH_PARAMS = 0x6ABFA3E16460F22D, // 0x0688BE9A
 
 		/// <summary>
-		/// Parameters: Cam cam, bool bScriptHostCam
+		/// Parameters: Cam cam, BOOL bScriptHostCam
 		/// </summary>
 		/// <remarks>
 		/// BOOL param indicates whether the cam should be destroyed if it belongs to the calling script.<br/>
@@ -2897,7 +2897,7 @@ namespace GTA.Native
 		DESTROY_CAM = 0x865908C81A2C22E9, // 0xC39302BD
 
 		/// <summary>
-		/// Parameters: bool bScriptHostCam
+		/// Parameters: BOOL bScriptHostCam
 		/// </summary>
 		/// <remarks>
 		/// BOOL param indicates whether the cam should be destroyed if it belongs to the calling script.<br/>
@@ -2915,7 +2915,7 @@ namespace GTA.Native
 		DOES_CAM_EXIST = 0xA7A932170592B50E, // 0x1EF89DC0
 
 		/// <summary>
-		/// Parameters: Cam cam, bool active
+		/// Parameters: Cam cam, BOOL active
 		/// </summary>
 		/// <remarks>
 		/// Set camera as active/inactive.<br/>
@@ -3001,7 +3001,7 @@ namespace GTA.Native
 		_GET_CAM_DOF_STRENGTH = 0x06D153C0B99B6128,
 
 		/// <summary>
-		/// Parameters: Cam cam, float posX, float posY, float posZ, float rotX, float rotY, float rotZ, float fieldOfView, IntPtr p8, int p9, int p10, int p11
+		/// Parameters: Cam cam, float posX, float posY, float posZ, float rotX, float rotY, float rotZ, float fieldOfView, Any p8, int p9, int p10, int p11
 		/// </summary>
 		/// <returns>void</returns>
 		SET_CAM_PARAMS = 0xBFD8727AEA3CCEBA, // 0x2167CEBF
@@ -3087,7 +3087,7 @@ namespace GTA.Native
 		SET_CAM_DOF_PLANES = 0x3CF48F6F96E749DC, // 0xAD6C2B8F
 
 		/// <summary>
-		/// Parameters: Cam cam, bool toggle
+		/// Parameters: Cam cam, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_CAM_USE_SHALLOW_DOF_MODE = 0x16A96863A17552BB, // 0x8306C256
@@ -3112,7 +3112,7 @@ namespace GTA.Native
 		SET_CAM_DOF_OVERRIDDEN_FOCUS_DISTANCE = 0xF55E4046F6F831DC,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, float p1
+		/// Parameters: Any p0, float p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_CAM_DOF_OVERRIDDEN_FOCUS_DISTANCE_BLEND_LEVEL = 0xE111A7C0D200CBC5,
@@ -3183,7 +3183,7 @@ namespace GTA.Native
 		_SET_CAM_DOF_MAX_NEAR_IN_FOCUS_DISTANCE_BLEND_LEVEL = 0x2C654B4943BDDF7C,
 
 		/// <summary>
-		/// Parameters: Cam cam, Entity entity, float xOffset, float yOffset, float zOffset, bool isRelative
+		/// Parameters: Cam cam, Entity entity, float xOffset, float yOffset, float zOffset, BOOL isRelative
 		/// </summary>
 		/// <remarks>
 		/// Last param determines if its relative to the Entity<br/>
@@ -3192,13 +3192,13 @@ namespace GTA.Native
 		ATTACH_CAM_TO_ENTITY = 0xFEDB7D269E8C60E3, // 0xAD7C45F6
 
 		/// <summary>
-		/// Parameters: Cam cam, Ped ped, int boneIndex, float x, float y, float z, bool heading
+		/// Parameters: Cam cam, Ped ped, int boneIndex, float x, float y, float z, BOOL heading
 		/// </summary>
 		/// <returns>void</returns>
 		ATTACH_CAM_TO_PED_BONE = 0x61A3DBA14AB7F411, // 0x506BB35C
 
 		/// <summary>
-		/// Parameters: Cam cam, Ped ped, int boneIndex, float p3, float p4, float p5, float p6, float p7, float p8, bool p9
+		/// Parameters: Cam cam, Ped ped, int boneIndex, float p3, float p4, float p5, float p6, float p7, float p8, BOOL p9
 		/// </summary>
 		/// <returns>void</returns>
 		HARD_ATTACH_CAM_TO_PED_BONE = 0x149916F50C34A40D,
@@ -3208,7 +3208,7 @@ namespace GTA.Native
 		_ATTACH_CAM_TO_PED_BONE_2 = 0x149916F50C34A40D,
 
 		/// <summary>
-		/// Parameters: Cam cam, Entity entity, float xRot, float yRot, float zRot, float xOffset, float yOffset, float zOffset, bool isRelative
+		/// Parameters: Cam cam, Entity entity, float xRot, float yRot, float zRot, float xOffset, float yOffset, float zOffset, BOOL isRelative
 		/// </summary>
 		/// <remarks>
 		/// Example from am_mp_drone script: <br/>
@@ -3222,7 +3222,7 @@ namespace GTA.Native
 		_ATTACH_CAM_TO_ENTITY_WITH_FIXED_DIRECTION = 0x202A5ED9CE01D6E7,
 
 		/// <summary>
-		/// Parameters: Cam cam, Vehicle vehicle, int boneIndex, bool relativeRotation, float rotX, float rotY, float rotZ, float offsetX, float offsetY, float offsetZ, bool fixedDirection
+		/// Parameters: Cam cam, Vehicle vehicle, int boneIndex, BOOL relativeRotation, float rotX, float rotY, float rotZ, float offsetX, float offsetY, float offsetZ, BOOL fixedDirection
 		/// </summary>
 		/// <remarks>
 		/// This native works with vehicles only. Bone indexes are usually given by this native GET_ENTITY_BONE_INDEX_BY_NAME.<br/>
@@ -3241,7 +3241,7 @@ namespace GTA.Native
 		DETACH_CAM = 0xA2FABBE87F4BAD82, // 0xF4FBF14A
 
 		/// <summary>
-		/// Parameters: Cam cam, bool p1
+		/// Parameters: Cam cam, BOOL p1
 		/// </summary>
 		/// <remarks>
 		/// The native seems to only be called once.<br/>
@@ -3259,7 +3259,7 @@ namespace GTA.Native
 		POINT_CAM_AT_COORD = 0xF75497BB865F0803, // 0x914BC21A
 
 		/// <summary>
-		/// Parameters: Cam cam, Entity entity, float p2, float p3, float p4, bool p5
+		/// Parameters: Cam cam, Entity entity, float p2, float p3, float p4, BOOL p5
 		/// </summary>
 		/// <remarks>
 		/// p5 always seems to be 1 i.e TRUE<br/>
@@ -3268,7 +3268,7 @@ namespace GTA.Native
 		POINT_CAM_AT_ENTITY = 0x5640BFF86B16E8DC, // 0x7597A0F7
 
 		/// <summary>
-		/// Parameters: Cam cam, Ped ped, int boneIndex, float x, float y, float z, bool p6
+		/// Parameters: Cam cam, Ped ped, int boneIndex, float x, float y, float z, BOOL p6
 		/// </summary>
 		/// <remarks>
 		/// Parameters p0-p5 seems correct. The bool p6 is unknown, but through every X360 script it's always 1. Please correct p0-p5 if any prove to be wrong. <br/>
@@ -3283,7 +3283,7 @@ namespace GTA.Native
 		STOP_CAM_POINTING = 0xF33AB75780BA57DE, // 0x5435F6A5
 
 		/// <summary>
-		/// Parameters: Cam cam, bool toggle
+		/// Parameters: Cam cam, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Allows you to aim and shoot at the direction the camera is facing.<br/>
@@ -3292,7 +3292,7 @@ namespace GTA.Native
 		SET_CAM_AFFECTS_AIMING = 0x8C1DC7770C51DC8D, // 0x0C74F9AF
 
 		/// <summary>
-		/// Parameters: Cam cam, bool toggle
+		/// Parameters: Cam cam, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Rotates the radar to match the camera's Z rotation<br/>
@@ -3305,7 +3305,7 @@ namespace GTA.Native
 		_SET_CAM_CONTROLS_RADAR_ROTATION = 0x661B5C8654ADD825, // 0xE1A0B2F1
 
 		/// <summary>
-		/// Parameters: Cam cam, bool toggle
+		/// Parameters: Cam cam, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// When set to true shadows appear more smooth but less detailed.<br/>
@@ -3319,13 +3319,13 @@ namespace GTA.Native
 		_SET_CAM_SMOOTH_SHADOWS = 0xA2767257A320FC82,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, bool p1
+		/// Parameters: Any p0, BOOL p1
 		/// </summary>
 		/// <returns>void</returns>
 		ALLOW_MOTION_BLUR_DECAY = 0x271017B9BA825366, // 0x43220969
 
 		/// <summary>
-		/// Parameters: Cam camera, string name
+		/// Parameters: Cam camera, const char* name
 		/// </summary>
 		/// <remarks>
 		/// NOTE: Debugging functions are not present in the retail version of the game.<br/>
@@ -3484,7 +3484,7 @@ namespace GTA.Native
 		IS_CAM_INTERPOLATING = 0x036F97C908C2B52C, // 0x7159CB5D
 
 		/// <summary>
-		/// Parameters: Cam cam, string type, float amplitude
+		/// Parameters: Cam cam, const char* type, float amplitude
 		/// </summary>
 		/// <remarks>
 		/// Possible shake types (updated b617d):<br/>
@@ -3505,7 +3505,7 @@ namespace GTA.Native
 		SHAKE_CAM = 0x6A25241C340D3822, // 0x1D4211B0
 
 		/// <summary>
-		/// Parameters: Cam cam, string p1, string p2, string p3, float amplitude
+		/// Parameters: Cam cam, const char* p1, const char* p2, const char* p3, float amplitude
 		/// </summary>
 		/// <remarks>
 		/// Example from michael2 script.<br/>
@@ -3527,13 +3527,13 @@ namespace GTA.Native
 		SET_CAM_SHAKE_AMPLITUDE = 0xD93DB43B82BC0D00, // 0x60FF6382
 
 		/// <summary>
-		/// Parameters: Cam cam, bool p1
+		/// Parameters: Cam cam, BOOL p1
 		/// </summary>
 		/// <returns>void</returns>
 		STOP_CAM_SHAKING = 0xBDECF64367884AC3, // 0x40D0EB87
 
 		/// <summary>
-		/// Parameters: string p0, float p1
+		/// Parameters: const char* p0, float p1
 		/// </summary>
 		/// <remarks>
 		/// CAM::SHAKE_SCRIPT_GLOBAL("HAND_SHAKE", 0.2);<br/>
@@ -3543,7 +3543,7 @@ namespace GTA.Native
 		SHAKE_SCRIPT_GLOBAL = 0xF4C8CF9E353AFECA, // 0x2B0F05CD
 
 		/// <summary>
-		/// Parameters: string p0, string p1, string p2, float p3
+		/// Parameters: const char* p0, const char* p1, const char* p2, float p3
 		/// </summary>
 		/// <remarks>
 		/// CAM::ANIMATED_SHAKE_SCRIPT_GLOBAL("SHAKE_CAM_medium", "medium", "", 0.5f);<br/>
@@ -3562,7 +3562,7 @@ namespace GTA.Native
 		IS_SCRIPT_GLOBAL_SHAKING = 0xC912AF078AF19212, // 0x6AEFE6A5
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <remarks>
 		/// In drunk_controller.c4, sub_309<br/>
@@ -3583,7 +3583,7 @@ namespace GTA.Native
 		TRIGGER_VEHICLE_PART_BROKEN_CAMERA_SHAKE = 0x5D96CFB59DA076A0,
 
 		/// <summary>
-		/// Parameters: Cam cam, string animName, string animDictionary, float x, float y, float z, float xRot, float yRot, float zRot, bool p9, int p10
+		/// Parameters: Cam cam, const char* animName, const char* animDictionary, float x, float y, float z, float xRot, float yRot, float zRot, BOOL p9, int p10
 		/// </summary>
 		/// <remarks>
 		/// Atleast one time in a script for the zRot Rockstar uses GET_ENTITY_HEADING to help fill the parameter.<br/>
@@ -3595,7 +3595,7 @@ namespace GTA.Native
 		PLAY_CAM_ANIM = 0x9A2D0FB2E7852392, // 0xBCEFB87E
 
 		/// <summary>
-		/// Parameters: Cam cam, string animName, string animDictionary
+		/// Parameters: Cam cam, const char* animName, const char* animDictionary
 		/// </summary>
 		/// <returns>BOOL</returns>
 		IS_CAM_PLAYING_ANIM = 0xC90621D8A0CEECF2, // 0xB998CB49
@@ -3613,7 +3613,7 @@ namespace GTA.Native
 		GET_CAM_ANIM_CURRENT_PHASE = 0xA10B2DB49E92A6B0, // 0x345F72D0
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, string animName, string animDictionary
+		/// Parameters: Any p0, Any p1, const char* animName, const char* animDictionary
 		/// </summary>
 		/// <remarks>
 		/// Examples:<br/>
@@ -3700,7 +3700,7 @@ namespace GTA.Native
 		DO_SCREEN_FADE_OUT = 0x891B5B39AC6302AF, // 0x89D01805
 
 		/// <summary>
-		/// Parameters: bool p0, int p1
+		/// Parameters: BOOL p0, int p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_WIDESCREEN_BORDERS = 0xDCD4EA924F42D01A, // 0x1A75DC9A
@@ -3818,13 +3818,13 @@ namespace GTA.Native
 		_SET_GAMEPLAY_CAM_RAW_PITCH = 0x759E13EBC1C15C5A,
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>void</returns>
 		SET_SCRIPTED_CAMERA_IS_FIRST_PERSON_THIS_FRAME = 0x469F2ECDEC046337,
 
 		/// <summary>
-		/// Parameters: string shakeName, float intensity
+		/// Parameters: const char* shakeName, float intensity
 		/// </summary>
 		/// <remarks>
 		/// Possible shake types (updated b617d):<br/>
@@ -3857,7 +3857,7 @@ namespace GTA.Native
 		SET_GAMEPLAY_CAM_SHAKE_AMPLITUDE = 0xA87E00932DB4D85D, // 0x9219D44A
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>void</returns>
 		STOP_GAMEPLAY_CAM_SHAKING = 0x0EF93E9F3D08C178, // 0xFD569E4E
@@ -3888,7 +3888,7 @@ namespace GTA.Native
 		IS_INTERPOLATING_TO_SCRIPT_CAMS = 0x705A276EBFF3133D, // 0x60C23785
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>void</returns>
 		SET_GAMEPLAY_CAM_ALTITUDE_FOV_SCALING_STATE = 0xDB90C6CCA48940F1, // 0x20BFF6E5
@@ -3950,7 +3950,7 @@ namespace GTA.Native
 		IS_FOLLOW_PED_CAM_ACTIVE = 0xC6D3D26810C8E0F9, // 0x9F9E856C
 
 		/// <summary>
-		/// Parameters: string camName, int p1
+		/// Parameters: const char* camName, int p1
 		/// </summary>
 		/// <remarks>
 		/// From the scripts:<br/>
@@ -3969,7 +3969,7 @@ namespace GTA.Native
 		SET_FOLLOW_PED_CAM_CUTSCENE_CHAT = 0x44A113DD6FFC48D1, // 0x1425F6AC
 
 		/// <summary>
-		/// Parameters: bool p0, bool p1
+		/// Parameters: BOOL p0, BOOL p1
 		/// </summary>
 		/// <returns>void</returns>
 		USE_SCRIPT_CAM_FOR_AMBIENT_POPULATION_ORIGIN_THIS_FRAME = 0x271401846BD26E92, // 0x8DC53629
@@ -4085,13 +4085,13 @@ namespace GTA.Native
 		IS_FOLLOW_VEHICLE_CAM_ACTIVE = 0xCBBDE6D335D6D496, // 0x8DD49B77
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>void</returns>
 		SET_FOLLOW_VEHICLE_CAM_HIGH_ANGLE_MODE_THIS_UPDATE = 0x91EF6EE6419E5B97, // 0x9DB5D391
 
 		/// <summary>
-		/// Parameters: bool p0, bool p1
+		/// Parameters: BOOL p0, BOOL p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_FOLLOW_VEHICLE_CAM_HIGH_ANGLE_MODE_EVERY_UPDATE = 0x9DFE13ECDC1EC196, // 0x92302899
@@ -4101,7 +4101,7 @@ namespace GTA.Native
 		SET_TIME_IDLE_DROP = 0x9DFE13ECDC1EC196, // 0x92302899
 
 		/// <summary>
-		/// Parameters: uint hash
+		/// Parameters: Hash hash
 		/// </summary>
 		/// <returns>BOOL</returns>
 		SET_TABLE_GAMES_CAMERA_THIS_UPDATE = 0x79C0E43EB9B944E2,
@@ -4185,7 +4185,7 @@ namespace GTA.Native
 		_USE_STUNT_CAMERA_THIS_FRAME = 0x6493CF69859B116A,
 
 		/// <summary>
-		/// Parameters: string camName
+		/// Parameters: const char* camName
 		/// </summary>
 		/// <remarks>
 		/// Sets gameplay camera to hash<br/>
@@ -4282,7 +4282,7 @@ namespace GTA.Native
 		_SET_THIRD_PERSON_AIM_CAM_NEAR_CLIP = 0x42156508606DE65E, // 0x71E9C63E
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>void</returns>
 		SET_ALLOW_CUSTOM_VEHICLE_DRIVE_BY_CAM_THIS_UPDATE = 0x4008EDF7D6E48175, // 0xD1EEBC45
@@ -4379,13 +4379,13 @@ namespace GTA.Native
 		SET_GAMEPLAY_COORD_HINT = 0xD51ADCD2D8BC0FB3, // 0xF27483C9
 
 		/// <summary>
-		/// Parameters: Ped ped, float x1, float y1, float z1, bool p4, int duration, int blendOutDuration, int blendInDuration
+		/// Parameters: Ped ped, float x1, float y1, float z1, BOOL p4, int duration, int blendOutDuration, int blendInDuration
 		/// </summary>
 		/// <returns>void</returns>
 		SET_GAMEPLAY_PED_HINT = 0x2B486269ACD548D3, // 0x7C27343E
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, float offsetX, float offsetY, float offsetZ, bool p4, int time, int easeInTime, int easeOutTime
+		/// Parameters: Vehicle vehicle, float offsetX, float offsetY, float offsetZ, BOOL p4, int time, int easeInTime, int easeOutTime
 		/// </summary>
 		/// <remarks>
 		/// Focuses the camera on the specified vehicle.<br/>
@@ -4394,13 +4394,13 @@ namespace GTA.Native
 		SET_GAMEPLAY_VEHICLE_HINT = 0xA2297E18F3E71C2E, // 0x2C9A11D8
 
 		/// <summary>
-		/// Parameters: Object object, float xOffset, float yOffset, float zOffset, bool p4, int time, int easeInTime, int easeOutTime
+		/// Parameters: Object @object, float xOffset, float yOffset, float zOffset, BOOL p4, int time, int easeInTime, int easeOutTime
 		/// </summary>
 		/// <returns>void</returns>
 		SET_GAMEPLAY_OBJECT_HINT = 0x83E87508A2CA2AC6, // 0x2ED5E2F8
 
 		/// <summary>
-		/// Parameters: Entity entity, float xOffset, float yOffset, float zOffset, bool p4, int time, int easeInTime, int easeOutTime, int p8
+		/// Parameters: Entity entity, float xOffset, float yOffset, float zOffset, BOOL p4, int time, int easeInTime, int easeOutTime, int p8
 		/// </summary>
 		/// <remarks>
 		/// p8 could be some sort of flag. Scripts use:<br/>
@@ -4416,13 +4416,13 @@ namespace GTA.Native
 		IS_GAMEPLAY_HINT_ACTIVE = 0xE520FF1AD2785B40, // 0xAD8DA205
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>void</returns>
 		STOP_GAMEPLAY_HINT = 0xF46C581C61718916, // 0x1BC28B7B
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <remarks>
 		/// This native does absolutely nothing, just a nullsub<br/>
@@ -4431,7 +4431,7 @@ namespace GTA.Native
 		STOP_GAMEPLAY_HINT_BEING_CANCELLED_THIS_UPDATE = 0xCCD078C2665D2973, // 0xCAFEE798
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>void</returns>
 		STOP_CODE_GAMEPLAY_HINT = 0x247ACBC4ABBC9D1C,
@@ -4486,7 +4486,7 @@ namespace GTA.Native
 		_SET_GAMEPLAY_HINT_ANIM_OFFSETY = 0xC92717EF615B6704, // 0x3554AA0E
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_GAMEPLAY_HINT_CAMERA_BLEND_TO_FOLLOW_PED_MEDIUM_VIEW_MODE = 0xE3433EADAAF7EE40, // 0x2F0CE859
@@ -4500,7 +4500,7 @@ namespace GTA.Native
 		_SET_GAMEPLAY_HINT_ANIM_CLOSEUP = 0xE3433EADAAF7EE40, // 0x2F0CE859
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>void</returns>
 		SET_CINEMATIC_BUTTON_ACTIVE = 0x51669F7D1FB53D9F, // 0x3FBC5D00
@@ -4509,7 +4509,7 @@ namespace GTA.Native
 		IS_CINEMATIC_CAM_RENDERING = 0xB15162CB5826E9E8, // 0x80471AD9
 
 		/// <summary>
-		/// Parameters: string shakeType, float amount
+		/// Parameters: const char* shakeType, float amount
 		/// </summary>
 		/// <remarks>
 		/// p0 argument found in the b617d scripts: "DRUNK_SHAKE"<br/>
@@ -4528,7 +4528,7 @@ namespace GTA.Native
 		SET_CINEMATIC_CAM_SHAKE_AMPLITUDE = 0xC724C701C30B2FE7, // 0x67510C4B
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>void</returns>
 		STOP_CINEMATIC_CAM_SHAKING = 0x2238E588E588A6D7, // 0x71C12904
@@ -4570,7 +4570,7 @@ namespace GTA.Native
 		_IS_IN_VEHICLE_CAM_DISABLED = 0x4F32C0D5A90A9B40,
 
 		/// <summary>
-		/// Parameters: uint p0, int time, bool p2, Entity entity
+		/// Parameters: Hash p0, int time, BOOL p2, Entity entity
 		/// </summary>
 		/// <remarks>
 		/// hash is always JOAAT("CAMERA_MAN_SHOT") in decompiled scripts<br/>
@@ -4579,7 +4579,7 @@ namespace GTA.Native
 		CREATE_CINEMATIC_SHOT = 0x741B0129D4560F31, // 0xAC494E35
 
 		/// <summary>
-		/// Parameters: uint p0
+		/// Parameters: Hash p0
 		/// </summary>
 		/// <remarks>
 		/// Hash is always JOAAT("CAMERA_MAN_SHOT") in decompiled scripts<br/>
@@ -4588,7 +4588,7 @@ namespace GTA.Native
 		IS_CINEMATIC_SHOT_ACTIVE = 0xCC9F3371A7C28BC9, // 0xA4049042
 
 		/// <summary>
-		/// Parameters: uint p0
+		/// Parameters: Hash p0
 		/// </summary>
 		/// <remarks>
 		/// Only used once in carsteal3 with p0 set to -1096069633 (CAMERA_MAN_SHOT)<br/>
@@ -4597,7 +4597,7 @@ namespace GTA.Native
 		STOP_CINEMATIC_SHOT = 0x7660C6E75D3A078E, // 0xD78358C5
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		FORCE_CINEMATIC_RENDERING_THIS_UPDATE = 0xA41BCD7213805AAC, // 0xFBB85E02
@@ -4606,7 +4606,7 @@ namespace GTA.Native
 		SET_CINEMATIC_NEWS_CHANNEL_ACTIVE_THIS_UPDATE = 0xDC9DA9E8789F5246, // 0x4938C82F
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Toggles the vehicle cinematic cam; requires the player ped to be in a vehicle to work.<br/>
@@ -4678,13 +4678,13 @@ namespace GTA.Native
 		_SET_CAM_EFFECT = 0x80C8B1846639BB19, // 0xB06CCD38
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		SET_FIRST_PERSON_FLASH_EFFECT_TYPE = 0x5C41E6BABC9E2112,
 
 		/// <summary>
-		/// Parameters: string vehicleName
+		/// Parameters: const char* vehicleName
 		/// </summary>
 		/// <remarks>
 		/// From b617 scripts:<br/>
@@ -4700,7 +4700,7 @@ namespace GTA.Native
 		_SET_GAMEPLAY_CAM_VEHICLE_CAMERA = 0x21E253A7F8DA5DFB,
 
 		/// <summary>
-		/// Parameters: uint vehicleModel
+		/// Parameters: Hash vehicleModel
 		/// </summary>
 		/// <returns>void</returns>
 		SET_FIRST_PERSON_FLASH_EFFECT_VEHICLE_MODEL_HASH = 0x11FA5D3479C7DD47,
@@ -4736,7 +4736,7 @@ namespace GTA.Native
 		SET_CLOCK_TIME = 0x47C3B5848C3E45D8, // 0x26F6AF14
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		PAUSE_CLOCK = 0x4055E40BD2DBEC1D, // 0xB02D6124
@@ -4859,7 +4859,7 @@ namespace GTA.Native
 		#region CUTSCENE
 
 		/// <summary>
-		/// Parameters: string cutsceneName, int flags
+		/// Parameters: const char* cutsceneName, int flags
 		/// </summary>
 		/// <remarks>
 		/// flags: Usually 8<br/>
@@ -4869,7 +4869,7 @@ namespace GTA.Native
 		REQUEST_CUTSCENE = 0x7A86743F475D9E09, // 0xB5977853
 
 		/// <summary>
-		/// Parameters: string cutsceneName, int playbackFlags, int flags
+		/// Parameters: const char* cutsceneName, int playbackFlags, int flags
 		/// </summary>
 		/// <remarks>
 		/// flags: Usually 8<br/>
@@ -4891,7 +4891,7 @@ namespace GTA.Native
 		HAS_CUTSCENE_LOADED = 0xC59F528E9AB9F339, // 0xF9998582
 
 		/// <summary>
-		/// Parameters: string cutsceneName
+		/// Parameters: const char* cutsceneName
 		/// </summary>
 		/// <remarks>
 		/// Full list of cutscene names by DurtyFree <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/cutsceneNames.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/cutsceneNames.json</see><br/>
@@ -4918,13 +4918,13 @@ namespace GTA.Native
 		IS_CUTSCENE_PLAYBACK_FLAG_SET = 0x71B74D2AE19338D0, // 0x7B93CDAA
 
 		/// <summary>
-		/// Parameters: string cutsceneEntName, int p1, int p2
+		/// Parameters: const char* cutsceneEntName, int p1, int p2
 		/// </summary>
 		/// <returns>void</returns>
 		SET_CUTSCENE_ENTITY_STREAMING_FLAGS = 0x4C61C75BEE8184C2, // 0x47DB08A9
 
 		/// <summary>
-		/// Parameters: string cutsceneName
+		/// Parameters: const char* cutsceneName
 		/// </summary>
 		/// <remarks>
 		/// Simply loads the cutscene and doesn't do extra stuff that REQUEST_CUTSCENE does.<br/>
@@ -4934,7 +4934,7 @@ namespace GTA.Native
 		REQUEST_CUT_FILE = 0x06A3524161C502BA, // 0x0D732CD6
 
 		/// <summary>
-		/// Parameters: string cutsceneName
+		/// Parameters: const char* cutsceneName
 		/// </summary>
 		/// <remarks>
 		/// Simply checks if the cutscene has loaded and doesn't check via CutSceneManager as opposed to HAS_[THIS]_CUTSCENE_LOADED.<br/>
@@ -4944,7 +4944,7 @@ namespace GTA.Native
 		HAS_CUT_FILE_LOADED = 0xA1C996C2A744262E, // 0x56D5B144
 
 		/// <summary>
-		/// Parameters: string cutsceneName
+		/// Parameters: const char* cutsceneName
 		/// </summary>
 		/// <remarks>
 		/// Simply unloads the cutscene and doesn't do extra stuff that REMOVE_CUTSCENE does.<br/>
@@ -4954,7 +4954,7 @@ namespace GTA.Native
 		REMOVE_CUT_FILE = 0xD00D76A7DFC9D852, // 0xB70D7C6D
 
 		/// <summary>
-		/// Parameters: string cutsceneName
+		/// Parameters: const char* cutsceneName
 		/// </summary>
 		/// <remarks>
 		/// Full list of cutscene names by DurtyFree <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/cutsceneNames.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/cutsceneNames.json</see><br/>
@@ -4985,7 +4985,7 @@ namespace GTA.Native
 		START_CUTSCENE_AT_COORDS = 0x1C9ADDA3244A1FBF, // 0x58BEA436
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>void</returns>
 		STOP_CUTSCENE = 0xC7272775B4DC786E, // 0x5EE84DC7
@@ -5033,7 +5033,7 @@ namespace GTA.Native
 		GET_CUTSCENE_SECTION_PLAYING = 0x49010A6A396553D8, // 0x1026F0D6
 
 		/// <summary>
-		/// Parameters: string cutsceneEntName, uint modelHash
+		/// Parameters: const char* cutsceneEntName, Hash modelHash
 		/// </summary>
 		/// <returns>Entity</returns>
 		GET_ENTITY_INDEX_OF_CUTSCENE_ENTITY = 0x0A2E9FDB9A8C62F6, // 0x1D09ABC7
@@ -5042,7 +5042,7 @@ namespace GTA.Native
 		GET_CUTSCENE_CONCAT_SECTION_PLAYING = 0x583DF8E3D4AFBD98, // 0x5AE68AE6
 
 		/// <summary>
-		/// Parameters: string cutsceneName
+		/// Parameters: const char* cutsceneName
 		/// </summary>
 		/// <remarks>
 		/// This function is hard-coded to always return 1.<br/>
@@ -5057,19 +5057,19 @@ namespace GTA.Native
 		DOES_CUTSCENE_HANDLE_EXIST = 0x4FCD976DA686580C,
 
 		/// <summary>
-		/// Parameters: Ped cutscenePed, string cutsceneEntName, int p2, uint modelHash, int p4
+		/// Parameters: Ped cutscenePed, const char* cutsceneEntName, int p2, Hash modelHash, int p4
 		/// </summary>
 		/// <returns>void</returns>
 		REGISTER_ENTITY_FOR_CUTSCENE = 0xE40C1C56DF95C2E8, // 0x7CBC3EC7
 
 		/// <summary>
-		/// Parameters: string cutsceneEntName, uint modelHash
+		/// Parameters: const char* cutsceneEntName, Hash modelHash
 		/// </summary>
 		/// <returns>Entity</returns>
 		GET_ENTITY_INDEX_OF_REGISTERED_ENTITY = 0xC0741A26499654CD, // 0x46D18755
 
 		/// <summary>
-		/// Parameters: uint modelHash
+		/// Parameters: Hash modelHash
 		/// </summary>
 		/// <remarks>
 		/// Full list of vehicles by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/vehicles.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/vehicles.json</see><br/>
@@ -5087,7 +5087,7 @@ namespace GTA.Native
 		SET_CUTSCENE_TRIGGER_AREA = 0x9896CE4721BE84BA, // 0x9D76D9DE
 
 		/// <summary>
-		/// Parameters: string cutsceneEntName, uint modelHash
+		/// Parameters: const char* cutsceneEntName, Hash modelHash
 		/// </summary>
 		/// <remarks>
 		/// modelHash (p1) was always 0 in R* scripts<br/>
@@ -5096,19 +5096,19 @@ namespace GTA.Native
 		CAN_SET_ENTER_STATE_FOR_REGISTERED_ENTITY = 0x645D0B458D8E17B5, // 0x55C30B26
 
 		/// <summary>
-		/// Parameters: string cutsceneEntName, uint modelHash
+		/// Parameters: const char* cutsceneEntName, Hash modelHash
 		/// </summary>
 		/// <returns>BOOL</returns>
 		CAN_SET_EXIT_STATE_FOR_REGISTERED_ENTITY = 0x4C6A6451C79E4662, // 0x8FF5D3C4
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>BOOL</returns>
 		CAN_SET_EXIT_STATE_FOR_CAMERA = 0xB2CBCD0930DFB420, // 0xEDAE6C02
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Toggles a value (bool) for cutscenes.<br/>
@@ -5117,19 +5117,19 @@ namespace GTA.Native
 		SET_PAD_CAN_SHAKE_DURING_CUTSCENE = 0xC61B86C9F61EB404, // 0x35721A08
 
 		/// <summary>
-		/// Parameters: bool p0, bool p1, bool p2, bool p3
+		/// Parameters: BOOL p0, BOOL p1, BOOL p2, BOOL p3
 		/// </summary>
 		/// <returns>void</returns>
 		SET_CUTSCENE_FADE_VALUES = 0x8093F23ABACCC7D4, // 0xD19EF0DD
 
 		/// <summary>
-		/// Parameters: bool p0, bool p1, bool p2, bool p3
+		/// Parameters: BOOL p0, BOOL p1, BOOL p2, BOOL p3
 		/// </summary>
 		/// <returns>void</returns>
 		SET_CUTSCENE_MULTIHEAD_FADE = 0x20746F7B1032A3C7,
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>void</returns>
 		SET_CUTSCENE_MULTIHEAD_FADE_MANUAL = 0x06EE9048FD080382,
@@ -5138,7 +5138,7 @@ namespace GTA.Native
 		IS_MULTIHEAD_FADE_UP = 0xA0FE76168A189DDB,
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <remarks>
 		/// Stops current cutscene with a fade transition<br/>
@@ -5150,7 +5150,7 @@ namespace GTA.Native
 		NETWORK_SET_MOCAP_CUTSCENE_CAN_BE_SKIPPED = 0x2F137B508DE238F2, // 0x8338DA1D
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>void</returns>
 		SET_CAR_GENERATORS_CAN_UPDATE_DURING_CUTSCENE = 0xE36A98D8AB3D3C66, // 0x04377C10
@@ -5159,7 +5159,7 @@ namespace GTA.Native
 		CAN_USE_MOBILE_PHONE_DURING_CUTSCENE = 0x5EDEF0CF8C1DAB3C, // 0xDBD88708
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>void</returns>
 		SET_CUTSCENE_CAN_BE_SKIPPED = 0x41FAA8FB2ECE8720, // 0x28D54A7F
@@ -5172,7 +5172,7 @@ namespace GTA.Native
 		REGISTER_SYNCHRONISED_SCRIPT_SPEECH = 0x2131046957F31B04, // 0xB60CFBB9
 
 		/// <summary>
-		/// Parameters: string cutsceneEntName, int p1, int p2, int p3, uint modelHash
+		/// Parameters: const char* cutsceneEntName, int p1, int p2, int p3, Hash modelHash
 		/// </summary>
 		/// <remarks>
 		/// Full list of ped components by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/pedComponentVariations.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/pedComponentVariations.json</see><br/>
@@ -5181,19 +5181,19 @@ namespace GTA.Native
 		SET_CUTSCENE_PED_COMPONENT_VARIATION = 0xBA01E7B6DEEFBBC9, // 0x6AF994A1
 
 		/// <summary>
-		/// Parameters: string cutsceneEntName, Ped ped, uint modelHash
+		/// Parameters: const char* cutsceneEntName, Ped ped, Hash modelHash
 		/// </summary>
 		/// <returns>void</returns>
 		SET_CUTSCENE_PED_COMPONENT_VARIATION_FROM_PED = 0x2A56C06EBEF2B0D9, // 0x1E7DA95E
 
 		/// <summary>
-		/// Parameters: string cutsceneEntName, uint modelHash
+		/// Parameters: const char* cutsceneEntName, Hash modelHash
 		/// </summary>
 		/// <returns>BOOL</returns>
 		DOES_CUTSCENE_ENTITY_EXIST = 0x499EF20C5DB25C59, // 0x58E67409
 
 		/// <summary>
-		/// Parameters: string cutsceneEntName, int p1, int p2, int p3, uint modelHash
+		/// Parameters: const char* cutsceneEntName, int p1, int p2, int p3, Hash modelHash
 		/// </summary>
 		/// <remarks>
 		/// Thanks R*! ;)<br/>
@@ -5251,7 +5251,7 @@ namespace GTA.Native
 		DATAFILE_HAS_VALID_FILE_DATA = 0xF8CC1EBE0B62E29F, // 0x2A9411DA
 
 		/// <summary>
-		/// Parameters: int requestId, IntPtr p1
+		/// Parameters: int requestId, Any p1
 		/// </summary>
 		/// <returns>BOOL</returns>
 		DATAFILE_SELECT_ACTIVE_FILE = 0x22DA66936E0FFF37, // 0xB41064A4
@@ -5263,61 +5263,61 @@ namespace GTA.Native
 		DATAFILE_DELETE_REQUESTED_FILE = 0x8F5EA1C01D65A100, // 0x9DB63CFF
 
 		/// <summary>
-		/// Parameters: IntPtr data, int dataCount, string contentName, string description, string tagsCsv, string contentTypeName, bool publish, IntPtr p7
+		/// Parameters: Any* data, int dataCount, const char* contentName, const char* description, const char* tagsCsv, const char* contentTypeName, BOOL publish, Any p7
 		/// </summary>
 		/// <returns>BOOL</returns>
 		UGC_CREATE_CONTENT = 0xC84527E235FCA219, // 0xF09157B0
 
 		/// <summary>
-		/// Parameters: string contentName, string description, string tagsCsv, string contentTypeName, bool publish, IntPtr p5
+		/// Parameters: const char* contentName, const char* description, const char* tagsCsv, const char* contentTypeName, BOOL publish, Any p5
 		/// </summary>
 		/// <returns>BOOL</returns>
 		UGC_CREATE_MISSION = 0xA5EFC3E847D60507, // 0xD96860FC
 
 		/// <summary>
-		/// Parameters: string contentId, IntPtr data, int dataCount, string contentName, string description, string tagsCsv, string contentTypeName, IntPtr p7
+		/// Parameters: const char* contentId, Any* data, int dataCount, const char* contentName, const char* description, const char* tagsCsv, const char* contentTypeName, Any p7
 		/// </summary>
 		/// <returns>BOOL</returns>
 		UGC_UPDATE_CONTENT = 0x648E7A5434AF7969, // 0x459F2683
 
 		/// <summary>
-		/// Parameters: string contentId, string contentName, string description, string tagsCsv, string contentTypeName, IntPtr p5
+		/// Parameters: const char* contentId, const char* contentName, const char* description, const char* tagsCsv, const char* contentTypeName, Any p5
 		/// </summary>
 		/// <returns>BOOL</returns>
 		UGC_UPDATE_MISSION = 0x4645DE9980999E93, // 0xDBB83E2B
 
 		/// <summary>
-		/// Parameters: string contentId, float rating, string contentTypeName, IntPtr p3
+		/// Parameters: const char* contentId, float rating, const char* contentTypeName, Any p3
 		/// </summary>
 		/// <returns>BOOL</returns>
 		UGC_SET_PLAYER_DATA = 0x692D808C34A82143, // 0xBB6321BD
 
 		/// <summary>
-		/// Parameters: int p0, IntPtr p1
+		/// Parameters: int p0, Any p1
 		/// </summary>
 		/// <returns>BOOL</returns>
 		DATAFILE_SELECT_UGC_DATA = 0xA69AC4ADE82B57A4, // 0xE8D56DA2
 
 		/// <summary>
-		/// Parameters: int p0, bool p1, IntPtr p2
+		/// Parameters: int p0, BOOL p1, Any p2
 		/// </summary>
 		/// <returns>BOOL</returns>
 		DATAFILE_SELECT_UGC_STATS = 0x9CB0BFA7A9342C3D, // 0xCB6A351E
 
 		/// <summary>
-		/// Parameters: int p0, IntPtr p1
+		/// Parameters: int p0, Any p1
 		/// </summary>
 		/// <returns>BOOL</returns>
 		DATAFILE_SELECT_UGC_PLAYER_DATA = 0x52818819057F2B40, // 0xA4D1B30E
 
 		/// <summary>
-		/// Parameters: int p0, IntPtr p1
+		/// Parameters: int p0, Any p1
 		/// </summary>
 		/// <returns>BOOL</returns>
 		DATAFILE_SELECT_CREATOR_STATS = 0x01095C95CD46B624, // 0xB8515B2F
 
 		/// <summary>
-		/// Parameters: string filename, IntPtr p1
+		/// Parameters: const char* filename, Any p1
 		/// </summary>
 		/// <remarks>
 		/// Loads a User-Generated Content (UGC) file. These files can be found in "[GTA5]\data\ugc" and "[GTA5]\common\patch\ugc". They seem to follow a naming convention, most likely of "[name]_[part].ugc". See example below for usage.<br/>
@@ -5360,7 +5360,7 @@ namespace GTA.Native
 		DATAFILE_GET_FILE_DICT = 0x906B778CA1DC72B6, // 0x86DDF9C2
 
 		/// <summary>
-		/// Parameters: string filename, IntPtr p1
+		/// Parameters: const char* filename, Any p1
 		/// </summary>
 		/// <returns>BOOL</returns>
 		DATAFILE_START_SAVE_TO_CLOUD = 0x83BCCE3224735F05, // 0x768CBB35
@@ -5375,25 +5375,25 @@ namespace GTA.Native
 		DATAFILE_IS_SAVE_PENDING = 0xBEDB96A7584AA8CF, // 0x5DCD0796
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>BOOL</returns>
 		DATAFILE_LOAD_OFFLINE_UGC_FOR_ADDITIONAL_DATA_FILE = 0xA6EEF01087181EDD,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		DATAFILE_DELETE_FOR_ADDITIONAL_DATA_FILE = 0x6AD0BD5E087866CB,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>Any*</returns>
 		DATAFILE_GET_FILE_DICT_FOR_ADDITIONAL_DATA_FILE = 0xDBF860CF1DB8E599,
 
 		/// <summary>
-		/// Parameters: IntPtr objectData, string key, bool value
+		/// Parameters: Any* objectData, const char* key, BOOL value
 		/// </summary>
 		/// <returns>void</returns>
 		DATADICT_SET_BOOL = 0x35124302A556A325, // 0x9B29D99B
@@ -5403,7 +5403,7 @@ namespace GTA.Native
 		_OBJECT_VALUE_ADD_BOOLEAN = 0x35124302A556A325, // 0x9B29D99B
 
 		/// <summary>
-		/// Parameters: IntPtr objectData, string key, int value
+		/// Parameters: Any* objectData, const char* key, int value
 		/// </summary>
 		/// <returns>void</returns>
 		DATADICT_SET_INT = 0xE7E035450A7948D5, // 0xEFCF554A
@@ -5413,7 +5413,7 @@ namespace GTA.Native
 		_OBJECT_VALUE_ADD_INTEGER = 0xE7E035450A7948D5, // 0xEFCF554A
 
 		/// <summary>
-		/// Parameters: IntPtr objectData, string key, float value
+		/// Parameters: Any* objectData, const char* key, float value
 		/// </summary>
 		/// <returns>void</returns>
 		DATADICT_SET_FLOAT = 0xC27E1CC2D795105E, // 0xE972CACF
@@ -5423,7 +5423,7 @@ namespace GTA.Native
 		_OBJECT_VALUE_ADD_FLOAT = 0xC27E1CC2D795105E, // 0xE972CACF
 
 		/// <summary>
-		/// Parameters: IntPtr objectData, string key, string value
+		/// Parameters: Any* objectData, const char* key, const char* value
 		/// </summary>
 		/// <returns>void</returns>
 		DATADICT_SET_STRING = 0x8FF3847DADD8E30C, // 0xD437615C
@@ -5433,7 +5433,7 @@ namespace GTA.Native
 		_OBJECT_VALUE_ADD_STRING = 0x8FF3847DADD8E30C, // 0xD437615C
 
 		/// <summary>
-		/// Parameters: IntPtr objectData, string key, float valueX, float valueY, float valueZ
+		/// Parameters: Any* objectData, const char* key, float valueX, float valueY, float valueZ
 		/// </summary>
 		/// <returns>void</returns>
 		DATADICT_SET_VECTOR = 0x4CD49B76338C7DEE, // 0x75FC6C3C
@@ -5443,7 +5443,7 @@ namespace GTA.Native
 		_OBJECT_VALUE_ADD_VECTOR3 = 0x4CD49B76338C7DEE, // 0x75FC6C3C
 
 		/// <summary>
-		/// Parameters: IntPtr objectData, string key
+		/// Parameters: Any* objectData, const char* key
 		/// </summary>
 		/// <returns>Any*</returns>
 		DATADICT_CREATE_DICT = 0xA358F56F10732EE1, // 0x96A8E05F
@@ -5453,7 +5453,7 @@ namespace GTA.Native
 		_OBJECT_VALUE_ADD_OBJECT = 0xA358F56F10732EE1, // 0x96A8E05F
 
 		/// <summary>
-		/// Parameters: IntPtr objectData, string key
+		/// Parameters: Any* objectData, const char* key
 		/// </summary>
 		/// <returns>Any*</returns>
 		DATADICT_CREATE_ARRAY = 0x5B11728527CA6E5F, // 0x03939B8D
@@ -5463,7 +5463,7 @@ namespace GTA.Native
 		_OBJECT_VALUE_ADD_ARRAY = 0x5B11728527CA6E5F, // 0x03939B8D
 
 		/// <summary>
-		/// Parameters: IntPtr objectData, string key
+		/// Parameters: Any* objectData, const char* key
 		/// </summary>
 		/// <returns>BOOL</returns>
 		DATADICT_GET_BOOL = 0x1186940ED72FFEEC, // 0x8876C872
@@ -5473,7 +5473,7 @@ namespace GTA.Native
 		_OBJECT_VALUE_GET_BOOLEAN = 0x1186940ED72FFEEC, // 0x8876C872
 
 		/// <summary>
-		/// Parameters: IntPtr objectData, string key
+		/// Parameters: Any* objectData, const char* key
 		/// </summary>
 		/// <returns>int</returns>
 		DATADICT_GET_INT = 0x78F06F6B1FB5A80C, // 0xA6C68693
@@ -5483,7 +5483,7 @@ namespace GTA.Native
 		_OBJECT_VALUE_GET_INTEGER = 0x78F06F6B1FB5A80C, // 0xA6C68693
 
 		/// <summary>
-		/// Parameters: IntPtr objectData, string key
+		/// Parameters: Any* objectData, const char* key
 		/// </summary>
 		/// <returns>float</returns>
 		DATADICT_GET_FLOAT = 0x06610343E73B9727, // 0xA92C1AF4
@@ -5493,7 +5493,7 @@ namespace GTA.Native
 		_OBJECT_VALUE_GET_FLOAT = 0x06610343E73B9727, // 0xA92C1AF4
 
 		/// <summary>
-		/// Parameters: IntPtr objectData, string key
+		/// Parameters: Any* objectData, const char* key
 		/// </summary>
 		/// <returns>const char*</returns>
 		DATADICT_GET_STRING = 0x3D2FD9E763B24472, // 0x942160EC
@@ -5503,7 +5503,7 @@ namespace GTA.Native
 		_OBJECT_VALUE_GET_STRING = 0x3D2FD9E763B24472, // 0x942160EC
 
 		/// <summary>
-		/// Parameters: IntPtr objectData, string key
+		/// Parameters: Any* objectData, const char* key
 		/// </summary>
 		/// <returns>Vector3</returns>
 		DATADICT_GET_VECTOR = 0x46CD3CB66E0825CC, // 0xE84A127A
@@ -5513,7 +5513,7 @@ namespace GTA.Native
 		_OBJECT_VALUE_GET_VECTOR3 = 0x46CD3CB66E0825CC, // 0xE84A127A
 
 		/// <summary>
-		/// Parameters: IntPtr objectData, string key
+		/// Parameters: Any* objectData, const char* key
 		/// </summary>
 		/// <returns>Any*</returns>
 		DATADICT_GET_DICT = 0xB6B9DDC412FCEEE2, // 0xC9C13D8D
@@ -5523,7 +5523,7 @@ namespace GTA.Native
 		_OBJECT_VALUE_GET_OBJECT = 0xB6B9DDC412FCEEE2, // 0xC9C13D8D
 
 		/// <summary>
-		/// Parameters: IntPtr objectData, string key
+		/// Parameters: Any* objectData, const char* key
 		/// </summary>
 		/// <returns>Any*</returns>
 		DATADICT_GET_ARRAY = 0x7A983AA9DA2659ED, // 0x1F2F7D00
@@ -5533,7 +5533,7 @@ namespace GTA.Native
 		_OBJECT_VALUE_GET_ARRAY = 0x7A983AA9DA2659ED, // 0x1F2F7D00
 
 		/// <summary>
-		/// Parameters: IntPtr objectData, string key
+		/// Parameters: Any* objectData, const char* key
 		/// </summary>
 		/// <remarks>
 		/// Types:<br/>
@@ -5553,7 +5553,7 @@ namespace GTA.Native
 		_OBJECT_VALUE_GET_TYPE = 0x031C55ED33227371, // 0x2678342A
 
 		/// <summary>
-		/// Parameters: IntPtr arrayData, bool value
+		/// Parameters: Any* arrayData, BOOL value
 		/// </summary>
 		/// <returns>void</returns>
 		DATAARRAY_ADD_BOOL = 0xF8B0F5A43E928C76, // 0x08174B90
@@ -5563,7 +5563,7 @@ namespace GTA.Native
 		_ARRAY_VALUE_ADD_BOOLEAN = 0xF8B0F5A43E928C76, // 0x08174B90
 
 		/// <summary>
-		/// Parameters: IntPtr arrayData, int value
+		/// Parameters: Any* arrayData, int value
 		/// </summary>
 		/// <returns>void</returns>
 		DATAARRAY_ADD_INT = 0xCABDB751D86FE93B, // 0xF29C0B36
@@ -5573,7 +5573,7 @@ namespace GTA.Native
 		_ARRAY_VALUE_ADD_INTEGER = 0xCABDB751D86FE93B, // 0xF29C0B36
 
 		/// <summary>
-		/// Parameters: IntPtr arrayData, float value
+		/// Parameters: Any* arrayData, float value
 		/// </summary>
 		/// <returns>void</returns>
 		DATAARRAY_ADD_FLOAT = 0x57A995FD75D37F56, // 0xE4302123
@@ -5583,7 +5583,7 @@ namespace GTA.Native
 		_ARRAY_VALUE_ADD_FLOAT = 0x57A995FD75D37F56, // 0xE4302123
 
 		/// <summary>
-		/// Parameters: IntPtr arrayData, string value
+		/// Parameters: Any* arrayData, const char* value
 		/// </summary>
 		/// <returns>void</returns>
 		DATAARRAY_ADD_STRING = 0x2F0661C155AEEEAA, // 0xF3C01350
@@ -5593,7 +5593,7 @@ namespace GTA.Native
 		_ARRAY_VALUE_ADD_STRING = 0x2F0661C155AEEEAA, // 0xF3C01350
 
 		/// <summary>
-		/// Parameters: IntPtr arrayData, float valueX, float valueY, float valueZ
+		/// Parameters: Any* arrayData, float valueX, float valueY, float valueZ
 		/// </summary>
 		/// <returns>void</returns>
 		DATAARRAY_ADD_VECTOR = 0x407F8D034F70F0C2, // 0x16F464B6
@@ -5603,7 +5603,7 @@ namespace GTA.Native
 		_ARRAY_VALUE_ADD_VECTOR3 = 0x407F8D034F70F0C2, // 0x16F464B6
 
 		/// <summary>
-		/// Parameters: IntPtr arrayData
+		/// Parameters: Any* arrayData
 		/// </summary>
 		/// <returns>Any*</returns>
 		DATAARRAY_ADD_DICT = 0x6889498B3E19C797, // 0xC174C71B
@@ -5613,7 +5613,7 @@ namespace GTA.Native
 		_ARRAY_VALUE_ADD_OBJECT = 0x6889498B3E19C797, // 0xC174C71B
 
 		/// <summary>
-		/// Parameters: IntPtr arrayData, int arrayIndex
+		/// Parameters: Any* arrayData, int arrayIndex
 		/// </summary>
 		/// <returns>BOOL</returns>
 		DATAARRAY_GET_BOOL = 0x50C1B2874E50C114, // 0xA2E5F921
@@ -5623,7 +5623,7 @@ namespace GTA.Native
 		_ARRAY_VALUE_GET_BOOLEAN = 0x50C1B2874E50C114, // 0xA2E5F921
 
 		/// <summary>
-		/// Parameters: IntPtr arrayData, int arrayIndex
+		/// Parameters: Any* arrayData, int arrayIndex
 		/// </summary>
 		/// <returns>int</returns>
 		DATAARRAY_GET_INT = 0x3E5AE19425CD74BE, // 0xBB120CFC
@@ -5633,7 +5633,7 @@ namespace GTA.Native
 		_ARRAY_VALUE_GET_INTEGER = 0x3E5AE19425CD74BE, // 0xBB120CFC
 
 		/// <summary>
-		/// Parameters: IntPtr arrayData, int arrayIndex
+		/// Parameters: Any* arrayData, int arrayIndex
 		/// </summary>
 		/// <returns>float</returns>
 		DATAARRAY_GET_FLOAT = 0xC0C527B525D7CFB5, // 0x08AD2CC2
@@ -5643,7 +5643,7 @@ namespace GTA.Native
 		_ARRAY_VALUE_GET_FLOAT = 0xC0C527B525D7CFB5, // 0x08AD2CC2
 
 		/// <summary>
-		/// Parameters: IntPtr arrayData, int arrayIndex
+		/// Parameters: Any* arrayData, int arrayIndex
 		/// </summary>
 		/// <returns>const char*</returns>
 		DATAARRAY_GET_STRING = 0xD3F2FFEB8D836F52, // 0x93F985A6
@@ -5653,7 +5653,7 @@ namespace GTA.Native
 		_ARRAY_VALUE_GET_STRING = 0xD3F2FFEB8D836F52, // 0x93F985A6
 
 		/// <summary>
-		/// Parameters: IntPtr arrayData, int arrayIndex
+		/// Parameters: Any* arrayData, int arrayIndex
 		/// </summary>
 		/// <returns>Vector3</returns>
 		DATAARRAY_GET_VECTOR = 0x8D2064E5B64A628A, // 0x80E3DA55
@@ -5663,7 +5663,7 @@ namespace GTA.Native
 		_ARRAY_VALUE_GET_VECTOR3 = 0x8D2064E5B64A628A, // 0x80E3DA55
 
 		/// <summary>
-		/// Parameters: IntPtr arrayData, int arrayIndex
+		/// Parameters: Any* arrayData, int arrayIndex
 		/// </summary>
 		/// <returns>Any*</returns>
 		DATAARRAY_GET_DICT = 0x8B5FADCC4E3A145F, // 0xECE81278
@@ -5673,7 +5673,7 @@ namespace GTA.Native
 		_ARRAY_VALUE_GET_OBJECT = 0x8B5FADCC4E3A145F, // 0xECE81278
 
 		/// <summary>
-		/// Parameters: IntPtr arrayData
+		/// Parameters: Any* arrayData
 		/// </summary>
 		/// <returns>int</returns>
 		DATAARRAY_GET_COUNT = 0x065DB281590CEA2D, // 0xA8A21766
@@ -5683,7 +5683,7 @@ namespace GTA.Native
 		_ARRAY_VALUE_GET_SIZE = 0x065DB281590CEA2D, // 0xA8A21766
 
 		/// <summary>
-		/// Parameters: IntPtr arrayData, int arrayIndex
+		/// Parameters: Any* arrayData, int arrayIndex
 		/// </summary>
 		/// <remarks>
 		/// Types:<br/>
@@ -5707,13 +5707,13 @@ namespace GTA.Native
 		#region DECORATOR
 
 		/// <summary>
-		/// Parameters: Entity entity, string propertyName, int timestamp
+		/// Parameters: Entity entity, const char* propertyName, int timestamp
 		/// </summary>
 		/// <returns>BOOL</returns>
 		DECOR_SET_TIME = 0x95AED7B8E39ECAA4, // 0xBBAEEF94
 
 		/// <summary>
-		/// Parameters: Entity entity, string propertyName, bool value
+		/// Parameters: Entity entity, const char* propertyName, BOOL value
 		/// </summary>
 		/// <remarks>
 		/// This function sets metadata of type bool to specified entity.<br/>
@@ -5722,7 +5722,7 @@ namespace GTA.Native
 		DECOR_SET_BOOL = 0x6B1E8E2ED1335B71, // 0x8E101F5C
 
 		/// <summary>
-		/// Parameters: Entity entity, string propertyName, float value
+		/// Parameters: Entity entity, const char* propertyName, float value
 		/// </summary>
 		/// <returns>BOOL</returns>
 		DECOR_SET_FLOAT = 0x211AB1DD8D0F363A, // 0xBC7BD5CB
@@ -5732,7 +5732,7 @@ namespace GTA.Native
 		_DECOR_SET_FLOAT = 0x211AB1DD8D0F363A, // 0xBC7BD5CB
 
 		/// <summary>
-		/// Parameters: Entity entity, string propertyName, int value
+		/// Parameters: Entity entity, const char* propertyName, int value
 		/// </summary>
 		/// <remarks>
 		/// Sets property to int.<br/>
@@ -5741,13 +5741,13 @@ namespace GTA.Native
 		DECOR_SET_INT = 0x0CE3AA5E1CA19E10, // 0xDB718B21
 
 		/// <summary>
-		/// Parameters: Entity entity, string propertyName
+		/// Parameters: Entity entity, const char* propertyName
 		/// </summary>
 		/// <returns>BOOL</returns>
 		DECOR_GET_BOOL = 0xDACE671663F2F5DB, // 0xDBCE51E0
 
 		/// <summary>
-		/// Parameters: Entity entity, string propertyName
+		/// Parameters: Entity entity, const char* propertyName
 		/// </summary>
 		/// <returns>float</returns>
 		DECOR_GET_FLOAT = 0x6524A2F114706F43, // 0x8DE5382F
@@ -5757,13 +5757,13 @@ namespace GTA.Native
 		_DECOR_GET_FLOAT = 0x6524A2F114706F43, // 0x8DE5382F
 
 		/// <summary>
-		/// Parameters: Entity entity, string propertyName
+		/// Parameters: Entity entity, const char* propertyName
 		/// </summary>
 		/// <returns>int</returns>
 		DECOR_GET_INT = 0xA06C969B02A97298, // 0xDDDE59B5
 
 		/// <summary>
-		/// Parameters: Entity entity, string propertyName
+		/// Parameters: Entity entity, const char* propertyName
 		/// </summary>
 		/// <remarks>
 		/// Returns whether or not the specified property is set for the entity.<br/>
@@ -5772,13 +5772,13 @@ namespace GTA.Native
 		DECOR_EXIST_ON = 0x05661B80A8C9165F, // 0x74EF9C40
 
 		/// <summary>
-		/// Parameters: Entity entity, string propertyName
+		/// Parameters: Entity entity, const char* propertyName
 		/// </summary>
 		/// <returns>BOOL</returns>
 		DECOR_REMOVE = 0x00EE9F297C738720, // 0xE0E2640B
 
 		/// <summary>
-		/// Parameters: string propertyName, int type
+		/// Parameters: const char* propertyName, int type
 		/// </summary>
 		/// <remarks>
 		/// <see href='https://alloc8or.re/gta5/doc/enums/eDecorType.txt'>https://alloc8or.re/gta5/doc/enums/eDecorType.txt</see><br/>
@@ -5787,7 +5787,7 @@ namespace GTA.Native
 		DECOR_REGISTER = 0x9FD90732F56403CE, // 0x68BD42A9
 
 		/// <summary>
-		/// Parameters: string propertyName, int type
+		/// Parameters: const char* propertyName, int type
 		/// </summary>
 		/// <remarks>
 		/// type: see DECOR_REGISTER<br/>
@@ -5809,7 +5809,7 @@ namespace GTA.Native
 		ARE_ANY_CCS_PENDING = 0x241FCA5B1AA14F75, // 0x0AF83036
 
 		/// <summary>
-		/// Parameters: uint dlcHash
+		/// Parameters: Hash dlcHash
 		/// </summary>
 		/// <remarks>
 		/// Returns true if the given DLC pack is present.<br/>
@@ -5899,7 +5899,7 @@ namespace GTA.Native
 		DOES_ENTITY_EXIST = 0x7239B21A38F536BA, // 0x3AC90869
 
 		/// <summary>
-		/// Parameters: Entity entity, bool p1
+		/// Parameters: Entity entity, BOOL p1
 		/// </summary>
 		/// <returns>BOOL</returns>
 		DOES_ENTITY_BELONG_TO_THIS_SCRIPT = 0xDDE6DF5AE89981D2, // 0xACFEB3F9
@@ -5937,7 +5937,7 @@ namespace GTA.Native
 		_DOES_ENTITY_HAVE_ANIM_DIRECTOR = 0x2158E81A6AF65EA9,
 
 		/// <summary>
-		/// Parameters: Entity entity, string animDict, string animName, int p3
+		/// Parameters: Entity entity, const char* animDict, const char* animName, int p3
 		/// </summary>
 		/// <remarks>
 		/// P3 is always 3 as far as i cant tell<br/>
@@ -5965,7 +5965,7 @@ namespace GTA.Native
 		HAS_ENTITY_BEEN_DAMAGED_BY_ANY_VEHICLE = 0xDFD5033FDBA0A9C8, // 0x878C2CE0
 
 		/// <summary>
-		/// Parameters: Entity entity1, Entity entity2, bool p2
+		/// Parameters: Entity entity1, Entity entity2, BOOL p2
 		/// </summary>
 		/// <remarks>
 		/// Entity 1 = Victim<br/>
@@ -6041,7 +6041,7 @@ namespace GTA.Native
 		FORCE_ENTITY_AI_AND_ANIMATION_UPDATE = 0x40FDEDB72F8293B2, // 0x58D9775F
 
 		/// <summary>
-		/// Parameters: Entity entity, string animDict, string animName
+		/// Parameters: Entity entity, const char* animDict, const char* animName
 		/// </summary>
 		/// <remarks>
 		/// Returns a float value representing animation's current playtime with respect to its total playtime. This value increasing in a range from [0 to 1] and wrap back to 0 when it reach 1.<br/>
@@ -6055,7 +6055,7 @@ namespace GTA.Native
 		GET_ENTITY_ANIM_CURRENT_TIME = 0x346D81500D088F42, // 0x83943F41
 
 		/// <summary>
-		/// Parameters: Entity entity, string animDict, string animName
+		/// Parameters: Entity entity, const char* animDict, const char* animName
 		/// </summary>
 		/// <remarks>
 		/// Returns a float value representing animation's total playtime in milliseconds.<br/>
@@ -6068,7 +6068,7 @@ namespace GTA.Native
 		GET_ENTITY_ANIM_TOTAL_TIME = 0x50BD2730B191E360, // 0x433A9D18
 
 		/// <summary>
-		/// Parameters: string animDict, string animName
+		/// Parameters: const char* animDict, const char* animName
 		/// </summary>
 		/// <remarks>
 		/// Full list of animation dictionaries and anims by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json</see><br/>
@@ -6087,7 +6087,7 @@ namespace GTA.Native
 		GET_ENTITY_ATTACHED_TO = 0x48C2BED9180FE123, // 0xFE1589F9
 
 		/// <summary>
-		/// Parameters: Entity entity, bool alive
+		/// Parameters: Entity entity, BOOL alive
 		/// </summary>
 		/// <remarks>
 		/// Gets the current coordinates for a specified entity.<br/>
@@ -6186,7 +6186,7 @@ namespace GTA.Native
 		SET_ENTITY_MAX_HEALTH = 0x166E7CF68597D8B5, // 0x96F84DF8
 
 		/// <summary>
-		/// Parameters: Entity entity, float X, float Y, float Z, bool atTop, bool inWorldCoords
+		/// Parameters: Entity entity, float X, float Y, float Z, BOOL atTop, BOOL inWorldCoords
 		/// </summary>
 		/// <returns>float</returns>
 		GET_ENTITY_HEIGHT = 0x5A504562485944DD, // 0xEE443481
@@ -6318,7 +6318,7 @@ namespace GTA.Native
 		GET_ENTITY_SPEED = 0xD5037BA82E12416F, // 0x9E1E4798
 
 		/// <summary>
-		/// Parameters: Entity entity, bool relative
+		/// Parameters: Entity entity, BOOL relative
 		/// </summary>
 		/// <remarks>
 		/// Relative can be used for getting speed relative to the frame of the vehicle, to determine for example, if you are going in reverse (-y speed) or not (+y speed). <br/>
@@ -6439,7 +6439,7 @@ namespace GTA.Native
 		IS_ENTITY_AN_OBJECT = 0x8D68C8FD0FACA94E, // 0x3F52E561
 
 		/// <summary>
-		/// Parameters: Entity entity, float xPos, float yPos, float zPos, float xSize, float ySize, float zSize, bool p7, bool p8, int p9
+		/// Parameters: Entity entity, float xPos, float yPos, float zPos, float xSize, float ySize, float zSize, BOOL p7, BOOL p8, int p9
 		/// </summary>
 		/// <remarks>
 		/// Checks if entity is within x/y/zSize distance of x/y/z. <br/>
@@ -6449,7 +6449,7 @@ namespace GTA.Native
 		IS_ENTITY_AT_COORD = 0x20B60995556D004F, // 0xD749B606
 
 		/// <summary>
-		/// Parameters: Entity entity1, Entity entity2, float xSize, float ySize, float zSize, bool p5, bool p6, int p7
+		/// Parameters: Entity entity1, Entity entity2, float xSize, float ySize, float zSize, BOOL p5, BOOL p6, int p7
 		/// </summary>
 		/// <remarks>
 		/// Checks if entity1 is within the box defined by x/y/zSize of entity2.<br/>
@@ -6492,7 +6492,7 @@ namespace GTA.Native
 		IS_ENTITY_ATTACHED_TO_ENTITY = 0xEFBE71898A993728, // 0xB0ABFEA8
 
 		/// <summary>
-		/// Parameters: Entity entity, bool p1
+		/// Parameters: Entity entity, BOOL p1
 		/// </summary>
 		/// <returns>BOOL</returns>
 		IS_ENTITY_DEAD = 0x5F9532F3B5CC2551, // 0xB6F7CBAC
@@ -6504,7 +6504,7 @@ namespace GTA.Native
 		IS_ENTITY_IN_AIR = 0x886E37EC497200B6, // 0xA4157987
 
 		/// <summary>
-		/// Parameters: Entity entity, float x1, float y1, float z1, float x2, float y2, float z2, float width, bool debug, bool includeZ, IntPtr p10
+		/// Parameters: Entity entity, float x1, float y1, float z1, float x2, float y2, float z2, float width, BOOL debug, BOOL includeZ, Any p10
 		/// </summary>
 		/// <remarks>
 		/// `p8` is a debug flag invoking functions in the same path as ``DRAW_MARKER``<br/>
@@ -6515,13 +6515,13 @@ namespace GTA.Native
 		IS_ENTITY_IN_ANGLED_AREA = 0x51210CED3DA1C78A, // 0x883622FA
 
 		/// <summary>
-		/// Parameters: Entity entity, float x1, float y1, float z1, float x2, float y2, float z2, bool p7, bool p8, IntPtr p9
+		/// Parameters: Entity entity, float x1, float y1, float z1, float x2, float y2, float z2, BOOL p7, BOOL p8, Any p9
 		/// </summary>
 		/// <returns>BOOL</returns>
 		IS_ENTITY_IN_AREA = 0x54736AA40E271165, // 0x8C2DFA9D
 
 		/// <summary>
-		/// Parameters: Entity entity, string zone
+		/// Parameters: Entity entity, const char* zone
 		/// </summary>
 		/// <remarks>
 		/// Full list of zones by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/zones.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/zones.json</see><br/>
@@ -6545,7 +6545,7 @@ namespace GTA.Native
 		GET_ENTITY_SUBMERGED_LEVEL = 0xE81AFC1BC4CC41CE, // 0x0170F68C
 
 		/// <summary>
-		/// Parameters: Entity entity, bool toggle
+		/// Parameters: Entity entity, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_ENTITY_REQUIRES_MORE_EXPENSIVE_RIVER_CHECK = 0x694E00132F2823ED, // 0x40C84A74
@@ -6562,7 +6562,7 @@ namespace GTA.Native
 		IS_ENTITY_ON_SCREEN = 0xE659E47AF827484B, // 0xC1FEC5ED
 
 		/// <summary>
-		/// Parameters: Entity entity, string animDict, string animName, int taskFlag
+		/// Parameters: Entity entity, const char* animDict, const char* animName, int taskFlag
 		/// </summary>
 		/// <remarks>
 		/// See also PED::IS_SCRIPTED_SCENARIO_PED_USING_CONDITIONAL_ANIM 0x6EC47A344923E1ED 0x3C30B447<br/>
@@ -6590,7 +6590,7 @@ namespace GTA.Native
 		IS_ENTITY_TOUCHING_ENTITY = 0x17FFC1B2BA35A494, // 0x6B931477
 
 		/// <summary>
-		/// Parameters: Entity entity, uint modelHash
+		/// Parameters: Entity entity, Hash modelHash
 		/// </summary>
 		/// <returns>BOOL</returns>
 		IS_ENTITY_TOUCHING_MODEL = 0x0F42323798A58C8C, // 0x307E7611
@@ -6626,7 +6626,7 @@ namespace GTA.Native
 		IS_ENTITY_OCCLUDED = 0xE31C2C72B8692B64, // 0x46BC5B40
 
 		/// <summary>
-		/// Parameters: uint entityModelHash, float x, float y, float z, bool p4
+		/// Parameters: Hash entityModelHash, float x, float y, float z, BOOL p4
 		/// </summary>
 		/// <returns>BOOL</returns>
 		WOULD_ENTITY_BE_OCCLUDED = 0xEE5D2A122E09EC42, // 0xEA127CBC
@@ -6638,7 +6638,7 @@ namespace GTA.Native
 		IS_ENTITY_WAITING_FOR_WORLD_COLLISION = 0xD05BFF0C0A12C68F, // 0x00AB7A4A
 
 		/// <summary>
-		/// Parameters: Entity entity, int forceType, float x, float y, float z, bool p5, bool isDirectionRel, bool isForceRel, bool p8
+		/// Parameters: Entity entity, int forceType, float x, float y, float z, BOOL p5, BOOL isDirectionRel, BOOL isForceRel, BOOL p8
 		/// </summary>
 		/// <remarks>
 		/// Applies a force to the specified entity.<br/>
@@ -6660,7 +6660,7 @@ namespace GTA.Native
 		APPLY_FORCE_TO_ENTITY_CENTER_OF_MASS = 0x18FF00FC7EFF559E, // 0x28924E98
 
 		/// <summary>
-		/// Parameters: Entity entity, int forceFlags, float x, float y, float z, float offX, float offY, float offZ, int boneIndex, bool isDirectionRel, bool ignoreUpVec, bool isForceRel, bool p12, bool p13
+		/// Parameters: Entity entity, int forceFlags, float x, float y, float z, float offX, float offY, float offZ, int boneIndex, BOOL isDirectionRel, BOOL ignoreUpVec, BOOL isForceRel, BOOL p12, BOOL p13
 		/// </summary>
 		/// <remarks>
 		/// Documented here:<br/>
@@ -6688,7 +6688,7 @@ namespace GTA.Native
 		APPLY_FORCE_TO_ENTITY = 0xC5F68BE9613E2D18, // 0xC1C0855A
 
 		/// <summary>
-		/// Parameters: Entity entity1, Entity entity2, int boneIndex, float xPos, float yPos, float zPos, float xRot, float yRot, float zRot, bool p9, bool useSoftPinning, bool collision, bool isPed, int vertexIndex, bool fixedRot, IntPtr p15
+		/// Parameters: Entity entity1, Entity entity2, int boneIndex, float xPos, float yPos, float zPos, float xRot, float yRot, float zRot, BOOL p9, BOOL useSoftPinning, BOOL collision, BOOL isPed, int vertexIndex, BOOL fixedRot, Any p15
 		/// </summary>
 		/// <remarks>
 		/// Attaches entity1 to bone (boneIndex) of entity2.<br/>
@@ -6703,7 +6703,7 @@ namespace GTA.Native
 		ATTACH_ENTITY_TO_ENTITY = 0x6B9BBD38AB0796DF, // 0xEC024237
 
 		/// <summary>
-		/// Parameters: Entity entity1, Entity entity2, int boneIndex1, int boneIndex2, bool p4, bool p5
+		/// Parameters: Entity entity1, Entity entity2, int boneIndex1, int boneIndex2, BOOL p4, BOOL p5
 		/// </summary>
 		/// <returns>void</returns>
 		ATTACH_ENTITY_BONE_TO_ENTITY_BONE = 0x5C48B75732C8456C,
@@ -6713,7 +6713,7 @@ namespace GTA.Native
 		_ATTACH_ENTITY_BONE_TO_ENTITY_BONE = 0x5C48B75732C8456C,
 
 		/// <summary>
-		/// Parameters: Entity entity1, Entity entity2, int boneIndex1, int boneIndex2, bool p4, bool p5
+		/// Parameters: Entity entity1, Entity entity2, int boneIndex1, int boneIndex2, BOOL p4, BOOL p5
 		/// </summary>
 		/// <returns>void</returns>
 		ATTACH_ENTITY_BONE_TO_ENTITY_BONE_Y_FORWARD = 0xFD1695C5D3B05439,
@@ -6723,7 +6723,7 @@ namespace GTA.Native
 		_ATTACH_ENTITY_BONE_TO_ENTITY_BONE_PHYSICALLY = 0xFD1695C5D3B05439,
 
 		/// <summary>
-		/// Parameters: Entity entity1, Entity entity2, int boneIndex1, int boneIndex2, float xPos1, float yPos1, float zPos1, float xPos2, float yPos2, float zPos2, float xRot, float yRot, float zRot, float breakForce, bool fixedRot, bool p15, bool collision, bool p17, int p18
+		/// Parameters: Entity entity1, Entity entity2, int boneIndex1, int boneIndex2, float xPos1, float yPos1, float zPos1, float xPos2, float yPos2, float zPos2, float xRot, float yRot, float zRot, float breakForce, BOOL fixedRot, BOOL p15, BOOL collision, BOOL p17, int p18
 		/// </summary>
 		/// <remarks>
 		/// breakForce is the amount of force required to break the bond.<br/>
@@ -6746,7 +6746,7 @@ namespace GTA.Native
 		PROCESS_ENTITY_ATTACHMENTS = 0xF4080490ADC51C6F, // 0x6909BA59
 
 		/// <summary>
-		/// Parameters: Entity entity, string boneName
+		/// Parameters: Entity entity, const char* boneName
 		/// </summary>
 		/// <remarks>
 		/// Returns the index of the bone. If the bone was not found, -1 will be returned. <br/>
@@ -6814,7 +6814,7 @@ namespace GTA.Native
 		DELETE_ENTITY = 0xAE3CBE5BF394C9C9, // 0xFAA3D236
 
 		/// <summary>
-		/// Parameters: Entity entity, bool dynamic, bool collision
+		/// Parameters: Entity entity, BOOL dynamic, BOOL collision
 		/// </summary>
 		/// <remarks>
 		/// If `collision` is set to true, both entities won't collide with the other until the distance between them is above 4 meters.<br/>
@@ -6824,7 +6824,7 @@ namespace GTA.Native
 		DETACH_ENTITY = 0x961AC54BF0613F5D, // 0xC8EFCB41
 
 		/// <summary>
-		/// Parameters: Entity entity, bool toggle
+		/// Parameters: Entity entity, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Freezes or unfreezes an entity preventing its coordinates to change by the player if set to `true`. You can still change the entity position using SET_ENTITY_COORDS.<br/>
@@ -6833,7 +6833,7 @@ namespace GTA.Native
 		FREEZE_ENTITY_POSITION = 0x428CA6DBD1094446, // 0x65C16D57
 
 		/// <summary>
-		/// Parameters: Entity entity, bool toggle
+		/// Parameters: Entity entity, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// True means it can be deleted by the engine when switching lobbies/missions/etc, false means the script is expected to clean it up.<br/>
@@ -6855,7 +6855,7 @@ namespace GTA.Native
 		_SET_ENTITY_CLEANUP_BY_ENGINE = 0x3910051CCECDB00C, // 0xD3850671
 
 		/// <summary>
-		/// Parameters: Entity entity, string animName, string animDict, float p3, bool loop, bool stayInAnim, bool p6, float delta, IntPtr bitset
+		/// Parameters: Entity entity, const char* animName, const char* animDict, float p3, BOOL loop, BOOL stayInAnim, BOOL p6, float delta, Any bitset
 		/// </summary>
 		/// <remarks>
 		/// delta and bitset are guessed fields. They are based on the fact that most of the calls have 0 or nil field types passed in.<br/>
@@ -6866,7 +6866,7 @@ namespace GTA.Native
 		PLAY_ENTITY_ANIM = 0x7FB218262B810701, // 0x878753D5
 
 		/// <summary>
-		/// Parameters: Entity entity, int syncedScene, string animation, string propName, float p4, float p5, IntPtr p6, float p7
+		/// Parameters: Entity entity, int syncedScene, const char* animation, const char* propName, float p4, float p5, Any p6, float p7
 		/// </summary>
 		/// <remarks>
 		/// p4 and p7 are usually 1000.0f.<br/>
@@ -6876,7 +6876,7 @@ namespace GTA.Native
 		PLAY_SYNCHRONIZED_ENTITY_ANIM = 0xC77720A12FE14A86, // 0x012760AA
 
 		/// <summary>
-		/// Parameters: float x1, float y1, float z1, float x2, IntPtr y2, float z2, string p6, string p7, float p8, float p9, IntPtr p10, float p11
+		/// Parameters: float x1, float y1, float z1, float x2, Any y2, float z2, const char* p6, const char* p7, float p8, float p9, Any p10, float p11
 		/// </summary>
 		/// <remarks>
 		/// p6,p7 probably animname and animdict<br/>
@@ -6886,13 +6886,13 @@ namespace GTA.Native
 		PLAY_SYNCHRONIZED_MAP_ENTITY_ANIM = 0xB9C54555ED30FBC4, // 0xEB4CBA74
 
 		/// <summary>
-		/// Parameters: float x1, float y1, float z1, float x2, IntPtr y2, float z2
+		/// Parameters: float x1, float y1, float z1, float x2, Any y2, float z2
 		/// </summary>
 		/// <returns>BOOL</returns>
 		STOP_SYNCHRONIZED_MAP_ENTITY_ANIM = 0x11E79CAB7183B6F5, // 0x7253D5B2
 
 		/// <summary>
-		/// Parameters: Entity entity, string animation, string animGroup, float p3
+		/// Parameters: Entity entity, const char* animation, const char* animGroup, float p3
 		/// </summary>
 		/// <remarks>
 		/// Full list of animation dictionaries and anims by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json</see><br/>
@@ -6902,7 +6902,7 @@ namespace GTA.Native
 		STOP_ENTITY_ANIM = 0x28004F88151E03E0, // 0xC4769830
 
 		/// <summary>
-		/// Parameters: Entity entity, float p1, bool p2
+		/// Parameters: Entity entity, float p1, BOOL p2
 		/// </summary>
 		/// <remarks>
 		/// p1 sync task id?<br/>
@@ -6911,7 +6911,7 @@ namespace GTA.Native
 		STOP_SYNCHRONIZED_ENTITY_ANIM = 0x43D3807C077261E3, // 0xE27D2FC1
 
 		/// <summary>
-		/// Parameters: Entity entity, uint actionHash
+		/// Parameters: Entity entity, Hash actionHash
 		/// </summary>
 		/// <remarks>
 		/// if (ENTITY::HAS_ANIM_EVENT_FIRED(PLAYER::PLAYER_PED_ID(), MISC::GET_HASH_KEY("CreateObject")))<br/>
@@ -6920,7 +6920,7 @@ namespace GTA.Native
 		HAS_ANIM_EVENT_FIRED = 0xEAF4CD9EA3E7E922, // 0x66571CA0
 
 		/// <summary>
-		/// Parameters: string animDictionary, string animName, string p2, IntPtr p3, IntPtr p4
+		/// Parameters: const char* animDictionary, const char* animName, const char* p2, Any* p3, Any* p4
 		/// </summary>
 		/// <remarks>
 		/// In the script "player_scene_t_bbfight.c4":<br/>
@@ -6937,7 +6937,7 @@ namespace GTA.Native
 		FIND_ANIM_EVENT_PHASE = 0x07F1BE2BCCAA27A7, // 0xC41DDA62
 
 		/// <summary>
-		/// Parameters: Entity entity, string animDictionary, string animName, float time
+		/// Parameters: Entity entity, const char* animDictionary, const char* animName, float time
 		/// </summary>
 		/// <remarks>
 		/// Full list of animation dictionaries and anims by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json</see><br/>
@@ -6946,7 +6946,7 @@ namespace GTA.Native
 		SET_ENTITY_ANIM_CURRENT_TIME = 0x4487C259F0F70977, // 0x99D90735
 
 		/// <summary>
-		/// Parameters: Entity entity, string animDictionary, string animName, float speedMultiplier
+		/// Parameters: Entity entity, const char* animDictionary, const char* animName, float speedMultiplier
 		/// </summary>
 		/// <remarks>
 		/// Full list of animation dictionaries and anims by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json</see><br/>
@@ -6955,7 +6955,7 @@ namespace GTA.Native
 		SET_ENTITY_ANIM_SPEED = 0x28D1A16553C51776, // 0x3990C90A
 
 		/// <summary>
-		/// Parameters: Entity entity, bool p1, bool p2
+		/// Parameters: Entity entity, BOOL p1, BOOL p2
 		/// </summary>
 		/// <remarks>
 		/// Makes the specified entity (ped, vehicle or object) persistent. Persistent entities will not automatically be removed by the engine.<br/>
@@ -7007,7 +7007,7 @@ namespace GTA.Native
 		SET_VEHICLE_AS_NO_LONGER_NEEDED = 0x629BFA74418D6239, // 0x9B0E10BE
 
 		/// <summary>
-		/// Parameters: Object* object
+		/// Parameters: Object* @object
 		/// </summary>
 		/// <remarks>
 		/// This is an alias of SET_ENTITY_AS_NO_LONGER_NEEDED.<br/>
@@ -7016,7 +7016,7 @@ namespace GTA.Native
 		SET_OBJECT_AS_NO_LONGER_NEEDED = 0x3AE22DEB5BA5A3E6, // 0x3F6B949F
 
 		/// <summary>
-		/// Parameters: Entity entity, bool toggle
+		/// Parameters: Entity entity, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_ENTITY_CAN_BE_DAMAGED = 0x1760FFA8AB074D66, // 0x60B6E744
@@ -7032,19 +7032,19 @@ namespace GTA.Native
 		_GET_ENTITY_CAN_BE_DAMAGED = 0xD95CC5D2AB15A09F, // 0xE4938B5D
 
 		/// <summary>
-		/// Parameters: Entity entity, bool bCanBeDamaged, int relGroup
+		/// Parameters: Entity entity, BOOL bCanBeDamaged, int relGroup
 		/// </summary>
 		/// <returns>void</returns>
 		SET_ENTITY_CAN_BE_DAMAGED_BY_RELATIONSHIP_GROUP = 0xE22D8FDE858B8119, // 0x34165B5D
 
 		/// <summary>
-		/// Parameters: Entity entity, bool toggle
+		/// Parameters: Entity entity, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_ENTITY_CAN_ONLY_BE_DAMAGED_BY_SCRIPT_PARTICIPANTS = 0x352E2B5CF420BF3B,
 
 		/// <summary>
-		/// Parameters: Entity entity, bool toggle
+		/// Parameters: Entity entity, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Sets whether the entity can be targeted without being in line-of-sight.<br/>
@@ -7053,7 +7053,7 @@ namespace GTA.Native
 		SET_ENTITY_CAN_BE_TARGETED_WITHOUT_LOS = 0xD3997889736FD899, // 0x3B13797C
 
 		/// <summary>
-		/// Parameters: Entity entity, bool toggle, bool keepPhysics
+		/// Parameters: Entity entity, BOOL toggle, BOOL keepPhysics
 		/// </summary>
 		/// <returns>void</returns>
 		SET_ENTITY_COLLISION = 0x1A9205C1B9EE827F, // 0x139FD37D
@@ -7069,7 +7069,7 @@ namespace GTA.Native
 		_GET_ENTITY_COLLISON_DISABLED = 0xCCF1E97BEFDAE480, // 0xE8C0C629
 
 		/// <summary>
-		/// Parameters: Entity entity, bool toggle, bool keepPhysics
+		/// Parameters: Entity entity, BOOL toggle, BOOL keepPhysics
 		/// </summary>
 		/// <returns>void</returns>
 		SET_ENTITY_COMPLETELY_DISABLE_COLLISION = 0x9EBC85ED0FFFE51C, // 0xBD0D4831
@@ -7079,7 +7079,7 @@ namespace GTA.Native
 		_SET_ENTITY_COLLISION_2 = 0x9EBC85ED0FFFE51C, // 0xBD0D4831
 
 		/// <summary>
-		/// Parameters: Entity entity, float xPos, float yPos, float zPos, bool xAxis, bool yAxis, bool zAxis, bool clearArea
+		/// Parameters: Entity entity, float xPos, float yPos, float zPos, BOOL xAxis, BOOL yAxis, BOOL zAxis, BOOL clearArea
 		/// </summary>
 		/// <remarks>
 		/// p7 is always 1 in the scripts. Set to 1, an area around the destination coords for the moved entity is cleared from other entities. <br/>
@@ -7091,7 +7091,7 @@ namespace GTA.Native
 		SET_ENTITY_COORDS = 0x06843DA7060A026B, // 0xDF70B41B
 
 		/// <summary>
-		/// Parameters: Entity entity, float xPos, float yPos, float zPos, bool alive, bool deadFlag, bool ragdollFlag, bool clearArea
+		/// Parameters: Entity entity, float xPos, float yPos, float zPos, BOOL alive, BOOL deadFlag, BOOL ragdollFlag, BOOL clearArea
 		/// </summary>
 		/// <returns>void</returns>
 		SET_ENTITY_COORDS_WITHOUT_PLANTS_RESET = 0x621873ECE1178967, // 0x749B282E
@@ -7101,7 +7101,7 @@ namespace GTA.Native
 		_SET_ENTITY_COORDS_2 = 0x621873ECE1178967, // 0x749B282E
 
 		/// <summary>
-		/// Parameters: Entity entity, float xPos, float yPos, float zPos, bool xAxis, bool yAxis, bool zAxis
+		/// Parameters: Entity entity, float xPos, float yPos, float zPos, BOOL xAxis, BOOL yAxis, BOOL zAxis
 		/// </summary>
 		/// <remarks>
 		/// Axis - Invert Axis Flags<br/>
@@ -7110,7 +7110,7 @@ namespace GTA.Native
 		SET_ENTITY_COORDS_NO_OFFSET = 0x239A3351AC1DA385, // 0x4C83DE8D
 
 		/// <summary>
-		/// Parameters: Entity entity, bool toggle
+		/// Parameters: Entity entity, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_ENTITY_DYNAMIC = 0x1718DE8E3F2823CA, // 0x236F525B
@@ -7136,7 +7136,7 @@ namespace GTA.Native
 		SET_ENTITY_HEALTH = 0x6B76DC1F3AE6E6A3, // 0xFBCD1831
 
 		/// <summary>
-		/// Parameters: Entity entity, bool toggle
+		/// Parameters: Entity entity, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Sets a ped or an object totally invincible. It doesn't take any kind of damage. Peds will not ragdoll on explosions and the tazer animation won't apply either.<br/>
@@ -7158,19 +7158,19 @@ namespace GTA.Native
 		SET_ENTITY_INVINCIBLE = 0x3882114BDE571AD4, // 0xC1213A21
 
 		/// <summary>
-		/// Parameters: Entity entity, bool p1, float p2
+		/// Parameters: Entity entity, BOOL p1, float p2
 		/// </summary>
 		/// <returns>void</returns>
 		SET_ENTITY_IS_TARGET_PRIORITY = 0xEA02E132F5C68722, // 0x9729EE32
 
 		/// <summary>
-		/// Parameters: Entity entity, bool toggle
+		/// Parameters: Entity entity, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_ENTITY_LIGHTS = 0x7CFBA6A80BDF3874, // 0xE8FC85AF
 
 		/// <summary>
-		/// Parameters: Entity entity, bool toggle, IntPtr p2
+		/// Parameters: Entity entity, BOOL toggle, Any p2
 		/// </summary>
 		/// <remarks>
 		/// Loads collision grid for an entity spawned outside of a player's loaded area. This allows peds to execute tasks rather than sit dormant because of a lack of a physics grid.<br/>
@@ -7192,19 +7192,19 @@ namespace GTA.Native
 		SET_ENTITY_MAX_SPEED = 0x0E46A3FCBDE2A1B1, // 0x46AFFED3
 
 		/// <summary>
-		/// Parameters: Entity entity, bool toggle
+		/// Parameters: Entity entity, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_ENTITY_ONLY_DAMAGED_BY_PLAYER = 0x79F020FF9EDC0748, // 0x4B707F50
 
 		/// <summary>
-		/// Parameters: Entity entity, bool p1, IntPtr p2
+		/// Parameters: Entity entity, BOOL p1, Any p2
 		/// </summary>
 		/// <returns>void</returns>
 		SET_ENTITY_ONLY_DAMAGED_BY_RELATIONSHIP_GROUP = 0x7022BD828FA0B082, // 0x202237E2
 
 		/// <summary>
-		/// Parameters: Entity entity, bool bulletProof, bool fireProof, bool explosionProof, bool collisionProof, bool meleeProof, bool steamProof, bool p7, bool waterProof
+		/// Parameters: Entity entity, BOOL bulletProof, BOOL fireProof, BOOL explosionProof, BOOL collisionProof, BOOL meleeProof, BOOL steamProof, BOOL p7, BOOL waterProof
 		/// </summary>
 		/// <remarks>
 		/// Enable / disable each type of damage.<br/>
@@ -7235,13 +7235,13 @@ namespace GTA.Native
 		SET_ENTITY_QUATERNION = 0x77B21BE7AC540F07, // 0x83B6046F
 
 		/// <summary>
-		/// Parameters: Entity entity, bool toggle
+		/// Parameters: Entity entity, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_ENTITY_RECORDS_COLLISIONS = 0x0A50A1EEDAD01E65, // 0x6B189A1A
 
 		/// <summary>
-		/// Parameters: Entity entity, float pitch, float roll, float yaw, int rotationOrder, bool p5
+		/// Parameters: Entity entity, float pitch, float roll, float yaw, int rotationOrder, BOOL p5
 		/// </summary>
 		/// <remarks>
 		/// rotationOrder refers to the order yaw pitch roll is applied<br/>
@@ -7254,7 +7254,7 @@ namespace GTA.Native
 		SET_ENTITY_ROTATION = 0x8524A8B0171D5E07, // 0x0A345EFE
 
 		/// <summary>
-		/// Parameters: Entity entity, bool toggle, bool p2
+		/// Parameters: Entity entity, BOOL toggle, BOOL p2
 		/// </summary>
 		/// <remarks>
 		/// p2 is always 0.<br/>
@@ -7263,13 +7263,13 @@ namespace GTA.Native
 		SET_ENTITY_VISIBLE = 0xEA1C610A04DB6BBB, // 0xD043E8E1
 
 		/// <summary>
-		/// Parameters: Entity entity, bool toggle
+		/// Parameters: Entity entity, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_ENTITY_WATER_REFLECTION_FLAG = 0xC34BC448DA29F5E9,
 
 		/// <summary>
-		/// Parameters: Entity entity, bool p1
+		/// Parameters: Entity entity, BOOL p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_ENTITY_MIRROR_REFLECTION_FLAG = 0xE66377CDDADA4810,
@@ -7294,7 +7294,7 @@ namespace GTA.Native
 		_SET_ENTITY_ANGULAR_VELOCITY = 0x8339643499D1222E,
 
 		/// <summary>
-		/// Parameters: Entity entity, bool toggle
+		/// Parameters: Entity entity, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_ENTITY_HAS_GRAVITY = 0x4A4722448F18EEF5, // 0xE2F262BF
@@ -7318,7 +7318,7 @@ namespace GTA.Native
 		GET_ENTITY_LOD_DIST = 0x4159C2762B5791D6, // 0x4DA3D51F
 
 		/// <summary>
-		/// Parameters: Entity entity, int alphaLevel, bool skin
+		/// Parameters: Entity entity, int alphaLevel, BOOL skin
 		/// </summary>
 		/// <remarks>
 		/// skin - everything alpha except skin<br/>
@@ -7349,7 +7349,7 @@ namespace GTA.Native
 		RESET_PICKUP_ENTITY_GLOW = 0x490861B88F4FD846,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PICKUP_COLLIDES_WITH_PROJECTILES = 0xCEA7C8E1B48FF68C,
@@ -7365,13 +7365,13 @@ namespace GTA.Native
 		SET_ENTITY_SORT_BIAS = 0x5C3B791D580E0BC2,
 
 		/// <summary>
-		/// Parameters: Entity entity, bool toggle
+		/// Parameters: Entity entity, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_ENTITY_ALWAYS_PRERENDER = 0xACAD101E1FB66689, // 0xD8FF798A
 
 		/// <summary>
-		/// Parameters: Entity entity, bool toggle
+		/// Parameters: Entity entity, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_ENTITY_RENDER_SCORCHED = 0x730F5F8D3F0F2050, // 0xAAC9317B
@@ -7397,7 +7397,7 @@ namespace GTA.Native
 		SET_ENTITY_IS_IN_VEHICLE = 0x78E8E3A640178255,
 
 		/// <summary>
-		/// Parameters: float x, float y, float z, float radius, uint originalModel, uint newModel, bool p6
+		/// Parameters: float x, float y, float z, float radius, Hash originalModel, Hash newModel, BOOL p6
 		/// </summary>
 		/// <remarks>
 		/// Only works with objects!<br/>
@@ -7406,13 +7406,13 @@ namespace GTA.Native
 		CREATE_MODEL_SWAP = 0x92C47782FDA8B2A3, // 0x0BC12F9E
 
 		/// <summary>
-		/// Parameters: float x, float y, float z, float radius, uint originalModel, uint newModel, bool p6
+		/// Parameters: float x, float y, float z, float radius, Hash originalModel, Hash newModel, BOOL p6
 		/// </summary>
 		/// <returns>void</returns>
 		REMOVE_MODEL_SWAP = 0x033C0F9A64E229AE, // 0xCE0AA8BC
 
 		/// <summary>
-		/// Parameters: float x, float y, float z, float radius, uint modelHash, bool p5
+		/// Parameters: float x, float y, float z, float radius, Hash modelHash, BOOL p5
 		/// </summary>
 		/// <remarks>
 		/// p5 = sets as true in scripts<br/>
@@ -7423,13 +7423,13 @@ namespace GTA.Native
 		CREATE_MODEL_HIDE = 0x8A97BCA30A0CE478, // 0x7BD5CF2F
 
 		/// <summary>
-		/// Parameters: float x, float y, float z, float radius, uint modelHash, bool p5
+		/// Parameters: float x, float y, float z, float radius, Hash modelHash, BOOL p5
 		/// </summary>
 		/// <returns>void</returns>
 		CREATE_MODEL_HIDE_EXCLUDING_SCRIPT_OBJECTS = 0x3A52AE588830BF7F, // 0x07AAF22C
 
 		/// <summary>
-		/// Parameters: float x, float y, float z, float radius, uint modelHash, bool p5
+		/// Parameters: float x, float y, float z, float radius, Hash modelHash, BOOL p5
 		/// </summary>
 		/// <remarks>
 		/// This native makes entities visible that are hidden by the native CREATE_MODEL_HIDE.<br/>
@@ -7439,19 +7439,19 @@ namespace GTA.Native
 		REMOVE_MODEL_HIDE = 0xD9E3006FB3CBD765, // 0x993DBC10
 
 		/// <summary>
-		/// Parameters: float x, float y, float z, IntPtr p3, uint modelHash, bool p5
+		/// Parameters: float x, float y, float z, Any p3, Hash modelHash, BOOL p5
 		/// </summary>
 		/// <returns>void</returns>
 		CREATE_FORCED_OBJECT = 0x150E808B375A385A, // 0x335190A2
 
 		/// <summary>
-		/// Parameters: float x, float y, float z, float p3, uint modelHash
+		/// Parameters: float x, float y, float z, float p3, Hash modelHash
 		/// </summary>
 		/// <returns>void</returns>
 		REMOVE_FORCED_OBJECT = 0x61B6775E83C0DB6F, // 0xAED73ADD
 
 		/// <summary>
-		/// Parameters: Entity entity1, Entity entity2, bool thisFrameOnly
+		/// Parameters: Entity entity1, Entity entity2, BOOL thisFrameOnly
 		/// </summary>
 		/// <remarks>
 		/// Calling this function disables collision between two entities.<br/>
@@ -7462,13 +7462,13 @@ namespace GTA.Native
 		SET_ENTITY_NO_COLLISION_ENTITY = 0xA53ED5520C07654A, // 0x1E11BFE9
 
 		/// <summary>
-		/// Parameters: Entity entity, bool toggle
+		/// Parameters: Entity entity, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_ENTITY_MOTION_BLUR = 0x295D82A8559F9150, // 0xE90005B8
 
 		/// <summary>
-		/// Parameters: Entity entity, bool toggle
+		/// Parameters: Entity entity, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// p1 always false.<br/>
@@ -7477,7 +7477,7 @@ namespace GTA.Native
 		SET_CAN_AUTO_VAULT_ON_ENTITY = 0xE12ABE5E3A389A6C, // 0x44767B31
 
 		/// <summary>
-		/// Parameters: Entity entity, bool toggle
+		/// Parameters: Entity entity, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// p1 always false.<br/>
@@ -7486,7 +7486,7 @@ namespace GTA.Native
 		SET_CAN_CLIMB_ON_ENTITY = 0xA80AE305E0A3044F, // 0xE224A6A5
 
 		/// <summary>
-		/// Parameters: Entity entity, bool toggle
+		/// Parameters: Entity entity, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Only called within 1 script for x360. 'fm_mission_controller' and it used on an object. <br/>
@@ -7498,7 +7498,7 @@ namespace GTA.Native
 		SET_WAIT_FOR_COLLISIONS_BEFORE_PROBE = 0xDC6F8601FAF2E893, // 0xA0466A69
 
 		/// <summary>
-		/// Parameters: Entity entity, bool p1
+		/// Parameters: Entity entity, BOOL p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_ENTITY_NOWEAPONDECALS = 0x2C2E3DC128F44309,
@@ -7508,7 +7508,7 @@ namespace GTA.Native
 		_SET_ENTITY_DECALS_DISABLED = 0x2C2E3DC128F44309,
 
 		/// <summary>
-		/// Parameters: Entity entity, bool p1
+		/// Parameters: Entity entity, BOOL p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_ENTITY_USE_MAX_DISTANCE_FOR_WATER_REFLECTION = 0x1A092BB0C3808B96,
@@ -7593,7 +7593,7 @@ namespace GTA.Native
 		SET_ENTITY_CANT_CAUSE_COLLISION_DAMAGED_ENTITY = 0x68B562E124CC0AEF,
 
 		/// <summary>
-		/// Parameters: Entity entity, IntPtr p1
+		/// Parameters: Entity entity, Any p1
 		/// </summary>
 		/// <remarks>
 		/// p1 is always set to 1<br/>
@@ -7602,7 +7602,7 @@ namespace GTA.Native
 		SET_ALLOW_MIGRATE_TO_SPECTATOR = 0x36F32DE87082343E,
 
 		/// <summary>
-		/// Parameters: Entity entity, uint modelHash
+		/// Parameters: Entity entity, Hash modelHash
 		/// </summary>
 		/// <remarks>
 		/// Gets the handle of an entity with a specific model hash attached to another entity, such as an object attached to a ped.<br/>
@@ -7618,7 +7618,7 @@ namespace GTA.Native
 		_GET_ENTITY_ATTACHED_TO_WITH_HASH = 0x1F922734E259BD26,
 
 		/// <summary>
-		/// Parameters: Entity entity, bool toggle
+		/// Parameters: Entity entity, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PICK_UP_BY_CARGOBOB_DISABLED = 0xD7B80E7C3BEFC396,
@@ -7628,13 +7628,13 @@ namespace GTA.Native
 		#region EVENT
 
 		/// <summary>
-		/// Parameters: Ped ped, uint name
+		/// Parameters: Ped ped, Hash name
 		/// </summary>
 		/// <returns>void</returns>
 		SET_DECISION_MAKER = 0xB604A2942ADED0EE, // 0x19CEAC9E
 
 		/// <summary>
-		/// Parameters: uint name, int eventType
+		/// Parameters: Hash name, int eventType
 		/// </summary>
 		/// <remarks>
 		/// eventType: <see href='https://alloc8or.re/gta5/doc/enums/eEventType.txt'>https://alloc8or.re/gta5/doc/enums/eEventType.txt</see><br/>
@@ -7643,7 +7643,7 @@ namespace GTA.Native
 		CLEAR_DECISION_MAKER_EVENT_RESPONSE = 0x4FC9381A7AEE8968, // 0x07ABD94D
 
 		/// <summary>
-		/// Parameters: uint name, int eventType
+		/// Parameters: Hash name, int eventType
 		/// </summary>
 		/// <remarks>
 		/// eventType: <see href='https://alloc8or.re/gta5/doc/enums/eEventType.txt'>https://alloc8or.re/gta5/doc/enums/eEventType.txt</see><br/>
@@ -7653,7 +7653,7 @@ namespace GTA.Native
 		BLOCK_DECISION_MAKER_EVENT = 0xE42FCDFD0E4196F7, // 0x57506EA6
 
 		/// <summary>
-		/// Parameters: uint name, int eventType
+		/// Parameters: Hash name, int eventType
 		/// </summary>
 		/// <remarks>
 		/// eventType: <see href='https://alloc8or.re/gta5/doc/enums/eEventType.txt'>https://alloc8or.re/gta5/doc/enums/eEventType.txt</see><br/>
@@ -7689,13 +7689,13 @@ namespace GTA.Native
 		IS_SHOCKING_EVENT_IN_SPHERE = 0x1374ABB7C15BAB92, // 0x2F98823E
 
 		/// <summary>
-		/// Parameters: ScrHandle event
+		/// Parameters: ScrHandle @event
 		/// </summary>
 		/// <returns>BOOL</returns>
 		REMOVE_SHOCKING_EVENT = 0x2CDA538C44C6CCE5, // 0xF82D5A87
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>void</returns>
 		REMOVE_ALL_SHOCKING_EVENTS = 0xEAABE8FDFA21274C, // 0x64DF6282
@@ -7741,7 +7741,7 @@ namespace GTA.Native
 		_GET_NUM_DECORATIONS = 0x278F76C3B0A8F109, // 0x71D0CF3E
 
 		/// <summary>
-		/// Parameters: int characterType, int decorationIndex, IntPtr outComponent
+		/// Parameters: int characterType, int decorationIndex, Any* outComponent
 		/// </summary>
 		/// <remarks>
 		/// Character types:<br/>
@@ -7783,7 +7783,7 @@ namespace GTA.Native
 		_GET_TATTOO_COLLECTION_DATA = 0xFF56381874F82086, // 0x2E9D628C
 
 		/// <summary>
-		/// Parameters: uint overlayHash, IntPtr p1, int character
+		/// Parameters: Hash overlayHash, Any p1, int character
 		/// </summary>
 		/// <remarks>
 		/// Returns some sort of index/offset for overlays/decorations.<br/>
@@ -7798,13 +7798,13 @@ namespace GTA.Native
 		GET_TATTOO_SHOP_DLC_ITEM_INDEX = 0x10144267DD22866C,
 
 		/// <summary>
-		/// Parameters: IntPtr outComponent
+		/// Parameters: Any* outComponent
 		/// </summary>
 		/// <returns>void</returns>
 		INIT_SHOP_PED_COMPONENT = 0x1E8C308FD312C036, // 0xB818C7FC
 
 		/// <summary>
-		/// Parameters: IntPtr outProp
+		/// Parameters: Any* outProp
 		/// </summary>
 		/// <returns>void</returns>
 		INIT_SHOP_PED_PROP = 0xEB0A2B758F7B850F, // 0xF5659E50
@@ -7816,7 +7816,7 @@ namespace GTA.Native
 		SETUP_SHOP_PED_APPAREL_QUERY = 0x50F457823CE6EB5F, // 0xC937FF3D
 
 		/// <summary>
-		/// Parameters: int character, int p1, int p2, bool p3, int p4, int componentId
+		/// Parameters: int character, int p1, int p2, BOOL p3, int p4, int componentId
 		/// </summary>
 		/// <remarks>
 		/// character is 0 for Michael, 1 for Franklin, 2 for Trevor, 3 for freemode male, and 4 for freemode female.<br/>
@@ -7835,7 +7835,7 @@ namespace GTA.Native
 		_GET_NUM_PROPS_FROM_OUTFIT = 0x9BDF59818B1E38C1, // 0x594E862C
 
 		/// <summary>
-		/// Parameters: int componentId, IntPtr outComponent
+		/// Parameters: int componentId, Any* outComponent
 		/// </summary>
 		/// <remarks>
 		/// See <see href='https://git.io/JtcRf'>https://git.io/JtcRf</see> for example and structs.<br/>
@@ -7844,7 +7844,7 @@ namespace GTA.Native
 		GET_SHOP_PED_QUERY_COMPONENT = 0x249E310B2D920699, // 0xC0718904
 
 		/// <summary>
-		/// Parameters: uint componentHash
+		/// Parameters: Hash componentHash
 		/// </summary>
 		/// <remarks>
 		/// Returns some sort of index/offset for components.<br/>
@@ -7854,7 +7854,7 @@ namespace GTA.Native
 		GET_SHOP_PED_QUERY_COMPONENT_INDEX = 0x96E2929292A4DB77,
 
 		/// <summary>
-		/// Parameters: uint componentHash, IntPtr outComponent
+		/// Parameters: Hash componentHash, Any* outComponent
 		/// </summary>
 		/// <remarks>
 		/// More info here: <see href='https://gist.github.com/root-cause/3b80234367b0c856d60bf5cb4b826f86'>https://gist.github.com/root-cause/3b80234367b0c856d60bf5cb4b826f86</see><br/>
@@ -7863,7 +7863,7 @@ namespace GTA.Native
 		GET_SHOP_PED_COMPONENT = 0x74C0E2A57EC66760, // 0xB39677C5
 
 		/// <summary>
-		/// Parameters: int componentId, IntPtr outProp
+		/// Parameters: int componentId, Any* outProp
 		/// </summary>
 		/// <remarks>
 		/// See <see href='https://git.io/JtcRf'>https://git.io/JtcRf</see> for example and structs.<br/>
@@ -7872,7 +7872,7 @@ namespace GTA.Native
 		GET_SHOP_PED_QUERY_PROP = 0xDE44A00999B2837D, // 0x1D3C1466
 
 		/// <summary>
-		/// Parameters: uint componentHash
+		/// Parameters: Hash componentHash
 		/// </summary>
 		/// <remarks>
 		/// Returns some sort of index/offset for props.<br/>
@@ -7882,7 +7882,7 @@ namespace GTA.Native
 		GET_SHOP_PED_QUERY_PROP_INDEX = 0x6CEBE002E58DEE97,
 
 		/// <summary>
-		/// Parameters: uint componentHash, IntPtr outProp
+		/// Parameters: Hash componentHash, Any* outProp
 		/// </summary>
 		/// <remarks>
 		/// More info here: <see href='https://gist.github.com/root-cause/3b80234367b0c856d60bf5cb4b826f86'>https://gist.github.com/root-cause/3b80234367b0c856d60bf5cb4b826f86</see><br/>
@@ -7903,13 +7903,13 @@ namespace GTA.Native
 		GET_HASH_NAME_FOR_PROP = 0x5D6160275CAEC8DD, // 0x7D876DC0
 
 		/// <summary>
-		/// Parameters: uint componentHash
+		/// Parameters: Hash componentHash
 		/// </summary>
 		/// <returns>int</returns>
 		GET_SHOP_PED_APPAREL_VARIANT_COMPONENT_COUNT = 0xC17AD0E5752BECDA, // 0x159751B4
 
 		/// <summary>
-		/// Parameters: uint propHash
+		/// Parameters: Hash propHash
 		/// </summary>
 		/// <remarks>
 		/// `propHash`: Ped helmet prop hash?<br/>
@@ -7923,13 +7923,13 @@ namespace GTA.Native
 		_GET_SHOP_PED_APPAREL_VARIANT_PROP_COUNT = 0xD40AAC51E8E4C663,
 
 		/// <summary>
-		/// Parameters: uint componentHash, int variantComponentIndex, Hash* nameHash, int* enumValue, int* componentType
+		/// Parameters: Hash componentHash, int variantComponentIndex, Hash* nameHash, int* enumValue, int* componentType
 		/// </summary>
 		/// <returns>void</returns>
 		GET_VARIANT_COMPONENT = 0x6E11F282F11863B6, // 0xE4FF7103
 
 		/// <summary>
-		/// Parameters: uint componentHash, int variantPropIndex, Hash* nameHash, int* enumValue, int* anchorPoint
+		/// Parameters: Hash componentHash, int variantPropIndex, Hash* nameHash, int* enumValue, int* anchorPoint
 		/// </summary>
 		/// <returns>void</returns>
 		GET_VARIANT_PROP = 0xD81B7F27BC773E66,
@@ -7939,7 +7939,7 @@ namespace GTA.Native
 		_GET_VARIANT_PROP = 0xD81B7F27BC773E66,
 
 		/// <summary>
-		/// Parameters: uint componentHash
+		/// Parameters: Hash componentHash
 		/// </summary>
 		/// <remarks>
 		/// Returns number of possible values of the forcedComponentIndex argument of GET_FORCED_COMPONENT.<br/>
@@ -7952,7 +7952,7 @@ namespace GTA.Native
 		_GET_NUM_FORCED_COMPONENTS = 0xC6B9DB42C04DD8C3, // 0xCE70F183
 
 		/// <summary>
-		/// Parameters: uint componentHash
+		/// Parameters: Hash componentHash
 		/// </summary>
 		/// <remarks>
 		/// Returns number of possible values of the forcedPropIndex argument of GET_FORCED_PROP.<br/>
@@ -7961,19 +7961,19 @@ namespace GTA.Native
 		GET_SHOP_PED_APPAREL_FORCED_PROP_COUNT = 0x017568A8182D98A6, // 0xC560D7C0
 
 		/// <summary>
-		/// Parameters: uint componentHash, int forcedComponentIndex, Hash* nameHash, int* enumValue, int* componentType
+		/// Parameters: Hash componentHash, int forcedComponentIndex, Hash* nameHash, int* enumValue, int* componentType
 		/// </summary>
 		/// <returns>void</returns>
 		GET_FORCED_COMPONENT = 0x6C93ED8C2F74859B, // 0x382C70BE
 
 		/// <summary>
-		/// Parameters: uint componentHash, int forcedPropIndex, Hash* nameHash, int* enumValue, int* anchorPoint
+		/// Parameters: Hash componentHash, int forcedPropIndex, Hash* nameHash, int* enumValue, int* anchorPoint
 		/// </summary>
 		/// <returns>void</returns>
 		GET_FORCED_PROP = 0xE1CA84EBF72E691D, // 0x22DAE257
 
 		/// <summary>
-		/// Parameters: uint componentHash, uint restrictionTagHash, int componentId
+		/// Parameters: Hash componentHash, Hash restrictionTagHash, int componentId
 		/// </summary>
 		/// <remarks>
 		/// Full list of restriction tags by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/pedApparelRestrictionTags.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/pedApparelRestrictionTags.json</see><br/>
@@ -7983,7 +7983,7 @@ namespace GTA.Native
 		DOES_SHOP_PED_APPAREL_HAVE_RESTRICTION_TAG = 0x341DE7ED1D2A1BFD, // 0x8E2C7FD5
 
 		/// <summary>
-		/// Parameters: Ped ped, int componentId, uint restrictionTagHash
+		/// Parameters: Ped ped, int componentId, Hash restrictionTagHash
 		/// </summary>
 		/// <returns>BOOL</returns>
 		DOES_CURRENT_PED_COMPONENT_HAVE_RESTRICTION_TAG = 0x7796B21B76221BC5,
@@ -7993,7 +7993,7 @@ namespace GTA.Native
 		_DOES_CUSTOMIZATION_COMPONENT_HAVE_RESTRICTION_TAG = 0x7796B21B76221BC5,
 
 		/// <summary>
-		/// Parameters: Ped ped, int componentId, uint restrictionTagHash
+		/// Parameters: Ped ped, int componentId, Hash restrictionTagHash
 		/// </summary>
 		/// <returns>BOOL</returns>
 		DOES_CURRENT_PED_PROP_HAVE_RESTRICTION_TAG = 0xD726BAB4554DA580,
@@ -8003,7 +8003,7 @@ namespace GTA.Native
 		_DOES_CUSTOMIZATION_PROP_HAVE_RESTRICTION_TAG = 0xD726BAB4554DA580,
 
 		/// <summary>
-		/// Parameters: int character, bool p1
+		/// Parameters: int character, BOOL p1
 		/// </summary>
 		/// <remarks>
 		/// characters<br/>
@@ -8017,7 +8017,7 @@ namespace GTA.Native
 		SETUP_SHOP_PED_OUTFIT_QUERY = 0xF3FBE2D50A6A8C28, // 0x1ECD23E7
 
 		/// <summary>
-		/// Parameters: int outfitIndex, IntPtr outfit
+		/// Parameters: int outfitIndex, Any* outfit
 		/// </summary>
 		/// <remarks>
 		/// outfitIndex: from 0 to SETUP_SHOP_PED_OUTFIT_QUERY(characterIndex, false) - 1.<br/>
@@ -8027,19 +8027,19 @@ namespace GTA.Native
 		GET_SHOP_PED_QUERY_OUTFIT = 0x6D793F03A631FE56, // 0x2F8013A1
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any* p1
 		/// </summary>
 		/// <returns>void</returns>
 		GET_SHOP_PED_OUTFIT = 0xB7952076E444979D, // 0xCAFE9209
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>int</returns>
 		GET_SHOP_PED_OUTFIT_LOCATE = 0x073CA26B079F956E, // 0x2798F56F
 
 		/// <summary>
-		/// Parameters: uint outfitHash, int variantIndex, IntPtr outPropVariant
+		/// Parameters: Hash outfitHash, int variantIndex, Any* outPropVariant
 		/// </summary>
 		/// <remarks>
 		/// See <see href='https://git.io/JtcBH'>https://git.io/JtcBH</see> for example and structs.<br/>
@@ -8048,7 +8048,7 @@ namespace GTA.Native
 		GET_SHOP_PED_OUTFIT_PROP_VARIANT = 0xA9F9C2E0FDE11CBB, // 0x6641A864
 
 		/// <summary>
-		/// Parameters: uint outfitHash, int variantIndex, IntPtr outComponentVariant
+		/// Parameters: Hash outfitHash, int variantIndex, Any* outComponentVariant
 		/// </summary>
 		/// <remarks>
 		/// See <see href='https://git.io/JtcBH'>https://git.io/JtcBH</see> for example and structs.<br/>
@@ -8073,7 +8073,7 @@ namespace GTA.Native
 		GET_DLC_VEHICLE_MODEL = 0xECC01B7C5763333C, // 0xA2201E09
 
 		/// <summary>
-		/// Parameters: int dlcVehicleIndex, IntPtr outData
+		/// Parameters: int dlcVehicleIndex, Any* outData
 		/// </summary>
 		/// <remarks>
 		/// dlcVehicleIndex takes a number from 0 - GET_NUM_DLC_VEHICLES() - 1.<br/>
@@ -8106,7 +8106,7 @@ namespace GTA.Native
 		_GET_NUM_DLC_WEAPONS_SP = 0x4160B65AE085B5A9,
 
 		/// <summary>
-		/// Parameters: int dlcWeaponIndex, IntPtr outData
+		/// Parameters: int dlcWeaponIndex, Any* outData
 		/// </summary>
 		/// <remarks>
 		/// dlcWeaponIndex takes a number from 0 - GET_NUM_DLC_WEAPONS() - 1.<br/>
@@ -8136,7 +8136,7 @@ namespace GTA.Native
 		GET_DLC_WEAPON_DATA = 0x79923CD21BECE14E, // 0xD88EC8EA
 
 		/// <summary>
-		/// Parameters: int dlcWeaponIndex, IntPtr outData
+		/// Parameters: int dlcWeaponIndex, Any* outData
 		/// </summary>
 		/// <remarks>
 		/// Same as GET_DLC_WEAPON_DATA but only works for DLC weapons that are available in SP.<br/>
@@ -8171,7 +8171,7 @@ namespace GTA.Native
 		_GET_NUM_DLC_WEAPON_COMPONENTS_SP = 0xAD2A7A6DFF55841B,
 
 		/// <summary>
-		/// Parameters: int dlcWeaponIndex, int dlcWeapCompIndex, IntPtr ComponentDataPtr
+		/// Parameters: int dlcWeaponIndex, int dlcWeapCompIndex, Any* ComponentDataPtr
 		/// </summary>
 		/// <remarks>
 		/// p0 seems to be the weapon index<br/>
@@ -8197,7 +8197,7 @@ namespace GTA.Native
 		GET_DLC_WEAPON_COMPONENT_DATA = 0x6CF598A2957C2BF8, // 0x4B83FCAF
 
 		/// <summary>
-		/// Parameters: int dlcWeaponIndex, int dlcWeapCompIndex, IntPtr ComponentDataPtr
+		/// Parameters: int dlcWeaponIndex, int dlcWeapCompIndex, Any* ComponentDataPtr
 		/// </summary>
 		/// <remarks>
 		/// Same as GET_DLC_WEAPON_COMPONENT_DATA but only works for DLC components that are available in SP.<br/>
@@ -8210,7 +8210,7 @@ namespace GTA.Native
 		_GET_DLC_WEAPON_COMPONENT_DATA_SP = 0x31D5E073B6F93CDC,
 
 		/// <summary>
-		/// Parameters: uint itemHash
+		/// Parameters: Hash itemHash
 		/// </summary>
 		/// <returns>BOOL</returns>
 		IS_CONTENT_ITEM_LOCKED = 0xD4D7B033C3AA243C, // 0x06396058
@@ -8224,19 +8224,19 @@ namespace GTA.Native
 		_IS_DLC_DATA_EMPTY = 0xD4D7B033C3AA243C, // 0x06396058
 
 		/// <summary>
-		/// Parameters: uint hash
+		/// Parameters: Hash hash
 		/// </summary>
 		/// <returns>BOOL</returns>
 		IS_DLC_VEHICLE_MOD = 0x0564B9FF9631B82C, // 0x35BCA844
 
 		/// <summary>
-		/// Parameters: uint hash
+		/// Parameters: Hash hash
 		/// </summary>
 		/// <returns>Hash</returns>
 		GET_DLC_VEHICLE_MOD_LOCK_HASH = 0xC098810437312FFF, // 0x59352658
 
 		/// <summary>
-		/// Parameters: uint hash
+		/// Parameters: Hash hash
 		/// </summary>
 		/// <remarks>
 		/// From fm_deathmatch_creator and fm_race_creator:<br/>
@@ -8251,7 +8251,7 @@ namespace GTA.Native
 		_LOAD_CONTENT_CHANGE_SET_GROUP = 0x6BEDF5769AC2DC07,
 
 		/// <summary>
-		/// Parameters: uint hash
+		/// Parameters: Hash hash
 		/// </summary>
 		/// <remarks>
 		/// From fm_deathmatch_creator and fm_race_creator:<br/>
@@ -8270,7 +8270,7 @@ namespace GTA.Native
 		#region FIRE
 
 		/// <summary>
-		/// Parameters: float X, float Y, float Z, int maxChildren, bool isGasFire
+		/// Parameters: float X, float Y, float Z, int maxChildren, BOOL isGasFire
 		/// </summary>
 		/// <remarks>
 		/// Starts a fire:<br/>
@@ -8337,7 +8337,7 @@ namespace GTA.Native
 		GET_CLOSEST_FIRE_POS = 0x352A9F6BCF90081F, // 0xC4977B47
 
 		/// <summary>
-		/// Parameters: float x, float y, float z, int explosionType, float damageScale, bool isAudible, bool isInvisible, float cameraShake, bool noDamage
+		/// Parameters: float x, float y, float z, int explosionType, float damageScale, BOOL isAudible, BOOL isInvisible, float cameraShake, BOOL noDamage
 		/// </summary>
 		/// <remarks>
 		/// BOOL isAudible = If explosion makes a sound.<br/>
@@ -8348,7 +8348,7 @@ namespace GTA.Native
 		ADD_EXPLOSION = 0xE3AD2BDBAEE269AC, // 0x10AF5258
 
 		/// <summary>
-		/// Parameters: Ped ped, float x, float y, float z, int explosionType, float damageScale, bool isAudible, bool isInvisible, float cameraShake
+		/// Parameters: Ped ped, float x, float y, float z, int explosionType, float damageScale, BOOL isAudible, BOOL isInvisible, float cameraShake
 		/// </summary>
 		/// <remarks>
 		/// isAudible: If explosion makes a sound.<br/>
@@ -8359,7 +8359,7 @@ namespace GTA.Native
 		ADD_OWNED_EXPLOSION = 0x172AA1B624FA1013, // 0x27EE0D67
 
 		/// <summary>
-		/// Parameters: float x, float y, float z, int explosionType, uint explosionFx, float damageScale, bool isAudible, bool isInvisible, float cameraShake
+		/// Parameters: float x, float y, float z, int explosionType, Hash explosionFx, float damageScale, BOOL isAudible, BOOL isInvisible, float cameraShake
 		/// </summary>
 		/// <remarks>
 		/// isAudible: If explosion makes a sound.<br/>
@@ -8445,7 +8445,7 @@ namespace GTA.Native
 		#region GRAPHICS
 
 		/// <summary>
-		/// Parameters: bool enabled
+		/// Parameters: BOOL enabled
 		/// </summary>
 		/// <remarks>
 		/// NOTE: Debugging functions are not present in the retail version of the game.<br/>
@@ -8493,7 +8493,7 @@ namespace GTA.Native
 		DRAW_DEBUG_CROSS = 0x73B1189623049839, // 0xB6DF3709
 
 		/// <summary>
-		/// Parameters: string text, float x, float y, float z, int red, int green, int blue, int alpha
+		/// Parameters: const char* text, float x, float y, float z, int red, int green, int blue, int alpha
 		/// </summary>
 		/// <remarks>
 		/// NOTE: Debugging functions are not present in the retail version of the game.<br/>
@@ -8502,7 +8502,7 @@ namespace GTA.Native
 		DRAW_DEBUG_TEXT = 0x3903E216620488E8, // 0x269B006F
 
 		/// <summary>
-		/// Parameters: string text, float x, float y, float z, int red, int green, int blue, int alpha
+		/// Parameters: const char* text, float x, float y, float z, int red, int green, int blue, int alpha
 		/// </summary>
 		/// <remarks>
 		/// NOTE: Debugging functions are not present in the retail version of the game.<br/>
@@ -8561,7 +8561,7 @@ namespace GTA.Native
 		DRAW_POLY = 0xAC26716048436851, // 0xABD19253
 
 		/// <summary>
-		/// Parameters: float x1, float y1, float z1, float x2, float y2, float z2, float x3, float y3, float z3, int red, int green, int blue, int alpha, string textureDict, string textureName, float u1, float v1, float w1, float u2, float v2, float w2, float u3, float v3, float w3
+		/// Parameters: float x1, float y1, float z1, float x2, float y2, float z2, float x3, float y3, float z3, int red, int green, int blue, int alpha, const char* textureDict, const char* textureName, float u1, float v1, float w1, float u2, float v2, float w2, float u3, float v3, float w3
 		/// </summary>
 		/// <remarks>
 		/// Used for drawling Deadline trailing lights, see deadline.ytd<br/>
@@ -8576,7 +8576,7 @@ namespace GTA.Native
 		_DRAW_SPRITE_POLY = 0x29280002282F1928,
 
 		/// <summary>
-		/// Parameters: float x1, float y1, float z1, float x2, float y2, float z2, float x3, float y3, float z3, float red1, float green1, float blue1, int alpha1, float red2, float green2, float blue2, int alpha2, float red3, float green3, float blue3, int alpha3, string textureDict, string textureName, float u1, float v1, float w1, float u2, float v2, float w2, float u3, float v3, float w3
+		/// Parameters: float x1, float y1, float z1, float x2, float y2, float z2, float x3, float y3, float z3, float red1, float green1, float blue1, int alpha1, float red2, float green2, float blue2, int alpha2, float red3, float green3, float blue3, int alpha3, const char* textureDict, const char* textureName, float u1, float v1, float w1, float u2, float v2, float w2, float u3, float v3, float w3
 		/// </summary>
 		/// <remarks>
 		/// Used for drawling Deadline trailing lights, see deadline.ytd<br/>
@@ -8614,13 +8614,13 @@ namespace GTA.Native
 		DRAW_BOX = 0xD3A9971CADAC7252, // 0xCD4D9DD5
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_BACKFACECULLING = 0x23BA6B0C2AD7B0D3, // 0xC44C2F44
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_DEPTHWRITING = 0xC5C8F970D4EDFF71,
@@ -8635,13 +8635,13 @@ namespace GTA.Native
 		FREE_MEMORY_FOR_MISSION_CREATOR_PHOTO = 0x0A46AF8A78DC5E0A, // 0x9E553002
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any* p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>BOOL</returns>
 		LOAD_MISSION_CREATOR_PHOTO = 0x4862437A486F91B0, // 0x56C1E488
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any* p0
 		/// </summary>
 		/// <returns>int</returns>
 		GET_STATUS_OF_LOAD_MISSION_CREATOR_PHOTO = 0x1670F8D05056F257, // 0x226B08EA
@@ -8665,19 +8665,19 @@ namespace GTA.Native
 		FREE_MEMORY_FOR_HIGH_QUALITY_PHOTO = 0xD801CC02177FA3F1, // 0x9CBA682A
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_TAKEN_PHOTO_IS_MUGSHOT = 0x1BBC135A4D25EDDE,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, int p1
+		/// Parameters: Any p0, int p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_ARENA_THEME_AND_VARIATION_FOR_TAKEN_PHOTO = 0xF3F776ADA161E47D,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		SET_ON_ISLAND_X_FOR_TAKEN_PHOTO = 0xADD6627C4D325458,
@@ -8696,7 +8696,7 @@ namespace GTA.Native
 		GET_STATUS_OF_SAVE_HIGH_QUALITY_PHOTO = 0x0C0C4E81E1AC60A0, // 0xEC5D0317
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>BOOL</returns>
 		BEGIN_CREATE_LOW_QUALITY_COPY_OF_PHOTO = 0x759650634F07B6B4, // 0x25D569EB
@@ -8715,7 +8715,7 @@ namespace GTA.Native
 		FREE_MEMORY_FOR_LOW_QUALITY_PHOTO = 0x6A12D88881435DCA, // 0x108F36CC
 
 		/// <summary>
-		/// Parameters: bool p0, bool p1
+		/// Parameters: BOOL p0, BOOL p1
 		/// </summary>
 		/// <returns>void</returns>
 		DRAW_LOW_QUALITY_PHOTO_TO_PHONE = 0x1072F115DAB0717E, // 0xE9F2B68F
@@ -8748,7 +8748,7 @@ namespace GTA.Native
 		_GET_CURRENT_NUMBER_OF_PHOTOS = 0x473151EBC762C6DA, // 0x21DBF0C9
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <remarks>
 		/// 2 matches across 2 scripts. Only showed in appcamera &#38; appmedia. Both were 0.<br/>
@@ -8757,7 +8757,7 @@ namespace GTA.Native
 		QUEUE_OPERATION_TO_CREATE_SORTED_LIST_OF_PHOTOS = 0x2A893980E96B659A, // 0x199FABF0
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <remarks>
 		/// 3 matches across 3 scripts. First 2 were 0, 3rd was 1. Possibly a bool.<br/>
@@ -8770,7 +8770,7 @@ namespace GTA.Native
 		CLEAR_STATUS_OF_SORTED_LIST_OPERATION = 0x4AF92ACD3141D96C, // 0xC9EF81ED
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <remarks>
 		/// This function is hard-coded to always return 0.<br/>
@@ -8779,7 +8779,7 @@ namespace GTA.Native
 		DOES_THIS_PHOTO_SLOT_CONTAIN_A_VALID_PHOTO = 0xE791DF1F73ED2C8B, // 0x9D84554C
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <remarks>
 		/// This function is hard-coded to always return 0.<br/>
@@ -8871,7 +8871,7 @@ namespace GTA.Native
 		_ENTITY_DESCRIPTION_TEXT = 0xDEADC0DEDEADC0DE, // 0xC12AC47A
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		SET_LIGHT_OVERRIDE_MAX_INTENSITY_SCALE = 0x9641588DAB93B4B5,
@@ -8880,7 +8880,7 @@ namespace GTA.Native
 		GET_LIGHT_OVERRIDE_MAX_INTENSITY_SCALE = 0x393BD2275CEB7793,
 
 		/// <summary>
-		/// Parameters: int type, float posX, float posY, float posZ, float dirX, float dirY, float dirZ, float rotX, float rotY, float rotZ, float scaleX, float scaleY, float scaleZ, int red, int green, int blue, int alpha, bool bobUpAndDown, bool faceCamera, int p19, bool rotate, string textureDict, string textureName, bool drawOnEnts
+		/// Parameters: int type, float posX, float posY, float posZ, float dirX, float dirY, float dirZ, float rotX, float rotY, float rotZ, float scaleX, float scaleY, float scaleZ, int red, int green, int blue, int alpha, BOOL bobUpAndDown, BOOL faceCamera, int p19, BOOL rotate, const char* textureDict, const char* textureName, BOOL drawOnEnts
 		/// </summary>
 		/// <remarks>
 		/// enum MarkerTypes<br/>
@@ -8934,7 +8934,7 @@ namespace GTA.Native
 		DRAW_MARKER = 0x28477EC23D892089, // 0x48D84A02
 
 		/// <summary>
-		/// Parameters: int type, float posX, float posY, float posZ, float dirX, float dirY, float dirZ, float rotX, float rotY, float rotZ, float scaleX, float scaleY, float scaleZ, int red, int green, int blue, int alpha, bool bobUpAndDown, bool faceCamera, IntPtr p19, bool rotate, string textureDict, string textureName, bool drawOnEnts, bool p24, bool p25
+		/// Parameters: int type, float posX, float posY, float posZ, float dirX, float dirY, float dirZ, float rotX, float rotY, float rotZ, float scaleX, float scaleY, float scaleZ, int red, int green, int blue, int alpha, BOOL bobUpAndDown, BOOL faceCamera, Any p19, BOOL rotate, const char* textureDict, const char* textureName, BOOL drawOnEnts, BOOL p24, BOOL p25
 		/// </summary>
 		/// <returns>void</returns>
 		DRAW_MARKER_EX = 0xE82728F0DE75D13A,
@@ -9097,19 +9097,19 @@ namespace GTA.Native
 		DELETE_CHECKPOINT = 0xF5ED37F54CD4D52E, // 0xB66CF3CA
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>void</returns>
 		DONT_RENDER_IN_GAME_UI = 0x22A249A53034450A, // 0x932FDB81
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		FORCE_RENDER_IN_GAME_UI = 0xDC459CFA0CCE245B, // 0x7E946E87
 
 		/// <summary>
-		/// Parameters: string textureDict, bool p1
+		/// Parameters: const char* textureDict, BOOL p1
 		/// </summary>
 		/// <remarks>
 		/// This function can requests texture dictonaries from following RPFs:<br/>
@@ -9123,19 +9123,19 @@ namespace GTA.Native
 		REQUEST_STREAMED_TEXTURE_DICT = 0xDFA2EF8E04127DD5, // 0x4C9B035F
 
 		/// <summary>
-		/// Parameters: string textureDict
+		/// Parameters: const char* textureDict
 		/// </summary>
 		/// <returns>BOOL</returns>
 		HAS_STREAMED_TEXTURE_DICT_LOADED = 0x0145F696AAAAD2E4, // 0x3F436EEF
 
 		/// <summary>
-		/// Parameters: string textureDict
+		/// Parameters: const char* textureDict
 		/// </summary>
 		/// <returns>void</returns>
 		SET_STREAMED_TEXTURE_DICT_AS_NO_LONGER_NEEDED = 0xBE2CACCF5A8AA805, // 0xF07DDA38
 
 		/// <summary>
-		/// Parameters: float x, float y, float width, float height, int r, int g, int b, int a, bool p8
+		/// Parameters: float x, float y, float width, float height, int r, int g, int b, int a, BOOL p8
 		/// </summary>
 		/// <remarks>
 		/// Draws a rectangle on the screen.<br/>
@@ -9153,7 +9153,7 @@ namespace GTA.Native
 		DRAW_RECT = 0x3A618A217E5154F0, // 0xDD2BFC77
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Sets a flag defining whether or not script draw commands should continue being drawn behind the pause menu. This is usually used for TV channels and other draw commands that are used with a world render target.<br/>
@@ -9250,7 +9250,7 @@ namespace GTA.Native
 		GET_SAFE_ZONE_SIZE = 0xBAF107B6BB2C97F0, // 0x3F0D1A6F
 
 		/// <summary>
-		/// Parameters: string textureDict, string textureName, float screenX, float screenY, float width, float height, float heading, int red, int green, int blue, int alpha, bool p11, IntPtr p12
+		/// Parameters: const char* textureDict, const char* textureName, float screenX, float screenY, float width, float height, float heading, int red, int green, int blue, int alpha, BOOL p11, Any p12
 		/// </summary>
 		/// <remarks>
 		/// Draws a 2D sprite on the screen.<br/>
@@ -9267,7 +9267,7 @@ namespace GTA.Native
 		DRAW_SPRITE = 0xE7FFAE5EBF23D890, // 0x1FEC16B0
 
 		/// <summary>
-		/// Parameters: string textureDict, string textureName, float x, float y, float width, float height, float p6, int red, int green, int blue, int alpha, IntPtr p11, IntPtr p12
+		/// Parameters: const char* textureDict, const char* textureName, float x, float y, float width, float height, float p6, int red, int green, int blue, int alpha, Any p11, Any p12
 		/// </summary>
 		/// <remarks>
 		/// Used in arcade games and Beam hack minigame in Doomsday Heist. I will most certainly dive into this to try replicate arcade games.<br/>
@@ -9282,7 +9282,7 @@ namespace GTA.Native
 		DRAW_SPRITE_ARX = 0x2D3B147AFAD49DE0,
 
 		/// <summary>
-		/// Parameters: string textureDict, string textureName, float screenX, float screenY, float width, float height, float heading, int red, int green, int blue, int alpha, IntPtr p11
+		/// Parameters: const char* textureDict, const char* textureName, float screenX, float screenY, float width, float height, float heading, int red, int green, int blue, int alpha, Any p11
 		/// </summary>
 		/// <remarks>
 		/// Similar to _DRAW_SPRITE, but seems to be some kind of "interactive" sprite, at least used by render targets.<br/>
@@ -9306,7 +9306,7 @@ namespace GTA.Native
 		_DRAW_INTERACTIVE_SPRITE = 0x2BC54A8188768488,
 
 		/// <summary>
-		/// Parameters: string textureDict, string textureName, float x, float y, float width, float height, float u1, float v1, float u2, float v2, float heading, int red, int green, int blue, int alpha, IntPtr p15
+		/// Parameters: const char* textureDict, const char* textureName, float x, float y, float width, float height, float u1, float v1, float u2, float v2, float heading, int red, int green, int blue, int alpha, Any p15
 		/// </summary>
 		/// <remarks>
 		/// Similar to DRAW_SPRITE, but allows to specify the texture coordinates used to draw the sprite.<br/>
@@ -9321,7 +9321,7 @@ namespace GTA.Native
 		_DRAW_SPRITE_UV = 0x95812F9B26074726,
 
 		/// <summary>
-		/// Parameters: Entity entity, string icon
+		/// Parameters: Entity entity, const char* icon
 		/// </summary>
 		/// <remarks>
 		/// Example:<br/>
@@ -9332,7 +9332,7 @@ namespace GTA.Native
 		ADD_ENTITY_ICON = 0x9CD43EEE12BF4DD0, // 0xF3027D21
 
 		/// <summary>
-		/// Parameters: Entity entity, bool toggle
+		/// Parameters: Entity entity, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_ENTITY_ICON_VISIBILITY = 0xE0E8BEECCA96BA31, // 0xD1D2FD52
@@ -9344,7 +9344,7 @@ namespace GTA.Native
 		SET_ENTITY_ICON_COLOR = 0x1D5F595CCAE2E238, // 0x6EE1E946
 
 		/// <summary>
-		/// Parameters: float x, float y, float z, bool p3
+		/// Parameters: float x, float y, float z, BOOL p3
 		/// </summary>
 		/// <remarks>
 		/// Sets the on-screen drawing origin for draw-functions (which is normally x=0,y=0 in the upper left corner of the screen) to a world coordinate.<br/>
@@ -9373,7 +9373,7 @@ namespace GTA.Native
 		CLEAR_DRAW_ORIGIN = 0xFF0B610F6BE0D7AF, // 0xDD76B263
 
 		/// <summary>
-		/// Parameters: string name
+		/// Parameters: const char* name
 		/// </summary>
 		/// <returns>int</returns>
 		SET_BINK_MOVIE = 0x338D9F609FD632DB,
@@ -9483,7 +9483,7 @@ namespace GTA.Native
 		ATTACH_TV_AUDIO_TO_ENTITY = 0x845BAD77CC770633, // 0x784944DB
 
 		/// <summary>
-		/// Parameters: int binkMovie, bool p1
+		/// Parameters: int binkMovie, BOOL p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_BINK_MOVIE_AUDIO_FRONTEND = 0xF816F2933752322D,
@@ -9493,7 +9493,7 @@ namespace GTA.Native
 		_SET_BINK_MOVIE_UNK_2 = 0xF816F2933752322D,
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Probably changes tvs from being a 3d audio to being "global" audio<br/>
@@ -9502,7 +9502,7 @@ namespace GTA.Native
 		SET_TV_AUDIO_FRONTEND = 0x113D2C5DC57E1774, // 0x2E0DFA35
 
 		/// <summary>
-		/// Parameters: int binkMovie, bool bShouldSkip
+		/// Parameters: int binkMovie, BOOL bShouldSkip
 		/// </summary>
 		/// <returns>void</returns>
 		SET_BINK_SHOULD_SKIP = 0x6805D58CAA427B72,
@@ -9512,7 +9512,7 @@ namespace GTA.Native
 		_SET_BINK_SHOULD_SKIP = 0x6805D58CAA427B72,
 
 		/// <summary>
-		/// Parameters: string movieMeshSetName
+		/// Parameters: const char* movieMeshSetName
 		/// </summary>
 		/// <returns>int</returns>
 		LOAD_MOVIE_MESH_SET = 0xB66064452270E8F1, // 0x9627905C
@@ -9524,7 +9524,7 @@ namespace GTA.Native
 		RELEASE_MOVIE_MESH_SET = 0xEB119AA014E89183, // 0x4FA5501D
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>int</returns>
 		QUERY_MOVIE_MESH_SET_STATE = 0x9B6E70C5CEEF4EEB, // 0x9D5D9B38
@@ -9557,7 +9557,7 @@ namespace GTA.Native
 		_GET_ACTIVE_SCREEN_RESOLUTION = 0x873C9F3104101DD3,
 
 		/// <summary>
-		/// Parameters: bool b
+		/// Parameters: BOOL b
 		/// </summary>
 		/// <returns>float</returns>
 		GET_ASPECT_RATIO = 0xF1307EF624A80D87,
@@ -9593,7 +9593,7 @@ namespace GTA.Native
 		ADJUST_NEXT_POS_SIZE_AS_NORMALIZED_16_9 = 0xEFABC7722293DA7C,
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Enables Night Vision.<br/>
@@ -9622,13 +9622,13 @@ namespace GTA.Native
 		_IS_NIGHTVISION_ACTIVE = 0x2202A3F42C8E5F79, // 0x62619061
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_EXPOSURETWEAK = 0xEF398BEEE4EF45F9,
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		FORCE_EXPOSURE_READBACK = 0x814AF7DCAACC597B,
@@ -9640,7 +9640,7 @@ namespace GTA.Native
 		OVERRIDE_NIGHTVISION_LIGHT_RANGE = 0x43FA7CBE20DAB219,
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_NOISEOVERIDE = 0xE787BF1C5CF823C9, // 0xD576F5DD
@@ -9685,7 +9685,7 @@ namespace GTA.Native
 		_WORLD3D_TO_SCREEN2D = 0x34E82F05DF2974F5, // 0x1F950E4B
 
 		/// <summary>
-		/// Parameters: string textureDict, string textureName
+		/// Parameters: const char* textureDict, const char* textureName
 		/// </summary>
 		/// <remarks>
 		/// Returns the texture resolution of the passed texture dict+name.<br/>
@@ -9695,7 +9695,7 @@ namespace GTA.Native
 		GET_TEXTURE_RESOLUTION = 0x35736EE65BD00C11, // 0x096DAA4D
 
 		/// <summary>
-		/// Parameters: Ped ped, string txd, string txn
+		/// Parameters: Ped ped, const char* txd, const char* txn
 		/// </summary>
 		/// <remarks>
 		/// Overriding ped badge texture to a passed texture. It's synced between players (even custom textures!), don't forget to request used dict on *all* clients to make it sync properly. Can be removed by passing empty strings.<br/>
@@ -9726,7 +9726,7 @@ namespace GTA.Native
 		DISABLE_OCCLUSION_THIS_FRAME = 0x3669F1B198DCAA4F, // 0x0DCC0B8B
 
 		/// <summary>
-		/// Parameters: bool state
+		/// Parameters: BOOL state
 		/// </summary>
 		/// <remarks>
 		/// Does not affect weapons, particles, fire/explosions, flashlights or the sun.<br/>
@@ -9742,7 +9742,7 @@ namespace GTA.Native
 		_SET_BLACKOUT = 0x1268615ACE24D504, // 0xAA2A0EAF
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// If "blackout" is enabled, this native allows you to ignore "blackout" for vehicles.<br/>
@@ -9830,7 +9830,7 @@ namespace GTA.Native
 		ENABLE_PROCOBJ_CREATION = 0x5DEBD9C4DC995692,
 
 		/// <summary>
-		/// Parameters: float x, float y, float z, IntPtr p3, float p4, float p5, float p6, float scale
+		/// Parameters: float x, float y, float z, Any p3, float p4, float p5, float p6, float scale
 		/// </summary>
 		/// <returns>void</returns>
 		GRASSBATCH_ENABLE_FLATTENING_EXT_IN_SPHERE = 0xAAE9BE70EC7C69AB,
@@ -9859,7 +9859,7 @@ namespace GTA.Native
 		CASCADE_SHADOWS_INIT_SESSION = 0x03FC694AE06C5A20, // 0x48F16186
 
 		/// <summary>
-		/// Parameters: IntPtr p0, bool p1, float p2, float p3, float p4, float p5, bool p6, float p7
+		/// Parameters: Any p0, BOOL p1, float p2, float p3, float p4, float p5, BOOL p6, float p7
 		/// </summary>
 		/// <returns>void</returns>
 		CASCADE_SHADOWS_SET_CASCADE_BOUNDS = 0xD2936CAB8B58FCBD, // 0x84F05943
@@ -9883,13 +9883,13 @@ namespace GTA.Native
 		CASCADE_SHADOWS_SET_SPLIT_Z_EXP_WEIGHT = 0x36F6626459D91457, // 0xC07C64C9
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		CASCADE_SHADOWS_SET_BOUND_POSITION = 0x259BA6D4E6F808F1,
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// When this is set to ON, shadows only draw as you get nearer.<br/>
@@ -9903,13 +9903,13 @@ namespace GTA.Native
 		_SET_FAR_SHADOWS_SUPPRESSED = 0x80ECBC0C856D3B0B, // 0xFE903D0F
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>void</returns>
 		CASCADE_SHADOWS_SET_SCREEN_SIZE_CHECK_ENABLED = 0x25FC3E33A31AD0C9,
 
 		/// <summary>
-		/// Parameters: string type
+		/// Parameters: const char* type
 		/// </summary>
 		/// <remarks>
 		/// Possible values:<br/>
@@ -9951,13 +9951,13 @@ namespace GTA.Native
 		_CASCADESHADOWS_RESET_TYPE = 0x27CB772218215325,
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>void</returns>
 		CASCADE_SHADOWS_SET_AIRCRAFT_MODE = 0x6DDBF9DFFC4AC080, // 0x9F470BE3
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>void</returns>
 		CASCADE_SHADOWS_SET_DYNAMIC_DEPTH_MODE = 0xD39D13C9FEBF0511, // 0x4A124267
@@ -9969,25 +9969,25 @@ namespace GTA.Native
 		CASCADE_SHADOWS_SET_DYNAMIC_DEPTH_VALUE = 0x02AC28F3A01FA04A, // 0xB19B2764
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>void</returns>
 		CASCADE_SHADOWS_ENABLE_FREEZER = 0x0AE73D8DF3A762B2, // 0x342FA2B4
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		WATER_REFLECTION_SET_SCRIPT_OBJECT_VISIBILITY = 0xCA465D9CC0D231BA,
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		GOLF_TRAIL_SET_ENABLED = 0xA51C4B86B71652AE, // 0x5D3BFFC9
 
 		/// <summary>
-		/// Parameters: float p0, float p1, float p2, float p3, float p4, float p5, float p6, float p7, bool p8
+		/// Parameters: float p0, float p1, float p2, float p3, float p4, float p5, float p6, float p7, BOOL p8
 		/// </summary>
 		/// <remarks>
 		/// p8 seems to always be false.<br/>
@@ -10014,7 +10014,7 @@ namespace GTA.Native
 		GOLF_TRAIL_SET_TESSELLATION = 0xDBAA5EC848BA2D46, // 0xBB1A1294
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>void</returns>
 		GOLF_TRAIL_SET_FIXED_CONTROL_POINT_ENABLE = 0xC0416B061F2B7E5E, // 0x1A1A72EF
@@ -10042,7 +10042,7 @@ namespace GTA.Native
 		GOLF_TRAIL_SET_SHADER_PARAMS = 0x9CFDD90B2B844BF7, // 0x4EA70FB4
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>void</returns>
 		GOLF_TRAIL_SET_FACING = 0x06F761EA47C1D3ED, // 0x0D830DC7
@@ -10057,7 +10057,7 @@ namespace GTA.Native
 		GOLF_TRAIL_GET_VISUAL_CONTROL_POINT = 0xA4664972A9B8F8BA, // 0xECD470F0
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Toggles Heatvision on/off.<br/>
@@ -10193,13 +10193,13 @@ namespace GTA.Native
 		GET_MOTIONBLUR_MAX_VEL_SCALER = 0xE59343E9E96529E7, // 0xD906A3A9
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_FORCE_MOTIONBLUR = 0x6A51F78772175A51,
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		TOGGLE_PLAYER_DAMAGE_OVERLAY = 0xE63D7C6EECECB66B, // 0xD34A6CBA
@@ -10260,7 +10260,7 @@ namespace GTA.Native
 		IS_SCREENBLUR_FADE_RUNNING = 0x7B226C785A52A0A9, // 0x926B8734
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		TOGGLE_PAUSED_RENDERPHASES = 0xDFC252D8A3E15AB7, // 0x30ADE541
@@ -10283,7 +10283,7 @@ namespace GTA.Native
 		GRAB_PAUSEMENU_OWNERSHIP = 0x851CD923176EBA7C, // 0xDCBA251B
 
 		/// <summary>
-		/// Parameters: bool p0, bool p1, float nearplaneOut, float nearplaneIn, float farplaneOut, float farplaneIn
+		/// Parameters: BOOL p0, BOOL p1, float nearplaneOut, float nearplaneIn, float farplaneOut, float farplaneIn
 		/// </summary>
 		/// <returns>void</returns>
 		SET_HIDOF_OVERRIDE = 0xBA3D65906822BED5, // 0x513D444B
@@ -10293,13 +10293,13 @@ namespace GTA.Native
 		_SET_HIDOF_ENV_BLUR_PARAMS = 0xBA3D65906822BED5, // 0x513D444B
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>void</returns>
 		SET_LOCK_ADAPTIVE_DOF_DISTANCE = 0xB569F41F3E7E83A4,
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>BOOL</returns>
 		PHONEPHOTOEDITOR_TOGGLE = 0x7AC24EAB6D74118D, // 0xB2410EAB
@@ -10308,13 +10308,13 @@ namespace GTA.Native
 		PHONEPHOTOEDITOR_IS_ACTIVE = 0xBCEDB009461DA156, // 0x5AB94128
 
 		/// <summary>
-		/// Parameters: string textureDict, bool p1
+		/// Parameters: const char* textureDict, BOOL p1
 		/// </summary>
 		/// <returns>BOOL</returns>
 		PHONEPHOTOEDITOR_SET_FRAME_TXD = 0x27FEB5254759CDE3, // 0xD63FCB3E
 
 		/// <summary>
-		/// Parameters: string effectName, float xPos, float yPos, float zPos, float xRot, float yRot, float zRot, float scale, bool xAxis, bool yAxis, bool zAxis
+		/// Parameters: const char* effectName, float xPos, float yPos, float zPos, float xRot, float yRot, float zRot, float scale, BOOL xAxis, BOOL yAxis, BOOL zAxis
 		/// </summary>
 		/// <remarks>
 		/// GRAPHICS::START_PARTICLE_FX_NON_LOOPED_AT_COORD("scr_paleto_roof_impact", -140.8576f, 6420.789f, 41.1391f, 0f, 0f, 267.3957f, 0x3F800000, 0, 0, 0);<br/>
@@ -10335,7 +10335,7 @@ namespace GTA.Native
 		START_PARTICLE_FX_NON_LOOPED_AT_COORD = 0x25129531F77B9ED3, // 0xDD79D679
 
 		/// <summary>
-		/// Parameters: string effectName, float xPos, float yPos, float zPos, float xRot, float yRot, float zRot, float scale, bool xAxis, bool yAxis, bool zAxis, bool p11
+		/// Parameters: const char* effectName, float xPos, float yPos, float zPos, float xRot, float yRot, float zRot, float scale, BOOL xAxis, BOOL yAxis, BOOL zAxis, BOOL p11
 		/// </summary>
 		/// <remarks>
 		/// Full list of particle effect dictionaries and effects by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/particleEffectsCompact.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/particleEffectsCompact.json</see><br/>
@@ -10348,7 +10348,7 @@ namespace GTA.Native
 		_START_PARTICLE_FX_NON_LOOPED_AT_COORD_2 = 0xF56B8137DF10135D, // 0x633F8C48
 
 		/// <summary>
-		/// Parameters: string effectName, Ped ped, float offsetX, float offsetY, float offsetZ, float rotX, float rotY, float rotZ, int boneIndex, float scale, bool axisX, bool axisY, bool axisZ
+		/// Parameters: const char* effectName, Ped ped, float offsetX, float offsetY, float offsetZ, float rotX, float rotY, float rotZ, int boneIndex, float scale, BOOL axisX, BOOL axisY, BOOL axisZ
 		/// </summary>
 		/// <remarks>
 		/// GRAPHICS::START_PARTICLE_FX_NON_LOOPED_ON_PED_BONE("scr_sh_bong_smoke", PLAYER::PLAYER_PED_ID(), -0.025f, 0.13f, 0f, 0f, 0f, 0f, 31086, 0x3F800000, 0, 0, 0);<br/>
@@ -10359,7 +10359,7 @@ namespace GTA.Native
 		START_PARTICLE_FX_NON_LOOPED_ON_PED_BONE = 0x0E7E72961BA18619, // 0x53DAEF4E
 
 		/// <summary>
-		/// Parameters: string effectName, Ped ped, float offsetX, float offsetY, float offsetZ, float rotX, float rotY, float rotZ, int boneIndex, float scale, bool axisX, bool axisY, bool axisZ
+		/// Parameters: const char* effectName, Ped ped, float offsetX, float offsetY, float offsetZ, float rotX, float rotY, float rotZ, int boneIndex, float scale, BOOL axisX, BOOL axisY, BOOL axisZ
 		/// </summary>
 		/// <remarks>
 		/// Full list of particle effect dictionaries and effects by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/particleEffectsCompact.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/particleEffectsCompact.json</see><br/>
@@ -10372,7 +10372,7 @@ namespace GTA.Native
 		_START_PARTICLE_FX_NON_LOOPED_ON_PED_BONE_2 = 0xA41B6A43642AC2CF, // 0x161780C1
 
 		/// <summary>
-		/// Parameters: string effectName, Entity entity, float offsetX, float offsetY, float offsetZ, float rotX, float rotY, float rotZ, float scale, bool axisX, bool axisY, bool axisZ
+		/// Parameters: const char* effectName, Entity entity, float offsetX, float offsetY, float offsetZ, float rotX, float rotY, float rotZ, float scale, BOOL axisX, BOOL axisY, BOOL axisZ
 		/// </summary>
 		/// <remarks>
 		/// Starts a particle effect on an entity for example your player.<br/>
@@ -10388,7 +10388,7 @@ namespace GTA.Native
 		START_PARTICLE_FX_NON_LOOPED_ON_ENTITY = 0x0D53A3B8DA0809D2, // 0x9604DAD4
 
 		/// <summary>
-		/// Parameters: string effectName, Entity entity, float offsetX, float offsetY, float offsetZ, float rotX, float rotY, float rotZ, float scale, bool axisX, bool axisY, bool axisZ
+		/// Parameters: const char* effectName, Entity entity, float offsetX, float offsetY, float offsetZ, float rotX, float rotY, float rotZ, float scale, BOOL axisX, BOOL axisY, BOOL axisZ
 		/// </summary>
 		/// <remarks>
 		/// Full list of particle effect dictionaries and effects by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/particleEffectsCompact.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/particleEffectsCompact.json</see><br/>
@@ -10401,7 +10401,7 @@ namespace GTA.Native
 		_START_PARTICLE_FX_NON_LOOPED_ON_ENTITY_2 = 0xC95EB1DB6E92113D, // 0x469A2B4A
 
 		/// <summary>
-		/// Parameters: string effectName, Entity entity, float offsetX, float offsetY, float offsetZ, float rotX, float rotY, float rotZ, int boneIndex, float scale, bool axisX, bool axisY, bool axisZ
+		/// Parameters: const char* effectName, Entity entity, float offsetX, float offsetY, float offsetZ, float rotX, float rotY, float rotZ, int boneIndex, float scale, BOOL axisX, BOOL axisY, BOOL axisZ
 		/// </summary>
 		/// <remarks>
 		/// Full list of particle effect dictionaries and effects by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/particleEffectsCompact.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/particleEffectsCompact.json</see><br/>
@@ -10444,7 +10444,7 @@ namespace GTA.Native
 		_SET_PARTICLE_FX_NON_LOOPED_EMITTER_SCALE = 0x1E2E01C00837D26E,
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Used only once in the scripts (taxi_clowncar)<br/>
@@ -10453,7 +10453,7 @@ namespace GTA.Native
 		SET_PARTICLE_FX_FORCE_VEHICLE_INTERIOR = 0x8CDE909A0370BB3A,
 
 		/// <summary>
-		/// Parameters: string effectName, float x, float y, float z, float xRot, float yRot, float zRot, float scale, bool xAxis, bool yAxis, bool zAxis, bool p11
+		/// Parameters: const char* effectName, float x, float y, float z, float xRot, float yRot, float zRot, float scale, BOOL xAxis, BOOL yAxis, BOOL zAxis, BOOL p11
 		/// </summary>
 		/// <remarks>
 		/// GRAPHICS::START_PARTICLE_FX_LOOPED_AT_COORD("scr_fbi_falling_debris", 93.7743f, -749.4572f, 70.86904f, 0f, 0f, 0f, 0x3F800000, 0, 0, 0, 0)<br/>
@@ -10464,7 +10464,7 @@ namespace GTA.Native
 		START_PARTICLE_FX_LOOPED_AT_COORD = 0xE184F4F0DC5910E7, // 0xD348E3E6
 
 		/// <summary>
-		/// Parameters: string effectName, Ped ped, float xOffset, float yOffset, float zOffset, float xRot, float yRot, float zRot, int boneIndex, float scale, bool xAxis, bool yAxis, bool zAxis
+		/// Parameters: const char* effectName, Ped ped, float xOffset, float yOffset, float zOffset, float xRot, float yRot, float zRot, int boneIndex, float scale, BOOL xAxis, BOOL yAxis, BOOL zAxis
 		/// </summary>
 		/// <remarks>
 		/// Full list of particle effect dictionaries and effects by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/particleEffectsCompact.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/particleEffectsCompact.json</see><br/>
@@ -10473,7 +10473,7 @@ namespace GTA.Native
 		START_PARTICLE_FX_LOOPED_ON_PED_BONE = 0xF28DA9F38CD1787C, // 0xF8FC196F
 
 		/// <summary>
-		/// Parameters: string effectName, Entity entity, float xOffset, float yOffset, float zOffset, float xRot, float yRot, float zRot, float scale, bool xAxis, bool yAxis, bool zAxis
+		/// Parameters: const char* effectName, Entity entity, float xOffset, float yOffset, float zOffset, float xRot, float yRot, float zRot, float scale, BOOL xAxis, BOOL yAxis, BOOL zAxis
 		/// </summary>
 		/// <remarks>
 		/// Full list of particle effect dictionaries and effects by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/particleEffectsCompact.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/particleEffectsCompact.json</see><br/>
@@ -10482,7 +10482,7 @@ namespace GTA.Native
 		START_PARTICLE_FX_LOOPED_ON_ENTITY = 0x1AE42C1660FD6517, // 0x0D06FF62
 
 		/// <summary>
-		/// Parameters: string effectName, Entity entity, float xOffset, float yOffset, float zOffset, float xRot, float yRot, float zRot, int boneIndex, float scale, bool xAxis, bool yAxis, bool zAxis
+		/// Parameters: const char* effectName, Entity entity, float xOffset, float yOffset, float zOffset, float xRot, float yRot, float zRot, int boneIndex, float scale, BOOL xAxis, BOOL yAxis, BOOL zAxis
 		/// </summary>
 		/// <remarks>
 		/// Full list of particle effect dictionaries and effects by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/particleEffectsCompact.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/particleEffectsCompact.json</see><br/>
@@ -10491,7 +10491,7 @@ namespace GTA.Native
 		START_PARTICLE_FX_LOOPED_ON_ENTITY_BONE = 0xC6EB449E33977F0B, // 0x23BF0F9B
 
 		/// <summary>
-		/// Parameters: string effectName, Entity entity, float xOffset, float yOffset, float zOffset, float xRot, float yRot, float zRot, float scale, bool xAxis, bool yAxis, bool zAxis, float r, float g, float b, float a
+		/// Parameters: const char* effectName, Entity entity, float xOffset, float yOffset, float zOffset, float xRot, float yRot, float zRot, float scale, BOOL xAxis, BOOL yAxis, BOOL zAxis, float r, float g, float b, float a
 		/// </summary>
 		/// <remarks>
 		/// Full list of particle effect dictionaries and effects by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/particleEffectsCompact.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/particleEffectsCompact.json</see><br/>
@@ -10504,7 +10504,7 @@ namespace GTA.Native
 		_START_PARTICLE_FX_LOOPED_ON_ENTITY_2 = 0x6F60E89A7B64EE1D, // 0x110752B2
 
 		/// <summary>
-		/// Parameters: string effectName, Entity entity, float xOffset, float yOffset, float zOffset, float xRot, float yRot, float zRot, int boneIndex, float scale, bool xAxis, bool yAxis, bool zAxis, float r, float g, float b, float a
+		/// Parameters: const char* effectName, Entity entity, float xOffset, float yOffset, float zOffset, float xRot, float yRot, float zRot, int boneIndex, float scale, BOOL xAxis, BOOL yAxis, BOOL zAxis, float r, float g, float b, float a
 		/// </summary>
 		/// <remarks>
 		/// Full list of particle effect dictionaries and effects by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/particleEffectsCompact.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/particleEffectsCompact.json</see><br/>
@@ -10517,7 +10517,7 @@ namespace GTA.Native
 		_START_PARTICLE_FX_LOOPED_ON_ENTITY_BONE_2 = 0xDDE23F30CC5A0F03, // 0xF478EFCF
 
 		/// <summary>
-		/// Parameters: int ptfxHandle, bool p1
+		/// Parameters: int ptfxHandle, BOOL p1
 		/// </summary>
 		/// <remarks>
 		/// p1 is always 0 in the native scripts<br/>
@@ -10526,7 +10526,7 @@ namespace GTA.Native
 		STOP_PARTICLE_FX_LOOPED = 0x8F75998877616996, // 0xD245455B
 
 		/// <summary>
-		/// Parameters: int ptfxHandle, bool p1
+		/// Parameters: int ptfxHandle, BOOL p1
 		/// </summary>
 		/// <returns>void</returns>
 		REMOVE_PARTICLE_FX = 0xC401503DFE8D53CF, // 0x6BA48C7E
@@ -10544,7 +10544,7 @@ namespace GTA.Native
 		REMOVE_PARTICLE_FX_IN_RANGE = 0xDD19FA1C6D657305, // 0x7EB8F275
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		FORCE_PARTICLE_FX_IN_VEHICLE_INTERIOR = 0xBA0127DA25FD54C9,
@@ -10562,13 +10562,13 @@ namespace GTA.Native
 		SET_PARTICLE_FX_LOOPED_OFFSETS = 0xF7DDEBEC43483C43, // 0x641F7790
 
 		/// <summary>
-		/// Parameters: int ptfxHandle, string propertyName, float amount, bool noNetwork
+		/// Parameters: int ptfxHandle, const char* propertyName, float amount, BOOL noNetwork
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PARTICLE_FX_LOOPED_EVOLUTION = 0x5F0C4B5B1C393BE2, // 0x1CBC1373
 
 		/// <summary>
-		/// Parameters: int ptfxHandle, float r, float g, float b, bool p4
+		/// Parameters: int ptfxHandle, float r, float g, float b, BOOL p4
 		/// </summary>
 		/// <remarks>
 		/// only works on some fx's<br/>
@@ -10600,19 +10600,19 @@ namespace GTA.Native
 		_SET_PARTICLE_FX_LOOPED_RANGE = 0xDCB194B85EF7B541, // 0x233DE879
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PARTICLE_FX_CAM_INSIDE_VEHICLE = 0xEEC4047028426510, // 0x19EC0001
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool p1
+		/// Parameters: Vehicle vehicle, BOOL p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PARTICLE_FX_CAM_INSIDE_NONPLAYER_VEHICLE = 0xACEE6F360FC1F6B6, // 0x6B125A02
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PARTICLE_FX_SHOOTOUT_BOAT = 0x96EF97DAEB89BEF5, // 0xD938DEE0
@@ -10621,19 +10621,19 @@ namespace GTA.Native
 		CLEAR_PARTICLE_FX_SHOOTOUT_BOAT = 0x2A251AA48B2B46DB,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PARTICLE_FX_BLOOD_SCALE = 0x908311265D42A820,
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		DISABLE_IN_WATER_PTFX = 0xCFD16F0DB5A3535C,
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		DISABLE_DOWNWASH_PTFX = 0x5F6DF3D92271E8A1,
@@ -10645,7 +10645,7 @@ namespace GTA.Native
 		SET_PARTICLE_FX_SLIPSTREAM_LODRANGE_SCALE = 0x2B40A97646381508,
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Creates cartoon effect when Michel smokes the weed<br/>
@@ -10658,7 +10658,7 @@ namespace GTA.Native
 		SET_CAMERA_ENDTIME = 0xD821490579791273, // 0xC61C75E9
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Creates a motion-blur sort of effect, this native does not seem to work, however by using the `START_SCREEN_EFFECT` native with `DrugsMichaelAliensFight` as the effect parameter, you should be able to get the effect.<br/>
@@ -10679,7 +10679,7 @@ namespace GTA.Native
 		SET_PARTICLE_FX_BULLET_IMPACT_LODRANGE_SCALE = 0xBB90E12CAC1DAB25, // 0x3968E915
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PARTICLE_FX_BULLET_TRACE_NO_ANGLE_REJECT = 0xCA4AE345A153D573, // 0x64BA4648
@@ -10697,7 +10697,7 @@ namespace GTA.Native
 		SET_PARTICLE_FX_FOOT_LODRANGE_SCALE = 0x949F397A288B28B3, // 0xE3880F5A
 
 		/// <summary>
-		/// Parameters: string p0
+		/// Parameters: const char* p0
 		/// </summary>
 		/// <remarks>
 		/// Full list of particle effect dictionaries and effects by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/particleEffectsCompact.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/particleEffectsCompact.json</see><br/>
@@ -10712,19 +10712,19 @@ namespace GTA.Native
 		SET_SKIDMARK_RANGE_SCALE = 0x5DBF05DB5926D089,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PTFX_FORCE_VEHICLE_INTERIOR_FLAG = 0xC6730E0D14E50703,
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>void</returns>
 		FORCE_POSTFX_BULLET_IMPACTS_AFTER_HUD = 0x9B079E5221D984D3,
 
 		/// <summary>
-		/// Parameters: string name
+		/// Parameters: const char* name
 		/// </summary>
 		/// <remarks>
 		/// From the b678d decompiled scripts:<br/>
@@ -10749,7 +10749,7 @@ namespace GTA.Native
 		_USE_PARTICLE_FX_ASSET_NEXT_CALL = 0x6C38AF3693A69A91, // 0x9C720B61
 
 		/// <summary>
-		/// Parameters: string oldAsset, string newAsset
+		/// Parameters: const char* oldAsset, const char* newAsset
 		/// </summary>
 		/// <remarks>
 		/// Full list of particle effect dictionaries and effects by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/particleEffectsCompact.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/particleEffectsCompact.json</see><br/>
@@ -10766,7 +10766,7 @@ namespace GTA.Native
 		_SET_PARTICLE_FX_ASSET_OLD_TO_NEW = 0xEA1E2D93F6F75ED9, // 0xC92719A7
 
 		/// <summary>
-		/// Parameters: string name
+		/// Parameters: const char* name
 		/// </summary>
 		/// <remarks>
 		/// Resets the effect of SET_PARTICLE_FX_OVERRIDE<br/>
@@ -10780,7 +10780,7 @@ namespace GTA.Native
 		_RESET_PARTICLE_FX_ASSET_OLD_TO_NEW = 0x89C8553DD3274AAE, // 0x9E8D8B72
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>void</returns>
 		SET_WEATHER_PTFX_USE_OVERRIDE_SETTINGS = 0xA46B73FAA3460AE1,
@@ -10840,7 +10840,7 @@ namespace GTA.Native
 		REMOVE_DECALS_FROM_VEHICLE = 0xE91F1B65F2B48D57, // 0x831D06CA
 
 		/// <summary>
-		/// Parameters: int decalType, float posX, float posY, float posZ, float p4, float p5, float p6, float p7, float p8, float p9, float width, float height, float rCoef, float gCoef, float bCoef, float opacity, float timeout, bool p17, bool p18, bool p19
+		/// Parameters: int decalType, float posX, float posY, float posZ, float p4, float p5, float p6, float p7, float p8, float p9, float width, float height, float rCoef, float gCoef, float bCoef, float opacity, float timeout, BOOL p17, BOOL p18, BOOL p19
 		/// </summary>
 		/// <remarks>
 		/// decal types:<br/>
@@ -10972,7 +10972,7 @@ namespace GTA.Native
 		GET_IS_PETROL_DECAL_IN_RANGE = 0x2F09F7976C512404, // 0x242C6A04
 
 		/// <summary>
-		/// Parameters: int decalType, string textureDict, string textureName
+		/// Parameters: int decalType, const char* textureDict, const char* textureName
 		/// </summary>
 		/// <returns>void</returns>
 		PATCH_DECAL_DIFFUSE_MAP = 0x8A35C742130C6080, // 0x335695CF
@@ -10996,13 +10996,13 @@ namespace GTA.Native
 		_UNDO_DECAL_TEXTURE_OVERRIDE = 0xB7ED70C49521A61D, // 0x7B786555
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		MOVE_VEHICLE_DECALS = 0x84C8D7C2D30D3280, // 0xCE9E6CF2
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, Ped ped, int boneIndex, float x1, float x2, float x3, float y1, float y2, float y3, float z1, float z2, float z3, float scale, IntPtr p13, int alpha
+		/// Parameters: Vehicle vehicle, Ped ped, int boneIndex, float x1, float x2, float x3, float y1, float y2, float y3, float z1, float z2, float z3, float scale, Any p13, int alpha
 		/// </summary>
 		/// <remarks>
 		/// boneIndex is always chassis_dummy in the scripts. The x/y/z params are location relative to the chassis bone.<br/>
@@ -11047,13 +11047,13 @@ namespace GTA.Native
 		_DOES_VEHICLE_HAVE_DECAL = 0x060D935D3981A275, // 0x6D58F73B
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		DISABLE_COMPOSITE_SHOTGUN_DECALS = 0x0E4299C549F0D1F1, // 0x9BABCBA4
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		DISABLE_SCUFF_DECALS = 0x02369D5C8A51FDCF, // 0xFDF6D8DA
@@ -11065,7 +11065,7 @@ namespace GTA.Native
 		SET_DECAL_BULLET_IMPACT_RANGE_SCALE = 0x46D1A61A21F566FC, // 0x2056A015
 
 		/// <summary>
-		/// Parameters: string name
+		/// Parameters: const char* name
 		/// </summary>
 		/// <returns>void</returns>
 		OVERRIDE_INTERIOR_SMOKE_NAME = 0x2A2A52824DB96700, // 0x0F486429
@@ -11090,13 +11090,13 @@ namespace GTA.Native
 		_REGISTER_NOIR_SCREEN_EFFECT_THIS_FRAME = 0xA44FF770DFBC5DAE,
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		DISABLE_VEHICLE_DISTANTLIGHTS = 0xC9F98AC1884E73A2, // 0x7CFAE36F
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>void</returns>
 		RENDER_SHADOWED_LIGHTS_WITH_NO_SHADOWS = 0x03300B57FCAC6DDB, // 0x60F72371
@@ -11105,7 +11105,7 @@ namespace GTA.Native
 		REQUEST_EARLY_LIGHT_CHECK = 0x98EDF76A7271E4F2,
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Forces footstep tracks on all surfaces.<br/>
@@ -11118,7 +11118,7 @@ namespace GTA.Native
 		_SET_FORCE_PED_FOOTSTEPS_TRACKS = 0xAEEDAD1420C65CC0, // 0xC53576CA
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Forces vehicle trails on all surfaces.<br/>
@@ -11131,7 +11131,7 @@ namespace GTA.Native
 		_SET_FORCE_VEHICLE_TRAILS = 0x4CC7F0FEA5283FE0, // 0x7158B1EA
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		DISABLE_REGION_VFX = 0xEFD97FF47B745B8D,
@@ -11141,7 +11141,7 @@ namespace GTA.Native
 		_DISABLE_SCRIPT_AMBIENT_EFFECTS = 0xEFD97FF47B745B8D,
 
 		/// <summary>
-		/// Parameters: string timecycleModifierName
+		/// Parameters: const char* timecycleModifierName
 		/// </summary>
 		/// <remarks>
 		/// Only one match in the scripts:<br/>
@@ -11155,7 +11155,7 @@ namespace GTA.Native
 		_PRESET_INTERIOR_AMBIENT_CACHE = 0xD7021272EB0A451E, // 0x137E3E24
 
 		/// <summary>
-		/// Parameters: string modifierName
+		/// Parameters: const char* modifierName
 		/// </summary>
 		/// <remarks>
 		/// Loads the specified timecycle modifier. Modifiers are defined separately in another file (e.g. "timecycle_mods_1.xml")<br/>
@@ -11173,7 +11173,7 @@ namespace GTA.Native
 		SET_TIMECYCLE_MODIFIER_STRENGTH = 0x82E7FFCD5B2326B3, // 0x458F4F45
 
 		/// <summary>
-		/// Parameters: string modifierName, float transition
+		/// Parameters: const char* modifierName, float transition
 		/// </summary>
 		/// <remarks>
 		/// Full list of timecycle modifiers by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/timecycleModifiers.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/timecycleModifiers.json</see><br/>
@@ -11214,7 +11214,7 @@ namespace GTA.Native
 		POP_TIMECYCLE_MODIFIER = 0x3C8938D7D872211E, // 0x79D7D235
 
 		/// <summary>
-		/// Parameters: string modifierName
+		/// Parameters: const char* modifierName
 		/// </summary>
 		/// <returns>void</returns>
 		SET_CURRENT_PLAYER_TCMODIFIER = 0xBBF327DED94E4DEB, // 0x85BA15A4
@@ -11226,19 +11226,19 @@ namespace GTA.Native
 		SET_PLAYER_TCMODIFIER_TRANSITION = 0xBDEB86F4D5809204, // 0x9559BB38
 
 		/// <summary>
-		/// Parameters: string modifierName
+		/// Parameters: const char* modifierName
 		/// </summary>
 		/// <returns>void</returns>
 		SET_NEXT_PLAYER_TCMODIFIER = 0xBF59707B3E5ED531, // 0x554BA16E
 
 		/// <summary>
-		/// Parameters: string modifierName1, string modifierName2
+		/// Parameters: const char* modifierName1, const char* modifierName2
 		/// </summary>
 		/// <returns>void</returns>
 		ADD_TCMODIFIER_OVERRIDE = 0x1A8E2C8B9CF4549C, // 0xE8F538B5
 
 		/// <summary>
-		/// Parameters: string p0
+		/// Parameters: const char* p0
 		/// </summary>
 		/// <returns>void</returns>
 		CLEAR_ALL_TCMODIFIER_OVERRIDES = 0x15E33297C3E8DC60,
@@ -11248,7 +11248,7 @@ namespace GTA.Native
 		REMOVE_TCMODIFIER_OVERRIDE = 0x15E33297C3E8DC60,
 
 		/// <summary>
-		/// Parameters: string modifierName
+		/// Parameters: const char* modifierName
 		/// </summary>
 		/// <remarks>
 		/// Full list of timecycle modifiers by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/timecycleModifiers.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/timecycleModifiers.json</see><br/>
@@ -11309,13 +11309,13 @@ namespace GTA.Native
 		_RESET_EXTRA_TIMECYCLE_MODIFIER_STRENGTH = 0x2BF72AD5B41AA739,
 
 		/// <summary>
-		/// Parameters: string scaleformName
+		/// Parameters: const char* scaleformName
 		/// </summary>
 		/// <returns>int</returns>
 		REQUEST_SCALEFORM_MOVIE = 0x11FE353CF9733E6F, // 0xC67E3DCB
 
 		/// <summary>
-		/// Parameters: string scaleformName
+		/// Parameters: const char* scaleformName
 		/// </summary>
 		/// <remarks>
 		/// Another REQUEST_SCALEFORM_MOVIE equivalent.<br/>
@@ -11328,13 +11328,13 @@ namespace GTA.Native
 		_REQUEST_SCALEFORM_MOVIE_2 = 0x65E7E78842E74CDB,
 
 		/// <summary>
-		/// Parameters: string scaleformName
+		/// Parameters: const char* scaleformName
 		/// </summary>
 		/// <returns>int</returns>
 		REQUEST_SCALEFORM_MOVIE_INSTANCE = 0xC514489CFB8AF806, // 0x7CC8057D
 
 		/// <summary>
-		/// Parameters: string scaleformName
+		/// Parameters: const char* scaleformName
 		/// </summary>
 		/// <remarks>
 		/// Similar to REQUEST_SCALEFORM_MOVIE, but seems to be some kind of "interactive" scaleform movie?<br/>
@@ -11382,7 +11382,7 @@ namespace GTA.Native
 		IS_SCALEFORM_MOVIE_DELETING = 0x86255B1FC929E33E,
 
 		/// <summary>
-		/// Parameters: string scaleformName
+		/// Parameters: const char* scaleformName
 		/// </summary>
 		/// <remarks>
 		/// Only values used in the scripts are:<br/>
@@ -11411,19 +11411,19 @@ namespace GTA.Native
 		SET_SCALEFORM_MOVIE_AS_NO_LONGER_NEEDED = 0x1D132D614DD86811, // 0x5FED3BA1
 
 		/// <summary>
-		/// Parameters: int scaleform, bool toggle
+		/// Parameters: int scaleform, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_SCALEFORM_MOVIE_TO_USE_SYSTEM_TIME = 0x6D8EB211944DCE08, // 0x18C9DE8D
 
 		/// <summary>
-		/// Parameters: int scaleformHandle, bool toggle
+		/// Parameters: int scaleformHandle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_SCALEFORM_MOVIE_TO_USE_LARGE_RT = 0x32F34FF7F617643B,
 
 		/// <summary>
-		/// Parameters: int scaleformHandle, bool toggle
+		/// Parameters: int scaleformHandle, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// This native is used in some casino scripts to fit the scaleform in the rendertarget.<br/>
@@ -11473,7 +11473,7 @@ namespace GTA.Native
 		_DRAW_SCALEFORM_MOVIE_3D_NON_ADDITIVE = 0x1CE592FDC749D6F5, // 0x899933C8
 
 		/// <summary>
-		/// Parameters: int scaleform, string method
+		/// Parameters: int scaleform, const char* method
 		/// </summary>
 		/// <remarks>
 		/// Calls the Scaleform function.<br/>
@@ -11486,7 +11486,7 @@ namespace GTA.Native
 		_CALL_SCALEFORM_MOVIE_FUNCTION_VOID = 0xFBD96D87AC96D533, // 0x7AB77B57
 
 		/// <summary>
-		/// Parameters: int scaleform, string methodName, float param1, float param2, float param3, float param4, float param5
+		/// Parameters: int scaleform, const char* methodName, float param1, float param2, float param3, float param4, float param5
 		/// </summary>
 		/// <remarks>
 		/// Calls the Scaleform function and passes the parameters as floats.<br/>
@@ -11500,7 +11500,7 @@ namespace GTA.Native
 		_CALL_SCALEFORM_MOVIE_FUNCTION_FLOAT_PARAMS = 0xD0837058AE2E4BEE, // 0x557EDA1D
 
 		/// <summary>
-		/// Parameters: int scaleform, string methodName, string param1, string param2, string param3, string param4, string param5
+		/// Parameters: int scaleform, const char* methodName, const char* param1, const char* param2, const char* param3, const char* param4, const char* param5
 		/// </summary>
 		/// <remarks>
 		/// Calls the Scaleform function and passes the parameters as strings.<br/>
@@ -11514,7 +11514,7 @@ namespace GTA.Native
 		_CALL_SCALEFORM_MOVIE_FUNCTION_STRING_PARAMS = 0x51BC1ED3CC44E8F7, // 0x91A7FCEB
 
 		/// <summary>
-		/// Parameters: int scaleform, string methodName, float floatParam1, float floatParam2, float floatParam3, float floatParam4, float floatParam5, string stringParam1, string stringParam2, string stringParam3, string stringParam4, string stringParam5
+		/// Parameters: int scaleform, const char* methodName, float floatParam1, float floatParam2, float floatParam3, float floatParam4, float floatParam5, const char* stringParam1, const char* stringParam2, const char* stringParam3, const char* stringParam4, const char* stringParam5
 		/// </summary>
 		/// <remarks>
 		/// Calls the Scaleform function and passes both float and string parameters (in their respective order).<br/>
@@ -11534,7 +11534,7 @@ namespace GTA.Native
 		_CALL_SCALEFORM_MOVIE_FUNCTION_MIXED_PARAMS = 0xEF662D8D57E290B1, // 0x6EAF56DE
 
 		/// <summary>
-		/// Parameters: int hudComponent, string methodName
+		/// Parameters: int hudComponent, const char* methodName
 		/// </summary>
 		/// <remarks>
 		/// Pushes a function from the Hud component Scaleform onto the stack. Same behavior as GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD, just a hud component id instead of a Scaleform.<br/>
@@ -11555,7 +11555,7 @@ namespace GTA.Native
 		_BEGIN_SCALEFORM_MOVIE_METHOD_HUD_COMPONENT = 0x98C494FD5BDFBFD5, // 0x5D66CE1E
 
 		/// <summary>
-		/// Parameters: int scaleform, string methodName
+		/// Parameters: int scaleform, const char* methodName
 		/// </summary>
 		/// <remarks>
 		/// Push a function from the Scaleform onto the stack<br/>
@@ -11568,7 +11568,7 @@ namespace GTA.Native
 		_PUSH_SCALEFORM_MOVIE_FUNCTION = 0xF6E48914C7A8694E, // 0x215ABBE8
 
 		/// <summary>
-		/// Parameters: string methodName
+		/// Parameters: const char* methodName
 		/// </summary>
 		/// <remarks>
 		/// Starts frontend (pause menu) scaleform movie methods.<br/>
@@ -11587,7 +11587,7 @@ namespace GTA.Native
 		_BEGIN_SCALEFORM_MOVIE_METHOD_N = 0xAB58C27C2E6123C6, // 0xF6015178
 
 		/// <summary>
-		/// Parameters: string methodName
+		/// Parameters: const char* methodName
 		/// </summary>
 		/// <remarks>
 		/// Starts frontend (pause menu) scaleform movie methods for header options.<br/>
@@ -11715,7 +11715,7 @@ namespace GTA.Native
 		_PUSH_SCALEFORM_MOVIE_METHOD_PARAMETER_FLOAT = 0xD69736AAE04DB51A, // 0x9A01FFDA
 
 		/// <summary>
-		/// Parameters: bool value
+		/// Parameters: BOOL value
 		/// </summary>
 		/// <remarks>
 		/// Pushes a boolean for the Scaleform function onto the stack.<br/>
@@ -11732,7 +11732,7 @@ namespace GTA.Native
 		_PUSH_SCALEFORM_MOVIE_METHOD_PARAMETER_BOOL = 0xC58424BA936EB458, // 0x0D4AE8CB
 
 		/// <summary>
-		/// Parameters: string componentType
+		/// Parameters: const char* componentType
 		/// </summary>
 		/// <remarks>
 		/// Called prior to adding a text component to the UI. After doing so, GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING is called.<br/>
@@ -11777,7 +11777,7 @@ namespace GTA.Native
 		_END_TEXT_COMMAND_SCALEFORM_STRING_2 = 0xAE4E8157D9ECF087, // 0x2E80DB52
 
 		/// <summary>
-		/// Parameters: string string
+		/// Parameters: const char* @string
 		/// </summary>
 		/// <remarks>
 		/// Same as SCALEFORM_MOVIE_METHOD_ADD_PARAM_TEXTURE_NAME_STRING<br/>
@@ -11795,7 +11795,7 @@ namespace GTA.Native
 		_SCALEFORM_MOVIE_METHOD_ADD_PARAM_TEXTURE_NAME_STRING_2 = 0x77FE3402004CD1B0,
 
 		/// <summary>
-		/// Parameters: string string
+		/// Parameters: const char* @string
 		/// </summary>
 		/// <returns>void</returns>
 		SCALEFORM_MOVIE_METHOD_ADD_PARAM_TEXTURE_NAME_STRING = 0xBA7148484BD90365, // 0x4DAAD55B
@@ -11809,7 +11809,7 @@ namespace GTA.Native
 		_PUSH_SCALEFORM_MOVIE_METHOD_PARAMETER_STRING = 0xBA7148484BD90365, // 0x4DAAD55B
 
 		/// <summary>
-		/// Parameters: string string
+		/// Parameters: const char* @string
 		/// </summary>
 		/// <returns>void</returns>
 		SCALEFORM_MOVIE_METHOD_ADD_PARAM_PLAYER_NAME_STRING = 0xE83A3E3557A56640, // 0xCCBF0334
@@ -11920,7 +11920,7 @@ namespace GTA.Native
 		DRAW_TV_CHANNEL = 0xFDDC2B4ED3C69DF0, // 0x8129EF89
 
 		/// <summary>
-		/// Parameters: int tvChannel, string playlistName, bool restart
+		/// Parameters: int tvChannel, const char* playlistName, BOOL restart
 		/// </summary>
 		/// <remarks>
 		/// Loads specified video sequence into the TV Channel<br/>
@@ -11954,7 +11954,7 @@ namespace GTA.Native
 		_LOAD_TV_CHANNEL_SEQUENCE = 0xF7B38B8305F1FE8B, // 0xB262DE67
 
 		/// <summary>
-		/// Parameters: int tvChannel, string playlistName, int hour
+		/// Parameters: int tvChannel, const char* playlistName, int hour
 		/// </summary>
 		/// <returns>void</returns>
 		SET_TV_CHANNEL_PLAYLIST_AT_HOUR = 0x2201C576FACAEBE8, // 0x78C4DCBE
@@ -11966,7 +11966,7 @@ namespace GTA.Native
 		CLEAR_TV_CHANNEL_PLAYLIST = 0xBEB3D46BB7F043C0, // 0xCBE7068F
 
 		/// <summary>
-		/// Parameters: int tvChannel, IntPtr p1
+		/// Parameters: int tvChannel, Any p1
 		/// </summary>
 		/// <returns>BOOL</returns>
 		IS_PLAYLIST_ON_CHANNEL = 0x1F710BFF7DAE6261,
@@ -11976,7 +11976,7 @@ namespace GTA.Native
 		_IS_PLAYLIST_UNK = 0x1F710BFF7DAE6261,
 
 		/// <summary>
-		/// Parameters: uint videoCliphash
+		/// Parameters: Hash videoCliphash
 		/// </summary>
 		/// <returns>BOOL</returns>
 		IS_TVSHOW_CURRENTLY_PLAYING = 0x0AD973CA1E077B60, // 0x4D1EB0FB
@@ -11990,13 +11990,13 @@ namespace GTA.Native
 		_IS_TV_PLAYLIST_ITEM_PLAYING = 0x0AD973CA1E077B60, // 0x4D1EB0FB
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		ENABLE_MOVIE_KEYFRAME_WAIT = 0x74C180030FDE4B69, // 0x796DE696
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		SET_TV_PLAYER_WATCHING_THIS_FRAME = 0xD1C55B110E4DF534, // 0xD99EC000
@@ -12005,7 +12005,7 @@ namespace GTA.Native
 		GET_CURRENT_TV_CLIP_NAMEHASH = 0x30432A0118736E00,
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		ENABLE_MOVIE_SUBTITLES = 0x873FA65C778AD970, // 0xC2DEBA3D
@@ -12014,7 +12014,7 @@ namespace GTA.Native
 		UI3DSCENE_IS_AVAILABLE = 0xD3A10FC7FD8D98CD, // 0xE40A0F1A
 
 		/// <summary>
-		/// Parameters: string presetName
+		/// Parameters: const char* presetName
 		/// </summary>
 		/// <remarks>
 		/// All presets can be found in common\data\ui\uiscenes.meta<br/>
@@ -12023,7 +12023,7 @@ namespace GTA.Native
 		UI3DSCENE_PUSH_PRESET = 0xF1CEA8A4198D8E9A, // 0x2E7D9B98
 
 		/// <summary>
-		/// Parameters: string presetName, Ped ped, int p2, float posX, float posY, float posZ
+		/// Parameters: const char* presetName, Ped ped, int p2, float posX, float posY, float posZ
 		/// </summary>
 		/// <remarks>
 		/// It's called after UI3DSCENE_IS_AVAILABLE and UI3DSCENE_PUSH_PRESET<br/>
@@ -12037,13 +12037,13 @@ namespace GTA.Native
 		UI3DSCENE_CLEAR_PATCHED_DATA = 0x7A42B2E236E71415, // 0x431AA036
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		UI3DSCENE_MAKE_PUSHED_PRESET_PERSISTENT = 0x108BE26959A9D9BB, // 0x24A7A7F6
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// This native enables/disables the gold putting grid display (<see href='https://i.imgur.com/TC6cku6.png'>https://i.imgur.com/TC6cku6.png</see>).<br/>
@@ -12079,7 +12079,7 @@ namespace GTA.Native
 		TERRAINGRID_SET_COLOURS = 0x5CE62918F8D703C7, // 0xDF552973
 
 		/// <summary>
-		/// Parameters: string effectName, int duration, bool looped
+		/// Parameters: const char* effectName, int duration, BOOL looped
 		/// </summary>
 		/// <remarks>
 		/// duration - is how long to play the effect for in milliseconds. If 0, it plays the default length<br/>
@@ -12094,7 +12094,7 @@ namespace GTA.Native
 		_START_SCREEN_EFFECT = 0x2206BF9A37B7F724, // 0x1D980479
 
 		/// <summary>
-		/// Parameters: string effectName
+		/// Parameters: const char* effectName
 		/// </summary>
 		/// <remarks>
 		/// See ANIMPOSTFX_PLAY<br/>
@@ -12108,7 +12108,7 @@ namespace GTA.Native
 		_STOP_SCREEN_EFFECT = 0x068E835A1D0DC0E3, // 0x06BB5CDA
 
 		/// <summary>
-		/// Parameters: string effectName
+		/// Parameters: const char* effectName
 		/// </summary>
 		/// <remarks>
 		/// See ANIMPOSTFX_PLAY<br/>
@@ -12122,7 +12122,7 @@ namespace GTA.Native
 		_ANIMPOSTFX_GET_UNK = 0xE35B38A27E8E7179,
 
 		/// <summary>
-		/// Parameters: string effectName
+		/// Parameters: const char* effectName
 		/// </summary>
 		/// <remarks>
 		/// Returns whether the specified effect is active.<br/>
@@ -12147,7 +12147,7 @@ namespace GTA.Native
 		_STOP_ALL_SCREEN_EFFECTS = 0xB4EDDC19532BFB85, // 0x4E6D875B
 
 		/// <summary>
-		/// Parameters: string effectName
+		/// Parameters: const char* effectName
 		/// </summary>
 		/// <remarks>
 		/// Stops the effect and sets a value (bool) in its data (+0x199) to false.<br/>
@@ -12166,7 +12166,7 @@ namespace GTA.Native
 		#region HUD
 
 		/// <summary>
-		/// Parameters: string string
+		/// Parameters: const char* @string
 		/// </summary>
 		/// <remarks>
 		/// Initializes the text entry for the the text next to a loading prompt. All natives for building UI texts can be used here<br/>
@@ -12261,7 +12261,7 @@ namespace GTA.Native
 		BUSYSPINNER_IS_DISPLAYING = 0xB2A592B04648A9CB, // 0x3AF34DEF
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>void</returns>
 		DISABLE_PAUSEMENU_SPINNER = 0x9245E81072704B8A,
@@ -12305,7 +12305,7 @@ namespace GTA.Native
 		_SET_MOUSE_CURSOR_SPRITE = 0x8DB8CFFD58B62552,
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Shows/hides the frontend cursor on the pause menu or similar menus.<br/>
@@ -12329,13 +12329,13 @@ namespace GTA.Native
 		_IS_MOUSE_CURSOR_ABOVE_INSTRUCTIONAL_BUTTONS = 0x3D9ACB1EB139E702,
 
 		/// <summary>
-		/// Parameters: int scaleformHandle, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: int scaleformHandle, Any* p1, Any* p2, Any* p3
 		/// </summary>
 		/// <returns>BOOL</returns>
 		GET_MOUSE_EVENT = 0x632B2940C67F4EA9,
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		THEFEED_ONLY_SHOW_TOOLTIPS = 0x6F1554B0CC2089FA, // 0xA7C8594B
@@ -12547,7 +12547,7 @@ namespace GTA.Native
 		_THEFEED_SET_ANIMPOSTFX_COUNT = 0x17AD8C9706BDD88A, // 0x24A97AF8
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		THEFEED_SET_VIBRATE_PARAMETER_FOR_NEXT_MESSAGE = 0x4A0C7C9BB10ABB36, // 0x44018EDB
@@ -12581,7 +12581,7 @@ namespace GTA.Native
 		_THEFEED_FLUSH_PERSISTENT = 0x80FE4F3AB4E1B62A, // 0x3CD4307C
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>void</returns>
 		THEFEED_SET_SNAP_FEED_ITEM_POSITIONS = 0xBAE4F9B97CD43B30,
@@ -12591,7 +12591,7 @@ namespace GTA.Native
 		_THEFEED_SET_FLUSH_ANIMPOSTFX = 0xBAE4F9B97CD43B30,
 
 		/// <summary>
-		/// Parameters: string txdString1, string txnString1, string txdString2, string txnString2
+		/// Parameters: const char* txdString1, const char* txnString1, const char* txdString2, const char* txnString2
 		/// </summary>
 		/// <remarks>
 		/// Used in the native scripts to reference "GET_PEDHEADSHOT_TXD_STRING" and "CHAR_DEFAULT".<br/>
@@ -12604,7 +12604,7 @@ namespace GTA.Native
 		_THEFEED_ADD_TXD_REF = 0x317EBA71D7543F52, // 0x6A3F747D
 
 		/// <summary>
-		/// Parameters: string text
+		/// Parameters: const char* text
 		/// </summary>
 		/// <remarks>
 		/// Declares the entry type of a notification, for example "STRING".<br/>
@@ -12623,7 +12623,7 @@ namespace GTA.Native
 		_SET_NOTIFICATION_TEXT_ENTRY = 0x202709F4C58A0424, // 0x574EE85C
 
 		/// <summary>
-		/// Parameters: string statTitle, int iconEnum, bool stepVal, int barValue, bool isImportant, string pictureTextureDict, string pictureTextureName
+		/// Parameters: const char* statTitle, int iconEnum, BOOL stepVal, int barValue, BOOL isImportant, const char* pictureTextureDict, const char* pictureTextureName
 		/// </summary>
 		/// <remarks>
 		/// List of picture names: <see href='https://pastebin.com/XdpJVbHz'>https://pastebin.com/XdpJVbHz</see><br/>
@@ -12637,7 +12637,7 @@ namespace GTA.Native
 		_SET_NOTIFICATION_MESSAGE_2 = 0x2B7E9A4EAAA93C89, // 0xED130FA1
 
 		/// <summary>
-		/// Parameters: string txdName, string textureName, bool flash, int iconType, string sender, string subject
+		/// Parameters: const char* txdName, const char* textureName, BOOL flash, int iconType, const char* sender, const char* subject
 		/// </summary>
 		/// <remarks>
 		/// This function can show pictures of every texture that can be requested by REQUEST_STREAMED_TEXTURE_DICT.<br/>
@@ -12664,7 +12664,7 @@ namespace GTA.Native
 		_SET_NOTIFICATION_MESSAGE = 0x1CCD9A37359072CF, // 0xE7E3C98B
 
 		/// <summary>
-		/// Parameters: string txdName, string textureName, bool flash, int iconType, string sender, string subject
+		/// Parameters: const char* txdName, const char* textureName, BOOL flash, int iconType, const char* sender, const char* subject
 		/// </summary>
 		/// <remarks>
 		/// This function can show pictures of every texture that can be requested by REQUEST_STREAMED_TEXTURE_DICT.<br/>
@@ -12688,7 +12688,7 @@ namespace GTA.Native
 		_END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT_GXT_ENTRY = 0xC6F580E4C94926AC,
 
 		/// <summary>
-		/// Parameters: string txdName, string textureName, bool flash, int iconType, string sender, string subject, float duration
+		/// Parameters: const char* txdName, const char* textureName, BOOL flash, int iconType, const char* sender, const char* subject, float duration
 		/// </summary>
 		/// <remarks>
 		/// This function can show pictures of every texture that can be requested by REQUEST_STREAMED_TEXTURE_DICT.<br/>
@@ -12704,7 +12704,7 @@ namespace GTA.Native
 		_SET_NOTIFICATION_MESSAGE_4 = 0x1E6611149DB3DB6B, // 0x0EB382B7
 
 		/// <summary>
-		/// Parameters: string txdName, string textureName, bool flash, int iconType, string sender, string subject, float duration, string clanTag
+		/// Parameters: const char* txdName, const char* textureName, BOOL flash, int iconType, const char* sender, const char* subject, float duration, const char* clanTag
 		/// </summary>
 		/// <remarks>
 		/// This function can show pictures of every texture that can be requested by REQUEST_STREAMED_TEXTURE_DICT.<br/>
@@ -12733,7 +12733,7 @@ namespace GTA.Native
 		_SET_NOTIFICATION_MESSAGE_CLAN_TAG = 0x5CBF7BADE20DB93E, // 0x3E807FE3
 
 		/// <summary>
-		/// Parameters: string txdName, string textureName, bool flash, int iconType1, string sender, string subject, float duration, string clanTag, int iconType2, int p9
+		/// Parameters: const char* txdName, const char* textureName, BOOL flash, int iconType1, const char* sender, const char* subject, float duration, const char* clanTag, int iconType2, int p9
 		/// </summary>
 		/// <remarks>
 		/// This function can show pictures of every texture that can be requested by REQUEST_STREAMED_TEXTURE_DICT.<br/>
@@ -12770,7 +12770,7 @@ namespace GTA.Native
 		_SET_NOTIFICATION_MESSAGE_CLAN_TAG_2 = 0x531B84E7DA981FB6, // 0xDEB491C8
 
 		/// <summary>
-		/// Parameters: bool blink, bool p1
+		/// Parameters: BOOL blink, BOOL p1
 		/// </summary>
 		/// <returns>int</returns>
 		END_TEXT_COMMAND_THEFEED_POST_TICKER = 0x2ED7843F8F801023, // 0x08F7AF78
@@ -12780,7 +12780,7 @@ namespace GTA.Native
 		_DRAW_NOTIFICATION = 0x2ED7843F8F801023, // 0x08F7AF78
 
 		/// <summary>
-		/// Parameters: bool blink, bool p1
+		/// Parameters: BOOL blink, BOOL p1
 		/// </summary>
 		/// <returns>int</returns>
 		END_TEXT_COMMAND_THEFEED_POST_TICKER_FORCED = 0x44FA03975424A0EE, // 0x57B8D0D4
@@ -12790,7 +12790,7 @@ namespace GTA.Native
 		_DRAW_NOTIFICATION_2 = 0x44FA03975424A0EE, // 0x57B8D0D4
 
 		/// <summary>
-		/// Parameters: bool blink, bool p1
+		/// Parameters: BOOL blink, BOOL p1
 		/// </summary>
 		/// <returns>int</returns>
 		END_TEXT_COMMAND_THEFEED_POST_TICKER_WITH_TOKENS = 0x378E809BF61EC840, // 0x02BCAF9B
@@ -12800,7 +12800,7 @@ namespace GTA.Native
 		_DRAW_NOTIFICATION_3 = 0x378E809BF61EC840, // 0x02BCAF9B
 
 		/// <summary>
-		/// Parameters: string textureDict, string textureName, int rpBonus, int colorOverlay, string titleLabel
+		/// Parameters: const char* textureDict, const char* textureName, int rpBonus, int colorOverlay, const char* titleLabel
 		/// </summary>
 		/// <remarks>
 		/// Shows an "award" notification above the minimap, example: <see href='https://i.imgur.com/e2DNaKX.png'>https://i.imgur.com/e2DNaKX.png</see><br/>
@@ -12820,7 +12820,7 @@ namespace GTA.Native
 		_DRAW_NOTIFICATION_AWARD = 0xAA295B6F28BD587D, // 0x02DED2B8
 
 		/// <summary>
-		/// Parameters: bool p0, bool p1, int* p2, int p3, bool isLeader, bool unk0, int clanDesc, int R, int G, int B
+		/// Parameters: BOOL p0, BOOL p1, int* p2, int p3, BOOL isLeader, BOOL unk0, int clanDesc, int R, int G, int B
 		/// </summary>
 		/// <returns>int</returns>
 		END_TEXT_COMMAND_THEFEED_POST_CREWTAG = 0x97C9E4E7024A8F2C, // 0xA9CCEF66
@@ -12834,7 +12834,7 @@ namespace GTA.Native
 		_DRAW_NOTIFICATION_APARTMENT_INVITE = 0x97C9E4E7024A8F2C, // 0xA9CCEF66
 
 		/// <summary>
-		/// Parameters: bool p0, bool p1, int* p2, int p3, bool isLeader, bool unk0, int clanDesc, string playerName, int R, int G, int B
+		/// Parameters: BOOL p0, BOOL p1, int* p2, int p3, BOOL isLeader, BOOL unk0, int clanDesc, const char* playerName, int R, int G, int B
 		/// </summary>
 		/// <returns>int</returns>
 		END_TEXT_COMMAND_THEFEED_POST_CREWTAG_WITH_GAME_NAME = 0x137BC35589E34E1E, // 0x88B9B909
@@ -12848,25 +12848,25 @@ namespace GTA.Native
 		_DRAW_NOTIFICATION_CLAN_INVITE = 0x137BC35589E34E1E, // 0x88B9B909
 
 		/// <summary>
-		/// Parameters: string gxtLabel1, int p1, string gxtLabel2
+		/// Parameters: const char* gxtLabel1, int p1, const char* gxtLabel2
 		/// </summary>
 		/// <returns>int</returns>
 		END_TEXT_COMMAND_THEFEED_POST_UNLOCK = 0x33EE12743CCD6343, // 0xE05E7052
 
 		/// <summary>
-		/// Parameters: string gxtLabel1, int p1, string gxtLabel2, int p3
+		/// Parameters: const char* gxtLabel1, int p1, const char* gxtLabel2, int p3
 		/// </summary>
 		/// <returns>int</returns>
 		END_TEXT_COMMAND_THEFEED_POST_UNLOCK_TU = 0xC8F3AAF93D0600BF, // 0x4FA43BA4
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3, IntPtr p4, IntPtr p5
+		/// Parameters: Any p0, Any p1, Any p2, Any p3, Any p4, Any p5
 		/// </summary>
 		/// <returns>int</returns>
 		END_TEXT_COMMAND_THEFEED_POST_UNLOCK_TU_WITH_COLOR = 0x7AE0589093A2E088, // 0x8C90D22F
 
 		/// <summary>
-		/// Parameters: bool blink, bool p1
+		/// Parameters: BOOL blink, BOOL p1
 		/// </summary>
 		/// <returns>int</returns>
 		END_TEXT_COMMAND_THEFEED_POST_MPTICKER = 0xF020C96915705B3A, // 0x8E319AB8
@@ -12876,7 +12876,7 @@ namespace GTA.Native
 		_DRAW_NOTIFICATION_4 = 0xF020C96915705B3A, // 0x8E319AB8
 
 		/// <summary>
-		/// Parameters: string p0, string p1, string p2, bool p3, bool p4
+		/// Parameters: const char* p0, const char* p1, const char* p2, BOOL p3, BOOL p4
 		/// </summary>
 		/// <returns>int</returns>
 		END_TEXT_COMMAND_THEFEED_POST_CREW_RANKUP_WITH_LITERAL_FLAG = 0x8EFCCF6EC66D85E4,
@@ -12886,7 +12886,7 @@ namespace GTA.Native
 		END_TEXT_COMMAND_THEFEED_POST_CREW_RANKUP = 0x8EFCCF6EC66D85E4,
 
 		/// <summary>
-		/// Parameters: string txdName1, string textureName1, int count1, string txdName2, string textureName2, int count2, int hudColor1, int hudColor2
+		/// Parameters: const char* txdName1, const char* textureName1, int count1, const char* txdName2, const char* textureName2, int count2, int hudColor1, int hudColor2
 		/// </summary>
 		/// <remarks>
 		/// This function can show pictures of every texture that can be requested by REQUEST_STREAMED_TEXTURE_DICT.<br/>
@@ -12898,7 +12898,7 @@ namespace GTA.Native
 		END_TEXT_COMMAND_THEFEED_POST_VERSUS_TU = 0xB6871B0555B02996, // 0x5E93FBFA
 
 		/// <summary>
-		/// Parameters: int type, int image, string text
+		/// Parameters: int type, int image, const char* text
 		/// </summary>
 		/// <remarks>
 		/// returns a notification handle, prints out a notification like below:<br/>
@@ -12920,7 +12920,7 @@ namespace GTA.Native
 		_END_TEXT_COMMAND_THEFEED_POST_REPLAY_ICON = 0xD202B92CBF1D816F,
 
 		/// <summary>
-		/// Parameters: int type, string button, string text
+		/// Parameters: int type, const char* button, const char* text
 		/// </summary>
 		/// <remarks>
 		/// returns a notification handle, prints out a notification like below:<br/>
@@ -12947,7 +12947,7 @@ namespace GTA.Native
 		_END_TEXT_COMMAND_THEFEED_POST_REPLAY_INPUT = 0xDD6CB2CCE7C2735C,
 
 		/// <summary>
-		/// Parameters: string GxtEntry
+		/// Parameters: const char* GxtEntry
 		/// </summary>
 		/// <remarks>
 		/// void ShowSubtitle(const char *text)<br/>
@@ -12965,7 +12965,7 @@ namespace GTA.Native
 		_SET_TEXT_ENTRY_2 = 0xB87A37EEB7FAA67D, // 0xF42C43C7
 
 		/// <summary>
-		/// Parameters: int duration, bool drawImmediately
+		/// Parameters: int duration, BOOL drawImmediately
 		/// </summary>
 		/// <remarks>
 		/// Draws the subtitle at middle center of the screen.<br/>
@@ -12981,7 +12981,7 @@ namespace GTA.Native
 		_DRAW_SUBTITLE_TIMED = 0x9D77056A530643F6, // 0x38F82261
 
 		/// <summary>
-		/// Parameters: string text
+		/// Parameters: const char* text
 		/// </summary>
 		/// <remarks>
 		/// nothin doin. <br/>
@@ -12999,7 +12999,7 @@ namespace GTA.Native
 		END_TEXT_COMMAND_IS_MESSAGE_DISPLAYED = 0x8A9BA1AB3E237613, // 0x672EFB45
 
 		/// <summary>
-		/// Parameters: string text
+		/// Parameters: const char* text
 		/// </summary>
 		/// <remarks>
 		/// The following were found in the decompiled script files:<br/>
@@ -13030,7 +13030,7 @@ namespace GTA.Native
 		_DRAW_TEXT = 0xCD015E5BB0D96A57, // 0x6F8350CE
 
 		/// <summary>
-		/// Parameters: string text
+		/// Parameters: const char* text
 		/// </summary>
 		/// <returns>void</returns>
 		BEGIN_TEXT_COMMAND_GET_SCREEN_WIDTH_OF_DISPLAY_TEXT = 0x54CE8AC98E120CAB, // 0x51E7A037
@@ -13048,7 +13048,7 @@ namespace GTA.Native
 		_BEGIN_TEXT_COMMAND_GET_WIDTH = 0x54CE8AC98E120CAB, // 0x51E7A037
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>float</returns>
 		END_TEXT_COMMAND_GET_SCREEN_WIDTH_OF_DISPLAY_TEXT = 0x85F061DA64ED2F67, // 0xD12A643A
@@ -13062,7 +13062,7 @@ namespace GTA.Native
 		_END_TEXT_COMMAND_GET_WIDTH = 0x85F061DA64ED2F67, // 0xD12A643A
 
 		/// <summary>
-		/// Parameters: string entry
+		/// Parameters: const char* entry
 		/// </summary>
 		/// <remarks>
 		/// int GetLineCount(char *text, float x, float y)<br/>
@@ -13106,7 +13106,7 @@ namespace GTA.Native
 		_END_TEXT_COMMAND_LINE_COUNT = 0x9040DFB09BE75706, // 0xAA318785
 
 		/// <summary>
-		/// Parameters: string inputType
+		/// Parameters: const char* inputType
 		/// </summary>
 		/// <remarks>
 		/// Used to be known as _SET_TEXT_COMPONENT_FORMAT<br/>
@@ -13119,7 +13119,7 @@ namespace GTA.Native
 		_SET_TEXT_COMPONENT_FORMAT = 0x8509B634FBE7DA11, // 0xB245FC10
 
 		/// <summary>
-		/// Parameters: int p0, bool loop, bool beep, int shape
+		/// Parameters: int p0, BOOL loop, BOOL beep, int shape
 		/// </summary>
 		/// <remarks>
 		/// shape goes from -1 to 50 (may be more).<br/>
@@ -13145,7 +13145,7 @@ namespace GTA.Native
 		_DISPLAY_HELP_TEXT_FROM_STRING_LABEL = 0x238FFE5C7B0498A6, // 0xB59B530D
 
 		/// <summary>
-		/// Parameters: string labelName
+		/// Parameters: const char* labelName
 		/// </summary>
 		/// <remarks>
 		/// BOOL IsContextActive(char *ctx)<br/>
@@ -13164,7 +13164,7 @@ namespace GTA.Native
 		END_TEXT_COMMAND_IS_THIS_HELP_MESSAGE_BEING_DISPLAYED = 0x10BDDBFC529428DD, // 0xF63A13EC
 
 		/// <summary>
-		/// Parameters: string textLabel
+		/// Parameters: const char* textLabel
 		/// </summary>
 		/// <remarks>
 		/// Starts a text command to change the name of a blip displayed in the pause menu.<br/>
@@ -13187,7 +13187,7 @@ namespace GTA.Native
 		END_TEXT_COMMAND_SET_BLIP_NAME = 0xBC38B49BCB83BC9B, // 0xE8E59820
 
 		/// <summary>
-		/// Parameters: string p0
+		/// Parameters: const char* p0
 		/// </summary>
 		/// <returns>void</returns>
 		BEGIN_TEXT_COMMAND_ADD_DIRECTLY_TO_PREVIOUS_BRIEFS = 0x23D69E0465570028, // 0x0E103475
@@ -13197,7 +13197,7 @@ namespace GTA.Native
 		_BEGIN_TEXT_COMMAND_OBJECTIVE = 0x23D69E0465570028, // 0x0E103475
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>void</returns>
 		END_TEXT_COMMAND_ADD_DIRECTLY_TO_PREVIOUS_BRIEFS = 0xCFDBDF5AE59BA0F4, // 0x2944A6C5
@@ -13207,7 +13207,7 @@ namespace GTA.Native
 		_END_TEXT_COMMAND_OBJECTIVE = 0xCFDBDF5AE59BA0F4, // 0x2944A6C5
 
 		/// <summary>
-		/// Parameters: string text
+		/// Parameters: const char* text
 		/// </summary>
 		/// <remarks>
 		/// clears a print text command with this text<br/>
@@ -13219,7 +13219,7 @@ namespace GTA.Native
 		END_TEXT_COMMAND_CLEAR_PRINT = 0xFCC75460ABA29378, // 0x67785AF2
 
 		/// <summary>
-		/// Parameters: string gxtEntry
+		/// Parameters: const char* gxtEntry
 		/// </summary>
 		/// <returns>void</returns>
 		BEGIN_TEXT_COMMAND_OVERRIDE_BUTTON_TEXT = 0x8F9EE5687F8EECCD, // 0xBF855650
@@ -13251,7 +13251,7 @@ namespace GTA.Native
 		ADD_TEXT_COMPONENT_FLOAT = 0xE7DCB5B874BCD96E, // 0x24D78013
 
 		/// <summary>
-		/// Parameters: string labelName
+		/// Parameters: const char* labelName
 		/// </summary>
 		/// <returns>void</returns>
 		ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL = 0xC63CD5D2920ACBE7, // 0xDCE05406
@@ -13261,7 +13261,7 @@ namespace GTA.Native
 		_ADD_TEXT_COMPONENT_ITEM_STRING = 0xC63CD5D2920ACBE7, // 0xDCE05406
 
 		/// <summary>
-		/// Parameters: uint gxtEntryHash
+		/// Parameters: Hash gxtEntryHash
 		/// </summary>
 		/// <remarks>
 		/// It adds the localized text of the specified GXT entry name. Eg. if the argument is GET_HASH_KEY("ES_HELP"), adds "Continue". Just uses a text labels hash key<br/>
@@ -13276,7 +13276,7 @@ namespace GTA.Native
 		ADD_TEXT_COMPONENT_SUBSTRING_BLIP_NAME = 0x80EAD8E2E1D5D52E, // 0x5DE98F0A
 
 		/// <summary>
-		/// Parameters: string text
+		/// Parameters: const char* text
 		/// </summary>
 		/// <returns>void</returns>
 		ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME = 0x6C188BE134E074AA, // 0x27A244D8
@@ -13295,13 +13295,13 @@ namespace GTA.Native
 		ADD_TEXT_COMPONENT_SUBSTRING_TIME = 0x1115F16B8AB9E8BF, // 0x135B3CD0
 
 		/// <summary>
-		/// Parameters: int value, bool commaSeparated
+		/// Parameters: int value, BOOL commaSeparated
 		/// </summary>
 		/// <returns>void</returns>
 		ADD_TEXT_COMPONENT_FORMATTED_INTEGER = 0x0E4C749FF9DE9CC4, // 0x12929BDF
 
 		/// <summary>
-		/// Parameters: string p0, int p1
+		/// Parameters: const char* p0, int p1
 		/// </summary>
 		/// <remarks>
 		/// p1 was always -1<br/>
@@ -13314,7 +13314,7 @@ namespace GTA.Native
 		_ADD_TEXT_COMPONENT_APP_TITLE = 0x761B77454205A61D, // 0x65E1D404
 
 		/// <summary>
-		/// Parameters: string website
+		/// Parameters: const char* website
 		/// </summary>
 		/// <remarks>
 		/// This native (along with ADD_TEXT_COMPONENT_SUBSTRING_KEYBOARD_DISPLAY and ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME) do not actually filter anything. They simply add the provided text (as of 944)<br/>
@@ -13327,7 +13327,7 @@ namespace GTA.Native
 		_ADD_TEXT_COMPONENT_STRING2 = 0x94CF4AC034C9C986, // 0xC736999E
 
 		/// <summary>
-		/// Parameters: string string
+		/// Parameters: const char* @string
 		/// </summary>
 		/// <returns>void</returns>
 		ADD_TEXT_COMPONENT_SUBSTRING_KEYBOARD_DISPLAY = 0x5F68520888E69014, // 0x0829A799
@@ -13351,7 +13351,7 @@ namespace GTA.Native
 		_SET_NOTIFICATION_COLOR_NEXT = 0x39BBF623FC803EAC, // 0x6F1A1901
 
 		/// <summary>
-		/// Parameters: string text, int position, int length
+		/// Parameters: const char* text, int position, int length
 		/// </summary>
 		/// <remarks>
 		/// Returns a substring of a specified length starting at a specified position.<br/>
@@ -13367,7 +13367,7 @@ namespace GTA.Native
 		_GET_TEXT_SUBSTRING = 0x169BD9382084C8C0, // 0x34A396EE
 
 		/// <summary>
-		/// Parameters: string text, int position, int length, int maxLength
+		/// Parameters: const char* text, int position, int length, int maxLength
 		/// </summary>
 		/// <remarks>
 		/// Returns a substring of a specified length starting at a specified position. The result is guaranteed not to exceed the specified max length.<br/>
@@ -13396,7 +13396,7 @@ namespace GTA.Native
 		_GET_TEXT_SUBSTRING_SAFE = 0xB2798643312205C5, // 0x0183A66C
 
 		/// <summary>
-		/// Parameters: string text, int startPosition, int endPosition
+		/// Parameters: const char* text, int startPosition, int endPosition
 		/// </summary>
 		/// <remarks>
 		/// Returns a substring that is between two specified positions. The length of the string will be calculated using (endPosition - startPosition).<br/>
@@ -13414,7 +13414,7 @@ namespace GTA.Native
 		_GET_TEXT_SUBSTRING_SLICE = 0xCE94AEBA5D82908A, // 0xFA6373BB
 
 		/// <summary>
-		/// Parameters: string labelName
+		/// Parameters: const char* labelName
 		/// </summary>
 		/// <remarks>
 		/// Gets a string literal from a label name.<br/>
@@ -13436,7 +13436,7 @@ namespace GTA.Native
 		CLEAR_ALL_HELP_MESSAGES = 0x6178F68A87A4D3A0, // 0x9E5D9198
 
 		/// <summary>
-		/// Parameters: string p0
+		/// Parameters: const char* p0
 		/// </summary>
 		/// <remarks>
 		/// p0: found arguments in the b617d scripts: <see href='https://pastebin.com/X5akCN7z'>https://pastebin.com/X5akCN7z</see><br/>
@@ -13448,13 +13448,13 @@ namespace GTA.Native
 		CLEAR_SMALL_PRINTS = 0x2CEA2839313C09AC, // 0xA869A238
 
 		/// <summary>
-		/// Parameters: string gxt
+		/// Parameters: const char* gxt
 		/// </summary>
 		/// <returns>BOOL</returns>
 		DOES_TEXT_BLOCK_EXIST = 0x1C7302E725259789, // 0x96F74838
 
 		/// <summary>
-		/// Parameters: string gxt, int slot
+		/// Parameters: const char* gxt, int slot
 		/// </summary>
 		/// <remarks>
 		/// Request a gxt into the passed slot.<br/>
@@ -13463,7 +13463,7 @@ namespace GTA.Native
 		REQUEST_ADDITIONAL_TEXT = 0x71A78003C8E71424, // 0x9FA9175B
 
 		/// <summary>
-		/// Parameters: string gxt, int slot
+		/// Parameters: const char* gxt, int slot
 		/// </summary>
 		/// <returns>void</returns>
 		REQUEST_ADDITIONAL_TEXT_FOR_DLC = 0x6009F9F1AE90D8A6, // 0xF4D27EBE
@@ -13479,7 +13479,7 @@ namespace GTA.Native
 		HAS_ADDITIONAL_TEXT_LOADED = 0x02245FE4BED318B8, // 0xB0E56045
 
 		/// <summary>
-		/// Parameters: int p0, bool p1
+		/// Parameters: int p0, BOOL p1
 		/// </summary>
 		/// <returns>void</returns>
 		CLEAR_ADDITIONAL_TEXT = 0x2A179DF17CCF04CD, // 0x518141E0
@@ -13491,7 +13491,7 @@ namespace GTA.Native
 		IS_STREAMING_ADDITIONAL_TEXT = 0x8B6817B71B85EBF0, // 0xF079E4EB
 
 		/// <summary>
-		/// Parameters: string gxt, int slot
+		/// Parameters: const char* gxt, int slot
 		/// </summary>
 		/// <remarks>
 		/// Checks if the specified gxt has loaded into the passed slot.<br/>
@@ -13503,7 +13503,7 @@ namespace GTA.Native
 		IS_MESSAGE_BEING_DISPLAYED = 0x7984C03AA5CC2F41, // 0x6A77FE8D
 
 		/// <summary>
-		/// Parameters: string gxt
+		/// Parameters: const char* gxt
 		/// </summary>
 		/// <remarks>
 		/// Checks if the passed gxt name exists in the game files.<br/>
@@ -13512,13 +13512,13 @@ namespace GTA.Native
 		DOES_TEXT_LABEL_EXIST = 0xAC09CA973C564252, // 0x6ECAE560
 
 		/// <summary>
-		/// Parameters: string string, int length
+		/// Parameters: const char* @string, int length
 		/// </summary>
 		/// <returns>const char*</returns>
 		GET_FIRST_N_CHARACTERS_OF_LITERAL_STRING = 0x98C3CF913D895111,
 
 		/// <summary>
-		/// Parameters: string gxt
+		/// Parameters: const char* gxt
 		/// </summary>
 		/// <remarks>
 		/// Returns the string length of the string from the gxt string .<br/>
@@ -13527,7 +13527,7 @@ namespace GTA.Native
 		GET_LENGTH_OF_STRING_WITH_THIS_TEXT_LABEL = 0x801BD273D3A23F74, // 0xA4CA7BE5
 
 		/// <summary>
-		/// Parameters: string string
+		/// Parameters: const char* @string
 		/// </summary>
 		/// <remarks>
 		/// Returns the length of the string passed (much like strlen).<br/>
@@ -13536,7 +13536,7 @@ namespace GTA.Native
 		GET_LENGTH_OF_LITERAL_STRING = 0xF030907CCBB8A9FD, // 0x99379D55
 
 		/// <summary>
-		/// Parameters: string string
+		/// Parameters: const char* @string
 		/// </summary>
 		/// <returns>int</returns>
 		GET_LENGTH_OF_LITERAL_STRING_IN_BYTES = 0x43E4111189E54F0E, // 0x7DBC0764
@@ -13546,7 +13546,7 @@ namespace GTA.Native
 		_GET_LENGTH_OF_STRING = 0x43E4111189E54F0E, // 0x7DBC0764
 
 		/// <summary>
-		/// Parameters: uint hash
+		/// Parameters: Hash hash
 		/// </summary>
 		/// <remarks>
 		/// This functions converts the hash of a street name into a readable string.<br/>
@@ -13565,7 +13565,7 @@ namespace GTA.Native
 		IS_SUBTITLE_PREFERENCE_SWITCHED_ON = 0xAD6DACA4BA53E0A4, // 0x63BA19F5
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// If Hud should be displayed<br/>
@@ -13587,7 +13587,7 @@ namespace GTA.Native
 		DISPLAY_HUD_WHEN_PAUSED_THIS_FRAME = 0x402F9ED62087E898, // 0xC47AB1B0
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// If Minimap / Radar should be displayed.<br/>
@@ -13596,7 +13596,7 @@ namespace GTA.Native
 		DISPLAY_RADAR = 0xA0EBB943C300E693, // 0x52816BD4
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Setter for GET_FAKE_SPECTATOR_MODE<br/>
@@ -13624,13 +13624,13 @@ namespace GTA.Native
 		_IS_RADAR_ENABLED = 0xAF754F20EB5CD51A, // 0x9CD18314
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		USE_VEHICLE_TARGETING_RETICULE = 0x0C698D8F099174C7,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		ADD_VALID_VEHICLE_HIT_HASH = 0xE4C3B169876D33D7,
@@ -13639,7 +13639,7 @@ namespace GTA.Native
 		CLEAR_VALID_VEHICLE_HIT_HASHES = 0xEB81A3DADD503187,
 
 		/// <summary>
-		/// Parameters: Blip blip, bool enabled
+		/// Parameters: Blip blip, BOOL enabled
 		/// </summary>
 		/// <remarks>
 		/// Enable / disable showing route for the Blip-object.<br/>
@@ -13661,7 +13661,7 @@ namespace GTA.Native
 		SET_BLIP_ROUTE_COLOUR = 0x837155CD2F63DA09, // 0xDDE7C65C
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_FORCE_SHOW_GPS = 0x2790F4B17D098E26,
@@ -13671,7 +13671,7 @@ namespace GTA.Native
 		_SET_FORCE_BLIP_ROUTES_ON_FOOT = 0x2790F4B17D098E26,
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_USE_SET_DESTINATION_IN_PAUSE_MAP = 0x6CDD58146A436083,
@@ -13681,13 +13681,13 @@ namespace GTA.Native
 		_SET_USE_WAYPOINT_AS_DESTINATION = 0x6CDD58146A436083,
 
 		/// <summary>
-		/// Parameters: bool disabled
+		/// Parameters: BOOL disabled
 		/// </summary>
 		/// <returns>void</returns>
 		SET_BLOCK_WANTED_FLASH = 0xD1942374085C8469,
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>void</returns>
 		ADD_NEXT_MESSAGE_TO_PREVIOUS_BRIEFS = 0x60296AF4BA14ABC5, // 0xB58B25BD
@@ -13794,7 +13794,7 @@ namespace GTA.Native
 		_SET_HUD_COLOUR = 0xF314CF4F0211894E, // 0xF6E7E92B
 
 		/// <summary>
-		/// Parameters: bool visible
+		/// Parameters: BOOL visible
 		/// </summary>
 		/// <returns>void</returns>
 		SET_ABILITY_BAR_VISIBILITY = 0x1DFEDD15019315A9,
@@ -13804,7 +13804,7 @@ namespace GTA.Native
 		_SET_ABILITY_BAR_VISIBILITY_IN_MULTIPLAYER = 0x1DFEDD15019315A9,
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_ALLOW_ABILITY_BAR = 0x889329C80FE5963C,
@@ -13826,13 +13826,13 @@ namespace GTA.Native
 		SET_ABILITY_BAR_VALUE = 0x9969599CCFF5D85E, // 0x24E53FD8
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>void</returns>
 		FLASH_WANTED_DISPLAY = 0xA18AFB39081B6A1F, // 0x629F866B
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		FORCE_OFF_WANTED_STAR_FLASH = 0xBA8D65C1C65702E5, // 0x58612465
@@ -13881,13 +13881,13 @@ namespace GTA.Native
 		SET_TEXT_COLOUR = 0xBE6B23FFA53FB442, // 0xE54DD2C8
 
 		/// <summary>
-		/// Parameters: bool align
+		/// Parameters: BOOL align
 		/// </summary>
 		/// <returns>void</returns>
 		SET_TEXT_CENTRE = 0xC02F4DBFB51D988B, // 0xE26D39A1
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_TEXT_RIGHT_JUSTIFY = 0x6B3C4650BC8BEE47, // 0x45B60520
@@ -13923,7 +13923,7 @@ namespace GTA.Native
 		SET_TEXT_LEADING = 0xA50ABC31E3CDFAFF, // 0x98CE21D4
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <remarks>
 		/// This native does absolutely nothing, just a nullsub<br/>
@@ -13978,43 +13978,43 @@ namespace GTA.Native
 		GET_DEFAULT_SCRIPT_RENDERTARGET_RENDER_ID = 0x52F0982D7FD156B6, // 0x8188935F
 
 		/// <summary>
-		/// Parameters: string name, bool p1
+		/// Parameters: const char* name, BOOL p1
 		/// </summary>
 		/// <returns>BOOL</returns>
 		REGISTER_NAMED_RENDERTARGET = 0x57D9C12635E25CE3, // 0xFAE5D6F0
 
 		/// <summary>
-		/// Parameters: string name
+		/// Parameters: const char* name
 		/// </summary>
 		/// <returns>BOOL</returns>
 		IS_NAMED_RENDERTARGET_REGISTERED = 0x78DCDC15C9F116B4, // 0x284057F5
 
 		/// <summary>
-		/// Parameters: string name
+		/// Parameters: const char* name
 		/// </summary>
 		/// <returns>BOOL</returns>
 		RELEASE_NAMED_RENDERTARGET = 0xE9F6FFE837354DD4, // 0xD3F6C892
 
 		/// <summary>
-		/// Parameters: uint modelHash
+		/// Parameters: Hash modelHash
 		/// </summary>
 		/// <returns>void</returns>
 		LINK_NAMED_RENDERTARGET = 0xF6C09E276AEB3F2D, // 0x6844C4B9
 
 		/// <summary>
-		/// Parameters: string name
+		/// Parameters: const char* name
 		/// </summary>
 		/// <returns>int</returns>
 		GET_NAMED_RENDERTARGET_RENDER_ID = 0x1A6478B61C6BDC3B, // 0xF9D7A401
 
 		/// <summary>
-		/// Parameters: uint modelHash
+		/// Parameters: Hash modelHash
 		/// </summary>
 		/// <returns>BOOL</returns>
 		IS_NAMED_RENDERTARGET_LINKED = 0x113750538FA31298, // 0x8B52601F
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		CLEAR_HELP = 0x8DFCED7A656F8802, // 0xE6D85741
@@ -14192,7 +14192,7 @@ namespace GTA.Native
 		TRIGGER_SONAR_BLIP = 0x72DD432F3CDFC0EE, // 0xBF25E7B2
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		ALLOW_SONAR_BLIPS = 0x60734CC207C9833C, // 0xE7E1E32B
@@ -14242,7 +14242,7 @@ namespace GTA.Native
 		SET_COP_BLIP_SPRITE_AS_STANDARD = 0xB7B873520C84C118,
 
 		/// <summary>
-		/// Parameters: Blip blip, string gxtEntry
+		/// Parameters: Blip blip, const char* gxtEntry
 		/// </summary>
 		/// <remarks>
 		/// Doesn't work if the label text of gxtEntry is &#38;gt;= 80.<br/>
@@ -14336,7 +14336,7 @@ namespace GTA.Native
 		SET_BLIP_FLASH_TIMER = 0xD3CD6FD297AE87CC, // 0x8D5DF611
 
 		/// <summary>
-		/// Parameters: Blip blip, IntPtr p1
+		/// Parameters: Blip blip, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_BLIP_FLASH_INTERVAL = 0xAA51DB313C010A7E, // 0xEAF67377
@@ -14390,19 +14390,19 @@ namespace GTA.Native
 		DOES_BLIP_HAVE_GPS_ROUTE = 0xDD2238F57B977751, // 0x3E47F357
 
 		/// <summary>
-		/// Parameters: Blip blip, bool toggle
+		/// Parameters: Blip blip, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_BLIP_HIDDEN_ON_LEGEND = 0x54318C915D27E4CE, // 0x43996428
 
 		/// <summary>
-		/// Parameters: Blip blip, bool toggle
+		/// Parameters: Blip blip, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_BLIP_HIGH_DETAIL = 0xE2590BC29220CEBB, // 0xD5842BFF
 
 		/// <summary>
-		/// Parameters: Blip blip, bool toggle
+		/// Parameters: Blip blip, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_BLIP_AS_MISSION_CREATOR_BLIP = 0x24AC0137444F9FD5, // 0x802FB686
@@ -14424,13 +14424,13 @@ namespace GTA.Native
 		IS_HOVERING_OVER_MISSION_CREATOR_BLIP = 0x4167EFE0527D706E, // 0xC5EB849A
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SHOW_START_MISSION_INSTRUCTIONAL_BUTTON = 0xF1A6C18B35BCADE6, // 0xA2CAAB4F
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SHOW_CONTACT_INSTRUCTIONAL_BUTTON = 0xC772A904CDE1186F,
@@ -14443,19 +14443,19 @@ namespace GTA.Native
 		RELOAD_MAP_MENU = 0x2916A928514C9827,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_BLIP_MARKER_LONG_DISTANCE = 0xB552929B85FC27EC,
 
 		/// <summary>
-		/// Parameters: Blip blip, bool toggle
+		/// Parameters: Blip blip, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_BLIP_FLASHES = 0xB14552383D39CE3E, // 0xC0047F15
 
 		/// <summary>
-		/// Parameters: Blip blip, bool toggle
+		/// Parameters: Blip blip, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_BLIP_FLASHES_ALTERNATE = 0x2E8D9498C56DD0D1, // 0x1A81202B
@@ -14467,7 +14467,7 @@ namespace GTA.Native
 		IS_BLIP_FLASHING = 0xA5E41FD83AD6CEF0, // 0x52E111D7
 
 		/// <summary>
-		/// Parameters: Blip blip, bool toggle
+		/// Parameters: Blip blip, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Sets whether or not the specified blip should only be displayed when nearby, or on the minimap.<br/>
@@ -14572,7 +14572,7 @@ namespace GTA.Native
 		REMOVE_BLIP = 0x86A652570E5F25DD, // 0xD8C3C1CD
 
 		/// <summary>
-		/// Parameters: Blip blip, bool toggle
+		/// Parameters: Blip blip, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// false for enemy<br/>
@@ -14600,13 +14600,13 @@ namespace GTA.Native
 		HIDE_NUMBER_ON_BLIP = 0x532CFF637EF80148, // 0x0B6D610D
 
 		/// <summary>
-		/// Parameters: Blip blip, bool toggle
+		/// Parameters: Blip blip, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SHOW_HEIGHT_ON_BLIP = 0x75A16C3DA34F1245, // 0x1D99F676
 
 		/// <summary>
-		/// Parameters: Blip blip, bool toggle
+		/// Parameters: Blip blip, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Adds a green checkmark on top of a blip.<br/>
@@ -14619,7 +14619,7 @@ namespace GTA.Native
 		_SET_BLIP_CHECKED = 0x74513EA3E505181E, // 0x3DCF0092
 
 		/// <summary>
-		/// Parameters: Blip blip, bool toggle
+		/// Parameters: Blip blip, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Adds a orange checkmark on top of a given blip handle: <see href='https://imgur.com/a/aw5OTMF'>https://imgur.com/a/aw5OTMF</see><br/>
@@ -14637,7 +14637,7 @@ namespace GTA.Native
 		_SHOW_HAS_COMPLETED_INDICATOR_ON_BLIP = 0xCAC2031EBF79B1A8,
 
 		/// <summary>
-		/// Parameters: Blip blip, bool toggle
+		/// Parameters: Blip blip, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Adds the GTA: Online player heading indicator to a blip.<br/>
@@ -14646,7 +14646,7 @@ namespace GTA.Native
 		SHOW_HEADING_INDICATOR_ON_BLIP = 0x5FBCA48327B914DF, // 0xD1C3D71B
 
 		/// <summary>
-		/// Parameters: Blip blip, bool toggle
+		/// Parameters: Blip blip, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Highlights a blip by a cyan color circle.<br/>
@@ -14660,7 +14660,7 @@ namespace GTA.Native
 		SET_BLIP_FRIENDLY = 0xB81656BC81FE24D1, // 0x8DE82C15
 
 		/// <summary>
-		/// Parameters: Blip blip, bool toggle
+		/// Parameters: Blip blip, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Highlights a blip by a half cyan circle on the right side of the blip. <see href='https://i.imgur.com/FrV9M4e.png'>https://i.imgur.com/FrV9M4e.png</see><br/>
@@ -14675,7 +14675,7 @@ namespace GTA.Native
 		SET_BLIP_FRIEND = 0x23C3EB807312F01A, // 0x4C8F02B4
 
 		/// <summary>
-		/// Parameters: Blip blip, bool toggle
+		/// Parameters: Blip blip, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Enables or disables the blue half circle <see href='https://i.imgur.com/iZes9Ec.png'>https://i.imgur.com/iZes9Ec.png</see> around the specified blip on the left side of the blip. This is used to indicate that the player is in your crew in GTA:O. Color is changeable by using `SET_BLIP_SECONDARY_COLOUR`.<br/>
@@ -14688,7 +14688,7 @@ namespace GTA.Native
 		SET_BLIP_CREW = 0xDCFB5D4DB8BF367E, // 0xABBE1E45
 
 		/// <summary>
-		/// Parameters: Blip blip, bool toggle
+		/// Parameters: Blip blip, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Must be toggled before being queued for animation<br/>
@@ -14701,19 +14701,19 @@ namespace GTA.Native
 		_SET_BLIP_DISPLAY_INDICATOR_ON_BLIP = 0xC4278F70131BAA6D, // 0x6AA6A1CC
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_BLIP_SHORT_HEIGHT_THRESHOLD = 0x4B5B620C9B59ED34,
 
 		/// <summary>
-		/// Parameters: Blip blip, IntPtr p1
+		/// Parameters: Blip blip, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_BLIP_USE_HEIGHT_INDICATOR_ON_EDGE = 0x2C9F302398E13141, // 0xCA95C487
 
 		/// <summary>
-		/// Parameters: Blip blip, bool toggle
+		/// Parameters: Blip blip, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Makes a blip go small when off the minimap.<br/>
@@ -14726,7 +14726,7 @@ namespace GTA.Native
 		_SET_BLIP_SHRINK = 0x2B6D467DAB714E8D, // 0xC575F0BC
 
 		/// <summary>
-		/// Parameters: Blip blip, bool toggle
+		/// Parameters: Blip blip, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Enabling this on a radius blip will make it outline only. See <see href='https://cdn.discordapp.com/attachments/553235301632573459/575132227935928330/unknown.png'>https://cdn.discordapp.com/attachments/553235301632573459/575132227935928330/unknown.png</see><br/>
@@ -14771,13 +14771,13 @@ namespace GTA.Native
 		SET_NEW_WAYPOINT = 0xFE43368D2AA4F2FC, // 0x8444E1F0
 
 		/// <summary>
-		/// Parameters: Blip blip, bool toggle
+		/// Parameters: Blip blip, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_BLIP_BRIGHT = 0xB203913733F27884, // 0x72BEE6DF
 
 		/// <summary>
-		/// Parameters: Blip blip, bool toggle, int hudColorIndex
+		/// Parameters: Blip blip, BOOL toggle, int hudColorIndex
 		/// </summary>
 		/// <remarks>
 		/// As of b2189, the third parameter sets the color of the cone (before b2189 it was ignored). Note that it uses HUD colors, not blip colors.<br/>
@@ -14795,7 +14795,7 @@ namespace GTA.Native
 		REMOVE_COP_BLIP_FROM_PED = 0xC594B315EDF2D4AF, // 0x41B0D022
 
 		/// <summary>
-		/// Parameters: Blip blip, float p1, float p2, float p3, float p4, float p5, float p6, IntPtr p7, int p8
+		/// Parameters: Blip blip, float p1, float p2, float p3, float p4, float p5, float p6, Any p7, int p8
 		/// </summary>
 		/// <returns>void</returns>
 		SETUP_FAKE_CONE_DATA = 0xF83D0FEBE75E62C9,
@@ -14810,7 +14810,7 @@ namespace GTA.Native
 		CLEAR_FAKE_CONE_ARRAY = 0x8410C5E0CD847B9D,
 
 		/// <summary>
-		/// Parameters: int componentId, bool toggle, int overrideColor
+		/// Parameters: int componentId, BOOL toggle, int overrideColor
 		/// </summary>
 		/// <remarks>
 		/// This native is used to colorize certain map components like the army base at the top of the map.<br/>
@@ -14820,7 +14820,7 @@ namespace GTA.Native
 		SET_MINIMAP_COMPONENT = 0x75A9A10948D1DEA6, // 0x419DCDC4
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_MINIMAP_SONAR_SWEEP = 0x6B50FC8749632EC1,
@@ -14840,7 +14840,7 @@ namespace GTA.Native
 		GET_MAIN_PLAYER_BLIP_ID = 0xDCD4EC3F419D02FA, // 0xAB93F020
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PM_WARNINGSCREEN_ACTIVE = 0x41350B4FC28E3941,
@@ -14849,7 +14849,7 @@ namespace GTA.Native
 		HIDE_LOADING_ON_FADE_THIS_FRAME = 0x4B0311D3CDC4648F, // 0x35087963
 
 		/// <summary>
-		/// Parameters: uint interior, float x, float y, int z, int zoom
+		/// Parameters: Hash interior, float x, float y, int z, int zoom
 		/// </summary>
 		/// <remarks>
 		/// List of interior hashes: <see href='https://pastebin.com/1FUyXNqY'>https://pastebin.com/1FUyXNqY</see><br/>
@@ -14859,7 +14859,7 @@ namespace GTA.Native
 		SET_RADAR_AS_INTERIOR_THIS_FRAME = 0x59E727A1C9D3E31A, // 0x6F2626E1
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_INSIDE_VERY_SMALL_INTERIOR = 0x504DFE62A1692296,
@@ -14869,7 +14869,7 @@ namespace GTA.Native
 		_SET_INTERIOR_ZOOM_LEVEL_INCREASED = 0x504DFE62A1692296,
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_INSIDE_VERY_LARGE_INTERIOR = 0x7EC8ABA5E74B3D7A,
@@ -14896,7 +14896,7 @@ namespace GTA.Native
 		_SET_PLAYER_BLIP_POSITION_THIS_FRAME = 0x77E2DD177910E1CF, // 0x54E75C7D
 
 		/// <summary>
-		/// Parameters: float x, float y, IntPtr p2
+		/// Parameters: float x, float y, Any p2
 		/// </summary>
 		/// <remarks>
 		/// p2 maybe z float?<br/>
@@ -14922,7 +14922,7 @@ namespace GTA.Native
 		HIDE_MINIMAP_INTERIOR_MAP_THIS_FRAME = 0x20FE7FDFEEAD38C0, // 0xCE36E3FE
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Toggles the Cayo Perico map.<br/>
@@ -14948,19 +14948,19 @@ namespace GTA.Native
 		DONT_ZOOM_MINIMAP_WHEN_SNIPING_THIS_FRAME = 0x55F5A5F07134DE60, // 0x7A569F78
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		SET_WIDESCREEN_FORMAT = 0xC3B07BA00A83B0F1, // 0xF016E08F
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		DISPLAY_AREA_NAME = 0x276B6CE369C33678, // 0x489FDD41
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// "DISPLAY_CASH(false);" makes the cash amount render on the screen when appropriate<br/>
@@ -14970,7 +14970,7 @@ namespace GTA.Native
 		DISPLAY_CASH = 0x96DEC8D5430208B7, // 0x0049DF83
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Related to displaying cash on the HUD<br/>
@@ -14993,7 +14993,7 @@ namespace GTA.Native
 		_SET_SINGLEPLAYER_HUD_CASH = 0x0772DF77852C2E30, // 0xE319F90B
 
 		/// <summary>
-		/// Parameters: bool display
+		/// Parameters: BOOL display
 		/// </summary>
 		/// <returns>void</returns>
 		DISPLAY_AMMO_THIS_FRAME = 0xA5E78BA2B1331C55, // 0x60693CEE
@@ -15011,7 +15011,7 @@ namespace GTA.Native
 		HIDE_HUD_AND_RADAR_THIS_FRAME = 0x719FF505F097FD20, // 0xB75D4AD2
 
 		/// <summary>
-		/// Parameters: bool allow
+		/// Parameters: BOOL allow
 		/// </summary>
 		/// <remarks>
 		/// Controls whether to display 'Cash'/'Bank' next to the money balance HUD in Multiplayer (<see href='https://i.imgur.com/MiYUtNl.png'>https://i.imgur.com/MiYUtNl.png</see>)<br/>
@@ -15036,7 +15036,7 @@ namespace GTA.Native
 		REMOVE_MULTIPLAYER_BANK_CASH = 0xC7C6789AA1CFEDD0, // 0x728B4EF4
 
 		/// <summary>
-		/// Parameters: int p0, bool p1
+		/// Parameters: int p0, BOOL p1
 		/// </summary>
 		/// <remarks>
 		/// This native does absolutely nothing, just a nullsub<br/>
@@ -15057,7 +15057,7 @@ namespace GTA.Native
 		IS_IME_IN_PROGRESS = 0x801879A9B4F4B2FB,
 
 		/// <summary>
-		/// Parameters: string message, bool p1
+		/// Parameters: const char* message, BOOL p1
 		/// </summary>
 		/// <remarks>
 		/// The messages are localized strings.<br/>
@@ -15076,7 +15076,7 @@ namespace GTA.Native
 		DISPLAY_HELP_TEXT_THIS_FRAME = 0x960C9FF8F616E41C, // 0x18E3360A
 
 		/// <summary>
-		/// Parameters: bool show
+		/// Parameters: BOOL show
 		/// </summary>
 		/// <remarks>
 		/// Forces the weapon wheel to show/hide.<br/>
@@ -15123,7 +15123,7 @@ namespace GTA.Native
 		_HUD_WEAPON_WHEEL_GET_SELECTED_HASH = 0xA48931185F0536FE, // 0x22E9F555
 
 		/// <summary>
-		/// Parameters: uint weaponHash
+		/// Parameters: Hash weaponHash
 		/// </summary>
 		/// <remarks>
 		/// Set the active slotIndex in the wheel weapon to the slot associated with the provided Weapon hash<br/>
@@ -15149,7 +15149,7 @@ namespace GTA.Native
 		_HUD_WEAPON_WHEEL_GET_SLOT_HASH = 0xA13E93403F26C812,
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Sets a global that disables many weapon input tasks (shooting, aiming, etc.). Does not work with vehicle weapons, only used in selector.ysc<br/>
@@ -15179,7 +15179,7 @@ namespace GTA.Native
 		CLEAR_GPS_FLAGS = 0x21986729D6A3A830, // 0x056AFCE6
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_RACE_TRACK_RENDER = 0x1EAC5F91BCBC5073, // 0xFB9BABF5
@@ -15191,7 +15191,7 @@ namespace GTA.Native
 		CLEAR_GPS_RACE_TRACK = 0x7AA5B4CE533C858B, // 0x40C59829
 
 		/// <summary>
-		/// Parameters: int hudColor, bool displayOnFoot, bool followPlayer
+		/// Parameters: int hudColor, BOOL displayOnFoot, BOOL followPlayer
 		/// </summary>
 		/// <remarks>
 		/// Starts a new GPS custom-route, allowing you to plot lines on the map.<br/>
@@ -15212,7 +15212,7 @@ namespace GTA.Native
 		ADD_POINT_TO_GPS_CUSTOM_ROUTE = 0x311438A071DD9B1A, // 0xEEBDFE55
 
 		/// <summary>
-		/// Parameters: bool toggle, int radarThickness, int mapThickness
+		/// Parameters: BOOL toggle, int radarThickness, int mapThickness
 		/// </summary>
 		/// <remarks>
 		/// radarThickness: The width of the GPS route on the radar<br/>
@@ -15225,7 +15225,7 @@ namespace GTA.Native
 		CLEAR_GPS_CUSTOM_ROUTE = 0xE6DE0561D9232A64, // 0xCF2E3E24
 
 		/// <summary>
-		/// Parameters: int hudColor, bool routeFromPlayer, bool displayOnFoot
+		/// Parameters: int hudColor, BOOL routeFromPlayer, BOOL displayOnFoot
 		/// </summary>
 		/// <remarks>
 		/// Starts a new GPS multi-route, allowing you to create custom GPS paths.<br/>
@@ -15247,7 +15247,7 @@ namespace GTA.Native
 		ADD_POINT_TO_GPS_MULTI_ROUTE = 0xA905192A6781C41B, // 0xFE485135
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_GPS_MULTI_ROUTE_RENDER = 0x3DDA37128DD1ACA8, // 0xE87CBE4C
@@ -15262,7 +15262,7 @@ namespace GTA.Native
 		CLEAR_GPS_PLAYER_WAYPOINT = 0xFF4FB7C8CDFA3DA7, // 0x0B9C7FC2
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_GPS_FLASHES = 0x320D0E0D936A0E9B, // 0xE991F733
@@ -15291,13 +15291,13 @@ namespace GTA.Native
 		FLASH_MINIMAP_DISPLAY_WITH_COLOR = 0x6B1DE27EE78E6A19, // 0x79A6CAF6
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		TOGGLE_STEALTH_RADAR = 0x6AFDFB93754950C7, // 0xC68D47C4
 
 		/// <summary>
-		/// Parameters: bool toggle, Ped ped
+		/// Parameters: BOOL toggle, Ped ped
 		/// </summary>
 		/// <returns>void</returns>
 		SET_MINIMAP_IN_SPECTATOR_MODE = 0x1A5CD7752DD28CD3, // 0xD5BFCADB
@@ -15307,13 +15307,13 @@ namespace GTA.Native
 		KEY_HUD_COLOUR = 0x1A5CD7752DD28CD3, // 0xD5BFCADB
 
 		/// <summary>
-		/// Parameters: bool p0, string name
+		/// Parameters: BOOL p0, const char* name
 		/// </summary>
 		/// <returns>void</returns>
 		SET_MISSION_NAME = 0x5F28ECF5FC84772F, // 0x68DCAE10
 
 		/// <summary>
-		/// Parameters: bool p0, string name
+		/// Parameters: BOOL p0, const char* name
 		/// </summary>
 		/// <returns>void</returns>
 		SET_MISSION_NAME_FOR_UGC_MISSION = 0xE45087D85F468BC2, // 0x8D9A1734
@@ -15323,19 +15323,19 @@ namespace GTA.Native
 		_SET_MISSION_NAME_2 = 0xE45087D85F468BC2, // 0x8D9A1734
 
 		/// <summary>
-		/// Parameters: bool p0, string p1, string p2, string p3, string p4, string p5, string p6, string p7, string p8
+		/// Parameters: BOOL p0, const char* p1, const char* p2, const char* p3, const char* p4, const char* p5, const char* p6, const char* p7, const char* p8
 		/// </summary>
 		/// <returns>void</returns>
 		SET_DESCRIPTION_FOR_UGC_MISSION_EIGHT_STRINGS = 0x817B86108EB94E51, // 0xD2161E77
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_MINIMAP_BLOCK_WAYPOINT = 0x58FADDED207897DC, // 0xA41C3B62
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Toggles the North Yankton map<br/>
@@ -15352,7 +15352,7 @@ namespace GTA.Native
 		_SET_NORTH_YANKTON_MAP = 0x9133955F1A2DA957, // 0x02F5F1D1
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// If true, the entire map will be revealed.<br/>
@@ -15383,7 +15383,7 @@ namespace GTA.Native
 		_IS_MINIMAP_AREA_REVEALED = 0x6E31B91145873922, // 0x65B705F6
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>void</returns>
 		SET_MINIMAP_FOW_DO_NOT_UPDATE = 0x62E849B7EB28E770,
@@ -15439,7 +15439,7 @@ namespace GTA.Native
 		UNLOCK_MINIMAP_POSITION = 0x3E93E06DB8EF1F30, // 0x5E8E6F54
 
 		/// <summary>
-		/// Parameters: float altitude, bool p1, IntPtr p2
+		/// Parameters: float altitude, BOOL p1, Any p2
 		/// </summary>
 		/// <remarks>
 		/// Argument must be 0.0f or above 38.0f, or it will be ignored.<br/>
@@ -15456,7 +15456,7 @@ namespace GTA.Native
 		_SET_MINIMAP_ALTITUDE_INDICATOR_LEVEL = 0xD201F3FF917A506D, // 0x0308EDF6
 
 		/// <summary>
-		/// Parameters: int health, int capacity, bool wasAdded
+		/// Parameters: int health, int capacity, BOOL wasAdded
 		/// </summary>
 		/// <returns>void</returns>
 		SET_HEALTH_HUD_DISPLAY_VALUES = 0x3F5CC444DCAAA8F2, // 0x7FB6FB2A
@@ -15474,7 +15474,7 @@ namespace GTA.Native
 		SET_MAX_ARMOUR_HUD_DISPLAY = 0x06A320535F5F0248, // 0x827F14DE
 
 		/// <summary>
-		/// Parameters: bool toggleBigMap, bool showFullMap
+		/// Parameters: BOOL toggleBigMap, BOOL showFullMap
 		/// </summary>
 		/// <remarks>
 		/// Toggles the big minimap state like in GTA:Online.<br/>
@@ -15710,13 +15710,13 @@ namespace GTA.Native
 		SET_FLOATING_HELP_TEXT_STYLE = 0x788E7FD431BD67F1, // 0x97852A82
 
 		/// <summary>
-		/// Parameters: int hudIndex, bool p1
+		/// Parameters: int hudIndex, BOOL p1
 		/// </summary>
 		/// <returns>void</returns>
 		CLEAR_FLOATING_HELP = 0x50085246ABD3FEFA, // 0xB181F88F
 
 		/// <summary>
-		/// Parameters: Player player, string username, bool pointedClanTag, bool isRockstarClan, string clanTag, int clanFlag, int r, int g, int b
+		/// Parameters: Player player, const char* username, BOOL pointedClanTag, BOOL isRockstarClan, const char* clanTag, int clanFlag, int r, int g, int b
 		/// </summary>
 		/// <remarks>
 		/// clanFlag: takes a number 0-5<br/>
@@ -15744,7 +15744,7 @@ namespace GTA.Native
 		_HAS_MP_GAMER_TAG = 0x6E0EB3EB47C8D7AA, // 0xEFD2564A
 
 		/// <summary>
-		/// Parameters: Ped ped, string username, bool pointedClanTag, bool isRockstarClan, string clanTag, int clanFlag
+		/// Parameters: Ped ped, const char* username, BOOL pointedClanTag, BOOL isRockstarClan, const char* clanTag, int clanFlag
 		/// </summary>
 		/// <remarks>
 		/// clanFlag: takes a number 0-5<br/>
@@ -15779,7 +15779,7 @@ namespace GTA.Native
 		ADD_TREVOR_RANDOM_MODIFIER = 0x595B5178E412E199, // 0x63959059
 
 		/// <summary>
-		/// Parameters: int gamerTagId, int component, bool toggle, IntPtr p3
+		/// Parameters: int gamerTagId, int component, BOOL toggle, Any p3
 		/// </summary>
 		/// <remarks>
 		/// enum eMpGamerTagComponent<br/>
@@ -15820,7 +15820,7 @@ namespace GTA.Native
 		SET_MP_GAMER_TAG_VISIBILITY = 0x63BB75ABEDC1F6A0, // 0xD41DF479
 
 		/// <summary>
-		/// Parameters: int gamerTagId, bool toggle
+		/// Parameters: int gamerTagId, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_ALL_MP_GAMER_TAGS_VISIBILITY = 0xEE76FF7E6A0166B0, // 0x767DED29
@@ -15838,7 +15838,7 @@ namespace GTA.Native
 		_SET_MP_GAMER_TAG_ENABLED = 0xEE76FF7E6A0166B0, // 0x767DED29
 
 		/// <summary>
-		/// Parameters: int gamerTagId, bool toggle
+		/// Parameters: int gamerTagId, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Displays a bunch of icons above the players name, and level, and their name twice<br/>
@@ -15851,7 +15851,7 @@ namespace GTA.Native
 		_SET_MP_GAMER_TAG_ICONS = 0xA67F9C46D612B6F1, // 0xB01A5434
 
 		/// <summary>
-		/// Parameters: int gamerTagId, bool toggle
+		/// Parameters: int gamerTagId, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_MP_GAMER_TAGS_SHOULD_USE_POINTS_HEALTH = 0xD29EC58C2F6B5014,
@@ -15926,7 +15926,7 @@ namespace GTA.Native
 		_SET_MP_GAMER_TAG_UNK = 0x9C16459B2324B2CF,
 
 		/// <summary>
-		/// Parameters: int gamerTagId, string string
+		/// Parameters: int gamerTagId, const char* @string
 		/// </summary>
 		/// <returns>void</returns>
 		SET_MP_GAMER_TAG_NAME = 0xDEA2B8283BAA3944, // 0x627A559B
@@ -15950,7 +15950,7 @@ namespace GTA.Native
 		_IS_VALID_MP_GAMER_TAG_MOVIE = 0xEB709A36958ABE0D, // 0xF11414C4
 
 		/// <summary>
-		/// Parameters: int gamerTagId, string string
+		/// Parameters: int gamerTagId, const char* @string
 		/// </summary>
 		/// <returns>void</returns>
 		SET_MP_GAMER_TAG_BIG_TEXT = 0x7B7723747CCB55B6, // 0x939218AB
@@ -15999,7 +15999,7 @@ namespace GTA.Native
 		_IS_WARNING_MESSAGE_ACTIVE_2 = 0xAF42195A42C63BBA,
 
 		/// <summary>
-		/// Parameters: string titleMsg, int flags, string promptMsg, bool p3, int p4, string p5, string p6, bool showBackground, int errorCode
+		/// Parameters: const char* titleMsg, int flags, const char* promptMsg, BOOL p3, int p4, const char* p5, const char* p6, BOOL showBackground, int errorCode
 		/// </summary>
 		/// <remarks>
 		/// You can only use text entries. No custom text.<br/>
@@ -16010,7 +16010,7 @@ namespace GTA.Native
 		SET_WARNING_MESSAGE = 0x7B1776B3B53F8D74, // 0xBE699BDE
 
 		/// <summary>
-		/// Parameters: string entryHeader, string entryLine1, int instructionalKey, string entryLine2, bool p4, IntPtr p5, IntPtr showBackground, IntPtr p7, bool p8, IntPtr p9
+		/// Parameters: const char* entryHeader, const char* entryLine1, int instructionalKey, const char* entryLine2, BOOL p4, Any p5, Any* showBackground, Any* p7, BOOL p8, Any p9
 		/// </summary>
 		/// <remarks>
 		/// Shows a warning message on screen with a header.<br/>
@@ -16025,7 +16025,7 @@ namespace GTA.Native
 		_SET_WARNING_MESSAGE_2 = 0xDC38CC1E35B6A5D7, // 0x2DB9EAB5
 
 		/// <summary>
-		/// Parameters: string entryHeader, string entryLine1, int instructionalKey, string entryLine2, bool p4, IntPtr p5, IntPtr additionalIntInfo, string additionalTextInfoLine1, string additionalTextInfoLine2, bool showBackground, int errorCode
+		/// Parameters: const char* entryHeader, const char* entryLine1, int instructionalKey, const char* entryLine2, BOOL p4, Any p5, Any additionalIntInfo, const char* additionalTextInfoLine1, const char* additionalTextInfoLine2, BOOL showBackground, int errorCode
 		/// </summary>
 		/// <remarks>
 		/// You can use this native for custom input, without having to use any scaleform-related natives.<br/>
@@ -16051,7 +16051,7 @@ namespace GTA.Native
 		_SET_WARNING_MESSAGE_3 = 0x701919482C74B5AB, // 0x749929D3
 
 		/// <summary>
-		/// Parameters: string entryHeader, string entryLine1, int flags, string entryLine2, bool p4, IntPtr p5, IntPtr p6, IntPtr p7, bool showBg, IntPtr p9, IntPtr p10
+		/// Parameters: const char* entryHeader, const char* entryLine1, int flags, const char* entryLine2, BOOL p4, Any p5, Any* p6, Any* p7, BOOL showBg, Any p9, Any p10
 		/// </summary>
 		/// <returns>void</returns>
 		SET_WARNING_MESSAGE_WITH_HEADER_EXTENDED = 0x38B55259C2E078ED,
@@ -16061,7 +16061,7 @@ namespace GTA.Native
 		_SET_WARNING_MESSAGE_WITH_HEADER_UNK = 0x38B55259C2E078ED,
 
 		/// <summary>
-		/// Parameters: string labelTitle, string labelMessage, int p2, int p3, string labelMessage2, bool p5, int p6, int p7, string p8, string p9, bool background, int errorCode
+		/// Parameters: const char* labelTitle, const char* labelMessage, int p2, int p3, const char* labelMessage2, BOOL p5, int p6, int p7, const char* p8, const char* p9, BOOL background, int errorCode
 		/// </summary>
 		/// <remarks>
 		/// labelTitle: Label of the alert's title.<br/>
@@ -16142,7 +16142,7 @@ namespace GTA.Native
 		_GET_WARNING_MESSAGE_TITLE_HASH = 0x81DF9ABA6C83DFF9,
 
 		/// <summary>
-		/// Parameters: int index, string name, int cash, int rp, int lvl, int colour
+		/// Parameters: int index, const char* name, int cash, int rp, int lvl, int colour
 		/// </summary>
 		/// <remarks>
 		/// Some sort of list displayed in a warning message. Yet unknown how to prevent repeating.<br/>
@@ -16157,7 +16157,7 @@ namespace GTA.Native
 		_SET_WARNING_MESSAGE_LIST_ROW = 0x0C5A80A9E096D529,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>BOOL</returns>
 		SET_WARNING_MESSAGE_OPTION_HIGHLIGHT = 0xDAF87174BE7454FF,
@@ -16180,7 +16180,7 @@ namespace GTA.Native
 		CLEAR_DYNAMIC_PAUSE_MENU_ERROR_MESSAGE = 0x7792424AA0EAC32E, // 0x2F9A309C
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// If toggle is true, the map is shown in full screen<br/>
@@ -16244,7 +16244,7 @@ namespace GTA.Native
 		_GET_NORTH_RADAR_BLIP = 0x3F0CF9CB7E589B88,
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Toggles whether or not name labels are shown on the expanded minimap next to player blips, like in GTA:O.<br/>
@@ -16265,7 +16265,7 @@ namespace GTA.Native
 		DRAW_HUD_OVER_FADE_THIS_FRAME = 0xBF4F34A85CA2970C, // 0x317775DF
 
 		/// <summary>
-		/// Parameters: uint menuhash, bool togglePause, int component
+		/// Parameters: Hash menuhash, BOOL togglePause, int component
 		/// </summary>
 		/// <remarks>
 		/// Does stuff like this:<br/>
@@ -16309,7 +16309,7 @@ namespace GTA.Native
 		ACTIVATE_FRONTEND_MENU = 0xEF01D36B9C9D0C7B, // 0x01D83872
 
 		/// <summary>
-		/// Parameters: uint menuHash, int p1
+		/// Parameters: Hash menuHash, int p1
 		/// </summary>
 		/// <remarks>
 		/// Before using this native click the native above and look at the decription.<br/>
@@ -16335,7 +16335,7 @@ namespace GTA.Native
 		_GET_CURRENT_FRONTEND_MENU = 0x2309595AD6145265, // 0x33D6868F
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PAUSE_MENU_ACTIVE = 0xDF47FC56C71569CF, // 0x1DCD878E
@@ -16357,7 +16357,7 @@ namespace GTA.Native
 		_ALLOW_PAUSE_MENU_WHEN_DEAD_THIS_FRAME = 0xCC3FDDED67BCFC63, // 0x630CD8EE
 
 		/// <summary>
-		/// Parameters: bool active
+		/// Parameters: BOOL active
 		/// </summary>
 		/// <returns>void</returns>
 		SET_FRONTEND_ACTIVE = 0x745711A75AB09277, // 0x81E1AD32
@@ -16389,7 +16389,7 @@ namespace GTA.Native
 		IS_PAUSE_MENU_RESTARTING = 0x1C491717107431C7, // 0x3C4CF4D9
 
 		/// <summary>
-		/// Parameters: string p0
+		/// Parameters: const char* p0
 		/// </summary>
 		/// <remarks>
 		/// Not present in retail version of the game, actual definiton seems to be<br/>
@@ -16412,13 +16412,13 @@ namespace GTA.Native
 		PAUSE_MENUCEPTION_THE_KICK = 0xCDCA26E80FAECB8F, // 0xC84BE309
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		PAUSE_TOGGLE_FULLSCREEN_MAP = 0x2DE6C5E2E996F178,
 
 		/// <summary>
-		/// Parameters: uint contextHash
+		/// Parameters: Hash contextHash
 		/// </summary>
 		/// <remarks>
 		/// Activates the specified frontend menu context.<br/>
@@ -16435,7 +16435,7 @@ namespace GTA.Native
 		_ADD_FRONTEND_MENU_CONTEXT = 0xDD564BDD0472C936, // 0x9FE8FD5E
 
 		/// <summary>
-		/// Parameters: uint contextHash
+		/// Parameters: Hash contextHash
 		/// </summary>
 		/// <returns>void</returns>
 		PAUSE_MENU_DEACTIVATE_CONTEXT = 0x444D8CF241EC25C5, // 0x0029046E
@@ -16445,7 +16445,7 @@ namespace GTA.Native
 		OBJECT_DECAL_TOGGLE = 0x444D8CF241EC25C5, // 0x0029046E
 
 		/// <summary>
-		/// Parameters: uint contextHash
+		/// Parameters: Hash contextHash
 		/// </summary>
 		/// <returns>BOOL</returns>
 		PAUSE_MENU_IS_CONTEXT_ACTIVE = 0x84698AB38D0C6636, // 0xC51BC42F
@@ -16463,7 +16463,7 @@ namespace GTA.Native
 		PAUSE_MENU_GET_MOUSE_HOVER_UNIQUE_ID = 0x13C4B962653A5280,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2
+		/// Parameters: Any* p0, Any* p1, Any* p2
 		/// </summary>
 		/// <returns>BOOL</returns>
 		PAUSE_MENU_GET_MOUSE_CLICK_EVENT = 0xC8E1071177A23BE5,
@@ -16479,13 +16479,13 @@ namespace GTA.Native
 		ENABLE_DEATHBLOOD_SEETHROUGH = 0x4895BDEA16E7C080, // 0x15B24768
 
 		/// <summary>
-		/// Parameters: bool p0, int position, int spinnerIndex
+		/// Parameters: BOOL p0, int position, int spinnerIndex
 		/// </summary>
 		/// <returns>void</returns>
 		PAUSE_MENU_SET_BUSY_SPINNER = 0xC78E239AC5B2DDB9, // 0x6C67131A
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>void</returns>
 		PAUSE_MENU_SET_WARN_ON_TAB_CHANGE = 0xF06EBB91A81E09E3, // 0x11D09737
@@ -16523,7 +16523,7 @@ namespace GTA.Native
 		HAS_MENU_LAYOUT_CHANGED_EVENT_OCCURRED = 0x2E22FEFA0100275E, // 0x96863460
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		SET_SAVEGAME_LIST_UNIQUE_ID = 0x0CF54F20DE43879C,
@@ -16572,7 +16572,7 @@ namespace GTA.Native
 		GET_PM_PLAYER_CREW_COLOR = 0xA238192F33110615, // 0x46794EB2
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any* p1
 		/// </summary>
 		/// <returns>BOOL</returns>
 		GET_MENU_PED_INT_STAT = 0xEF4CED81CEBEDC6D, // 0x4370999E
@@ -16582,37 +16582,37 @@ namespace GTA.Native
 		SET_USERIDS_UIHIDDEN = 0xEF4CED81CEBEDC6D, // 0x4370999E
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2
+		/// Parameters: Any p0, Any* p1, Any p2
 		/// </summary>
 		/// <returns>BOOL</returns>
 		GET_CHARACTER_MENU_PED_INT_STAT = 0xCA6B2F7CE32AB653,
 
 		/// <summary>
-		/// Parameters: uint statHash, int* outValue, int mask, bool p3
+		/// Parameters: Hash statHash, int* outValue, int mask, BOOL p3
 		/// </summary>
 		/// <returns>BOOL</returns>
 		GET_MENU_PED_MASKED_INT_STAT = 0x90A6526CF0381030, // 0xD6CC4766
 
 		/// <summary>
-		/// Parameters: uint statHash, IntPtr outValue, int p2, int mask, bool p4
+		/// Parameters: Hash statHash, Any* outValue, int p2, int mask, BOOL p4
 		/// </summary>
 		/// <returns>BOOL</returns>
 		GET_CHARACTER_MENU_PED_MASKED_INT_STAT = 0x24A49BEAF468DC90,
 
 		/// <summary>
-		/// Parameters: uint statHash, float* outValue
+		/// Parameters: Hash statHash, float* outValue
 		/// </summary>
 		/// <returns>BOOL</returns>
 		GET_MENU_PED_FLOAT_STAT = 0x5FBD7095FE7AE57F, // 0x51972B04
 
 		/// <summary>
-		/// Parameters: float statHash, float* outValue, bool p2
+		/// Parameters: float statHash, float* outValue, BOOL p2
 		/// </summary>
 		/// <returns>BOOL</returns>
 		GET_CHARACTER_MENU_PED_FLOAT_STAT = 0x8F08017F9D7C47BD,
 
 		/// <summary>
-		/// Parameters: uint statHash, BOOL* outValue
+		/// Parameters: Hash statHash, BOOL* outValue
 		/// </summary>
 		/// <remarks>
 		/// p0 was always 0xAE2602A3.<br/>
@@ -16633,7 +16633,7 @@ namespace GTA.Native
 		GIVE_PED_TO_PAUSE_MENU = 0xAC0BFBDC3BE00E14, // 0x2AD2C9CE
 
 		/// <summary>
-		/// Parameters: bool state
+		/// Parameters: BOOL state
 		/// </summary>
 		/// <remarks>
 		/// Toggles the light state for the pause menu ped in frontend menus.<br/>
@@ -16646,7 +16646,7 @@ namespace GTA.Native
 		SET_PAUSE_MENU_PED_LIGHTING = 0x3CA6050692BC61B0, // 0x127310EB
 
 		/// <summary>
-		/// Parameters: bool state
+		/// Parameters: BOOL state
 		/// </summary>
 		/// <remarks>
 		/// Toggles the pause menu ped sleep state for frontend menus.<br/>
@@ -16682,7 +16682,7 @@ namespace GTA.Native
 		CLOSE_SOCIAL_CLUB_MENU = 0xD2B32BE3FC1626C6, // 0x5F86AA39
 
 		/// <summary>
-		/// Parameters: string name
+		/// Parameters: const char* name
 		/// </summary>
 		/// <remarks>
 		/// HUD::SET_SOCIAL_CLUB_TOUR("Gallery");<br/>
@@ -16697,7 +16697,7 @@ namespace GTA.Native
 		IS_SOCIAL_CLUB_ACTIVE = 0xC406BE343FC4B9AF, // 0xD4DA14EF
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>void</returns>
 		SET_TEXT_INPUT_BOX_ENABLED = 0x1185A8087587322C,
@@ -16710,13 +16710,13 @@ namespace GTA.Native
 		_FORCE_CLOSE_TEXT_INPUT_BOX = 0x8817605C2BA76200,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		SET_ALLOW_COMMA_ON_TEXT_INPUT = 0x577599CCED639CA2,
 
 		/// <summary>
-		/// Parameters: uint gxtEntryHash
+		/// Parameters: Hash gxtEntryHash
 		/// </summary>
 		/// <returns>void</returns>
 		OVERRIDE_MP_TEXT_CHAT_TEAM_STRING = 0x6A1738B4323FE2D9,
@@ -16751,7 +16751,7 @@ namespace GTA.Native
 		_CLOSE_MULTIPLAYER_CHAT = 0x1AC8F4AD40E22127,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		MP_TEXT_CHAT_IS_TEAM_JOB = 0x7C226D5346D4D10A,
@@ -16767,7 +16767,7 @@ namespace GTA.Native
 		_OVERRIDE_MULTIPLAYER_CHAT_COLOUR = 0xF47E567B3630DD12,
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Hides the chat history, closes the input box and makes it unable to be opened unless called again with FALSE.<br/>
@@ -16784,7 +16784,7 @@ namespace GTA.Native
 		_MULTIPLAYER_CHAT_SET_DISABLED = 0x1DB21A44B09E8BA3,
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		FLAG_PLAYER_CONTEXT_IN_TOURNAMENT = 0xCEF214315D276FD1, // 0xFF06772A
@@ -16794,7 +16794,7 @@ namespace GTA.Native
 		_SET_IS_IN_TOURNAMENT = 0xCEF214315D276FD1, // 0xFF06772A
 
 		/// <summary>
-		/// Parameters: Ped ped, bool hasCone
+		/// Parameters: Ped ped, BOOL hasCone
 		/// </summary>
 		/// <remarks>
 		/// This native turns on the AI blip on the specified ped. It also disappears automatically when the ped is too far or if the ped is dead. You don't need to control it with other natives.<br/>
@@ -16812,7 +16812,7 @@ namespace GTA.Native
 		_SET_PED_AI_BLIP = 0xD30C50DF888D58B5, // 0x96C4C4DD
 
 		/// <summary>
-		/// Parameters: Ped ped, bool hasCone, int color
+		/// Parameters: Ped ped, BOOL hasCone, int color
 		/// </summary>
 		/// <remarks>
 		/// color: see SET_BLIP_COLOUR<br/>
@@ -16841,7 +16841,7 @@ namespace GTA.Native
 		_SET_AI_BLIP_TYPE = 0xE52B8E7F85D39A08, // 0xD8E31B1A
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_AI_BLIP_HAS_CONE = 0x3EED80DFF7325CAA, // 0x872C2CFB
@@ -16851,7 +16851,7 @@ namespace GTA.Native
 		HIDE_SPECIAL_ABILITY_LOCKON_OPERATION = 0x3EED80DFF7325CAA, // 0x872C2CFB
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_AI_BLIP_FORCED_ON = 0x0C4BBF625CA98C4E, // 0xFFDF46F0
@@ -16918,7 +16918,7 @@ namespace GTA.Native
 		_SET_DIRECTOR_MODE_CLEAR_TRIGGERED_FLAG = 0x2632482FD6B9AB87,
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// If toggle is true, hides special ability bar / character name in the pause menu<br/>
@@ -16936,7 +16936,7 @@ namespace GTA.Native
 		_SET_PLAYER_IS_IN_DIRECTOR_MODE = 0x808519373FD336A3,
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_DIRECTOR_MODE_AVAILABLE = 0x04655F9D075D0AE5,
@@ -16999,7 +16999,7 @@ namespace GTA.Native
 		CLEAR_ROOM_FOR_ENTITY = 0xB365FC0C4E27FFA7, // 0x7DDADB92
 
 		/// <summary>
-		/// Parameters: Entity entity, Interior interior, uint roomHashKey
+		/// Parameters: Entity entity, Interior interior, Hash roomHashKey
 		/// </summary>
 		/// <returns>void</returns>
 		FORCE_ROOM_FOR_ENTITY = 0x52923C4710DD9907, // 0x10BD4435
@@ -17051,19 +17051,19 @@ namespace GTA.Native
 		_CLEAR_INTERIOR_FOR_ENTITY = 0x85D5422B2039A70D,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		FORCE_ACTIVATING_TRACKING_ON_ENTITY = 0x38C1CB1CB119A016,
 
 		/// <summary>
-		/// Parameters: int interiorID, uint roomHashKey
+		/// Parameters: int interiorID, Hash roomHashKey
 		/// </summary>
 		/// <returns>void</returns>
 		FORCE_ROOM_FOR_GAME_VIEWPORT = 0x920D853F3E17F1DA, // 0xD79803B5
 
 		/// <summary>
-		/// Parameters: string roomName
+		/// Parameters: const char* roomName
 		/// </summary>
 		/// <remarks>
 		/// Example of use (carmod_shop)<br/>
@@ -17073,7 +17073,7 @@ namespace GTA.Native
 		SET_ROOM_FOR_GAME_VIEWPORT_BY_NAME = 0xAF348AFCB575A441, // 0x1F6B4B13
 
 		/// <summary>
-		/// Parameters: uint roomHashKey
+		/// Parameters: Hash roomHashKey
 		/// </summary>
 		/// <remarks>
 		/// Usage: INTERIOR::SET_ROOM_FOR_GAME_VIEWPORT_BY_KEY(INTERIOR::GET_KEY_FOR_ENTITY_IN_ROOM(PLAYER::PLAYER_PED_ID()));<br/>
@@ -17113,7 +17113,7 @@ namespace GTA.Native
 		GET_INTERIOR_AT_COORDS = 0xB0F7F8663821D9C3, // 0xA17FBF37
 
 		/// <summary>
-		/// Parameters: Pickup pickup, string roomName
+		/// Parameters: Pickup pickup, const char* roomName
 		/// </summary>
 		/// <returns>void</returns>
 		ADD_PICKUP_TO_INTERIOR_ROOM_BY_NAME = 0x3F6167F351168730, // 0xA2A73564
@@ -17155,7 +17155,7 @@ namespace GTA.Native
 		SET_INTERIOR_IN_USE = 0x4C2330E61D3DEB56,
 
 		/// <summary>
-		/// Parameters: float x, float y, float z, string interiorType
+		/// Parameters: float x, float y, float z, const char* interiorType
 		/// </summary>
 		/// <remarks>
 		/// Returns the interior ID representing the requested interior at that location (if found?). The supplied interior string is not the same as the one used to load the interior.<br/>
@@ -17167,7 +17167,7 @@ namespace GTA.Native
 		GET_INTERIOR_AT_COORDS_WITH_TYPE = 0x05B7A89BD78797FC, // 0x96525B06
 
 		/// <summary>
-		/// Parameters: float x, float y, float z, uint typeHash
+		/// Parameters: float x, float y, float z, Hash typeHash
 		/// </summary>
 		/// <remarks>
 		/// Hashed version of GET_INTERIOR_AT_COORDS_WITH_TYPE<br/>
@@ -17202,13 +17202,13 @@ namespace GTA.Native
 		GET_INTERIOR_FROM_COLLISION = 0xEC4CF9FCB29A4424, // 0x7ED33DC1
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		ENABLE_STADIUM_PROBES_THIS_FRAME = 0x7ECDF98587E92DEC,
 
 		/// <summary>
-		/// Parameters: Interior interior, string entitySetName
+		/// Parameters: Interior interior, const char* entitySetName
 		/// </summary>
 		/// <remarks>
 		/// More info: <see href='http://gtaforums.com/topic/836367-adding-props-to-interiors/'>http://gtaforums.com/topic/836367-adding-props-to-interiors/</see><br/>
@@ -17222,7 +17222,7 @@ namespace GTA.Native
 		_ENABLE_INTERIOR_PROP = 0x55E86AF2712B36A1, // 0xC80A5DDF
 
 		/// <summary>
-		/// Parameters: Interior interior, string entitySetName
+		/// Parameters: Interior interior, const char* entitySetName
 		/// </summary>
 		/// <remarks>
 		/// Full list of IPLs and interior entity sets by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/ipls.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/ipls.json</see><br/>
@@ -17235,7 +17235,7 @@ namespace GTA.Native
 		_DISABLE_INTERIOR_PROP = 0x420BD37289EEE162, // 0xDBA768A1
 
 		/// <summary>
-		/// Parameters: Interior interior, string entitySetName
+		/// Parameters: Interior interior, const char* entitySetName
 		/// </summary>
 		/// <remarks>
 		/// Full list of IPLs and interior entity sets by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/ipls.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/ipls.json</see><br/>
@@ -17248,7 +17248,7 @@ namespace GTA.Native
 		_IS_INTERIOR_PROP_ENABLED = 0x35F7DD45E8C0A16D, // 0x39A3CC6F
 
 		/// <summary>
-		/// Parameters: Interior interior, string entitySetName, int color
+		/// Parameters: Interior interior, const char* entitySetName, int color
 		/// </summary>
 		/// <remarks>
 		/// Full list of IPLs and interior entity sets by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/ipls.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/ipls.json</see><br/>
@@ -17271,7 +17271,7 @@ namespace GTA.Native
 		REFRESH_INTERIOR = 0x41F37C3427C75AE0, // 0x9A29ACE6
 
 		/// <summary>
-		/// Parameters: uint mapObjectHash
+		/// Parameters: Hash mapObjectHash
 		/// </summary>
 		/// <remarks>
 		/// This is the native that is used to hide the exterior of GTA Online apartment buildings when you are inside an apartment.<br/>
@@ -17285,7 +17285,7 @@ namespace GTA.Native
 		_HIDE_MAP_OBJECT_THIS_FRAME = 0xA97F257D0151A6AB, // 0x1F375B4C
 
 		/// <summary>
-		/// Parameters: uint mapObjectHash
+		/// Parameters: Hash mapObjectHash
 		/// </summary>
 		/// <returns>void</returns>
 		ENABLE_SHADOW_CULL_MODEL_THIS_FRAME = 0x50C375537449F369,
@@ -17295,7 +17295,7 @@ namespace GTA.Native
 		_ENABLE_SCRIPT_CULL_MODEL_THIS_FRAME = 0x50C375537449F369,
 
 		/// <summary>
-		/// Parameters: Interior interior, bool toggle
+		/// Parameters: Interior interior, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Example: <br/>
@@ -17312,7 +17312,7 @@ namespace GTA.Native
 		IS_INTERIOR_DISABLED = 0xBC5115A5A939DD15, // 0x81F34C71
 
 		/// <summary>
-		/// Parameters: Interior interior, bool toggle
+		/// Parameters: Interior interior, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Does something similar to INTERIOR::DISABLE_INTERIOR<br/>
@@ -17327,13 +17327,13 @@ namespace GTA.Native
 		IS_INTERIOR_CAPPED = 0x92BAC8ACF88CEC26, // 0x18B17C80
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		DISABLE_METRO_SYSTEM = 0x9E6542F0CE8E70A3, // 0x5EF9C5C2
 
 		/// <summary>
-		/// Parameters: Entity entity, bool toggle
+		/// Parameters: Entity entity, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Jenkins hash _might_ be 0xFC227584.<br/>
@@ -17346,7 +17346,7 @@ namespace GTA.Native
 		#region ITEMSET
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>ScrHandle</returns>
 		CREATE_ITEMSET = 0x35AD299F50D91B24, // 0x0A113B2C
@@ -17421,7 +17421,7 @@ namespace GTA.Native
 		_LOADINGSCREEN_GET_LOAD_FREEMODE = 0xEF7D17BC6C85264C, // 0xD87F3A9E
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		LOBBY_SET_AUTO_MULTIPLAYER = 0xB0C56BD3D808D863, // 0xC0B971EA
@@ -17442,7 +17442,7 @@ namespace GTA.Native
 		_LOADINGSCREEN_GET_LOAD_FREEMODE_WITH_EVENT_NAME = 0x8AA464D4E0F6ACCD, // 0x94BCAC7C
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		LOBBY_SET_AUTO_MULTIPLAYER_EVENT = 0xFC309E94546FCDB5, // 0x7D90EEE5
@@ -17467,7 +17467,7 @@ namespace GTA.Native
 		_LOADINGSCREEN_IS_LOADING_FREEMODE = 0xC6DC823253FBB366, // 0x734CFEDA
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		LOBBY_SET_AUTO_MP_RANDOM_JOB = 0xC7E7181C09F33B69, // 0x8C227332
@@ -17477,7 +17477,7 @@ namespace GTA.Native
 		_LOADINGSCREEN_SET_IS_LOADING_FREEMODE = 0xC7E7181C09F33B69, // 0x8C227332
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SHUTDOWN_SESSION_CLEARS_AUTO_MULTIPLAYER = 0xFA1E0E893D915215, // 0x5C350D78
@@ -17573,7 +17573,7 @@ namespace GTA.Native
 		SET_TIME_SCALE = 0x1D408577D440E81E, // 0xA7F84694
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// If true, the player can't save the game. <br/>
@@ -17587,7 +17587,7 @@ namespace GTA.Native
 		GET_MISSION_FLAG = 0xA33CDCCDA663159E, // 0x95115F97
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// If the parameter is true, sets the random event flag to true, if the parameter is false, the function does nothing at all.<br/>
@@ -17610,7 +17610,7 @@ namespace GTA.Native
 		_GET_GLOBAL_CHAR_BUFFER = 0x24DA7D7667FD7B09,
 
 		/// <summary>
-		/// Parameters: string p0, string p1
+		/// Parameters: const char* p0, const char* p1
 		/// </summary>
 		/// <remarks>
 		/// Does nothing (it's a nullsub). Seems to be PS4 specific.<br/>
@@ -17619,7 +17619,7 @@ namespace GTA.Native
 		ACTIVITY_FEED_CREATE = 0x4DCDF92BF64236CD,
 
 		/// <summary>
-		/// Parameters: string p0
+		/// Parameters: const char* p0
 		/// </summary>
 		/// <remarks>
 		/// Does nothing (it's a nullsub). Seems to be PS4 specific.<br/>
@@ -17628,7 +17628,7 @@ namespace GTA.Native
 		ACTIVITY_FEED_ADD_SUBSTRING_TO_CAPTION = 0x31125FD509D9043F,
 
 		/// <summary>
-		/// Parameters: string p0
+		/// Parameters: const char* p0
 		/// </summary>
 		/// <remarks>
 		/// Does nothing (it's a nullsub). Seems to be PS4 specific.<br/>
@@ -17637,7 +17637,7 @@ namespace GTA.Native
 		ACTIVITY_FEED_ADD_LITERAL_SUBSTRING_TO_CAPTION = 0xEBD3205A207939ED,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <remarks>
 		/// Does nothing (it's a nullsub). Seems to be PS4 specific.<br/>
@@ -17646,7 +17646,7 @@ namespace GTA.Native
 		ACTIVITY_FEED_ADD_INT_TO_CAPTION = 0x97E7E2C04245115B,
 
 		/// <summary>
-		/// Parameters: string p0
+		/// Parameters: const char* p0
 		/// </summary>
 		/// <remarks>
 		/// Does nothing (it's a nullsub). Seems to be PS4 specific.<br/>
@@ -17655,7 +17655,7 @@ namespace GTA.Native
 		ACTIVITY_FEED_LARGE_IMAGE_URL = 0x916CA67D26FD1E37,
 
 		/// <summary>
-		/// Parameters: string p0, string p1
+		/// Parameters: const char* p0, const char* p1
 		/// </summary>
 		/// <remarks>
 		/// Does nothing (it's a nullsub). Seems to be PS4 specific.<br/>
@@ -17664,7 +17664,7 @@ namespace GTA.Native
 		ACTIVITY_FEED_ACTION_START_WITH_COMMAND_LINE = 0xEB078CA2B5E82ADD,
 
 		/// <summary>
-		/// Parameters: string p0
+		/// Parameters: const char* p0
 		/// </summary>
 		/// <remarks>
 		/// Does nothing (it's a nullsub). Seems to be PS4 specific.<br/>
@@ -17679,7 +17679,7 @@ namespace GTA.Native
 		ACTIVITY_FEED_POST = 0x8951EB9C6906D3C8,
 
 		/// <summary>
-		/// Parameters: string p0
+		/// Parameters: const char* p0
 		/// </summary>
 		/// <remarks>
 		/// Does nothing (it's a nullsub). Seems to be PS4 specific.<br/>
@@ -17699,7 +17699,7 @@ namespace GTA.Native
 		_HAS_RESUMED_FROM_SUSPEND = 0xE8B9C0EC9E183F35,
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Sets GtaThread+0x14A<br/>
@@ -17708,7 +17708,7 @@ namespace GTA.Native
 		SET_SCRIPT_HIGH_PRIO = 0x65D2EBB47E1CEC21,
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Sets bit 3 in GtaThread+0x150<br/>
@@ -17717,13 +17717,13 @@ namespace GTA.Native
 		SET_THIS_IS_A_TRIGGER_SCRIPT = 0x6F2135B6129620C1, // 0x8B2DE971
 
 		/// <summary>
-		/// Parameters: string p0
+		/// Parameters: const char* p0
 		/// </summary>
 		/// <returns>void</returns>
 		INFORM_CODE_OF_CONTENT_ID_OF_CURRENT_UGC_MISSION = 0x8D74E26F54B4E5C3, // 0xE77199F7
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, bool p3
+		/// Parameters: Any* p0, Any* p1, Any p2, BOOL p3
 		/// </summary>
 		/// <returns>BOOL</returns>
 		GET_BASE_ELEMENT_LOCATION_FROM_METADATA_BLOCK = 0xB335F761606DB47C,
@@ -17753,19 +17753,19 @@ namespace GTA.Native
 		_GET_NEXT_WEATHER_TYPE = 0x711327CD09C8F162, // 0x353E8056
 
 		/// <summary>
-		/// Parameters: string weatherType
+		/// Parameters: const char* weatherType
 		/// </summary>
 		/// <returns>BOOL</returns>
 		IS_PREV_WEATHER_TYPE = 0x44F28F86433B10A9, // 0x250ADA61
 
 		/// <summary>
-		/// Parameters: string weatherType
+		/// Parameters: const char* weatherType
 		/// </summary>
 		/// <returns>BOOL</returns>
 		IS_NEXT_WEATHER_TYPE = 0x2FAA3A30BEC0F25D, // 0x99CB167F
 
 		/// <summary>
-		/// Parameters: string weatherType
+		/// Parameters: const char* weatherType
 		/// </summary>
 		/// <remarks>
 		/// The following weatherTypes are used in the scripts:<br/>
@@ -17789,7 +17789,7 @@ namespace GTA.Native
 		SET_WEATHER_TYPE_PERSIST = 0x704983DF373B198F, // 0xC6C04C75
 
 		/// <summary>
-		/// Parameters: string weatherType
+		/// Parameters: const char* weatherType
 		/// </summary>
 		/// <remarks>
 		/// The following weatherTypes are used in the scripts:<br/>
@@ -17813,7 +17813,7 @@ namespace GTA.Native
 		SET_WEATHER_TYPE_NOW_PERSIST = 0xED712CA327900C8A, // 0xC869FE97
 
 		/// <summary>
-		/// Parameters: string weatherType
+		/// Parameters: const char* weatherType
 		/// </summary>
 		/// <remarks>
 		/// The following weatherTypes are used in the scripts:<br/>
@@ -17837,7 +17837,7 @@ namespace GTA.Native
 		SET_WEATHER_TYPE_NOW = 0x29B487C359E19889, // 0x361E9EAC
 
 		/// <summary>
-		/// Parameters: string weatherType, float time
+		/// Parameters: const char* weatherType, float time
 		/// </summary>
 		/// <returns>void</returns>
 		SET_WEATHER_TYPE_OVERTIME_PERSIST = 0xFB5045B7C42B75BF, // 0x386F0D25
@@ -17873,7 +17873,7 @@ namespace GTA.Native
 		_GET_WEATHER_TYPE_TRANSITION = 0xF3BBE884A14BB413, // 0x9A5C1D56
 
 		/// <summary>
-		/// Parameters: uint weatherType1, uint weatherType2, float percentWeather2
+		/// Parameters: Hash weatherType1, Hash weatherType2, float percentWeather2
 		/// </summary>
 		/// <remarks>
 		/// Mixes two weather types. If percentWeather2 is set to 0.0f, then the weather will be entirely of weatherType1, if it is set to 1.0f it will be entirely of weatherType2. If it's set somewhere in between, there will be a mixture of weather behaviors. To test, try this in the RPH console, and change the float to different values between 0 and 1:<br/>
@@ -17905,7 +17905,7 @@ namespace GTA.Native
 		_SET_WEATHER_TYPE_TRANSITION = 0x578C752848ECFA0C, // 0x5CA74040
 
 		/// <summary>
-		/// Parameters: string weatherType
+		/// Parameters: const char* weatherType
 		/// </summary>
 		/// <remarks>
 		/// Appears to have an optional bool parameter that is unused in the scripts.<br/>
@@ -17915,7 +17915,7 @@ namespace GTA.Native
 		SET_OVERRIDE_WEATHER = 0xA43D5C6FE51ADBEF, // 0xD9082BB5
 
 		/// <summary>
-		/// Parameters: string weatherType, bool p1
+		/// Parameters: const char* weatherType, BOOL p1
 		/// </summary>
 		/// <remarks>
 		/// Identical to SET_OVERRIDE_WEATHER but has an additional BOOL param that sets some weather var to 0 if true<br/>
@@ -18096,19 +18096,19 @@ namespace GTA.Native
 		_CREATE_LIGHTNING_THUNDER = 0xF6062E089251C898, // 0xDF38165E
 
 		/// <summary>
-		/// Parameters: string p0
+		/// Parameters: const char* p0
 		/// </summary>
 		/// <returns>void</returns>
 		SET_CLOUD_SETTINGS_OVERRIDE = 0x02DEAAC8F8EA7FE7,
 
 		/// <summary>
-		/// Parameters: string name
+		/// Parameters: const char* name
 		/// </summary>
 		/// <returns>void</returns>
 		PRELOAD_CLOUD_HAT = 0x11B56FBBF7224868, // 0x8727A4C5
 
 		/// <summary>
-		/// Parameters: string name, float transitionTime
+		/// Parameters: const char* name, float transitionTime
 		/// </summary>
 		/// <remarks>
 		/// The following cloudhats are useable:<br/>
@@ -18141,7 +18141,7 @@ namespace GTA.Native
 		_SET_CLOUD_HAT_TRANSITION = 0xFC4842A34657BFCB, // 0xED88FC61
 
 		/// <summary>
-		/// Parameters: string name, float p1
+		/// Parameters: const char* name, float p1
 		/// </summary>
 		/// <returns>void</returns>
 		UNLOAD_CLOUD_HAT = 0xA74802FB8D0B7814, // 0xC9FA6E07
@@ -18209,7 +18209,7 @@ namespace GTA.Native
 		_GET_RANDOM_INT_IN_RANGE_2 = 0xF2D49816A804D134,
 
 		/// <summary>
-		/// Parameters: float x, float y, float z, float* groundZ, bool ignoreWater, bool p5
+		/// Parameters: float x, float y, float z, float* groundZ, BOOL ignoreWater, BOOL p5
 		/// </summary>
 		/// <remarks>
 		/// Gets the ground elevation at the specified position. Note that if the specified position is below ground level, the function will output zero!<br/>
@@ -18234,7 +18234,7 @@ namespace GTA.Native
 		_GET_GROUND_Z_COORD_WITH_OFFSETS = 0x8BDC7BFC57A81E76, // 0x64D91CED
 
 		/// <summary>
-		/// Parameters: float x, float y, float z, float* groundZ, bool p4, bool p5
+		/// Parameters: float x, float y, float z, float* groundZ, BOOL p4, BOOL p5
 		/// </summary>
 		/// <returns>BOOL</returns>
 		GET_GROUND_Z_EXCLUDING_OBJECTS_FOR_3D_COORD = 0x9E82F0F362881B29,
@@ -18274,7 +18274,7 @@ namespace GTA.Native
 		ATAN2 = 0x8927CBF9D22261A4, // 0x2508AC81
 
 		/// <summary>
-		/// Parameters: float x1, float y1, float z1, float x2, float y2, float z2, bool useZ
+		/// Parameters: float x1, float y1, float z1, float x2, float y2, float z2, BOOL useZ
 		/// </summary>
 		/// <remarks>
 		/// Returns the distance between two three-dimensional points, optionally ignoring the Z values.<br/>
@@ -18301,7 +18301,7 @@ namespace GTA.Native
 		GET_HEADING_FROM_VECTOR_2D = 0x2FFB6B224F4B2926, // 0xD209D52B
 
 		/// <summary>
-		/// Parameters: float x1, float y1, float z1, float x2, float y2, float z2, float x3, float y3, float z3, bool clamp
+		/// Parameters: float x1, float y1, float z1, float x2, float y2, float z2, float x3, float y3, float z3, BOOL clamp
 		/// </summary>
 		/// <remarks>
 		/// returns a float between 0.0 and 1.0, clamp: sets whether the product should be clamped between the given coordinates<br/>
@@ -18314,7 +18314,7 @@ namespace GTA.Native
 		_GET_PROGRESS_ALONG_LINE_BETWEEN_COORDS = 0x7F8F6405F4777AF6, // 0x89459F0A
 
 		/// <summary>
-		/// Parameters: float x1, float y1, float z1, float x2, float y2, float z2, float x3, float y3, float z3, bool clamp
+		/// Parameters: float x1, float y1, float z1, float x2, float y2, float z2, float x3, float y3, float z3, BOOL clamp
 		/// </summary>
 		/// <remarks>
 		/// clamp: sets whether the product should be clamped between the given coordinates<br/>
@@ -18329,7 +18329,7 @@ namespace GTA.Native
 		GET_LINE_PLANE_INTERSECTION = 0xF56DFB7B61BE7276, // 0xC6CC812C
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3, IntPtr p4, IntPtr p5, IntPtr p6, IntPtr p7, IntPtr p8, IntPtr p9, IntPtr p10, IntPtr p11, IntPtr p12, IntPtr p13
+		/// Parameters: Any p0, Any p1, Any p2, Any p3, Any p4, Any p5, Any p6, Any p7, Any p8, Any p9, Any p10, Any p11, Any p12, Any p13
 		/// </summary>
 		/// <returns>BOOL</returns>
 		GET_POINT_AREA_OVERLAP = 0xA0AD167E4B39D9A2,
@@ -18363,7 +18363,7 @@ namespace GTA.Native
 		CLEAR_BIT = 0xE80492A9AC099A93, // 0x8BC9E618
 
 		/// <summary>
-		/// Parameters: string string
+		/// Parameters: const char* @string
 		/// </summary>
 		/// <remarks>
 		/// This native converts its past string to hash. It is hashed using jenkins one at a time method.<br/>
@@ -18381,19 +18381,19 @@ namespace GTA.Native
 		SLERP_NEAR_QUATERNION = 0xF2F6A2FA49278625, // 0x87B92190
 
 		/// <summary>
-		/// Parameters: float p0, float p1, float p2, float p3, float p4, float p5, bool p6, bool p7, bool p8, bool p9, bool p10, IntPtr p11, bool p12
+		/// Parameters: float p0, float p1, float p2, float p3, float p4, float p5, BOOL p6, BOOL p7, BOOL p8, BOOL p9, BOOL p10, Any p11, BOOL p12
 		/// </summary>
 		/// <returns>BOOL</returns>
 		IS_AREA_OCCUPIED = 0xA61B4DF533DCB56E, // 0xC013972F
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3, IntPtr p4, IntPtr p5, IntPtr p6, IntPtr p7, IntPtr p8, IntPtr p9, IntPtr p10, IntPtr p11, IntPtr p12
+		/// Parameters: Any p0, Any p1, Any p2, Any p3, Any p4, Any p5, Any p6, Any p7, Any p8, Any p9, Any p10, Any p11, Any p12
 		/// </summary>
 		/// <returns>BOOL</returns>
 		IS_AREA_OCCUPIED_SLOW = 0x39455BF4F4F55186,
 
 		/// <summary>
-		/// Parameters: float x, float y, float z, float range, bool p4, bool checkVehicles, bool checkPeds, bool p7, bool p8, Entity ignoreEntity, bool p10
+		/// Parameters: float x, float y, float z, float range, BOOL p4, BOOL checkVehicles, BOOL checkPeds, BOOL p7, BOOL p8, Entity ignoreEntity, BOOL p10
 		/// </summary>
 		/// <remarks>
 		/// `range`: The range, seems to not be very accurate during testing.<br/>
@@ -18408,13 +18408,13 @@ namespace GTA.Native
 		IS_POSITION_OCCUPIED = 0xADCDE75E1C60F32D, // 0x452E8D9E
 
 		/// <summary>
-		/// Parameters: float p0, float p1, float p2, float p3, float p4, float p5, IntPtr p6
+		/// Parameters: float p0, float p1, float p2, float p3, float p4, float p5, Any p6
 		/// </summary>
 		/// <returns>BOOL</returns>
 		IS_POINT_OBSCURED_BY_A_MISSION_ENTITY = 0xE54E209C35FFA18D, // 0xC161558D
 
 		/// <summary>
-		/// Parameters: float X, float Y, float Z, float radius, bool p4, bool ignoreCopCars, bool ignoreObjects, bool p7
+		/// Parameters: float X, float Y, float Z, float radius, BOOL p4, BOOL ignoreCopCars, BOOL ignoreObjects, BOOL p7
 		/// </summary>
 		/// <remarks>
 		/// Example: CLEAR_AREA(0, 0, 0, 30, true, false, false, false);<br/>
@@ -18423,7 +18423,7 @@ namespace GTA.Native
 		CLEAR_AREA = 0xA56F01F3765B93A0, // 0x854E9AB8
 
 		/// <summary>
-		/// Parameters: float x, float y, float z, float radius, bool p4, bool p5, bool p6, bool p7
+		/// Parameters: float x, float y, float z, float radius, BOOL p4, BOOL p5, BOOL p6, BOOL p7
 		/// </summary>
 		/// <remarks>
 		/// MISC::CLEAR_AREA_LEAVE_VEHICLE_HEALTH(x, y, z, radius, false, false, false, false); seem to make all objects go away, peds, vehicles etc. All booleans set to true doesn't seem to change anything. <br/>
@@ -18436,7 +18436,7 @@ namespace GTA.Native
 		_CLEAR_AREA_OF_EVERYTHING = 0x957838AAF91BD12D, // 0x20E4FFD9
 
 		/// <summary>
-		/// Parameters: float x, float y, float z, float radius, bool p4, bool p5, bool p6, bool p7, bool p8, bool p9, IntPtr p10
+		/// Parameters: float x, float y, float z, float radius, BOOL p4, BOOL p5, BOOL p6, BOOL p7, BOOL p8, BOOL p9, Any p10
 		/// </summary>
 		/// <remarks>
 		/// Example:<br/>
@@ -18446,7 +18446,7 @@ namespace GTA.Native
 		CLEAR_AREA_OF_VEHICLES = 0x01C7B9B38428AEB6, // 0x63320F3C
 
 		/// <summary>
-		/// Parameters: float x1, float y1, float z1, float x2, float y2, float z2, float width, bool p7, bool p8, bool p9, bool p10, bool p11, IntPtr p12, IntPtr p13
+		/// Parameters: float x1, float y1, float z1, float x2, float y2, float z2, float width, BOOL p7, BOOL p8, BOOL p9, BOOL p10, BOOL p11, Any p12, Any p13
 		/// </summary>
 		/// <returns>void</returns>
 		CLEAR_ANGLED_AREA_OF_VEHICLES = 0x11DB3500F042A8AA, // 0xF11A3018
@@ -18494,7 +18494,7 @@ namespace GTA.Native
 		CLEAR_SCENARIO_SPAWN_HISTORY = 0x7EC6F9A478A6A512,
 
 		/// <summary>
-		/// Parameters: bool ignoreVehicle
+		/// Parameters: BOOL ignoreVehicle
 		/// </summary>
 		/// <remarks>
 		/// ignoreVehicle - bypasses vehicle check of the local player (it will not open if you are in a vehicle and this is set to false)<br/>
@@ -18506,13 +18506,13 @@ namespace GTA.Native
 		GET_STATUS_OF_MANUAL_SAVE = 0x397BAA01068BAA96, // 0x39771F21
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_CREDITS_ACTIVE = 0xB938B7E6D3C0620C, // 0xEC2A0ECF
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_CREDITS_FADE_OUT_WITH_SCREEN = 0xB51B9AB9EF81868C, // 0x75B06B5A
@@ -18521,7 +18521,7 @@ namespace GTA.Native
 		HAVE_CREDITS_REACHED_END = 0x075F1D57402C93BA, // 0x2569C9A7
 
 		/// <summary>
-		/// Parameters: string scriptName
+		/// Parameters: const char* scriptName
 		/// </summary>
 		/// <returns>void</returns>
 		TERMINATE_ALL_SCRIPTS_WITH_THIS_NAME = 0x9DC711BC69C548DF, // 0x9F861FD4
@@ -18530,7 +18530,7 @@ namespace GTA.Native
 		NETWORK_SET_SCRIPT_IS_SAFE_FOR_NETWORK_GAME = 0x9243BAC96D64C050, // 0x878486CE
 
 		/// <summary>
-		/// Parameters: float x, float y, float z, float p3, IntPtr p4
+		/// Parameters: float x, float y, float z, float p3, Any p4
 		/// </summary>
 		/// <remarks>
 		/// Returns the index of the newly created hospital spawn point.<br/>
@@ -18540,7 +18540,7 @@ namespace GTA.Native
 		ADD_HOSPITAL_RESTART = 0x1F464EF988465A81, // 0x4F3E3104
 
 		/// <summary>
-		/// Parameters: int hospitalIndex, bool toggle
+		/// Parameters: int hospitalIndex, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// The game by default has 5 hospital respawn points. Disabling them all will cause the player to respawn at the last position they were.<br/>
@@ -18549,13 +18549,13 @@ namespace GTA.Native
 		DISABLE_HOSPITAL_RESTART = 0xC8535819C450EBA8, // 0x09F49C72
 
 		/// <summary>
-		/// Parameters: float p0, float p1, float p2, float p3, IntPtr p4
+		/// Parameters: float p0, float p1, float p2, float p3, Any p4
 		/// </summary>
 		/// <returns>int</returns>
 		ADD_POLICE_RESTART = 0x452736765B31FC4B, // 0xE96C29FE
 
 		/// <summary>
-		/// Parameters: int policeIndex, bool toggle
+		/// Parameters: int policeIndex, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Disables the spawn point at the police house on the specified index.<br/>
@@ -18592,7 +18592,7 @@ namespace GTA.Native
 		_CLEAR_RESTART_CUSTOM_POSITION = 0xA2716D40842EAF79,
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		PAUSE_DEATH_ARREST_RESTART = 0x2C2B3493FBF51C71, // 0x296574AE
@@ -18602,13 +18602,13 @@ namespace GTA.Native
 		_DISABLE_AUTOMATIC_RESPAWN = 0x2C2B3493FBF51C71, // 0x296574AE
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		IGNORE_NEXT_RESTART = 0x21FFB63D8C615361, // 0xDA13A4B6
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Sets whether the game should fade out after the player dies.<br/>
@@ -18617,7 +18617,7 @@ namespace GTA.Native
 		SET_FADE_OUT_AFTER_DEATH = 0x4A18E01DF2C87B86, // 0xC9F6F0BC
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Sets whether the game should fade out after the player is arrested.<br/>
@@ -18626,7 +18626,7 @@ namespace GTA.Native
 		SET_FADE_OUT_AFTER_ARREST = 0x1E0B4DC0D990A4E7, // 0xCB074B9D
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Sets whether the game should fade in after the player dies or is arrested.<br/>
@@ -18635,13 +18635,13 @@ namespace GTA.Native
 		SET_FADE_IN_AFTER_DEATH_ARREST = 0xDA66D2796BA33F12, // 0xACDE6985
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_FADE_IN_AFTER_LOAD = 0xF3D78F59DFE18D79, // 0x6E00EB0B
 
 		/// <summary>
-		/// Parameters: float x, float y, float z, float p3, string p4, IntPtr p5, IntPtr p6
+		/// Parameters: float x, float y, float z, float p3, const char* p4, Any p5, Any p6
 		/// </summary>
 		/// <remarks>
 		/// returns savehouseHandle<br/>
@@ -18650,13 +18650,13 @@ namespace GTA.Native
 		REGISTER_SAVE_HOUSE = 0xC0714D0A7EEECA54, // 0x39C1849A
 
 		/// <summary>
-		/// Parameters: int savehouseHandle, bool p1, bool p2
+		/// Parameters: int savehouseHandle, BOOL p1, BOOL p2
 		/// </summary>
 		/// <returns>void</returns>
 		SET_SAVE_HOUSE = 0x4F548CABEAE553BC, // 0xC3240BB4
 
 		/// <summary>
-		/// Parameters: bool p0, float p1, float p2, float p3, float p4, bool p5, float p6, float p7
+		/// Parameters: BOOL p0, float p1, float p2, float p3, float p4, BOOL p5, float p6, float p7
 		/// </summary>
 		/// <returns>BOOL</returns>
 		OVERRIDE_SAVE_HOUSE = 0x1162EA8AE9D24EEA, // 0x47436C12
@@ -18686,13 +18686,13 @@ namespace GTA.Native
 		CLEAR_CODE_REQUESTED_AUTOSAVE = 0x06462A961E94B67C, // 0x5A45B11A
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		BEGIN_REPLAY_STATS = 0xE0E500246FF73D66, // 0x17F4F44D
 
 		/// <summary>
-		/// Parameters: IntPtr value
+		/// Parameters: Any value
 		/// </summary>
 		/// <returns>void</returns>
 		ADD_REPLAY_STAT_VALUE = 0x69FE6DC87BD2A5E9, // 0x81216EE0
@@ -18741,13 +18741,13 @@ namespace GTA.Native
 		IS_MEMORY_CARD_IN_USE = 0x8A75CE2956274ADD, // 0x40CE4DFD
 
 		/// <summary>
-		/// Parameters: float x1, float y1, float z1, float x2, float y2, float z2, int damage, bool p7, uint weaponHash, Ped ownerPed, bool isAudible, bool isInvisible, float speed
+		/// Parameters: float x1, float y1, float z1, float x2, float y2, float z2, int damage, BOOL p7, Hash weaponHash, Ped ownerPed, BOOL isAudible, BOOL isInvisible, float speed
 		/// </summary>
 		/// <returns>void</returns>
 		SHOOT_SINGLE_BULLET_BETWEEN_COORDS = 0x867654CBC7606F2C, // 0xCB7415AC
 
 		/// <summary>
-		/// Parameters: float x1, float y1, float z1, float x2, float y2, float z2, int damage, bool p7, uint weaponHash, Ped ownerPed, bool isAudible, bool isInvisible, float speed, Entity entity, IntPtr p14
+		/// Parameters: float x1, float y1, float z1, float x2, float y2, float z2, int damage, BOOL p7, Hash weaponHash, Ped ownerPed, BOOL isAudible, BOOL isInvisible, float speed, Entity entity, Any p14
 		/// </summary>
 		/// <remarks>
 		/// entity - entity to ignore<br/>
@@ -18760,7 +18760,7 @@ namespace GTA.Native
 		_SHOOT_SINGLE_BULLET_BETWEEN_COORDS_PRESET_PARAMS = 0xE3A7742E0B7A2F8B, // 0x52ACCB7B
 
 		/// <summary>
-		/// Parameters: float x1, float y1, float z1, float x2, float y2, float z2, int damage, bool p7, uint weaponHash, Ped ownerPed, bool isAudible, bool isInvisible, float speed, Entity entity, bool p14, bool p15, Entity targetEntity, bool p17, IntPtr p18, IntPtr p19, IntPtr p20
+		/// Parameters: float x1, float y1, float z1, float x2, float y2, float z2, int damage, BOOL p7, Hash weaponHash, Ped ownerPed, BOOL isAudible, BOOL isInvisible, float speed, Entity entity, BOOL p14, BOOL p15, Entity targetEntity, BOOL p17, Any p18, Any p19, Any p20
 		/// </summary>
 		/// <remarks>
 		/// entity - entity to ignore<br/>
@@ -18774,7 +18774,7 @@ namespace GTA.Native
 		_SHOOT_SINGLE_BULLET_BETWEEN_COORDS_WITH_EXTRA_PARAMS = 0xBFE5756E7407064A, // 0xCCDC33CC
 
 		/// <summary>
-		/// Parameters: uint modelHash, Vector3* minimum, Vector3* maximum
+		/// Parameters: Hash modelHash, Vector3* minimum, Vector3* maximum
 		/// </summary>
 		/// <remarks>
 		/// Gets the dimensions of a model.<br/>
@@ -18798,19 +18798,19 @@ namespace GTA.Native
 		GET_FAKE_WANTED_LEVEL = 0x4C9296CBCD1B971E, // 0x0022A430
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		USING_MISSION_CREATOR = 0xF14878FC50BEC6EE, // 0x20AB0B6B
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		ALLOW_MISSION_CREATOR_WARP = 0xDEA36202FC3382DF, // 0x082BA6F2
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_MINIGAME_IN_PROGRESS = 0x19E00D7322C6F85B, // 0x348B9046
@@ -18844,13 +18844,13 @@ namespace GTA.Native
 		GET_PROFILE_SETTING = 0xC488FF2356EA7791, // 0xD374BEBC
 
 		/// <summary>
-		/// Parameters: string string1, string string2
+		/// Parameters: const char* string1, const char* string2
 		/// </summary>
 		/// <returns>BOOL</returns>
 		ARE_STRINGS_EQUAL = 0x0C515FAB3FF9EA92, // 0x877C0BC5
 
 		/// <summary>
-		/// Parameters: string str1, string str2, bool matchCase, int maxLength
+		/// Parameters: const char* str1, const char* str2, BOOL matchCase, int maxLength
 		/// </summary>
 		/// <remarks>
 		/// Compares two strings up to a specified number of characters.<br/>
@@ -18899,7 +18899,7 @@ namespace GTA.Native
 		IS_SNIPER_BULLET_IN_AREA = 0xFEFCF11B01287125, // 0x0483715C
 
 		/// <summary>
-		/// Parameters: float x1, float y1, float z1, float x2, float y2, float z2, bool ownedByPlayer
+		/// Parameters: float x1, float y1, float z1, float x2, float y2, float z2, BOOL ownedByPlayer
 		/// </summary>
 		/// <remarks>
 		/// Determines whether there is a projectile within the specified coordinates. The coordinates form a rectangle.<br/>
@@ -18910,7 +18910,7 @@ namespace GTA.Native
 		IS_PROJECTILE_IN_AREA = 0x5270A8FBC098C3F8, // 0x78E1A557
 
 		/// <summary>
-		/// Parameters: float x1, float y1, float z1, float x2, float y2, float z2, int type, bool ownedByPlayer
+		/// Parameters: float x1, float y1, float z1, float x2, float y2, float z2, int type, BOOL ownedByPlayer
 		/// </summary>
 		/// <remarks>
 		/// Determines whether there is a projectile of a specific type within the specified coordinates. The coordinates form a axis-aligned bounding box.<br/>
@@ -18919,7 +18919,7 @@ namespace GTA.Native
 		IS_PROJECTILE_TYPE_IN_AREA = 0x2E0DC353342C4A6D, // 0x2B73BCF6
 
 		/// <summary>
-		/// Parameters: float x1, float y1, float z1, float x2, float y2, float z2, float width, IntPtr p7, bool ownedByPlayer
+		/// Parameters: float x1, float y1, float z1, float x2, float y2, float z2, float width, Any p7, BOOL ownedByPlayer
 		/// </summary>
 		/// <remarks>
 		/// See IS_POINT_IN_ANGLED_AREA for the definition of an angled area.<br/>
@@ -18928,7 +18928,7 @@ namespace GTA.Native
 		IS_PROJECTILE_TYPE_IN_ANGLED_AREA = 0xF0BC12401061DEA0, // 0xD1AE2681
 
 		/// <summary>
-		/// Parameters: float x, float y, float z, uint projectileHash, float radius, bool ownedByPlayer
+		/// Parameters: float x, float y, float z, Hash projectileHash, float radius, BOOL ownedByPlayer
 		/// </summary>
 		/// <returns>BOOL</returns>
 		IS_PROJECTILE_TYPE_WITHIN_DISTANCE = 0x34318593248C8FB2, // 0xBE81F1E2
@@ -18938,7 +18938,7 @@ namespace GTA.Native
 		_IS_PROJECTILE_TYPE_IN_RADIUS = 0x34318593248C8FB2, // 0xBE81F1E2
 
 		/// <summary>
-		/// Parameters: float x1, float y1, float z1, float x2, float y2, float z2, uint projectileHash, Vector3* projectilePos, bool ownedByPlayer
+		/// Parameters: float x1, float y1, float z1, float x2, float y2, float z2, Hash projectileHash, Vector3* projectilePos, BOOL ownedByPlayer
 		/// </summary>
 		/// <returns>BOOL</returns>
 		GET_COORDS_OF_PROJECTILE_TYPE_IN_AREA = 0x8D7A43EC6A5FEA45, // 0x1A40454B
@@ -18948,7 +18948,7 @@ namespace GTA.Native
 		_GET_IS_PROJECTILE_TYPE_IN_AREA = 0x8D7A43EC6A5FEA45, // 0x1A40454B
 
 		/// <summary>
-		/// Parameters: Ped ped, uint weaponHash, float distance, Vector3* outCoords, bool p4
+		/// Parameters: Ped ped, Hash weaponHash, float distance, Vector3* outCoords, BOOL p4
 		/// </summary>
 		/// <returns>BOOL</returns>
 		GET_COORDS_OF_PROJECTILE_TYPE_WITHIN_DISTANCE = 0xDFB4138EEFED7B81, // 0x6BDE5CE4
@@ -18958,7 +18958,7 @@ namespace GTA.Native
 		_GET_PROJECTILE_NEAR_PED_COORDS = 0xDFB4138EEFED7B81, // 0x6BDE5CE4
 
 		/// <summary>
-		/// Parameters: Ped ped, uint weaponHash, float distance, Vector3* outCoords, Object* outProjectile, bool p5
+		/// Parameters: Ped ped, Hash weaponHash, float distance, Vector3* outCoords, Object* outProjectile, BOOL p5
 		/// </summary>
 		/// <returns>BOOL</returns>
 		GET_PROJECTILE_OF_PROJECTILE_TYPE_WITHIN_DISTANCE = 0x82FDE6A57EE4EE44, // 0x507BC6F7
@@ -18968,7 +18968,7 @@ namespace GTA.Native
 		_GET_PROJECTILE_NEAR_PED = 0x82FDE6A57EE4EE44, // 0x507BC6F7
 
 		/// <summary>
-		/// Parameters: float x1, float y1, float z1, float x2, float y2, float z2, float width, bool ownedByPlayer
+		/// Parameters: float x1, float y1, float z1, float x2, float y2, float z2, float width, BOOL ownedByPlayer
 		/// </summary>
 		/// <remarks>
 		/// For projectiles, see: IS_PROJECTILE_TYPE_IN_ANGLED_AREA<br/>
@@ -18979,19 +18979,19 @@ namespace GTA.Native
 		IS_BULLET_IN_ANGLED_AREA = 0x1A8B5F3C01E2B477, // 0xE2DB58F7
 
 		/// <summary>
-		/// Parameters: float x, float y, float z, float radius, bool ownedByPlayer
+		/// Parameters: float x, float y, float z, float radius, BOOL ownedByPlayer
 		/// </summary>
 		/// <returns>BOOL</returns>
 		IS_BULLET_IN_AREA = 0x3F2023999AD51C1F, // 0xB54F46CA
 
 		/// <summary>
-		/// Parameters: float x1, float y1, float z1, float x2, float y2, float z2, bool ownedByPlayer
+		/// Parameters: float x1, float y1, float z1, float x2, float y2, float z2, BOOL ownedByPlayer
 		/// </summary>
 		/// <returns>BOOL</returns>
 		IS_BULLET_IN_BOX = 0xDE0F6D7450D37351, // 0xAB73ED26
 
 		/// <summary>
-		/// Parameters: float x, float y, float z, float p3, bool p4, bool p5
+		/// Parameters: float x, float y, float z, float p3, BOOL p4, BOOL p5
 		/// </summary>
 		/// <remarks>
 		/// p3 - possibly radius?<br/>
@@ -19000,7 +19000,7 @@ namespace GTA.Native
 		HAS_BULLET_IMPACTED_IN_AREA = 0x9870ACFB89A90995, // 0x902BC7D9
 
 		/// <summary>
-		/// Parameters: float p0, float p1, float p2, float p3, float p4, float p5, bool p6, bool p7
+		/// Parameters: float p0, float p1, float p2, float p3, float p4, float p5, BOOL p6, BOOL p7
 		/// </summary>
 		/// <returns>BOOL</returns>
 		HAS_BULLET_IMPACTED_IN_BOX = 0xDC8C5D7CFEAB8394, // 0x2C2618CC
@@ -19061,19 +19061,19 @@ namespace GTA.Native
 		IS_PROSPERO_VERSION = 0x807ABE1AB65C24D2,
 
 		/// <summary>
-		/// Parameters: string string
+		/// Parameters: const char* @string
 		/// </summary>
 		/// <returns>BOOL</returns>
 		IS_STRING_NULL = 0xF22B6C47C6EAB066, // 0x8E71E00F
 
 		/// <summary>
-		/// Parameters: string string
+		/// Parameters: const char* @string
 		/// </summary>
 		/// <returns>BOOL</returns>
 		IS_STRING_NULL_OR_EMPTY = 0xCA042B6957743895, // 0x42E9F2CA
 
 		/// <summary>
-		/// Parameters: string string, int* outInteger
+		/// Parameters: const char* @string, int* outInteger
 		/// </summary>
 		/// <remarks>
 		/// Returns false if it's a null or empty string or if the string is too long. outInteger will be set to -999 in that case.<br/>
@@ -19124,7 +19124,7 @@ namespace GTA.Native
 		ADD_STUNT_JUMP_ANGLED = 0xBBE5D803A5360CBF, // 0xB9B7E777
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Toggles some stunt jump stuff.<br/>
@@ -19151,7 +19151,7 @@ namespace GTA.Native
 		DISABLE_STUNT_JUMP_SET = 0xA5272EBEDD4747F6, // 0x644C9FA4
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_STUNT_JUMPS_CAN_TRIGGER = 0xD79185689F8FD5DF, // 0x3C806A2D
@@ -19172,7 +19172,7 @@ namespace GTA.Native
 		CANCEL_STUNT_JUMP = 0xE6B7B0ACD4E4B75E, // 0xF43D9821
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Make sure to call this from the correct thread if you're using multiple threads because all other threads except the one which is calling SET_GAME_PAUSED will be paused which means you will lose control and the game remains in paused mode until you exit GTA5.exe<br/>
@@ -19181,19 +19181,19 @@ namespace GTA.Native
 		SET_GAME_PAUSED = 0x577D1284D6873711, // 0x8230FF6C
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_THIS_SCRIPT_CAN_BE_PAUSED = 0xAA391C728106F7AF, // 0xA0C3CE29
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_THIS_SCRIPT_CAN_REMOVE_BLIPS_CREATED_BY_ANY_SCRIPT = 0xB98236CAAECEF897, // 0xD06F1720
 
 		/// <summary>
-		/// Parameters: uint hash, int amount
+		/// Parameters: Hash hash, int amount
 		/// </summary>
 		/// <remarks>
 		/// This native appears on the cheat_controller script and tracks a combination of buttons, which may be used to toggle cheats in-game. Credits to ThreeSocks for the info. The hash contains the combination, while the "amount" represents the amount of buttons used in a combination. The following page can be used to make a button combination: gta5offset.com/ts/hash/<br/>
@@ -19207,7 +19207,7 @@ namespace GTA.Native
 		_HAS_BUTTON_COMBINATION_JUST_BEEN_ENTERED = 0x071E2A839DE82D90, // 0xFF6191E1
 
 		/// <summary>
-		/// Parameters: uint hash
+		/// Parameters: Hash hash
 		/// </summary>
 		/// <remarks>
 		/// Get inputted "Cheat code", for example:<br/>
@@ -19229,7 +19229,7 @@ namespace GTA.Native
 		_HAS_CHEAT_STRING_JUST_BEEN_ENTERED = 0x557E43C447E700A8,
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>void</returns>
 		OVERRIDE_FREEZE_FLAGS = 0xFA3FFB0EEBC288A3,
@@ -19299,7 +19299,7 @@ namespace GTA.Native
 		SET_GRAVITY_LEVEL = 0x740E14FAD5842351, // 0x2D833F4A
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, bool p2
+		/// Parameters: Any* p0, Any p1, BOOL p2
 		/// </summary>
 		/// <returns>void</returns>
 		START_SAVE_DATA = 0xA9575F812C6A7997, // 0x881A694D
@@ -19308,19 +19308,19 @@ namespace GTA.Native
 		STOP_SAVE_DATA = 0x74E20C9145FB66FD, // 0x3B1C07C8
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>int</returns>
 		GET_SIZE_OF_SAVE_DATA = 0xA09F896CE912481F, // 0x9EF0BC64
 
 		/// <summary>
-		/// Parameters: IntPtr p0, string name
+		/// Parameters: Any* p0, const char* name
 		/// </summary>
 		/// <returns>void</returns>
 		REGISTER_INT_TO_SAVE = 0x34C9EE5986258415, // 0xB930956F
 
 		/// <summary>
-		/// Parameters: IntPtr p0, string name
+		/// Parameters: Any* p0, const char* name
 		/// </summary>
 		/// <returns>void</returns>
 		REGISTER_INT64_TO_SAVE = 0xA735353C77334EA0,
@@ -19330,31 +19330,31 @@ namespace GTA.Native
 		_REGISTER_INT64_TO_SAVE = 0xA735353C77334EA0,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, string name
+		/// Parameters: Any* p0, const char* name
 		/// </summary>
 		/// <returns>void</returns>
 		REGISTER_ENUM_TO_SAVE = 0x10C2FA78D0E128A1, // 0x9B38374A
 
 		/// <summary>
-		/// Parameters: IntPtr p0, string name
+		/// Parameters: Any* p0, const char* name
 		/// </summary>
 		/// <returns>void</returns>
 		REGISTER_FLOAT_TO_SAVE = 0x7CAEC29ECB5DFEBB, // 0xDB06F7AD
 
 		/// <summary>
-		/// Parameters: IntPtr p0, string name
+		/// Parameters: Any* p0, const char* name
 		/// </summary>
 		/// <returns>void</returns>
 		REGISTER_BOOL_TO_SAVE = 0xC8F4131414C835A1, // 0x5417E0E0
 
 		/// <summary>
-		/// Parameters: IntPtr p0, string name
+		/// Parameters: Any* p0, const char* name
 		/// </summary>
 		/// <returns>void</returns>
 		REGISTER_TEXT_LABEL_TO_SAVE = 0xEDB1232C5BEAE62F, // 0x284352C4
 
 		/// <summary>
-		/// Parameters: IntPtr p0, string name
+		/// Parameters: Any* p0, const char* name
 		/// </summary>
 		/// <remarks>
 		/// MISC::REGISTER_TEXT_LABEL_15_TO_SAVE(&#38;a_0._f1, "tlPlateText");<br/>
@@ -19369,7 +19369,7 @@ namespace GTA.Native
 		_REGISTER_TEXT_LABEL_TO_SAVE_2 = 0x6F7794F28C6B2535, // 0xE2089749
 
 		/// <summary>
-		/// Parameters: IntPtr p0, string name
+		/// Parameters: Any* p0, const char* name
 		/// </summary>
 		/// <remarks>
 		/// Only found 3 times in decompiled scripts.<br/>
@@ -19381,7 +19381,7 @@ namespace GTA.Native
 		REGISTER_TEXT_LABEL_23_TO_SAVE = 0x48F069265A0E4BEC, // 0xF91B8C33
 
 		/// <summary>
-		/// Parameters: IntPtr p0, string name
+		/// Parameters: Any* p0, const char* name
 		/// </summary>
 		/// <remarks>
 		/// Only found 2 times in decompiled scripts.<br/>
@@ -19392,7 +19392,7 @@ namespace GTA.Native
 		REGISTER_TEXT_LABEL_31_TO_SAVE = 0x8269816F6CFD40F8, // 0x74E8FAD9
 
 		/// <summary>
-		/// Parameters: IntPtr p0, string name
+		/// Parameters: Any* p0, const char* name
 		/// </summary>
 		/// <remarks>
 		/// MISC::REGISTER_TEXT_LABEL_63_TO_SAVE(a_0, "Thumb_label");<br/>
@@ -19410,7 +19410,7 @@ namespace GTA.Native
 		REGISTER_TEXT_LABEL_63_TO_SAVE = 0xFAA457EF263E8763, // 0x6B4335DD
 
 		/// <summary>
-		/// Parameters: IntPtr p0, int size, string structName
+		/// Parameters: Any* p0, int size, const char* structName
 		/// </summary>
 		/// <returns>void</returns>
 		START_SAVE_STRUCT_WITH_SIZE = 0xBF737600CDDBEADD, // 0xFB45728E
@@ -19423,7 +19423,7 @@ namespace GTA.Native
 		STOP_SAVE_STRUCT = 0xEB1774DF12BB9F12, // 0xC2624A28
 
 		/// <summary>
-		/// Parameters: IntPtr p0, int size, string arrayName
+		/// Parameters: Any* p0, int size, const char* arrayName
 		/// </summary>
 		/// <returns>void</returns>
 		START_SAVE_ARRAY_WITH_SIZE = 0x60FE567DF1B1AF9D, // 0x893A342C
@@ -19436,7 +19436,7 @@ namespace GTA.Native
 		STOP_SAVE_ARRAY = 0x04456F95153C6BE4, // 0x0CAD8217
 
 		/// <summary>
-		/// Parameters: IntPtr dst, IntPtr src, int size
+		/// Parameters: Any* dst, Any* src, int size
 		/// </summary>
 		/// <returns>void</returns>
 		COPY_SCRIPT_STRUCT = 0x213AEB2B90CBA7AC,
@@ -19446,7 +19446,7 @@ namespace GTA.Native
 		_COPY_MEMORY = 0x213AEB2B90CBA7AC,
 
 		/// <summary>
-		/// Parameters: int dispatchService, bool toggle
+		/// Parameters: int dispatchService, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// <see href='https://alloc8or.re/gta5/doc/enums/DispatchType.txt'>https://alloc8or.re/gta5/doc/enums/DispatchType.txt</see><br/>
@@ -19455,7 +19455,7 @@ namespace GTA.Native
 		ENABLE_DISPATCH_SERVICE = 0xDC0F817884CDD856, // 0x0B710A51
 
 		/// <summary>
-		/// Parameters: int dispatchService, bool toggle
+		/// Parameters: int dispatchService, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		BLOCK_DISPATCH_SERVICE_RESOURCE_CREATION = 0x9B2BD3773123EA2F, // 0xE0F0684F
@@ -19475,7 +19475,7 @@ namespace GTA.Native
 		_GET_NUM_DISPATCHED_UNITS_FOR_PLAYER = 0xEB4A0C2D56441717, // 0x3CE5BF6B
 
 		/// <summary>
-		/// Parameters: int dispatchService, float x, float y, float z, int numUnits, float radius, int* outIncidentID, IntPtr p7, IntPtr p8
+		/// Parameters: int dispatchService, float x, float y, float z, int numUnits, float radius, int* outIncidentID, Any p7, Any p8
 		/// </summary>
 		/// <remarks>
 		/// As for the 'police' incident, it will call police cars to you, but unlike PedsInCavalcades &#38; Merryweather they won't start shooting at you unless you shoot first or shoot at them. The top 2 however seem to cancel theirselves if there is noone dead around you or a fire. I only figured them out as I found out the 3rd param is definately the amountOfPeople and they called incident 3 in scripts with 4 people (which the firetruck has) and incident 5 with 2 people (which the ambulence has). The 4 param I cant say is radius, but for the pedsInCavalcades and Merryweather R* uses 0.0f and for the top 3 (Emergency Services) they use 3.0f. <br/>
@@ -19488,7 +19488,7 @@ namespace GTA.Native
 		CREATE_INCIDENT = 0x3F892CAF67444AE7, // 0xFC5FF7B3
 
 		/// <summary>
-		/// Parameters: int dispatchService, Ped ped, int numUnits, float radius, int* outIncidentID, IntPtr p5, IntPtr p6
+		/// Parameters: int dispatchService, Ped ped, int numUnits, float radius, int* outIncidentID, Any p5, Any p6
 		/// </summary>
 		/// <remarks>
 		/// As for the 'police' incident, it will call police cars to you, but unlike PedsInCavalcades &#38; Merryweather they won't start shooting at you unless you shoot first or shoot at them. The top 2 however seem to cancel theirselves if there is noone dead around you or a fire. I only figured them out as I found out the 3rd param is definately the amountOfPeople and they called incident 3 in scripts with 4 people (which the firetruck has) and incident 5 with 2 people (which the ambulence has). The 4 param I cant say is radius, but for the pedsInCavalcades and Merryweather R* uses 0.0f and for the top 3 (Emergency Services) they use 3.0f. <br/>
@@ -19555,7 +19555,7 @@ namespace GTA.Native
 		FIND_SPAWN_POINT_IN_DIRECTION = 0x6874E2190B0C1972, // 0x71AEFD77
 
 		/// <summary>
-		/// Parameters: float x1, float y1, float z1, float x2, float y2, float z2, float p6, float p7, bool p8, bool p9
+		/// Parameters: float x1, float y1, float z1, float x2, float y2, float z2, float p6, float p7, BOOL p8, BOOL p9
 		/// </summary>
 		/// <returns>int</returns>
 		ADD_POP_MULTIPLIER_AREA = 0x67F6413D3220E18D, // 0x42BF09B3
@@ -19567,7 +19567,7 @@ namespace GTA.Native
 		DOES_POP_MULTIPLIER_AREA_EXIST = 0x1327E2FE9746BAEE, // 0xE933B34A
 
 		/// <summary>
-		/// Parameters: int id, bool p1
+		/// Parameters: int id, BOOL p1
 		/// </summary>
 		/// <returns>void</returns>
 		REMOVE_POP_MULTIPLIER_AREA = 0xB129E447A2EDA4BF, // 0xFBDBE374
@@ -19583,7 +19583,7 @@ namespace GTA.Native
 		_IS_POP_MULTIPLIER_AREA_UNK = 0x1312F4B242609CE3,
 
 		/// <summary>
-		/// Parameters: float x, float y, float z, float radius, float pedMultiplier, float vehicleMultiplier, bool p6, bool p7
+		/// Parameters: float x, float y, float z, float radius, float pedMultiplier, float vehicleMultiplier, BOOL p6, BOOL p7
 		/// </summary>
 		/// <remarks>
 		/// This native is adding a zone, where you can change density settings. For example, you can add a zone on 0.0, 0.0, 0.0 with radius 900.0 and vehicleMultiplier 0.0, and you will not see any new population vehicle spawned in a radius of 900.0 from 0.0, 0.0, 0.0. Returns the id. You can have only 15 zones at the same time. You can remove zone using REMOVE_POP_MULTIPLIER_SPHERE<br/>
@@ -19598,7 +19598,7 @@ namespace GTA.Native
 		DOES_POP_MULTIPLIER_SPHERE_EXIST = 0x171BAFB3C60389F4, // 0xD2B7A5A0
 
 		/// <summary>
-		/// Parameters: int id, bool p1
+		/// Parameters: int id, BOOL p1
 		/// </summary>
 		/// <remarks>
 		/// Removes population multiplier sphere<br/>
@@ -19607,7 +19607,7 @@ namespace GTA.Native
 		REMOVE_POP_MULTIPLIER_SPHERE = 0xE6869BECDD8F2403, // 0x92E7E4EB
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle, bool p2
+		/// Parameters: Ped ped, BOOL toggle, BOOL p2
 		/// </summary>
 		/// <remarks>
 		/// Makes the ped jump around like they're in a tennis match<br/>
@@ -19622,7 +19622,7 @@ namespace GTA.Native
 		IS_TENNIS_MODE = 0x5D5479D115290C3F, // 0x04A947BA
 
 		/// <summary>
-		/// Parameters: Ped ped, string animDict, string animName, float p3, float p4, bool p5
+		/// Parameters: Ped ped, const char* animDict, const char* animName, float p3, float p4, BOOL p5
 		/// </summary>
 		/// <remarks>
 		/// Full list of animation dictionaries and anims by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json</see><br/>
@@ -19649,13 +19649,13 @@ namespace GTA.Native
 		GET_TENNIS_SWING_ANIM_SWUNG = 0xE95B0C7D5BA3B96B,
 
 		/// <summary>
-		/// Parameters: Ped ped, int p1, float p2, float p3, float p4, bool p5
+		/// Parameters: Ped ped, int p1, float p2, float p3, float p4, BOOL p5
 		/// </summary>
 		/// <returns>void</returns>
 		PLAY_TENNIS_DIVE_ANIM = 0x8FA9C42FC5D7C64B, // 0x0C8865DF
 
 		/// <summary>
-		/// Parameters: Ped ped, string p1, float p2
+		/// Parameters: Ped ped, const char* p1, float p2
 		/// </summary>
 		/// <remarks>
 		/// From the scripts:<br/>
@@ -19688,19 +19688,19 @@ namespace GTA.Native
 		SET_DISPATCH_IDEAL_SPAWN_DISTANCE = 0x6FE601A64180D423, // 0x6283BE32
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		RESET_DISPATCH_TIME_BETWEEN_SPAWN_ATTEMPTS = 0xEB2DB0CAD13154B3, // 0x1479E85A
 
 		/// <summary>
-		/// Parameters: IntPtr p0, float p1
+		/// Parameters: Any p0, float p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_DISPATCH_TIME_BETWEEN_SPAWN_ATTEMPTS = 0x44F7CBC1BEB3327D, // 0xABADB709
 
 		/// <summary>
-		/// Parameters: IntPtr p0, float p1
+		/// Parameters: Any p0, float p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_DISPATCH_TIME_BETWEEN_SPAWN_ATTEMPTS_MULTIPLIER = 0x48838ED9937A15D1, // 0x1C996BCD
@@ -19765,7 +19765,7 @@ namespace GTA.Native
 		_CLEAR_TACTICAL_ANALYSIS_POINTS = 0xB3CD58CCA6CDA852, // 0x66C3C59C
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Activates (usused?) riot mode. All NPCs are being hostile to each other (including player). Also the game will give weapons (pistols, smgs) to random NPCs.<br/>
@@ -19774,7 +19774,7 @@ namespace GTA.Native
 		SET_RIOT_MODE_ENABLED = 0x2587A48BC88DFADF, // 0xD9660339
 
 		/// <summary>
-		/// Parameters: int p0, string windowTitle, IntPtr p2, string defaultText, string defaultConcat1, string defaultConcat2, string defaultConcat3, string defaultConcat4, string defaultConcat5, string defaultConcat6, string defaultConcat7, int maxInputLength
+		/// Parameters: int p0, const char* windowTitle, Any* p2, const char* defaultText, const char* defaultConcat1, const char* defaultConcat2, const char* defaultConcat3, const char* defaultConcat4, const char* defaultConcat5, const char* defaultConcat6, const char* defaultConcat7, int maxInputLength
 		/// </summary>
 		/// <returns>void</returns>
 		DISPLAY_ONSCREEN_KEYBOARD_WITH_LONGER_INITIAL_STRING = 0xCA78CFA0366592FE, // 0xD2688412
@@ -19784,7 +19784,7 @@ namespace GTA.Native
 		_DISPLAY_ONSCREEN_KEYBOARD_2 = 0xCA78CFA0366592FE, // 0xD2688412
 
 		/// <summary>
-		/// Parameters: int p0, string windowTitle, string p2, string defaultText, string defaultConcat1, string defaultConcat2, string defaultConcat3, int maxInputLength
+		/// Parameters: int p0, const char* windowTitle, const char* p2, const char* defaultText, const char* defaultConcat1, const char* defaultConcat2, const char* defaultConcat3, int maxInputLength
 		/// </summary>
 		/// <remarks>
 		/// sfink: note, p0 is set to 6 for PC platform in at least 1 script, or to `unk::_get_ui_language_id() == 0` otherwise.<br/>
@@ -19859,7 +19859,7 @@ namespace GTA.Native
 		NEXT_ONSCREEN_KEYBOARD_RESULT_WILL_DISPLAY_USING_THESE_FONTS = 0x3ED1438C1F5C6612, // 0x3301EA47
 
 		/// <summary>
-		/// Parameters: uint hash, bool enable
+		/// Parameters: Hash hash, BOOL enable
 		/// </summary>
 		/// <remarks>
 		/// Appears to remove stealth kill action from memory<br/>
@@ -19878,7 +19878,7 @@ namespace GTA.Native
 		GET_REAL_WORLD_TIME = 0x3F60413F5DF65748,
 
 		/// <summary>
-		/// Parameters: int eventType, bool suppress
+		/// Parameters: int eventType, BOOL suppress
 		/// </summary>
 		/// <returns>void</returns>
 		SUPRESS_RANDOM_EVENT_THIS_FRAME = 0x1EAE0A6E978894A2, // 0x8F60366E
@@ -19959,7 +19959,7 @@ namespace GTA.Native
 		_RESET_LOCALPLAYER_STATE = 0xC0AA53F866B3134D, // 0x5D209F25
 
 		/// <summary>
-		/// Parameters: int p0, int p1, IntPtr p2, IntPtr p3
+		/// Parameters: int p0, int p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		SCRIPT_RACE_INIT = 0x0A60017F841A54F2, // 0x2D33F15A
@@ -19968,7 +19968,7 @@ namespace GTA.Native
 		SCRIPT_RACE_SHUTDOWN = 0x1FF6BF9A63E5757F, // 0xDF99925C
 
 		/// <summary>
-		/// Parameters: Player player, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Player player, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		SCRIPT_RACE_PLAYER_HIT_CHECKPOINT = 0x1BB299305C3E8C13, // 0xA27F4472
@@ -20118,7 +20118,7 @@ namespace GTA.Native
 		_GET_POWER_SAVING_MODE_DURATION = 0xABB2FA71C83A1B72,
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// If toggle is true, the ped's head is shown in the pause menu<br/>
@@ -20142,7 +20142,7 @@ namespace GTA.Native
 		GET_IS_PLAYER_IN_ANIMAL_FORM = 0x9689123E3F213AA5,
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PLAYER_IS_REPEATING_A_MISSION = 0x9D8D44ADBBA61EF2,
@@ -20164,7 +20164,7 @@ namespace GTA.Native
 		USE_ACTIVE_CAMERA_FOR_TIMESLICING_CENTRE = 0x693478ACBD7F18E7,
 
 		/// <summary>
-		/// Parameters: uint contentId, int index
+		/// Parameters: Hash contentId, int index
 		/// </summary>
 		/// <returns>void</returns>
 		SET_CONTENT_ID_INDEX = 0x4B82FA6F2D624634,
@@ -20174,7 +20174,7 @@ namespace GTA.Native
 		_SET_CONTENT_MAP_INDEX = 0x4B82FA6F2D624634,
 
 		/// <summary>
-		/// Parameters: uint contentId
+		/// Parameters: Hash contentId
 		/// </summary>
 		/// <returns>int</returns>
 		GET_CONTENT_ID_INDEX = 0xECF041186C5A94DC,
@@ -20219,7 +20219,7 @@ namespace GTA.Native
 		SET_MOBILE_PHONE_SCALE = 0xCBDD322A73D6D932, // 0x09BCF1BE
 
 		/// <summary>
-		/// Parameters: float rotX, float rotY, float rotZ, IntPtr p3
+		/// Parameters: float rotX, float rotY, float rotZ, Any p3
 		/// </summary>
 		/// <remarks>
 		/// Last parameter is unknown and always zero.<br/>
@@ -20246,7 +20246,7 @@ namespace GTA.Native
 		GET_MOBILE_PHONE_POSITION = 0x584FDFDA48805B86, // 0xB2E1E1A0
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// If bool Toggle = true so the mobile is hide to screen.<br/>
@@ -20263,7 +20263,7 @@ namespace GTA.Native
 		CAN_PHONE_BE_SEEN_ON_SCREEN = 0xC4E2813898C97A4B, // 0x5F978584
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_MOBILE_PHONE_DOF_STATE = 0x375A706A5C2FD084,
@@ -20290,7 +20290,7 @@ namespace GTA.Native
 		_CELL_CAM_MOVE_FINGER = 0x95C9E72F3D7DEC9B,
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// if the bool "Toggle" is "true" so the phone is lean.<br/>
@@ -20308,13 +20308,13 @@ namespace GTA.Native
 		_CELL_CAM_SET_LEAN = 0x44E44169EF70138E,
 
 		/// <summary>
-		/// Parameters: bool p0, bool p1
+		/// Parameters: BOOL p0, BOOL p1
 		/// </summary>
 		/// <returns>void</returns>
 		CELL_CAM_ACTIVATE = 0xFDE8F069C542D126, // 0x234C1AE9
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		CELL_CAM_ACTIVATE_SELFIE_MODE = 0x015C49A93E3E086E, // 0x4479B304
@@ -20328,7 +20328,7 @@ namespace GTA.Native
 		_CELL_CAM_DISABLE_THIS_FRAME = 0x015C49A93E3E086E, // 0x4479B304
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		CELL_CAM_ACTIVATE_SHALLOW_DOF_MODE = 0xA2CCBE62CD4C91A4, // 0xC273BB4D
@@ -20404,7 +20404,7 @@ namespace GTA.Native
 		NETWORK_INITIALIZE_CASH = 0x3DA5ECD1A56CBA6D, // 0x66DA9935
 
 		/// <summary>
-		/// Parameters: int characterSlot, bool p1, bool p2
+		/// Parameters: int characterSlot, BOOL p1, BOOL p2
 		/// </summary>
 		/// <remarks>
 		/// Note the 2nd parameters are always 1, 0. I have a feeling it deals with your money, wallet, bank. So when you delete the character it of course wipes the wallet cash at that time. So if that was the case, it would be eg, NETWORK_DELETE_CHARACTER(characterIndex, deleteWalletCash, deleteBankCash);<br/>
@@ -20436,13 +20436,13 @@ namespace GTA.Native
 		NETWORK_CLEAR_CHARACTER_WALLET = 0xA921DED15FDF28F5, // 0x19F0C471
 
 		/// <summary>
-		/// Parameters: int amount, IntPtr gamerHandle
+		/// Parameters: int amount, Any* gamerHandle
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_GIVE_PLAYER_JOBSHARE_CASH = 0xFB18DF9CB95E0105, // 0xC6047FDB
 
 		/// <summary>
-		/// Parameters: int value, IntPtr gamerHandle
+		/// Parameters: int value, Any* gamerHandle
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_RECEIVE_PLAYER_JOBSHARE_CASH = 0x56A3B51944C50598, // 0x4ED71C1A
@@ -20451,7 +20451,7 @@ namespace GTA.Native
 		NETWORK_CAN_SHARE_JOB_CASH = 0x1C2473301B1C66BA, // 0xA27B9FE8
 
 		/// <summary>
-		/// Parameters: int index, string context, string reason, bool p3
+		/// Parameters: int index, const char* context, const char* reason, BOOL p3
 		/// </summary>
 		/// <remarks>
 		/// index<br/>
@@ -20491,7 +20491,7 @@ namespace GTA.Native
 		NETWORK_REFUND_CASH = 0xF9C812CD7C46E817, // 0x07C92F21
 
 		/// <summary>
-		/// Parameters: int amount, string p1, string p2, bool p3, bool p4, bool p5
+		/// Parameters: int amount, const char* p1, const char* p2, BOOL p3, BOOL p4, BOOL p5
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_DEDUCT_CASH = 0x18B7AE224B087E26,
@@ -20501,7 +20501,7 @@ namespace GTA.Native
 		_NETWORK_DEDUCT_CASH = 0x18B7AE224B087E26,
 
 		/// <summary>
-		/// Parameters: int amount, bool p1, bool p2
+		/// Parameters: int amount, BOOL p1, BOOL p2
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_MONEY_CAN_BET = 0x81404F3DC124FE5B, // 0x8474E6F0
@@ -20513,7 +20513,7 @@ namespace GTA.Native
 		NETWORK_CAN_BET = 0x3A54E33660DED67F, // 0xE3802533
 
 		/// <summary>
-		/// Parameters: uint hash
+		/// Parameters: Hash hash
 		/// </summary>
 		/// <remarks>
 		/// GTAO_CASINO_HOUSE<br/>
@@ -20540,7 +20540,7 @@ namespace GTA.Native
 		_NETWORK_CASINO_CAN_PURCHASE_CHIPS_WITH_PVC = 0x394DCDB9E836B7A9,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_CASINO_CAN_BET_AMOUNT = 0xF62F6D9528358FE4,
@@ -20645,19 +20645,19 @@ namespace GTA.Native
 		NETWORK_EARN_FROM_CRATE_DROP = 0xB1CC1B9EC3007A2A, // 0xEAF04923
 
 		/// <summary>
-		/// Parameters: int amount, string p1
+		/// Parameters: int amount, const char* p1
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_FROM_BETTING = 0x827A5BA1A44ACA6D, // 0xA0F7F07C
 
 		/// <summary>
-		/// Parameters: int amount, string p1
+		/// Parameters: int amount, const char* p1
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_FROM_JOB = 0xB2CC4836834E8A98, // 0x0B6997FC
 
 		/// <summary>
-		/// Parameters: int amount, string p1
+		/// Parameters: int amount, const char* p1
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_FROM_JOBX2 = 0xDEBBF584665411D0,
@@ -20667,7 +20667,7 @@ namespace GTA.Native
 		_NETWORK_EARN_FROM_JOB_X2 = 0xDEBBF584665411D0,
 
 		/// <summary>
-		/// Parameters: int amount, string p1
+		/// Parameters: int amount, const char* p1
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_FROM_PREMIUM_JOB = 0xC8407624CEF2354B,
@@ -20677,7 +20677,7 @@ namespace GTA.Native
 		_NETWORK_EARN_FROM_PREMIUM_JOB = 0xC8407624CEF2354B,
 
 		/// <summary>
-		/// Parameters: int amount, string heistHash
+		/// Parameters: int amount, const char* heistHash
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_FROM_BEND_JOB = 0x61326EE6DF15B0CA, // 0xBB293400
@@ -20687,19 +20687,19 @@ namespace GTA.Native
 		NETWORK_EARN_FROM_MISSION_H = 0x61326EE6DF15B0CA, // 0xBB293400
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, bool p2
+		/// Parameters: Any p0, Any* p1, BOOL p2
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_FROM_CHALLENGE_WIN = 0x2B171E6B2F64D8DF, // 0x2BEFB6C4
 
 		/// <summary>
-		/// Parameters: int amount, IntPtr gamerHandle, IntPtr p2, IntPtr p3
+		/// Parameters: int amount, Any* gamerHandle, Any* p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_FROM_BOUNTY = 0x131BB5DA15453ACF, // 0x127F2DAE
 
 		/// <summary>
-		/// Parameters: int amount, uint modelHash
+		/// Parameters: int amount, Hash modelHash
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_FROM_IMPORT_EXPORT = 0xF92A014A634442D6, // 0xF11FC458
@@ -20711,13 +20711,13 @@ namespace GTA.Native
 		NETWORK_EARN_FROM_HOLDUPS = 0x45B8154E077D9E4D, // 0xE6B90E9C
 
 		/// <summary>
-		/// Parameters: int amount, uint propertyName
+		/// Parameters: int amount, Hash propertyName
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_FROM_PROPERTY = 0x849648349D77F5C5, // 0x9BE4F7E1
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <remarks>
 		/// DSPORT<br/>
@@ -20738,19 +20738,19 @@ namespace GTA.Native
 		NETWORK_EARN_FROM_ROCKSTAR = 0x02CE1D6AC0FC73EA, // 0x5A3733CC
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3, IntPtr p4, IntPtr p5, IntPtr p6, IntPtr p7
+		/// Parameters: Any p0, Any p1, Any p2, Any p3, Any p4, Any p5, Any p6, Any p7
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_FROM_VEHICLE = 0xB539BD8A4C1EECF8, // 0xF803589D
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3, IntPtr p4, IntPtr p5, IntPtr p6, IntPtr p7, IntPtr p8
+		/// Parameters: Any p0, Any p1, Any p2, Any p3, Any p4, Any p5, Any p6, Any p7, Any p8
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_FROM_PERSONAL_VEHICLE = 0x3F4D00167E41E0AD, // 0x96B8BEE8
 
 		/// <summary>
-		/// Parameters: int amount, string type, int characterSlot
+		/// Parameters: int amount, const char* type, int characterSlot
 		/// </summary>
 		/// <remarks>
 		/// type either Monthly,Weekly,Daily<br/>
@@ -20763,7 +20763,7 @@ namespace GTA.Native
 		_NETWORK_EARN_FROM_DAILY_OBJECTIVE = 0x6EA318C91C1A8786, // 0xAB6BD72F
 
 		/// <summary>
-		/// Parameters: int p0, string p1, IntPtr p2
+		/// Parameters: int p0, const char* p1, Any* p2
 		/// </summary>
 		/// <remarks>
 		/// Example for p1: "AM_DISTRACT_COPS"<br/>
@@ -20776,7 +20776,7 @@ namespace GTA.Native
 		_NETWORK_EARN_FROM_AMBIENT_JOB = 0xFB6DB092FBAE29E6, // 0xA14CC95D
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2
+		/// Parameters: Any p0, Any* p1, Any* p2
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_FROM_JOB_BONUS = 0x6816FB4416760775, // 0xBEE23713
@@ -20786,13 +20786,13 @@ namespace GTA.Native
 		_NETWORK_EARN_FROM_JOB_BONUS = 0x6816FB4416760775, // 0xBEE23713
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2
+		/// Parameters: Any p0, Any p1, Any p2
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_FROM_CRIMINAL_MASTERMIND = 0xFA009A62990671D4,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2
+		/// Parameters: Any p0, Any p1, Any p2
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_HEIST_AWARD = 0x9D4FDBB035229669,
@@ -20802,7 +20802,7 @@ namespace GTA.Native
 		_NETWORK_EARN_JOB_BONUS_HEIST_AWARD = 0x9D4FDBB035229669,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2
+		/// Parameters: Any p0, Any p1, Any p2
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_FIRST_TIME_BONUS = 0x11B0A20C493F7E36,
@@ -20812,7 +20812,7 @@ namespace GTA.Native
 		_NETWORK_EARN_JOB_BONUS_FIRST_TIME_BONUS = 0x11B0A20C493F7E36,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2
+		/// Parameters: Any p0, Any p1, Any p2
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_GOON = 0xCDA1C62BE2777802,
@@ -20822,7 +20822,7 @@ namespace GTA.Native
 		_NETWORK_EARN_GOON = 0xCDA1C62BE2777802,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2
+		/// Parameters: Any p0, Any p1, Any p2
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_BOSS = 0x08B0CA7A6AB3AC32,
@@ -20832,7 +20832,7 @@ namespace GTA.Native
 		_NETWORK_EARN_BOSS = 0x08B0CA7A6AB3AC32,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_AGENCY = 0x0CB1BE0633C024A8,
@@ -20852,7 +20852,7 @@ namespace GTA.Native
 		_NETWORK_EARN_FROM_WAREHOUSE = 0x3E4ADAFF1830F146,
 
 		/// <summary>
-		/// Parameters: int amount, IntPtr p1
+		/// Parameters: int amount, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_FROM_CONTRABAND = 0xECA658CE2A4E5A72,
@@ -20862,7 +20862,7 @@ namespace GTA.Native
 		_NETWORK_EARN_FROM_CONTRABAND = 0xECA658CE2A4E5A72,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_FROM_DESTROYING_CONTRABAND = 0x84C0116D012E8FC2,
@@ -20872,7 +20872,7 @@ namespace GTA.Native
 		_NETWORK_EARN_FROM_DESTROYING_CONTRABAND = 0x84C0116D012E8FC2,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3, IntPtr p4
+		/// Parameters: Any p0, Any p1, Any p2, Any p3, Any p4
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_FROM_SMUGGLER_WORK = 0x6B7E4FB50D5F3D65,
@@ -20882,7 +20882,7 @@ namespace GTA.Native
 		_NETWORK_EARN_FROM_SMUGGLER_WORK = 0x6B7E4FB50D5F3D65,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_FROM_HANGAR_TRADE = 0x31BA138F6304FB9F,
@@ -20892,7 +20892,7 @@ namespace GTA.Native
 		_NETWORK_EARN_FROM_HANGAR_TRADE = 0x31BA138F6304FB9F,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_PURCHASE_CLUB_HOUSE = 0x55A1E095DB052FA5,
@@ -20902,7 +20902,7 @@ namespace GTA.Native
 		_NETWORK_EARN_FROM_PURCHASE_CLUBHOUSE = 0x55A1E095DB052FA5,
 
 		/// <summary>
-		/// Parameters: int amount, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: int amount, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_FROM_BUSINESS_PRODUCT = 0x8586789730B10CAF,
@@ -20912,7 +20912,7 @@ namespace GTA.Native
 		_NETWORK_EARN_FROM_BUSINESS_PRODUCT = 0x8586789730B10CAF,
 
 		/// <summary>
-		/// Parameters: int amount, IntPtr p1, IntPtr p2
+		/// Parameters: int amount, Any p1, Any p2
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_FROM_VEHICLE_EXPORT = 0xEDEAD9A91EC768B3,
@@ -20922,7 +20922,7 @@ namespace GTA.Native
 		_NETWORK_EARN_FROM_VEHICLE_EXPORT = 0xEDEAD9A91EC768B3,
 
 		/// <summary>
-		/// Parameters: int amount, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: int amount, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_SMUGGLER_AGENCY = 0xDEE612F2D71B0308,
@@ -20932,7 +20932,7 @@ namespace GTA.Native
 		_NETWORK_EARN_FROM_SMUGGLING = 0xDEE612F2D71B0308,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_BOUNTY_HUNTER_REWARD = 0xF6B170F9A02E9E87,
@@ -20942,7 +20942,7 @@ namespace GTA.Native
 		_NETWORK_EARN_BOUNTY_HUNTER_REWARD = 0xF6B170F9A02E9E87,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_FROM_BUSINESS_BATTLE = 0x42FCE14F50F27291,
@@ -20952,7 +20952,7 @@ namespace GTA.Native
 		_NETWORK_EARN_FROM_BUSINESS_BATTLE = 0x42FCE14F50F27291,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, int p1
+		/// Parameters: Any p0, int p1
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_FROM_CLUB_MANAGEMENT_PARTICIPATION = 0xA75EAC69F59E96E7,
@@ -20962,7 +20962,7 @@ namespace GTA.Native
 		_NETWORK_EARN_FROM_CLUB_MANAGEMENT_PARTICIPATION = 0xA75EAC69F59E96E7,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_FROM_FMBB_PHONECALL_MISSION = 0xC5156361F26E2212,
@@ -20972,7 +20972,7 @@ namespace GTA.Native
 		_NETWORK_EARN_FROM_FMBB_PHONECALL_MISSION = 0xC5156361F26E2212,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2
+		/// Parameters: Any p0, Any p1, Any p2
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_FROM_BUSINESS_HUB_SELL = 0x0B39CF0D53F1C883,
@@ -20982,7 +20982,7 @@ namespace GTA.Native
 		_NETWORK_EARN_FROM_BUSINESS_HUB_SELL = 0x0B39CF0D53F1C883,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_FROM_FMBB_BOSS_WORK = 0x1FDA0AA679C9919B,
@@ -20992,7 +20992,7 @@ namespace GTA.Native
 		_NETWORK_EARN_FROM_FMBB_BOSS_WORK = 0x1FDA0AA679C9919B,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_FMBB_WAGE_BONUS = 0xFFFBA1B1F7C0B6F4,
@@ -21002,13 +21002,13 @@ namespace GTA.Native
 		_NETWORK_EARN_FMBB_WAGE_BONUS = 0xFFFBA1B1F7C0B6F4,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, bool p1, bool p2, bool p3, IntPtr p4, IntPtr p5
+		/// Parameters: Any p0, BOOL p1, BOOL p2, BOOL p3, Any p4, Any p5
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_CAN_SPEND_MONEY = 0xAB3CAA6B422164DA, // 0x5AA379D9
 
 		/// <summary>
-		/// Parameters: IntPtr p0, bool p1, bool p2, bool p3, IntPtr p4, IntPtr p5, IntPtr p6
+		/// Parameters: Any p0, BOOL p1, BOOL p2, BOOL p3, Any* p4, Any p5, Any p6
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_CAN_SPEND_MONEY2 = 0x7303E27CC6532080,
@@ -21018,37 +21018,37 @@ namespace GTA.Native
 		_NETWORK_CAN_SPEND_MONEY_2 = 0x7303E27CC6532080,
 
 		/// <summary>
-		/// Parameters: int amount, uint item, IntPtr p2, IntPtr p3, bool p4, string item_name, IntPtr p6, IntPtr p7, IntPtr p8, bool p9
+		/// Parameters: int amount, Hash item, Any p2, Any p3, BOOL p4, const char* item_name, Any p6, Any p7, Any p8, BOOL p9
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_BUY_ITEM = 0xF0077C797F66A355, // 0xA07B6368
 
 		/// <summary>
-		/// Parameters: int amount, bool p1, bool p2, IntPtr p3
+		/// Parameters: int amount, BOOL p1, BOOL p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_TAXI = 0x17C3A7D31EAE39F9, // 0x1F3DB3E3
 
 		/// <summary>
-		/// Parameters: IntPtr p0, bool p1, bool p2
+		/// Parameters: Any p0, BOOL p1, BOOL p2
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_PAY_EMPLOYEE_WAGE = 0x5FD5ED82CBBE9989, // 0xBE70849B
 
 		/// <summary>
-		/// Parameters: int amount, string matchId, bool p2, bool p3
+		/// Parameters: int amount, const char* matchId, BOOL p2, BOOL p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_PAY_MATCH_ENTRY_FEE = 0x9346E14F2AF74D46, // 0x224A3488
 
 		/// <summary>
-		/// Parameters: int amount, int p1, string matchId, bool p3, bool p4
+		/// Parameters: int amount, int p1, const char* matchId, BOOL p3, BOOL p4
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_BETTING = 0x1C436FD11FFA692F, // 0xF8A07513
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, int amount
+		/// Parameters: Any p0, Any p1, int amount
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_WAGER = 0xD99DB210089617FE,
@@ -21058,19 +21058,19 @@ namespace GTA.Native
 		_NETWORK_SPENT_WAGER = 0xD99DB210089617FE,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, bool p1, IntPtr p2, bool p3
+		/// Parameters: Any p0, BOOL p1, Any p2, BOOL p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_IN_STRIPCLUB = 0xEE99784E4467689C, // 0x8957038E
 
 		/// <summary>
-		/// Parameters: int cost, bool p1, bool p2
+		/// Parameters: int cost, BOOL p1, BOOL p2
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_BUY_HEALTHCARE = 0xD9B067E55253E3DD, // 0x832150E5
 
 		/// <summary>
-		/// Parameters: int cost, bool p1, bool p2, IntPtr p3
+		/// Parameters: int cost, BOOL p1, BOOL p2, Any p3
 		/// </summary>
 		/// <remarks>
 		/// p1 = 0 (always)<br/>
@@ -21080,13 +21080,13 @@ namespace GTA.Native
 		NETWORK_BUY_AIRSTRIKE = 0x763B4BD305338F19, // 0x40470683
 
 		/// <summary>
-		/// Parameters: int p0, int p1, bool p2, bool p3
+		/// Parameters: int p0, int p1, BOOL p2, BOOL p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_BUY_BACKUP_GANG = 0xA3EDDAA42411D3B9, // 0x2AD2EC51
 
 		/// <summary>
-		/// Parameters: int cost, bool p1, bool p2, IntPtr p3
+		/// Parameters: int cost, BOOL p1, BOOL p2, Any p3
 		/// </summary>
 		/// <remarks>
 		/// p1 = 0 (always)<br/>
@@ -21096,13 +21096,13 @@ namespace GTA.Native
 		NETWORK_BUY_HELI_STRIKE = 0x81AA4610E3FD3A69, // 0x047547D4
 
 		/// <summary>
-		/// Parameters: IntPtr p0, bool p1, bool p2, IntPtr p3
+		/// Parameters: Any p0, BOOL p1, BOOL p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_AMMO_DROP = 0xB162DC95C0A3317B, // 0x4B643076
 
 		/// <summary>
-		/// Parameters: int amount, Player victim, bool p2, bool p3, IntPtr p4
+		/// Parameters: int amount, Player victim, BOOL p2, BOOL p3, Any p4
 		/// </summary>
 		/// <remarks>
 		/// p1 is just an assumption. p2 was false and p3 was true.<br/>
@@ -21111,43 +21111,43 @@ namespace GTA.Native
 		NETWORK_BUY_BOUNTY = 0x7B718E197453F2D9, // 0xCB89CBE0
 
 		/// <summary>
-		/// Parameters: int cost, uint propertyName, bool p2, bool p3
+		/// Parameters: int cost, Hash propertyName, BOOL p2, BOOL p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_BUY_PROPERTY = 0x650A08A280870AF6, // 0x7D479AAB
 
 		/// <summary>
-		/// Parameters: int p0, bool p1, bool p2
+		/// Parameters: int p0, BOOL p1, BOOL p2
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_BUY_SMOKES = 0x75AF80E61248EEBD, // 0xC0AB03EB
 
 		/// <summary>
-		/// Parameters: IntPtr p0, bool p1, bool p2, IntPtr p3
+		/// Parameters: Any p0, BOOL p1, BOOL p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_HELI_PICKUP = 0x7BF1D73DB2ECA492, // 0x27EEBCAB
 
 		/// <summary>
-		/// Parameters: IntPtr p0, bool p1, bool p2, IntPtr p3
+		/// Parameters: Any p0, BOOL p1, BOOL p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_BOAT_PICKUP = 0x524EE43A37232C00, // 0xB241CABD
 
 		/// <summary>
-		/// Parameters: IntPtr p0, bool p1, bool p2, IntPtr p3
+		/// Parameters: Any p0, BOOL p1, BOOL p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_BULL_SHARK = 0xA6DD8458CE24012C, // 0xDE7D398C
 
 		/// <summary>
-		/// Parameters: int amount, bool p1, bool p2
+		/// Parameters: int amount, BOOL p1, BOOL p2
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_CASH_DROP = 0x289016EC778D60E0, // 0x87BD1D11
 
 		/// <summary>
-		/// Parameters: IntPtr p0, bool p1, bool p2, IntPtr p3
+		/// Parameters: Any p0, BOOL p1, BOOL p2, Any p3
 		/// </summary>
 		/// <remarks>
 		/// Only used once in a script (am_contact_requests)<br/>
@@ -21158,85 +21158,85 @@ namespace GTA.Native
 		NETWORK_SPENT_HIRE_MUGGER = 0xE404BFB981665BF0, // 0xE792C4A5
 
 		/// <summary>
-		/// Parameters: int amount, bool p1, bool p2, IntPtr p3
+		/// Parameters: int amount, BOOL p1, BOOL p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_ROBBED_BY_MUGGER = 0x995A65F15F581359, // 0xE6AAA0D5
 
 		/// <summary>
-		/// Parameters: IntPtr p0, bool p1, bool p2, IntPtr p3
+		/// Parameters: Any p0, BOOL p1, BOOL p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_HIRE_MERCENARY = 0xE7B80E2BF9D80BD6, // 0x99CF02C4
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, bool p2, bool p3, IntPtr p4
+		/// Parameters: Any p0, Any* p1, BOOL p2, BOOL p3, Any p4
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_BUY_WANTEDLEVEL = 0xE1B13771A843C4F6, // 0xE7CB4F95
 
 		/// <summary>
-		/// Parameters: IntPtr p0, bool p1, bool p2, IntPtr p3
+		/// Parameters: Any p0, BOOL p1, BOOL p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_BUY_OFFTHERADAR = 0xA628A745E2275C5D, // 0x20DDCF2F
 
 		/// <summary>
-		/// Parameters: IntPtr p0, bool p1, bool p2, IntPtr p3
+		/// Parameters: Any p0, BOOL p1, BOOL p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_BUY_REVEAL_PLAYERS = 0x6E176F1B18BC0637, // 0x2F7836E2
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, bool p3, bool p4
+		/// Parameters: Any p0, Any p1, Any p2, BOOL p3, BOOL p4
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_CARWASH = 0xEC03C719DB2F4306, // 0x8283E028
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, bool p2, bool p3
+		/// Parameters: Any p0, Any p1, BOOL p2, BOOL p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_CINEMA = 0x6B38ECB05A63A685, // 0x1100CAF5
 
 		/// <summary>
-		/// Parameters: IntPtr p0, bool p1, bool p2
+		/// Parameters: Any p0, BOOL p1, BOOL p2
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_TELESCOPE = 0x7FE61782AD94CC09, // 0xAE7FF044
 
 		/// <summary>
-		/// Parameters: IntPtr p0, bool p1, bool p2
+		/// Parameters: Any p0, BOOL p1, BOOL p2
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_HOLDUPS = 0xD9B86B9872039763, // 0x1B3803B1
 
 		/// <summary>
-		/// Parameters: IntPtr p0, bool p1, bool p2, IntPtr p3
+		/// Parameters: Any p0, BOOL p1, BOOL p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_BUY_PASSIVE_MODE = 0x6D3A430D1A809179, // 0x7E97C92C
 
 		/// <summary>
-		/// Parameters: int p0, bool p1, bool p2
+		/// Parameters: int p0, BOOL p1, BOOL p2
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_BANK_INTEREST = 0xCA230C9682556CF1, // 0xF02E92D7
 
 		/// <summary>
-		/// Parameters: IntPtr p0, bool p1, bool p2
+		/// Parameters: Any p0, BOOL p1, BOOL p2
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_PROSTITUTES = 0xB21B89501CFAC79E, // 0x78436D07
 
 		/// <summary>
-		/// Parameters: IntPtr p0, bool p1, bool p2
+		/// Parameters: Any p0, BOOL p1, BOOL p2
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_ARREST_BAIL = 0x812F5488B1B2A299, // 0x5AEE2FC1
 
 		/// <summary>
-		/// Parameters: int amount, uint vehicleModel, IntPtr gamerHandle, bool notBankrupt, bool hasTheMoney
+		/// Parameters: int amount, Hash vehicleModel, Any* gamerHandle, BOOL notBankrupt, BOOL hasTheMoney
 		/// </summary>
 		/// <remarks>
 		/// According to how I understood this in the freemode script alone,<br/>
@@ -21251,19 +21251,19 @@ namespace GTA.Native
 		NETWORK_SPENT_PAY_VEHICLE_INSURANCE_PREMIUM = 0x9FF28D88C766E3E8, // 0x4E665BB2
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, bool p2, bool p3
+		/// Parameters: Any p0, Any* p1, BOOL p2, BOOL p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_CALL_PLAYER = 0xACDE7185B374177C, // 0x1A89B5FC
 
 		/// <summary>
-		/// Parameters: IntPtr p0, bool p1, bool p2
+		/// Parameters: Any p0, BOOL p1, BOOL p2
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_BOUNTY = 0x29B260B84947DFCC, // 0x3401FC96
 
 		/// <summary>
-		/// Parameters: int p0, bool p1, bool p2
+		/// Parameters: int p0, BOOL p1, BOOL p2
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_FROM_ROCKSTAR = 0x6A445B64ED7ABEB5, // 0x54198922
@@ -21278,7 +21278,7 @@ namespace GTA.Native
 		NETWORK_SPEND_EARNED_FROM_BANK_AND_WALLETS = 0x9B5016A6433A68C5, // 0xBD64F1B7
 
 		/// <summary>
-		/// Parameters: int* p0, int* p1, string p2
+		/// Parameters: int* p0, int* p1, const char* p2
 		/// </summary>
 		/// <remarks>
 		/// This isn't a hash collision.<br/>
@@ -21287,7 +21287,7 @@ namespace GTA.Native
 		PROCESS_CASH_GIFT = 0x20194D48EAEC9A41, // 0xC5D8B1E9
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2
+		/// Parameters: Any p0, Any p1, Any p2
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_MOVE_SUBMARINE = 0xCD4D66B43B1DD28D,
@@ -21297,19 +21297,19 @@ namespace GTA.Native
 		_NETWORK_SPENT_ON_MOVE_SUBMARINE = 0xCD4D66B43B1DD28D,
 
 		/// <summary>
-		/// Parameters: int p0, int p1, bool p2, bool p3
+		/// Parameters: int p0, int p1, BOOL p2, BOOL p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_PLAYER_HEALTHCARE = 0x7C99101F7FCE2EE5, // 0x3D96A21C
 
 		/// <summary>
-		/// Parameters: IntPtr p0, bool p1, bool p2, IntPtr p3
+		/// Parameters: Any p0, BOOL p1, BOOL p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_NO_COPS = 0xD5BB406F4E04019F, // 0x2E51C61C
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3, IntPtr p4, IntPtr p5
+		/// Parameters: Any p0, Any p1, Any p2, Any p3, Any p4, Any p5
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_CARGO_SOURCING = 0x948705F6F9C50824,
@@ -21319,13 +21319,13 @@ namespace GTA.Native
 		_NETWORK_SPENT_CARGO_SOURCING = 0x948705F6F9C50824,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, bool p1, bool p2, IntPtr p3
+		/// Parameters: Any p0, BOOL p1, BOOL p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_REQUEST_JOB = 0x8204DA7934DF3155, // 0xD57A5125
 
 		/// <summary>
-		/// Parameters: IntPtr p0, bool p1, bool p2, IntPtr p3
+		/// Parameters: Any p0, BOOL p1, BOOL p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_REQUEST_HEIST = 0x9D26502BB97BFE62, // 0xF4287778
@@ -21335,7 +21335,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_REQUEST_HEIST = 0x9D26502BB97BFE62, // 0xF4287778
 
 		/// <summary>
-		/// Parameters: int amount, IntPtr p1, bool p2, bool p3, IntPtr p4
+		/// Parameters: int amount, Any p1, BOOL p2, BOOL p3, Any p4
 		/// </summary>
 		/// <remarks>
 		/// The first parameter is the amount spent which is store in a global when this native is called. The global returns 10. Which is the price for both rides.<br/>
@@ -21350,7 +21350,7 @@ namespace GTA.Native
 		NETWORK_ECONOMY_HAS_FIXED_CRAZY_NUMBERS = 0x7C4FCCD2E4DEB394,
 
 		/// <summary>
-		/// Parameters: int amount, string matchId, bool p2, bool p3
+		/// Parameters: int amount, const char* matchId, BOOL p2, BOOL p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_JOB_SKIP = 0x28F174A67B8D0C2F,
@@ -21360,7 +21360,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_JOB_SKIP = 0x28F174A67B8D0C2F,
 
 		/// <summary>
-		/// Parameters: int amount, bool p1, bool p2
+		/// Parameters: int amount, BOOL p1, BOOL p2
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_SPENT_BOSS_GOON = 0xFFBE02CD385356BD,
@@ -21384,7 +21384,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_GOON_PAY = 0x08A1B82B91900682,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2
+		/// Parameters: Any p0, Any p1, Any p2
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPEND_BOSS = 0xDBC966A01C02BCA7,
@@ -21398,7 +21398,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_BOSS_PAY = 0xDBC966A01C02BCA7,
 
 		/// <summary>
-		/// Parameters: int amount, bool p1, bool p2
+		/// Parameters: int amount, BOOL p1, BOOL p2
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_MOVE_YACHT = 0xE7DF4E0545DFB56E,
@@ -21408,7 +21408,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_MOVE_YACHT = 0xE7DF4E0545DFB56E,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2
+		/// Parameters: Any p0, Any p1, Any p2
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_RENAME_ORGANIZATION = 0xFC4EE00A7B3BFB76,
@@ -21418,7 +21418,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_RENAME_ORGANIZATION = 0xFC4EE00A7B3BFB76,
 
 		/// <summary>
-		/// Parameters: int p0, int p1, uint p2, bool p3, bool p4
+		/// Parameters: int p0, int p1, Hash p2, BOOL p3, BOOL p4
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_BUY_CONTRABAND_MISSION = 0x30FD873ECE50E9F6,
@@ -21428,7 +21428,7 @@ namespace GTA.Native
 		_NETWORK_BUY_CONTRABAND = 0x30FD873ECE50E9F6,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_PA_SERVICE_HELI = 0x112209CE0290C03A,
@@ -21438,7 +21438,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_PA_SERVICE_HELI = 0x112209CE0290C03A,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_PA_SERVICE_VEHICLE = 0xED5FD7AF10F5E262,
@@ -21448,7 +21448,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_PA_SERVICE_VEHICLE = 0xED5FD7AF10F5E262,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_PA_SERVICE_SNACK = 0x0D30EB83668E63C5,
@@ -21458,7 +21458,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_PA_SERVICE_SNACK = 0x0D30EB83668E63C5,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_PA_SERVICE_DANCER = 0xB49ECA122467D05F,
@@ -21468,7 +21468,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_PA_SERVICE_DANCER = 0xB49ECA122467D05F,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2
+		/// Parameters: Any p0, Any p1, Any p2
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_PA_SERVICE_IMPOUND = 0xE23ADC6FCB1F29AE,
@@ -21478,7 +21478,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_PA_SERVICE_IMPOUND = 0xE23ADC6FCB1F29AE,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_PA_HELI_PICKUP = 0x0FE8E1FCD2B86B33,
@@ -21488,7 +21488,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_PA_SERVICE_HELI_PICKUP = 0x0FE8E1FCD2B86B33,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_PURCHASE_OFFICE_PROPERTY = 0x69EF772B192614C1,
@@ -21498,7 +21498,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_PURCHASE_OFFICE = 0x69EF772B192614C1,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_UPGRADE_OFFICE_PROPERTY = 0x8E243837643D9583,
@@ -21508,7 +21508,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_UPGRADE_OFFICE = 0x8E243837643D9583,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_PURCHASE_WAREHOUSE_PROPERTY = 0xBD0EFB25CCA8F97A,
@@ -21518,7 +21518,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_PURCHASE_WAREHOUSE = 0xBD0EFB25CCA8F97A,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_UPGRADE_WAREHOUSE_PROPERTY = 0xA95F667A755725DA,
@@ -21528,7 +21528,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_UPGRADE_WAREHOUSE = 0xA95F667A755725DA,
 
 		/// <summary>
-		/// Parameters: int amount, IntPtr data, bool p2, bool p3
+		/// Parameters: int amount, Any* data, BOOL p2, BOOL p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_PURCHASE_IMPEXP_WAREHOUSE_PROPERTY = 0x33981D6804E62F49,
@@ -21538,7 +21538,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_PURCHASE_IMPORTEXPORT_WAREHOUSE = 0x33981D6804E62F49,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_UPGRADE_IMPEXP_WAREHOUSE_PROPERTY = 0x4128464231E3CA0B,
@@ -21548,13 +21548,13 @@ namespace GTA.Native
 		_NETWORK_SPENT_UPGRADE_IMPORTEXPORT_WAREHOUSE = 0x4128464231E3CA0B,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_TRADE_IMPEXP_WAREHOUSE_PROPERTY = 0x2FAB6614CE22E196,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_ORDER_WAREHOUSE_VEHICLE = 0x05F04155A226FBBF,
@@ -21564,7 +21564,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_ORDER_WAREHOUSE_VEHICLE = 0x05F04155A226FBBF,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_ORDER_BODYGUARD_VEHICLE = 0xE8B0B270B6E7C76E,
@@ -21574,7 +21574,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_ORDER_BODYGUARD_VEHICLE = 0xE8B0B270B6E7C76E,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_JUKEBOX = 0x5BCDE0F640C773D2,
@@ -21584,7 +21584,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_JUKEBOX = 0x5BCDE0F640C773D2,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_PURCHASE_CLUB_HOUSE = 0x998E18CEB44487FC,
@@ -21594,7 +21594,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_PURCHASE_CLUBHOUSE = 0x998E18CEB44487FC,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_UPGRADE_CLUB_HOUSE = 0xFA07759E6FDDD7CF,
@@ -21604,13 +21604,13 @@ namespace GTA.Native
 		_NETWORK_SPENT_UPGRADE_CLUBHOUSE = 0xFA07759E6FDDD7CF,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_PURCHASE_BUSINESS_PROPERTY = 0x6FD97159FE3C971A,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_UPGRADE_BUSINESS_PROPERTY = 0x675D19C6067CAE08,
@@ -21620,13 +21620,13 @@ namespace GTA.Native
 		_NETWORK_SPENT_UPGRADE_BUSINESS_PROPERTY = 0x675D19C6067CAE08,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_TRADE_BUSINESS_PROPERTY = 0xA51B086B0B2C0F7A,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3, IntPtr p4
+		/// Parameters: Any p0, Any p1, Any p2, Any p3, Any p4
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_MC_ABILITY = 0xD7CCCBA28C4ECAF0,
@@ -21636,7 +21636,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_BA_SERVICE = 0xD7CCCBA28C4ECAF0,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_PAY_BUSINESS_SUPPLIES = 0x0035BB914316F1E3,
@@ -21646,7 +21646,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_BUSINESS = 0x0035BB914316F1E3,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2
+		/// Parameters: Any p0, Any p1, Any p2
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_CHANGE_APPEARANCE = 0x5F456788B05FAEAC,
@@ -21656,7 +21656,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_CHANGE_APPEARANCE = 0x5F456788B05FAEAC,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3, IntPtr p4, IntPtr p5, IntPtr p6, IntPtr p7, IntPtr p8, IntPtr p9
+		/// Parameters: Any p0, Any p1, Any p2, Any p3, Any p4, Any p5, Any p6, Any p7, Any p8, Any p9
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_VEHICLE_EXPORT_MODS = 0xA75CCF58A60A5FD1,
@@ -21666,7 +21666,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_VEHICLE_EXPORT_MODS = 0xA75CCF58A60A5FD1,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_PURCHASE_OFFICE_GARAGE = 0xB4C2EC463672474E,
@@ -21676,7 +21676,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_PURCHASE_OFFICE_GARAGE = 0xB4C2EC463672474E,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_UPGRADE_OFFICE_GARAGE = 0x2AFC2D19B50797F2,
@@ -21686,7 +21686,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_UPGRADE_OFFICE_GARAGE = 0x2AFC2D19B50797F2,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2
+		/// Parameters: Any p0, Any p1, Any p2
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_IMPORT_EXPORT_REPAIR = 0xC1952F3773BA18FE,
@@ -21696,7 +21696,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_IMPORT_EXPORT_REPAIR = 0xC1952F3773BA18FE,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_PURCHASE_HANGAR = 0xCCB339CC970452DA,
@@ -21706,7 +21706,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_PURCHASE_HANGAR = 0xCCB339CC970452DA,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_UPGRADE_HANGAR = 0x615EB504B0788DAF,
@@ -21716,7 +21716,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_UPGRADE_HANGAR = 0x615EB504B0788DAF,
 
 		/// <summary>
-		/// Parameters: int amount, bool p1, bool p2
+		/// Parameters: int amount, BOOL p1, BOOL p2
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_HANGAR_UTILITY_CHARGES = 0xB18AC2ECBB15CB6A,
@@ -21726,7 +21726,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_HANGAR_UTILITY_CHARGES = 0xB18AC2ECBB15CB6A,
 
 		/// <summary>
-		/// Parameters: int amount, bool p1, bool p2
+		/// Parameters: int amount, BOOL p1, BOOL p2
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_HANGAR_STAFF_CHARGES = 0xB1F1346FD57685D7,
@@ -21736,7 +21736,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_HANGAR_STAFF_CHARGES = 0xB1F1346FD57685D7,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_BUY_TRUCK = 0xAC272C0AE01B4BD8,
@@ -21746,7 +21746,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_BUY_TRUCK = 0xAC272C0AE01B4BD8,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_UPGRADE_TRUCK = 0x365E877C61D6988B,
@@ -21756,7 +21756,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_UPGRADE_TRUCK = 0x365E877C61D6988B,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_BUY_BUNKER = 0x12D148D26538D0F9,
@@ -21766,7 +21766,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_BUY_BUNKER = 0x12D148D26538D0F9,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_UPRADE_BUNKER = 0x0C82D21A77C22D49,
@@ -21776,7 +21776,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_UPGRADE_BUNKER = 0x0C82D21A77C22D49,
 
 		/// <summary>
-		/// Parameters: int amount, uint bunkerHash
+		/// Parameters: int amount, Hash bunkerHash
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_FROM_SELL_BUNKER = 0x9251B6ABF2D0A5B4,
@@ -21786,7 +21786,7 @@ namespace GTA.Native
 		_NETWORK_EARN_FROM_SELL_BUNKER = 0x9251B6ABF2D0A5B4,
 
 		/// <summary>
-		/// Parameters: int amount, bool p1, bool p2
+		/// Parameters: int amount, BOOL p1, BOOL p2
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_BALLISTIC_EQUIPMENT = 0x5D97630A8A0EF123,
@@ -21796,7 +21796,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_BALLISTIC_EQUIPMENT = 0x5D97630A8A0EF123,
 
 		/// <summary>
-		/// Parameters: int amount, IntPtr p1
+		/// Parameters: int amount, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_RDR_BONUS = 0x7A5349B773584675,
@@ -21806,7 +21806,7 @@ namespace GTA.Native
 		_NETWORK_EARN_FROM_RDR_BONUS = 0x7A5349B773584675,
 
 		/// <summary>
-		/// Parameters: int amount, IntPtr p1
+		/// Parameters: int amount, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_WAGE_PAYMENT = 0x35F8DA0E8A31EF1B,
@@ -21826,7 +21826,7 @@ namespace GTA.Native
 		_NETWORK_EARN_FROM_WAGE_PAYMENT_BONUS = 0x005ACA7100BD101D,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_BUY_BASE = 0x4EA3F425C7744D21,
@@ -21836,7 +21836,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_BUY_BASE = 0x4EA3F425C7744D21,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_UPGRADE_BASE = 0x3DD3F33A5D55EA6F,
@@ -21846,7 +21846,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_UPGRADE_BASE = 0x3DD3F33A5D55EA6F,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_BUY_TILTROTOR = 0x0CCE73BC7A11E885,
@@ -21856,7 +21856,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_BUY_TILTROTOR = 0x0CCE73BC7A11E885,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_UPGRADE_TILTROTOR = 0x165E135D6DFA2907,
@@ -21866,7 +21866,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_UPGRADE_TILTROTOR = 0x165E135D6DFA2907,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_EMPLOY_ASSASSINS = 0x5BBBD92186E1F1C5,
@@ -21876,7 +21876,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_EMPLOY_ASSASSINS = 0x5BBBD92186E1F1C5,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPEND_GANGOPS_CANNON = 0x771ADB0E7635B7BF,
@@ -21886,7 +21886,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_GANGOPS_CANNON = 0x771ADB0E7635B7BF,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPEND_GANGOPS_SKIP_MISSION = 0xDA947AE8880D5C18,
@@ -21896,7 +21896,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_GANGOPS_START_MISSION = 0xDA947AE8880D5C18,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPEND_CASINO_HEIST_SKIP_MISSION = 0x487009DD91D93429,
@@ -21906,7 +21906,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_CASINO_HEIST_SKIP_MISSION = 0x487009DD91D93429,
 
 		/// <summary>
-		/// Parameters: int amount, uint baseNameHash
+		/// Parameters: int amount, Hash baseNameHash
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_SELL_BASE = 0x0E1E2FF3F4EC11AA,
@@ -21946,7 +21946,7 @@ namespace GTA.Native
 		_NETWORK_EARN_FROM_GANGOPS_WAGES_BONUS = 0x15BB2A5C757EB91F,
 
 		/// <summary>
-		/// Parameters: int amount, IntPtr p1
+		/// Parameters: int amount, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_DAR_CHALLENGE = 0xCAC672087B4A24AB,
@@ -21956,7 +21956,7 @@ namespace GTA.Native
 		_NETWORK_EARN_FROM_DAR_CHALLENGE = 0xCAC672087B4A24AB,
 
 		/// <summary>
-		/// Parameters: int amount, uint vehicleHash
+		/// Parameters: int amount, Hash vehicleHash
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_DOOMSDAY_FINALE_BONUS = 0x128A747F4A230952,
@@ -21966,7 +21966,7 @@ namespace GTA.Native
 		_NETWORK_EARN_FROM_DOOMSDAY_FINALE_BONUS = 0x128A747F4A230952,
 
 		/// <summary>
-		/// Parameters: int amount, string p1, IntPtr p2
+		/// Parameters: int amount, const char* p1, Any p2
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_GANGOPS_AWARD = 0xA9A31475F530DFDA,
@@ -21976,7 +21976,7 @@ namespace GTA.Native
 		_NETWORK_EARN_FROM_GANGOPS_AWARDS = 0xA9A31475F530DFDA,
 
 		/// <summary>
-		/// Parameters: int amount, string p1, int actIndex
+		/// Parameters: int amount, const char* p1, int actIndex
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_GANGOPS_ELITE = 0x2597A0D4A4FC2C77,
@@ -21996,7 +21996,7 @@ namespace GTA.Native
 		_NETWORK_RIVAL_DELIVERY_COMPLETED = 0x1B882107C23A9022,
 
 		/// <summary>
-		/// Parameters: int type, int amount, bool p2, bool p3
+		/// Parameters: int type, int amount, BOOL p2, BOOL p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPEND_GANGOPS_START_STRAND = 0xA19EC0786E326E06,
@@ -22006,7 +22006,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_GANGOPS_START_STRAND = 0xA19EC0786E326E06,
 
 		/// <summary>
-		/// Parameters: int amount, bool p1, bool p2
+		/// Parameters: int amount, BOOL p1, BOOL p2
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPEND_GANGOPS_TRIP_SKIP = 0x5ECE6FD7B4EC8D6A,
@@ -22026,7 +22026,7 @@ namespace GTA.Native
 		_NETWORK_EARN_FROM_GANGOPS_JOBS_PREP_PARTICIPATION = 0xED26584F6BDCBBFD,
 
 		/// <summary>
-		/// Parameters: int amount, string p1
+		/// Parameters: int amount, const char* p1
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_GANGOPS_SETUP = 0xA9160796D47A2CF8,
@@ -22036,7 +22036,7 @@ namespace GTA.Native
 		_NETWORK_EARN_FROM_GANGOPS_JOBS_SETUP = 0xA9160796D47A2CF8,
 
 		/// <summary>
-		/// Parameters: int amount, string p1
+		/// Parameters: int amount, const char* p1
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_GANGOPS_FINALE = 0x1C121FC9545E0D52,
@@ -22046,7 +22046,7 @@ namespace GTA.Native
 		_NETWORK_EARN_FROM_GANGOPS_JOBS_FINALE = 0x1C121FC9545E0D52,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2
+		/// Parameters: Any p0, Any p1, Any p2
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPEND_GANGOPS_REPAIR_COST = 0x2A7CEC72C3443BCC,
@@ -22056,7 +22056,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_GANGOPS_REPAIR_COST = 0x2A7CEC72C3443BCC,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_NIGHTCLUB = 0xE0F82D68C7039158,
@@ -22066,7 +22066,7 @@ namespace GTA.Native
 		_NETWORK_EARN_FROM_NIGHTCLUB_INCOME = 0xE0F82D68C7039158,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_NIGHTCLUB_DANCING = 0xB4DEAE67F35E2ACD,
@@ -22086,7 +22086,7 @@ namespace GTA.Native
 		_NETWORK_EARN_FROM_BB_EVENT_BONUS = 0xFDD8D2440DAF1590,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_PURCHASE_HACKER_TRUCK = 0x2A93C46AAB1EACC9,
@@ -22096,7 +22096,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_PURCHASE_HACKER = 0x2A93C46AAB1EACC9,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_UPGRADE_HACKER_TRUCK = 0x226C284C830D0CA8,
@@ -22106,7 +22106,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_UPGRADE_HACKER = 0x226C284C830D0CA8,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, int amount, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, int amount, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_HACKER_TRUCK = 0xE8815FE993896AD3,
@@ -22116,7 +22116,7 @@ namespace GTA.Native
 		_NETWORK_EARN_FROM_HACKER_TRUCK_MISSION = 0xE8815FE993896AD3,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_PURCHASE_NIGHTCLUB_AND_WAREHOUSE = 0xED76D195E6E3BF7F,
@@ -22126,7 +22126,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_PURCHASE_NIGHTCLUB = 0xED76D195E6E3BF7F,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_UPGRADE_NIGHTCLUB_AND_WAREHOUSE = 0x1DC9B749E7AE282B,
@@ -22136,7 +22136,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_UPGRADE_NIGHTCLUB = 0x1DC9B749E7AE282B,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3, IntPtr p4, IntPtr p5, IntPtr p6
+		/// Parameters: Any p0, Any p1, Any p2, Any p3, Any p4, Any p5, Any p6
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_NIGHTCLUB_AND_WAREHOUSE = 0xC6E74CF8C884C880,
@@ -22146,7 +22146,7 @@ namespace GTA.Native
 		_NETWORK_EARN_FROM_NIGHTCLUB_LOCATION = 0xC6E74CF8C884C880,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3, IntPtr p4, IntPtr p5
+		/// Parameters: Any p0, Any p1, Any p2, Any p3, Any p4, Any p5
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPEND_NIGHTCLUB_AND_WAREHOUSE = 0x65482BFD0923C8A1,
@@ -22156,7 +22156,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_NIGHTCLUB_BATHROOM_ATTENDANT = 0x65482BFD0923C8A1,
 
 		/// <summary>
-		/// Parameters: int amount, bool p1, bool p2
+		/// Parameters: int amount, BOOL p1, BOOL p2
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_RDR_HATCHET_BONUS = 0xE284D46FFDB82E36,
@@ -22166,7 +22166,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_RDRHATCHET_BONUS = 0xE284D46FFDB82E36,
 
 		/// <summary>
-		/// Parameters: Player player, int amount, IntPtr p1, bool p2, bool p3
+		/// Parameters: Player player, int amount, Any p1, BOOL p2, BOOL p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_NIGHTCLUB_ENTRY_FEE = 0x876056684281655D,
@@ -22176,7 +22176,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_NIGHTCLUB_ENTRY_FEE = 0x876056684281655D,
 
 		/// <summary>
-		/// Parameters: int amount, IntPtr p1, bool p2, bool p3
+		/// Parameters: int amount, Any p1, BOOL p2, BOOL p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPEND_NIGHTCLUB_BAR_DRINK = 0xDD21B016E4289465,
@@ -22186,7 +22186,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_NIGHTCLUB_BAR_DRINK = 0xDD21B016E4289465,
 
 		/// <summary>
-		/// Parameters: int amount, bool p1, bool p2
+		/// Parameters: int amount, BOOL p1, BOOL p2
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPEND_BOUNTY_HUNTER_MISSION = 0x1BEA0CD93470BB1F,
@@ -22196,7 +22196,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_BOUNTY_HUNTER_MISSION = 0x1BEA0CD93470BB1F,
 
 		/// <summary>
-		/// Parameters: int amount, IntPtr p1, bool p2, bool p3
+		/// Parameters: int amount, Any p1, BOOL p2, BOOL p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_REHIRE_DJ = 0xF6C8A544E4CF14FC,
@@ -22206,7 +22206,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_REHIRE_DJ = 0xF6C8A544E4CF14FC,
 
 		/// <summary>
-		/// Parameters: int amount, IntPtr p1, bool p2, bool p3
+		/// Parameters: int amount, Any p1, BOOL p2, BOOL p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPENT_ARENA_JOIN_SPECTATOR = 0x14EAEA58F93B55AF,
@@ -22216,7 +22216,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_ARENA_JOIN_SPECTATOR = 0x14EAEA58F93B55AF,
 
 		/// <summary>
-		/// Parameters: int amount, IntPtr p1
+		/// Parameters: int amount, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_ARENA_SKILL_LEVEL_PROGRESSION = 0xE08256F972C7BB2C,
@@ -22226,7 +22226,7 @@ namespace GTA.Native
 		_NETWORK_EARN_FROM_ARENA_SKILL_LEVEL_PROGRESSION = 0xE08256F972C7BB2C,
 
 		/// <summary>
-		/// Parameters: int amount, IntPtr p1
+		/// Parameters: int amount, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_ARENA_CAREER_PROGRESSION = 0x0F99F70C61F14619,
@@ -22236,7 +22236,7 @@ namespace GTA.Native
 		_NETWORK_EARN_FROM_ARENA_CAREER_PROGRESSION = 0x0F99F70C61F14619,
 
 		/// <summary>
-		/// Parameters: int amount, bool p1, bool p2
+		/// Parameters: int amount, BOOL p1, BOOL p2
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPEND_MAKE_IT_RAIN = 0xE5F5A060439C2F5D,
@@ -22246,7 +22246,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_MAKE_IT_RAIN = 0xE5F5A060439C2F5D,
 
 		/// <summary>
-		/// Parameters: int amount, bool p1, bool p2, string p3
+		/// Parameters: int amount, BOOL p1, BOOL p2, const char* p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPEND_BUY_ARENA = 0x40D5DA9550B7CB46,
@@ -22256,7 +22256,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_BUY_ARENA = 0x40D5DA9550B7CB46,
 
 		/// <summary>
-		/// Parameters: int amount, bool p1, bool p2, string p3
+		/// Parameters: int amount, BOOL p1, BOOL p2, const char* p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPEND_UPGRADE_ARENA = 0x037ABB06825D7AB1,
@@ -22266,7 +22266,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_UPGRADE_ARENA = 0x037ABB06825D7AB1,
 
 		/// <summary>
-		/// Parameters: int amount, int type, bool p2, bool p3
+		/// Parameters: int amount, int type, BOOL p2, BOOL p3
 		/// </summary>
 		/// <remarks>
 		/// type either, 1 for cam spectate, 2 for drone<br/>
@@ -22279,7 +22279,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_ARENA_SPECTATOR_BOX = 0x7049BF858601DC0F,
 
 		/// <summary>
-		/// Parameters: int amount, IntPtr p1, bool p2
+		/// Parameters: int amount, Any p1, BOOL p2
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPEND_SPIN_THE_WHEEL_PAYMENT = 0x9A5BD1D0000B339C,
@@ -22299,7 +22299,7 @@ namespace GTA.Native
 		_NETWORK_EARN_FROM_SPIN_THE_WHEEL_CASH = 0x676C48776CACBB5A,
 
 		/// <summary>
-		/// Parameters: int amount, bool p1, bool p2
+		/// Parameters: int amount, BOOL p1, BOOL p2
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPEND_ARENA_PREMIUM = 0x619496D837EFD920,
@@ -22309,7 +22309,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_ARENA_PREMIUM = 0x619496D837EFD920,
 
 		/// <summary>
-		/// Parameters: int amount, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: int amount, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_ARENA_WAR = 0x631F1CB8FB4130AA,
@@ -22359,7 +22359,7 @@ namespace GTA.Native
 		_NETWORK_EARN_FROM_DAILY_OBJECTIVE_EVENT = 0x5128DF14A5BB86FC,
 
 		/// <summary>
-		/// Parameters: int amount, bool p1, bool p2, int p3
+		/// Parameters: int amount, BOOL p1, BOOL p2, int p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPEND_CASINO_MEMBERSHIP = 0xFBBE0570EDF39D46,
@@ -22369,7 +22369,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_CASINO_MEMBERSHIP = 0xFBBE0570EDF39D46,
 
 		/// <summary>
-		/// Parameters: int amount, bool p1, bool p2, IntPtr data
+		/// Parameters: int amount, BOOL p1, BOOL p2, Any* data
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPEND_BUY_CASINO = 0x34A6FC4D06C4DA0F,
@@ -22379,7 +22379,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_BUY_CASINO = 0x34A6FC4D06C4DA0F,
 
 		/// <summary>
-		/// Parameters: int amount, bool p1, bool p2, IntPtr data
+		/// Parameters: int amount, BOOL p1, BOOL p2, Any* data
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPEND_UPGRADE_CASINO = 0x4740D62BC1B4EBEA,
@@ -22389,7 +22389,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_UPGRADE_CASINO = 0x4740D62BC1B4EBEA,
 
 		/// <summary>
-		/// Parameters: int amount, IntPtr p1, IntPtr p2, IntPtr p3, IntPtr p4
+		/// Parameters: int amount, Any p1, Any p2, Any p3, Any p4
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPEND_CASINO_GENERIC = 0x88BF9B612B84D3C3,
@@ -22429,7 +22429,7 @@ namespace GTA.Native
 		_NETWORK_EARN_FROM_COMPLETE_COLLECTION = 0x83AD64F53F4E9483,
 
 		/// <summary>
-		/// Parameters: int amount, IntPtr p1, IntPtr p2
+		/// Parameters: int amount, Any p1, Any p2
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_SELL_PRIZE_VEHICLE = 0x8BCB27A057DF7B7F,
@@ -22469,7 +22469,7 @@ namespace GTA.Native
 		_NETWORK_EARN_FROM_CASINO_MISSION_PARTICIPATION = 0x09E8F18641BE2575,
 
 		/// <summary>
-		/// Parameters: int amount, uint hash
+		/// Parameters: int amount, Hash hash
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_CASINO_AWARD = 0x973A9781A34F8DEB,
@@ -22479,7 +22479,7 @@ namespace GTA.Native
 		_NETWORK_EARN_FROM_CASINO_AWARD = 0x973A9781A34F8DEB,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPEND_BUY_ARCADE = 0x870289A558348378,
@@ -22489,7 +22489,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_BUY_ARCADE = 0x870289A558348378,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPEND_UPGRADE_ARCADE = 0x5574637681911FDA,
@@ -22499,7 +22499,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_UPGRADE_ARCADE = 0x5574637681911FDA,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3, IntPtr p4, IntPtr p5, IntPtr p6, IntPtr p7, IntPtr p8, IntPtr p9, IntPtr p10
+		/// Parameters: Any p0, Any p1, Any p2, Any p3, Any p4, Any p5, Any p6, Any p7, Any p8, Any p9, Any p10
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPEND_CASINO_HEIST = 0xD30E8392F407C328,
@@ -22509,7 +22509,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_CASINO_HEIST = 0xD30E8392F407C328,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3, IntPtr p4
+		/// Parameters: Any p0, Any p1, Any p2, Any p3, Any p4
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPEND_ARCADE_MGMT = 0xB5B58E24868CB09E,
@@ -22519,7 +22519,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_ARCADE_MGMT_CABINET = 0xB5B58E24868CB09E,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3, IntPtr p4
+		/// Parameters: Any p0, Any p1, Any p2, Any p3, Any p4
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPEND_PLAY_ARCADE = 0xEAD3D81F2C3A1458,
@@ -22533,7 +22533,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_PLAY_ARCADE_CABINET = 0xEAD3D81F2C3A1458,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3, IntPtr p4
+		/// Parameters: Any p0, Any p1, Any p2, Any p3, Any p4
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPEND_ARCADE = 0x43AA7FAC4E6D6687,
@@ -22543,7 +22543,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_ARCADE_GENERIC = 0x43AA7FAC4E6D6687,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3, IntPtr p4, IntPtr p5, IntPtr p6
+		/// Parameters: Any p0, Any p1, Any p2, Any p3, Any p4, Any p5, Any p6
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_CASINO_HEIST = 0x72E7C7B9615FA3C3,
@@ -22553,7 +22553,7 @@ namespace GTA.Native
 		_NETWORK_EARN_CASINO_HEIST = 0x72E7C7B9615FA3C3,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2
+		/// Parameters: Any p0, Any p1, Any p2
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_UPGRADE_ARCADE = 0x4C3B75694F7E0D9C,
@@ -22563,7 +22563,7 @@ namespace GTA.Native
 		_NETWORK_EARN_FROM_UPGRADE_ARCADE_LOCATION = 0x4C3B75694F7E0D9C,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3, IntPtr p4
+		/// Parameters: Any p0, Any p1, Any p2, Any p3, Any p4
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_ARCADE = 0xD29334ED1A256DBF,
@@ -22577,7 +22577,7 @@ namespace GTA.Native
 		_NETWORK_EARN_FROM_ARCADE_AWARD = 0xD29334ED1A256DBF,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2
+		/// Parameters: Any p0, Any p1, Any p2
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_COLLECTABLES = 0xA95CFB4E02390842,
@@ -22587,7 +22587,7 @@ namespace GTA.Native
 		_NETWORK_EARN_FROM_ARCADE_COLLECTABLES = 0xA95CFB4E02390842,
 
 		/// <summary>
-		/// Parameters: int amount, IntPtr p1, IntPtr p2
+		/// Parameters: int amount, Any p1, Any p2
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_CHALLENGE = 0x0DD362F14F18942A,
@@ -22597,7 +22597,7 @@ namespace GTA.Native
 		_NETWORK_EARN_FROM_ARCADE_KILLS_CHALLENGE = 0x0DD362F14F18942A,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3, IntPtr p4
+		/// Parameters: Any p0, Any p1, Any p2, Any p3, Any p4
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_CASINO_HEIST_AWARDS = 0x3EC7471E6909798A,
@@ -22607,7 +22607,7 @@ namespace GTA.Native
 		_NETWORK_EARN_CASINO_HEIST_BONUS = 0x3EC7471E6909798A,
 
 		/// <summary>
-		/// Parameters: int amount, IntPtr p1
+		/// Parameters: int amount, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_COLLECTABLE_ITEM = 0x84FF63BD4966F33D,
@@ -22617,7 +22617,7 @@ namespace GTA.Native
 		_NETWORK_EARN_FROM_COLLECTION_ITEM = 0x84FF63BD4966F33D,
 
 		/// <summary>
-		/// Parameters: int amount, IntPtr p1
+		/// Parameters: int amount, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_COLLECTABLE_COMPLETED_COLLECTION = 0x5C9B198AF5A54FA6,
@@ -22627,7 +22627,7 @@ namespace GTA.Native
 		_NETWORK_EARN_COLLECTABLE_COMPLETED_COLLECTION = 0x5C9B198AF5A54FA6,
 
 		/// <summary>
-		/// Parameters: int amount, IntPtr p1
+		/// Parameters: int amount, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_YATCH_MISSION = 0xDE68E30D89F97132,
@@ -22637,7 +22637,7 @@ namespace GTA.Native
 		_NETWORK_EARN_FROM_YACHT_MISSION = 0xDE68E30D89F97132,
 
 		/// <summary>
-		/// Parameters: int amount, IntPtr p1
+		/// Parameters: int amount, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_DISPATCH_CALL = 0xE2E244AB823B4483,
@@ -22647,7 +22647,7 @@ namespace GTA.Native
 		_NETWORK_EARN_FROM_YACHT_MISSION_2 = 0xE2E244AB823B4483,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPEND_BEACH_PARTY = 0x54ABA22FA6371249,
@@ -22657,7 +22657,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_BEACH_PARTY_GENERIC = 0x54ABA22FA6371249,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3, IntPtr p4, IntPtr p5
+		/// Parameters: Any p0, Any p1, Any p2, Any p3, Any p4, Any p5
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPEND_SUBMARINE = 0x6C8BC1488527AAAB,
@@ -22667,7 +22667,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_SUBMARINE = 0x6C8BC1488527AAAB,
 
 		/// <summary>
-		/// Parameters: int amount1, IntPtr p1, bool p2, IntPtr p3, int p4, int p5, int p6, int amount2, IntPtr p8
+		/// Parameters: int amount1, Any p1, BOOL p2, Any p3, int p4, int p5, int p6, int amount2, Any p8
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPEND_CASINO_CLUB = 0xC991C255AA6D90B2,
@@ -22677,7 +22677,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_CASINO_CLUB_GENERIC = 0xC991C255AA6D90B2,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPEND_BUY_SUB = 0x90CD7C6871FBF1B4,
@@ -22687,7 +22687,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_BUY_SUB = 0x90CD7C6871FBF1B4,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPEND_UPGRADE_SUB = 0x89049A84065CE68E,
@@ -22697,7 +22697,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_UPGRADE_SUB = 0x89049A84065CE68E,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPEND_ISLAND_HEIST = 0xE86689E5F82DE429,
@@ -22707,7 +22707,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_ISLAND_HEIST = 0xE86689E5F82DE429,
 
 		/// <summary>
-		/// Parameters: int amount1, IntPtr p1, IntPtr p2, IntPtr p3, int amount2, int p5
+		/// Parameters: int amount1, Any p1, Any p2, Any p3, int amount2, int p5
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_ISLAND_HEIST = 0xD21D111C46BA9F15,
@@ -22717,7 +22717,7 @@ namespace GTA.Native
 		_NETWORK_EARN_ISLAND_HEIST = 0xD21D111C46BA9F15,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2
+		/// Parameters: Any p0, Any p1, Any p2
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_BEACH_PARTY_LOST_FOUND = 0xA51338E0DCCD4065,
@@ -22727,7 +22727,7 @@ namespace GTA.Native
 		_NETWORK_EARN_FROM_BEACH_PARTY_LOST_FOUND = 0xA51338E0DCCD4065,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_FROM_ISLAND_HEIST_DJ_MISSION = 0xE2BB399D90942091,
@@ -22737,7 +22737,7 @@ namespace GTA.Native
 		_NETWORK_EARN_FROM_ISLAND_HEIST_DJMISSION = 0xE2BB399D90942091,
 
 		/// <summary>
-		/// Parameters: int amount1, IntPtr p1, IntPtr p2, int amount2, IntPtr p4
+		/// Parameters: int amount1, Any p1, Any p2, int amount2, Any p4
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPEND_CAR_CLUB_MEMBERSHIP = 0x1464E17207CD36E2,
@@ -22747,7 +22747,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_CARCLUB_MEMBERSHIP = 0x1464E17207CD36E2,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, bool p1, bool p2, IntPtr p3
+		/// Parameters: Any p0, BOOL p1, BOOL p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPEND_CAR_CLUB_BAR = 0x925227803A0EAA1B,
@@ -22757,7 +22757,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_CARCLUB = 0x925227803A0EAA1B,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3, IntPtr p4
+		/// Parameters: Any p0, Any p1, Any p2, Any p3, Any p4
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPEND_AUTOSHOP_MODIFY = 0x9BEA350D7C48061B,
@@ -22767,7 +22767,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_AUTOSHOP_MODIFICATIONS = 0x9BEA350D7C48061B,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPEND_CAR_CLUB_TAKEOVER = 0xD1E46824E6FB92B5,
@@ -22777,7 +22777,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_CARCLUB_TAKEOVER = 0xD1E46824E6FB92B5,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPEND_BUY_AUTOSHOP = 0xEEB7E5D1FEB20869,
@@ -22787,7 +22787,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_BUY_AUTOSHOP = 0xEEB7E5D1FEB20869,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPEND_UPGRADE_AUTOSHOP = 0xDD829AA198FDC46C,
@@ -22797,7 +22797,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_UPGRADE_AUTOSHOP = 0xDD829AA198FDC46C,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_AUTOSHOP_BUSINESS = 0x36A7FD5A7194B03E,
@@ -22807,7 +22807,7 @@ namespace GTA.Native
 		_NETWORK_EARN_FROM_AUTOSHOP_BUSINESS = 0x36A7FD5A7194B03E,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, int p1
+		/// Parameters: Any p0, int p1
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_AUTOSHOP_INCOME = 0xC66D1CF99ED7FE25,
@@ -22817,7 +22817,7 @@ namespace GTA.Native
 		_NETWORK_EARN_FROM_AUTOSHOP_INCOME = 0xC66D1CF99ED7FE25,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_CARCLUB_MEMBERSHIP = 0xBC6227792A188E2E,
@@ -22827,7 +22827,7 @@ namespace GTA.Native
 		_NETWORK_EARN_FROM_CARCLUB_MEMBERSHIP = 0xBC6227792A188E2E,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_DAILY_VEHICLE = 0x533073E8A596008C,
@@ -22837,7 +22837,7 @@ namespace GTA.Native
 		_NETWORK_EARN_FROM_VEHICLE_AUTOSHOP = 0x533073E8A596008C,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_DAILY_VEHICLE_BONUS = 0xFE65AFE7308E32B2,
@@ -22847,7 +22847,7 @@ namespace GTA.Native
 		_NETWORK_EARN_FROM_VEHICLE_AUTOSHOP_BONUS = 0xFE65AFE7308E32B2,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2
+		/// Parameters: Any p0, Any p1, Any p2
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_TUNER_AWARD = 0xB846F547D3792DF6,
@@ -22857,7 +22857,7 @@ namespace GTA.Native
 		_NETWORK_EARN_FROM_TUNER_AWARD = 0xB846F547D3792DF6,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3, IntPtr p4
+		/// Parameters: Any p0, Any p1, Any p2, Any p3, Any p4
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_TUNER_ROBBERY = 0xBCB266247193AC61,
@@ -22867,7 +22867,7 @@ namespace GTA.Native
 		_NETWORK_EARN_FROM_TUNER_FINALE = 0xBCB266247193AC61,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_UPGRADE_AUTOSHOP = 0xC10322A8D3E061EE,
@@ -22877,7 +22877,7 @@ namespace GTA.Native
 		_NETWORK_EARN_FROM_UPGRADE_AUTOSHOP_LOCATION = 0xC10322A8D3E061EE,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPEND_INTERACTION_MENU_ABILITY = 0x93AA4165CB67E925,
@@ -22887,7 +22887,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_INTERACTION_MENU_ABILITY = 0x93AA4165CB67E925,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, bool p3
+		/// Parameters: Any p0, Any p1, Any p2, BOOL p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPEND_SET_COMMON_FIELDS = 0xB9F7A469460E7A4A,
@@ -22897,7 +22897,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_FROM_BANK = 0xB9F7A469460E7A4A,
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPEND_SET_DISCOUNT = 0x7E2F4E8F44CAF4E0,
@@ -22907,7 +22907,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_SALES_DISPLAY = 0x7E2F4E8F44CAF4E0,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPEND_BUY_AGENCY = 0xEA8CD3C9B3C35884,
@@ -22917,7 +22917,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_BUY_AGENCY = 0xEA8CD3C9B3C35884,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPEND_UPGRADE_AGENCY = 0x6CCA64840589A3B6,
@@ -22927,7 +22927,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_UPGRADE_AGENCY = 0x6CCA64840589A3B6,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3, IntPtr p4
+		/// Parameters: Any p0, Any p1, Any p2, Any p3, Any p4
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPEND_AGENCY = 0x1B2120405080125C,
@@ -22937,7 +22937,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_AGENCY_CONCIERGE = 0x1B2120405080125C,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPEND_HIDDEN = 0xBF8793B91EA094A7,
@@ -22947,7 +22947,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_HIDDEN_CONTACT_SERVICE = 0xBF8793B91EA094A7,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPEND_SOURCE_BIKE = 0xD9DF467CBE4398C8,
@@ -22957,7 +22957,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_SOURCE_BIKE_CONTACT_SERVICE = 0xD9DF467CBE4398C8,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPEND_COMP_SUV = 0xD86581F9E7CDA383,
@@ -22967,7 +22967,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_COMPANY_SUV_CONTACT_SERVICE = 0xD86581F9E7CDA383,
 
 		/// <summary>
-		/// Parameters: int p0, bool p1, bool p2, IntPtr p3
+		/// Parameters: int p0, BOOL p1, BOOL p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPEND_SUV_FST_TRVL = 0x61A2DF64ED2D396E,
@@ -22977,7 +22977,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_SUV_FAST_TRAVEL = 0x61A2DF64ED2D396E,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPEND_SUPPLY = 0xEBD482B82ACB8BAD,
@@ -22987,7 +22987,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_SUPPLY_CONTACT_SERVICE = 0xEBD482B82ACB8BAD,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPEND_BIKE_SHOP = 0x923AEA8E78F8DF0B,
@@ -22997,7 +22997,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_BIKE_SHOP_MODIFY = 0x923AEA8E78F8DF0B,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3, IntPtr p4
+		/// Parameters: Any p0, Any p1, Any p2, Any p3, Any p4
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPEND_VEHICLE_REQUESTED = 0x02D24A35A9CC3503,
@@ -23007,7 +23007,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_VEHICLE_REQUESTED = 0x02D24A35A9CC3503,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPEND_GUNRUNNING = 0x2CEB0E0BC2A77C05,
@@ -23017,7 +23017,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_GUNRUNNING_CONTACT_SERVICE = 0x2CEB0E0BC2A77C05,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_AGENCY_SAFE = 0x663B4B9D11742A12,
@@ -23027,7 +23027,7 @@ namespace GTA.Native
 		_NETWORK_EARN_FROM_AGENCY_INCOME = 0x663B4B9D11742A12,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_AWARD_CONTRACT = 0x146D4EB6D22A403F,
@@ -23037,7 +23037,7 @@ namespace GTA.Native
 		_NETWORK_EARN_FROM_AWARD_SECURITY_CONTRACT = 0x146D4EB6D22A403F,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_AGENCY_CONTRACT = 0x38482AD49CB905C7,
@@ -23047,7 +23047,7 @@ namespace GTA.Native
 		_NETWORK_EARN_FROM_AGENCY_SECURITY_CONTRACT = 0x38482AD49CB905C7,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_AWARD_PHONE = 0x7397A115030F1BE3,
@@ -23057,7 +23057,7 @@ namespace GTA.Native
 		_NETWORK_EARN_FROM_AWARD_PHONE_HIT = 0x7397A115030F1BE3,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2
+		/// Parameters: Any p0, Any p1, Any p2
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_AGENCY_PHONE = 0xE29F3D5FA63B1B82,
@@ -23067,7 +23067,7 @@ namespace GTA.Native
 		_NETWORK_EARN_FROM_AGENCY_PHONE_HIT = 0xE29F3D5FA63B1B82,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_AWARD_FIXER_MISSION = 0x88D6C327D6C57C45,
@@ -23077,7 +23077,7 @@ namespace GTA.Native
 		_NETWORK_EARN_FROM_AWARD_AGENCY_STORY = 0x88D6C327D6C57C45,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_FIXER_PREP = 0x6283E5DE4C4460C6,
@@ -23087,7 +23087,7 @@ namespace GTA.Native
 		_NETWORK_EARN_FROM_AGENCY_STORY_PREP = 0x6283E5DE4C4460C6,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_FIXER_FINALE = 0xBA154373C5FE51E8,
@@ -23097,7 +23097,7 @@ namespace GTA.Native
 		_NETWORK_EARN_FROM_AGENCY_STORY_FINALE = 0xBA154373C5FE51E8,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_FIXER_AGENCY_SHORT_TRIP = 0xF4A8E57460BF2037,
@@ -23107,7 +23107,7 @@ namespace GTA.Native
 		_NETWORK_EARN_FROM_AGENCY_SHORT_TRIP = 0xF4A8E57460BF2037,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_AWARD_SHORT_TRIP = 0x5B4DBDED84D6A420,
@@ -23117,7 +23117,7 @@ namespace GTA.Native
 		_NETWORK_EARN_FROM_AWARD_SHORT_TRIP = 0x5B4DBDED84D6A420,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_FIXER_RIVAL_DELIVERY = 0x235D41210B3A1A5E,
@@ -23127,7 +23127,7 @@ namespace GTA.Native
 		_NETWORK_EARN_RIVAL_DELIVERY_SECURITY_CONTRACT = 0x235D41210B3A1A5E,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_UPGRADE_AGENCY = 0xD07C7C3F1995108C,
@@ -23137,7 +23137,7 @@ namespace GTA.Native
 		_NETWORK_EARN_FROM_UPGRADE_AGENCY_LOCATION = 0xD07C7C3F1995108C,
 
 		/// <summary>
-		/// Parameters: int amount, bool p1, bool p2, IntPtr data
+		/// Parameters: int amount, BOOL p1, BOOL p2, Any* data
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPEND_APARTMENT_UTILITIES = 0x1254B5B3925EFD3D,
@@ -23147,7 +23147,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_AGGREGATED_UTILITY_BILLS = 0x1254B5B3925EFD3D,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SPEND_BUSINESS_PROPERTY_FEES = 0x92D1CFDA1227FF1C,
@@ -23157,7 +23157,7 @@ namespace GTA.Native
 		_NETWORK_SPENT_BUSINESS_EXPENSES = 0x92D1CFDA1227FF1C,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_SIGHTSEEING_REWARD = 0x45087AE480B233AC,
@@ -23167,7 +23167,7 @@ namespace GTA.Native
 		_NETWORK_EARN_FROM_SIGHTSEEING = 0x45087AE480B233AC,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_BIKER_SHOP = 0x2C5809EB9DF57257,
@@ -23177,7 +23177,7 @@ namespace GTA.Native
 		_NETWORK_EARN_FROM_BIKE_SHOP_BUSINESS = 0x2C5809EB9DF57257,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EARN_BIKER = 0x71BEC32FA466E105,
@@ -23187,7 +23187,7 @@ namespace GTA.Native
 		_NETWORK_EARN_FROM_BIKER_INCOME = 0x71BEC32FA466E105,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_YOHAN_SOURCE_GOODS = 0x59498BC8B1C8B15C,
@@ -23289,7 +23289,7 @@ namespace GTA.Native
 		NETWORK_GET_CAN_TRANSFER_CASH = 0x08E8EEADFD0DC4A0, // 0x03461981
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_CAN_RECEIVE_PLAYER_CASH = 0x5D17BE59D2123284, // 0x41F5F10E
@@ -23323,7 +23323,7 @@ namespace GTA.Native
 		DEPOSIT_VC = 0xE260E0BB9CD995AC, // 0x8F266745
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <remarks>
 		/// This function is hard-coded to always return 1.<br/>
@@ -23332,7 +23332,7 @@ namespace GTA.Native
 		HAS_VC_WITHDRAWAL_COMPLETED = 0xE154B48B68EF72BC, // 0x531E4892
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <remarks>
 		/// This function is hard-coded to always return 1.<br/>
@@ -23352,7 +23352,7 @@ namespace GTA.Native
 		_NET_GAMESERVER_USE_SERVER_TRANSACTIONS = 0x7D2708796355B20B,
 
 		/// <summary>
-		/// Parameters: string name
+		/// Parameters: const char* name
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NET_GAMESERVER_CATALOG_ITEM_IS_VALID = 0xBD4D7EAF8A30F637,
@@ -23370,7 +23370,7 @@ namespace GTA.Native
 		_NET_GAMESERVER_CATALOG_ITEM_EXISTS = 0xBD4D7EAF8A30F637,
 
 		/// <summary>
-		/// Parameters: uint hash
+		/// Parameters: Hash hash
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NET_GAMESERVER_CATALOG_ITEM_KEY_IS_VALID = 0x247F0F73A182EA0B,
@@ -23388,7 +23388,7 @@ namespace GTA.Native
 		_NET_GAMESERVER_CATALOG_ITEM_EXISTS_HASH = 0x247F0F73A182EA0B,
 
 		/// <summary>
-		/// Parameters: uint itemHash, uint categoryHash, bool p2
+		/// Parameters: Hash itemHash, Hash categoryHash, BOOL p2
 		/// </summary>
 		/// <remarks>
 		/// bool is always true in game scripts<br/>
@@ -23502,7 +23502,7 @@ namespace GTA.Native
 		_NETWORK_SHOP_GET_TRANSACTIONS_DISABLED = 0x810E8431C0614BF9,
 
 		/// <summary>
-		/// Parameters: bool inventory, bool playerbalance
+		/// Parameters: BOOL inventory, BOOL playerbalance
 		/// </summary>
 		/// <remarks>
 		/// Note: only one of the arguments can be set to true at a time<br/>
@@ -23528,7 +23528,7 @@ namespace GTA.Native
 		_NET_GAMESERVER_GET_TRANSACTION_MANAGER_DATA = 0x897433D292B44130,
 
 		/// <summary>
-		/// Parameters: int* transactionId, uint categoryHash, uint actionHash, int flags
+		/// Parameters: int* transactionId, Hash categoryHash, Hash actionHash, int flags
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NET_GAMESERVER_BASKET_START = 0x279F08B1A4B29B7E,
@@ -23552,7 +23552,7 @@ namespace GTA.Native
 		_NETWORK_SHOP_BASKET_END = 0xA65568121DF2EA26,
 
 		/// <summary>
-		/// Parameters: IntPtr itemData, int quantity
+		/// Parameters: Any* itemData, int quantity
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NET_GAMESERVER_BASKET_ADD_ITEM = 0xF30980718C8ED876,
@@ -23569,7 +23569,7 @@ namespace GTA.Native
 		_NETWORK_SHOP_BASKET_IS_FULL = 0x27F76CC6C55AD30E,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any* p1
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NET_GAMESERVER_BASKET_APPLY_SERVER_DATA = 0xE1A0450ED46A7812,
@@ -23589,7 +23589,7 @@ namespace GTA.Native
 		_NETWORK_SHOP_CHECKOUT_START = 0x39BE7CEA8D9CC8E6,
 
 		/// <summary>
-		/// Parameters: int* transactionId, uint categoryHash, uint itemHash, uint actionTypeHash, int value, int flags
+		/// Parameters: int* transactionId, Hash categoryHash, Hash itemHash, Hash actionTypeHash, int value, int flags
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NET_GAMESERVER_BEGIN_SERVICE = 0x3C5FD37B5499582E,
@@ -23613,7 +23613,7 @@ namespace GTA.Native
 		_NETWORK_SHOP_TERMINATE_SERVICE = 0xE2A99A9B524BEFFF,
 
 		/// <summary>
-		/// Parameters: int slot, bool transfer, uint reason
+		/// Parameters: int slot, BOOL transfer, Hash reason
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NET_GAMESERVER_DELETE_CHARACTER = 0x51F1A8E48C3D2F6D,
@@ -23848,25 +23848,25 @@ namespace GTA.Native
 		NETWORK_HAVE_COMMUNICATION_PRIVILEGES = 0xAEEF48CDF5B6CE7C, // 0x2D817A5E
 
 		/// <summary>
-		/// Parameters: IntPtr p0, bool p1
+		/// Parameters: Any p0, BOOL p1
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_CHECK_ONLINE_PRIVILEGES = 0x78321BEA235FD8CD,
 
 		/// <summary>
-		/// Parameters: int p0, int p1, bool p2
+		/// Parameters: int p0, int p1, BOOL p2
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_CHECK_USER_CONTENT_PRIVILEGES = 0x595F028698072DD9, // 0xBB54AA3D
 
 		/// <summary>
-		/// Parameters: int p0, int p1, bool p2
+		/// Parameters: int p0, int p1, BOOL p2
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_CHECK_COMMUNICATION_PRIVILEGES = 0x83F28CE49FBBFFBA, // 0xA79E5B05
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2
+		/// Parameters: Any p0, Any p1, Any p2
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_CHECK_TEXT_COMMUNICATION_PRIVILEGES = 0x07EAB372C8841D99,
@@ -23884,7 +23884,7 @@ namespace GTA.Native
 		NETWORK_GET_AGE_GROUP = 0x9614B71F8ADB982B, // 0xAB07CBBE
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2
+		/// Parameters: Any p0, Any p1, Any p2
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_CHECK_PRIVILEGES = 0x0CF6CC51AA18F0F8,
@@ -23936,13 +23936,13 @@ namespace GTA.Native
 		NETWORK_ON_RETURN_TO_SINGLE_PLAYER = 0x283B6062A2C01E9B, // 0x96E28FE2
 
 		/// <summary>
-		/// Parameters: int p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: int p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_TRANSITION_START = 0x8B4FFC790CA131EF,
 
 		/// <summary>
-		/// Parameters: uint hash, int p1, int p2, int state, int p4
+		/// Parameters: Hash hash, int p1, int p2, int state, int p4
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_TRANSITION_ADD_STAGE = 0xC3BFED92026A2AAD,
@@ -23952,7 +23952,7 @@ namespace GTA.Native
 		_NETWORK_TRANSITION_TRACK = 0xC3BFED92026A2AAD,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2
+		/// Parameters: Any p0, Any p1, Any p2
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_TRANSITION_FINISH = 0x04918A41BC9B8157,
@@ -23975,7 +23975,7 @@ namespace GTA.Native
 		NETWORK_CAN_ENTER_MULTIPLAYER = 0x7E782A910C362C25, // 0x4A23B9C9
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, int maxPlayers, IntPtr p4, IntPtr p5
+		/// Parameters: Any p0, Any p1, Any p2, int maxPlayers, Any p4, Any p5
 		/// </summary>
 		/// <remarks>
 		/// unknown params<br/>
@@ -23996,7 +23996,7 @@ namespace GTA.Native
 		NETWORK_SESSION_ENTER = 0x330ED4D05491934F,
 
 		/// <summary>
-		/// Parameters: int p0, int p1, int maxPlayers, bool p3
+		/// Parameters: int p0, int p1, int maxPlayers, BOOL p3
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_SESSION_DO_FRIEND_MATCHMAKING = 0x2CFC76E0D087C994,
@@ -24006,7 +24006,7 @@ namespace GTA.Native
 		NETWORK_SESSION_FRIEND_MATCHMAKING = 0x2CFC76E0D087C994,
 
 		/// <summary>
-		/// Parameters: int crewId, int p1, int p2, int maxPlayers, bool p4
+		/// Parameters: int crewId, int p1, int p2, int maxPlayers, BOOL p4
 		/// </summary>
 		/// <remarks>
 		/// p4 seems to be unused in 1.60/build 2628<br/>
@@ -24019,7 +24019,7 @@ namespace GTA.Native
 		NETWORK_SESSION_CREW_MATCHMAKING = 0x94BC51E9449D917F,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3, IntPtr p4
+		/// Parameters: Any p0, Any p1, Any p2, Any p3, Any p4
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_SESSION_DO_ACTIVITY_QUICKMATCH = 0xBE3E347A87ACEB82,
@@ -24029,7 +24029,7 @@ namespace GTA.Native
 		NETWORK_SESSION_ACTIVITY_QUICKMATCH = 0xBE3E347A87ACEB82,
 
 		/// <summary>
-		/// Parameters: int p0, int maxPlayers, bool p2
+		/// Parameters: int p0, int maxPlayers, BOOL p2
 		/// </summary>
 		/// <remarks>
 		/// Does nothing in online but in offline it will cause the screen to fade to black. Nothing happens past then, the screen will sit at black until you restart GTA. Other stuff must be needed to actually host a session.<br/>
@@ -24065,7 +24065,7 @@ namespace GTA.Native
 		NETWORK_SESSION_IS_PRIVATE = 0xCEF70AA5B3F89BA1, // 0xDB67785D
 
 		/// <summary>
-		/// Parameters: bool p0, bool p1
+		/// Parameters: BOOL p0, BOOL p1
 		/// </summary>
 		/// <remarks>
 		/// p0 is always false and p1 varies.<br/>
@@ -24077,7 +24077,7 @@ namespace GTA.Native
 		NETWORK_SESSION_END = 0xA02E59562D711006, // 0xBCACBEA2
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_SESSION_LEAVE = 0xB9351A07A0D458B1,
@@ -24106,7 +24106,7 @@ namespace GTA.Native
 		_NETWORK_SESSION_IS_PLAYER_VOTED_TO_KICK = 0xD6D09A6F32F49EF1, // 0x8A559D26
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2
+		/// Parameters: Any p0, Any p1, Any p2
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_SESSION_RESERVE_SLOTS_TRANSITION = 0x041C7F2A6C9894E6,
@@ -24162,31 +24162,31 @@ namespace GTA.Native
 		NETWORK_SESSION_ADD_ACTIVE_MATCHMAKING_GROUP = 0xCAE55F48D3D7875C, // 0x5BE529F7
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SESSION_SET_UNIQUE_CREW_LIMIT = 0xF49ABC20D8552257, // 0x454C7B67
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SESSION_SET_UNIQUE_CREW_LIMIT_TRANSITION = 0x4811BBAC21C5FCD5, // 0xE5961511
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SESSION_SET_UNIQUE_CREW_ONLY_CREWS_TRANSITION = 0x5539C3EBF104A53A, // 0xAE396263
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SESSION_SET_CREW_LIMIT_MAX_MEMBERS_TRANSITION = 0x702BC4D605522539, // 0x913FD7D6
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SESSION_SET_MATCHMAKING_PROPERTY_ID = 0x3F52E880AAF6C8CA, // 0xB3D9A67F
@@ -24210,7 +24210,7 @@ namespace GTA.Native
 		NETWORK_SESSION_SET_SCRIPT_VALIDATE_JOIN = 0x1153FA02A659051C, // 0x57F9BC83
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SESSION_VALIDATE_JOIN = 0xC19F6C8E7865A6FF, // 0xF3768F90
@@ -24242,7 +24242,7 @@ namespace GTA.Native
 		_NETWORK_GET_SERVER_TIME = 0x6D03BFBD643B2A02, // 0x74E8C53E
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SESSION_SET_GAMEMODE = 0x600F8CB31C7AAB6E, // 0x959E43A3
@@ -24294,7 +24294,7 @@ namespace GTA.Native
 		NETWORK_GET_NUM_FOUND_GAMERS = 0xA1B043EE79A916FB, // 0xF4B80C7E
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any* p0, Any p1
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_GET_FOUND_GAMER = 0x9DCFF2AFB68B3476, // 0xA08C9141
@@ -24303,7 +24303,7 @@ namespace GTA.Native
 		NETWORK_CLEAR_FOUND_GAMERS = 0x6D14CCEE1B40381A, // 0x6AA9A154
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any* p0
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_QUEUE_GAMER_FOR_STATUS = 0x85A0EF54A500882C, // 0x42BD0780
@@ -24322,7 +24322,7 @@ namespace GTA.Native
 		NETWORK_DID_GET_GAMER_STATUS_SUCCEED = 0x5AE17C6B0134B7F1, // 0xC871E745
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any* p0, Any p1
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_GET_GAMER_STATUS_RESULT = 0x02A8BEC6FD9AF660, // 0xB5ABC4B4
@@ -24363,7 +24363,7 @@ namespace GTA.Native
 		NETWORK_SESSION_WAS_INVITED = 0x23DFB504655D0CE4, // 0x6A0BEA60
 
 		/// <summary>
-		/// Parameters: IntPtr gamerHandle
+		/// Parameters: Any* gamerHandle
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SESSION_GET_INVITER = 0xE57397B4A3429DD0, // 0xE9C6B3FD
@@ -24378,19 +24378,19 @@ namespace GTA.Native
 		NETWORK_SESSION_IS_DISPLAYING_INVITE_CONFIRMATION = 0xBDB6F89C729CF388, // 0x9374523F
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SUPPRESS_INVITE = 0xA0682D67EF1FBA3D, // 0x323DC78C
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_BLOCK_INVITES = 0x34F9E9049454A7A0, // 0xD156FD1A
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_BLOCK_JOIN_QUEUE_INVITES = 0xCFEB8AF24FC1D0BB, // 0x8AB4890B
@@ -24400,7 +24400,7 @@ namespace GTA.Native
 		_NETWORK_BLOCK_INVITES_2 = 0xCFEB8AF24FC1D0BB, // 0x8AB4890B
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SET_CAN_RECEIVE_RS_INVITES = 0x68980414688F7F9D,
@@ -24409,7 +24409,7 @@ namespace GTA.Native
 		NETWORK_STORE_INVITE_THROUGH_RESTART = 0xF814FEC6A19FD6E0, // 0x32B7A076
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_ALLOW_INVITE_PROCESS_IN_PLAYER_SWITCH = 0x6B07B9CE4D390375, // 0x0FCE995D
@@ -24419,7 +24419,7 @@ namespace GTA.Native
 		_NETWORK_BLOCK_KICKED_PLAYERS = 0x6B07B9CE4D390375, // 0x0FCE995D
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SET_SCRIPT_READY_FOR_EVENTS = 0x7AC752103856FB20, // 0xA639DCA2
@@ -24471,7 +24471,7 @@ namespace GTA.Native
 		NETWORK_GET_GAME_MODE = 0x4C9034162368E206,
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SESSION_MARK_VISIBLE = 0x271CC6AB59EBF9A5, // 0x7017257D
@@ -24480,13 +24480,13 @@ namespace GTA.Native
 		NETWORK_SESSION_IS_VISIBLE = 0xBA416D68C631496A, // 0x4977AC28
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SESSION_BLOCK_JOIN_REQUESTS = 0xA73667484D7037C3, // 0xE6EEF8AF
 
 		/// <summary>
-		/// Parameters: int slots, bool p1
+		/// Parameters: int slots, BOOL p1
 		/// </summary>
 		/// <remarks>
 		/// num player slots allowed in session, seems to work? 32 max<br/>
@@ -24504,7 +24504,7 @@ namespace GTA.Native
 		NETWORK_SESSION_VOICE_LEAVE = 0x6793E42BE02B575D, // 0xE566C7DA
 
 		/// <summary>
-		/// Parameters: IntPtr gamerHandle
+		/// Parameters: Any* gamerHandle
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SESSION_VOICE_CONNECT_TO_PLAYER = 0xABD5E88B8A2D3DB2, // 0x9DFD89E6
@@ -24514,7 +24514,7 @@ namespace GTA.Native
 		_NETWORK_VOICE_CONNECT_TO_PLAYER = 0xABD5E88B8A2D3DB2, // 0x9DFD89E6
 
 		/// <summary>
-		/// Parameters: bool p0, int p1
+		/// Parameters: BOOL p0, int p1
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SESSION_VOICE_RESPOND_TO_REQUEST = 0x7F8413B7FC2AA6B9, // 0x075321B5
@@ -24539,7 +24539,7 @@ namespace GTA.Native
 		NETWORK_SESSION_IS_VOICE_SESSION_BUSY = 0xEF0912DDF7C4CB4B, // 0x132CA01E
 
 		/// <summary>
-		/// Parameters: string message, IntPtr gamerHandle
+		/// Parameters: const char* message, Any* gamerHandle
 		/// </summary>
 		/// <remarks>
 		/// Message is limited to 64 characters.<br/>
@@ -24548,7 +24548,7 @@ namespace GTA.Native
 		NETWORK_SEND_TEXT_MESSAGE = 0x3A214F2EC889B100, // 0xAFFEA720
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SET_ACTIVITY_SPECTATOR = 0x75138790B4359A74, // 0xFC9AD060
@@ -24557,7 +24557,7 @@ namespace GTA.Native
 		NETWORK_IS_ACTIVITY_SPECTATOR = 0x12103B9E0C9F92FB, // 0xAF329720
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SET_ACTIVITY_PLAYER_MAX = 0x0E4F77F7B9D74D84, // 0x04CB2AB4
@@ -24569,19 +24569,19 @@ namespace GTA.Native
 		NETWORK_SET_ACTIVITY_SPECTATOR_MAX = 0x9D277B76D1D12222, // 0x74E0BC0A
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>int</returns>
 		NETWORK_GET_ACTIVITY_PLAYER_NUM = 0x73E2B500410DA5A2, // 0x31F951FD
 
 		/// <summary>
-		/// Parameters: IntPtr gamerHandle
+		/// Parameters: Any* gamerHandle
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_IS_ACTIVITY_SPECTATOR_FROM_HANDLE = 0x2763BBAA72A7BCB9, // 0x58F1DF7D
 
 		/// <summary>
-		/// Parameters: int p0, int p1, int p2, int p3, IntPtr p4, bool p5, bool p6, int p7, IntPtr p8, int p9
+		/// Parameters: int p0, int p1, int p2, int p3, Any p4, BOOL p5, BOOL p6, int p7, Any p8, int p9
 		/// </summary>
 		/// <remarks>
 		/// p0: Unknown int<br/>
@@ -24602,19 +24602,19 @@ namespace GTA.Native
 		NETWORK_HOST_TRANSITION = 0xA60BB5CE242BB254, // 0x146764FB
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3, IntPtr p4, IntPtr p5
+		/// Parameters: Any p0, Any p1, Any p2, Any p3, Any p4, Any p5
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_DO_TRANSITION_QUICKMATCH = 0x71FB0EBCD4915D56, // 0x2FF65C0B
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3, IntPtr p4, IntPtr p5
+		/// Parameters: Any p0, Any p1, Any p2, Any p3, Any p4, Any p5
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_DO_TRANSITION_QUICKMATCH_ASYNC = 0xA091A5E44F0072E5, // 0x47D61C99
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3, IntPtr p4, IntPtr p5, IntPtr p6, IntPtr p7
+		/// Parameters: Any p0, Any p1, Any p2, Any p3, Any* p4, Any p5, Any p6, Any p7
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_DO_TRANSITION_QUICKMATCH_WITH_GROUP = 0x9C4AB58491FDC98A, // 0x5CE60A11
@@ -24644,25 +24644,25 @@ namespace GTA.Native
 		NETWORK_GET_NUM_TRANSITION_NON_ASYNC_GAMERS = 0x617F49C2668E6155,
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_MARK_AS_PREFERRED_ACTIVITY = 0x261E97AD7BCF3D40, // 0x7EF353E1
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_MARK_AS_WAITING_ASYNC = 0x39917E1B4CB0F911, // 0xF60986FC
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SET_IN_PROGRESS_FINISH_TIME = 0x2CE9D95E4051AECD,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any* p0
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SET_TRANSITION_CREATOR_HANDLE = 0xEF26739BCD9907D5, // 0x1DD01FE7
@@ -24671,13 +24671,13 @@ namespace GTA.Native
 		NETWORK_CLEAR_TRANSITION_CREATOR_HANDLE = 0xFB3272229A82C759, // 0x8BB336F7
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any* p0, Any p1
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_INVITE_GAMERS_TO_TRANSITION = 0x4A595C32F77DFF76, // 0x5332E645
 
 		/// <summary>
-		/// Parameters: IntPtr gamerHandle
+		/// Parameters: Any* gamerHandle
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SET_GAMER_INVITED_TO_TRANSITION = 0xCA2C8073411ECDB6, // 0x17F1C69D
@@ -24689,7 +24689,7 @@ namespace GTA.Native
 		NETWORK_LAUNCH_TRANSITION = 0x2DCF46CB1A4F0884, // 0xE3570BA2
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Appears to set whether a transition should be started when the session is migrating.<br/>
@@ -24711,19 +24711,19 @@ namespace GTA.Native
 		NETWORK_BAIL_TRANSITION = 0xEAA572036990CD1B, // 0xB59D74CA
 
 		/// <summary>
-		/// Parameters: bool p0, int maxPlayers
+		/// Parameters: BOOL p0, int maxPlayers
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_DO_TRANSITION_TO_GAME = 0x3E9BB38102A589B0, // 0x1B2114D2
 
 		/// <summary>
-		/// Parameters: bool p0, int maxPlayers, bool p2
+		/// Parameters: BOOL p0, int maxPlayers, BOOL p2
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_DO_TRANSITION_TO_NEW_GAME = 0x4665F51EFED00034, // 0x58AFBE63
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, bool p2, int players, bool p4
+		/// Parameters: Any* p0, Any p1, BOOL p2, int players, BOOL p4
 		/// </summary>
 		/// <remarks>
 		/// p2 is true 3/4 of the occurrences I found.<br/>
@@ -24733,7 +24733,7 @@ namespace GTA.Native
 		NETWORK_DO_TRANSITION_TO_FREEMODE = 0x3AAD8B2FCA1E289F, // 0xC7CB8ADF
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, int players, bool p3, bool p4, bool p5
+		/// Parameters: Any* p0, Any p1, int players, BOOL p3, BOOL p4, BOOL p5
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_DO_TRANSITION_TO_NEW_FREEMODE = 0x9E80A5BA8109F974, // 0xAD13375E
@@ -24742,7 +24742,7 @@ namespace GTA.Native
 		NETWORK_IS_TRANSITION_TO_GAME = 0x9D7696D8F4FA6CB7, // 0x17146B2B
 
 		/// <summary>
-		/// Parameters: IntPtr data, int dataCount
+		/// Parameters: Any* data, int dataCount
 		/// </summary>
 		/// <remarks>
 		/// Returns count.<br/>
@@ -24757,19 +24757,19 @@ namespace GTA.Native
 		NETWORK_APPLY_TRANSITION_PARAMETER = 0x521638ADA1BA0D18, // 0xCEE79711
 
 		/// <summary>
-		/// Parameters: int p0, string string, bool p2
+		/// Parameters: int p0, const char* @string, BOOL p2
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_APPLY_TRANSITION_PARAMETER_STRING = 0xEBEFC2E77084F599, // 0xE0C28DB5
 
 		/// <summary>
-		/// Parameters: IntPtr gamerHandle, string p1, int p2, int p3, bool p4
+		/// Parameters: Any* gamerHandle, const char* p1, int p2, int p3, BOOL p4
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_SEND_TRANSITION_GAMER_INSTRUCTION = 0x31D1D2B858D25E6B, // 0x468B0884
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any* p0
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_MARK_TRANSITION_GAMER_AS_FULLY_JOINED = 0x5728BB6D63E3FF1D, // 0x03383F57
@@ -24778,13 +24778,13 @@ namespace GTA.Native
 		NETWORK_IS_TRANSITION_HOST = 0x0B824797C9BF2159, // 0x0C0900BC
 
 		/// <summary>
-		/// Parameters: IntPtr gamerHandle
+		/// Parameters: Any* gamerHandle
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_IS_TRANSITION_HOST_FROM_HANDLE = 0x6B5C83BA3EFE6A10, // 0x0E2854C4
 
 		/// <summary>
-		/// Parameters: IntPtr gamerHandle
+		/// Parameters: Any* gamerHandle
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_GET_TRANSITION_HOST = 0x65042B9774C4435E, // 0x73098D40
@@ -24805,19 +24805,19 @@ namespace GTA.Native
 		NETWORK_IS_TRANSITION_LEAVE_POSTPONED = 0xC571D0E77D8BBC29, // 0x4F4BB300
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_TRANSITION_SET_IN_PROGRESS = 0x1398582B7F72B3ED,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_TRANSITION_SET_CONTENT_CREATOR = 0x1F8E00FB18239600,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_TRANSITION_SET_ACTIVITY_ISLAND = 0xF6F4383B7C92F11A,
@@ -24832,7 +24832,7 @@ namespace GTA.Native
 		NETWORK_IS_TRANSITION_OPEN_TO_MATCHMAKING = 0x37A4494483B9F5C9, // 0xC901AA9F
 
 		/// <summary>
-		/// Parameters: bool p0, bool p1
+		/// Parameters: BOOL p0, BOOL p1
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SET_TRANSITION_VISIBILITY_LOCK = 0x0C978FDA19692C2C, // 0x4AF0ADF5
@@ -24841,19 +24841,19 @@ namespace GTA.Native
 		NETWORK_IS_TRANSITION_VISIBILITY_LOCKED = 0xD0A484CB2F829FBE, // 0xF637166E
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SET_TRANSITION_ACTIVITY_ID = 0x30DE938B516F0AD2, // 0xCCA9C022
 
 		/// <summary>
-		/// Parameters: IntPtr p0, bool p1
+		/// Parameters: Any p0, BOOL p1
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_CHANGE_TRANSITION_SLOTS = 0xEEEDA5E6D7080987, // 0x1E5F6AEF
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_TRANSITION_BLOCK_JOIN_REQUESTS = 0x973D76AA760A6CB6, // 0x0532DDD2
@@ -24865,7 +24865,7 @@ namespace GTA.Native
 		NETWORK_HAS_PLAYER_STARTED_TRANSITION = 0x9AC9CCBFA8C29795, // 0x4ABD1E59
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_ARE_TRANSITION_DETAILS_VALID = 0x2615AA2A695930C1, // 0xCDEBCCE7
@@ -24884,13 +24884,13 @@ namespace GTA.Native
 		NETWORK_JOIN_TRANSITION = 0x9D060B08CD63321A, // 0xB054EC4B
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any* p0
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_HAS_INVITED_GAMER_TO_TRANSITION = 0x7284A47B3540E6CF, // 0x4F41DF6B
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any* p0
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_HAS_TRANSITION_INVITE_BEEN_ACKED = 0x3F9990BF5F22759C, // 0x00F26CDC
@@ -24902,7 +24902,7 @@ namespace GTA.Native
 		NETWORK_DISABLE_REALTIME_MULTIPLAYER = 0x236905C700FDB54D,
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Does nothing. It's just a nullsub.<br/>
@@ -24911,7 +24911,7 @@ namespace GTA.Native
 		NETWORK_SET_PRESENCE_SESSION_INVITES_BLOCKED = 0x4A9FDE3A5A6D0437, // 0x18F03AFD
 
 		/// <summary>
-		/// Parameters: IntPtr gamerHandle, string p1, int dataCount, int p3
+		/// Parameters: Any* gamerHandle, const char* p1, int dataCount, int p3
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_SEND_INVITE_VIA_PRESENCE = 0xC3C7A6AFDB244624, // 0x8B99B72B
@@ -24921,7 +24921,7 @@ namespace GTA.Native
 		_NETWORK_SEND_PRESENCE_INVITE = 0xC3C7A6AFDB244624, // 0x8B99B72B
 
 		/// <summary>
-		/// Parameters: IntPtr gamerHandle, string p1, int dataCount, int p3
+		/// Parameters: Any* gamerHandle, const char* p1, int dataCount, int p3
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_SEND_TRANSITION_INVITE_VIA_PRESENCE = 0xC116FF9B4D488291, // 0x877C0E1C
@@ -24931,7 +24931,7 @@ namespace GTA.Native
 		_NETWORK_SEND_PRESENCE_TRANSITION_INVITE = 0xC116FF9B4D488291, // 0x877C0E1C
 
 		/// <summary>
-		/// Parameters: IntPtr gamerHandle, string p1, int dataCount, int p3
+		/// Parameters: Any* gamerHandle, const char* p1, int dataCount, int p3
 		/// </summary>
 		/// <remarks>
 		/// Contains the string "NETWORK_SEND_PRESENCE_TRANSITION_INVITE" but so does 0xC116FF9B4D488291; seems to fit alphabetically here, tho.<br/>
@@ -24973,13 +24973,13 @@ namespace GTA.Native
 		NETWORK_GET_PRESENCE_INVITE_INVITER = 0x4962CC4AA2F345B7, // 0x19EC65D9
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any* p1
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_GET_PRESENCE_INVITE_HANDLE = 0x38D5B0FEBB086F75, // 0xB2451429
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>int</returns>
 		NETWORK_GET_PRESENCE_INVITE_SESSION_ID = 0x26E1CD96B0903D60, // 0xC5E0C989
@@ -25009,7 +25009,7 @@ namespace GTA.Native
 		NETWORK_GET_PRESENCE_INVITE_FROM_ADMIN = 0x3DBF2DF0AEB7D289, // 0xF5E3401C
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_GET_PRESENCE_INVITE_IS_TOURNAMENT = 0x8806CEBFABD3CE05, // 0x7D593B4C
@@ -25027,7 +25027,7 @@ namespace GTA.Native
 		NETWORK_REMOVE_AND_CANCEL_ALL_INVITES = 0xEBF8284D8CADEB53, // 0x9773F36A
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any* p0
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_REMOVE_TRANSITION_INVITE = 0x7524B431B2E6F7EE, // 0xFDE84CB7
@@ -25039,19 +25039,19 @@ namespace GTA.Native
 		NETWORK_REMOVE_AND_CANCEL_ALL_TRANSITION_INVITES = 0xF083835B70BA9BFE, // 0xC47352E7
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any* p0, Any p1, Any* p2, Any p3
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_INVITE_GAMERS = 0x9D80CD1D0E6327DE, // 0x52FB8074
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any* p0
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_HAS_INVITED_GAMER = 0x4D86CD31E8976ECE, // 0xEC651BC0
 
 		/// <summary>
-		/// Parameters: IntPtr gamerHandle
+		/// Parameters: Any* gamerHandle
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_HAS_MADE_INVITE_DECISION = 0x71DC455F5CD1C2B1,
@@ -25061,55 +25061,55 @@ namespace GTA.Native
 		NETWORK_HAS_INVITE_BEEN_ACKED = 0x71DC455F5CD1C2B1,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>int</returns>
 		NETWORK_GET_INVITE_REPLY_STATUS = 0x3855FB5EB2C5E8B2,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any* p0
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_GET_CURRENTLY_SELECTED_GAMER_HANDLE_FROM_INVITE_MENU = 0x74881E6BCAE2327C, // 0x72BA00CE
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any* p0
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_SET_CURRENTLY_SELECTED_GAMER_HANDLE_FROM_INVITE_MENU = 0x7206F674F2A3B1BB, // 0xFD95899E
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any* p0
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SET_INVITE_ON_CALL_FOR_INVITE_MENU = 0x66F010A4B031A331, // 0x11378777
 
 		/// <summary>
-		/// Parameters: int p0, IntPtr gamerHandle
+		/// Parameters: int p0, Any* gamerHandle
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_CHECK_DATA_MANAGER_SUCCEEDED_FOR_HANDLE = 0x44B37CDCAE765AAE, // 0x13301529
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr gamerHandle
+		/// Parameters: Any p0, Any* gamerHandle
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_CHECK_DATA_MANAGER_FOR_HANDLE = 0x4AD490AE1536933B,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any* p0, Any* p1
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SET_INVITE_FAILED_MESSAGE_FOR_INVITE_MENU = 0x0D77A82DC2D0DA59, // 0x0808D4CC
 
 		/// <summary>
-		/// Parameters: IntPtr gamerHandle, IntPtr p1, IntPtr p2
+		/// Parameters: Any* gamerHandle, Any p1, Any p2
 		/// </summary>
 		/// <returns>BOOL</returns>
 		FILLOUT_PM_PLAYER_LIST = 0xCBBD7C4991B64809, // 0xCE40F423
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any* p0, Any* p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>BOOL</returns>
 		FILLOUT_PM_PLAYER_LIST_WITH_NAMES = 0x716B6DB9D1886106, // 0xB8DF604E
@@ -25125,7 +25125,7 @@ namespace GTA.Native
 		USING_NETWORK_WEAPONTYPE = 0xE26CCFF8094D8C74, // 0xF49C1533
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any* p0
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_SET_CURRENT_DATA_MANAGER_HANDLE = 0x796A87B3B68D1F3D,
@@ -25148,7 +25148,7 @@ namespace GTA.Native
 		_NETWORK_GET_PLATFORM_PARTY_UNK = 0x01ABCE5E7CBDA196,
 
 		/// <summary>
-		/// Parameters: IntPtr data, int dataSize
+		/// Parameters: Any* data, int dataSize
 		/// </summary>
 		/// <returns>int</returns>
 		NETWORK_GET_PLATFORM_PARTY_MEMBERS = 0x120364DE2845DAF8, // 0xF30E5814
@@ -25160,7 +25160,7 @@ namespace GTA.Native
 		NETWORK_IS_IN_PLATFORM_PARTY_CHAT = 0xFD8B834A8BA05048, // 0xC6609191
 
 		/// <summary>
-		/// Parameters: IntPtr gamerHandle
+		/// Parameters: Any* gamerHandle
 		/// </summary>
 		/// <remarks>
 		/// This would be nice to see if someone is in party chat, but 2 sad notes.<br/>
@@ -25221,7 +25221,7 @@ namespace GTA.Native
 		NETWORK_PLAYER_IS_BADSPORT = 0x19D8DA0E5A68045A, // 0xA19708E3
 
 		/// <summary>
-		/// Parameters: Player player, int p1, uint scriptHash
+		/// Parameters: Player player, int p1, Hash scriptHash
 		/// </summary>
 		/// <remarks>
 		/// p1 = 6<br/>
@@ -25238,13 +25238,13 @@ namespace GTA.Native
 		_TRIGGER_SCRIPT_CRC_CHECK_ON_PLAYER = 0x46FB3ED415C7641C, // 0xF9A51B92
 
 		/// <summary>
-		/// Parameters: Player player, string p1, string p2
+		/// Parameters: Player player, const char* p1, const char* p2
 		/// </summary>
 		/// <returns>BOOL</returns>
 		TRIGGER_TUNING_CRC_HACKER_CHECK = 0xA12D3A5A3753CC23,
 
 		/// <summary>
-		/// Parameters: Player player, string p1
+		/// Parameters: Player player, const char* p1
 		/// </summary>
 		/// <returns>BOOL</returns>
 		TRIGGER_FILE_CRC_HACKER_CHECK = 0xF287F506767CC8A9,
@@ -25260,13 +25260,13 @@ namespace GTA.Native
 		_REMOTE_CHEAT_DETECTED = 0x472841A026D26D8B,
 
 		/// <summary>
-		/// Parameters: IntPtr gamerHandle, int event, int amountReceived
+		/// Parameters: Any* gamerHandle, int @event, int amountReceived
 		/// </summary>
 		/// <returns>BOOL</returns>
 		BAD_SPORT_PLAYER_LEFT_DETECTED = 0xEC5E3AF5289DCA81, // 0x4C2C6B6A
 
 		/// <summary>
-		/// Parameters: uint modelHash
+		/// Parameters: Hash modelHash
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_ADD_INVALID_OBJECT_MODEL = 0x7F562DBC212E81F9,
@@ -25276,7 +25276,7 @@ namespace GTA.Native
 		_NETWORK_ADD_INVALID_MODEL = 0x7F562DBC212E81F9,
 
 		/// <summary>
-		/// Parameters: uint modelHash
+		/// Parameters: Hash modelHash
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_REMOVE_INVALID_OBJECT_MODEL = 0x791EDB5803B2F468,
@@ -25299,13 +25299,13 @@ namespace GTA.Native
 		NETWORK_APPLY_PED_SCAR_DATA = 0xE66C690248F11150, // 0x4818ACD0
 
 		/// <summary>
-		/// Parameters: int maxNumMissionParticipants, bool p1, int instanceId
+		/// Parameters: int maxNumMissionParticipants, BOOL p1, int instanceId
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SET_THIS_SCRIPT_IS_NETWORK_SCRIPT = 0x1CA59E306ECB80A5, // 0x470810ED
 
 		/// <summary>
-		/// Parameters: IntPtr p0, bool p1, IntPtr p2
+		/// Parameters: Any p0, BOOL p1, Any p2
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_TRY_TO_SET_THIS_SCRIPT_IS_NETWORK_SCRIPT = 0xD1110739EEADB592,
@@ -25335,25 +25335,25 @@ namespace GTA.Native
 		NETWORK_GET_SCRIPT_STATUS = 0x57D158647A6BFABF, // 0x2BE9235A
 
 		/// <summary>
-		/// Parameters: int* vars, int numVars, string debugName
+		/// Parameters: int* vars, int numVars, const char* debugName
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_REGISTER_HOST_BROADCAST_VARIABLES = 0x3E9B2F01C50DF595, // 0xDAF3B0AE
 
 		/// <summary>
-		/// Parameters: int* vars, int numVars, string debugName
+		/// Parameters: int* vars, int numVars, const char* debugName
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_REGISTER_PLAYER_BROADCAST_VARIABLES = 0x3364AA97340CA215, // 0xBE3D32B4
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2
+		/// Parameters: Any p0, Any p1, Any p2
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_REGISTER_HIGH_FREQUENCY_HOST_BROADCAST_VARIABLES = 0xEA8C0DDB10E2822A,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2
+		/// Parameters: Any p0, Any p1, Any p2
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_REGISTER_HIGH_FREQUENCY_PLAYER_BROADCAST_VARIABLES = 0xD6D7478CA62B8D41,
@@ -25425,7 +25425,7 @@ namespace GTA.Native
 		NETWORK_GET_HOST_OF_THIS_SCRIPT = 0xC7B4D79B01FA7A5C, // 0x89EA7B54
 
 		/// <summary>
-		/// Parameters: string scriptName, int instance_id, int position_hash
+		/// Parameters: const char* scriptName, int instance_id, int position_hash
 		/// </summary>
 		/// <remarks>
 		/// scriptName examples:<br/>
@@ -25441,13 +25441,13 @@ namespace GTA.Native
 		NETWORK_SET_MISSION_FINISHED = 0x3B3D11CD9FFCDFC9, // 0x3083FAD7
 
 		/// <summary>
-		/// Parameters: string scriptName, int instance_id, bool p2, int position_hash
+		/// Parameters: const char* scriptName, int instance_id, BOOL p2, int position_hash
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_IS_SCRIPT_ACTIVE = 0x9D40DF90FAD26098, // 0x4A65250C
 
 		/// <summary>
-		/// Parameters: uint scriptHash, int p1, bool p2, int p3
+		/// Parameters: Hash scriptHash, int p1, BOOL p2, int p3
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_IS_SCRIPT_ACTIVE_BY_HASH = 0xDA7DE67F5FE5EE13,
@@ -25463,7 +25463,7 @@ namespace GTA.Native
 		_NETWORK_IS_THREAD_ACTIVE = 0x560B423D73015E77,
 
 		/// <summary>
-		/// Parameters: string scriptName, int instance_id, int position_hash
+		/// Parameters: const char* scriptName, int instance_id, int position_hash
 		/// </summary>
 		/// <returns>int</returns>
 		NETWORK_GET_NUM_SCRIPT_PARTICIPANTS = 0x3658E8CD94FC121A, // 0x8F7D9F46
@@ -25479,7 +25479,7 @@ namespace GTA.Native
 		_NETWORK_GET_POSITION_HASH_OF_THIS_SCRIPT = 0x257ED0FADF750BCF,
 
 		/// <summary>
-		/// Parameters: Player player, string script, int instance_id
+		/// Parameters: Player player, const char* script, int instance_id
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_IS_PLAYER_A_PARTICIPANT_ON_SCRIPT = 0x1AD5B71586B94820, // 0xCEA55F4C
@@ -25559,7 +25559,7 @@ namespace GTA.Native
 		NETWORK_GET_ENTITY_KILLER_OF_PLAYER = 0x42B2DAA6B596F5F8, // 0xA7E7E04F
 
 		/// <summary>
-		/// Parameters: string missionId
+		/// Parameters: const char* missionId
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SET_CURRENT_PUBLIC_CONTENT_ID = 0x2C863ACDCD12B3DB,
@@ -25569,7 +25569,7 @@ namespace GTA.Native
 		_NETWORK_SET_CURRENT_MISSION_ID = 0x2C863ACDCD12B3DB,
 
 		/// <summary>
-		/// Parameters: uint mpSettingSpawn
+		/// Parameters: Hash mpSettingSpawn
 		/// </summary>
 		/// <remarks>
 		/// mpSettingSpawn:<br/>
@@ -25606,7 +25606,7 @@ namespace GTA.Native
 		_NETWORK_SET_CURRENT_SPAWN_SETTING = 0xAA6D5451DC3448B6,
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Used by MetricVEHICLE_DIST_DRIVEN<br/>
@@ -25619,7 +25619,7 @@ namespace GTA.Native
 		_NETWORK_SET_VEHICLE_TEST_DRIVE = 0x8C70252FC40F320B,
 
 		/// <summary>
-		/// Parameters: float x, float y, float z, float heading, bool p4, bool changetime, bool p6, int p7, int p8
+		/// Parameters: float x, float y, float z, float heading, BOOL p4, BOOL changetime, BOOL p6, int p7, int p8
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_RESURRECT_LOCAL_PLAYER = 0xEA23C49EAA83ACFB, // 0xF1F9D4B4
@@ -25634,7 +25634,7 @@ namespace GTA.Native
 		NETWORK_IS_LOCAL_PLAYER_INVINCIBLE = 0x8A8694B48715B000, // 0x8DE13B36
 
 		/// <summary>
-		/// Parameters: Player player, bool toggle
+		/// Parameters: Player player, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_DISABLE_INVINCIBLE_FLASHING = 0x9DD368BF06983221, // 0x8D27280E
@@ -25650,7 +25650,7 @@ namespace GTA.Native
 		_NETWORK_PED_FORCE_GAME_STATE_UPDATE = 0xF0BC9BCD24A511D5,
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SET_LOCAL_PLAYER_SYNC_LOOK_AT = 0x524FF0AEFF9C3973, // 0xB72F086D
@@ -25759,13 +25759,13 @@ namespace GTA.Native
 		NETWORK_HAS_CONTROL_OF_PICKUP = 0x5BC9495F0B3B6FA6, // 0xF7784FC8
 
 		/// <summary>
-		/// Parameters: uint doorHash
+		/// Parameters: Hash doorHash
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_HAS_CONTROL_OF_DOOR = 0xCB3C68ADB06195DF, // 0x136326EC
 
 		/// <summary>
-		/// Parameters: uint doorHash
+		/// Parameters: Hash doorHash
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_IS_DOOR_NETWORKED = 0xC01E93FAC20C3346, // 0xD14D9C07
@@ -25793,7 +25793,7 @@ namespace GTA.Native
 		PED_TO_NET = 0x0EDEC3C276198689, // 0x86A0B759
 
 		/// <summary>
-		/// Parameters: Object object
+		/// Parameters: Object @object
 		/// </summary>
 		/// <remarks>
 		/// Lets objects spawn online simply do it like this:<br/>
@@ -25836,25 +25836,25 @@ namespace GTA.Native
 		NET_TO_ENT = 0xBFFEAB45A9A9094A, // 0x5E149683
 
 		/// <summary>
-		/// Parameters: IntPtr gamerHandle, int gamerHandleSize
+		/// Parameters: Any* gamerHandle, int gamerHandleSize
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_GET_LOCAL_HANDLE = 0xE86051786B66CD8E, // 0x08023B16
 
 		/// <summary>
-		/// Parameters: string userId, IntPtr gamerHandle, int gamerHandleSize
+		/// Parameters: const char* userId, Any* gamerHandle, int gamerHandleSize
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_HANDLE_FROM_USER_ID = 0xDCD51DD8F87AEC5C, // 0x74C2C1B7
 
 		/// <summary>
-		/// Parameters: string memberId, IntPtr gamerHandle, int gamerHandleSize
+		/// Parameters: const char* memberId, Any* gamerHandle, int gamerHandleSize
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_HANDLE_FROM_MEMBER_ID = 0xA0FD21BED61E5C4C, // 0x9BFC9FE2
 
 		/// <summary>
-		/// Parameters: Player player, IntPtr gamerHandle, int gamerHandleSize
+		/// Parameters: Player player, Any* gamerHandle, int gamerHandleSize
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_HANDLE_FROM_PLAYER = 0x388EB2B86C73B6B3, // 0xD3498917
@@ -25870,7 +25870,7 @@ namespace GTA.Native
 		_NETWORK_HASH_FROM_PLAYER_HANDLE = 0xBC1D768F2F5D6C05, // 0xF8D7AF3B
 
 		/// <summary>
-		/// Parameters: IntPtr gamerHandle
+		/// Parameters: Any* gamerHandle
 		/// </summary>
 		/// <returns>Hash</returns>
 		NETWORK_HASH_FROM_GAMER_HANDLE = 0x58575AC3CF2CA8EC, // 0x5AC9F04D
@@ -25880,13 +25880,13 @@ namespace GTA.Native
 		_NETWORK_HASH_FROM_GAMER_HANDLE = 0x58575AC3CF2CA8EC, // 0x5AC9F04D
 
 		/// <summary>
-		/// Parameters: int friendIndex, IntPtr gamerHandle, int gamerHandleSize
+		/// Parameters: int friendIndex, Any* gamerHandle, int gamerHandleSize
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_HANDLE_FROM_FRIEND = 0xD45CB817D7E177D2, // 0x3B0BB3A3
 
 		/// <summary>
-		/// Parameters: IntPtr gamerHandle
+		/// Parameters: Any* gamerHandle
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_GAMERTAG_FROM_HANDLE_START = 0x9F0C0A981D73FA56, // 0xEBA00C2A
@@ -25898,13 +25898,13 @@ namespace GTA.Native
 		NETWORK_GAMERTAG_FROM_HANDLE_SUCCEEDED = 0xFD00798DBA7523DD, // 0x89C2B5EA
 
 		/// <summary>
-		/// Parameters: IntPtr gamerHandle
+		/// Parameters: Any* gamerHandle
 		/// </summary>
 		/// <returns>const char*</returns>
 		NETWORK_GET_GAMERTAG_FROM_HANDLE = 0x426141162EBE5CDB, // 0xA18A1B26
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any* p0, Any p1
 		/// </summary>
 		/// <remarks>
 		/// Hardcoded to return -1.<br/>
@@ -25913,7 +25913,7 @@ namespace GTA.Native
 		NETWORK_DISPLAYNAMES_FROM_HANDLES_START = 0xD66C9E72B3CC4982,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2
+		/// Parameters: Any p0, Any p1, Any p2
 		/// </summary>
 		/// <remarks>
 		/// This function is hard-coded to always return 0.<br/>
@@ -25922,37 +25922,37 @@ namespace GTA.Native
 		NETWORK_GET_DISPLAYNAMES_FROM_HANDLES = 0x58CC181719256197,
 
 		/// <summary>
-		/// Parameters: IntPtr gamerHandle1, IntPtr gamerHandle2
+		/// Parameters: Any* gamerHandle1, Any* gamerHandle2
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_ARE_HANDLES_THE_SAME = 0x57DBA049E110F217, // 0x45975AE3
 
 		/// <summary>
-		/// Parameters: IntPtr gamerHandle, int gamerHandleSize
+		/// Parameters: Any* gamerHandle, int gamerHandleSize
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_IS_HANDLE_VALID = 0x6F79B93B0A8E4133, // 0xF0996C6E
 
 		/// <summary>
-		/// Parameters: IntPtr gamerHandle
+		/// Parameters: Any* gamerHandle
 		/// </summary>
 		/// <returns>Player</returns>
 		NETWORK_GET_PLAYER_FROM_GAMER_HANDLE = 0xCE5F689CF5A0A49D, // 0x2E96EF1E
 
 		/// <summary>
-		/// Parameters: IntPtr gamerHandle
+		/// Parameters: Any* gamerHandle
 		/// </summary>
 		/// <returns>const char*</returns>
 		NETWORK_MEMBER_ID_FROM_GAMER_HANDLE = 0xC82630132081BB6F, // 0x62EF0A63
 
 		/// <summary>
-		/// Parameters: IntPtr gamerHandle
+		/// Parameters: Any* gamerHandle
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_IS_GAMER_IN_MY_SESSION = 0x0F10B05DDF8D16E9, // 0x59127716
 
 		/// <summary>
-		/// Parameters: IntPtr gamerHandle
+		/// Parameters: Any* gamerHandle
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SHOW_PROFILE_UI = 0x859ED1CEA343FCA8, // 0xF00A20B0
@@ -26014,7 +26014,7 @@ namespace GTA.Native
 		_NETWORK_GET_ENTITY_NET_SCRIPT_ID = 0x815F18AD865F057F,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <remarks>
 		/// I've had this return the player's ped handle sometimes, but also other random entities.<br/>
@@ -26027,7 +26027,7 @@ namespace GTA.Native
 		NETWORK_GET_ENTITY_FROM_OBJECT_ID = 0x37D5F739FD494675,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any* p0
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_IS_INACTIVE_PROFILE = 0x7E58745504313A2E, // 0x95481343
@@ -26059,13 +26059,13 @@ namespace GTA.Native
 		_NETWORK_GET_FRIEND_NAME_FROM_INDEX = 0x4164F227D052E293,
 
 		/// <summary>
-		/// Parameters: string name
+		/// Parameters: const char* name
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_IS_FRIEND_ONLINE = 0x425A44533437B64D, // 0xE0A42430
 
 		/// <summary>
-		/// Parameters: IntPtr gamerHandle
+		/// Parameters: Any* gamerHandle
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_IS_FRIEND_HANDLE_ONLINE = 0x87EB7A3FFCB314DB,
@@ -26075,7 +26075,7 @@ namespace GTA.Native
 		_NETWORK_IS_FRIEND_ONLINE_2 = 0x87EB7A3FFCB314DB,
 
 		/// <summary>
-		/// Parameters: string friendName
+		/// Parameters: const char* friendName
 		/// </summary>
 		/// <remarks>
 		/// In scripts R* calls 'NETWORK_GET_FRIEND_NAME' in this param.<br/>
@@ -26084,19 +26084,19 @@ namespace GTA.Native
 		NETWORK_IS_FRIEND_IN_SAME_TITLE = 0x2EA9A3BEDF3F17B8, // 0xC54365C2
 
 		/// <summary>
-		/// Parameters: string friendName
+		/// Parameters: const char* friendName
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_IS_FRIEND_IN_MULTIPLAYER = 0x57005C18827F3A28, // 0x400BDDD9
 
 		/// <summary>
-		/// Parameters: IntPtr gamerHandle
+		/// Parameters: Any* gamerHandle
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_IS_FRIEND = 0x1A24A179F9B31654, // 0x2DA4C282
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <remarks>
 		/// This function is hard-coded to always return 0.<br/>
@@ -26108,7 +26108,7 @@ namespace GTA.Native
 		NETWORK_IS_ADDING_FRIEND = 0x6EA101606F6E4D81, // 0xBB7EC8C4
 
 		/// <summary>
-		/// Parameters: IntPtr gamerHandle, string message
+		/// Parameters: Any* gamerHandle, const char* message
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_ADD_FRIEND = 0x8E02D73914064223, // 0x20E5B3EE
@@ -26120,7 +26120,7 @@ namespace GTA.Native
 		NETWORK_IS_FRIEND_INDEX_ONLINE = 0xBAD8F2A42B844821, // 0x94AE7172
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SET_PLAYER_IS_PASSIVE = 0x1B857666604B1A74, // 0x76A9FEB6
@@ -26138,7 +26138,7 @@ namespace GTA.Native
 		NETWORK_IGNORE_REMOTE_WAYPOINTS = 0x4C2A9FDC22377075,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_SET_SCRIPT_AUTOMUTED = 0xB309EBEA797E001F, // 0x5C0AB2A9
@@ -26150,7 +26150,7 @@ namespace GTA.Native
 		NETWORK_HAS_HEADSET = 0xE870F9F1F7B4F1FA, // 0xA7DC5657
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SET_LOOK_AT_TALKERS = 0x7D395EA61622E116, // 0x5C05B7E1
@@ -26163,25 +26163,25 @@ namespace GTA.Native
 		NETWORK_IS_LOCAL_TALKING = 0xC0D2AF00BCC234CA,
 
 		/// <summary>
-		/// Parameters: IntPtr gamerHandle
+		/// Parameters: Any* gamerHandle
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_GAMER_HAS_HEADSET = 0xF2FD55CB574BCC55, // 0xD036DA4A
 
 		/// <summary>
-		/// Parameters: IntPtr gamerHandle
+		/// Parameters: Any* gamerHandle
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_IS_GAMER_TALKING = 0x71C33B22606CD88A, // 0x99B58DBC
 
 		/// <summary>
-		/// Parameters: IntPtr gamerHandle
+		/// Parameters: Any* gamerHandle
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_PERMISSIONS_HAS_GAMER_RECORD = 0x559EBF901A8C68E0,
 
 		/// <summary>
-		/// Parameters: IntPtr gamerHandle
+		/// Parameters: Any* gamerHandle
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_CAN_COMMUNICATE_WITH_GAMER = 0x8F5D1AD832AEB06C, // 0xD05EB7F6
@@ -26191,67 +26191,67 @@ namespace GTA.Native
 		_NETWORK_CAN_COMMUNICATE_WITH_GAMER_2 = 0x8F5D1AD832AEB06C, // 0xD05EB7F6
 
 		/// <summary>
-		/// Parameters: IntPtr gamerHandle
+		/// Parameters: Any* gamerHandle
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_CAN_TEXT_CHAT_WITH_GAMER = 0xA150A4F065806B1F,
 
 		/// <summary>
-		/// Parameters: IntPtr gamerHandle
+		/// Parameters: Any* gamerHandle
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_IS_GAMER_MUTED_BY_ME = 0xCE60DE011B6C7978, // 0x001B4046
 
 		/// <summary>
-		/// Parameters: IntPtr gamerHandle
+		/// Parameters: Any* gamerHandle
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_AM_I_MUTED_BY_GAMER = 0xDF02A2C93F1F26DA, // 0x7685B333
 
 		/// <summary>
-		/// Parameters: IntPtr gamerHandle
+		/// Parameters: Any* gamerHandle
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_IS_GAMER_BLOCKED_BY_ME = 0xE944C4F5AF1B5883, // 0x3FDCC8D7
 
 		/// <summary>
-		/// Parameters: IntPtr gamerHandle
+		/// Parameters: Any* gamerHandle
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_AM_I_BLOCKED_BY_GAMER = 0x15337C7C268A27B2, // 0xD19B312C
 
 		/// <summary>
-		/// Parameters: IntPtr gamerHandle
+		/// Parameters: Any* gamerHandle
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_CAN_VIEW_GAMER_USER_CONTENT = 0xB57A49545BA53CE7,
 
 		/// <summary>
-		/// Parameters: IntPtr gamerHandle
+		/// Parameters: Any* gamerHandle
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_HAS_VIEW_GAMER_USER_CONTENT_RESULT = 0xCCA4318E1AB03F1F,
 
 		/// <summary>
-		/// Parameters: IntPtr gamerHandle
+		/// Parameters: Any* gamerHandle
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_CAN_PLAY_MULTIPLAYER_WITH_GAMER = 0x07DD29D5E22763F1,
 
 		/// <summary>
-		/// Parameters: IntPtr gamerHandle
+		/// Parameters: Any* gamerHandle
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_CAN_GAMER_PLAY_MULTIPLAYER_WITH_ME = 0x135F9B7B7ADD2185,
 
 		/// <summary>
-		/// Parameters: IntPtr gamerHandle
+		/// Parameters: Any* gamerHandle
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_CAN_SEND_LOCAL_INVITE = 0x021ABCBD98EC4320,
 
 		/// <summary>
-		/// Parameters: IntPtr gamerHandle
+		/// Parameters: Any* gamerHandle
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_CAN_RECEIVE_LOCAL_INVITE = 0x421E34C55F125964,
@@ -26311,79 +26311,79 @@ namespace GTA.Native
 		NETWORK_GET_TALKER_PROXIMITY = 0x84F0F13120B4E098, // 0x19991ADD
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SET_VOICE_ACTIVE = 0xBABEC9E69A91C57B, // 0x8011247F
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_REMAIN_IN_GAME_CHAT = 0xCFEB46DCD7D8D5EB, // 0x1A3EA6CD
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_OVERRIDE_TRANSITION_CHAT = 0xAF66059A131AA269, // 0xCAB21090
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SET_TEAM_ONLY_CHAT = 0xD5B4883AC32F24C3, // 0x3813019A
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SET_SCRIPT_CONTROLLING_TEAMS = 0x265559DA40B3F327,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_SET_SAME_TEAM_AS_LOCAL_PLAYER = 0x4348BFDA56023A2F,
 
 		/// <summary>
-		/// Parameters: int team, bool toggle
+		/// Parameters: int team, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_OVERRIDE_TEAM_RESTRICTIONS = 0x6F697A66CE78674E, // 0xC8CC9E75
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SET_OVERRIDE_SPECTATOR_MODE = 0x70DA3BF8DACD3210, // 0xA0FD42D3
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SET_OVERRIDE_TUTORIAL_SESSION_CHAT = 0x3C5C1E2C2FF814B1, // 0xC9DDA85B
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SET_PROXIMITY_AFFECTS_TEAM = 0x9D7AFCBF21C51712, // 0xE5219410
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SET_NO_SPECTATOR_CHAT = 0xF46A1E03E8755980, // 0xD33AFF79
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SET_IGNORE_SPECTATOR_CHAT_LIMITS_SAME_TEAM = 0x6A5D89D7769A40D8, // 0x4FFEFE43
 
 		/// <summary>
-		/// Parameters: Player player, bool toggle
+		/// Parameters: Player player, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Could possibly bypass being muted or automatically muted<br/>
@@ -26392,7 +26392,7 @@ namespace GTA.Native
 		NETWORK_OVERRIDE_CHAT_RESTRICTIONS = 0x3039AE5AD2C9C0C4, // 0x74EE2D8B
 
 		/// <summary>
-		/// Parameters: Player player, bool toggle
+		/// Parameters: Player player, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// This is used alongside the native,<br/>
@@ -26406,7 +26406,7 @@ namespace GTA.Native
 		_NETWORK_OVERRIDE_SEND_RESTRICTIONS = 0x97DD4C5944CC2E6A, // 0x6C344AE3
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_OVERRIDE_SEND_RESTRICTIONS_ALL = 0x57B192B4D4AD23D5, // 0x2F98B405
@@ -26416,7 +26416,7 @@ namespace GTA.Native
 		_NETWORK_CHAT_MUTE = 0x57B192B4D4AD23D5, // 0x2F98B405
 
 		/// <summary>
-		/// Parameters: Player player, bool toggle
+		/// Parameters: Player player, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// R* uses this to hear all player when spectating. <br/>
@@ -26426,7 +26426,7 @@ namespace GTA.Native
 		NETWORK_OVERRIDE_RECEIVE_RESTRICTIONS = 0xDDF73E2B1FEC5AB4, // 0x95F1C60D
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// p0 is always false in scripts.<br/>
@@ -26478,7 +26478,7 @@ namespace GTA.Native
 		NETWORK_GET_MUTE_COUNT_FOR_PLAYER = 0xADB57E5B663CCA8B, // 0x92268BB5
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SET_SPECTATOR_TO_NON_SPECTATOR_TEXT_CHAT = 0x8EF52ACAECC51D9C,
@@ -26513,13 +26513,13 @@ namespace GTA.Native
 		_SHUTDOWN_AND_LOAD_MOST_RECENT_SAVE = 0x9ECA15ADFE141431,
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SET_FRIENDLY_FIRE_OPTION = 0xF808475FA571D823, // 0x6BAF95FA
 
 		/// <summary>
-		/// Parameters: int p0, int p1, IntPtr p2, IntPtr p3
+		/// Parameters: int p0, int p1, Any p2, Any p3
 		/// </summary>
 		/// <remarks>
 		/// This native does absolutely nothing, just a nullsub<br/>
@@ -26528,7 +26528,7 @@ namespace GTA.Native
 		NETWORK_SET_RICH_PRESENCE = 0x1DCCACDCFC569362, // 0x932A6CED
 
 		/// <summary>
-		/// Parameters: int p0, string textLabel
+		/// Parameters: int p0, const char* textLabel
 		/// </summary>
 		/// <remarks>
 		/// This native does absolutely nothing, just a nullsub<br/>
@@ -26544,7 +26544,7 @@ namespace GTA.Native
 		NETWORK_GET_TIMEOUT_TIME = 0x5ED0356A0CE3A34F, // 0xE1F86C6A
 
 		/// <summary>
-		/// Parameters: Player player, float x, float y, float z, bool p4, bool p5
+		/// Parameters: Player player, float x, float y, float z, BOOL p4, BOOL p5
 		/// </summary>
 		/// <remarks>
 		/// p4 and p5 are always 0 in scripts<br/>
@@ -26557,7 +26557,7 @@ namespace GTA.Native
 		_NETWORK_RESPAWN_COORDS = 0x9769F811D1785B03, // 0xBE6A30C3
 
 		/// <summary>
-		/// Parameters: Player player, bool p1
+		/// Parameters: Player player, BOOL p1
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_LEAVE_PED_BEHIND_BEFORE_CUTSCENE = 0xBF22E0F32968E967, // 0x22E03AD0
@@ -26572,13 +26572,13 @@ namespace GTA.Native
 		REMOVE_ALL_STICKY_BOMBS_FROM_ENTITY = 0x715135F4B82AC90D, // 0xCEAE5AFC
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_KEEP_ENTITY_COLLISION_DISABLED_AFTER_ANIM_SCENE = 0x17C9E241111A674D,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3, IntPtr p4, IntPtr p5, IntPtr p6
+		/// Parameters: Any p0, Any p1, Any p2, Any p3, Any p4, Any p5, Any p6
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_IS_ANY_PLAYER_NEAR = 0x2E4C123D1C8A710E,
@@ -26591,13 +26591,13 @@ namespace GTA.Native
 		_NETWORK_PLAYER_IS_IN_CLAN = 0x579CCED0265D4896, // 0xF5F4BD95
 
 		/// <summary>
-		/// Parameters: IntPtr gamerHandle
+		/// Parameters: Any* gamerHandle
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_CLAN_PLAYER_IS_ACTIVE = 0xB124B57F571D8F18, // 0xAB8319A3
 
 		/// <summary>
-		/// Parameters: IntPtr clanDesc, int bufferSize, IntPtr gamerHandle
+		/// Parameters: Any* clanDesc, int bufferSize, Any* gamerHandle
 		/// </summary>
 		/// <remarks>
 		/// bufferSize is 35 in the scripts.<br/>
@@ -26609,7 +26609,7 @@ namespace GTA.Native
 		NETWORK_CLAN_PLAYER_GET_DESC = 0xEEE6EACBE8874FBA, // 0x6EE4A282
 
 		/// <summary>
-		/// Parameters: IntPtr clanDesc, int bufferSize
+		/// Parameters: Any* clanDesc, int bufferSize
 		/// </summary>
 		/// <remarks>
 		/// bufferSize is 35 in the scripts.<br/>
@@ -26618,7 +26618,7 @@ namespace GTA.Native
 		NETWORK_CLAN_IS_ROCKSTAR_CLAN = 0x7543BB439F63792B, // 0x54E79E9C
 
 		/// <summary>
-		/// Parameters: IntPtr clanDesc, int bufferSize, char* formattedTag
+		/// Parameters: Any* clanDesc, int bufferSize, char* formattedTag
 		/// </summary>
 		/// <remarks>
 		/// bufferSize is 35 in the scripts.<br/>
@@ -26638,19 +26638,19 @@ namespace GTA.Native
 		_NETWORK_CLAN_GET_NUM_MEMBERSHIP_DESC = 0x1F471B79ACC90BEF, // 0x807B3450
 
 		/// <summary>
-		/// Parameters: IntPtr memberDesc, int p1
+		/// Parameters: Any* memberDesc, int p1
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_CLAN_GET_MEMBERSHIP_DESC = 0x48DE78AF2C8885B8, // 0x3369DD1F
 
 		/// <summary>
-		/// Parameters: IntPtr gamerHandle
+		/// Parameters: Any* gamerHandle
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_CLAN_DOWNLOAD_MEMBERSHIP = 0xA989044E70010ABE, // 0x8E8CB520
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any* p0
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_CLAN_DOWNLOAD_MEMBERSHIP_PENDING = 0x5B9E023DC6EBEDC0, // 0x1FDB590F
@@ -26675,13 +26675,13 @@ namespace GTA.Native
 		NETWORK_CLAN_GET_MEMBERSHIP_COUNT = 0xAAB11F6C4ADBC2C1, // 0x25924010
 
 		/// <summary>
-		/// Parameters: int* p0, IntPtr p1
+		/// Parameters: int* p0, Any p1
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_CLAN_GET_MEMBERSHIP_VALID = 0x48A59CF88D43DF0E, // 0x48914F6A
 
 		/// <summary>
-		/// Parameters: int* p0, IntPtr clanMembership, int p2
+		/// Parameters: int* p0, Any* clanMembership, int p2
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_CLAN_GET_MEMBERSHIP = 0xC8BC2011F67B3411, // 0xCDC4A590
@@ -26693,7 +26693,7 @@ namespace GTA.Native
 		NETWORK_CLAN_JOIN = 0x9FAAA4F4FC71F87F, // 0x79C916C5
 
 		/// <summary>
-		/// Parameters: string animDict, string animName
+		/// Parameters: const char* animDict, const char* animName
 		/// </summary>
 		/// <remarks>
 		/// Only documented...<br/>
@@ -26707,7 +26707,7 @@ namespace GTA.Native
 		_NETWORK_CLAN_ANIMATION = 0x729E3401F0430686, // 0xBDA90BAC
 
 		/// <summary>
-		/// Parameters: int p0, string p1
+		/// Parameters: int p0, const char* p1
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_CLAN_CREWINFO_GET_CREWRANKTITLE = 0x2B51EDBEFC301339, // 0x8E952B12
@@ -26716,7 +26716,7 @@ namespace GTA.Native
 		NETWORK_CLAN_HAS_CREWINFO_METADATA_BEEN_RECEIVED = 0xC32EA7A2F6CA7557, // 0x966C90FD
 
 		/// <summary>
-		/// Parameters: IntPtr netHandle, char* txdName
+		/// Parameters: Any* netHandle, char* txdName
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_CLAN_GET_EMBLEM_TXD_NAME = 0x5835D9CD92E83184, // 0xBA672146
@@ -26726,19 +26726,19 @@ namespace GTA.Native
 		_NETWORK_GET_PLAYER_CREW_EMBLEM_TXD_NAME = 0x5835D9CD92E83184, // 0xBA672146
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_CLAN_REQUEST_EMBLEM = 0x13518FF1C6B28938, // 0x7963FA4D
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any* p1
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_CLAN_IS_EMBLEM_READY = 0xA134777FF7F33331, // 0x88B13CDC
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_CLAN_RELEASE_EMBLEM = 0x113E6E3E50E286B0, // 0xD6E3D5EA
@@ -26750,7 +26750,7 @@ namespace GTA.Native
 		NETWORK_GET_PRIMARY_CLAN_DATA_CANCEL = 0x042E4B70B93E6054, // 0x455DDF5C
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any* p0, Any p1
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_GET_PRIMARY_CLAN_DATA_START = 0xCE86D8191B762107, // 0x89DB0EC7
@@ -26762,13 +26762,13 @@ namespace GTA.Native
 		NETWORK_GET_PRIMARY_CLAN_DATA_SUCCESS = 0x5B4F04F19376A0BA, // 0x068A054E
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any* p0, Any* p1
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_GET_PRIMARY_CLAN_DATA_NEW = 0xC080FF658B2E41DA, // 0x9B8631EB
 
 		/// <summary>
-		/// Parameters: int netId, bool toggle
+		/// Parameters: int netId, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Whether or not another player is allowed to take control of the entity<br/>
@@ -26777,13 +26777,13 @@ namespace GTA.Native
 		SET_NETWORK_ID_CAN_MIGRATE = 0x299EEB23175895FC, // 0x47C8E5FF
 
 		/// <summary>
-		/// Parameters: int netId, bool toggle
+		/// Parameters: int netId, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_NETWORK_ID_EXISTS_ON_ALL_MACHINES = 0xE05E81A888FA63C8, // 0x68D486B2
 
 		/// <summary>
-		/// Parameters: int netId, Player player, bool toggle
+		/// Parameters: int netId, Player player, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_NETWORK_ID_ALWAYS_EXISTS_FOR_PLAYER = 0xA8A024587329F36A, // 0x4D15FDB1
@@ -26793,7 +26793,7 @@ namespace GTA.Native
 		_SET_NETWORK_ID_SYNC_TO_PLAYER = 0xA8A024587329F36A, // 0x4D15FDB1
 
 		/// <summary>
-		/// Parameters: int netId, bool toggle
+		/// Parameters: int netId, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// "No Reassign" in CPhysicalScriptGameStateDataNode<br/>
@@ -26806,13 +26806,13 @@ namespace GTA.Native
 		_SET_NETWORK_ID_CAN_BE_REASSIGNED = 0x9D724B400A7E8FFC,
 
 		/// <summary>
-		/// Parameters: Entity entity, bool toggle
+		/// Parameters: Entity entity, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SET_ENTITY_CAN_BLEND = 0xD830567D88A1E873, // 0xDE8C0DB8
 
 		/// <summary>
-		/// Parameters: Object object, bool toggle
+		/// Parameters: Object @object, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SET_OBJECT_CAN_BLEND_WHEN_FIXED = 0x0379DAF89BA09AA5,
@@ -26822,7 +26822,7 @@ namespace GTA.Native
 		_NETWORK_SET_OBJECT_FORCE_STATIC_BLEND = 0x0379DAF89BA09AA5,
 
 		/// <summary>
-		/// Parameters: Entity entity, bool toggle
+		/// Parameters: Entity entity, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// if set to true other network players can't see it<br/>
@@ -26844,13 +26844,13 @@ namespace GTA.Native
 		_NETWORK_SET_ENTITY_INVISIBLE_TO_NETWORK = 0xF1CA12B18AEF5298, // 0x09CBC4B0
 
 		/// <summary>
-		/// Parameters: int netId, bool p1, bool p2
+		/// Parameters: int netId, BOOL p1, BOOL p2
 		/// </summary>
 		/// <returns>void</returns>
 		SET_NETWORK_ID_VISIBLE_IN_CUTSCENE = 0xA6928482543022B4, // 0x199E75EF
 
 		/// <summary>
-		/// Parameters: int netId, bool p1, bool p2
+		/// Parameters: int netId, BOOL p1, BOOL p2
 		/// </summary>
 		/// <returns>void</returns>
 		SET_NETWORK_ID_VISIBLE_IN_CUTSCENE_HACK = 0x32EBD154CB6B8B99,
@@ -26860,13 +26860,13 @@ namespace GTA.Native
 		_SET_NETWORK_ID_VISIBLE_IN_CUTSCENE_NO_COLLISION = 0x32EBD154CB6B8B99,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_NETWORK_ID_VISIBLE_IN_CUTSCENE_REMAIN_HACK = 0x76B3F29D3F967692,
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_NETWORK_CUTSCENE_ENTITIES = 0xAAA553E7DD28A457, // 0xFD0F7EDD
@@ -26882,7 +26882,7 @@ namespace GTA.Native
 		_NETWORK_ARE_CUTSCENE_ENTITIES = 0x66D6A5E9C511214A,
 
 		/// <summary>
-		/// Parameters: int netId, bool state
+		/// Parameters: int netId, BOOL state
 		/// </summary>
 		/// <returns>void</returns>
 		SET_NETWORK_ID_PASS_CONTROL_IN_TUTORIAL = 0x3FA36981311FA4FF, // 0x00AE4E17
@@ -26898,37 +26898,37 @@ namespace GTA.Native
 		_NETWORK_CAN_NETWORK_ID_BE_SEEN = 0xA1607996431332DF, // 0xEA5176C0
 
 		/// <summary>
-		/// Parameters: bool p0, bool p1
+		/// Parameters: BOOL p0, BOOL p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_LOCAL_PLAYER_VISIBLE_IN_CUTSCENE = 0xD1065D68947E7B6E, // 0x59F3479B
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>void</returns>
 		SET_LOCAL_PLAYER_INVISIBLE_LOCALLY = 0xE5F773C1A1D9D168, // 0x764F6222
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>void</returns>
 		SET_LOCAL_PLAYER_VISIBLE_LOCALLY = 0x7619364C82D3BF14, // 0x324B56DB
 
 		/// <summary>
-		/// Parameters: Player player, bool toggle
+		/// Parameters: Player player, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PLAYER_INVISIBLE_LOCALLY = 0x12B37D54667DB0B8, // 0x18227209
 
 		/// <summary>
-		/// Parameters: Player player, bool toggle
+		/// Parameters: Player player, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PLAYER_VISIBLE_LOCALLY = 0xFAA10F1FAFB11AF2, // 0xBA2BB4B4
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <remarks>
 		/// Hardcoded to not work in SP.<br/>
@@ -26937,7 +26937,7 @@ namespace GTA.Native
 		FADE_OUT_LOCAL_PLAYER = 0x416DBD4CD6ED8DD2, // 0x8FA7CEBD
 
 		/// <summary>
-		/// Parameters: Entity entity, bool normal, bool slow
+		/// Parameters: Entity entity, BOOL normal, BOOL slow
 		/// </summary>
 		/// <remarks>
 		/// normal - transition like when your coming out of LSC<br/>
@@ -26948,7 +26948,7 @@ namespace GTA.Native
 		NETWORK_FADE_OUT_ENTITY = 0xDE564951F95E09ED, // 0x47EDEE56
 
 		/// <summary>
-		/// Parameters: Entity entity, bool state, IntPtr p2
+		/// Parameters: Entity entity, BOOL state, Any p2
 		/// </summary>
 		/// <remarks>
 		/// state - 0 does 5 fades<br/>
@@ -26977,7 +26977,7 @@ namespace GTA.Native
 		IS_PLAYER_IN_CUTSCENE = 0xE73092F4157CD126, // 0xE0A619BD
 
 		/// <summary>
-		/// Parameters: IntPtr p0, bool p1, bool p2
+		/// Parameters: Any p0, BOOL p1, BOOL p2
 		/// </summary>
 		/// <returns>void</returns>
 		SET_ENTITY_VISIBLE_IN_CUTSCENE = 0xE0031D3C8F36AB82, // 0xDBFB067B
@@ -27004,7 +27004,7 @@ namespace GTA.Native
 		IS_DAMAGE_TRACKER_ACTIVE_ON_NETWORK_ID = 0x6E192E33AD436366, // 0x597063BA
 
 		/// <summary>
-		/// Parameters: int netID, bool toggle
+		/// Parameters: int netID, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		ACTIVATE_DAMAGE_TRACKER_ON_NETWORK_ID = 0xD45B1FFCCD52FF19, // 0x95D07BA5
@@ -27020,7 +27020,7 @@ namespace GTA.Native
 		_IS_DAMAGE_TRACKER_ACTIVE_ON_PLAYER = 0xB2092A1EAA7FD45F,
 
 		/// <summary>
-		/// Parameters: Player player, bool toggle
+		/// Parameters: Player player, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		ACTIVATE_DAMAGE_TRACKER_ON_PLAYER = 0xBEC0816FF5ACBCDA,
@@ -27036,7 +27036,7 @@ namespace GTA.Native
 		IS_SPHERE_VISIBLE_TO_ANOTHER_MACHINE = 0xD82CF8E64C8729D8, // 0x23C5274E
 
 		/// <summary>
-		/// Parameters: IntPtr p0, float p1, float p2, float p3, float p4
+		/// Parameters: Any p0, float p1, float p2, float p3, float p4
 		/// </summary>
 		/// <returns>BOOL</returns>
 		IS_SPHERE_VISIBLE_TO_PLAYER = 0xDC3A310219E5DA62, // 0xE9FCFB32
@@ -27118,7 +27118,7 @@ namespace GTA.Native
 		_CAN_REGISTER_MISSION_PICKUPS = 0x0A49D1CB6E34AF72,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>BOOL</returns>
 		CAN_REGISTER_MISSION_DOORS = 0xE16AA70CE9BEEDC3,
@@ -27130,7 +27130,7 @@ namespace GTA.Native
 		CAN_REGISTER_MISSION_ENTITIES = 0x69778E7564BADE6D, // 0x83794008
 
 		/// <summary>
-		/// Parameters: bool p0, IntPtr p1
+		/// Parameters: BOOL p0, Any p1
 		/// </summary>
 		/// <remarks>
 		/// p0 appears to be for MP<br/>
@@ -27139,7 +27139,7 @@ namespace GTA.Native
 		GET_NUM_RESERVED_MISSION_OBJECTS = 0xAA81B5F10BC43AC2, // 0x16A80CD6
 
 		/// <summary>
-		/// Parameters: bool p0, IntPtr p1
+		/// Parameters: BOOL p0, Any p1
 		/// </summary>
 		/// <remarks>
 		/// p0 appears to be for MP<br/>
@@ -27148,7 +27148,7 @@ namespace GTA.Native
 		GET_NUM_RESERVED_MISSION_PEDS = 0x1F13D5AE5CB17E17, // 0x6C25975C
 
 		/// <summary>
-		/// Parameters: bool p0, IntPtr p1
+		/// Parameters: BOOL p0, Any p1
 		/// </summary>
 		/// <remarks>
 		/// p0 appears to be for MP<br/>
@@ -27157,25 +27157,25 @@ namespace GTA.Native
 		GET_NUM_RESERVED_MISSION_VEHICLES = 0xCF3A965906452031, // 0xA9A308F3
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>int</returns>
 		GET_NUM_CREATED_MISSION_OBJECTS = 0x12B6281B6C6706C0, // 0x603FA104
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>int</returns>
 		GET_NUM_CREATED_MISSION_PEDS = 0xCB215C4B56A7FAE7, // 0xD8FEC4F8
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>int</returns>
 		GET_NUM_CREATED_MISSION_VEHICLES = 0x0CD9AB83489430EA, // 0x20527695
 
 		/// <summary>
-		/// Parameters: float x, float y, float z, IntPtr p3, IntPtr out1, IntPtr out2, IntPtr out3
+		/// Parameters: float x, float y, float z, Any p3, Any* out1, Any* out2, Any* out3
 		/// </summary>
 		/// <returns>void</returns>
 		GET_RESERVED_MISSION_ENTITIES_IN_AREA = 0xE42D626EEC94E5D9,
@@ -27197,7 +27197,7 @@ namespace GTA.Native
 		GET_MAX_NUM_NETWORK_PICKUPS = 0xA72835064DD63E4C, // 0x6A036061
 
 		/// <summary>
-		/// Parameters: Object object, float range
+		/// Parameters: Object @object, float range
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SET_OBJECT_SCOPE_DISTANCE = 0xBA7F0B77D80A4EB7,
@@ -27207,13 +27207,13 @@ namespace GTA.Native
 		_NETWORK_SET_OBJECT_INTEREST_RANGE = 0xBA7F0B77D80A4EB7,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_ALLOW_CLONING_WHILE_IN_TUTORIAL = 0x0F1A4B45B7693B95,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <remarks>
 		/// A value between 1.0 and 5.0<br/>
@@ -27319,7 +27319,7 @@ namespace GTA.Native
 		GET_CLOUD_TIME_AS_INT = 0x9A73240B49945C76, // 0xF2FDF2E0
 
 		/// <summary>
-		/// Parameters: int posixTime, IntPtr timeStructure
+		/// Parameters: int posixTime, Any* timeStructure
 		/// </summary>
 		/// <remarks>
 		/// Takes the specified time and writes it to the structure specified in the second argument.<br/>
@@ -27347,25 +27347,25 @@ namespace GTA.Native
 		_GET_DATE_AND_TIME_FROM_UNIX_EPOCH = 0xAC97AF97FA68E5D5, // 0xBB7CCE49
 
 		/// <summary>
-		/// Parameters: bool toggle, Ped playerPed
+		/// Parameters: BOOL toggle, Ped playerPed
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SET_IN_SPECTATOR_MODE = 0x423DE3854BB50894, // 0x5C4C8458
 
 		/// <summary>
-		/// Parameters: bool toggle, Ped playerPed, bool p2
+		/// Parameters: BOOL toggle, Ped playerPed, BOOL p2
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SET_IN_SPECTATOR_MODE_EXTENDED = 0x419594E137637120, // 0x54058F5F
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SET_IN_FREE_CAM_MODE = 0xFC18DB55AE19E046, // 0xA7E36020
 
 		/// <summary>
-		/// Parameters: bool toggle, Player player
+		/// Parameters: BOOL toggle, Player player
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SET_ANTAGONISTIC_TO_PLAYER = 0x5C707A667DF8B9FA, // 0x64235620
@@ -27378,7 +27378,7 @@ namespace GTA.Native
 		NETWORK_IS_IN_SPECTATOR_MODE = 0x048746E388762E11, // 0x3EAD9DB8
 
 		/// <summary>
-		/// Parameters: bool p0, bool p1
+		/// Parameters: BOOL p0, BOOL p1
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SET_IN_MP_CUTSCENE = 0x9CA5DE655269FEC4, // 0x8434CB43
@@ -27396,13 +27396,13 @@ namespace GTA.Native
 		NETWORK_HIDE_PROJECTILE_IN_CUTSCENE = 0xFAC18E7356BD3210,
 
 		/// <summary>
-		/// Parameters: int netId, int time, IntPtr p2, IntPtr p3
+		/// Parameters: int netId, int time, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		SET_NETWORK_VEHICLE_RESPOT_TIMER = 0xEC51713AB6EC36E8, // 0x2C30912D
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_NETWORK_VEHICLE_AS_GHOST = 0x6274C4712850841E, // 0xEA235081
@@ -27425,7 +27425,7 @@ namespace GTA.Native
 		_SET_NETWORK_VEHICLE_POSITION_UPDATE_MULTIPLIER = 0xA2A707979FE754DC,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Enables a periodic ShapeTest within the NetBlender and invokes rage::netBlenderLinInterp::GoStraightToTarget (or some functional wrapper).<br/>
@@ -27438,7 +27438,7 @@ namespace GTA.Native
 		_SET_NETWORK_ENABLE_VEHICLE_POSITION_CORRECTION = 0x838DA0936A24ED4D,
 
 		/// <summary>
-		/// Parameters: bool toggle, bool p1
+		/// Parameters: BOOL toggle, BOOL p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_LOCAL_PLAYER_AS_GHOST = 0x5FFE9B4144F9712F,
@@ -27462,13 +27462,13 @@ namespace GTA.Native
 		_IS_ENTITY_GHOSTED_TO_LOCAL_PLAYER = 0x21D04D7BC538C146,
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>void</returns>
 		SET_NON_PARTICIPANTS_OF_THIS_SCRIPT_AS_GHOSTS = 0x13F1FCB111B820B0,
 
 		/// <summary>
-		/// Parameters: Player player, bool p1
+		/// Parameters: Player player, BOOL p1
 		/// </summary>
 		/// <remarks>
 		/// Enables ghosting between specific players<br/>
@@ -27504,7 +27504,7 @@ namespace GTA.Native
 		_RESET_GHOSTED_ENTITY_ALPHA = 0x17330EBF2F2124A8,
 
 		/// <summary>
-		/// Parameters: Entity entity, bool toggle
+		/// Parameters: Entity entity, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_ENTITY_GHOSTED_FOR_GHOST_PLAYERS = 0x4BA166079D658ED4,
@@ -27514,7 +27514,7 @@ namespace GTA.Native
 		_NETWORK_SET_ENTITY_GHOSTED_WITH_OWNER = 0x4BA166079D658ED4,
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>void</returns>
 		SET_INVERT_GHOSTING = 0xD7B6C73CAD419BCF,
@@ -27526,37 +27526,37 @@ namespace GTA.Native
 		IS_ENTITY_IN_GHOST_COLLISION = 0x7EF7649B64D7FF10,
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		USE_PLAYER_COLOUR_INSTEAD_OF_TEAM_COLOUR = 0x77758139EC9B66C7, // 0x4DD46DAE
 
 		/// <summary>
-		/// Parameters: float x, float y, float z, float xRot, float yRot, float zRot, int rotationOrder, bool useOcclusionPortal, bool looped, float p9, float animTime, float p11
+		/// Parameters: float x, float y, float z, float xRot, float yRot, float zRot, int rotationOrder, BOOL useOcclusionPortal, BOOL looped, float p9, float animTime, float p11
 		/// </summary>
 		/// <returns>int</returns>
 		NETWORK_CREATE_SYNCHRONISED_SCENE = 0x7CD6BC4C2BBDD526, // 0xB06FE3FE
 
 		/// <summary>
-		/// Parameters: Ped ped, int netScene, string animDict, string animnName, float speed, float speedMultiplier, int duration, int flag, float playbackRate, IntPtr p9
+		/// Parameters: Ped ped, int netScene, const char* animDict, const char* animnName, float speed, float speedMultiplier, int duration, int flag, float playbackRate, Any p9
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_ADD_PED_TO_SYNCHRONISED_SCENE = 0x742A637471BCECD9, // 0xB386713E
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3, IntPtr p4, IntPtr p5, IntPtr p6, IntPtr p7, IntPtr p8, IntPtr p9
+		/// Parameters: Any p0, Any p1, Any p2, Any p3, Any p4, Any p5, Any p6, Any p7, Any p8, Any p9
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_ADD_PED_TO_SYNCHRONISED_SCENE_WITH_IK = 0xA5EAFE473E45C442,
 
 		/// <summary>
-		/// Parameters: Entity entity, int netScene, string animDict, string animName, float speed, float speedMulitiplier, int flag
+		/// Parameters: Entity entity, int netScene, const char* animDict, const char* animName, float speed, float speedMulitiplier, int flag
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_ADD_ENTITY_TO_SYNCHRONISED_SCENE = 0xF2404D68CBC855FA, // 0x10DD636C
 
 		/// <summary>
-		/// Parameters: int netScene, uint modelHash, float x, float y, float z, float p5, string p6, float p7, float p8, int flags
+		/// Parameters: int netScene, Hash modelHash, float x, float y, float z, float p5, const char* p6, float p7, float p8, int flags
 		/// </summary>
 		/// <remarks>
 		/// Similar structure as NETWORK_ADD_ENTITY_TO_SYNCHRONISED_SCENE but it includes this time a hash.<br/>
@@ -27566,7 +27566,7 @@ namespace GTA.Native
 		NETWORK_ADD_MAP_ENTITY_TO_SYNCHRONISED_SCENE = 0x45F35C0EDC33B03B,
 
 		/// <summary>
-		/// Parameters: int netScene, string animDict, string animName
+		/// Parameters: int netScene, const char* animDict, const char* animName
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_ADD_SYNCHRONISED_SCENE_CAMERA = 0xCF8BD3B0BD6D42D7, // 0xBFFE8B5C
@@ -27614,13 +27614,13 @@ namespace GTA.Native
 		_NETWORK_FORCE_LOCAL_USE_OF_SYNCED_SCENE_CAMERA = 0xC9B43A33D09CADA7, // 0xC3AA2EC7
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_ALLOW_REMOTE_SYNCED_SCENE_LOCAL_PLAYER_REQUESTS = 0x144DA052257AE7D8,
 
 		/// <summary>
-		/// Parameters: int p0, IntPtr p1
+		/// Parameters: int p0, Any p1
 		/// </summary>
 		/// <remarks>
 		/// p0 is always 0. p1 is pointing to a global.<br/>
@@ -27649,7 +27649,7 @@ namespace GTA.Native
 		NETWORK_START_RESPAWN_SEARCH_IN_ANGLED_AREA_FOR_PLAYER = 0x4BA92A18502BCA61, // 0x74D6B13C
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any* p0
 		/// </summary>
 		/// <returns>int</returns>
 		NETWORK_QUERY_RESPAWN_RESULTS = 0x3C891A251567DFCE, // 0x90700C7D
@@ -27713,13 +27713,13 @@ namespace GTA.Native
 		_NETWORK_IS_PLAYER_EQUAL_TO_INDEX = 0x9DE986FC9A87C474, // 0xE66A0B40
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_BLOCK_PROXY_MIGRATION_BETWEEN_TUTORIAL_SESSIONS = 0xFEA7A352DDB34D52,
 
 		/// <summary>
-		/// Parameters: Player player, bool toggle, bool p2
+		/// Parameters: Player player, BOOL toggle, BOOL p2
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_CONCEAL_PLAYER = 0xBBDF066252829606, // 0x72052DB3
@@ -27731,7 +27731,7 @@ namespace GTA.Native
 		NETWORK_IS_PLAYER_CONCEALED = 0x919B3C98ED8292F9, // 0xB0313590
 
 		/// <summary>
-		/// Parameters: Entity entity, bool toggle
+		/// Parameters: Entity entity, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_CONCEAL_ENTITY = 0x1632BE0AC1E62876,
@@ -27840,7 +27840,7 @@ namespace GTA.Native
 		NETWORK_ENTITY_AREA_IS_OCCUPIED = 0x4A2D4E8BF4265B0F, // 0xC6D53AA0
 
 		/// <summary>
-		/// Parameters: int netID, bool toggle
+		/// Parameters: int netID, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_USE_HIGH_PRECISION_BLENDING = 0x2B1813ABA29016C5, // 0x155465EE
@@ -27856,7 +27856,7 @@ namespace GTA.Native
 		NETWORK_SET_CUSTOM_ARENA_BALL_PARAMS = 0xA6FCECCF4721D679,
 
 		/// <summary>
-		/// Parameters: int netId, bool toggle
+		/// Parameters: int netId, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_ENTITY_USE_HIGH_PRECISION_ROTATION = 0x95BAF97C82464629,
@@ -27900,31 +27900,31 @@ namespace GTA.Native
 		_NETWORK_GET_TUNABLES_VERSION = 0x10BD227A753B0D84, // 0x231CFD12
 
 		/// <summary>
-		/// Parameters: string tunableContext, string tunableName
+		/// Parameters: const char* tunableContext, const char* tunableName
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_DOES_TUNABLE_EXIST = 0x85E5F8B9B898B20A, // 0x9FCE9C9A
 
 		/// <summary>
-		/// Parameters: string tunableContext, string tunableName, int* value
+		/// Parameters: const char* tunableContext, const char* tunableName, int* value
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_ACCESS_TUNABLE_INT = 0x8BE1146DFD5D4468, // 0xE4B3726A
 
 		/// <summary>
-		/// Parameters: string tunableContext, string tunableName, float* value
+		/// Parameters: const char* tunableContext, const char* tunableName, float* value
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_ACCESS_TUNABLE_FLOAT = 0xE5608CA7BC163A5F, // 0x41E8912A
 
 		/// <summary>
-		/// Parameters: string tunableContext, string tunableName
+		/// Parameters: const char* tunableContext, const char* tunableName
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_ACCESS_TUNABLE_BOOL = 0xAA6A47A573ABB75A, // 0x8A04E1FE
 
 		/// <summary>
-		/// Parameters: uint tunableContext, uint tunableName
+		/// Parameters: Hash tunableContext, Hash tunableName
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_DOES_TUNABLE_EXIST_HASH = 0xE4E53E1419D81127, // 0x25915CB9
@@ -27937,7 +27937,7 @@ namespace GTA.Native
 		NETWORK_ACCESS_TUNABLE_MODIFICATION_DETECTION_CLEAR = 0xFAFC23AEE23868DB,
 
 		/// <summary>
-		/// Parameters: uint tunableContext, uint tunableName, int* value
+		/// Parameters: Hash tunableContext, Hash tunableName, int* value
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_ACCESS_TUNABLE_INT_HASH = 0x40FCE03E50E8DBE8, // 0xB2E83B75
@@ -27947,7 +27947,7 @@ namespace GTA.Native
 		_NETWORK_ACCESS_TUNABLE_INT_HASH = 0x40FCE03E50E8DBE8, // 0xB2E83B75
 
 		/// <summary>
-		/// Parameters: uint contextHash, uint nameHash, int* value
+		/// Parameters: Hash contextHash, Hash nameHash, int* value
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_ACCESS_TUNABLE_INT_MODIFICATION_DETECTION_REGISTRATION_HASH = 0x3A8B55FDA4C8DDEF,
@@ -27957,7 +27957,7 @@ namespace GTA.Native
 		_NETWORK_REGISTER_TUNABLE_INT_HASH = 0x3A8B55FDA4C8DDEF,
 
 		/// <summary>
-		/// Parameters: uint tunableContext, uint tunableName, float* value
+		/// Parameters: Hash tunableContext, Hash tunableName, float* value
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_ACCESS_TUNABLE_FLOAT_HASH = 0x972BC203BBC4C4D5, // 0x3972551F
@@ -27967,7 +27967,7 @@ namespace GTA.Native
 		_NETWORK_ACCESS_TUNABLE_FLOAT_HASH = 0x972BC203BBC4C4D5, // 0x3972551F
 
 		/// <summary>
-		/// Parameters: uint contextHash, uint nameHash, float* value
+		/// Parameters: Hash contextHash, Hash nameHash, float* value
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_ACCESS_TUNABLE_FLOAT_MODIFICATION_DETECTION_REGISTRATION_HASH = 0x1950DAE9848A4739,
@@ -27977,7 +27977,7 @@ namespace GTA.Native
 		_NETWORK_REGISTER_TUNABLE_FLOAT_HASH = 0x1950DAE9848A4739,
 
 		/// <summary>
-		/// Parameters: uint tunableContext, uint tunableName
+		/// Parameters: Hash tunableContext, Hash tunableName
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_ACCESS_TUNABLE_BOOL_HASH = 0xEA16B69D93D71A45, // 0x18867C61
@@ -27987,7 +27987,7 @@ namespace GTA.Native
 		_NETWORK_ACCESS_TUNABLE_BOOL_HASH = 0xEA16B69D93D71A45, // 0x18867C61
 
 		/// <summary>
-		/// Parameters: uint contextHash, uint nameHash, BOOL* value
+		/// Parameters: Hash contextHash, Hash nameHash, BOOL* value
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_ACCESS_TUNABLE_BOOL_MODIFICATION_DETECTION_REGISTRATION_HASH = 0x697F508861875B42,
@@ -27997,7 +27997,7 @@ namespace GTA.Native
 		_NETWORK_REGISTER_TUNABLE_BOOL_HASH = 0x697F508861875B42,
 
 		/// <summary>
-		/// Parameters: uint tunableContext, uint tunableName, bool defaultValue
+		/// Parameters: Hash tunableContext, Hash tunableName, BOOL defaultValue
 		/// </summary>
 		/// <remarks>
 		/// Returns defaultValue if the tunable doesn't exist.<br/>
@@ -28010,7 +28010,7 @@ namespace GTA.Native
 		_NETWORK_ACCESS_TUNABLE_BOOL_HASH_FAIL_VAL = 0xC7420099936CE286, // 0x8AFE3D90
 
 		/// <summary>
-		/// Parameters: uint contentHash
+		/// Parameters: Hash contentHash
 		/// </summary>
 		/// <remarks>
 		/// Return the content modifier id (the tunables context if you want) of a specific content.<br/>
@@ -28051,7 +28051,7 @@ namespace GTA.Native
 		NETWORK_SET_ATTRIBUTE_DAMAGE_TO_PLAYER = 0x0EDE326D47CD0F3E, // 0xBEB7281A
 
 		/// <summary>
-		/// Parameters: Entity entity, bool toggle
+		/// Parameters: Entity entity, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Allows vehicle wheels to be destructible even when the vehicle entity is invincible.<br/>
@@ -28064,19 +28064,19 @@ namespace GTA.Native
 		_NETWORK_SET_VEHICLE_WHEELS_DESTRUCTIBLE = 0x890E2C5ABED7236D,
 
 		/// <summary>
-		/// Parameters: Entity entity, bool toggle
+		/// Parameters: Entity entity, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_TRIGGER_DAMAGE_EVENT_FOR_ZERO_WEAPON_HASH = 0x38B7C51AB1EDC7D8,
 
 		/// <summary>
-		/// Parameters: Entity entity, bool toggle
+		/// Parameters: Entity entity, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SET_NO_LONGER_NEEDED = 0x3FC795691834481D,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool isAudible, bool isInvisible, int netId
+		/// Parameters: Vehicle vehicle, BOOL isAudible, BOOL isInvisible, int netId
 		/// </summary>
 		/// <remarks>
 		/// In the console script dumps, this is only referenced once. <br/>
@@ -28097,7 +28097,7 @@ namespace GTA.Native
 		NETWORK_EXPLODE_VEHICLE = 0x301A42153C9AD707, // 0x0E1B38AE
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool isAudible, bool isInvisible, int netId
+		/// Parameters: Vehicle vehicle, BOOL isAudible, BOOL isInvisible, int netId
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_EXPLODE_HELI = 0x2A5E0621DD815A9A, // 0x955B31BF
@@ -28115,7 +28115,7 @@ namespace GTA.Native
 		NETWORK_OVERRIDE_COORDS_AND_HEADING = 0xA7E30DE9272B6D49, // 0x644141C5
 
 		/// <summary>
-		/// Parameters: int netId, bool toggle
+		/// Parameters: int netId, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_ENABLE_EXTRA_VEHICLE_ORIENTATION_BLEND_CHECKS = 0xE6717E652B8C8D8A,
@@ -28148,7 +28148,7 @@ namespace GTA.Native
 		NETWORK_SET_PLAYER_MENTAL_STATE = 0x367EF5E2F439B4C6, // 0x53C9563C
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_SET_MINIMUM_RANK_FOR_MISSION = 0x94538037EE44F5CF, // 0x6B97075B
@@ -28179,7 +28179,7 @@ namespace GTA.Native
 		IS_COMMERCE_DATA_VALID = 0xEA14EEF5B7CD2C30, // 0xEEFC8A55
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <remarks>
 		/// Does nothing (it's a nullsub).<br/>
@@ -28224,7 +28224,7 @@ namespace GTA.Native
 		GET_COMMERCE_ITEM_CAT = 0x6F44CBF56D79FAC0, // 0x16E53875
 
 		/// <summary>
-		/// Parameters: string p0, string p1, int p2
+		/// Parameters: const char* p0, const char* p1, int p2
 		/// </summary>
 		/// <returns>void</returns>
 		OPEN_COMMERCE_STORE = 0x58C21165F6545892, // 0x365C50EE
@@ -28233,7 +28233,7 @@ namespace GTA.Native
 		IS_COMMERCE_STORE_OPEN = 0x2EAC52B4019E2782, // 0x25E2DBA9
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Access to the store for shark cards etc...<br/>
@@ -28269,7 +28269,7 @@ namespace GTA.Native
 		IS_USER_OLD_ENOUGH_TO_ACCESS_STORE = 0x59328EB08C5CEB2B, // 0x70F6D3AD
 
 		/// <summary>
-		/// Parameters: uint p0, int p1, uint p2
+		/// Parameters: Hash p0, int p1, Hash p2
 		/// </summary>
 		/// <returns>void</returns>
 		SET_LAST_VIEWED_SHOP_ITEM = 0xFAE628F1E9ADB239, // 0xD59A822B
@@ -28287,7 +28287,7 @@ namespace GTA.Native
 		GET_USER_STARTER_ACCESS = 0x155467ACA0F55705,
 
 		/// <summary>
-		/// Parameters: string p0
+		/// Parameters: const char* p0
 		/// </summary>
 		/// <returns>int</returns>
 		CLOUD_DELETE_MEMBER_FILE = 0xC64DED7EF0D2FE37, // 0x2B7B57B3
@@ -28353,7 +28353,7 @@ namespace GTA.Native
 		_CLEAR_LAUNCH_PARAMS = 0x966DD84FB6A46017,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any* p0, Any* p1
 		/// </summary>
 		/// <returns>BOOL</returns>
 		UGC_COPY_CONTENT = 0x152D90E4C1B4738A, // 0x08243B79
@@ -28377,31 +28377,31 @@ namespace GTA.Native
 		UGC_CLEAR_CREATE_RESULT = 0x17440AA15D1D3739, // 0x133FF2D5
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3, IntPtr p4, IntPtr p5
+		/// Parameters: Any p0, Any p1, Any* p2, Any p3, Any p4, Any p5
 		/// </summary>
 		/// <returns>BOOL</returns>
 		UGC_QUERY_MY_CONTENT = 0x9BF438815F5D96EA, // 0xCBA7242F
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, string p3, IntPtr p4, bool p5
+		/// Parameters: Any p0, Any p1, Any p2, const char* p3, Any p4, BOOL p5
 		/// </summary>
 		/// <returns>BOOL</returns>
 		UGC_QUERY_BY_CATEGORY = 0x692D58DF40657E8C,
 
 		/// <summary>
-		/// Parameters: string contentId, bool latestVersion, string contentTypeName
+		/// Parameters: const char* contentId, BOOL latestVersion, const char* contentTypeName
 		/// </summary>
 		/// <returns>BOOL</returns>
 		UGC_QUERY_BY_CONTENT_ID = 0x158EC424F35EC469, // 0xDED82A6E
 
 		/// <summary>
-		/// Parameters: IntPtr data, int count, bool latestVersion, string contentTypeName
+		/// Parameters: Any* data, int count, BOOL latestVersion, const char* contentTypeName
 		/// </summary>
 		/// <returns>BOOL</returns>
 		UGC_QUERY_BY_CONTENT_IDS = 0xC7397A83F7A2A462, // 0x47B3C35E
 
 		/// <summary>
-		/// Parameters: int offset, int count, string contentTypeName, int p3
+		/// Parameters: int offset, int count, const char* contentTypeName, int p3
 		/// </summary>
 		/// <returns>BOOL</returns>
 		UGC_QUERY_MOST_RECENTLY_CREATED_CONTENT = 0x6D4CB481FAC835E8, // 0x40CF0783
@@ -28411,37 +28411,37 @@ namespace GTA.Native
 		_UGC_QUERY_RECENTLY_CREATED_CONTENT = 0x6D4CB481FAC835E8, // 0x40CF0783
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, string p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, const char* p2, Any* p3
 		/// </summary>
 		/// <returns>BOOL</returns>
 		UGC_GET_BOOKMARKED_CONTENT = 0xD5A4B59980401588, // 0x4609D596
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, string p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, const char* p2, Any* p3
 		/// </summary>
 		/// <returns>BOOL</returns>
 		UGC_GET_MY_CONTENT = 0x3195F8DD0D531052, // 0x4C2C0D1F
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, string p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, const char* p2, Any* p3
 		/// </summary>
 		/// <returns>BOOL</returns>
 		UGC_GET_FRIEND_CONTENT = 0xF9E1CCAE8BA4C281, // 0x9EFBD5D1
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, string p3, IntPtr p4
+		/// Parameters: Any p0, Any p1, Any p2, const char* p3, Any* p4
 		/// </summary>
 		/// <returns>BOOL</returns>
 		UGC_GET_CREW_CONTENT = 0x9F6E2821885CAEE2, // 0xA6D8B798
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, string p3, IntPtr p4
+		/// Parameters: Any p0, Any p1, Any p2, const char* p3, Any* p4
 		/// </summary>
 		/// <returns>BOOL</returns>
 		UGC_GET_GET_BY_CATEGORY = 0x678BB03C1A3BD51E, // 0x67E74842
 
 		/// <summary>
-		/// Parameters: string contentId, string contentTypeName
+		/// Parameters: const char* contentId, const char* contentTypeName
 		/// </summary>
 		/// <returns>BOOL</returns>
 		UGC_GET_GET_BY_CONTENT_ID = 0x815E5E3073DA1D67, // 0xE123C7AC
@@ -28451,7 +28451,7 @@ namespace GTA.Native
 		SET_BALANCE_ADD_MACHINE = 0x815E5E3073DA1D67, // 0xE123C7AC
 
 		/// <summary>
-		/// Parameters: IntPtr data, int dataCount, string contentTypeName
+		/// Parameters: Any* data, int dataCount, const char* contentTypeName
 		/// </summary>
 		/// <returns>BOOL</returns>
 		UGC_GET_GET_BY_CONTENT_IDS = 0xB8322EEB38BE7C26, // 0x22C33603
@@ -28461,19 +28461,19 @@ namespace GTA.Native
 		SET_BALANCE_ADD_MACHINES = 0xB8322EEB38BE7C26, // 0x22C33603
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any* p2, Any* p3
 		/// </summary>
 		/// <returns>BOOL</returns>
 		UGC_GET_MOST_RECENTLY_CREATED_CONTENT = 0xA7862BC5ED1DFD7E, // 0x37F5BD93
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any* p2, Any* p3
 		/// </summary>
 		/// <returns>BOOL</returns>
 		UGC_GET_MOST_RECENTLY_PLAYED_CONTENT = 0x97A770BEEF227E2B, // 0x1CFB3F51
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any* p2, Any* p3
 		/// </summary>
 		/// <returns>BOOL</returns>
 		UGC_GET_TOP_RATED_CONTENT = 0x5324A0E3E4CE3570, // 0x87D1E6BD
@@ -28523,25 +28523,25 @@ namespace GTA.Native
 		GET_PLAYER_ADVANCED_MODIFIER_PRIVILEGES = 0xCD67AD041A394C9C, // 0x8F3137E6
 
 		/// <summary>
-		/// Parameters: int p0, IntPtr p1
+		/// Parameters: int p0, Any* p1
 		/// </summary>
 		/// <returns>BOOL</returns>
 		UGC_GET_CONTENT_CREATOR_GAMER_HANDLE = 0x584770794D758C18,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>BOOL</returns>
 		UGC_GET_CONTENT_CREATED_BY_LOCAL_PLAYER = 0x8C8D2739BA44AF0F,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>const char*</returns>
 		UGC_GET_CONTENT_USER_NAME = 0x703F12425ECA8BF5, // 0xB9137BA7
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>BOOL</returns>
 		UGC_GET_CONTENT_IS_USING_SC_NICKNAME = 0xAEAB987727C5A8A4, // 0x9FEEAA9C
@@ -28583,13 +28583,13 @@ namespace GTA.Native
 		_GET_ROOT_CONTENT_ID = 0xC0173D6BFF4E0348, // 0x0E5E8E5C
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>const char*</returns>
 		UGC_GET_CONTENT_NAME = 0xBF09786A7FCAB582, // 0xA5A0C695
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>int</returns>
 		UGC_GET_CONTENT_DESCRIPTION_HASH = 0x7CF0448787B23758, // 0x91534C6E
@@ -28609,13 +28609,13 @@ namespace GTA.Native
 		_UGC_GET_CLOUD_PATH = 0xBAF6BABF9E7CCC13, // 0x744A9EA5
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any* p1
 		/// </summary>
 		/// <returns>void</returns>
 		UGC_GET_CONTENT_UPDATED_DATE = 0xCFD115B373C0DF63, // 0xA19A238D
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>int</returns>
 		UGC_GET_CONTENT_FILE_VERSION = 0x37025B27D9B658B1, // 0xFF7D44E6
@@ -28637,55 +28637,55 @@ namespace GTA.Native
 		UGC_GET_CONTENT_HAS_HI_RES_PHOTO = 0x7FCC39C46C3C03BD,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>int</returns>
 		UGC_GET_CONTENT_LANGUAGE = 0x32DD916F3F7C9672, // 0xA2C5BD9D
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>BOOL</returns>
 		UGC_GET_CONTENT_IS_PUBLISHED = 0x3054F114121C21EA, // 0xA850DDE1
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>BOOL</returns>
 		UGC_GET_CONTENT_IS_VERIFIED = 0xA9240A96C74CCA13, // 0x8F6754AE
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>float</returns>
 		UGC_GET_CONTENT_RATING = 0x1ACCFBA3D8DAB2EE, // 0x1E34953F
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>int</returns>
 		UGC_GET_CONTENT_RATING_COUNT = 0x759299C5BB31D2A9, // 0x771FE190
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>int</returns>
 		UGC_GET_CONTENT_RATING_POSITIVE_COUNT = 0x87E5C46C187FE0AE, // 0x3276D9D3
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>int</returns>
 		UGC_GET_CONTENT_RATING_NEGATIVE_COUNT = 0x4E548C0D7AE39FF9, // 0x41A0FB02
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>BOOL</returns>
 		UGC_GET_CONTENT_HAS_PLAYER_RECORD = 0x70EA8DA57840F9BE, // 0x11DC0F27
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>BOOL</returns>
 		UGC_GET_CONTENT_HAS_PLAYER_BOOKMARKED = 0x993CBE59D350D225, // 0x0DEB3F5A
@@ -28697,7 +28697,7 @@ namespace GTA.Native
 		UGC_REQUEST_CONTENT_DATA_FROM_INDEX = 0x171DF6A0C07FB3DC, // 0x84315226
 
 		/// <summary>
-		/// Parameters: string contentTypeName, string contentId, int p2, int p3, int p4
+		/// Parameters: const char* contentTypeName, const char* contentId, int p2, int p3, int p4
 		/// </summary>
 		/// <returns>int</returns>
 		UGC_REQUEST_CONTENT_DATA_FROM_PARAMS = 0x7FD2990AF016795E, // 0x38FC2EEB
@@ -28709,31 +28709,31 @@ namespace GTA.Native
 		UGC_REQUEST_CACHED_DESCRIPTION = 0x5E0165278F6339EE, // 0x1C4F9FDB
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>BOOL</returns>
 		UGC_IS_DESCRIPTION_REQUEST_IN_PROGRESS = 0x2D5DC831176D0114, // 0xA69AE16C
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>BOOL</returns>
 		UGC_HAS_DESCRIPTION_REQUEST_FINISHED = 0xEBFA8D50ADDC54C4, // 0xF50BC67A
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>BOOL</returns>
 		UGC_DID_DESCRIPTION_REQUEST_SUCCEED = 0x162C23CA83ED0A62, // 0xB3BBD241
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>const char*</returns>
 		UGC_GET_CACHED_DESCRIPTION = 0x40F7E66472DF3E5C, // 0x70A2845C
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>BOOL</returns>
 		UGC_RELEASE_CACHED_DESCRIPTION = 0x5A34CD9C3C5BEC44, // 0x346B506C
@@ -28742,19 +28742,19 @@ namespace GTA.Native
 		UGC_RELEASE_ALL_CACHED_DESCRIPTIONS = 0x68103E2247887242, // 0x0095DB71
 
 		/// <summary>
-		/// Parameters: string contentId, string baseContentId, string contentTypeName
+		/// Parameters: const char* contentId, const char* baseContentId, const char* contentTypeName
 		/// </summary>
 		/// <returns>BOOL</returns>
 		UGC_PUBLISH = 0x1DE0F5F50D723CAA, // 0xAD334B40
 
 		/// <summary>
-		/// Parameters: string contentId, bool bookmarked, string contentTypeName
+		/// Parameters: const char* contentId, BOOL bookmarked, const char* contentTypeName
 		/// </summary>
 		/// <returns>BOOL</returns>
 		UGC_SET_BOOKMARKED = 0x274A1519DFC1094F, // 0x980D45D7
 
 		/// <summary>
-		/// Parameters: IntPtr p0, bool p1, string p2
+		/// Parameters: Any* p0, BOOL p1, const char* p2
 		/// </summary>
 		/// <returns>BOOL</returns>
 		UGC_SET_DELETED = 0xD05D1A6C74DA3498, // 0x48CCC328
@@ -28775,7 +28775,7 @@ namespace GTA.Native
 		UGC_CLEAR_MODIFY_RESULT = 0xA1E5E0204A6FCC70, // 0x405ECA16
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any* p0, Any* p1
 		/// </summary>
 		/// <returns>BOOL</returns>
 		UGC_GET_CREATORS_BY_USER_ID = 0xB746D20B17F2A229, // 0x9567392B
@@ -28790,7 +28790,7 @@ namespace GTA.Native
 		UGC_GET_CREATOR_NUM = 0x597F8DBA9B206FC7, // 0x410C61D1
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>BOOL</returns>
 		UGC_LOAD_OFFLINE_QUERY = 0x5CAE833B0EE0C500, // 0x0D4F845D
@@ -28803,25 +28803,25 @@ namespace GTA.Native
 		UGC_CLEAR_OFFLINE_QUERY = 0x61A885D3F7CFEE9A, // 0xE13C1F7F
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>void</returns>
 		UGC_SET_QUERY_DATA_FROM_OFFLINE = 0xF98DDE0A8ED09323, // 0x213C6D36
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>void</returns>
 		UGC_SET_USING_OFFLINE_CONTENT = 0xFD75DABC0957BF33, // 0x511E6F50
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>BOOL</returns>
 		UGC_IS_LANGUAGE_SUPPORTED = 0xF53E48461B71EECB, // 0xB4668B23
 
 		/// <summary>
-		/// Parameters: string heistName, int cashEarned, int xpEarned
+		/// Parameters: const char* heistName, int cashEarned, int xpEarned
 		/// </summary>
 		/// <returns>BOOL</returns>
 		FACEBOOK_POST_COMPLETED_HEIST = 0x098AB65B9ED9A9EC, // 0x30B51753
@@ -28869,19 +28869,19 @@ namespace GTA.Native
 		_FACEBOOK_IS_AVAILABLE = 0x43865688AE10F0D7, // 0x429AEAB3
 
 		/// <summary>
-		/// Parameters: IntPtr gamerHandle, string filePath, string name, bool p3
+		/// Parameters: Any* gamerHandle, const char* filePath, const char* name, BOOL p3
 		/// </summary>
 		/// <returns>int</returns>
 		TEXTURE_DOWNLOAD_REQUEST = 0x16160DA74A8E74A2, // 0xAD546CC3
 
 		/// <summary>
-		/// Parameters: string filePath, string name, bool p2
+		/// Parameters: const char* filePath, const char* name, BOOL p2
 		/// </summary>
 		/// <returns>int</returns>
 		TITLE_TEXTURE_DOWNLOAD_REQUEST = 0x0B203B4AFDE53A4F, // 0x1856D008
 
 		/// <summary>
-		/// Parameters: string p0, int p1, int p2, int p3, string p4, bool p5
+		/// Parameters: const char* p0, int p1, int p2, int p3, const char* p4, BOOL p5
 		/// </summary>
 		/// <returns>int</returns>
 		UGC_TEXTURE_DOWNLOAD_REQUEST = 0x308F96458B7087CC, // 0x68C9AF69
@@ -29006,7 +29006,7 @@ namespace GTA.Native
 		NETWORK_HAS_ROS_PRIVILEGE = 0xA699957E60D80214, // 0xFD261E30
 
 		/// <summary>
-		/// Parameters: int privilege, int* banType, IntPtr timeData
+		/// Parameters: int privilege, int* banType, Any* timeData
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NETWORK_HAS_ROS_PRIVILEGE_END_DATE = 0xC22912B1D85F26B1, // 0x8570DD34
@@ -29030,13 +29030,13 @@ namespace GTA.Native
 		_NETWORK_GET_ROS_PRIVILEGE_25 = 0x91B87C55093DE351,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>int</returns>
 		NETWORK_START_COMMUNICATION_PERMISSIONS_CHECK = 0x36391F397731595D,
 
 		/// <summary>
-		/// Parameters: IntPtr netHandle
+		/// Parameters: Any* netHandle
 		/// </summary>
 		/// <remarks>
 		/// Always returns -1. Seems to be XB1 specific.<br/>
@@ -29072,13 +29072,13 @@ namespace GTA.Native
 		_NETWORK_UPDATE_PLAYER_SCARS = 0xB7C7F6AD6424304B, // 0x371BBA08
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_DISABLE_LEAVE_REMOTE_PED_BEHIND = 0xC505036A35AFD01B, // 0xA100CC97
 
 		/// <summary>
-		/// Parameters: Entity entity, bool toggle
+		/// Parameters: Entity entity, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_ALLOW_REMOTE_ATTACHMENT_MODIFICATION = 0x267C78C60E806B9A, // 0xBB2D33D3
@@ -29237,7 +29237,7 @@ namespace GTA.Native
 		NETWORK_DUMP_NET_IF_CONFIG = 0xAEDF1BC1C133D6E3,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any* p0
 		/// </summary>
 		/// <remarks>
 		/// Does nothing (it's a nullsub).<br/>
@@ -29246,7 +29246,7 @@ namespace GTA.Native
 		NETWORK_GET_SIGNALLING_INFO = 0x2555CF7DA5473794,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any* p0
 		/// </summary>
 		/// <remarks>
 		/// Does nothing (it's a nullsub).<br/>
@@ -29261,7 +29261,7 @@ namespace GTA.Native
 		NETWORK_GET_PLAYER_ACCOUNT_ID = 0xDB663CC9FF3407A9,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_UGC_NAV = 0xC1447451DDB512F0,
@@ -29275,7 +29275,7 @@ namespace GTA.Native
 		#region OBJECT
 
 		/// <summary>
-		/// Parameters: uint modelHash, float x, float y, float z, bool isNetwork, bool bScriptHostObj, bool dynamic
+		/// Parameters: Hash modelHash, float x, float y, float z, BOOL isNetwork, BOOL bScriptHostObj, BOOL dynamic
 		/// </summary>
 		/// <remarks>
 		/// List of object models that can be created without any additional effort like making sure ytyp is loaded etc: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/ObjectList.ini'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/ObjectList.ini</see><br/>
@@ -29284,7 +29284,7 @@ namespace GTA.Native
 		CREATE_OBJECT = 0x509D5878EB39E842, // 0x2F7AA05C
 
 		/// <summary>
-		/// Parameters: uint modelHash, float x, float y, float z, bool isNetwork, bool bScriptHostObj, bool dynamic
+		/// Parameters: Hash modelHash, float x, float y, float z, BOOL isNetwork, BOOL bScriptHostObj, BOOL dynamic
 		/// </summary>
 		/// <remarks>
 		/// List of object models that can be created without any additional effort like making sure ytyp is loaded etc: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/ObjectList.ini'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/ObjectList.ini</see><br/>
@@ -29293,7 +29293,7 @@ namespace GTA.Native
 		CREATE_OBJECT_NO_OFFSET = 0x9A294B2138ABB884, // 0x58040420
 
 		/// <summary>
-		/// Parameters: Object* object
+		/// Parameters: Object* @object
 		/// </summary>
 		/// <remarks>
 		/// Deletes the specified object, then sets the handle pointed to by the pointer to NULL.<br/>
@@ -29302,13 +29302,13 @@ namespace GTA.Native
 		DELETE_OBJECT = 0x539E0AE3E6634B9F, // 0xD6EF9DA7
 
 		/// <summary>
-		/// Parameters: Object object
+		/// Parameters: Object @object
 		/// </summary>
 		/// <returns>BOOL</returns>
 		PLACE_OBJECT_ON_GROUND_PROPERLY = 0x58A850EAEE20FAA3, // 0x8F95A20B
 
 		/// <summary>
-		/// Parameters: Object object
+		/// Parameters: Object @object
 		/// </summary>
 		/// <returns>BOOL</returns>
 		PLACE_OBJECT_ON_GROUND_OR_OBJECT_PROPERLY = 0xD76EEEF746057FD6,
@@ -29318,13 +29318,13 @@ namespace GTA.Native
 		_PLACE_OBJECT_ON_GROUND_PROPERLY_2 = 0xD76EEEF746057FD6,
 
 		/// <summary>
-		/// Parameters: Object object, float p1, float p2, bool p3
+		/// Parameters: Object @object, float p1, float p2, BOOL p3
 		/// </summary>
 		/// <returns>BOOL</returns>
 		ROTATE_OBJECT = 0xAFE24E4D29249E4A,
 
 		/// <summary>
-		/// Parameters: Object object, float toX, float toY, float toZ, float speedX, float speedY, float speedZ, bool collision
+		/// Parameters: Object @object, float toX, float toY, float toZ, float speedX, float speedY, float speedZ, BOOL collision
 		/// </summary>
 		/// <remarks>
 		/// Returns true if the object has finished moving.<br/>
@@ -29336,13 +29336,13 @@ namespace GTA.Native
 		SLIDE_OBJECT = 0x2FDFF4107B8C1147, // 0x63BFA7A0
 
 		/// <summary>
-		/// Parameters: Object object, bool targettable
+		/// Parameters: Object @object, BOOL targettable
 		/// </summary>
 		/// <returns>void</returns>
 		SET_OBJECT_TARGETTABLE = 0x8A7391690F5AFD81, // 0x3F88CD86
 
 		/// <summary>
-		/// Parameters: Object object, bool toggle
+		/// Parameters: Object @object, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Overrides a flag on the object which determines if the object should be avoided by a vehicle in task CTaskVehicleGoToPointWithAvoidanceAutomobile.<br/>
@@ -29355,7 +29355,7 @@ namespace GTA.Native
 		_SET_OBJECT_SOMETHING = 0x77F33F2CCF64B3AA, // 0x483C5C88
 
 		/// <summary>
-		/// Parameters: float x, float y, float z, float radius, uint modelHash, bool isMission, bool p6, bool p7
+		/// Parameters: float x, float y, float z, float radius, Hash modelHash, BOOL isMission, BOOL p6, BOOL p7
 		/// </summary>
 		/// <remarks>
 		/// Has 8 params in the latest patches.<br/>
@@ -29365,25 +29365,25 @@ namespace GTA.Native
 		GET_CLOSEST_OBJECT_OF_TYPE = 0xE143FA2249364369, // 0x45619B33
 
 		/// <summary>
-		/// Parameters: Object object, IntPtr p1
+		/// Parameters: Object @object, Any p1
 		/// </summary>
 		/// <returns>BOOL</returns>
 		HAS_OBJECT_BEEN_BROKEN = 0x8ABFB70C49CC43E2, // 0xFE21F891
 
 		/// <summary>
-		/// Parameters: float p0, float p1, float p2, float p3, uint modelHash, IntPtr p5
+		/// Parameters: float p0, float p1, float p2, float p3, Hash modelHash, Any p5
 		/// </summary>
 		/// <returns>BOOL</returns>
 		HAS_CLOSEST_OBJECT_OF_TYPE_BEEN_BROKEN = 0x761B0E69AC4D007E, // 0x6FC0353D
 
 		/// <summary>
-		/// Parameters: float x, float y, float z, float radius, uint modelHash, bool p5
+		/// Parameters: float x, float y, float z, float radius, Hash modelHash, BOOL p5
 		/// </summary>
 		/// <returns>BOOL</returns>
 		HAS_CLOSEST_OBJECT_OF_TYPE_BEEN_COMPLETELY_DESTROYED = 0x46494A2475701343, // 0x7DB578DD
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>BOOL</returns>
 		GET_HAS_OBJECT_BEEN_COMPLETELY_DESTROYED = 0x2542269291C6AC84,
@@ -29399,13 +29399,13 @@ namespace GTA.Native
 		_GET_OBJECT_OFFSET_FROM_COORDS = 0x163E252DE035A133, // 0x87A42A12
 
 		/// <summary>
-		/// Parameters: float x, float y, float z, float radius, uint modelHash, Vector3* outPosition, Vector3* outRotation, int rotationOrder
+		/// Parameters: float x, float y, float z, float radius, Hash modelHash, Vector3* outPosition, Vector3* outRotation, int rotationOrder
 		/// </summary>
 		/// <returns>BOOL</returns>
 		GET_COORDS_AND_ROTATION_OF_CLOSEST_OBJECT_OF_TYPE = 0x163F8B586BC95F2A, // 0x65213FC3
 
 		/// <summary>
-		/// Parameters: uint type, float x, float y, float z, bool locked, float heading, bool p6
+		/// Parameters: Hash type, float x, float y, float z, BOOL locked, float heading, BOOL p6
 		/// </summary>
 		/// <remarks>
 		/// Hardcoded to not work in multiplayer.<br/>
@@ -29423,7 +29423,7 @@ namespace GTA.Native
 		SET_STATE_OF_CLOSEST_DOOR_OF_TYPE = 0xF82D8F1926A02C3D, // 0x38C951A4
 
 		/// <summary>
-		/// Parameters: uint type, float x, float y, float z, BOOL* locked, float* heading
+		/// Parameters: Hash type, float x, float y, float z, BOOL* locked, float* heading
 		/// </summary>
 		/// <remarks>
 		/// locked is 0 if no door is found<br/>
@@ -29436,7 +29436,7 @@ namespace GTA.Native
 		GET_STATE_OF_CLOSEST_DOOR_OF_TYPE = 0xEDC1A5B84AEF33FF, // 0x4B44A83D
 
 		/// <summary>
-		/// Parameters: uint modelHash, float x, float y, float z, bool locked, float xRotMult, float yRotMult, float zRotMult
+		/// Parameters: Hash modelHash, float x, float y, float z, BOOL locked, float xRotMult, float yRotMult, float zRotMult
 		/// </summary>
 		/// <remarks>
 		/// Hardcoded not to work in multiplayer environments.<br/>
@@ -29452,13 +29452,13 @@ namespace GTA.Native
 		_DOOR_CONTROL = 0x9B12F9A24FABEDB0, // 0x4E0A260B
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		PLAY_OBJECT_AUTO_START_ANIM = 0x006E4B040ED37EC3,
 
 		/// <summary>
-		/// Parameters: uint doorHash, uint modelHash, float x, float y, float z, bool p5, bool scriptDoor, bool isLocal
+		/// Parameters: Hash doorHash, Hash modelHash, float x, float y, float z, BOOL p5, BOOL scriptDoor, BOOL isLocal
 		/// </summary>
 		/// <remarks>
 		/// doorHash has to be unique. scriptDoor false; relies upon getNetworkGameScriptHandler. isLocal On true disables the creation CRequestDoorEvent's in DOOR_SYSTEM_SET_DOOR_STATE.<br/>
@@ -29472,7 +29472,7 @@ namespace GTA.Native
 		ADD_DOOR_TO_SYSTEM = 0x6F8838D03D1DC226, // 0x9D2D778D
 
 		/// <summary>
-		/// Parameters: uint doorHash, IntPtr p1
+		/// Parameters: Hash doorHash, Any p1
 		/// </summary>
 		/// <remarks>
 		/// CDoor and CDoorSystemData still internally allocated (and their associations between doorHash, modelHash, and coordinates).<br/>
@@ -29482,7 +29482,7 @@ namespace GTA.Native
 		REMOVE_DOOR_FROM_SYSTEM = 0x464D8E1427156FE4, // 0x00253286
 
 		/// <summary>
-		/// Parameters: uint doorHash, int state, bool requestDoor, bool forceUpdate
+		/// Parameters: Hash doorHash, int state, BOOL requestDoor, BOOL forceUpdate
 		/// </summary>
 		/// <remarks>
 		/// Lockstates not applied and CNetObjDoor's not created until DOOR_SYSTEM_GET_IS_PHYSICS_LOADED returns true.<br/>
@@ -29505,19 +29505,19 @@ namespace GTA.Native
 		_SET_DOOR_ACCELERATION_LIMIT = 0x6BAB9442830C7F53, // 0xDF83DB47
 
 		/// <summary>
-		/// Parameters: uint doorHash
+		/// Parameters: Hash doorHash
 		/// </summary>
 		/// <returns>int</returns>
 		DOOR_SYSTEM_GET_DOOR_STATE = 0x160AA1B32F6139B8, // 0xD42A41C2
 
 		/// <summary>
-		/// Parameters: uint doorHash
+		/// Parameters: Hash doorHash
 		/// </summary>
 		/// <returns>int</returns>
 		DOOR_SYSTEM_GET_DOOR_PENDING_STATE = 0x4BC2854478F3A749, // 0xD649B7E1
 
 		/// <summary>
-		/// Parameters: uint doorHash, float rate, bool requestDoor, bool forceUpdate
+		/// Parameters: Hash doorHash, float rate, BOOL requestDoor, BOOL forceUpdate
 		/// </summary>
 		/// <remarks>
 		/// Includes networking check: ownership vs. or the door itself **isn't** networked.<br/>
@@ -29527,7 +29527,7 @@ namespace GTA.Native
 		DOOR_SYSTEM_SET_AUTOMATIC_RATE = 0x03C27E13B42A0E82, // 0x4F44AF21
 
 		/// <summary>
-		/// Parameters: uint doorHash, float distance, bool requestDoor, bool forceUpdate
+		/// Parameters: Hash doorHash, float distance, BOOL requestDoor, BOOL forceUpdate
 		/// </summary>
 		/// <remarks>
 		/// `forceUpdate` on true invokes DOOR_SYSTEM_SET_DOOR_STATE otherwise requestDoor is unused.<br/>
@@ -29536,7 +29536,7 @@ namespace GTA.Native
 		DOOR_SYSTEM_SET_AUTOMATIC_DISTANCE = 0x9BA001CB45CBF627, // 0x47531446
 
 		/// <summary>
-		/// Parameters: uint doorHash, float ajar, bool requestDoor, bool forceUpdate
+		/// Parameters: Hash doorHash, float ajar, BOOL requestDoor, BOOL forceUpdate
 		/// </summary>
 		/// <remarks>
 		/// Sets the ajar angle of a door.<br/>
@@ -29551,7 +29551,7 @@ namespace GTA.Native
 		_SET_DOOR_AJAR_ANGLE = 0xB6E6FBA95C7324AC, // 0x34883DE3
 
 		/// <summary>
-		/// Parameters: uint doorHash
+		/// Parameters: Hash doorHash
 		/// </summary>
 		/// <returns>float</returns>
 		DOOR_SYSTEM_GET_AUTOMATIC_DISTANCE = 0xE851471AEFC3374F,
@@ -29561,13 +29561,13 @@ namespace GTA.Native
 		_DOOR_SYSTEM_GET_AUTOMATIC_DISTANCE = 0xE851471AEFC3374F,
 
 		/// <summary>
-		/// Parameters: uint doorHash
+		/// Parameters: Hash doorHash
 		/// </summary>
 		/// <returns>float</returns>
 		DOOR_SYSTEM_GET_OPEN_RATIO = 0x65499865FCA6E5EC, // 0xB74C3BD7
 
 		/// <summary>
-		/// Parameters: uint doorHash, bool removed, bool requestDoor, bool forceUpdate
+		/// Parameters: Hash doorHash, BOOL removed, BOOL requestDoor, BOOL forceUpdate
 		/// </summary>
 		/// <remarks>
 		/// Includes networking check: ownership vs. or the door itself **isn't** networked.<br/>
@@ -29577,7 +29577,7 @@ namespace GTA.Native
 		DOOR_SYSTEM_SET_SPRING_REMOVED = 0xC485E07E4F0B7958, // 0xB4A9A558
 
 		/// <summary>
-		/// Parameters: uint doorHash, bool toggle
+		/// Parameters: Hash doorHash, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Includes networking check: ownership vs. or the door itself **isn't** networked.<br/>
@@ -29586,7 +29586,7 @@ namespace GTA.Native
 		DOOR_SYSTEM_SET_HOLD_OPEN = 0xD9B71952F78A2640, // 0xECE58AE0
 
 		/// <summary>
-		/// Parameters: uint doorHash, bool p1
+		/// Parameters: Hash doorHash, BOOL p1
 		/// </summary>
 		/// <remarks>
 		/// Some property related to gates. Native name between ``DOOR_SYSTEM_SET_AUTOMATIC_RATE`` and ``DOOR_SYSTEM_SET_DOOR_STATE``.<br/>
@@ -29595,7 +29595,7 @@ namespace GTA.Native
 		DOOR_SYSTEM_SET_DOOR_OPEN_FOR_RACES = 0xA85A21582451E951, // 0xF736227C
 
 		/// <summary>
-		/// Parameters: uint doorHash
+		/// Parameters: Hash doorHash
 		/// </summary>
 		/// <remarks>
 		/// if (OBJECT::IS_DOOR_REGISTERED_WITH_SYSTEM(doorHash)) <br/>
@@ -29611,13 +29611,13 @@ namespace GTA.Native
 		_DOES_DOOR_EXIST = 0xC153C43EA202C8C1, // 0x5AFCD8A1
 
 		/// <summary>
-		/// Parameters: uint doorHash
+		/// Parameters: Hash doorHash
 		/// </summary>
 		/// <returns>BOOL</returns>
 		IS_DOOR_CLOSED = 0xC531EE8A1145A149, // 0x48659CD7
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>void</returns>
 		OPEN_ALL_BARRIERS_FOR_RACE = 0xC7F29CA00F46350E, // 0x9BF33E41
@@ -29630,13 +29630,13 @@ namespace GTA.Native
 		CLOSE_ALL_BARRIERS_FOR_RACE = 0x701FDA1E82076BA4, // 0xF592AD10
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>BOOL</returns>
 		DOOR_SYSTEM_GET_IS_PHYSICS_LOADED = 0xDF97CDD4FC08FD34, // 0x17FF9393
 
 		/// <summary>
-		/// Parameters: float x, float y, float z, uint modelHash, Hash* outDoorHash
+		/// Parameters: float x, float y, float z, Hash modelHash, Hash* outDoorHash
 		/// </summary>
 		/// <remarks>
 		/// Search radius: 0.5<br/>
@@ -29645,37 +29645,37 @@ namespace GTA.Native
 		DOOR_SYSTEM_FIND_EXISTING_DOOR = 0x589F80B325CC82C5, // 0xE9AE494F
 
 		/// <summary>
-		/// Parameters: uint garageHash, bool p1, int p2
+		/// Parameters: Hash garageHash, BOOL p1, int p2
 		/// </summary>
 		/// <returns>BOOL</returns>
 		IS_GARAGE_EMPTY = 0x90E47239EA1980B8, // 0xA8B37DEA
 
 		/// <summary>
-		/// Parameters: uint garageHash, Player player, float p2, int p3
+		/// Parameters: Hash garageHash, Player player, float p2, int p3
 		/// </summary>
 		/// <returns>BOOL</returns>
 		IS_PLAYER_ENTIRELY_INSIDE_GARAGE = 0x024A60DEB0EA69F0, // 0xC33ED360
 
 		/// <summary>
-		/// Parameters: uint garageHash, Player player, int p2
+		/// Parameters: Hash garageHash, Player player, int p2
 		/// </summary>
 		/// <returns>BOOL</returns>
 		IS_PLAYER_PARTIALLY_INSIDE_GARAGE = 0x1761DC5D8471CBAA, // 0x41924877
 
 		/// <summary>
-		/// Parameters: uint garageHash, bool p1, bool p2, bool p3, IntPtr p4
+		/// Parameters: Hash garageHash, BOOL p1, BOOL p2, BOOL p3, Any p4
 		/// </summary>
 		/// <returns>BOOL</returns>
 		ARE_ENTITIES_ENTIRELY_INSIDE_GARAGE = 0x85B6C850546FDDE2, // 0x4BD59750
 
 		/// <summary>
-		/// Parameters: uint garageHash, bool p1, bool p2, bool p3, IntPtr p4
+		/// Parameters: Hash garageHash, BOOL p1, BOOL p2, BOOL p3, Any p4
 		/// </summary>
 		/// <returns>BOOL</returns>
 		IS_ANY_ENTITY_ENTIRELY_INSIDE_GARAGE = 0x673ED815D6E323B7, // 0x7B44D659
 
 		/// <summary>
-		/// Parameters: uint garageHash, Entity entity, float p2, int p3
+		/// Parameters: Hash garageHash, Entity entity, float p2, int p3
 		/// </summary>
 		/// <remarks>
 		/// Despite the name, it does work for any entity type.<br/>
@@ -29684,7 +29684,7 @@ namespace GTA.Native
 		IS_OBJECT_ENTIRELY_INSIDE_GARAGE = 0x372EF6699146A1E4, // 0x142C8F76
 
 		/// <summary>
-		/// Parameters: uint garageHash, Entity entity, int p2
+		/// Parameters: Hash garageHash, Entity entity, int p2
 		/// </summary>
 		/// <remarks>
 		/// Despite the name, it does work for any entity type.<br/>
@@ -29693,7 +29693,7 @@ namespace GTA.Native
 		IS_OBJECT_PARTIALLY_INSIDE_GARAGE = 0xF0EED5A6BC7B237A, // 0x95A9AB2B
 
 		/// <summary>
-		/// Parameters: uint garageHash, bool isNetwork
+		/// Parameters: Hash garageHash, BOOL isNetwork
 		/// </summary>
 		/// <returns>void</returns>
 		CLEAR_GARAGE = 0xDA05194260CDCDF9,
@@ -29703,13 +29703,13 @@ namespace GTA.Native
 		_CLEAR_GARAGE_AREA = 0xDA05194260CDCDF9,
 
 		/// <summary>
-		/// Parameters: uint garageHash, bool vehicles, bool peds, bool objects, bool isNetwork
+		/// Parameters: Hash garageHash, BOOL vehicles, BOOL peds, BOOL objects, BOOL isNetwork
 		/// </summary>
 		/// <returns>void</returns>
 		CLEAR_OBJECTS_INSIDE_GARAGE = 0x190428512B240692, // 0xA565E27E
 
 		/// <summary>
-		/// Parameters: int id, bool toggle
+		/// Parameters: int id, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Sets a flag. A valid id is 0x157DC10D<br/>
@@ -29718,7 +29718,7 @@ namespace GTA.Native
 		DISABLE_TIDYING_UP_IN_GARAGE = 0x659F9D71F52843F8,
 
 		/// <summary>
-		/// Parameters: uint garageHash, bool toggle
+		/// Parameters: Hash garageHash, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		ENABLE_SAVING_IN_GARAGE = 0xF2E1A7133DD356A6, // 0x43BB7E48
@@ -29727,7 +29727,7 @@ namespace GTA.Native
 		CLOSE_SAFEHOUSE_GARAGES = 0x66A49D021870FE88, // 0x6158959E
 
 		/// <summary>
-		/// Parameters: float x, float y, float z, float radius, uint hash, bool p5
+		/// Parameters: float x, float y, float z, float radius, Hash hash, BOOL p5
 		/// </summary>
 		/// <remarks>
 		/// p5 is usually 0.<br/>
@@ -29736,7 +29736,7 @@ namespace GTA.Native
 		DOES_OBJECT_OF_TYPE_EXIST_AT_COORDS = 0xBFA48E2FF417213F, // 0x23FF2BA4
 
 		/// <summary>
-		/// Parameters: float xPos, float yPos, float zPos, float x1, float y1, float z1, float x2, float y2, float z2, float width, bool debug, bool includeZ
+		/// Parameters: float xPos, float yPos, float zPos, float x1, float y1, float z1, float x2, float y2, float z2, float width, BOOL debug, BOOL includeZ
 		/// </summary>
 		/// <remarks>
 		/// An angled area is an X-Z oriented rectangle with three parameters:<br/>
@@ -29751,7 +29751,7 @@ namespace GTA.Native
 		IS_POINT_IN_ANGLED_AREA = 0x2A70BAE8883E4C81, // 0x73BCFFDC
 
 		/// <summary>
-		/// Parameters: Object object, bool toggle
+		/// Parameters: Object @object, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Overrides the climbing/blocking flags of the object, used in the native scripts mostly for "prop_dock_bouy_*"<br/>
@@ -29764,7 +29764,7 @@ namespace GTA.Native
 		_SET_OBJECT_CAN_CLIMB_ON = 0x4D89D607CB3DD1D2, // 0x19B17769
 
 		/// <summary>
-		/// Parameters: Object object, float weight, float p2, float p3, float p4, float p5, float gravity, float p7, float p8, float p9, float p10, float buoyancy
+		/// Parameters: Object @object, float weight, float p2, float p3, float p4, float p5, float gravity, float p7, float p8, float p9, float p10, float buoyancy
 		/// </summary>
 		/// <remarks>
 		/// Adjust the physics parameters of a prop, or otherwise known as "object". This is useful for simulated gravity.<br/>
@@ -29778,79 +29778,79 @@ namespace GTA.Native
 		SET_OBJECT_PHYSICS_PARAMS = 0xF6DF6E90DE7DF90F, // 0xE8D11C58
 
 		/// <summary>
-		/// Parameters: IntPtr p0, bool p1
+		/// Parameters: Any p0, BOOL p1
 		/// </summary>
 		/// <returns>float</returns>
 		GET_OBJECT_FRAGMENT_DAMAGE_HEALTH = 0xB6FBFD079B8D0596, // 0xF0B330AD
 
 		/// <summary>
-		/// Parameters: Object object, bool toggle
+		/// Parameters: Object @object, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_ACTIVATE_OBJECT_PHYSICS_AS_SOON_AS_IT_IS_UNFROZEN = 0x406137F8EF90EAF5, // 0x3E263AE1
 
 		/// <summary>
-		/// Parameters: float x, float y, float z, float range, bool p4
+		/// Parameters: float x, float y, float z, float range, BOOL p4
 		/// </summary>
 		/// <returns>BOOL</returns>
 		IS_ANY_OBJECT_NEAR_POINT = 0x397DC58FF00298D1, // 0xE9E46941
 
 		/// <summary>
-		/// Parameters: uint objectHash, float x, float y, float z, float range
+		/// Parameters: Hash objectHash, float x, float y, float z, float range
 		/// </summary>
 		/// <returns>BOOL</returns>
 		IS_OBJECT_NEAR_POINT = 0x8C90FE4B381BA60A, // 0x50A62C43
 
 		/// <summary>
-		/// Parameters: Object object
+		/// Parameters: Object @object
 		/// </summary>
 		/// <returns>void</returns>
 		REMOVE_OBJECT_HIGH_DETAIL_MODEL = 0x4A39DB43E47CF3AA, // 0xE3261B35
 
 		/// <summary>
-		/// Parameters: Object p0, IntPtr p1, bool p2
+		/// Parameters: Object p0, Any p1, BOOL p2
 		/// </summary>
 		/// <returns>void</returns>
 		BREAK_OBJECT_FRAGMENT_CHILD = 0xE7E4C198B0185900, // 0x1E82C2AE
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2
+		/// Parameters: Any p0, Any p1, Any p2
 		/// </summary>
 		/// <returns>void</returns>
 		DAMAGE_OBJECT_FRAGMENT_CHILD = 0xE05F6AEEFEB0BB02,
 
 		/// <summary>
-		/// Parameters: Object object
+		/// Parameters: Object @object
 		/// </summary>
 		/// <returns>void</returns>
 		FIX_OBJECT_FRAGMENT = 0xF9C1681347C8BD15,
 
 		/// <summary>
-		/// Parameters: Object object
+		/// Parameters: Object @object
 		/// </summary>
 		/// <returns>void</returns>
 		TRACK_OBJECT_VISIBILITY = 0xB252BC036B525623, // 0x46D06B9A
 
 		/// <summary>
-		/// Parameters: Object object
+		/// Parameters: Object @object
 		/// </summary>
 		/// <returns>BOOL</returns>
 		IS_OBJECT_VISIBLE = 0x8B32ACE6326A7546, // 0xF4FD8AE4
 
 		/// <summary>
-		/// Parameters: Object object, bool toggle
+		/// Parameters: Object @object, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_OBJECT_IS_SPECIAL_GOLFBALL = 0xC6033D32241F6FB5, // 0xF4A1A14A
 
 		/// <summary>
-		/// Parameters: IntPtr p0, bool p1
+		/// Parameters: Any p0, BOOL p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_OBJECT_TAKES_DAMAGE_FROM_COLLIDING_WITH_BUILDINGS = 0xEB6F1A9B5510A5D2, // 0xAF016CC1
 
 		/// <summary>
-		/// Parameters: bool value
+		/// Parameters: BOOL value
 		/// </summary>
 		/// <returns>void</returns>
 		ALLOW_DAMAGE_EVENTS_FOR_NON_NETWORKED_OBJECTS = 0xABDABF4E1EDECBFA,
@@ -29860,7 +29860,7 @@ namespace GTA.Native
 		_SET_UNK_GLOBAL_BOOL_RELATED_TO_DAMAGE = 0xABDABF4E1EDECBFA,
 
 		/// <summary>
-		/// Parameters: Object object, bool toggle
+		/// Parameters: Object @object, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Requires a component_at_*_flsh to be attached to the weapon object<br/>
@@ -29873,7 +29873,7 @@ namespace GTA.Native
 		_SET_CREATE_WEAPON_OBJECT_LIGHT_SOURCE = 0xBCE595371A5FBAAF, // 0x3A68AA46
 
 		/// <summary>
-		/// Parameters: float x, float y, float z, float radius, string name
+		/// Parameters: float x, float y, float z, float radius, const char* name
 		/// </summary>
 		/// <remarks>
 		/// Example:<br/>
@@ -29887,7 +29887,7 @@ namespace GTA.Native
 		_GET_DES_OBJECT = 0xB48FCED898292E52, // 0xA286DE96
 
 		/// <summary>
-		/// Parameters: Object object, int state
+		/// Parameters: Object @object, int state
 		/// </summary>
 		/// <remarks>
 		/// Defines the state of a destructible object.<br/>
@@ -29905,7 +29905,7 @@ namespace GTA.Native
 		_SET_DES_OBJECT_STATE = 0x5C29F698D404C5E1, // 0x21F51560
 
 		/// <summary>
-		/// Parameters: Object object
+		/// Parameters: Object @object
 		/// </summary>
 		/// <remarks>
 		/// Get a destructible object's state.<br/>
@@ -29921,7 +29921,7 @@ namespace GTA.Native
 		_GET_DES_OBJECT_STATE = 0x899BA936634A322E, // 0xF1B8817A
 
 		/// <summary>
-		/// Parameters: Object object
+		/// Parameters: Object @object
 		/// </summary>
 		/// <remarks>
 		/// Returns true if a destructible object with this handle exists, false otherwise.  <br/>
@@ -29934,7 +29934,7 @@ namespace GTA.Native
 		_DOES_DES_OBJECT_EXIST = 0x52AF537A0C5B8AAD, // 0xE08C834D
 
 		/// <summary>
-		/// Parameters: Object object
+		/// Parameters: Object @object
 		/// </summary>
 		/// <remarks>
 		/// `object`: The des-object handle to get the animation progress from.<br/>
@@ -29948,7 +29948,7 @@ namespace GTA.Native
 		_GET_DES_OBJECT_ANIM_PROGRESS = 0x260EE4FDBDF4DB01, // 0x020497DE
 
 		/// <summary>
-		/// Parameters: uint pickupHash, float posX, float posY, float posZ, int p4, int value, bool p6, uint modelHash
+		/// Parameters: Hash pickupHash, float posX, float posY, float posZ, int p4, int value, BOOL p6, Hash modelHash
 		/// </summary>
 		/// <remarks>
 		/// Full list of pickup types by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/pickupTypes.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/pickupTypes.json</see><br/>
@@ -29957,7 +29957,7 @@ namespace GTA.Native
 		CREATE_PICKUP = 0xFBA08C503DD5FA58, // 0x5E14DF68
 
 		/// <summary>
-		/// Parameters: uint pickupHash, float posX, float posY, float posZ, float rotX, float rotY, float rotZ, int flag, int amount, IntPtr p9, bool p10, uint modelHash
+		/// Parameters: Hash pickupHash, float posX, float posY, float posZ, float rotX, float rotY, float rotZ, int flag, int amount, Any p9, BOOL p10, Hash modelHash
 		/// </summary>
 		/// <remarks>
 		/// flags:<br/>
@@ -29972,13 +29972,13 @@ namespace GTA.Native
 		FORCE_PICKUP_ROTATE_FACE_UP = 0x394CD08E31313C28,
 
 		/// <summary>
-		/// Parameters: uint pickupHash, Pickup pickup
+		/// Parameters: Hash pickupHash, Pickup pickup
 		/// </summary>
 		/// <returns>void</returns>
 		SET_CUSTOM_PICKUP_WEAPON_HASH = 0x826D1EE4D1CAFC78,
 
 		/// <summary>
-		/// Parameters: uint pickupHash, float posX, float posY, float posZ, int flags, int value, uint modelHash, bool p7, bool p8
+		/// Parameters: Hash pickupHash, float posX, float posY, float posZ, int flags, int value, Hash modelHash, BOOL p7, BOOL p8
 		/// </summary>
 		/// <remarks>
 		/// Full list of pickup types by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/pickupTypes.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/pickupTypes.json</see><br/>
@@ -29987,7 +29987,7 @@ namespace GTA.Native
 		CREATE_AMBIENT_PICKUP = 0x673966A0C0FD7171, // 0x17B99CE7
 
 		/// <summary>
-		/// Parameters: uint pickupHash, float posX, float posY, float posZ, int flags, int value, uint modelHash, bool p7, bool p8
+		/// Parameters: Hash pickupHash, float posX, float posY, float posZ, int flags, int value, Hash modelHash, BOOL p7, BOOL p8
 		/// </summary>
 		/// <returns>Object</returns>
 		CREATE_NON_NETWORKED_AMBIENT_PICKUP = 0x9C93764223E29C50,
@@ -29997,13 +29997,13 @@ namespace GTA.Native
 		_CREATE_NON_NETWORKED_AMBIENT_PICKUP = 0x9C93764223E29C50,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		BLOCK_PLAYERS_FOR_AMBIENT_PICKUP = 0x1E3F1B1B891A2AAA,
 
 		/// <summary>
-		/// Parameters: uint pickupHash, float x, float y, float z, bool placeOnGround, uint modelHash
+		/// Parameters: Hash pickupHash, float x, float y, float z, BOOL placeOnGround, Hash modelHash
 		/// </summary>
 		/// <remarks>
 		/// Full list of pickup types by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/pickupTypes.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/pickupTypes.json</see><br/>
@@ -30012,7 +30012,7 @@ namespace GTA.Native
 		CREATE_PORTABLE_PICKUP = 0x2EAF1FDB2FB55698, // 0x8C886BE5
 
 		/// <summary>
-		/// Parameters: uint pickupHash, float x, float y, float z, bool placeOnGround, uint modelHash
+		/// Parameters: Hash pickupHash, float x, float y, float z, BOOL placeOnGround, Hash modelHash
 		/// </summary>
 		/// <remarks>
 		/// Full list of pickup types by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/pickupTypes.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/pickupTypes.json</see><br/>
@@ -30037,13 +30037,13 @@ namespace GTA.Native
 		DETACH_PORTABLE_PICKUP_FROM_PED = 0xCF463D1E9A0AECB1, // 0x1D094562
 
 		/// <summary>
-		/// Parameters: Object object
+		/// Parameters: Object @object
 		/// </summary>
 		/// <returns>void</returns>
 		FORCE_PORTABLE_PICKUP_LAST_ACCESSIBLE_POSITION_SETTING = 0x5CE2E45A5CE2E45A,
 
 		/// <summary>
-		/// Parameters: Object pickupObject, bool toggle
+		/// Parameters: Object pickupObject, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		HIDE_PORTABLE_PICKUP_WHEN_DETACHED = 0x867458251D47CCB2, // 0x1F63B042
@@ -30053,13 +30053,13 @@ namespace GTA.Native
 		_HIDE_PICKUP = 0x867458251D47CCB2, // 0x1F63B042
 
 		/// <summary>
-		/// Parameters: uint modelHash, int number
+		/// Parameters: Hash modelHash, int number
 		/// </summary>
 		/// <returns>void</returns>
 		SET_MAX_NUM_PORTABLE_PICKUPS_CARRIED_BY_PLAYER = 0x0BF3B3BD47D79C08, // 0x7EFBA039
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_LOCAL_PLAYER_CAN_COLLECT_PORTABLE_PICKUPS = 0x78857FC65CADB909, // 0xA3CDF152
@@ -30093,13 +30093,13 @@ namespace GTA.Native
 		GET_PICKUP_COORDS = 0x225B8B35C88029B3, // 0xC2E1E2C5
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		SUPPRESS_PICKUP_SOUND_FOR_PICKUP = 0x8DCA505A5C196F05,
 
 		/// <summary>
-		/// Parameters: uint pickupHash
+		/// Parameters: Hash pickupHash
 		/// </summary>
 		/// <remarks>
 		/// Full list of pickup types by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/pickupTypes.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/pickupTypes.json</see><br/>
@@ -30120,7 +30120,7 @@ namespace GTA.Native
 		REMOVE_PICKUP = 0x3288D8ACAECD2AB2, // 0x64A7A0E0
 
 		/// <summary>
-		/// Parameters: float x, float y, float z, int value, int amount, uint model
+		/// Parameters: float x, float y, float z, int value, int amount, Hash model
 		/// </summary>
 		/// <remarks>
 		/// Spawns one or more money pickups.<br/>
@@ -30158,19 +30158,19 @@ namespace GTA.Native
 		GET_PICKUP_OBJECT = 0x5099BC55630B25AE, // 0x6052E62E
 
 		/// <summary>
-		/// Parameters: Object object
+		/// Parameters: Object @object
 		/// </summary>
 		/// <returns>BOOL</returns>
 		IS_OBJECT_A_PICKUP = 0xFC481C641EBBD27D, // 0x93D23399
 
 		/// <summary>
-		/// Parameters: Object object
+		/// Parameters: Object @object
 		/// </summary>
 		/// <returns>BOOL</returns>
 		IS_OBJECT_A_PORTABLE_PICKUP = 0x0378C08504160D0D, // 0x0F0E94FF
 
 		/// <summary>
-		/// Parameters: uint pickupHash, float x, float y, float z, float radius
+		/// Parameters: Hash pickupHash, float x, float y, float z, float radius
 		/// </summary>
 		/// <remarks>
 		/// Full list of pickup types by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/pickupTypes.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/pickupTypes.json</see><br/>
@@ -30189,13 +30189,13 @@ namespace GTA.Native
 		SET_PICKUP_REGENERATION_TIME = 0x78015C9B4B3ECC9D, // 0xAB11267D
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		FORCE_PICKUP_REGENERATE = 0x758A5C1B3B1E1990,
 
 		/// <summary>
-		/// Parameters: Player player, uint pickupHash, bool toggle
+		/// Parameters: Player player, Hash pickupHash, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Disabling/enabling a player from getting pickups. From the scripts:<br/>
@@ -30215,7 +30215,7 @@ namespace GTA.Native
 		_TOGGLE_USE_PICKUPS_FOR_PLAYER = 0x616093EC6B139DD9, // 0x7FADB4B9
 
 		/// <summary>
-		/// Parameters: uint modelHash, bool toggle
+		/// Parameters: Hash modelHash, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Maximum amount of pickup models that can be disallowed is 30.<br/>
@@ -30228,7 +30228,7 @@ namespace GTA.Native
 		_SET_LOCAL_PLAYER_CAN_USE_PICKUPS_WITH_THIS_MODEL = 0x88EAEC617CD26926, // 0x3A8F1BF7
 
 		/// <summary>
-		/// Parameters: uint pickupHash
+		/// Parameters: Hash pickupHash
 		/// </summary>
 		/// <remarks>
 		/// Full list of pickup types by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/pickupTypes.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/pickupTypes.json</see><br/>
@@ -30237,19 +30237,19 @@ namespace GTA.Native
 		ALLOW_ALL_PLAYERS_TO_COLLECT_PICKUPS_OF_TYPE = 0xFDC07C58E8AAB715,
 
 		/// <summary>
-		/// Parameters: Object object, IntPtr p1, bool p2
+		/// Parameters: Object @object, Any p1, BOOL p2
 		/// </summary>
 		/// <returns>void</returns>
 		SET_TEAM_PICKUP_OBJECT = 0x53E0DF1A2A3CF0CA, // 0x77687DC5
 
 		/// <summary>
-		/// Parameters: Object object, bool p1, bool p2
+		/// Parameters: Object @object, BOOL p1, BOOL p2
 		/// </summary>
 		/// <returns>void</returns>
 		PREVENT_COLLECTION_OF_PORTABLE_PICKUP = 0x92AEFB5F6E294023, // 0xCBB5F9B6
 
 		/// <summary>
-		/// Parameters: Pickup pickup, bool toggle
+		/// Parameters: Pickup pickup, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PICKUP_OBJECT_GLOW_WHEN_UNCOLLECTABLE = 0x27F248C3FEBFAAD3,
@@ -30264,7 +30264,7 @@ namespace GTA.Native
 		SET_PICKUP_GLOW_OFFSET = 0x0596843B34B95CE5,
 
 		/// <summary>
-		/// Parameters: Pickup pickup, float p1, bool p2
+		/// Parameters: Pickup pickup, float p1, BOOL p2
 		/// </summary>
 		/// <remarks>
 		/// p1 is always -0.2 in scripts and p2 is always true in scripts.<br/>
@@ -30279,19 +30279,19 @@ namespace GTA.Native
 		SET_OBJECT_GLOW_IN_SAME_TEAM = 0x62454A641B41F3C5,
 
 		/// <summary>
-		/// Parameters: Pickup pickup, bool toggle
+		/// Parameters: Pickup pickup, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PICKUP_OBJECT_ARROW_MARKER = 0x39A5FB7EAF150840,
 
 		/// <summary>
-		/// Parameters: Pickup pickup, bool toggle
+		/// Parameters: Pickup pickup, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		ALLOW_PICKUP_ARROW_MARKER_WHEN_UNCOLLECTABLE = 0x834344A414C7C85D,
 
 		/// <summary>
-		/// Parameters: uint pickupHash
+		/// Parameters: Hash pickupHash
 		/// </summary>
 		/// <returns>int</returns>
 		GET_DEFAULT_AMMO_FOR_WEAPON_PICKUP = 0xDB41D07A45A6D4B7, // 0x000E92DC
@@ -30310,31 +30310,31 @@ namespace GTA.Native
 		_GET_PICKUP_GENERATION_RANGE_MULTIPLIER = 0xB3ECA65C7317F174,
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>void</returns>
 		SET_ONLY_ALLOW_AMMO_COLLECTION_WHEN_LOW = 0x31F924B53EADDF65, // 0xDB18FA01
 
 		/// <summary>
-		/// Parameters: Pickup pickup, bool toggle
+		/// Parameters: Pickup pickup, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PICKUP_UNCOLLECTABLE = 0x1C1B69FAE509BA97,
 
 		/// <summary>
-		/// Parameters: Pickup pickup, bool toggle
+		/// Parameters: Pickup pickup, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PICKUP_TRANSPARENT_WHEN_UNCOLLECTABLE = 0x858EC9FD25DE04AA,
 
 		/// <summary>
-		/// Parameters: Pickup pickup, bool toggle
+		/// Parameters: Pickup pickup, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PICKUP_HIDDEN_WHEN_UNCOLLECTABLE = 0x3ED2B83AB2E82799,
 
 		/// <summary>
-		/// Parameters: Pickup pickup, bool toggle
+		/// Parameters: Pickup pickup, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PICKUP_OBJECT_TRANSPARENT_WHEN_UNCOLLECTABLE = 0x8881C98A31117998,
@@ -30349,31 +30349,31 @@ namespace GTA.Native
 		SET_PICKUP_OBJECT_ALPHA_WHEN_TRANSPARENT = 0x8CFF648FBD7330F1,
 
 		/// <summary>
-		/// Parameters: Pickup pickup, bool toggle
+		/// Parameters: Pickup pickup, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PORTABLE_PICKUP_PERSIST = 0x46F3ADD1E2D5BAF2,
 
 		/// <summary>
-		/// Parameters: Pickup pickup, bool toggle
+		/// Parameters: Pickup pickup, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		ALLOW_PORTABLE_PICKUP_TO_MIGRATE_TO_NON_PARTICIPANTS = 0x641F272B52E2F0F8,
 
 		/// <summary>
-		/// Parameters: Pickup pickup, bool toggle
+		/// Parameters: Pickup pickup, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		FORCE_ACTIVATE_PHYSICS_ON_UNFIXED_PICKUP = 0x4C134B4DF76025D0,
 
 		/// <summary>
-		/// Parameters: Pickup pickup, bool toggle
+		/// Parameters: Pickup pickup, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		ALLOW_PICKUP_BY_NONE_PARTICIPANT = 0xAA059C615DE9DD03,
 
 		/// <summary>
-		/// Parameters: int rewardType, bool suppress
+		/// Parameters: int rewardType, BOOL suppress
 		/// </summary>
 		/// <remarks>
 		/// enum ePickupRewardType<br/>
@@ -30433,13 +30433,13 @@ namespace GTA.Native
 		SET_PICKUP_OBJECT_COLLECTABLE_IN_VEHICLE = 0x7813E8B8C4AE4799,
 
 		/// <summary>
-		/// Parameters: Pickup pickup, bool toggle
+		/// Parameters: Pickup pickup, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PICKUP_TRACK_DAMAGE_EVENTS = 0xBFFE53AE7E67FCDC,
 
 		/// <summary>
-		/// Parameters: Entity entity, bool toggle
+		/// Parameters: Entity entity, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Sets entity+38 to C (when false) or 0xFF3f (when true)<br/>
@@ -30448,13 +30448,13 @@ namespace GTA.Native
 		SET_ENTITY_FLAG_SUPPRESS_SHADOW = 0xD05A3241B9A86F19,
 
 		/// <summary>
-		/// Parameters: Object object, bool toggle
+		/// Parameters: Object @object, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_ENTITY_FLAG_RENDER_SMALL_SHADOW = 0xB2D0BDE54F0E8E5A, // 0x132B6D92
 
 		/// <summary>
-		/// Parameters: uint pickupHash
+		/// Parameters: Hash pickupHash
 		/// </summary>
 		/// <remarks>
 		/// Full list of pickup types by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/pickupTypes.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/pickupTypes.json</see><br/>
@@ -30467,7 +30467,7 @@ namespace GTA.Native
 		_GET_WEAPON_HASH_FROM_PICKUP = 0x08F96CA6C551AD51, // 0xEDD01937
 
 		/// <summary>
-		/// Parameters: uint weaponHash
+		/// Parameters: Hash weaponHash
 		/// </summary>
 		/// <remarks>
 		/// Returns the pickup hash for the given weapon hash<br/>
@@ -30480,13 +30480,13 @@ namespace GTA.Native
 		_GET_PICKUP_HASH_FROM_WEAPON = 0xD6429A016084F1A5,
 
 		/// <summary>
-		/// Parameters: Object object
+		/// Parameters: Object @object
 		/// </summary>
 		/// <returns>BOOL</returns>
 		IS_PICKUP_WEAPON_OBJECT_VALID = 0x11D1E53A726891FE, // 0x883DAB2D
 
 		/// <summary>
-		/// Parameters: Object object
+		/// Parameters: Object @object
 		/// </summary>
 		/// <returns>int</returns>
 		GET_OBJECT_TINT_INDEX = 0xE84EB93729C5F36A,
@@ -30496,7 +30496,7 @@ namespace GTA.Native
 		_GET_OBJECT_TEXTURE_VARIATION = 0xE84EB93729C5F36A,
 
 		/// <summary>
-		/// Parameters: Object object, int textureVariation
+		/// Parameters: Object @object, int textureVariation
 		/// </summary>
 		/// <remarks>
 		/// enum ObjectPaintVariants<br/>
@@ -30531,7 +30531,7 @@ namespace GTA.Native
 		_SET_OBJECT_TEXTURE_VARIATION = 0x971DA0055324D033,
 
 		/// <summary>
-		/// Parameters: float x, float y, float z, float radius, uint modelHash, int textureVariation
+		/// Parameters: float x, float y, float z, float radius, Hash modelHash, int textureVariation
 		/// </summary>
 		/// <returns>BOOL</returns>
 		SET_TINT_INDEX_CLOSEST_BUILDING_OF_TYPE = 0xF12E33034D887F66,
@@ -30541,13 +30541,13 @@ namespace GTA.Native
 		_SET_TEXTURE_VARIATION_OF_CLOSEST_OBJECT_OF_TYPE = 0xF12E33034D887F66,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PROP_TINT_INDEX = 0x31574B1B41268673,
 
 		/// <summary>
-		/// Parameters: Object object, bool p1, int r, int g, int b
+		/// Parameters: Object @object, BOOL p1, int r, int g, int b
 		/// </summary>
 		/// <returns>BOOL</returns>
 		SET_PROP_LIGHT_COLOR = 0x5F048334B4A4E774,
@@ -30557,13 +30557,13 @@ namespace GTA.Native
 		_SET_OBJECT_LIGHT_COLOR = 0x5F048334B4A4E774,
 
 		/// <summary>
-		/// Parameters: Object object
+		/// Parameters: Object @object
 		/// </summary>
 		/// <returns>BOOL</returns>
 		IS_PROP_LIGHT_OVERRIDEN = 0xADF084FB8F075D06,
 
 		/// <summary>
-		/// Parameters: Object object, bool toggle
+		/// Parameters: Object @object, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_OBJECT_IS_VISIBLE_IN_MIRRORS = 0x3B2FD68DB5F8331C,
@@ -30573,7 +30573,7 @@ namespace GTA.Native
 		_SET_OBJECT_COLOUR = 0x3B2FD68DB5F8331C,
 
 		/// <summary>
-		/// Parameters: Object object, IntPtr p1
+		/// Parameters: Object @object, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_OBJECT_SPEED_BOOST_AMOUNT = 0x96EE0EBA0163DF80,
@@ -30583,7 +30583,7 @@ namespace GTA.Native
 		_SET_OBJECT_STUNT_PROP_SPEEDUP = 0x96EE0EBA0163DF80,
 
 		/// <summary>
-		/// Parameters: Object object, float duration
+		/// Parameters: Object @object, float duration
 		/// </summary>
 		/// <returns>void</returns>
 		SET_OBJECT_SPEED_BOOST_DURATION = 0xDF6CA0330F2E737B,
@@ -30593,7 +30593,7 @@ namespace GTA.Native
 		_SET_OBJECT_STUNT_PROP_DURATION = 0xDF6CA0330F2E737B,
 
 		/// <summary>
-		/// Parameters: uint pickupHash
+		/// Parameters: Hash pickupHash
 		/// </summary>
 		/// <remarks>
 		/// returns pickup hash.<br/>
@@ -30613,7 +30613,7 @@ namespace GTA.Native
 		SET_FORCE_OBJECT_THIS_FRAME = 0xF538081986E49E9D, // 0x3DA41C1A
 
 		/// <summary>
-		/// Parameters: Object object
+		/// Parameters: Object @object
 		/// </summary>
 		/// <remarks>
 		/// is this like setting is as no longer needed?<br/>
@@ -30626,19 +30626,19 @@ namespace GTA.Native
 		_MARK_OBJECT_FOR_DELETION = 0xADBE4809F19F927A, // 0x2048A7DD
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		SET_DISABLE_COLLISIONS_BETWEEN_CARS_AND_CAR_PARACHUTE = 0x8CAAB2BD3EA58BD4,
 
 		/// <summary>
-		/// Parameters: Entity entity, IntPtr p1
+		/// Parameters: Entity entity, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PROJECTILES_SHOULD_EXPLODE_ON_CONTACT = 0x63ECF581BC70E363,
 
 		/// <summary>
-		/// Parameters: Object object, bool toggle, int p2
+		/// Parameters: Object @object, BOOL toggle, int p2
 		/// </summary>
 		/// <remarks>
 		/// Activate the physics to: "xs_prop_arena_{flipper,wall,bollard,turntable,pit}"<br/>
@@ -30651,7 +30651,7 @@ namespace GTA.Native
 		_SET_ENABLE_ARENA_PROP_PHYSICS = 0x911024442F4898F0,
 
 		/// <summary>
-		/// Parameters: Object object, bool toggle, int p2, Ped ped
+		/// Parameters: Object @object, BOOL toggle, int p2, Ped ped
 		/// </summary>
 		/// <returns>void</returns>
 		SET_DRIVE_ARTICULATED_JOINT_WITH_INFLICTOR = 0xB20834A7DD3D8896,
@@ -30661,19 +30661,19 @@ namespace GTA.Native
 		_SET_ENABLE_ARENA_PROP_PHYSICS_ON_PED = 0xB20834A7DD3D8896,
 
 		/// <summary>
-		/// Parameters: Object object, bool toggle
+		/// Parameters: Object @object, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_OBJECT_IS_A_PRESSURE_PLATE = 0x734E1714D077DA9A,
 
 		/// <summary>
-		/// Parameters: Object object, bool p1
+		/// Parameters: Object @object, BOOL p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_WEAPON_IMPACTS_APPLY_GREATER_FORCE = 0x1A6CBB06E2D0D79D,
 
 		/// <summary>
-		/// Parameters: Object object, IntPtr p1
+		/// Parameters: Object @object, Any p1
 		/// </summary>
 		/// <returns>BOOL</returns>
 		GET_IS_ARTICULATED_JOINT_AT_MIN_ANGLE = 0x43C677F1E1158005,
@@ -30683,19 +30683,19 @@ namespace GTA.Native
 		_GET_IS_ARENA_PROP_PHYSICS_DISABLED = 0x43C677F1E1158005,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>BOOL</returns>
 		GET_IS_ARTICULATED_JOINT_AT_MAX_ANGLE = 0x3BD770D281982DB5,
 
 		/// <summary>
-		/// Parameters: Object object, bool toggle
+		/// Parameters: Object @object, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_IS_OBJECT_ARTICULATED = 0x1C57C94A6446492A,
 
 		/// <summary>
-		/// Parameters: Object object, bool toggle
+		/// Parameters: Object @object, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_IS_OBJECT_BALL = 0xB5B7742424BD4445,
@@ -30774,7 +30774,7 @@ namespace GTA.Native
 		GET_CONTROL_NORMAL = 0xEC3C9B8D5327B563, // 0x5DE226A5
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_USE_ADJUSTED_MOUSE_COORDS = 0x5B73C77D9EB66E24,
@@ -30941,7 +30941,7 @@ namespace GTA.Native
 		HAVE_CONTROLS_CHANGED = 0x6CD79468A1E595C6,
 
 		/// <summary>
-		/// Parameters: int control, int action, bool allowXOSwap
+		/// Parameters: int control, int action, BOOL allowXOSwap
 		/// </summary>
 		/// <remarks>
 		/// allowXOSwap appears to always be true.<br/>
@@ -30960,7 +30960,7 @@ namespace GTA.Native
 		GET_CONTROL_INSTRUCTIONAL_BUTTON = 0x0499D7B09FC9B407,
 
 		/// <summary>
-		/// Parameters: int control, int controlGroup, bool allowXOSwap
+		/// Parameters: int control, int controlGroup, BOOL allowXOSwap
 		/// </summary>
 		/// <remarks>
 		/// control: unused parameter<br/>
@@ -31116,7 +31116,7 @@ namespace GTA.Native
 		GET_ALLOW_MOVEMENT_WHILE_ZOOMED = 0xFC859E2374407556, // 0xC0823820
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PLAYERPAD_SHAKES_WHEN_CONTROLLER_DISABLED = 0x798FDEB5B1575088, // 0xA86BD91F
@@ -31131,7 +31131,7 @@ namespace GTA.Native
 		SET_INPUT_EXCLUSIVE = 0xEDE476E5EE29EDB1, // 0x4E8E29E6
 
 		/// <summary>
-		/// Parameters: int control, int action, bool disableRelatedActions
+		/// Parameters: int control, int action, BOOL disableRelatedActions
 		/// </summary>
 		/// <remarks>
 		/// control: see IS_CONTROL_ENABLED<br/>
@@ -31140,7 +31140,7 @@ namespace GTA.Native
 		DISABLE_CONTROL_ACTION = 0xFE99B66D079CF6BC, // 0x3800C0DC
 
 		/// <summary>
-		/// Parameters: int control, int action, bool enableRelatedActions
+		/// Parameters: int control, int action, BOOL enableRelatedActions
 		/// </summary>
 		/// <remarks>
 		/// control: see IS_CONTROL_ENABLED<br/>
@@ -31167,7 +31167,7 @@ namespace GTA.Native
 		ENABLE_ALL_CONTROL_ACTIONS = 0xA5FFE9B05F199DE7, // 0xFC2F119F
 
 		/// <summary>
-		/// Parameters: string schemeName
+		/// Parameters: const char* schemeName
 		/// </summary>
 		/// <remarks>
 		/// Used in carsteal3 script with schemeName = "Carsteal4_spycar".<br/>
@@ -31180,7 +31180,7 @@ namespace GTA.Native
 		_SWITCH_TO_INPUT_MAPPING_SCHEME = 0x3D42B92563939375, // 0xD2C80B2E
 
 		/// <summary>
-		/// Parameters: string schemeName
+		/// Parameters: const char* schemeName
 		/// </summary>
 		/// <remarks>
 		/// Same as INIT_PC_SCRIPTED_CONTROLS<br/>
@@ -31213,7 +31213,7 @@ namespace GTA.Native
 		#region PATHFIND
 
 		/// <summary>
-		/// Parameters: float x1, float y1, float z1, float x2, float y2, float z2, bool nodeEnabled, bool unknown2
+		/// Parameters: float x1, float y1, float z1, float x2, float y2, float z2, BOOL nodeEnabled, BOOL unknown2
 		/// </summary>
 		/// <remarks>
 		/// When nodeEnabled is set to false, all nodes in the area get disabled.<br/>
@@ -31224,7 +31224,7 @@ namespace GTA.Native
 		SET_ROADS_IN_AREA = 0xBF1A602B5BA52FEE, // 0xEBC7B918
 
 		/// <summary>
-		/// Parameters: float x1, float y1, float z1, float x2, float y2, float z2, float width, bool unknown1, bool unknown2, bool unknown3
+		/// Parameters: float x1, float y1, float z1, float x2, float y2, float z2, float width, BOOL unknown1, BOOL unknown2, BOOL unknown3
 		/// </summary>
 		/// <remarks>
 		/// unknown3 is related to `SEND_SCRIPT_WORLD_STATE_EVENT &#38;gt; CNetworkRoadNodeWorldStateData` in networked environments.<br/>
@@ -31234,13 +31234,13 @@ namespace GTA.Native
 		SET_ROADS_IN_ANGLED_AREA = 0x1A5AA1208AF5DB59, // 0xBD088F4B
 
 		/// <summary>
-		/// Parameters: float x1, float y1, float z1, float x2, float y2, float z2, bool p6, IntPtr p7
+		/// Parameters: float x1, float y1, float z1, float x2, float y2, float z2, BOOL p6, Any p7
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_PATHS_IN_AREA = 0x34F060F4BF92E018, // 0x2148EA84
 
 		/// <summary>
-		/// Parameters: float x, float y, float z, bool onGround, Vector3* outPosition, int flags
+		/// Parameters: float x, float y, float z, BOOL onGround, Vector3* outPosition, int flags
 		/// </summary>
 		/// <remarks>
 		/// Flags are:<br/>
@@ -31400,7 +31400,7 @@ namespace GTA.Native
 		_GET_IS_SLOW_ROAD_FLAG = 0x4F5070AA58F69279, // 0x56737A3C
 
 		/// <summary>
-		/// Parameters: float x, float y, float z, float p3, int p4, Vector3* p5, Vector3* p6, IntPtr p7, IntPtr p8, float* p9, bool p10
+		/// Parameters: float x, float y, float z, float p3, int p4, Vector3* p5, Vector3* p6, Any* p7, Any* p8, float* p9, BOOL p10
 		/// </summary>
 		/// <remarks>
 		/// p1 seems to be always 1.0f in the scripts<br/>
@@ -31409,7 +31409,7 @@ namespace GTA.Native
 		GET_CLOSEST_ROAD = 0x132F52BBA570FE92, // 0x567B0E11
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_ALLOW_STREAM_PROLOGUE_NODES = 0x228E5C6AD4D74BFD, // 0xD6A3B458
@@ -31455,13 +31455,13 @@ namespace GTA.Native
 		REQUEST_PATHS_PREFER_ACCURATE_BOUNDINGSTRUCT = 0x07FB139B592FA687, // 0x2CDA5012
 
 		/// <summary>
-		/// Parameters: float p0, float p1, float p2, float p3, float p4, float p5, IntPtr p6
+		/// Parameters: float p0, float p1, float p2, float p3, float p4, float p5, Any p6
 		/// </summary>
 		/// <returns>void</returns>
 		SET_ROADS_BACK_TO_ORIGINAL = 0x1EE7063B80FFC77C, // 0x86AC4A85
 
 		/// <summary>
-		/// Parameters: float x1, float y1, float z1, float x2, float y2, float z2, float width, IntPtr p7
+		/// Parameters: float x1, float y1, float z1, float x2, float y2, float z2, float width, Any p7
 		/// </summary>
 		/// <remarks>
 		/// See IS_POINT_IN_ANGLED_AREA for the definition of an angled area.<br/>
@@ -31477,13 +31477,13 @@ namespace GTA.Native
 		SET_AMBIENT_PED_RANGE_MULTIPLIER_THIS_FRAME = 0x0B919E1FB47CC4E0, // 0x3C5085E4
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3, IntPtr p4, IntPtr p5, IntPtr p6
+		/// Parameters: Any p0, Any p1, Any p2, Any p3, Any p4, Any p5, Any p6
 		/// </summary>
 		/// <returns>void</returns>
 		ADJUST_AMBIENT_PED_SPAWN_DENSITIES_THIS_FRAME = 0xAA76052DDA9BFC3E, // 0xD0F51299
 
 		/// <summary>
-		/// Parameters: float x1, float y1, float z1, float x2, float y2, float z2, IntPtr p6
+		/// Parameters: float x1, float y1, float z1, float x2, float y2, float z2, Any p6
 		/// </summary>
 		/// <remarks>
 		/// p6 is always 0<br/>
@@ -31492,7 +31492,7 @@ namespace GTA.Native
 		SET_PED_PATHS_BACK_TO_ORIGINAL = 0xE04B48F2CC926253, // 0x3F1ABDA4
 
 		/// <summary>
-		/// Parameters: float x, float y, float z, float radius, bool p4, bool p5, bool p6, Vector3* outPosition, int* nodeId
+		/// Parameters: float x, float y, float z, float radius, BOOL p4, BOOL p5, BOOL p6, Vector3* outPosition, int* nodeId
 		/// </summary>
 		/// <returns>BOOL</returns>
 		GET_RANDOM_VEHICLE_NODE = 0x93E0DB8440B73A7D, // 0xAD1476EA
@@ -31511,7 +31511,7 @@ namespace GTA.Native
 		GET_STREET_NAME_AT_COORD = 0x2EB41072B4C1E4C0, // 0xDEBEEFCF
 
 		/// <summary>
-		/// Parameters: float x, float y, float z, bool p3, int* direction, float* p5, float* distToNxJunction
+		/// Parameters: float x, float y, float z, BOOL p3, int* direction, float* p5, float* distToNxJunction
 		/// </summary>
 		/// <remarks>
 		/// p3 is 0 in the only game script occurrence (trevor3) but 1 doesn't seem to make a difference<br/>
@@ -31532,13 +31532,13 @@ namespace GTA.Native
 		GENERATE_DIRECTIONS_TO_COORD = 0xF90125F1F79ECDF8, // 0xED35C094
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_IGNORE_NO_GPS_FLAG = 0x72751156E7678833, // 0xB72CF194
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// See: SET_BLIP_ROUTE<br/>
@@ -31560,7 +31560,7 @@ namespace GTA.Native
 		GET_GPS_BLIP_ROUTE_LENGTH = 0xBBB45C3CF5C8AA85, // 0x4B770634
 
 		/// <summary>
-		/// Parameters: Vector3* result, bool p1, float p2, int p3
+		/// Parameters: Vector3* result, BOOL p1, float p2, int p3
 		/// </summary>
 		/// <remarks>
 		/// p3 can be 0, 1 or 2.<br/>
@@ -31654,7 +31654,7 @@ namespace GTA.Native
 		_IS_NAVMESH_REQUIRED_REGION_OWNED_BY_ANY_THREAD = 0x705A844002B39DC0,
 
 		/// <summary>
-		/// Parameters: float x1, float y1, float z1, float x2, float y2, float z2, bool toggle
+		/// Parameters: float x1, float y1, float z1, float x2, float y2, float z2, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Set toggle true to disable navmesh.<br/>
@@ -31683,25 +31683,25 @@ namespace GTA.Native
 		GET_NUM_NAVMESHES_EXISTING_IN_AREA = 0x01708E8DD3FF8C65, // 0x76AFFBB5
 
 		/// <summary>
-		/// Parameters: float p0, float p1, float p2, float p3, float p4, float p5, float p6, bool p7, IntPtr p8
+		/// Parameters: float p0, float p1, float p2, float p3, float p4, float p5, float p6, BOOL p7, Any p8
 		/// </summary>
 		/// <returns>int</returns>
 		ADD_NAVMESH_BLOCKING_OBJECT = 0xFCD5C8E06E502F5A, // 0x2952BA56
 
 		/// <summary>
-		/// Parameters: IntPtr p0, float p1, float p2, float p3, float p4, float p5, float p6, float p7, IntPtr p8
+		/// Parameters: Any p0, float p1, float p2, float p3, float p4, float p5, float p6, float p7, Any p8
 		/// </summary>
 		/// <returns>void</returns>
 		UPDATE_NAVMESH_BLOCKING_OBJECT = 0x109E99373F290687, // 0x4E9776D0
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		REMOVE_NAVMESH_BLOCKING_OBJECT = 0x46399A7895957C0E, // 0x098602B0
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>BOOL</returns>
 		DOES_NAVMESH_BLOCKING_OBJECT_EXIST = 0x0EAEB0DB4B132399, // 0x4B67D7EE
@@ -31774,7 +31774,7 @@ namespace GTA.Native
 		#region PED
 
 		/// <summary>
-		/// Parameters: int pedType, uint modelHash, float x, float y, float z, float heading, bool isNetwork, bool bScriptHostPed
+		/// Parameters: int pedType, Hash modelHash, float x, float y, float z, float heading, BOOL isNetwork, BOOL bScriptHostPed
 		/// </summary>
 		/// <remarks>
 		/// <see href='https://alloc8or.re/gta5/doc/enums/ePedType.txt'>https://alloc8or.re/gta5/doc/enums/ePedType.txt</see><br/>
@@ -31793,13 +31793,13 @@ namespace GTA.Native
 		DELETE_PED = 0x9614299DCB53E54B, // 0x13EFB9A0
 
 		/// <summary>
-		/// Parameters: Ped ped, bool isNetwork, bool bScriptHostPed, bool copyHeadBlendFlag
+		/// Parameters: Ped ped, BOOL isNetwork, BOOL bScriptHostPed, BOOL copyHeadBlendFlag
 		/// </summary>
 		/// <returns>Ped</returns>
 		CLONE_PED = 0xEF29A16337FACADB, // 0x8C8A8D6E
 
 		/// <summary>
-		/// Parameters: Ped ped, bool isNetwork, bool bScriptHostPed, bool copyHeadBlendFlag, bool p4
+		/// Parameters: Ped ped, BOOL isNetwork, BOOL bScriptHostPed, BOOL copyHeadBlendFlag, BOOL p4
 		/// </summary>
 		/// <returns>Ped</returns>
 		CLONE_PED_ALT = 0x668FD40BCBA5DE48,
@@ -31826,7 +31826,7 @@ namespace GTA.Native
 		_ASSIGN_PLAYER_TO_PED = 0xE952D6431689AD9A, // 0xFC70EEC7
 
 		/// <summary>
-		/// Parameters: Ped ped, Ped targetPed, bool p2
+		/// Parameters: Ped ped, Ped targetPed, BOOL p2
 		/// </summary>
 		/// <returns>void</returns>
 		CLONE_PED_TO_TARGET_ALT = 0x148B08C2D2ACB884,
@@ -31836,7 +31836,7 @@ namespace GTA.Native
 		_CLONE_PED_TO_TARGET_EX = 0x148B08C2D2ACB884,
 
 		/// <summary>
-		/// Parameters: Ped ped, Vehicle vehicle, bool atGetIn
+		/// Parameters: Ped ped, Vehicle vehicle, BOOL atGetIn
 		/// </summary>
 		/// <remarks>
 		/// Gets a value indicating whether the specified ped is in the specified vehicle.<br/>
@@ -31846,13 +31846,13 @@ namespace GTA.Native
 		IS_PED_IN_VEHICLE = 0xA3EE4A07279BB9DB, // 0x7DA6BC83
 
 		/// <summary>
-		/// Parameters: Ped ped, uint modelHash
+		/// Parameters: Ped ped, Hash modelHash
 		/// </summary>
 		/// <returns>BOOL</returns>
 		IS_PED_IN_MODEL = 0x796D90EFB19AA332, // 0xA6438D4B
 
 		/// <summary>
-		/// Parameters: Ped ped, bool atGetIn
+		/// Parameters: Ped ped, BOOL atGetIn
 		/// </summary>
 		/// <remarks>
 		/// Gets a value indicating whether the specified ped is in any vehicle.<br/>
@@ -31900,7 +31900,7 @@ namespace GTA.Native
 		IS_PED_FATALLY_INJURED = 0xD839450756ED5A80, // 0xBADA0093
 
 		/// <summary>
-		/// Parameters: Ped ped, bool p1
+		/// Parameters: Ped ped, BOOL p1
 		/// </summary>
 		/// <remarks>
 		/// Seems to consistently return true if the ped is dead.<br/>
@@ -31943,7 +31943,7 @@ namespace GTA.Native
 		IS_PED_A_PLAYER = 0x12534C348C6CB68B, // 0x404794CA
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, int pedType, uint modelHash, int seat, bool isNetwork, bool bScriptHostPed
+		/// Parameters: Vehicle vehicle, int pedType, Hash modelHash, int seat, BOOL isNetwork, BOOL bScriptHostPed
 		/// </summary>
 		/// <remarks>
 		/// pedType: see CREATE_PED<br/>
@@ -32000,13 +32000,13 @@ namespace GTA.Native
 		IS_PED_STOPPED = 0x530944F6F4B8A214, // 0xA0DC0B87
 
 		/// <summary>
-		/// Parameters: Ped ped, float x1, float y1, float z1, float x2, float y2, float z2, bool p7, bool p8
+		/// Parameters: Ped ped, float x1, float y1, float z1, float x2, float y2, float z2, BOOL p7, BOOL p8
 		/// </summary>
 		/// <returns>BOOL</returns>
 		IS_PED_SHOOTING_IN_AREA = 0x7E9DFE24AC1E58EF, // 0x741BF04F
 
 		/// <summary>
-		/// Parameters: float x1, float y1, float z1, float x2, float y2, float z2, bool p6, bool p7
+		/// Parameters: float x1, float y1, float z1, float x2, float y2, float z2, BOOL p6, BOOL p7
 		/// </summary>
 		/// <returns>BOOL</returns>
 		IS_ANY_PED_SHOOTING_IN_AREA = 0xA0D3D71EA1086C55, // 0x91833867
@@ -32042,13 +32042,13 @@ namespace GTA.Native
 		SET_AMBIENT_LAW_PED_ACCURACY_MODIFIER = 0x87DDEB611B329A9C,
 
 		/// <summary>
-		/// Parameters: Ped ped, uint modelHash
+		/// Parameters: Ped ped, Hash modelHash
 		/// </summary>
 		/// <returns>BOOL</returns>
 		IS_PED_MODEL = 0xC9D55B1A358A5BF7, // 0x5F1DDFCB
 
 		/// <summary>
-		/// Parameters: Ped ped, uint weaponHash
+		/// Parameters: Ped ped, Hash weaponHash
 		/// </summary>
 		/// <remarks>
 		/// Forces the ped to fall back and kills it.<br/>
@@ -32103,13 +32103,13 @@ namespace GTA.Native
 		SET_PED_INTO_VEHICLE = 0xF75B0D629E1C063D, // 0x07500C79
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_ALLOW_VEHICLES_OVERRIDE = 0x3C028C636A414ED9, // 0x58A80BD5
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>BOOL</returns>
 		CAN_CREATE_RANDOM_PED = 0x3E8349C08E4B82E4, // 0xF9ABE88F
@@ -32131,7 +32131,7 @@ namespace GTA.Native
 		CREATE_RANDOM_PED = 0xB4AC7D0CF06BFE8F, // 0x5A949543
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool returnHandle
+		/// Parameters: Vehicle vehicle, BOOL returnHandle
 		/// </summary>
 		/// <returns>Ped</returns>
 		CREATE_RANDOM_PED_AS_DRIVER = 0x9B62392B474F44A0, // 0xB927CE9A
@@ -32149,13 +32149,13 @@ namespace GTA.Native
 		SET_PED_MOVE_ANIMS_BLEND_OUT = 0x9E8C908F41584ECD, // 0x20E01957
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_CAN_BE_DRAGGED_OUT = 0xC1670E958EEE24E5, // 0xAA7F1131
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// ntoggle was always false except in one instance (b678).<br/>
@@ -32183,7 +32183,7 @@ namespace GTA.Native
 		IS_PED_HUMAN = 0xB980061DA992779D, // 0x194BB7B0
 
 		/// <summary>
-		/// Parameters: Ped ped, bool includeLastVehicle
+		/// Parameters: Ped ped, BOOL includeLastVehicle
 		/// </summary>
 		/// <remarks>
 		/// Gets the vehicle the specified Ped is in. Returns 0 if the ped is/was not in a vehicle.<br/>
@@ -32297,7 +32297,7 @@ namespace GTA.Native
 		GET_PED_MONEY = 0x3F69145BBA87BAE7, // 0xEB3C4C7E
 
 		/// <summary>
-		/// Parameters: float p0, IntPtr p1
+		/// Parameters: float p0, Any p1
 		/// </summary>
 		/// <remarks>
 		/// Related to Peds dropping pickup_health_snack; p0 is a value between [0.0, 1.0] that corresponds to drop rate<br/>
@@ -32306,19 +32306,19 @@ namespace GTA.Native
 		SET_HEALTH_SNACKS_CARRIED_BY_ALL_NEW_PEDS = 0xFF4803BC019852D9, // 0xD41C9AED
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>void</returns>
 		SET_AMBIENT_PEDS_DROP_MONEY = 0x6B0E6172C9A4D902, // 0x30B98369
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>void</returns>
 		SET_BLOCKING_OF_NON_TEMPORARY_EVENTS_FOR_AMBIENT_PEDS_THIS_FRAME = 0x9911F4A24485F653, // 0x02A080C8
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Ped no longer takes critical damage modifiers if set to FALSE.<br/>
@@ -32328,7 +32328,7 @@ namespace GTA.Native
 		SET_PED_SUFFERS_CRITICAL_HITS = 0xEBD76F2359F190AC, // 0x6F6FC7E6
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_UPPER_BODY_DAMAGE_ONLY = 0xAFC976FD0580C7B3, // 0x1572022A
@@ -32408,7 +32408,7 @@ namespace GTA.Native
 		IS_PED_IN_FLYING_VEHICLE = 0x9134873537FA419C, // 0xCA072485
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_DIES_IN_WATER = 0x56CEF0AC79073BDE, // 0x604C872B
@@ -32424,7 +32424,7 @@ namespace GTA.Native
 		_GET_PED_DIES_IN_WATER = 0x65671A4FB8218930,
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_DIES_IN_SINKING_VEHICLE = 0xD718A22995E2B4BC, // 0x8D4D9ABB
@@ -32436,13 +32436,13 @@ namespace GTA.Native
 		GET_PED_ARMOUR = 0x9483AF821605B1D8, // 0x2CE311A7
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_STAY_IN_VEHICLE_WHEN_JACKED = 0xEDF4079F9D54C9A1, // 0xB014A09C
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_CAN_BE_SHOT_IN_VEHICLE = 0xC7EF1BA83230BA07, // 0x5DB7B3A9
@@ -32478,37 +32478,37 @@ namespace GTA.Native
 		RESET_AI_MELEE_WEAPON_DAMAGE_MODIFIER = 0x46E56A7CD1D63C3F, // 0x97886238
 
 		/// <summary>
-		/// Parameters: Ped ped, bool p1
+		/// Parameters: Ped ped, BOOL p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_TREAT_AS_AMBIENT_PED_FOR_DRIVER_LOCKON = 0x2F3C3D9F50681DE4, // 0xCC9D7F1A
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_CAN_BE_TARGETTED = 0x63F58F7C80513AAD, // 0x75C49F74
 
 		/// <summary>
-		/// Parameters: Ped ped, int team, bool toggle
+		/// Parameters: Ped ped, int team, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_CAN_BE_TARGETTED_BY_TEAM = 0xBF1CA77833E58F2C, // 0xB103A8E1
 
 		/// <summary>
-		/// Parameters: Ped ped, Player player, bool toggle
+		/// Parameters: Ped ped, Player player, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_CAN_BE_TARGETTED_BY_PLAYER = 0x66B57B72E0836A76, // 0xD050F490
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_ALLOW_LOCKON_TO_PED_IF_FRIENDLY = 0x061CB768363D6424, // 0x7DA12905
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_USE_CAMERA_HEADING_FOR_DESIRED_DIRECTION_LOCK_ON_TEST = 0xFD325494792302D7, // 0x7F67671D
@@ -32548,13 +32548,13 @@ namespace GTA.Native
 		IS_PED_JUMPING = 0xCEDABC5900A0BF97, // 0x07E5BC0E
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>BOOL</returns>
 		IS_PED_LANDING = 0x412F1364FA066CFB,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>BOOL</returns>
 		IS_PED_DOING_A_BEAST_JUMP = 0x451D05012CCEC234,
@@ -32637,13 +32637,13 @@ namespace GTA.Native
 		GET_PED_PARACHUTE_TINT_INDEX = 0xEAF5F7E5AE7C6C9D, // 0xE9E7FAC5
 
 		/// <summary>
-		/// Parameters: Ped ped, IntPtr p1
+		/// Parameters: Ped ped, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_RESERVE_PARACHUTE_TINT_INDEX = 0xE88DA0751C22A2AD, // 0x177EFC79
 
 		/// <summary>
-		/// Parameters: Ped ped, bool p1, bool p2
+		/// Parameters: Ped ped, BOOL p1, BOOL p2
 		/// </summary>
 		/// <returns>Object</returns>
 		CREATE_PARACHUTE_BAG_OBJECT = 0x8C4F3BF23B6237DB, // 0x19198A16
@@ -32653,7 +32653,7 @@ namespace GTA.Native
 		_CREATE_PARACHUTE_OBJECT = 0x8C4F3BF23B6237DB, // 0x19198A16
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// This is the SET_CHAR_DUCKING from GTA IV, that makes Peds duck. This function does nothing in GTA V. It cannot set the ped as ducking in vehicles, and IS_PED_DUCKING will always return false.<br/>
@@ -32680,7 +32680,7 @@ namespace GTA.Native
 		SET_PED_ID_RANGE = 0xF107E836A70DCE05, // 0xEF3B4ED9
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_HIGHLY_PERCEPTIVE = 0x52D59AB61DDC05DD, // 0x9A2180FF
@@ -32773,7 +32773,7 @@ namespace GTA.Native
 		_GET_PED_VISUAL_FIELD_CENTER_ANGLE = 0xEF2C71A32CAD5FBD,
 
 		/// <summary>
-		/// Parameters: Ped ped, bool p1, string action
+		/// Parameters: Ped ped, BOOL p1, const char* action
 		/// </summary>
 		/// <remarks>
 		/// p1 is usually 0 in the scripts. action is either 0 or a pointer to "DEFAULT_ACTION".<br/>
@@ -32815,7 +32815,7 @@ namespace GTA.Native
 		SET_PED_AS_GROUP_MEMBER = 0x9F3480FE65DB31B5, // 0x0EE13F92
 
 		/// <summary>
-		/// Parameters: Ped pedHandle, int groupHandle, bool toggle
+		/// Parameters: Ped pedHandle, int groupHandle, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// This only will teleport the ped to the group leader if the group leader teleports (sets coords).<br/>
@@ -32883,7 +32883,7 @@ namespace GTA.Native
 		IS_PED_IN_COMBAT = 0x4859F1FC66A6278E, // 0xFE027CB5
 
 		/// <summary>
-		/// Parameters: Ped ped, IntPtr p1
+		/// Parameters: Ped ped, Any p1
 		/// </summary>
 		/// <returns>Entity</returns>
 		GET_PED_TARGET_FROM_COMBAT_PED = 0x32C27A11307B01CC,
@@ -32944,7 +32944,7 @@ namespace GTA.Native
 		IS_PED_FLEEING = 0xBBCCE00B381F8482, // 0x85D813C6
 
 		/// <summary>
-		/// Parameters: Ped ped, bool exceptUseWeapon
+		/// Parameters: Ped ped, BOOL exceptUseWeapon
 		/// </summary>
 		/// <remarks>
 		/// p1 is nearly always 0 in the scripts. <br/>
@@ -32975,7 +32975,7 @@ namespace GTA.Native
 		IS_PED_GOING_INTO_COVER = 0x9F65DBC537E59AD5, // 0xA3589628
 
 		/// <summary>
-		/// Parameters: Ped ped, bool pinned, int i
+		/// Parameters: Ped ped, BOOL pinned, int i
 		/// </summary>
 		/// <remarks>
 		/// i could be time. Only example in the decompiled scripts uses it as -1.<br/>
@@ -33041,19 +33041,19 @@ namespace GTA.Native
 		COUNT_PEDS_IN_COMBAT_WITH_TARGET_WITHIN_RADIUS = 0x336B3D200AB007CB, // 0xFB18CB19
 
 		/// <summary>
-		/// Parameters: Ped ped, uint hash
+		/// Parameters: Ped ped, Hash hash
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_RELATIONSHIP_GROUP_DEFAULT_HASH = 0xADB3F206518799E8, // 0x423B7BA2
 
 		/// <summary>
-		/// Parameters: Ped ped, uint hash
+		/// Parameters: Ped ped, Hash hash
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_RELATIONSHIP_GROUP_HASH = 0xC80A74AC829DDD92, // 0x79F8C18C
 
 		/// <summary>
-		/// Parameters: int relationship, uint group1, uint group2
+		/// Parameters: int relationship, Hash group1, Hash group2
 		/// </summary>
 		/// <remarks>
 		/// Sets the relationship between two groups. This should be called twice (once for each group).<br/>
@@ -33073,7 +33073,7 @@ namespace GTA.Native
 		SET_RELATIONSHIP_BETWEEN_GROUPS = 0xBF25EB89375A37AD, // 0xD4A215BA
 
 		/// <summary>
-		/// Parameters: int relationship, uint group1, uint group2
+		/// Parameters: int relationship, Hash group1, Hash group2
 		/// </summary>
 		/// <remarks>
 		/// Clears the relationship between two groups. This should be called twice (once for each group).<br/>
@@ -33094,7 +33094,7 @@ namespace GTA.Native
 		CLEAR_RELATIONSHIP_BETWEEN_GROUPS = 0x5E29243FB56FC6D4, // 0x994B8C2D
 
 		/// <summary>
-		/// Parameters: string name, Hash* groupHash
+		/// Parameters: const char* name, Hash* groupHash
 		/// </summary>
 		/// <remarks>
 		/// Can't select void. This function returns nothing. The hash of the created relationship group is output in the second parameter.<br/>
@@ -33103,13 +33103,13 @@ namespace GTA.Native
 		ADD_RELATIONSHIP_GROUP = 0xF372BC22FCB88606, // 0x8B635546
 
 		/// <summary>
-		/// Parameters: uint groupHash
+		/// Parameters: Hash groupHash
 		/// </summary>
 		/// <returns>void</returns>
 		REMOVE_RELATIONSHIP_GROUP = 0xB6BA2444AB393DA2, // 0x4A1DC59A
 
 		/// <summary>
-		/// Parameters: uint groupHash
+		/// Parameters: Hash groupHash
 		/// </summary>
 		/// <returns>BOOL</returns>
 		DOES_RELATIONSHIP_GROUP_EXIST = 0xCC6E3B6BB69501F1,
@@ -33152,7 +33152,7 @@ namespace GTA.Native
 		GET_PED_RELATIONSHIP_GROUP_HASH = 0x7DBDD04862D95F04, // 0x354F283C
 
 		/// <summary>
-		/// Parameters: uint group1, uint group2
+		/// Parameters: Hash group1, Hash group2
 		/// </summary>
 		/// <remarks>
 		/// Gets the relationship between two groups. This should be called twice (once for each group).<br/>
@@ -33172,7 +33172,7 @@ namespace GTA.Native
 		GET_RELATIONSHIP_BETWEEN_GROUPS = 0x9E6B70061662AE5C, // 0x4E372FE2
 
 		/// <summary>
-		/// Parameters: uint group, bool p1
+		/// Parameters: Hash group, BOOL p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_RELATIONSHIP_GROUP_AFFECTS_WANTED_LEVEL = 0x5615E0C5EB2BC6E2,
@@ -33182,13 +33182,13 @@ namespace GTA.Native
 		_SET_RELATIONSHIP_GROUP_DONT_AFFECT_WANTED_LEVEL = 0x5615E0C5EB2BC6E2,
 
 		/// <summary>
-		/// Parameters: Ped ped, IntPtr p1, float p2, uint hash, IntPtr p4, IntPtr p5
+		/// Parameters: Ped ped, Any p1, float p2, Hash hash, Any p4, Any p5
 		/// </summary>
 		/// <returns>void</returns>
 		TELL_GROUP_PEDS_IN_AREA_TO_ATTACK = 0xAD27D957598E49E9,
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_CAN_BE_TARGETED_WITHOUT_LOS = 0x4328652AE5769C71, // 0x7FDDC0A6
@@ -33200,13 +33200,13 @@ namespace GTA.Native
 		SET_PED_TO_INFORM_RESPECTED_FRIENDS = 0x112942C6E708F70B, // 0xD78AC46C
 
 		/// <summary>
-		/// Parameters: Ped ped, IntPtr event
+		/// Parameters: Ped ped, Any @event
 		/// </summary>
 		/// <returns>BOOL</returns>
 		IS_PED_RESPONDING_TO_EVENT = 0x625B774D75C87068, // 0x7A877554
 
 		/// <summary>
-		/// Parameters: Ped ped, int eventType, IntPtr outData
+		/// Parameters: Ped ped, int eventType, Any* outData
 		/// </summary>
 		/// <returns>BOOL</returns>
 		GET_POS_FROM_FIRED_EVENT = 0xBA656A3BB01BDEA3,
@@ -33216,7 +33216,7 @@ namespace GTA.Native
 		_GET_PED_EVENT_DATA = 0xBA656A3BB01BDEA3,
 
 		/// <summary>
-		/// Parameters: Ped ped, uint patternHash
+		/// Parameters: Ped ped, Hash patternHash
 		/// </summary>
 		/// <remarks>
 		/// FIRING_PATTERN_BURST_FIRE = 0xD6FF6D61 ( 1073727030 )<br/>
@@ -33294,7 +33294,7 @@ namespace GTA.Native
 		GET_COMBAT_FLOAT = 0x52DFF8A10508090A, // 0x511D7EF8
 
 		/// <summary>
-		/// Parameters: int groupID, IntPtr p1, int* sizeInMembers
+		/// Parameters: int groupID, Any* p1, int* sizeInMembers
 		/// </summary>
 		/// <remarks>
 		/// p1 may be a BOOL representing whether or not the group even exists<br/>
@@ -33373,7 +33373,7 @@ namespace GTA.Native
 		SET_EXCLUSIVE_PHONE_RELATIONSHIPS = 0xF92691AED837A5FC, // 0x56E0C163
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// enable or disable the gravity of a ped<br/>
@@ -33385,7 +33385,7 @@ namespace GTA.Native
 		SET_PED_GRAVITY = 0x9FF447B6B6AD960A, // 0x3CA16652
 
 		/// <summary>
-		/// Parameters: Ped ped, int damageAmount, bool p2, IntPtr p3
+		/// Parameters: Ped ped, int damageAmount, BOOL p2, Any p3
 		/// </summary>
 		/// <remarks>
 		/// damages a ped with the given amount<br/>
@@ -33394,7 +33394,7 @@ namespace GTA.Native
 		APPLY_DAMAGE_TO_PED = 0x697157CED63F18D4, // 0x4DC27FCF
 
 		/// <summary>
-		/// Parameters: Ped ped, uint weaponHash
+		/// Parameters: Ped ped, Hash weaponHash
 		/// </summary>
 		/// <returns>int</returns>
 		GET_TIME_PED_DAMAGED_BY_WEAPON = 0x36B77BB84687C318, // 0x0170C6E1
@@ -33404,13 +33404,13 @@ namespace GTA.Native
 		_GET_TIME_OF_LAST_PED_WEAPON_DAMAGE = 0x36B77BB84687C318, // 0x0170C6E1
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_ALLOWED_TO_DUCK = 0xDA1F1B7BE1A8766F, // 0xC4D122F8
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_NEVER_LEAVES_GROUP = 0x3DBFC55D5C9BB447, // 0x0E038813
@@ -33425,7 +33425,7 @@ namespace GTA.Native
 		GET_PED_TYPE = 0xFF059E1E4C01E63C, // 0xB1460D43
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Turns the desired ped into a cop. If you use this on the player ped, you will become almost invisible to cops dispatched for you. You will also report your own crimes, get a generic cop voice, get a cop-vision-cone on the radar, and you will be unable to shoot at other cops. SWAT and Army will still shoot at you. Toggling ped as "false" has no effect; you must change p0's ped model to disable the effect.<br/>
@@ -33434,7 +33434,7 @@ namespace GTA.Native
 		SET_PED_AS_COP = 0xBB03C38DD3FB7FFD, // 0x84E7DE9F
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_HEALTH_PENDING_LAST_DAMAGE_EVENT_OVERRIDE_FLAG = 0xB3352E018D6F89DF,
@@ -33473,7 +33473,7 @@ namespace GTA.Native
 		SET_CORPSE_RAGDOLL_FRICTION = 0x2735233A786B1BEF, // 0x373CC405
 
 		/// <summary>
-		/// Parameters: Ped ped, Vehicle vehicle, int seatIndex, int flags, IntPtr p4
+		/// Parameters: Ped ped, Vehicle vehicle, int seatIndex, int flags, Any p4
 		/// </summary>
 		/// <remarks>
 		/// seatIndex must be &#38;lt;= 2<br/>
@@ -33488,7 +33488,7 @@ namespace GTA.Native
 		CLEAR_ALL_PED_VEHICLE_FORCED_SEAT_USAGE = 0xE6CA85E7259CE16B, // 0xCC1D8F66
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <remarks>
 		/// This native does absolutely nothing, just a nullsub<br/>
@@ -33549,13 +33549,13 @@ namespace GTA.Native
 		_GET_PED_AS_GROUP_LEADER = 0x5CCE68DBD5FE93EC, // 0x52873C6A
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_KEEP_TASK = 0x971D38760FBC02EF, // 0xA7EC79CE
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_ALLOW_MINOR_REACTIONS_AS_MISSION_PED = 0x49E50BDB8BA4DAB2, // 0x397F06E3
@@ -33582,25 +33582,25 @@ namespace GTA.Native
 		SET_PED_COORDS_KEEP_VEHICLE = 0x9AFEFF481A85AB2E, // 0xD66AE1D3
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_DIES_IN_VEHICLE = 0x2A30922C90C9B42C, // 0x6FE1E440
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_CREATE_RANDOM_COPS = 0x102E68B2024D536D, // 0x23441648
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_CREATE_RANDOM_COPS_NOT_ON_SCENARIOS = 0x8A4986851C4EF6E7, // 0x82E548CC
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_CREATE_RANDOM_COPS_ON_SCENARIOS = 0x444CB7D7DBE6973D, // 0xEDC31475
@@ -33609,13 +33609,13 @@ namespace GTA.Native
 		CAN_CREATE_RANDOM_COPS = 0x5EE2CAFF7F17770D, // 0xAA73DAD9
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_AS_ENEMY = 0x02A0C9720B854BFA, // 0xAE620A1B
 
 		/// <summary>
-		/// Parameters: Ped ped, bool p1, bool p2
+		/// Parameters: Ped ped, BOOL p1, BOOL p2
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_CAN_SMASH_GLASS = 0x1CCE141467FF42A2, // 0x149C60A8
@@ -33639,7 +33639,7 @@ namespace GTA.Native
 		IS_PED_TRYING_TO_ENTER_A_LOCKED_VEHICLE = 0x44D28D5DDFE5F68C, // 0x46828B4E
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// ped can not pull out a weapon when true<br/>
@@ -33648,7 +33648,7 @@ namespace GTA.Native
 		SET_ENABLE_HANDCUFFS = 0xDF1AF8B5D56542FA, // 0xAC9BBA23
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Used with SET_ENABLE_HANDCUFFS in decompiled scripts. From my observations, I have noticed that while being ragdolled you are not able to get up but you can still run. Your legs can also bend.<br/>
@@ -33657,7 +33657,7 @@ namespace GTA.Native
 		SET_ENABLE_BOUND_ANKLES = 0xC52E0F855C58FC2E, // 0x9208D689
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Enables diving motion when underwater.<br/>
@@ -33666,7 +33666,7 @@ namespace GTA.Native
 		SET_ENABLE_SCUBA = 0xF99F62004024D506, // 0x7BF61471
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle, bool p2
+		/// Parameters: Ped ped, BOOL toggle, BOOL p2
 		/// </summary>
 		/// <remarks>
 		/// Setting ped to true allows the ped to shoot "friendlies".<br/>
@@ -33702,13 +33702,13 @@ namespace GTA.Native
 		SET_PED_ALERTNESS = 0xDBA71115ED9941A6, // 0x2C32D9AE
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_GET_OUT_UPSIDE_DOWN_VEHICLE = 0xBC0ED94165A48BC2, // 0x89AD49FF
 
 		/// <summary>
-		/// Parameters: Ped ped, string clipSet, float transitionSpeed
+		/// Parameters: Ped ped, const char* clipSet, float transitionSpeed
 		/// </summary>
 		/// <remarks>
 		/// transitionSpeed is the time in seconds it takes to transition from one movement clipset to another.	ransitionSpeed is usually 1.0f<br/>
@@ -33778,7 +33778,7 @@ namespace GTA.Native
 		RESET_PED_MOVEMENT_CLIPSET = 0xAA74EC0CB0AAEA2C, // 0xB83CEE93
 
 		/// <summary>
-		/// Parameters: Ped ped, string clipSet
+		/// Parameters: Ped ped, const char* clipSet
 		/// </summary>
 		/// <remarks>
 		/// Full list of movement clipsets by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/movementClipsetsCompact.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/movementClipsetsCompact.json</see><br/>
@@ -33793,7 +33793,7 @@ namespace GTA.Native
 		RESET_PED_STRAFE_CLIPSET = 0x20510814175EA477, // 0xF1967A12
 
 		/// <summary>
-		/// Parameters: Ped ped, string clipSet
+		/// Parameters: Ped ped, const char* clipSet
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_WEAPON_MOVEMENT_CLIPSET = 0x2622E35B77D3ACA2, // 0xF8BE54DC
@@ -33805,7 +33805,7 @@ namespace GTA.Native
 		RESET_PED_WEAPON_MOVEMENT_CLIPSET = 0x97B0DB5B4AA74E77, // 0xC60C9ACD
 
 		/// <summary>
-		/// Parameters: Ped ped, string clipset
+		/// Parameters: Ped ped, const char* clipset
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_DRIVE_BY_CLIPSET_OVERRIDE = 0xED34AB6C5CB36520, // 0xD4C73595
@@ -33817,7 +33817,7 @@ namespace GTA.Native
 		CLEAR_PED_DRIVE_BY_CLIPSET_OVERRIDE = 0x4AFE3690D7E0B5AC, // 0xAEC9163B
 
 		/// <summary>
-		/// Parameters: Ped ped, string p1
+		/// Parameters: Ped ped, const char* p1
 		/// </summary>
 		/// <remarks>
 		/// Found in the b617d scripts:<br/>
@@ -33847,7 +33847,7 @@ namespace GTA.Native
 		CLEAR_PED_FALL_UPPER_BODY_CLIPSET_OVERRIDE = 0x80054D7FCC70EEC6,
 
 		/// <summary>
-		/// Parameters: Ped ped, uint context
+		/// Parameters: Ped ped, Hash context
 		/// </summary>
 		/// <remarks>
 		/// PED::SET_PED_IN_VEHICLE_CONTEXT(l_128, MISC::GET_HASH_KEY("MINI_PROSTITUTE_LOW_PASSENGER"));<br/>
@@ -33869,7 +33869,7 @@ namespace GTA.Native
 		RESET_PED_IN_VEHICLE_CONTEXT = 0x22EF8FF8778030EB, // 0x3C94D88A
 
 		/// <summary>
-		/// Parameters: Ped ped, string animDict, string anim
+		/// Parameters: Ped ped, const char* animDict, const char* anim
 		/// </summary>
 		/// <remarks>
 		/// Full list of animation dictionaries and anims by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json</see><br/>
@@ -33878,7 +33878,7 @@ namespace GTA.Native
 		IS_SCRIPTED_SCENARIO_PED_USING_CONDITIONAL_ANIM = 0x6EC47A344923E1ED, // 0x3C30B447
 
 		/// <summary>
-		/// Parameters: Ped ped, string animDict, string animName, float p3, bool p4
+		/// Parameters: Ped ped, const char* animDict, const char* animName, float p3, BOOL p4
 		/// </summary>
 		/// <remarks>
 		/// Full list of animation dictionaries and anims by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json</see><br/>
@@ -33894,7 +33894,7 @@ namespace GTA.Native
 		CLEAR_PED_ALTERNATE_WALK_ANIM = 0x8844BBFCE30AA9E9, // 0x5736FB23
 
 		/// <summary>
-		/// Parameters: Ped ped, int stance, string animDictionary, string animationName, float p4, bool p5
+		/// Parameters: Ped ped, int stance, const char* animDictionary, const char* animationName, float p4, BOOL p5
 		/// </summary>
 		/// <remarks>
 		/// stance:<br/>
@@ -33915,7 +33915,7 @@ namespace GTA.Native
 		CLEAR_PED_ALTERNATE_MOVEMENT_ANIM = 0xD8D19675ED5FBDCE, // 0x7A7F5BC3
 
 		/// <summary>
-		/// Parameters: Ped ped, string animGroupGesture
+		/// Parameters: Ped ped, const char* animGroupGesture
 		/// </summary>
 		/// <remarks>
 		/// From the scripts:<br/>
@@ -33928,7 +33928,7 @@ namespace GTA.Native
 		SET_PED_GESTURE_GROUP = 0xDDF803377F94AAA8, // 0x170DA109
 
 		/// <summary>
-		/// Parameters: string animDict, string animName, float x, float y, float z, float xRot, float yRot, float zRot, float p8, int p9
+		/// Parameters: const char* animDict, const char* animName, float x, float y, float z, float xRot, float yRot, float zRot, float p8, int p9
 		/// </summary>
 		/// <remarks>
 		/// Full list of animation dictionaries and anims by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json</see><br/>
@@ -33937,7 +33937,7 @@ namespace GTA.Native
 		GET_ANIM_INITIAL_OFFSET_POSITION = 0xBE22B26DD764C040, // 0xC59D4268
 
 		/// <summary>
-		/// Parameters: string animDict, string animName, float x, float y, float z, float xRot, float yRot, float zRot, float p8, int p9
+		/// Parameters: const char* animDict, const char* animName, float x, float y, float z, float xRot, float yRot, float zRot, float p8, int p9
 		/// </summary>
 		/// <remarks>
 		/// Full list of animation dictionaries and anims by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json</see><br/>
@@ -34032,7 +34032,7 @@ namespace GTA.Native
 		GET_PED_PALETTE_VARIATION = 0xE3DD5F2A84B42281, // 0xEF1BC082
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any* p0, Any* p1
 		/// </summary>
 		/// <returns>BOOL</returns>
 		GET_MP_OUTFIT_DATA_FROM_METADATA = 0x9E30E91FB03A2CAF, // 0x52559BB6
@@ -34121,13 +34121,13 @@ namespace GTA.Native
 		SET_PED_DEFAULT_COMPONENT_VARIATION = 0x45EEE61580806D63, // 0xC866A984
 
 		/// <summary>
-		/// Parameters: Ped ped, IntPtr p1, IntPtr p2, float p3, float p4
+		/// Parameters: Ped ped, Any p1, Any p2, float p3, float p4
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_BLEND_FROM_PARENTS = 0x137BBD05230DB22D, // 0x837BD370
 
 		/// <summary>
-		/// Parameters: Ped ped, int shapeFirstID, int shapeSecondID, int shapeThirdID, int skinFirstID, int skinSecondID, int skinThirdID, float shapeMix, float skinMix, float thirdMix, bool isParent
+		/// Parameters: Ped ped, int shapeFirstID, int shapeSecondID, int shapeThirdID, int skinFirstID, int skinSecondID, int skinThirdID, float shapeMix, float skinMix, float thirdMix, BOOL isParent
 		/// </summary>
 		/// <remarks>
 		/// The "shape" parameters control the shape of the ped's face. The "skin" parameters control the skin tone. ShapeMix and skinMix control how much the first and second IDs contribute,(typically mother and father.) ThirdMix overrides the others in favor of the third IDs. IsParent is set for "children" of the player character's grandparents during old-gen character creation. It has unknown effect otherwise.<br/>
@@ -34145,7 +34145,7 @@ namespace GTA.Native
 		SET_PED_HEAD_BLEND_DATA = 0x9414E18B9434C2FE, // 0x60746B88
 
 		/// <summary>
-		/// Parameters: Ped ped, IntPtr headBlendData
+		/// Parameters: Ped ped, Any* headBlendData
 		/// </summary>
 		/// <remarks>
 		/// The pointer is to a padded struct that matches the arguments to SET_PED_HEAD_BLEND_DATA(...). There are 4 bytes of padding after each field.<br/>
@@ -34491,7 +34491,7 @@ namespace GTA.Native
 		_IS_PED_BLUSH_FACEPAINT_VALID_BARBER_COLOR = 0x09E7ECA981D9B210,
 
 		/// <summary>
-		/// Parameters: uint modelHash, int drawableId, int textureId
+		/// Parameters: Hash modelHash, int drawableId, int textureId
 		/// </summary>
 		/// <returns>int</returns>
 		GET_TINT_INDEX_FOR_LAST_GEN_HAIR_TEXTURE = 0xC56FBF2F228E1DAC,
@@ -34652,7 +34652,7 @@ namespace GTA.Native
 		GET_PED_PROP_INDEX = 0x898CC20EA75BACD8, // 0x746DDAC0
 
 		/// <summary>
-		/// Parameters: Ped ped, int componentId, int drawableId, int TextureId, bool attach
+		/// Parameters: Ped ped, int componentId, int drawableId, int TextureId, BOOL attach
 		/// </summary>
 		/// <remarks>
 		/// ComponentId can be set to various things based on what category you're wanting to set<br/>
@@ -34671,7 +34671,7 @@ namespace GTA.Native
 		SET_PED_PROP_INDEX = 0x93376B65A266EB5F, // 0x0829F2E2
 
 		/// <summary>
-		/// Parameters: Ped ped, bool p1, bool p2, bool p3, bool p4
+		/// Parameters: Ped ped, BOOL p1, BOOL p2, BOOL p3, BOOL p4
 		/// </summary>
 		/// <remarks>
 		/// List of component/props ID<br/>
@@ -34749,13 +34749,13 @@ namespace GTA.Native
 		_REMOVE_PED_SCUBA_GEAR_NOW = 0xB50EB4CCB29704AC, // 0x080275EE
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>BOOL</returns>
 		IS_USING_PED_SCUBA_GEAR_VARIATION = 0xFEC9A3B1820F3331,
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// works with TASK::TASK_SET_BLOCKING_OF_NON_TEMPORARY_EVENTS to make a ped completely oblivious to all events going on around him<br/>
@@ -34808,7 +34808,7 @@ namespace GTA.Native
 		GET_RANDOM_PED_AT_COORD = 0x876046A8E3A4B71C, // 0xDC8239EB
 
 		/// <summary>
-		/// Parameters: float x, float y, float z, float radius, bool p4, bool p5, Ped* outPed, bool p7, bool p8, int pedType
+		/// Parameters: float x, float y, float z, float radius, BOOL p4, BOOL p5, Ped* outPed, BOOL p7, BOOL p8, int pedType
 		/// </summary>
 		/// <remarks>
 		/// Gets the closest ped in a radius.<br/>
@@ -34844,7 +34844,7 @@ namespace GTA.Native
 		GET_CLOSEST_PED = 0xC33AB876A77F8164, // 0x8F6C1F55
 
 		/// <summary>
-		/// Parameters: bool value
+		/// Parameters: BOOL value
 		/// </summary>
 		/// <remarks>
 		/// Sets a value indicating whether scenario peds should be returned by the next call to a command that returns peds. Eg. GET_CLOSEST_PED.<br/>
@@ -34853,7 +34853,7 @@ namespace GTA.Native
 		SET_SCENARIO_PEDS_TO_BE_RETURNED_BY_NEXT_COMMAND = 0x14F19A8782C8071E, // 0x85615FD0
 
 		/// <summary>
-		/// Parameters: Ped ped, bool p1, bool p2, bool p3, bool p4, bool p5, bool p6, bool p7, IntPtr p8
+		/// Parameters: Ped ped, BOOL p1, BOOL p2, BOOL p3, BOOL p4, BOOL p5, BOOL p6, BOOL p7, Any p8
 		/// </summary>
 		/// <returns>BOOL</returns>
 		GET_CAN_PED_BE_GRABBED_BY_SCRIPT = 0x03EA03AF85A85CB7, // 0x18DD76A1
@@ -34896,7 +34896,7 @@ namespace GTA.Native
 		CAN_PED_RAGDOLL = 0x128F79EDCECE4FD5, // 0xC0EFB7A3
 
 		/// <summary>
-		/// Parameters: Ped ped, int time1, int time2, int ragdollType, bool p4, bool p5, bool p6
+		/// Parameters: Ped ped, int time1, int time2, int ragdollType, BOOL p4, BOOL p5, BOOL p6
 		/// </summary>
 		/// <remarks>
 		/// p4/p5: Unused in TU27<br/>
@@ -34940,7 +34940,7 @@ namespace GTA.Native
 		SET_PED_TO_RAGDOLL_WITH_FALL = 0xD76632D99E4966C8, // 0xFA12E286
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Causes Ped to ragdoll on collision with any object (e.g Running into trashcan). If applied to player you will sometimes trip on the sidewalk.<br/>
@@ -34976,7 +34976,7 @@ namespace GTA.Native
 		RESET_PED_RAGDOLL_TIMER = 0x9FA4664CF62E47E8, // 0xF2865370
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_CAN_RAGDOLL = 0xB128377056A54E2A, // 0xCF1384C4
@@ -35047,43 +35047,43 @@ namespace GTA.Native
 		_RESET_PED_RAGDOLL_BLOCKING_FLAGS = 0xD86D101FCFD00A4B, // 0x77CBA290
 
 		/// <summary>
-		/// Parameters: Ped ped, float p1, float p2, float p3, float p4, float p5, float p6, float p7, bool p8, bool p9
+		/// Parameters: Ped ped, float p1, float p2, float p3, float p4, float p5, float p6, float p7, BOOL p8, BOOL p9
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_ANGLED_DEFENSIVE_AREA = 0xC7F76DF27A5045A1, // 0x3EFBDD9B
 
 		/// <summary>
-		/// Parameters: Ped ped, float x, float y, float z, float radius, bool p5, bool p6
+		/// Parameters: Ped ped, float x, float y, float z, float radius, BOOL p5, BOOL p6
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_SPHERE_DEFENSIVE_AREA = 0x9D3151A373974804, // 0xBD96D8E8
 
 		/// <summary>
-		/// Parameters: Ped ped, Ped target, float xOffset, float yOffset, float zOffset, float radius, bool p6
+		/// Parameters: Ped ped, Ped target, float xOffset, float yOffset, float zOffset, float radius, BOOL p6
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_DEFENSIVE_SPHERE_ATTACHED_TO_PED = 0xF9B8F91AAD3B953E, // 0x40638BDC
 
 		/// <summary>
-		/// Parameters: Ped ped, Vehicle target, float xOffset, float yOffset, float zOffset, float radius, bool p6
+		/// Parameters: Ped ped, Vehicle target, float xOffset, float yOffset, float zOffset, float radius, BOOL p6
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_DEFENSIVE_SPHERE_ATTACHED_TO_VEHICLE = 0xE4723DB6E736CCFF, // 0x4763B2C6
 
 		/// <summary>
-		/// Parameters: Ped ped, Ped attachPed, float p2, float p3, float p4, float p5, float p6, float p7, float p8, bool p9, bool p10
+		/// Parameters: Ped ped, Ped attachPed, float p2, float p3, float p4, float p5, float p6, float p7, float p8, BOOL p9, BOOL p10
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_DEFENSIVE_AREA_ATTACHED_TO_PED = 0x4EF47FE21698A8B6, // 0x74BDA7CE
 
 		/// <summary>
-		/// Parameters: Ped ped, float p1, float p2, float p3, bool p4
+		/// Parameters: Ped ped, float p1, float p2, float p3, BOOL p4
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_DEFENSIVE_AREA_DIRECTION = 0x413C6C763A4AFFAD, // 0xB66B0C9A
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Ped will no longer get angry when you stay near him.<br/>
@@ -35092,19 +35092,19 @@ namespace GTA.Native
 		REMOVE_PED_DEFENSIVE_AREA = 0x74D4E028107450A9, // 0x34AAAFA5
 
 		/// <summary>
-		/// Parameters: Ped ped, bool p1
+		/// Parameters: Ped ped, BOOL p1
 		/// </summary>
 		/// <returns>Vector3</returns>
 		GET_PED_DEFENSIVE_AREA_POSITION = 0x3C06B8786DD94CD1, // 0xCB65198D
 
 		/// <summary>
-		/// Parameters: Ped ped, bool p1
+		/// Parameters: Ped ped, BOOL p1
 		/// </summary>
 		/// <returns>BOOL</returns>
 		IS_PED_DEFENSIVE_AREA_ACTIVE = 0xBA63D9FE45412247, // 0x6D88BCD3
 
 		/// <summary>
-		/// Parameters: Ped ped, IntPtr itemSet
+		/// Parameters: Ped ped, Any itemSet
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_PREFERRED_COVER_SET = 0x8421EB4DA7E391B9, // 0xF3B7EFBF
@@ -35139,7 +35139,7 @@ namespace GTA.Native
 		RESURRECT_PED = 0x71BC8E838B9C6035, // 0xA4B82097
 
 		/// <summary>
-		/// Parameters: Ped ped, string name
+		/// Parameters: Ped ped, const char* name
 		/// </summary>
 		/// <remarks>
 		/// NOTE: Debugging functions are not present in the retail version of the game.<br/>
@@ -35149,7 +35149,7 @@ namespace GTA.Native
 		SET_PED_NAME_DEBUG = 0x98EFA132A4117BE1, // 0x20D6273E
 
 		/// <summary>
-		/// Parameters: Ped ped, bool worldSpace
+		/// Parameters: Ped ped, BOOL worldSpace
 		/// </summary>
 		/// <remarks>
 		/// Gets the offset the specified ped has moved since the previous tick.<br/>
@@ -35160,19 +35160,19 @@ namespace GTA.Native
 		GET_PED_EXTRACTED_DISPLACEMENT = 0xE0AF41401ADF87E3, // 0x5231F901
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_DIES_WHEN_INJURED = 0x5BA7919BED300023, // 0xE94E24D4
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_ENABLE_WEAPON_BLOCKING = 0x97A790315D3831FD, // 0x4CAD1A4A
 
 		/// <summary>
-		/// Parameters: Ped ped, bool p1
+		/// Parameters: Ped ped, BOOL p1
 		/// </summary>
 		/// <remarks>
 		/// p1 was always 1 (true).<br/>
@@ -35188,13 +35188,13 @@ namespace GTA.Native
 		RESET_PED_VISIBLE_DAMAGE = 0x3AC1F7B898F30C05, // 0xC4BC4841
 
 		/// <summary>
-		/// Parameters: Ped ped, IntPtr p1, float p2, float p3, IntPtr p4
+		/// Parameters: Ped ped, Any p1, float p2, float p3, Any p4
 		/// </summary>
 		/// <returns>void</returns>
 		APPLY_PED_BLOOD_DAMAGE_BY_ZONE = 0x816F6981C60BF53B, // 0x1E54DB12
 
 		/// <summary>
-		/// Parameters: Ped ped, int boneIndex, float xRot, float yRot, float zRot, string woundType
+		/// Parameters: Ped ped, int boneIndex, float xRot, float yRot, float zRot, const char* woundType
 		/// </summary>
 		/// <remarks>
 		/// woundTypes:<br/>
@@ -35216,19 +35216,19 @@ namespace GTA.Native
 		APPLY_PED_BLOOD = 0x83F7E01C7B769A26, // 0x376CE3C0
 
 		/// <summary>
-		/// Parameters: Ped ped, int p1, float p2, float p3, string p4
+		/// Parameters: Ped ped, int p1, float p2, float p3, const char* p4
 		/// </summary>
 		/// <returns>void</returns>
 		APPLY_PED_BLOOD_BY_ZONE = 0x3311E47B91EDCBBC, // 0x8F3F3A9C
 
 		/// <summary>
-		/// Parameters: Ped ped, int p1, float p2, float p3, float p4, float p5, int p6, float p7, string p8
+		/// Parameters: Ped ped, int p1, float p2, float p3, float p4, float p5, int p6, float p7, const char* p8
 		/// </summary>
 		/// <returns>void</returns>
 		APPLY_PED_BLOOD_SPECIFIC = 0xEF0D582CBF2D9B0F, // 0xFC13CE80
 
 		/// <summary>
-		/// Parameters: Ped ped, int damageZone, float xOffset, float yOffset, float heading, float scale, float alpha, int variation, bool fadeIn, string decalName
+		/// Parameters: Ped ped, int damageZone, float xOffset, float yOffset, float heading, float scale, float alpha, int variation, BOOL fadeIn, const char* decalName
 		/// </summary>
 		/// <remarks>
 		/// enum eDamageZone<br/>
@@ -35258,7 +35258,7 @@ namespace GTA.Native
 		APPLY_PED_DAMAGE_DECAL = 0x397C38AA7B4A5F83, // 0x8A13A41F
 
 		/// <summary>
-		/// Parameters: Ped ped, string damagePack, float damage, float mult
+		/// Parameters: Ped ped, const char* damagePack, float damage, float mult
 		/// </summary>
 		/// <remarks>
 		/// Damage Packs:<br/>
@@ -35306,13 +35306,13 @@ namespace GTA.Native
 		CLEAR_PED_BLOOD_DAMAGE_BY_ZONE = 0x56E3B78C5408D9F4, // 0xF210BE69
 
 		/// <summary>
-		/// Parameters: Ped ped, IntPtr p1, bool p2
+		/// Parameters: Ped ped, Any p1, BOOL p2
 		/// </summary>
 		/// <returns>void</returns>
 		HIDE_PED_BLOOD_DAMAGE_BY_ZONE = 0x62AB793144DE75DC, // 0x0CB6C4ED
 
 		/// <summary>
-		/// Parameters: Ped ped, int p1, string p2
+		/// Parameters: Ped ped, int p1, const char* p2
 		/// </summary>
 		/// <remarks>
 		/// p1: from 0 to 5 in the b617d scripts.<br/>
@@ -35328,7 +35328,7 @@ namespace GTA.Native
 		GET_PED_DECORATIONS_STATE = 0x71EAB450D86954A1, // 0x47187F7F
 
 		/// <summary>
-		/// Parameters: Ped ped, bool p1
+		/// Parameters: Ped ped, BOOL p1
 		/// </summary>
 		/// <returns>void</returns>
 		MARK_PED_DECORATIONS_AS_CLONED_FROM_LOCAL_PLAYER = 0x2B694AFCF64E6994,
@@ -35376,7 +35376,7 @@ namespace GTA.Native
 		SET_PED_SWEAT = 0x27B0405F59637D1F, // 0x76A1DB9F
 
 		/// <summary>
-		/// Parameters: Ped ped, uint collection, uint overlay
+		/// Parameters: Ped ped, Hash collection, Hash overlay
 		/// </summary>
 		/// <remarks>
 		/// Applies an Item from a PedDecorationCollection to a ped. These include tattoos and shirt decals.<br/>
@@ -35415,7 +35415,7 @@ namespace GTA.Native
 		_SET_PED_DECORATION = 0x5F5D1665E352A839, // 0x70559AC7
 
 		/// <summary>
-		/// Parameters: Ped ped, uint collection, uint overlay
+		/// Parameters: Ped ped, Hash collection, Hash overlay
 		/// </summary>
 		/// <remarks>
 		/// Full list of ped overlays / decorations by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/pedOverlayCollections.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/pedOverlayCollections.json</see><br/>
@@ -35428,7 +35428,7 @@ namespace GTA.Native
 		_SET_PED_FACIAL_DECORATION = 0x5619BFA07CFD7833, // 0x8CD3E487
 
 		/// <summary>
-		/// Parameters: uint collection, uint overlay
+		/// Parameters: Hash collection, Hash overlay
 		/// </summary>
 		/// <remarks>
 		/// Returns the zoneID for the overlay if it is a member of collection.<br/>
@@ -35492,7 +35492,7 @@ namespace GTA.Native
 		GET_PED_BONE_COORDS = 0x17C07FC640E86B4E, // 0x4579CAB1
 
 		/// <summary>
-		/// Parameters: bool startImmediately, int messageId
+		/// Parameters: BOOL startImmediately, int messageId
 		/// </summary>
 		/// <remarks>
 		/// Creates a new NaturalMotion message.<br/>
@@ -35528,7 +35528,7 @@ namespace GTA.Native
 		GIVE_PED_NM_MESSAGE = 0xB158DFCCC56E5C5B, // 0x737C3689
 
 		/// <summary>
-		/// Parameters: float x1, float y1, float z1, float x2, float y2, float z2, bool p6, bool p7, bool p8, bool p9
+		/// Parameters: float x1, float y1, float z1, float x2, float y2, float z2, BOOL p6, BOOL p7, BOOL p8, BOOL p9
 		/// </summary>
 		/// <returns>int</returns>
 		ADD_SCENARIO_BLOCKING_AREA = 0x1B5C85C612E5256E, // 0xA38C0234
@@ -35537,7 +35537,7 @@ namespace GTA.Native
 		REMOVE_SCENARIO_BLOCKING_AREAS = 0xD37401D78A929A49, // 0x4DDF845F
 
 		/// <summary>
-		/// Parameters: IntPtr p0, bool p1
+		/// Parameters: Any p0, BOOL p1
 		/// </summary>
 		/// <returns>void</returns>
 		REMOVE_SCENARIO_BLOCKING_AREA = 0x31D16B74C6E29D66, // 0x4483EF06
@@ -35559,7 +35559,7 @@ namespace GTA.Native
 		_DOES_SCENARIO_BLOCKING_AREA_EXIST = 0x8A24B067D175A7BD,
 
 		/// <summary>
-		/// Parameters: Ped ped, string scenario
+		/// Parameters: Ped ped, const char* scenario
 		/// </summary>
 		/// <remarks>
 		/// Full list of ped scenarios by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/scenariosCompact.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/scenariosCompact.json</see><br/>
@@ -35574,13 +35574,13 @@ namespace GTA.Native
 		IS_PED_USING_ANY_SCENARIO = 0x57AB4A3080F85143, // 0x195EF5B7
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>BOOL</returns>
 		SET_PED_PANIC_EXIT_SCENARIO = 0xFE07FF6495D52E2A, // 0x59DE73AC
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		TOGGLE_SCENARIO_PED_COWER_IN_PLACE = 0x9A77DFD295E29B09, // 0xC08FE5F6
@@ -35590,13 +35590,13 @@ namespace GTA.Native
 		_SET_PED_SCARED_WHEN_USING_SCENARIO = 0x9A77DFD295E29B09, // 0xC08FE5F6
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>BOOL</returns>
 		TRIGGER_PED_SCENARIO_PANICEXITTOFLEE = 0x25361A96E0F7E419, // 0x58C0F6CF
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>BOOL</returns>
 		SET_PED_SHOULD_PLAY_DIRECTED_NORMAL_SCENARIO_EXIT = 0xEC6935EBE0847B90,
@@ -35618,37 +35618,37 @@ namespace GTA.Native
 		SET_PED_SHOULD_PLAY_IMMEDIATE_SCENARIO_EXIT = 0xF1C03A5352243A30, // 0x4C684C81
 
 		/// <summary>
-		/// Parameters: Ped ped, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Ped ped, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>BOOL</returns>
 		SET_PED_SHOULD_PLAY_FLEE_SCENARIO_EXIT = 0xEEED8FAFEC331A70, // 0x7B4C3E6F
 
 		/// <summary>
-		/// Parameters: Ped ped, bool p1
+		/// Parameters: Ped ped, BOOL p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_SHOULD_IGNORE_SCENARIO_EXIT_COLLISION_CHECKS = 0x425AECF167663F48, // 0x5BC276AE
 
 		/// <summary>
-		/// Parameters: IntPtr p0, bool p1
+		/// Parameters: Any p0, BOOL p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_SHOULD_IGNORE_SCENARIO_NAV_CHECKS = 0x5B6010B3CBC29095,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, bool p1
+		/// Parameters: Any p0, BOOL p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_SHOULD_PROBE_FOR_SCENARIO_EXITS_IN_ONE_FRAME = 0xCEDA60A74219D064,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>BOOL</returns>
 		IS_PED_GESTURING = 0xC30BDAEE47256C13,
 
 		/// <summary>
-		/// Parameters: Ped ped, string animName, string animDict
+		/// Parameters: Ped ped, const char* animName, const char* animDict
 		/// </summary>
 		/// <remarks>
 		/// Full list of animation dictionaries and anims by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json</see><br/>
@@ -35657,7 +35657,7 @@ namespace GTA.Native
 		PLAY_FACIAL_ANIM = 0xE1E65CA8AC9C00ED, // 0x1F6CCDDE
 
 		/// <summary>
-		/// Parameters: Ped ped, string animDict
+		/// Parameters: Ped ped, const char* animDict
 		/// </summary>
 		/// <remarks>
 		/// Clipsets:<br/>
@@ -35678,7 +35678,7 @@ namespace GTA.Native
 		_SET_FACIAL_CLIPSET_OVERRIDE = 0x5687C7F05B39E401,
 
 		/// <summary>
-		/// Parameters: Ped ped, string animName, string animDict
+		/// Parameters: Ped ped, const char* animName, const char* animDict
 		/// </summary>
 		/// <remarks>
 		/// Full list of animation dictionaries and anims by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json</see><br/>
@@ -35693,13 +35693,13 @@ namespace GTA.Native
 		CLEAR_FACIAL_IDLE_ANIM_OVERRIDE = 0x726256CC1EEB182F, // 0x5244F4E2
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_CAN_PLAY_GESTURE_ANIMS = 0xBAF20C5432058024, // 0xE131E3B3
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle, bool p2
+		/// Parameters: Ped ped, BOOL toggle, BOOL p2
 		/// </summary>
 		/// <remarks>
 		/// p2 usually 0<br/>
@@ -35708,7 +35708,7 @@ namespace GTA.Native
 		SET_PED_CAN_PLAY_VISEME_ANIMS = 0xF833DDBA3B104D43, // 0xA2FDAF27
 
 		/// <summary>
-		/// Parameters: Ped ped, bool p1
+		/// Parameters: Ped ped, BOOL p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_IS_IGNORED_BY_AUTO_OPEN_DOORS = 0x33A60D8BDD6E508C, // 0xADB2511A
@@ -35718,13 +35718,13 @@ namespace GTA.Native
 		_SET_PED_CAN_PLAY_INJURED_ANIMS = 0x33A60D8BDD6E508C, // 0xADB2511A
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_CAN_PLAY_AMBIENT_ANIMS = 0x6373D1349925A70E, // 0xF8053081
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_CAN_PLAY_AMBIENT_BASE_ANIMS = 0x0EB0585D15254740, // 0x5720A5DD
@@ -35736,43 +35736,43 @@ namespace GTA.Native
 		TRIGGER_IDLE_ANIMATION_ON_PED = 0xC2EE020F5FB4DB53, // 0xB7CD0A49
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_CAN_ARM_IK = 0x6C3B4D6D13B4C841, // 0x343B4DE0
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_CAN_HEAD_IK = 0xC11C18092C5530DC, // 0xD3B04476
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_CAN_LEG_IK = 0x73518ECE2485412B, // 0x9955BC6F
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_CAN_TORSO_IK = 0xF2B7106D37947CE0, // 0x8E5D4EAB
 
 		/// <summary>
-		/// Parameters: Ped ped, bool p1
+		/// Parameters: Ped ped, BOOL p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_CAN_TORSO_REACT_IK = 0xF5846EDB26A98A24, // 0x7B0040A8
 
 		/// <summary>
-		/// Parameters: Ped ped, bool p1
+		/// Parameters: Ped ped, BOOL p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_CAN_TORSO_VEHICLE_IK = 0x6647C5F6F5792496, // 0x0FDA62DE
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_CAN_USE_AUTO_CONVERSATION_LOOKAT = 0xEC4686EC06434678, // 0x584C5178
@@ -35802,7 +35802,7 @@ namespace GTA.Native
 		SET_PED_PRIMARY_LOOKAT = 0xCD17B554996A8D9E, // 0x6DEF6F1C
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_CLOTH_PIN_FRAMES = 0x78C4E9961DB3EB5B,
@@ -35813,13 +35813,13 @@ namespace GTA.Native
 
 
 		/// <summary>
-		/// Parameters: IntPtr p0, bool p1
+		/// Parameters: Any p0, BOOL p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_CLOTH_PRONE = 0xA660FAF550EB37E5,
 
 		/// <summary>
-		/// Parameters: Ped ped, int flagId, bool value
+		/// Parameters: Ped ped, int flagId, BOOL value
 		/// </summary>
 		/// <remarks>
 		/// enum ePedConfigFlags<br/>
@@ -36289,7 +36289,7 @@ namespace GTA.Native
 		SET_PED_CONFIG_FLAG = 0x1913FE4CBF41C463, // 0x9CFBE10D
 
 		/// <summary>
-		/// Parameters: Ped ped, int flagId, bool doReset
+		/// Parameters: Ped ped, int flagId, BOOL doReset
 		/// </summary>
 		/// <remarks>
 		/// PED::SET_PED_RESET_FLAG(PLAYER::PLAYER_PED_ID(), 240, 1);<br/>
@@ -36300,7 +36300,7 @@ namespace GTA.Native
 		SET_PED_RESET_FLAG = 0xC1E8A365BF3B29F2, // 0xCFF6FF66
 
 		/// <summary>
-		/// Parameters: Ped ped, int flagId, bool p2
+		/// Parameters: Ped ped, int flagId, BOOL p2
 		/// </summary>
 		/// <remarks>
 		/// See SET_PED_CONFIG_FLAG<br/>
@@ -36321,7 +36321,7 @@ namespace GTA.Native
 		SET_PED_GROUP_MEMBER_PASSENGER_INDEX = 0x0BDDB8D9EC6BCF3C, // 0x2AB3670B
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_CAN_EVASIVE_DIVE = 0x6B7A646C242A7059, // 0x542FEB4D
@@ -36339,13 +36339,13 @@ namespace GTA.Native
 		IS_PED_EVASIVE_DIVING = 0x414641C26E105898, // 0xD82829DC
 
 		/// <summary>
-		/// Parameters: Ped ped, float x, float y, float z, bool toggle
+		/// Parameters: Ped ped, float x, float y, float z, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_SHOOTS_AT_COORD = 0x96A05E4FB321B1BA, // 0xFD64EAE5
 
 		/// <summary>
-		/// Parameters: uint modelHash, bool toggle
+		/// Parameters: Hash modelHash, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Full list of peds by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/peds.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/peds.json</see><br/>
@@ -36357,19 +36357,19 @@ namespace GTA.Native
 		STOP_ANY_PED_MODEL_BEING_SUPPRESSED = 0xB47BD05FA66B40CF, // 0x5AD7DC55
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_CAN_BE_TARGETED_WHEN_INJURED = 0x638C03B0F9878F57, // 0x6FD9A7CD
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_GENERATES_DEAD_BODY_EVENTS = 0x7FB17BA2E7DECA5B, // 0xE9B97A2B
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		BLOCK_PED_FROM_GENERATING_DEAD_BODY_EVENTS_WHEN_DEAD = 0xE43A13C9E4CCCBCF, // 0xFF1F6AEB
@@ -36379,19 +36379,19 @@ namespace GTA.Native
 		_BLOCK_PED_DEAD_BODY_SHOCKING_EVENTS = 0xE43A13C9E4CCCBCF, // 0xFF1F6AEB
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_WILL_ONLY_ATTACK_WANTED_PLAYER = 0x3E9679C1DFCF422C,
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_CAN_RAGDOLL_FROM_PLAYER_IMPACT = 0xDF993EE5E90ABA25, // 0xE9BD733A
 
 		/// <summary>
-		/// Parameters: Ped ped, bool cannotRemove, int helmetFlag, int textureIndex
+		/// Parameters: Ped ped, BOOL cannotRemove, int helmetFlag, int textureIndex
 		/// </summary>
 		/// <remarks>
 		/// PoliceMotorcycleHelmet   1024    <br/>
@@ -36406,7 +36406,7 @@ namespace GTA.Native
 		GIVE_PED_HELMET = 0x54C7C4A94367717E, // 0x1862A461
 
 		/// <summary>
-		/// Parameters: Ped ped, bool instantly
+		/// Parameters: Ped ped, BOOL instantly
 		/// </summary>
 		/// <returns>void</returns>
 		REMOVE_PED_HELMET = 0xA7B2458D0AD6DED8, // 0x2086B1F0
@@ -36418,7 +36418,7 @@ namespace GTA.Native
 		IS_PED_TAKING_OFF_HELMET = 0x14590DDBEDB1EC85, // 0xA1008E0E
 
 		/// <summary>
-		/// Parameters: Ped ped, bool canWearHelmet
+		/// Parameters: Ped ped, BOOL canWearHelmet
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_HELMET = 0x560A43136EB58105, // 0xED366E53
@@ -36430,7 +36430,7 @@ namespace GTA.Native
 		SET_PED_HELMET_FLAG = 0xC0E78D5C2CE3EB25, // 0x12677780
 
 		/// <summary>
-		/// Parameters: Ped ped, int propIndex, bool p2
+		/// Parameters: Ped ped, int propIndex, BOOL p2
 		/// </summary>
 		/// <remarks>
 		/// List of component/props ID<br/>
@@ -36440,7 +36440,7 @@ namespace GTA.Native
 		SET_PED_HELMET_PROP_INDEX = 0x26D83693ED99291C, // 0xA316D13F
 
 		/// <summary>
-		/// Parameters: Ped ped, bool p1, int p2, int p3
+		/// Parameters: Ped ped, BOOL p1, int p2, int p3
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_HELMET_VISOR_PROP_INDICES = 0x3F7325574E41B44D,
@@ -36493,19 +36493,19 @@ namespace GTA.Native
 		GET_PED_HELMET_STORED_HAT_TEX_INDEX = 0x9D728C1E12BF5518, // 0x74EB662D
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>BOOL</returns>
 		IS_CURRENT_HEAD_PROP_A_HELMET = 0xF2385935BFFD4D92, // 0xFFF149FE
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_TO_LOAD_COVER = 0x332B562EEDA62399, // 0xCF94BA97
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// It simply makes the said ped to cower behind cover object(wall, desk, car)<br/>
@@ -36515,13 +36515,13 @@ namespace GTA.Native
 		SET_PED_CAN_COWER_IN_COVER = 0xCB7553CDCEF4A735, // 0x5194658B
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_CAN_PEEK_IN_COVER = 0xC514825C507E3736, // 0xC1DAE216
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// This native does absolutely nothing, just a nullsub<br/>
@@ -36539,19 +36539,19 @@ namespace GTA.Native
 		SET_PED_LEG_IK_MODE = 0xC396F5B86FF9FEBD, // 0xFDDB042E
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_MOTION_BLUR = 0x0A986918B102B448, // 0xA211A128
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_CAN_SWITCH_WEAPON = 0xED7F7EFE9FABF340, // 0xB5F8BA28
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_DIES_INSTANTLY_IN_WATER = 0xEEB64139BA29A7CF, // 0xFE2554FC
@@ -36642,7 +36642,7 @@ namespace GTA.Native
 		GET_PED_COMBAT_RANGE = 0xF9D9F7F2DB8E2FA0, // 0x9B9B7163
 
 		/// <summary>
-		/// Parameters: Ped ped, int attributeId, bool enabled
+		/// Parameters: Ped ped, int attributeId, BOOL enabled
 		/// </summary>
 		/// <remarks>
 		/// enum eCombatAttributes // 0x0E8E7201<br/>
@@ -36811,7 +36811,7 @@ namespace GTA.Native
 		WAS_PED_KNOCKED_OUT = 0x61767F73EACEED21, // 0x3993092B
 
 		/// <summary>
-		/// Parameters: Ped ped, int attributeFlags, bool enable
+		/// Parameters: Ped ped, int attributeFlags, BOOL enable
 		/// </summary>
 		/// <remarks>
 		/// bit 1 (0x2) = use vehicle<br/>
@@ -36821,7 +36821,7 @@ namespace GTA.Native
 		SET_PED_FLEE_ATTRIBUTES = 0x70A2D1137C8ED7C9, // 0xA717A875
 
 		/// <summary>
-		/// Parameters: Ped ped, string p1
+		/// Parameters: Ped ped, const char* p1
 		/// </summary>
 		/// <remarks>
 		/// p1: Only "CODE_HUMAN_STAND_COWER" found in the b617d scripts.<br/>
@@ -36830,31 +36830,31 @@ namespace GTA.Native
 		SET_PED_COWER_HASH = 0xA549131166868ED3, // 0x16F30DF4
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_STEERS_AROUND_DEAD_BODIES = 0x2016C603D6B8987C, // 0xA6F2C057
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_STEERS_AROUND_PEDS = 0x46F2193B3AD1D891, // 0x797CAE4F
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_STEERS_AROUND_OBJECTS = 0x1509C089ADC208BF, // 0x3BD9B0A6
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_STEERS_AROUND_VEHICLES = 0xEB6FB9D48DDE23EC, // 0x533C0651
 
 		/// <summary>
-		/// Parameters: IntPtr p0, bool p1
+		/// Parameters: Any p0, BOOL p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_IS_AVOIDED_BY_OTHERS = 0xA9B61A329BFDCBEA, // 0x2276DE0D
@@ -36866,13 +36866,13 @@ namespace GTA.Native
 		SET_PED_INCREASED_AVOIDANCE_RADIUS = 0x570389D1C3DE3C6B, // 0x59C52BE6
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_BLOCKS_PATHING_WHEN_DEAD = 0x576594E8D64375E2, // 0x1D87DDC1
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_NO_TIME_DELAY_BEFORE_SHOT = 0xA52D5247A4227E14, // 0xB52BA5F5
@@ -36884,7 +36884,7 @@ namespace GTA.Native
 		IS_ANY_PED_NEAR_POINT = 0x083961498679DC9F, // 0xFBD9B050
 
 		/// <summary>
-		/// Parameters: Ped ped, bool p1, bool p2
+		/// Parameters: Ped ped, BOOL p1, BOOL p2
 		/// </summary>
 		/// <returns>void</returns>
 		FORCE_PED_AI_AND_ANIMATION_UPDATE = 0x2208438012482A1A, // 0x187B9070
@@ -36902,7 +36902,7 @@ namespace GTA.Native
 		REQUEST_PED_VISIBILITY_TRACKING = 0x7D7A2E43E74E2EB8, // 0x840D24D3
 
 		/// <summary>
-		/// Parameters: Ped ped, bool p1
+		/// Parameters: Ped ped, BOOL p1
 		/// </summary>
 		/// <returns>void</returns>
 		REQUEST_PED_VEHICLE_VISIBILITY_TRACKING = 0x2BC338A7B21F4608, // 0x31C31DAA
@@ -36912,13 +36912,13 @@ namespace GTA.Native
 		GET_PED_FLOOD_INVINCIBILITY = 0x2BC338A7B21F4608, // 0x31C31DAA
 
 		/// <summary>
-		/// Parameters: Ped ped, bool p1
+		/// Parameters: Ped ped, BOOL p1
 		/// </summary>
 		/// <returns>void</returns>
 		REQUEST_PED_RESTRICTED_VEHICLE_VISIBILITY_TRACKING = 0xCD018C591F94CB43,
 
 		/// <summary>
-		/// Parameters: Ped ped, bool p1
+		/// Parameters: Ped ped, BOOL p1
 		/// </summary>
 		/// <returns>void</returns>
 		REQUEST_PED_USE_SMALL_BBOX_VISIBILITY_TRACKING = 0x75BA1CB3B7D40CAF, // 0x9194DB71
@@ -37109,7 +37109,7 @@ namespace GTA.Native
 		GET_PED_ENVEFF_SCALE = 0x9C14D30395A51A3C, // 0xA3421E39
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_ENABLE_PED_ENVEFF_SCALE = 0xD2C5AA0C0E8D0F1E, // 0xC70F4A84
@@ -37197,13 +37197,13 @@ namespace GTA.Native
 		_IS_PED_SHADER_EFFECT_VALID = 0x81AA517FBBA05D39,
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_ENABLE_CREW_EMBLEM = 0xE906EC930F5FE7C8,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <remarks>
 		/// This native does absolutely nothing, just a nullsub<br/>
@@ -37212,7 +37212,7 @@ namespace GTA.Native
 		REQUEST_RAGDOLL_BOUNDS_UPDATE = 0x1216E0BFA72CC703, // 0x7BD26837
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Enable/disable ped shadow (ambient occlusion). <see href='https://gfycat.com/thankfulesteemedgecko'>https://gfycat.com/thankfulesteemedgecko</see><br/>
@@ -37238,7 +37238,7 @@ namespace GTA.Native
 		CREATE_SYNCHRONIZED_SCENE = 0x8C18E0F9080ADD73, // 0xFFDDF8FA
 
 		/// <summary>
-		/// Parameters: float x, float y, float z, float radius, uint object
+		/// Parameters: float x, float y, float z, float radius, Hash @object
 		/// </summary>
 		/// <returns>int</returns>
 		CREATE_SYNCHRONIZED_SCENE_AT_MAP_OBJECT = 0x62EC273D00187DCA, // 0xF3876894
@@ -37257,7 +37257,7 @@ namespace GTA.Native
 		IS_SYNCHRONIZED_SCENE_RUNNING = 0x25D39B935A038A26, // 0x57A282F1
 
 		/// <summary>
-		/// Parameters: int sceneID, float x, float y, float z, float roll, float pitch, float yaw, bool p7
+		/// Parameters: int sceneID, float x, float y, float z, float roll, float pitch, float yaw, BOOL p7
 		/// </summary>
 		/// <returns>void</returns>
 		SET_SYNCHRONIZED_SCENE_ORIGIN = 0x6ACF6B7225801CD7, // 0x2EC2A0B2
@@ -37287,7 +37287,7 @@ namespace GTA.Native
 		GET_SYNCHRONIZED_SCENE_RATE = 0xD80932D577274D40, // 0x89365F0D
 
 		/// <summary>
-		/// Parameters: int sceneID, bool toggle
+		/// Parameters: int sceneID, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_SYNCHRONIZED_SCENE_LOOPED = 0xD9A897A4C6C2974F, // 0x32ED9F82
@@ -37299,7 +37299,7 @@ namespace GTA.Native
 		IS_SYNCHRONIZED_SCENE_LOOPED = 0x62522002E0C391BA, // 0x47D87A84
 
 		/// <summary>
-		/// Parameters: int sceneID, bool toggle
+		/// Parameters: int sceneID, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_SYNCHRONIZED_SCENE_HOLD_LAST_FRAME = 0x394B9CD12435C981, // 0x2DE48DA1
@@ -37337,7 +37337,7 @@ namespace GTA.Native
 		_DISPOSE_SYNCHRONIZED_SCENE = 0xCD9CC7E200A52A6F, // 0xBF7F9035
 
 		/// <summary>
-		/// Parameters: Ped ped, uint motionStateHash, bool p2, int p3, bool p4
+		/// Parameters: Ped ped, Hash motionStateHash, BOOL p2, int p3, BOOL p4
 		/// </summary>
 		/// <remarks>
 		/// Regarding p2, p3 and p4: Most common is 0, 0, 0); followed by 0, 1, 0); and 1, 1, 0); in R* scripts. p4 is very rarely something other than 0.<br/>
@@ -37432,7 +37432,7 @@ namespace GTA.Native
 		PED_HAS_SEXINESS_FLAG_SET = 0x46B05BCAE43856B0, // 0x79543043
 
 		/// <summary>
-		/// Parameters: Ped ped, IntPtr sizeAndVehs
+		/// Parameters: Ped ped, Any* sizeAndVehs
 		/// </summary>
 		/// <remarks>
 		/// Returns size of array, passed into the second variable.<br/>
@@ -37463,7 +37463,7 @@ namespace GTA.Native
 		GET_PED_NEARBY_VEHICLES = 0xCFF869CBFA210D82, // 0xCB716F68
 
 		/// <summary>
-		/// Parameters: Ped ped, IntPtr sizeAndPeds, int ignore
+		/// Parameters: Ped ped, Any* sizeAndPeds, int ignore
 		/// </summary>
 		/// <remarks>
 		/// sizeAndPeds - is a pointer to an array. The array is filled with peds found nearby the ped supplied to the first argument.<br/>
@@ -37495,7 +37495,7 @@ namespace GTA.Native
 		IS_PED_USING_ACTION_MODE = 0x00E73468D085F745, // 0x5AE7EDA2
 
 		/// <summary>
-		/// Parameters: Ped ped, bool p1, int p2, string action
+		/// Parameters: Ped ped, BOOL p1, int p2, const char* action
 		/// </summary>
 		/// <remarks>
 		/// p2 is usually -1 in the scripts. action is either 0 or "DEFAULT_ACTION".<br/>
@@ -37504,7 +37504,7 @@ namespace GTA.Native
 		SET_PED_USING_ACTION_MODE = 0xD75ACCF5E0FB5367, // 0x8802F696
 
 		/// <summary>
-		/// Parameters: Ped ped, string name
+		/// Parameters: Ped ped, const char* name
 		/// </summary>
 		/// <remarks>
 		/// name: "MP_FEMALE_ACTION" found multiple times in the b617d scripts.<br/>
@@ -37660,7 +37660,7 @@ namespace GTA.Native
 		SPAWNPOINTS_GET_SEARCH_RESULT_FLAGS = 0xB782F8238512BAD5, // 0xBA699DDF
 
 		/// <summary>
-		/// Parameters: Ped ped, int ikIndex, Entity entityLookAt, int boneLookAt, float offsetX, float offsetY, float offsetZ, IntPtr p7, int blendInDuration, int blendOutDuration
+		/// Parameters: Ped ped, int ikIndex, Entity entityLookAt, int boneLookAt, float offsetX, float offsetY, float offsetZ, Any p7, int blendInDuration, int blendOutDuration
 		/// </summary>
 		/// <returns>void</returns>
 		SET_IK_TARGET = 0xC32779C16FCEECD9, // 0x6FE5218C
@@ -37672,37 +37672,37 @@ namespace GTA.Native
 		FORCE_INSTANT_LEG_IK_SETUP = 0xED3C76ADFA6D07C4, // 0xFB4000DC
 
 		/// <summary>
-		/// Parameters: string asset
+		/// Parameters: const char* asset
 		/// </summary>
 		/// <returns>void</returns>
 		REQUEST_ACTION_MODE_ASSET = 0x290E2780BB7AA598, // 0x572BA553
 
 		/// <summary>
-		/// Parameters: string asset
+		/// Parameters: const char* asset
 		/// </summary>
 		/// <returns>BOOL</returns>
 		HAS_ACTION_MODE_ASSET_LOADED = 0xE4B5F4BF2CB24E65, // 0xF7EB2BF1
 
 		/// <summary>
-		/// Parameters: string asset
+		/// Parameters: const char* asset
 		/// </summary>
 		/// <returns>void</returns>
 		REMOVE_ACTION_MODE_ASSET = 0x13E940F88470FA51, // 0x3F480F92
 
 		/// <summary>
-		/// Parameters: string asset
+		/// Parameters: const char* asset
 		/// </summary>
 		/// <returns>void</returns>
 		REQUEST_STEALTH_MODE_ASSET = 0x2A0A62FCDEE16D4F, // 0x280A004A
 
 		/// <summary>
-		/// Parameters: string asset
+		/// Parameters: const char* asset
 		/// </summary>
 		/// <returns>BOOL</returns>
 		HAS_STEALTH_MODE_ASSET_LOADED = 0xE977FC5B08AF3441, // 0x39245667
 
 		/// <summary>
-		/// Parameters: string asset
+		/// Parameters: const char* asset
 		/// </summary>
 		/// <returns>void</returns>
 		REMOVE_STEALTH_MODE_ASSET = 0x9219857D21F0E842, // 0x8C0B243A
@@ -37714,19 +37714,19 @@ namespace GTA.Native
 		SET_PED_LOD_MULTIPLIER = 0xDC2C5C242AAC342B, // 0x1D2B5C70
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle, int p2
+		/// Parameters: Ped ped, BOOL toggle, int p2
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_CAN_LOSE_PROPS_ON_DAMAGE = 0xE861D0B05C7662B8, // 0x2F9550C2
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_FORCE_FOOTSTEP_UPDATE = 0x129466ED55140F8D, // 0x37DBC2AD
 
 		/// <summary>
-		/// Parameters: Ped ped, bool p1, int type, int p3
+		/// Parameters: Ped ped, BOOL p1, int type, int p3
 		/// </summary>
 		/// <returns>void</returns>
 		SET_FORCE_STEP_TYPE = 0xCB968B53FC7F916D, // 0xC0F1BC91
@@ -37738,7 +37738,7 @@ namespace GTA.Native
 		IS_ANY_HOSTILE_PED_NEAR_POINT = 0x68772DB2B2526F9F, // 0x1A464167
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Toggles config flag CPED_CONFIG_FLAG_CanPlayInCarIdles.<br/>
@@ -37772,7 +37772,7 @@ namespace GTA.Native
 		FORCE_ZERO_MASS_IN_COLLISIONS = 0xD33DAA36272177C4, // 0xA89A53F2
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_DISABLE_HIGH_FALL_DEATH = 0x711794453CFD692B,
@@ -37782,7 +37782,7 @@ namespace GTA.Native
 		_SET_DISABLE_PED_FALL_DAMAGE = 0x711794453CFD692B,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_PHONE_PALETTE_IDX = 0x83A169EABCDB10A2,
@@ -37808,7 +37808,7 @@ namespace GTA.Native
 		_IS_PED_SWAPPING_WEAPON = 0x3795688A307E1EB6,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2
+		/// Parameters: Any p0, Any p1, Any p2
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_TREATED_AS_FRIENDLY = 0x0F62619393661D6E,
@@ -37820,7 +37820,7 @@ namespace GTA.Native
 		SET_DISABLE_PED_MAP_COLLISION = 0xDFE68C4B787E1BFB,
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		ENABLE_MP_LIGHT = 0xEE2476B9EE4A094F,
@@ -37850,7 +37850,7 @@ namespace GTA.Native
 		_CLEAR_FACIAL_CLIPSET_OVERRIDE = 0x637822DC2AFEEBF8,
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_ALLOW_STUNT_JUMP_CAMERA = 0xFAB944D4D481ACCB,
@@ -37860,7 +37860,7 @@ namespace GTA.Native
 		#region PHYSICS
 
 		/// <summary>
-		/// Parameters: float x, float y, float z, float rotX, float rotY, float rotZ, float length, int ropeType, float maxLength, float minLength, float windingSpeed, bool p11, bool p12, bool rigid, float p14, bool breakWhenShot, IntPtr unkPtr
+		/// Parameters: float x, float y, float z, float rotX, float rotY, float rotZ, float length, int ropeType, float maxLength, float minLength, float windingSpeed, BOOL p11, BOOL p12, BOOL rigid, float p14, BOOL breakWhenShot, Any* unkPtr
 		/// </summary>
 		/// <remarks>
 		/// Creates a rope at the specific position, that extends in the specified direction when not attached to any entities.<br/>
@@ -37906,19 +37906,19 @@ namespace GTA.Native
 		DOES_ROPE_EXIST = 0xFD5448BE3111ED96, // 0x66E4A3AC
 
 		/// <summary>
-		/// Parameters: int* ropeId, bool p1
+		/// Parameters: int* ropeId, BOOL p1
 		/// </summary>
 		/// <returns>void</returns>
 		ROPE_DRAW_ENABLED = 0xA1AE736541B0FCA3,
 
 		/// <summary>
-		/// Parameters: int* ropeId, bool toggle
+		/// Parameters: int* ropeId, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		ROPE_DRAW_SHADOW_ENABLED = 0xF159A63806BB5BA8, // 0x51523B8C
 
 		/// <summary>
-		/// Parameters: int ropeId, string rope_preset
+		/// Parameters: int ropeId, const char* rope_preset
 		/// </summary>
 		/// <remarks>
 		/// Rope presets can be found in the gamefiles. One example is "ropeFamily3", it is NOT a hash but rather a string.<br/>
@@ -37945,7 +37945,7 @@ namespace GTA.Native
 		GET_ROPE_VERTEX_COUNT = 0x3655F544CD30F0B5, // 0x5131CD2C
 
 		/// <summary>
-		/// Parameters: int ropeId, Entity ent1, Entity ent2, float ent1_x, float ent1_y, float ent1_z, float ent2_x, float ent2_y, float ent2_z, float length, bool p10, bool p11, IntPtr p12, IntPtr p13
+		/// Parameters: int ropeId, Entity ent1, Entity ent2, float ent1_x, float ent1_y, float ent1_z, float ent2_x, float ent2_y, float ent2_z, float length, BOOL p10, BOOL p11, Any* p12, Any* p13
 		/// </summary>
 		/// <remarks>
 		/// Attaches entity 1 to entity 2.<br/>
@@ -37954,7 +37954,7 @@ namespace GTA.Native
 		ATTACH_ENTITIES_TO_ROPE = 0x3D95EC8B6D940AC3, // 0x7508668F
 
 		/// <summary>
-		/// Parameters: int ropeId, Entity entity, float x, float y, float z, bool p5
+		/// Parameters: int ropeId, Entity entity, float x, float y, float z, BOOL p5
 		/// </summary>
 		/// <remarks>
 		/// The position supplied can be anywhere, and the entity should anchor relative to that point from it's origin.<br/>
@@ -37975,13 +37975,13 @@ namespace GTA.Native
 		ROPE_SET_UPDATE_PINVERTS = 0xC8D667EE52114ABA, // 0xEAF291A0
 
 		/// <summary>
-		/// Parameters: int ropeId, IntPtr p1
+		/// Parameters: int ropeId, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		ROPE_SET_UPDATE_ORDER = 0xDC57A637A20006ED, // 0x80DB77A7
 
 		/// <summary>
-		/// Parameters: int ropeId, bool p1
+		/// Parameters: int ropeId, BOOL p1
 		/// </summary>
 		/// <returns>void</returns>
 		ROPE_SET_SMOOTH_REELIN = 0x36CCB9BE67B970FD, // 0xC67D5CF6
@@ -38066,7 +38066,7 @@ namespace GTA.Native
 		ROPE_ATTACH_VIRTUAL_BOUND_GEOM = 0xBC0CE682D4D05650, // 0x106BA127
 
 		/// <summary>
-		/// Parameters: IntPtr p0, bool p1, bool p2
+		/// Parameters: Any p0, BOOL p1, BOOL p2
 		/// </summary>
 		/// <returns>void</returns>
 		ROPE_CHANGE_SCRIPT_OWNER = 0xB1B6216CA2E7B55E, // 0x7C6F7668
@@ -38142,13 +38142,13 @@ namespace GTA.Native
 		SET_CG_AT_BOUNDCENTER = 0xBE520D9761FF811F, // 0xA5B55421
 
 		/// <summary>
-		/// Parameters: Entity entity, float p1, float p2, float p3, float p4, float p5, float p6, float p7, float p8, IntPtr p9, bool p10
+		/// Parameters: Entity entity, float p1, float p2, float p3, float p4, float p5, float p6, float p7, float p8, Any p9, BOOL p10
 		/// </summary>
 		/// <returns>void</returns>
 		BREAK_ENTITY_GLASS = 0x2E648D16F6E308F3, // 0xD0E0402F
 
 		/// <summary>
-		/// Parameters: Object object
+		/// Parameters: Object @object
 		/// </summary>
 		/// <returns>BOOL</returns>
 		GET_IS_ENTITY_A_FRAG = 0x0C112765300C7E1E,
@@ -38162,25 +38162,25 @@ namespace GTA.Native
 		_GET_HAS_OBJECT_FRAG_INST = 0x0C112765300C7E1E,
 
 		/// <summary>
-		/// Parameters: Object object, bool toggle
+		/// Parameters: Object @object, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_DISABLE_BREAKING = 0x5CEC1A84620E7D5B, // 0xEE77C326
 
 		/// <summary>
-		/// Parameters: Object object
+		/// Parameters: Object @object
 		/// </summary>
 		/// <returns>void</returns>
 		RESET_DISABLE_BREAKING = 0xCC6E963682533882,
 
 		/// <summary>
-		/// Parameters: Object object, bool toggle
+		/// Parameters: Object @object, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_DISABLE_FRAG_DAMAGE = 0x01BA3AED21C16CFB, // 0x97269DC8
 
 		/// <summary>
-		/// Parameters: Entity entity, bool toggle
+		/// Parameters: Entity entity, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// PED_RAGDOLL_BUMP Proof?<br/>
@@ -38193,13 +38193,13 @@ namespace GTA.Native
 		_SET_ENTITY_PROOF_UNK = 0x15F944730C832252,
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>void</returns>
 		SET_IN_STUNT_MODE = 0x9EBD751E5787BAF2,
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Related to the lower-end of a vehicles fTractionCurve, e.g., from standing starts and acceleration from low/zero speeds.<br/>
@@ -38234,7 +38234,7 @@ namespace GTA.Native
 		GET_PLAYER_PED_SCRIPT_INDEX = 0x50FAC3A3E030A6E1, // 0x6AC64990
 
 		/// <summary>
-		/// Parameters: Player player, uint model
+		/// Parameters: Player player, Hash model
 		/// </summary>
 		/// <remarks>
 		/// Set the model for a specific Player. Be aware that this will destroy the current Ped for the Player and create a new one, any reference to the old ped should be reset<br/>
@@ -38244,7 +38244,7 @@ namespace GTA.Native
 		SET_PLAYER_MODEL = 0x00A1CADD00108836, // 0x774A4C54
 
 		/// <summary>
-		/// Parameters: Player player, Ped ped, bool p2, bool resetDamage
+		/// Parameters: Player player, Ped ped, BOOL p2, BOOL resetDamage
 		/// </summary>
 		/// <returns>void</returns>
 		CHANGE_PLAYER_PED = 0x048189FAC643DEEE, // 0xBE515485
@@ -38313,7 +38313,7 @@ namespace GTA.Native
 		GET_PLAYER_WANTED_CENTRE_POSITION = 0x0C92BA89F1AF26F8, // 0x821F2D2C
 
 		/// <summary>
-		/// Parameters: Player player, Vector3* position, bool p2, bool p3
+		/// Parameters: Player player, Vector3* position, BOOL p2, BOOL p3
 		/// </summary>
 		/// <remarks>
 		/// # Predominant call signatures<br/>
@@ -38336,7 +38336,7 @@ namespace GTA.Native
 		GET_WANTED_LEVEL_THRESHOLD = 0xFDD179EAF45B556C, // 0xD9783F6B
 
 		/// <summary>
-		/// Parameters: Player player, int wantedLevel, bool disableNoMission
+		/// Parameters: Player player, int wantedLevel, BOOL disableNoMission
 		/// </summary>
 		/// <remarks>
 		/// Call SET_PLAYER_WANTED_LEVEL_NOW for immediate effect<br/>
@@ -38347,7 +38347,7 @@ namespace GTA.Native
 		SET_PLAYER_WANTED_LEVEL = 0x39FF19C64EF7DA5B, // 0xB7A0914B
 
 		/// <summary>
-		/// Parameters: Player player, int wantedLevel, bool p2
+		/// Parameters: Player player, int wantedLevel, BOOL p2
 		/// </summary>
 		/// <remarks>
 		/// p2 is always false in R* scripts<br/>
@@ -38356,7 +38356,7 @@ namespace GTA.Native
 		SET_PLAYER_WANTED_LEVEL_NO_DROP = 0x340E61DE7F471565, // 0xED6F44F5
 
 		/// <summary>
-		/// Parameters: Player player, bool p1
+		/// Parameters: Player player, BOOL p1
 		/// </summary>
 		/// <remarks>
 		/// Forces any pending wanted level to be applied to the specified player immediately.<br/>
@@ -38385,7 +38385,7 @@ namespace GTA.Native
 		IS_WANTED_AND_HAS_BEEN_SEEN_BY_COPS = 0x7E07C78925D5FD96,
 
 		/// <summary>
-		/// Parameters: Player player, bool toggle
+		/// Parameters: Player player, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_DISPATCH_COPS_FOR_PLAYER = 0xDB172424876553F4, // 0x48A18913
@@ -38419,7 +38419,7 @@ namespace GTA.Native
 		IS_PLAYER_PRESSING_HORN = 0xFA1E2BF8B10598F9, // 0xED1D1662
 
 		/// <summary>
-		/// Parameters: Player player, bool bHasControl, int flags
+		/// Parameters: Player player, BOOL bHasControl, int flags
 		/// </summary>
 		/// <remarks>
 		/// Flags:<br/>
@@ -38453,7 +38453,7 @@ namespace GTA.Native
 		SET_MAX_WANTED_LEVEL = 0xAA5F02DB48D704B9, // 0x665A06F5
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// If toggle is set to false:<br/>
@@ -38465,7 +38465,7 @@ namespace GTA.Native
 		SET_POLICE_RADAR_BLIPS = 0x43286D561B72B8BF, // 0x8E114B10
 
 		/// <summary>
-		/// Parameters: Player player, bool toggle
+		/// Parameters: Player player, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// The player will be ignored by the police if toggle is set to true<br/>
@@ -38483,13 +38483,13 @@ namespace GTA.Native
 		IS_PLAYER_PLAYING = 0x5E9564D8246B909A, // 0xE15D777F
 
 		/// <summary>
-		/// Parameters: Player player, bool toggle
+		/// Parameters: Player player, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_EVERYONE_IGNORE_PLAYER = 0x8EEDA153AD141BA4, // 0xC915285E
 
 		/// <summary>
-		/// Parameters: Player player, bool toggle
+		/// Parameters: Player player, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_ALL_RANDOM_PEDS_FLEE = 0x056E0FE8534C2949, // 0x49EAE968
@@ -38501,7 +38501,7 @@ namespace GTA.Native
 		SET_ALL_RANDOM_PEDS_FLEE_THIS_FRAME = 0x471D2FF42A94B4F2, // 0xBF974891
 
 		/// <summary>
-		/// Parameters: Player player, bool toggle
+		/// Parameters: Player player, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_ALL_NEUTRAL_RANDOM_PEDS_FLEE = 0xDE45D1A1EF45EE61, // 0x274631FE
@@ -38530,7 +38530,7 @@ namespace GTA.Native
 		SET_LAW_PEDS_CAN_ATTACK_NON_WANTED_PLAYER_THIS_FRAME = 0xFAC75988A7D078D3,
 
 		/// <summary>
-		/// Parameters: Player player, bool toggle
+		/// Parameters: Player player, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_IGNORE_LOW_PRIORITY_SHOCKING_EVENTS = 0x596976B02B6B5700, // 0xA3D675ED
@@ -38684,7 +38684,7 @@ namespace GTA.Native
 		SUPPRESS_LOSING_WANTED_LEVEL_IF_HIDDEN_THIS_FRAME = 0x4669B3ED80F24B4E, // 0xB9FB142F
 
 		/// <summary>
-		/// Parameters: Player player, IntPtr p1
+		/// Parameters: Player player, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		ALLOW_EVASION_HUD_IF_DISABLING_HIDDEN_EVASION_THIS_FRAME = 0x2F41A3BAE005E5FA,
@@ -38796,7 +38796,7 @@ namespace GTA.Native
 		SET_PLAYER_LOCKON_RANGE_OVERRIDE = 0x29961D490E5814FD, // 0x74D42C03
 
 		/// <summary>
-		/// Parameters: Player player, bool toggle
+		/// Parameters: Player player, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Set whether this player should be able to do drive-bys.<br/>
@@ -38806,7 +38806,7 @@ namespace GTA.Native
 		SET_PLAYER_CAN_DO_DRIVE_BY = 0x6E8834B52EC20C77, // 0xF4D99685
 
 		/// <summary>
-		/// Parameters: Player player, bool toggle
+		/// Parameters: Player player, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Sets whether this player can be hassled by gangs.<br/>
@@ -38815,7 +38815,7 @@ namespace GTA.Native
 		SET_PLAYER_CAN_BE_HASSLED_BY_GANGS = 0xD5E460AD7020A246, // 0x71B305BB
 
 		/// <summary>
-		/// Parameters: Player player, bool toggle
+		/// Parameters: Player player, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Sets whether this player can take cover.<br/>
@@ -38837,7 +38837,7 @@ namespace GTA.Native
 		IS_PLAYER_TARGETTING_ANYTHING = 0x78CFE51896B6B8A4, // 0x456DB50D
 
 		/// <summary>
-		/// Parameters: Player player, bool toggle
+		/// Parameters: Player player, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PLAYER_SPRINT = 0xA01B8075D8B92DF4, // 0x7DD7900C
@@ -38935,7 +38935,7 @@ namespace GTA.Native
 		IS_PLAYER_CLIMBING = 0x95E8F73DC65EFB9C, // 0x4A9E9AE0
 
 		/// <summary>
-		/// Parameters: Player player, bool atArresting
+		/// Parameters: Player player, BOOL atArresting
 		/// </summary>
 		/// <remarks>
 		/// Return true while player is being arrested / busted.<br/>
@@ -39048,7 +39048,7 @@ namespace GTA.Native
 		FORCE_CLEANUP = 0xBC8983F38F78ED51, // 0xFDAAEA2B
 
 		/// <summary>
-		/// Parameters: string name, int cleanupFlags
+		/// Parameters: const char* name, int cleanupFlags
 		/// </summary>
 		/// <remarks>
 		/// PLAYER::FORCE_CLEANUP_FOR_ALL_THREADS_WITH_THIS_NAME("pb_prostitute", 1); // Found in decompilation<br/>
@@ -39221,7 +39221,7 @@ namespace GTA.Native
 		IS_PLAYER_LOGGING_IN_NP = 0x74556E1420867ECA, // 0x8F72FAD0
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <remarks>
 		/// Purpose of the BOOL currently unknown.<br/>
@@ -39234,7 +39234,7 @@ namespace GTA.Native
 		IS_SYSTEM_UI_BEING_DISPLAYED = 0x5D511E3867C87139, // 0xE495B6DA
 
 		/// <summary>
-		/// Parameters: Player player, bool toggle
+		/// Parameters: Player player, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Simply sets you as invincible (Health will not deplete).<br/>
@@ -39274,7 +39274,7 @@ namespace GTA.Native
 		GET_PLAYER_DEBUG_INVINCIBLE = 0xDCC07526B8EC45AF,
 
 		/// <summary>
-		/// Parameters: Player player, bool toggle
+		/// Parameters: Player player, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PLAYER_INVINCIBLE_BUT_HAS_REACTIONS = 0x6BC97F4F4BB3C04B,
@@ -39284,25 +39284,25 @@ namespace GTA.Native
 		_SET_PLAYER_INVINCIBLE_KEEP_RAGDOLL_ENABLED = 0x6BC97F4F4BB3C04B,
 
 		/// <summary>
-		/// Parameters: Player player, bool p1
+		/// Parameters: Player player, BOOL p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PLAYER_CAN_COLLECT_DROPPED_MONEY = 0xCAC57395B151135F, // 0x00563E0D
 
 		/// <summary>
-		/// Parameters: Player player, bool p2
+		/// Parameters: Player player, BOOL p2
 		/// </summary>
 		/// <returns>void</returns>
 		REMOVE_PLAYER_HELMET = 0xF3AC26D3CC576528, // 0x6255F3B4
 
 		/// <summary>
-		/// Parameters: Player player, bool toggle
+		/// Parameters: Player player, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		GIVE_PLAYER_RAGDOLL_CONTROL = 0x3C49C870E66F0A28, // 0xC7B4D7AC
 
 		/// <summary>
-		/// Parameters: Player player, bool toggle
+		/// Parameters: Player player, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Example from fm_mission_controler.ysc.c4:<br/>
@@ -39428,25 +39428,25 @@ namespace GTA.Native
 		ASSISTED_MOVEMENT_FLUSH_ROUTE = 0x8621390F0CDCFE1F, // 0xD04568B9
 
 		/// <summary>
-		/// Parameters: Player player, bool toggle
+		/// Parameters: Player player, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PLAYER_FORCED_AIM = 0x0FEE4F80AC44A726, // 0x94E42E2E
 
 		/// <summary>
-		/// Parameters: Player player, bool toggle
+		/// Parameters: Player player, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PLAYER_FORCED_ZOOM = 0x75E7D505F2B15902, // 0xB0C576CB
 
 		/// <summary>
-		/// Parameters: Player player, bool toggle
+		/// Parameters: Player player, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PLAYER_FORCE_SKIP_AIM_INTRO = 0x7651BC64AE59E128, // 0x374F42F0
 
 		/// <summary>
-		/// Parameters: Player player, bool toggle
+		/// Parameters: Player player, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Inhibits the player from using any method of combat including melee and firearms.<br/>
@@ -39462,7 +39462,7 @@ namespace GTA.Native
 		DISABLE_PLAYER_THROW_GRENADE_WHILE_USING_GUN = 0xB885852C39CC265D,
 
 		/// <summary>
-		/// Parameters: Player player, bool toggle
+		/// Parameters: Player player, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_DISABLE_AMBIENT_MELEE_MOVE = 0x2E8AABFA40A84F8C, // 0xCCD937E7
@@ -39490,7 +39490,7 @@ namespace GTA.Native
 		_SPECIAL_ABILITY_ACTIVATE = 0x821FDC827D6F4090,
 
 		/// <summary>
-		/// Parameters: Player player, int p1, IntPtr p2
+		/// Parameters: Player player, int p1, Any p2
 		/// </summary>
 		/// <returns>void</returns>
 		SET_SPECIAL_ABILITY_MP = 0xB214D570EAD7F81A,
@@ -39513,31 +39513,31 @@ namespace GTA.Native
 		_SPECIAL_ABILITY_DEPLETE = 0x17F7471EACA78290,
 
 		/// <summary>
-		/// Parameters: Player player, IntPtr p1
+		/// Parameters: Player player, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		SPECIAL_ABILITY_DEACTIVATE = 0xD6A953C6D1492057, // 0x80C2AB09
 
 		/// <summary>
-		/// Parameters: Player player, IntPtr p1
+		/// Parameters: Player player, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		SPECIAL_ABILITY_DEACTIVATE_FAST = 0x9CB5CE07A3968D5A, // 0x0751908A
 
 		/// <summary>
-		/// Parameters: Player player, IntPtr p1
+		/// Parameters: Player player, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		SPECIAL_ABILITY_RESET = 0x375F0E738F861A94, // 0xA7D8BCD3
 
 		/// <summary>
-		/// Parameters: Player player, IntPtr p1
+		/// Parameters: Player player, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		SPECIAL_ABILITY_CHARGE_ON_MISSION_FAILED = 0xC9A763D8FE87436A, // 0x4136829A
 
 		/// <summary>
-		/// Parameters: Player player, bool p1, bool p2, IntPtr p3
+		/// Parameters: Player player, BOOL p1, BOOL p2, Any p3
 		/// </summary>
 		/// <remarks>
 		/// Every occurrence of p1 &#38; p2 were both true.<br/>
@@ -39546,7 +39546,7 @@ namespace GTA.Native
 		SPECIAL_ABILITY_CHARGE_SMALL = 0x2E7B9B683481687D, // 0x6F463F56
 
 		/// <summary>
-		/// Parameters: Player player, bool p1, bool p2, IntPtr p3
+		/// Parameters: Player player, BOOL p1, BOOL p2, Any p3
 		/// </summary>
 		/// <remarks>
 		/// Only 1 match. Both p1 &#38; p2 were true.<br/>
@@ -39555,7 +39555,7 @@ namespace GTA.Native
 		SPECIAL_ABILITY_CHARGE_MEDIUM = 0xF113E3AA9BC54613, // 0xAB55D8F3
 
 		/// <summary>
-		/// Parameters: Player player, bool p1, bool p2, IntPtr p3
+		/// Parameters: Player player, BOOL p1, BOOL p2, Any p3
 		/// </summary>
 		/// <remarks>
 		/// 2 matches. p1 was always true.<br/>
@@ -39564,7 +39564,7 @@ namespace GTA.Native
 		SPECIAL_ABILITY_CHARGE_LARGE = 0xF733F45FA4497D93, // 0xF440C04D
 
 		/// <summary>
-		/// Parameters: Player player, Ped p1, IntPtr p2
+		/// Parameters: Player player, Ped p1, Any p2
 		/// </summary>
 		/// <remarks>
 		/// p1 appears to always be 1 (only comes up twice)<br/>
@@ -39573,7 +39573,7 @@ namespace GTA.Native
 		SPECIAL_ABILITY_CHARGE_CONTINUOUS = 0xED481732DFF7E997, // 0x5FEE98A2
 
 		/// <summary>
-		/// Parameters: Player player, int p1, bool p2, IntPtr p3
+		/// Parameters: Player player, int p1, BOOL p2, Any p3
 		/// </summary>
 		/// <remarks>
 		/// p1 appears as 5, 10, 15, 25, or 30. p2 is always true.<br/>
@@ -39582,7 +39582,7 @@ namespace GTA.Native
 		SPECIAL_ABILITY_CHARGE_ABSOLUTE = 0xB7B0870EB531D08D, // 0x72429998
 
 		/// <summary>
-		/// Parameters: Player player, float normalizedValue, bool p2, IntPtr p3
+		/// Parameters: Player player, float normalizedValue, BOOL p2, Any p3
 		/// </summary>
 		/// <remarks>
 		/// normalizedValue is from 0.0 - 1.0<br/>
@@ -39596,7 +39596,7 @@ namespace GTA.Native
 		RESET_SPECIAL_ABILITY_CONTROLS_CINEMATIC = 0xA0696A65F009EE18, // 0x8C7E68C1
 
 		/// <summary>
-		/// Parameters: Player player, bool p1, IntPtr p2
+		/// Parameters: Player player, BOOL p1, Any p2
 		/// </summary>
 		/// <remarks>
 		/// Also known as _RECHARGE_SPECIAL_ABILITY<br/>
@@ -39605,7 +39605,7 @@ namespace GTA.Native
 		SPECIAL_ABILITY_FILL_METER = 0x3DACA8DDC6FD4980, // 0xB71589DA
 
 		/// <summary>
-		/// Parameters: Player player, bool p1, IntPtr p2
+		/// Parameters: Player player, BOOL p1, Any p2
 		/// </summary>
 		/// <remarks>
 		/// p1 was always true.<br/>
@@ -39614,43 +39614,43 @@ namespace GTA.Native
 		SPECIAL_ABILITY_DEPLETE_METER = 0x1D506DBBBC51E64B, // 0x9F80F6DF
 
 		/// <summary>
-		/// Parameters: uint playerModel, IntPtr p1
+		/// Parameters: Hash playerModel, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		SPECIAL_ABILITY_LOCK = 0x6A09D0D590A47D13, // 0x1B7BB388
 
 		/// <summary>
-		/// Parameters: uint playerModel, IntPtr p1
+		/// Parameters: Hash playerModel, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		SPECIAL_ABILITY_UNLOCK = 0xF145F3BE2EFA9A3B, // 0x1FDB2919
 
 		/// <summary>
-		/// Parameters: uint playerModel
+		/// Parameters: Hash playerModel
 		/// </summary>
 		/// <returns>BOOL</returns>
 		IS_SPECIAL_ABILITY_UNLOCKED = 0xC6017F6A6CDFA694, // 0xC9C75E82
 
 		/// <summary>
-		/// Parameters: Player player, IntPtr p1
+		/// Parameters: Player player, Any p1
 		/// </summary>
 		/// <returns>BOOL</returns>
 		IS_SPECIAL_ABILITY_ACTIVE = 0x3E5F7FC85D854E15, // 0x1B17E334
 
 		/// <summary>
-		/// Parameters: Player player, IntPtr p1
+		/// Parameters: Player player, Any p1
 		/// </summary>
 		/// <returns>BOOL</returns>
 		IS_SPECIAL_ABILITY_METER_FULL = 0x05A1FE504B7F2587, // 0x2E19D7F6
 
 		/// <summary>
-		/// Parameters: Player player, bool toggle, IntPtr p2
+		/// Parameters: Player player, BOOL toggle, Any p2
 		/// </summary>
 		/// <returns>void</returns>
 		ENABLE_SPECIAL_ABILITY = 0x181EC197DAEFE121, // 0xC86C1B4E
 
 		/// <summary>
-		/// Parameters: Player player, IntPtr p1
+		/// Parameters: Player player, Any p1
 		/// </summary>
 		/// <returns>BOOL</returns>
 		IS_SPECIAL_ABILITY_ENABLED = 0xB1D200FE26AEF3CB, // 0xC01238CC
@@ -39662,7 +39662,7 @@ namespace GTA.Native
 		SET_SPECIAL_ABILITY_MULTIPLIER = 0xA49C426ED0CA4AB7, // 0xFF1BC556
 
 		/// <summary>
-		/// Parameters: Player player, IntPtr p1
+		/// Parameters: Player player, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		UPDATE_SPECIAL_ABILITY_FROM_STAT = 0xFFEE8FA29AB9A18E, // 0x5D0FE25B
@@ -39695,7 +39695,7 @@ namespace GTA.Native
 		GET_IS_MOPPING_AREA_FREE_IN_FRONT_OF_PLAYER = 0xDD2620B7B9D16FF1, // 0x8CB53C9F
 
 		/// <summary>
-		/// Parameters: Player player, float x, float y, float z, float heading, bool p5, bool findCollisionLand, bool p7
+		/// Parameters: Player player, float x, float y, float z, float heading, BOOL p5, BOOL findCollisionLand, BOOL p7
 		/// </summary>
 		/// <remarks>
 		/// `findCollisionLand`: This teleports the player to land when set to true and will not consider the Z coordinate parameter provided by you. It will automatically put the Z coordinate so that you don't fall from sky.<br/>
@@ -39802,7 +39802,7 @@ namespace GTA.Native
 		_SET_PLAYER_WEAPON_DEFENSE_MODIFIER_2 = 0xBCFDE9EDE4CF27DC,
 
 		/// <summary>
-		/// Parameters: Player player, float modifier, bool p2
+		/// Parameters: Player player, float modifier, BOOL p2
 		/// </summary>
 		/// <remarks>
 		/// modifier's min value is 0.1<br/>
@@ -39844,7 +39844,7 @@ namespace GTA.Native
 		SET_PLAYER_MAX_EXPLOSIVE_DAMAGE = 0x8D768602ADEF2245,
 
 		/// <summary>
-		/// Parameters: Player player, IntPtr p1
+		/// Parameters: Player player, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PLAYER_EXPLOSIVE_DAMAGE_MODIFIER = 0xD821056B9ACF8052,
@@ -39984,7 +39984,7 @@ namespace GTA.Native
 		GET_PLAYER_HAS_RESERVE_PARACHUTE = 0x5DDFE2FF727F3CA3, // 0x30DA1DA1
 
 		/// <summary>
-		/// Parameters: Player player, bool enabled
+		/// Parameters: Player player, BOOL enabled
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PLAYER_CAN_LEAVE_PARACHUTE_SMOKE_TRAIL = 0xF401B182DBA8AF53, // 0x832DEB7A
@@ -40039,7 +40039,7 @@ namespace GTA.Native
 		CAN_PED_HEAR_PLAYER = 0xF297383AA91DCA29, // 0x1C70B2EB
 
 		/// <summary>
-		/// Parameters: Player player, float amount, int gaitType, float speed, bool p4, bool p5
+		/// Parameters: Player player, float amount, int gaitType, float speed, BOOL p4, BOOL p5
 		/// </summary>
 		/// <remarks>
 		/// This is to make the player walk without accepting input from INPUT.<br/>
@@ -40058,13 +40058,13 @@ namespace GTA.Native
 		RESET_PLAYER_INPUT_GAIT = 0x19531C47A2ABD691, // 0x4A701EE1
 
 		/// <summary>
-		/// Parameters: Player player, bool toggle
+		/// Parameters: Player player, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_AUTO_GIVE_PARACHUTE_WHEN_ENTER_PLANE = 0x9F343285A00B4BB6, // 0xA97C2059
 
 		/// <summary>
-		/// Parameters: Player player, bool toggle
+		/// Parameters: Player player, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_AUTO_GIVE_SCUBA_GEAR_WHEN_EXIT_VEHICLE = 0xD2B315B6689D537D, // 0xA25D767E
@@ -40088,7 +40088,7 @@ namespace GTA.Native
 		INCREASE_PLAYER_JUMP_SUPPRESSION_RANGE = 0x9EDD76E87D5D51BA, // 0xE30A64DC
 
 		/// <summary>
-		/// Parameters: Player player, bool toggle
+		/// Parameters: Player player, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PLAYER_SIMULATE_AIMING = 0xC54C95DA968EC5B5, // 0xF1E0CAFC
@@ -40149,7 +40149,7 @@ namespace GTA.Native
 		IS_PLAYER_BATTLE_AWARE = 0x38D28DA81E4E9BF9, // 0x013B4F72
 
 		/// <summary>
-		/// Parameters: Player player, int p1, bool p2
+		/// Parameters: Player player, int p1, BOOL p2
 		/// </summary>
 		/// <returns>BOOL</returns>
 		GET_PLAYER_RECEIVED_BATTLE_EVENT_RECENTLY = 0xBC0753C9CA14B506, // 0x9DF75B2A
@@ -40188,13 +40188,13 @@ namespace GTA.Native
 		HAS_PLAYER_LEFT_THE_WORLD = 0xD55DDFB47991A294, // 0xFEA40B6C
 
 		/// <summary>
-		/// Parameters: Player player, bool toggle
+		/// Parameters: Player player, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PLAYER_LEAVE_PED_BEHIND = 0xFF300C7649724A0B, // 0xAD8383FA
 
 		/// <summary>
-		/// Parameters: Player player, int p1, IntPtr p2, IntPtr p3, bool p4
+		/// Parameters: Player player, int p1, Any p2, Any p3, BOOL p4
 		/// </summary>
 		/// <remarks>
 		/// p1 was always 5.<br/>
@@ -40210,13 +40210,13 @@ namespace GTA.Native
 		CLEAR_PLAYER_PARACHUTE_VARIATION_OVERRIDE = 0x0F4CC924CF8C7B21, // 0xFD60F5AB
 
 		/// <summary>
-		/// Parameters: Player player, uint model
+		/// Parameters: Player player, Hash model
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PLAYER_PARACHUTE_MODEL_OVERRIDE = 0x977DB4641F6FC3DB, // 0x5D382498
 
 		/// <summary>
-		/// Parameters: Player player, uint model
+		/// Parameters: Player player, Hash model
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PLAYER_RESERVE_PARACHUTE_MODEL_OVERRIDE = 0x0764486AEDE748DB,
@@ -40262,7 +40262,7 @@ namespace GTA.Native
 		_CLEAR_PLAYER_RESERVE_PARACHUTE_MODEL_OVERRIDE = 0x290D248E25815AE8,
 
 		/// <summary>
-		/// Parameters: Player player, uint model
+		/// Parameters: Player player, Hash model
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PLAYER_PARACHUTE_PACK_MODEL_OVERRIDE = 0xDC80A4C2F18A2B64, // 0xA877FF5E
@@ -40280,13 +40280,13 @@ namespace GTA.Native
 		DISABLE_PLAYER_VEHICLE_REWARDS = 0xC142BE3BB9CE125F, // 0x8C6E611D
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PLAYER_SPECTATED_VEHICLE_RADIO_OVERRIDE = 0x2F7CEB6520288061, // 0x2849D4B2
 
 		/// <summary>
-		/// Parameters: Player player, bool state
+		/// Parameters: Player player, BOOL state
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PLAYER_BLUETOOTH_STATE = 0x5DC40A8869C22141, // 0x7A6B0EF8
@@ -40310,7 +40310,7 @@ namespace GTA.Native
 		GET_PLAYER_FAKE_WANTED_LEVEL = 0x56105E599CAB0EFA, // 0x0098D244
 
 		/// <summary>
-		/// Parameters: Player player1, Player player2, bool toggle
+		/// Parameters: Player player1, Player player2, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PLAYER_CAN_DAMAGE_PLAYER = 0x55FCC0C390620314,
@@ -40322,13 +40322,13 @@ namespace GTA.Native
 		SET_APPLY_WAYPOINT_OF_PLAYER = 0x2382AB11450AE7BA,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>BOOL</returns>
 		IS_PLAYER_VEHICLE_WEAPON_TOGGLED_TO_NON_HOMING = 0x6E4361FF3E8CD7CA,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <remarks>
 		/// Unsets playerPed+330 if the current weapon has certain flags.<br/>
@@ -40337,7 +40337,7 @@ namespace GTA.Native
 		SET_PLAYER_VEHICLE_WEAPON_TO_NON_HOMING = 0x237440E46D918649,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PLAYER_HOMING_DISABLED_FOR_ALL_VEHICLE_WEAPONS = 0xEE4EBDD2593BA844,
@@ -40359,7 +40359,7 @@ namespace GTA.Native
 		REMOVE_PLAYER_TARGETABLE_ENTITY = 0x9F260BFB59ADBCA3,
 
 		/// <summary>
-		/// Parameters: Player player, int p1, int p2, IntPtr p3, IntPtr p4, IntPtr p5
+		/// Parameters: Player player, int p1, int p2, Any p3, Any p4, Any p5
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PLAYER_PREVIOUS_VARIATION_DATA = 0x7BAE68775557AE0B,
@@ -40399,7 +40399,7 @@ namespace GTA.Native
 		REPLAY_RECORD_BACK_FOR_TIME = 0x293220DA1B46CEBC,
 
 		/// <summary>
-		/// Parameters: string missionNameLabel, IntPtr p1
+		/// Parameters: const char* missionNameLabel, Any p1
 		/// </summary>
 		/// <remarks>
 		/// -This function appears to be deprecated/ unused. Tracing the call internally leads to a _nullsub -<br/>
@@ -40507,7 +40507,7 @@ namespace GTA.Native
 		IS_REPLAY_AVAILABLE = 0x4282E08174868BE3,
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>BOOL</returns>
 		IS_REPLAY_RECORD_SPACE_AVAILABLE = 0x33D47E85B476ABCD,
@@ -40517,7 +40517,7 @@ namespace GTA.Native
 		#region REPLAY
 
 		/// <summary>
-		/// Parameters: string p0, bool p1
+		/// Parameters: const char* p0, BOOL p1
 		/// </summary>
 		/// <remarks>
 		/// Does nothing (it's a nullsub).<br/>
@@ -40542,7 +40542,7 @@ namespace GTA.Native
 		SET_SCRIPTS_HAVE_CLEANED_UP_FOR_REPLAY_SYSTEM = 0x5AD3932DAEB1E5D3,
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>void</returns>
 		SET_REPLAY_SYSTEM_PAUSED_FOR_SAVE = 0xE058175F8EAFE79A,
@@ -40587,7 +40587,7 @@ namespace GTA.Native
 		SAVEMIGRATION_MP_NUM_ACCOUNTS = 0x77A16200E18E0C55,
 
 		/// <summary>
-		/// Parameters: int p0, IntPtr p1
+		/// Parameters: int p0, Any* p1
 		/// </summary>
 		/// <returns>BOOL</returns>
 		SAVEMIGRATION_MP_GET_ACCOUNT = 0xFCE2747EEF1D05FC,
@@ -40603,19 +40603,19 @@ namespace GTA.Native
 		#region SCRIPT
 
 		/// <summary>
-		/// Parameters: string scriptName
+		/// Parameters: const char* scriptName
 		/// </summary>
 		/// <returns>void</returns>
 		REQUEST_SCRIPT = 0x6EB5F71AA68F2E8E, // 0xE26B2666
 
 		/// <summary>
-		/// Parameters: string scriptName
+		/// Parameters: const char* scriptName
 		/// </summary>
 		/// <returns>void</returns>
 		SET_SCRIPT_AS_NO_LONGER_NEEDED = 0xC90D2DCACD56184C, // 0x6FCB7795
 
 		/// <summary>
-		/// Parameters: string scriptName
+		/// Parameters: const char* scriptName
 		/// </summary>
 		/// <remarks>
 		/// Returns if a script has been loaded into the game. Used to see if a script was loaded after requesting.<br/>
@@ -40624,13 +40624,13 @@ namespace GTA.Native
 		HAS_SCRIPT_LOADED = 0xE6CC9F3BA0FB9EF1, // 0x5D67F751
 
 		/// <summary>
-		/// Parameters: string scriptName
+		/// Parameters: const char* scriptName
 		/// </summary>
 		/// <returns>BOOL</returns>
 		DOES_SCRIPT_EXIST = 0xFC04745FBE67C19A, // 0xDEAB87AB
 
 		/// <summary>
-		/// Parameters: uint scriptHash
+		/// Parameters: Hash scriptHash
 		/// </summary>
 		/// <remarks>
 		/// formerly _REQUEST_STREAMED_SCRIPT<br/>
@@ -40643,7 +40643,7 @@ namespace GTA.Native
 		_REQUEST_STREAMED_SCRIPT = 0xD62A67D26D9653E6, // 0x1C68D9DC
 
 		/// <summary>
-		/// Parameters: uint scriptHash
+		/// Parameters: Hash scriptHash
 		/// </summary>
 		/// <returns>void</returns>
 		SET_SCRIPT_WITH_NAME_HASH_AS_NO_LONGER_NEEDED = 0xC5BC038960E9DB27, // 0x96C26F66
@@ -40653,7 +40653,7 @@ namespace GTA.Native
 		_SET_STREAMED_SCRIPT_AS_NO_LONGER_NEEDED = 0xC5BC038960E9DB27, // 0x96C26F66
 
 		/// <summary>
-		/// Parameters: uint scriptHash
+		/// Parameters: Hash scriptHash
 		/// </summary>
 		/// <returns>BOOL</returns>
 		HAS_SCRIPT_WITH_NAME_HASH_LOADED = 0x5F0F0C783EB16C04, // 0x06674818
@@ -40663,7 +40663,7 @@ namespace GTA.Native
 		_HAS_STREAMED_SCRIPT_LOADED = 0x5F0F0C783EB16C04, // 0x06674818
 
 		/// <summary>
-		/// Parameters: uint scriptHash
+		/// Parameters: Hash scriptHash
 		/// </summary>
 		/// <returns>BOOL</returns>
 		DOES_SCRIPT_WITH_NAME_HASH_EXIST = 0xF86AA3C56BA31381, // 0x19EAE282
@@ -40726,7 +40726,7 @@ namespace GTA.Native
 		TERMINATE_THIS_THREAD = 0x1090044AD1DA76FA, // 0x3CD9CBB7
 
 		/// <summary>
-		/// Parameters: uint scriptHash
+		/// Parameters: Hash scriptHash
 		/// </summary>
 		/// <remarks>
 		/// Gets the number of instances of the specified script is currently running.<br/>
@@ -40788,7 +40788,7 @@ namespace GTA.Native
 		GET_EVENT_AT_INDEX = 0xD8F66A3A60C62153, // 0xB49C1442
 
 		/// <summary>
-		/// Parameters: int eventGroup, int eventIndex, IntPtr eventData, int eventDataSize
+		/// Parameters: int eventGroup, int eventIndex, Any* eventData, int eventDataSize
 		/// </summary>
 		/// <remarks>
 		/// eventGroup: 0 = SCRIPT_EVENT_QUEUE_AI (CEventGroupScriptAI), 1 = SCRIPT_EVENT_QUEUE_NETWORK (CEventGroupScriptNetwork)<br/>
@@ -40798,7 +40798,7 @@ namespace GTA.Native
 		GET_EVENT_DATA = 0x2902843FCD2B2D79, // 0x4280F92F
 
 		/// <summary>
-		/// Parameters: int eventGroup, IntPtr eventData, int eventDataSize, int playerBits
+		/// Parameters: int eventGroup, Any* eventData, int eventDataSize, int playerBits
 		/// </summary>
 		/// <remarks>
 		/// eventGroup: 0 = SCRIPT_EVENT_QUEUE_AI (CEventGroupScriptAI), 1 = SCRIPT_EVENT_QUEUE_NETWORK (CEventGroupScriptNetwork)<br/>
@@ -40812,7 +40812,7 @@ namespace GTA.Native
 		SHUTDOWN_LOADING_SCREEN = 0x078EBE9809CCD637, // 0xA2826D17
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_NO_LOADING_SCREEN = 0x5262CC1995D07E09, // 0xC8055034
@@ -40844,7 +40844,7 @@ namespace GTA.Native
 		BG_SET_EXITFLAG_RESPONSE = 0x760910B49D2B98EA, // 0x5C95B670
 
 		/// <summary>
-		/// Parameters: uint contextHash
+		/// Parameters: Hash contextHash
 		/// </summary>
 		/// <remarks>
 		/// Hashed version of BG_START_CONTEXT.<br/>
@@ -40853,7 +40853,7 @@ namespace GTA.Native
 		BG_START_CONTEXT_HASH = 0x75B18E49607874C7, // 0x67B23E17
 
 		/// <summary>
-		/// Parameters: uint contextHash
+		/// Parameters: Hash contextHash
 		/// </summary>
 		/// <remarks>
 		/// Hashed version of BG_END_CONTEXT.<br/>
@@ -40862,7 +40862,7 @@ namespace GTA.Native
 		BG_END_CONTEXT_HASH = 0x107E5CC7CA942BC1, // 0x3D981EBF
 
 		/// <summary>
-		/// Parameters: string contextName
+		/// Parameters: const char* contextName
 		/// </summary>
 		/// <remarks>
 		/// Inserts the given context into the background scripts context map.<br/>
@@ -40871,7 +40871,7 @@ namespace GTA.Native
 		BG_START_CONTEXT = 0x9D5A25BADB742ACD, // 0xF3F1D953
 
 		/// <summary>
-		/// Parameters: string contextName
+		/// Parameters: const char* contextName
 		/// </summary>
 		/// <remarks>
 		/// Deletes the given context from the background scripts context map.<br/>
@@ -40880,25 +40880,25 @@ namespace GTA.Native
 		BG_END_CONTEXT = 0xDC2BACD920D0A0DD, // 0x11F38FB3
 
 		/// <summary>
-		/// Parameters: int scriptIndex, string p1
+		/// Parameters: int scriptIndex, const char* p1
 		/// </summary>
 		/// <returns>BOOL</returns>
 		BG_DOES_LAUNCH_PARAM_EXIST = 0x0F6F1EBBC4E1D5E6, // 0xF8E5F73A
 
 		/// <summary>
-		/// Parameters: int scriptIndex, string p1
+		/// Parameters: int scriptIndex, const char* p1
 		/// </summary>
 		/// <returns>int</returns>
 		BG_GET_LAUNCH_PARAM_VALUE = 0x22E21FBCFC88C149, // 0x682CB7E1
 
 		/// <summary>
-		/// Parameters: uint p0
+		/// Parameters: Hash p0
 		/// </summary>
 		/// <returns>int</returns>
 		BG_GET_SCRIPT_ID_FROM_NAME_HASH = 0x829CD22E043A2577, // 0xC515E735
 
 		/// <summary>
-		/// Parameters: int eventGroup, IntPtr eventData, int eventDataSize, int playerBits
+		/// Parameters: int eventGroup, Any* eventData, int eventDataSize, int playerBits
 		/// </summary>
 		/// <remarks>
 		/// See TRIGGER_SCRIPT_EVENT<br/>
@@ -40915,7 +40915,7 @@ namespace GTA.Native
 		#region SECURITY
 
 		/// <summary>
-		/// Parameters: IntPtr variable
+		/// Parameters: Any* variable
 		/// </summary>
 		/// <remarks>
 		/// Registers a protected variable that will be checked for modifications by the anticheat<br/>
@@ -40928,7 +40928,7 @@ namespace GTA.Native
 		_REGISTER_PROTECTED_VARIABLE = 0x40EB1EFD921822BC,
 
 		/// <summary>
-		/// Parameters: IntPtr variable
+		/// Parameters: Any* variable
 		/// </summary>
 		/// <returns>void</returns>
 		UNREGISTER_SCRIPT_VARIABLE = 0x340A36A700E99699,
@@ -40983,7 +40983,7 @@ namespace GTA.Native
 		START_SHAPE_TEST_BOUNDING_BOX = 0x052837721A854EC7, // 0xCEEAD94B
 
 		/// <summary>
-		/// Parameters: float x, float y, float z, float dimX, float dimY, float dimZ, float rotX, float rotY, float rotZ, IntPtr p9, int flags, Entity entity, IntPtr p12
+		/// Parameters: float x, float y, float z, float dimX, float dimY, float dimZ, float rotX, float rotY, float rotZ, Any p9, int flags, Entity entity, Any p12
 		/// </summary>
 		/// <returns>int</returns>
 		START_SHAPE_TEST_BOX = 0xFE466162C4401D18, // 0x249BC876
@@ -41014,7 +41014,7 @@ namespace GTA.Native
 		_CAST_3D_RAY_POINT_TO_POINT = 0x28579D1B8F8AAC80, // 0x591EA833
 
 		/// <summary>
-		/// Parameters: float x1, float y1, float z1, float x2, float y2, float z2, float radius, int flags, Entity entity, IntPtr p9
+		/// Parameters: float x1, float y1, float z1, float x2, float y2, float z2, float radius, int flags, Entity entity, Any p9
 		/// </summary>
 		/// <returns>int</returns>
 		START_SHAPE_TEST_SWEPT_SPHERE = 0xE6AC6C45FBE83004, // 0x4559460A
@@ -41109,13 +41109,13 @@ namespace GTA.Native
 		SC_INBOX_SET_MESSAGE_AS_READ_AT_INDEX = 0x2C015348CF19CA1D, // 0x19EE0CCB
 
 		/// <summary>
-		/// Parameters: int p0, string context, int* out
+		/// Parameters: int p0, const char* context, int* @out
 		/// </summary>
 		/// <returns>BOOL</returns>
 		SC_INBOX_MESSAGE_GET_DATA_INT = 0xA00EFE4082C4056E, // 0x88068C7C
 
 		/// <summary>
-		/// Parameters: int p0, string p1
+		/// Parameters: int p0, const char* p1
 		/// </summary>
 		/// <returns>BOOL</returns>
 		SC_INBOX_MESSAGE_GET_DATA_BOOL = 0xFFE5C16F402D851D,
@@ -41125,7 +41125,7 @@ namespace GTA.Native
 		_SC_INBOX_MESSAGE_GET_DATA_BOOL = 0xFFE5C16F402D851D,
 
 		/// <summary>
-		/// Parameters: int p0, string context, char* out
+		/// Parameters: int p0, const char* context, char* @out
 		/// </summary>
 		/// <returns>BOOL</returns>
 		SC_INBOX_MESSAGE_GET_DATA_STRING = 0x7572EF42FC6A9B6D, // 0x15607620
@@ -41151,13 +41151,13 @@ namespace GTA.Native
 		_SC_INBOX_MESSAGE_GET_STRING = 0xF3E31D16CBDCB304, // 0x2C959AF9
 
 		/// <summary>
-		/// Parameters: IntPtr gamerHandle
+		/// Parameters: Any* gamerHandle
 		/// </summary>
 		/// <returns>void</returns>
 		SC_INBOX_MESSAGE_PUSH_GAMER_T0_RECIP_LIST = 0xDA024BDBD600F44A, // 0x0B9A3512
 
 		/// <summary>
-		/// Parameters: IntPtr data
+		/// Parameters: Any* data
 		/// </summary>
 		/// <returns>void</returns>
 		SC_INBOX_SEND_UGCSTATUPDATE_TO_RECIP_LIST = 0xA68D3D229F4F3B06, // 0x75324674
@@ -41167,13 +41167,13 @@ namespace GTA.Native
 		_SC_INBOX_MESSAGE_SEND_UGC_STAT_UPDATE_EVENT = 0xA68D3D229F4F3B06, // 0x75324674
 
 		/// <summary>
-		/// Parameters: int p0, IntPtr p1
+		/// Parameters: int p0, Any* p1
 		/// </summary>
 		/// <returns>BOOL</returns>
 		SC_INBOX_MESSAGE_GET_UGCDATA = 0x69D82604A1A5A254, // 0x88CA3BFC
 
 		/// <summary>
-		/// Parameters: IntPtr data
+		/// Parameters: Any* data
 		/// </summary>
 		/// <returns>BOOL</returns>
 		SC_INBOX_SEND_BOUNTY_TO_RECIP_LIST = 0x6AFD2CD753FEEF83, // 0x628F489B
@@ -41183,7 +41183,7 @@ namespace GTA.Native
 		_SC_INBOX_MESSAGE_SEND_BOUNTY_PRESENCE_EVENT = 0x6AFD2CD753FEEF83, // 0x628F489B
 
 		/// <summary>
-		/// Parameters: int index, IntPtr outData
+		/// Parameters: int index, Any* outData
 		/// </summary>
 		/// <returns>BOOL</returns>
 		SC_INBOX_GET_BOUNTY_DATA_AT_INDEX = 0x87E0052F08BD64E6, // 0xAB3346B5
@@ -41209,19 +41209,19 @@ namespace GTA.Native
 		SC_EMAIL_GET_NUM_RETRIEVED_EMAILS = 0x7DB18CA8CAD5B098,
 
 		/// <summary>
-		/// Parameters: int p0, IntPtr p1
+		/// Parameters: int p0, Any* p1
 		/// </summary>
 		/// <returns>BOOL</returns>
 		SC_EMAIL_GET_EMAIL_AT_INDEX = 0x4737980E8A283806,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any* p0, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		SC_EMAIL_DELETE_EMAILS = 0x44ACA259D67651DB,
 
 		/// <summary>
-		/// Parameters: IntPtr gamerHandle
+		/// Parameters: Any* gamerHandle
 		/// </summary>
 		/// <returns>void</returns>
 		SC_EMAIL_MESSAGE_PUSH_GAMER_TO_RECIP_LIST = 0x2330C12A7A605D16, // 0x9A703A2B
@@ -41230,19 +41230,19 @@ namespace GTA.Native
 		SC_EMAIL_MESSAGE_CLEAR_RECIP_LIST = 0x55DF6DB45179236E, // 0xD094F11A
 
 		/// <summary>
-		/// Parameters: string p0
+		/// Parameters: const char* p0
 		/// </summary>
 		/// <returns>void</returns>
 		SC_EMAIL_SEND_EMAIL = 0x116FB94DC4B79F17, // 0xAF3C081B
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>BOOL</returns>
 		SC_EMAIL_SET_CURRENT_EMAIL_TAG = 0x07DBD622D9533857,
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SC_CACHE_NEW_ROCKSTAR_MSGS = 0xBFA0A56A817C6C7D, // 0x2FB9F53C
@@ -41266,43 +41266,43 @@ namespace GTA.Native
 		_ROCKSTAR_MESSAGE_GET_STRING = 0xDF649C4E9AFDD788, // 0x468668F0
 
 		/// <summary>
-		/// Parameters: uint attrHash, int value
+		/// Parameters: Hash attrHash, int value
 		/// </summary>
 		/// <returns>BOOL</returns>
 		SC_PRESENCE_ATTR_SET_INT = 0x1F1E9682483697C7, // 0x90C74343
 
 		/// <summary>
-		/// Parameters: uint attrHash, float value
+		/// Parameters: Hash attrHash, float value
 		/// </summary>
 		/// <returns>BOOL</returns>
 		SC_PRESENCE_ATTR_SET_FLOAT = 0xC4C4575F62534A24, // 0x94BF0D35
 
 		/// <summary>
-		/// Parameters: uint attrHash, string value
+		/// Parameters: Hash attrHash, const char* value
 		/// </summary>
 		/// <returns>BOOL</returns>
 		SC_PRESENCE_ATTR_SET_STRING = 0x287F1F75D2803595, // 0x3ACE6D6B
 
 		/// <summary>
-		/// Parameters: IntPtr p0, float p1
+		/// Parameters: Any p0, float p1
 		/// </summary>
 		/// <returns>BOOL</returns>
 		SC_PRESENCE_SET_ACTIVITY_RATING = 0x487912FD248EFDDF, // 0x579B4510
 
 		/// <summary>
-		/// Parameters: string name, int* value
+		/// Parameters: const char* name, int* value
 		/// </summary>
 		/// <returns>BOOL</returns>
 		SC_GAMERDATA_GET_INT = 0xC85A7127E7AD02AA, // 0xF8BDA989
 
 		/// <summary>
-		/// Parameters: string name, float* value
+		/// Parameters: const char* name, float* value
 		/// </summary>
 		/// <returns>BOOL</returns>
 		SC_GAMERDATA_GET_FLOAT = 0xA770C8EEC6FB2AC5, // 0x515AF67C
 
 		/// <summary>
-		/// Parameters: string name
+		/// Parameters: const char* name
 		/// </summary>
 		/// <returns>BOOL</returns>
 		SC_GAMERDATA_GET_BOOL = 0x8416FE4E4629D7D7, // 0xDF45B2A7
@@ -41312,7 +41312,7 @@ namespace GTA.Native
 		_SC_GET_IS_PROFILE_ATTRIBUTE_SET = 0x8416FE4E4629D7D7, // 0xDF45B2A7
 
 		/// <summary>
-		/// Parameters: string name, char* value
+		/// Parameters: const char* name, char* value
 		/// </summary>
 		/// <returns>BOOL</returns>
 		SC_GAMERDATA_GET_STRING = 0x7FFCBFEE44ECFABF, // 0x2AE35169
@@ -41324,7 +41324,7 @@ namespace GTA.Native
 		SC_GAMERDATA_GET_ACTIVE_XP_BONUS = 0x2D874D4AE612A65F,
 
 		/// <summary>
-		/// Parameters: string string, int* token
+		/// Parameters: const char* @string, int* token
 		/// </summary>
 		/// <remarks>
 		/// Starts a task to check an entered string for profanity on the ROS/Social Club services.<br/>
@@ -41338,7 +41338,7 @@ namespace GTA.Native
 		_SC_START_CHECK_STRING_TASK = 0x75632C5ECD7ED843, // 0xDF084A6B
 
 		/// <summary>
-		/// Parameters: string string, int* token
+		/// Parameters: const char* @string, int* token
 		/// </summary>
 		/// <returns>BOOL</returns>
 		SC_PROFANITY_CHECK_STRING_UGC = 0xEB2BF817463DFA28,
@@ -41380,19 +41380,19 @@ namespace GTA.Native
 		SC_PROFANITY_GET_STRING_STATUS = 0x930DE22F07B1CCE3, // 0x4D8A6521
 
 		/// <summary>
-		/// Parameters: string p0, int* p1
+		/// Parameters: const char* p0, int* p1
 		/// </summary>
 		/// <returns>BOOL</returns>
 		SC_LICENSEPLATE_CHECK_STRING = 0xF6BAAAF762E1BF40, // 0x7AA36406
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>BOOL</returns>
 		SC_LICENSEPLATE_GET_CHECK_IS_VALID = 0xF22CA0FD74B80E7A, // 0xF379DCE4
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>BOOL</returns>
 		SC_LICENSEPLATE_GET_CHECK_IS_PENDING = 0x9237E334F6E43156, // 0x65D84665
@@ -41416,13 +41416,13 @@ namespace GTA.Native
 		SC_LICENSEPLATE_GET_PLATE_DATA = 0x2E89990DDFF670C3, // 0x05303FC8
 
 		/// <summary>
-		/// Parameters: string oldPlateText, string newPlateText, IntPtr plateData
+		/// Parameters: const char* oldPlateText, const char* newPlateText, Any* plateData
 		/// </summary>
 		/// <returns>BOOL</returns>
 		SC_LICENSEPLATE_SET_PLATE_DATA = 0xD0EE05FE193646EA, // 0x9F98FA5C
 
 		/// <summary>
-		/// Parameters: string plateText, IntPtr plateData, int* token
+		/// Parameters: const char* plateText, Any* plateData, int* token
 		/// </summary>
 		/// <returns>BOOL</returns>
 		SC_LICENSEPLATE_ADD = 0x1989C6E6F67E76A8, // 0xEEDE7FAB
@@ -41440,7 +41440,7 @@ namespace GTA.Native
 		SC_LICENSEPLATE_GET_ADD_STATUS = 0x8147FFF6A718E1AD, // 0x930B3AE5
 
 		/// <summary>
-		/// Parameters: string plateText, int* token
+		/// Parameters: const char* plateText, int* token
 		/// </summary>
 		/// <returns>BOOL</returns>
 		SC_LICENSEPLATE_ISVALID = 0x0F73393BAC7E6730, // 0x5298F472
@@ -41464,19 +41464,19 @@ namespace GTA.Native
 		SC_COMMUNITY_EVENT_GET_EVENT_ID = 0x4ED9C8D6DA297639, // 0xC5E08B66
 
 		/// <summary>
-		/// Parameters: string p0, int* p1
+		/// Parameters: const char* p0, int* p1
 		/// </summary>
 		/// <returns>BOOL</returns>
 		SC_COMMUNITY_EVENT_GET_EXTRA_DATA_INT = 0x710BCDA8071EDED1, // 0x04EE74A3
 
 		/// <summary>
-		/// Parameters: string p0, float* p1
+		/// Parameters: const char* p0, float* p1
 		/// </summary>
 		/// <returns>BOOL</returns>
 		SC_COMMUNITY_EVENT_GET_EXTRA_DATA_FLOAT = 0x50A8A36201DBF83E, // 0x8DA93C3D
 
 		/// <summary>
-		/// Parameters: string p0, char* p1
+		/// Parameters: const char* p0, char* p1
 		/// </summary>
 		/// <returns>BOOL</returns>
 		SC_COMMUNITY_EVENT_GET_EXTRA_DATA_STRING = 0x9DE5D2F723575ED0, // 0x37DD48B5
@@ -41488,37 +41488,37 @@ namespace GTA.Native
 		SC_COMMUNITY_EVENT_GET_DISPLAY_NAME = 0xC2C97EA97711D1AE, // 0xF929F61D
 
 		/// <summary>
-		/// Parameters: string p0
+		/// Parameters: const char* p0
 		/// </summary>
 		/// <returns>BOOL</returns>
 		SC_COMMUNITY_EVENT_IS_ACTIVE_FOR_TYPE = 0x450819D8CF90C416, // 0x0572EB5E
 
 		/// <summary>
-		/// Parameters: string p0
+		/// Parameters: const char* p0
 		/// </summary>
 		/// <returns>int</returns>
 		SC_COMMUNITY_EVENT_GET_EVENT_ID_FOR_TYPE = 0x4A7D6E727F941747, // 0x8E7AEEB7
 
 		/// <summary>
-		/// Parameters: string p0, int* p1, string p2
+		/// Parameters: const char* p0, int* p1, const char* p2
 		/// </summary>
 		/// <returns>BOOL</returns>
 		SC_COMMUNITY_EVENT_GET_EXTRA_DATA_INT_FOR_TYPE = 0xE75A4A2E5E316D86, // 0x28C57FA0
 
 		/// <summary>
-		/// Parameters: string p0, float* p1, string p2
+		/// Parameters: const char* p0, float* p1, const char* p2
 		/// </summary>
 		/// <returns>BOOL</returns>
 		SC_COMMUNITY_EVENT_GET_EXTRA_DATA_FLOAT_FOR_TYPE = 0x2570E26BE63964E3, // 0x59394583
 
 		/// <summary>
-		/// Parameters: string p0, char* p1, string p2
+		/// Parameters: const char* p0, char* p1, const char* p2
 		/// </summary>
 		/// <returns>BOOL</returns>
 		SC_COMMUNITY_EVENT_GET_EXTRA_DATA_STRING_FOR_TYPE = 0x1D12A56FC95BE92E, // 0x92452C0E
 
 		/// <summary>
-		/// Parameters: char* p0, string p1
+		/// Parameters: char* p0, const char* p1
 		/// </summary>
 		/// <returns>BOOL</returns>
 		SC_COMMUNITY_EVENT_GET_DISPLAY_NAME_FOR_TYPE = 0x33DF47CC0642061B, // 0xBBA8D34D
@@ -41530,19 +41530,19 @@ namespace GTA.Native
 		SC_COMMUNITY_EVENT_IS_ACTIVE_BY_ID = 0xA468E0BE12B12C70, // 0xB21288FA
 
 		/// <summary>
-		/// Parameters: int p0, string p1, int* p2
+		/// Parameters: int p0, const char* p1, int* p2
 		/// </summary>
 		/// <returns>BOOL</returns>
 		SC_COMMUNITY_EVENT_GET_EXTRA_DATA_INT_BY_ID = 0x8CC469AB4D349B7C, // 0xE778B2A7
 
 		/// <summary>
-		/// Parameters: int p0, string p1, float* p2
+		/// Parameters: int p0, const char* p1, float* p2
 		/// </summary>
 		/// <returns>BOOL</returns>
 		SC_COMMUNITY_EVENT_GET_EXTRA_DATA_FLOAT_BY_ID = 0xC5A35C73B68F3C49, // 0x7E24BD6E
 
 		/// <summary>
-		/// Parameters: int p0, string p1, char* p2
+		/// Parameters: int p0, const char* p1, char* p2
 		/// </summary>
 		/// <returns>BOOL</returns>
 		SC_COMMUNITY_EVENT_GET_EXTRA_DATA_STRING_BY_ID = 0x699E4A5C8C893A18, // 0xCE7D50A8
@@ -41554,13 +41554,13 @@ namespace GTA.Native
 		SC_COMMUNITY_EVENT_GET_DISPLAY_NAME_BY_ID = 0x19853B5B17D77BCA, // 0xD26CCA46
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>BOOL</returns>
 		SC_TRANSITION_NEWS_SHOW = 0x6BFB12CE158E3DD4, // 0x24D84334
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>BOOL</returns>
 		SC_TRANSITION_NEWS_SHOW_TIMED = 0xFE4C1D0D3B9CC17E, // 0x8A023024
@@ -41572,7 +41572,7 @@ namespace GTA.Native
 		SC_TRANSITION_NEWS_HAS_EXTRA_DATA_TU = 0x3001BEF2FECA3680, // 0x4D4C37B3
 
 		/// <summary>
-		/// Parameters: string p0, int* p1
+		/// Parameters: const char* p0, int* p1
 		/// </summary>
 		/// <returns>BOOL</returns>
 		SC_TRANSITION_NEWS_GET_EXTRA_DATA_INT_TU = 0x92DA6E70EF249BD1, // 0xAED95A6F
@@ -41581,13 +41581,13 @@ namespace GTA.Native
 		SC_TRANSITION_NEWS_END = 0x675721C9F644D161, // 0x486867E6
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>BOOL</returns>
 		SC_PAUSE_NEWS_INIT_STARTER_PACK = 0xE4F6E8D07A2F0F51,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <remarks>
 		/// Fills some 0x30 sized struct<br/>
@@ -41650,7 +41650,7 @@ namespace GTA.Native
 		STAT_LOAD = 0xA651443F437B1CE6, // 0x9E5629F4
 
 		/// <summary>
-		/// Parameters: int p0, bool p1, int p2, bool p3
+		/// Parameters: int p0, BOOL p1, int p2, BOOL p3
 		/// </summary>
 		/// <returns>BOOL</returns>
 		STAT_SAVE = 0xE07BCA305B82D2FD, // 0xE10A7CA4
@@ -41695,13 +41695,13 @@ namespace GTA.Native
 		STAT_CLOUD_SLOT_LOAD_FAILED = 0x7F2C4CDF2E82DF4C, // 0x0BF0F4B2
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>int</returns>
 		STAT_CLOUD_SLOT_LOAD_FAILED_CODE = 0xE496A53BA5F50A56, // 0xCE6B62B5
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		STAT_SET_BLOCK_SAVES = 0xF434A10BA01C37D0, // 0xCE7A2411
@@ -41710,13 +41710,13 @@ namespace GTA.Native
 		STAT_GET_BLOCK_SAVES = 0x6A7F19756F1A9016,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>BOOL</returns>
 		STAT_CLOUD_SLOT_SAVE_FAILED = 0x7E6946F68A38B74F, // 0x22804C20
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		STAT_CLEAR_PENDING_SAVES = 0xA8733668D1047B51, // 0x395D18B1
@@ -41731,7 +41731,7 @@ namespace GTA.Native
 		STAT_GET_LOAD_SAFE_TO_PROGRESS_TO_MP_FROM_SP = 0xC0E0D686DDFC6EAE, // 0x099FCC86
 
 		/// <summary>
-		/// Parameters: uint statName, int value, bool save
+		/// Parameters: Hash statName, int value, BOOL save
 		/// </summary>
 		/// <remarks>
 		/// Example:<br/>
@@ -41741,7 +41741,7 @@ namespace GTA.Native
 		STAT_SET_INT = 0xB3271D7AB655B441, // 0xC9CC1C5C
 
 		/// <summary>
-		/// Parameters: uint statName, float value, bool save
+		/// Parameters: Hash statName, float value, BOOL save
 		/// </summary>
 		/// <remarks>
 		/// Example:<br/>
@@ -41751,7 +41751,7 @@ namespace GTA.Native
 		STAT_SET_FLOAT = 0x4851997F37FE9B3C, // 0x6CEA96F2
 
 		/// <summary>
-		/// Parameters: uint statName, bool value, bool save
+		/// Parameters: Hash statName, BOOL value, BOOL save
 		/// </summary>
 		/// <remarks>
 		/// Example:<br/>
@@ -41761,7 +41761,7 @@ namespace GTA.Native
 		STAT_SET_BOOL = 0x4B33C4243DE0C432, // 0x55D79DFB
 
 		/// <summary>
-		/// Parameters: uint statName, string value, bool save
+		/// Parameters: Hash statName, const char* value, BOOL save
 		/// </summary>
 		/// <remarks>
 		/// The following values have been found in the decompiled scripts:<br/>
@@ -41833,7 +41833,7 @@ namespace GTA.Native
 		STAT_SET_GXT_LABEL = 0x17695002FD8B2AE0, // 0xC1224AA7
 
 		/// <summary>
-		/// Parameters: uint statName, IntPtr value, int numFields, bool save
+		/// Parameters: Hash statName, Any* value, int numFields, BOOL save
 		/// </summary>
 		/// <remarks>
 		/// 'value' is a structure to a structure, 'numFields' is how many fields there are in said structure (usually 7).<br/>
@@ -41851,31 +41851,31 @@ namespace GTA.Native
 		STAT_SET_DATE = 0x2C29BFB64F4FCBE4, // 0x36BE807B
 
 		/// <summary>
-		/// Parameters: uint statName, string value, bool save
+		/// Parameters: Hash statName, const char* value, BOOL save
 		/// </summary>
 		/// <returns>BOOL</returns>
 		STAT_SET_STRING = 0xA87B2335D12531D7, // 0xB1EF2E21
 
 		/// <summary>
-		/// Parameters: uint statName, float x, float y, float z, bool save
+		/// Parameters: Hash statName, float x, float y, float z, BOOL save
 		/// </summary>
 		/// <returns>BOOL</returns>
 		STAT_SET_POS = 0xDB283FDE680FE72E, // 0x1192C9A3
 
 		/// <summary>
-		/// Parameters: uint statName, int p1, int p2, int p3, bool save
+		/// Parameters: Hash statName, int p1, int p2, int p3, BOOL save
 		/// </summary>
 		/// <returns>BOOL</returns>
 		STAT_SET_MASKED_INT = 0x7BBB1B54583ED410, // 0x2CBAA739
 
 		/// <summary>
-		/// Parameters: uint statName, string value, bool save
+		/// Parameters: Hash statName, const char* value, BOOL save
 		/// </summary>
 		/// <returns>BOOL</returns>
 		STAT_SET_USER_ID = 0x8CDDF1E452BABE11, // 0xDBE78ED7
 
 		/// <summary>
-		/// Parameters: uint statName, bool p1
+		/// Parameters: Hash statName, BOOL p1
 		/// </summary>
 		/// <remarks>
 		/// p1 always true.<br/>
@@ -41884,7 +41884,7 @@ namespace GTA.Native
 		STAT_SET_CURRENT_POSIX_TIME = 0xC2F84B7F9C4D0C61, // 0xA286F015
 
 		/// <summary>
-		/// Parameters: uint statHash, int* outValue, int p2
+		/// Parameters: Hash statHash, int* outValue, int p2
 		/// </summary>
 		/// <remarks>
 		/// p2 appears to always be -1<br/>
@@ -41893,19 +41893,19 @@ namespace GTA.Native
 		STAT_GET_INT = 0x767FBC2AC802EF3D, // 0x1C6FE43E
 
 		/// <summary>
-		/// Parameters: uint statHash, float* outValue, IntPtr p2
+		/// Parameters: Hash statHash, float* outValue, Any p2
 		/// </summary>
 		/// <returns>BOOL</returns>
 		STAT_GET_FLOAT = 0xD7AE6C9C9C6AC54C, // 0xFCBDA612
 
 		/// <summary>
-		/// Parameters: uint statHash, BOOL* outValue, IntPtr p2
+		/// Parameters: Hash statHash, BOOL* outValue, Any p2
 		/// </summary>
 		/// <returns>BOOL</returns>
 		STAT_GET_BOOL = 0x11B5E6D2AE73F48E, // 0x28A3DD2B
 
 		/// <summary>
-		/// Parameters: uint statHash, IntPtr outValue, int numFields, IntPtr p3
+		/// Parameters: Hash statHash, Any* outValue, int numFields, Any p3
 		/// </summary>
 		/// <remarks>
 		/// p3 is probably characterSlot or BOOL save, always -1<br/>
@@ -41914,7 +41914,7 @@ namespace GTA.Native
 		STAT_GET_DATE = 0x8B0FACEFC36C824B, // 0xD762D16C
 
 		/// <summary>
-		/// Parameters: uint statHash, int p1
+		/// Parameters: Hash statHash, int p1
 		/// </summary>
 		/// <remarks>
 		/// p1 is always -1 in the script files<br/>
@@ -41923,7 +41923,7 @@ namespace GTA.Native
 		STAT_GET_STRING = 0xE50384ACC2C3DB74, // 0x10CE4BDE
 
 		/// <summary>
-		/// Parameters: uint statName, float* outX, float* outY, float* outZ, IntPtr p4
+		/// Parameters: Hash statName, float* outX, float* outY, float* outZ, Any p4
 		/// </summary>
 		/// <remarks>
 		/// p3 is probably characterSlot or BOOL save, always -1<br/>
@@ -41932,7 +41932,7 @@ namespace GTA.Native
 		STAT_GET_POS = 0x350F82CCB186AA1B, // 0xC846ECCE
 
 		/// <summary>
-		/// Parameters: uint statHash, int* outValue, int p2, int p3, IntPtr p4
+		/// Parameters: Hash statHash, int* outValue, int p2, int p3, Any p4
 		/// </summary>
 		/// <remarks>
 		/// p4 is probably characterSlot or BOOL save<br/>
@@ -41941,7 +41941,7 @@ namespace GTA.Native
 		STAT_GET_MASKED_INT = 0x655185A06D9EEAAB, // 0xE9D9B70F
 
 		/// <summary>
-		/// Parameters: uint statHash
+		/// Parameters: Hash statHash
 		/// </summary>
 		/// <remarks>
 		/// Returns the rockstar ID (user id) value of a given stat. Returns "STAT_UNKNOWN" if the statHash is invalid or the stat has no userId<br/>
@@ -41950,19 +41950,19 @@ namespace GTA.Native
 		STAT_GET_USER_ID = 0x2365C388E393BBE2, // 0xE2E8B6BA
 
 		/// <summary>
-		/// Parameters: uint statName
+		/// Parameters: Hash statName
 		/// </summary>
 		/// <returns>const char*</returns>
 		STAT_GET_LICENSE_PLATE = 0x5473D4195058B2E4, // 0x1544B29F
 
 		/// <summary>
-		/// Parameters: uint statName, string str
+		/// Parameters: Hash statName, const char* str
 		/// </summary>
 		/// <returns>BOOL</returns>
 		STAT_SET_LICENSE_PLATE = 0x69FF13266D7296DA, // 0x3507D253
 
 		/// <summary>
-		/// Parameters: uint statName, float value
+		/// Parameters: Hash statName, float value
 		/// </summary>
 		/// <returns>void</returns>
 		STAT_INCREMENT = 0x9B5A68C6489E9909, // 0xDFC5F71E
@@ -41974,7 +41974,7 @@ namespace GTA.Native
 		STAT_COMMUNITY_SYNCH_IS_PENDING = 0xB1D2BB1E1631F5B1, // 0x02F283CE
 
 		/// <summary>
-		/// Parameters: uint statName, int p1, float* outValue
+		/// Parameters: Hash statName, int p1, float* outValue
 		/// </summary>
 		/// <returns>BOOL</returns>
 		STAT_COMMUNITY_GET_HISTORY = 0xBED9F5693F34ED17, // 0xC4110917
@@ -41998,25 +41998,25 @@ namespace GTA.Native
 		STAT_LOCAL_RESET_ALL_ONLINE_CHARACTER_STATS = 0xA78B8FA58200DA56, // 0xE3247582
 
 		/// <summary>
-		/// Parameters: uint statName
+		/// Parameters: Hash statName
 		/// </summary>
 		/// <returns>int</returns>
 		STAT_GET_NUMBER_OF_DAYS = 0xE0E854F5280FB769, // 0xFD66A429
 
 		/// <summary>
-		/// Parameters: uint statName
+		/// Parameters: Hash statName
 		/// </summary>
 		/// <returns>int</returns>
 		STAT_GET_NUMBER_OF_HOURS = 0xF2D4B2FE415AAFC3, // 0x9B431236
 
 		/// <summary>
-		/// Parameters: uint statName
+		/// Parameters: Hash statName
 		/// </summary>
 		/// <returns>int</returns>
 		STAT_GET_NUMBER_OF_MINUTES = 0x7583B4BE4C5A41B5, // 0x347B4436
 
 		/// <summary>
-		/// Parameters: uint statName
+		/// Parameters: Hash statName
 		/// </summary>
 		/// <returns>int</returns>
 		STAT_GET_NUMBER_OF_SECONDS = 0x2CE056FF3723F00B, // 0x2C1D6C31
@@ -42036,7 +42036,7 @@ namespace GTA.Native
 		_STAT_SET_PROFILE_SETTING = 0x68F01422BE1D838F, // 0x24DD4929
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <remarks>
 		/// This native does absolutely nothing, just a nullsub<br/>
@@ -42058,7 +42058,7 @@ namespace GTA.Native
 		_STAT_GET_PACKED_INT_MASK = 0x94F12ABF9C79E339, // 0xCA160BCC
 
 		/// <summary>
-		/// Parameters: int index, bool spStat, bool charStat, int character
+		/// Parameters: int index, BOOL spStat, BOOL charStat, int character
 		/// </summary>
 		/// <returns>Hash</returns>
 		GET_PACKED_INT_STAT_KEY = 0x61E111E323419E07, // 0x1F938864
@@ -42068,7 +42068,7 @@ namespace GTA.Native
 		_GET_PSTAT_INT_HASH = 0x61E111E323419E07, // 0x1F938864
 
 		/// <summary>
-		/// Parameters: int index, bool spStat, bool charStat, int character
+		/// Parameters: int index, BOOL spStat, BOOL charStat, int character
 		/// </summary>
 		/// <returns>Hash</returns>
 		GET_PACKED_TU_INT_STAT_KEY = 0xD16C2AD6B8E32854, // 0xFB93C5A2
@@ -42082,7 +42082,7 @@ namespace GTA.Native
 		_GET_PACKED_TITLE_UPDATE_INT_STAT_KEY = 0xD16C2AD6B8E32854, // 0xFB93C5A2
 
 		/// <summary>
-		/// Parameters: int index, bool spStat, bool charStat, int character, string section
+		/// Parameters: int index, BOOL spStat, BOOL charStat, int character, const char* section
 		/// </summary>
 		/// <remarks>
 		/// Needs more research. Gets the stat name of a masked int?<br/>
@@ -42132,7 +42132,7 @@ namespace GTA.Native
 		_GET_PACKED_STAT_INT = 0x0BC900A6FE73770C,
 
 		/// <summary>
-		/// Parameters: int index, bool value, int characterSlot
+		/// Parameters: int index, BOOL value, int characterSlot
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PACKED_STAT_BOOL_CODE = 0xDB8A58AEAA67CD07,
@@ -42152,19 +42152,19 @@ namespace GTA.Native
 		_SET_PACKED_STAT_INT = 0x1581503AE529CD2E,
 
 		/// <summary>
-		/// Parameters: string action, int value
+		/// Parameters: const char* action, int value
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_BACKGROUND_SCRIPT_ACTION = 0x5009DFD741329729, // 0x61ECC465
 
 		/// <summary>
-		/// Parameters: string p0
+		/// Parameters: const char* p0
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_NPC_INVITE = 0x93054C88E6AA7C44, // 0x598C06F3
 
 		/// <summary>
-		/// Parameters: int amount, uint type, uint category
+		/// Parameters: int amount, Hash type, Hash category
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_AWARD_XP = 0x46F917F6B4128FE4, // 0x8770017B
@@ -42185,31 +42185,31 @@ namespace GTA.Native
 		PLAYSTATS_ACTIVITY_DONE = 0xA071E0ED98F91286, // 0x1A66945F
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3, IntPtr p4
+		/// Parameters: Any p0, Any p1, Any p2, Any p3, Any p4
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_LEAVE_JOB_CHAIN = 0xC5BE134EC7BA96A0, // 0xC960E161
 
 		/// <summary>
-		/// Parameters: string p0, IntPtr p1, IntPtr p2, bool p3
+		/// Parameters: const char* p0, Any p1, Any p2, BOOL p3
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_MISSION_STARTED = 0xC19A2925C34D2231, // 0x3AAB699C
 
 		/// <summary>
-		/// Parameters: string p0, IntPtr p1, IntPtr p2, bool p3, bool p4, bool p5
+		/// Parameters: const char* p0, Any p1, Any p2, BOOL p3, BOOL p4, BOOL p5
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_MISSION_OVER = 0x7C4BB33A8CED7324, // 0x5B90B5FF
 
 		/// <summary>
-		/// Parameters: string p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: const char* p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_MISSION_CHECKPOINT = 0xC900596A63978C1D, // 0xCDC52280
 
 		/// <summary>
-		/// Parameters: string name, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: const char* name, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_RANDOM_MISSION_DONE = 0x71862B1D855F32E1, // 0xAC2C7C63
@@ -42221,7 +42221,7 @@ namespace GTA.Native
 		PLAYSTATS_ROS_BET = 0x121FB4DDDC2D5291, // 0x413539BC
 
 		/// <summary>
-		/// Parameters: Vehicle p0, IntPtr p1, int p2, int p3, IntPtr p4
+		/// Parameters: Vehicle p0, Any p1, int p2, int p3, Any p4
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_RACE_CHECKPOINT = 0x9C375C315099DDE4, // 0x580D5508
@@ -42233,19 +42233,19 @@ namespace GTA.Native
 		PLAYSTATS_CREATE_MATCH_HISTORY_ID_2 = 0x6DEE77AFF8C21BD1, // 0x489E27E7
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2
+		/// Parameters: Any p0, Any p1, Any p2
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_MATCH_STARTED = 0xBC80E22DED931E3D, // 0x2BDE85C1
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3, IntPtr p4
+		/// Parameters: Any p0, Any p1, Any p2, Any p3, Any p4
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_SHOP_ITEM = 0x176852ACAAC173D1, // 0xA4746384
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3, IntPtr p4, IntPtr p5, IntPtr p6, IntPtr p7
+		/// Parameters: Any p0, Any p1, Any p2, Any p3, Any p4, Any p5, Any p6, Any p7
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_CRATE_DROP_MISSION_DONE = 0x1CAE5D2E3F9A07F0, // 0x6602CED6
@@ -42269,7 +42269,7 @@ namespace GTA.Native
 		_PLAYSTATS_CRATE_CREATED_MISSION_DONE = 0xAFC7E5E075A96F46, // 0xD003E648
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_HOLD_UP_MISSION_DONE = 0xCB00196B31C39EB1, // 0x759E0EC9
@@ -42279,7 +42279,7 @@ namespace GTA.Native
 		_PLAYSTATS_HOLD_UP = 0xCB00196B31C39EB1, // 0x759E0EC9
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_IMPORT_EXPORT_MISSION_DONE = 0x2B69F5074C894811, // 0x62073DF7
@@ -42289,7 +42289,7 @@ namespace GTA.Native
 		_PLAYSTATS_IMP_EXP = 0x2B69F5074C894811, // 0x62073DF7
 
 		/// <summary>
-		/// Parameters: int p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: int p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_RACE_TO_POINT_MISSION_DONE = 0xADDD1C754E2E2914, // 0x06CE3692
@@ -42299,25 +42299,25 @@ namespace GTA.Native
 		_PLAYSTATS_RACE_TO_POINT = 0xADDD1C754E2E2914, // 0x06CE3692
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_ACQUIRED_HIDDEN_PACKAGE = 0x79AB33F0FBFAC40C, // 0x8D5C7B37
 
 		/// <summary>
-		/// Parameters: uint scaleformHash, int p1
+		/// Parameters: Hash scaleformHash, int p1
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_WEBSITE_VISITED = 0xDDF24D535060F811, // 0x37D152BB
 
 		/// <summary>
-		/// Parameters: int p0, bool p1
+		/// Parameters: int p0, BOOL p1
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_FRIEND_ACTIVITY = 0x0F71DE29AB2258F1, // 0xD1FA1BDB
 
 		/// <summary>
-		/// Parameters: int totalTimeMs, int p1, bool p2
+		/// Parameters: int totalTimeMs, int p1, BOOL p2
 		/// </summary>
 		/// <remarks>
 		/// This native does absolutely nothing, just a nullsub<br/>
@@ -42332,13 +42332,13 @@ namespace GTA.Native
 		PLAYSTATS_PROP_CHANGE = 0xBA739D6D5A05D6E7, // 0x25740A1D
 
 		/// <summary>
-		/// Parameters: Ped p0, IntPtr p1, IntPtr p2, IntPtr p3, IntPtr p4
+		/// Parameters: Ped p0, Any p1, Any p2, Any p3, Any p4
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_CLOTH_CHANGE = 0x34B973047A2268B9, // 0x3AFF9E58
 
 		/// <summary>
-		/// Parameters: uint weaponHash, uint componentHashTo, uint componentHashFrom
+		/// Parameters: Hash weaponHash, Hash componentHashTo, Hash componentHashFrom
 		/// </summary>
 		/// <remarks>
 		/// This is a typo made by R*. It's supposed to be called PLAYSTATS_WEAPON_MOD_CHANGE.<br/>
@@ -42347,37 +42347,37 @@ namespace GTA.Native
 		PLAYSTATS_WEAPON_MODE_CHANGE = 0xE95C8A1875A02CA4, // 0x79716890
 
 		/// <summary>
-		/// Parameters: string cheat
+		/// Parameters: const char* cheat
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_CHEAT_APPLIED = 0x6058665D72302D3F, // 0x345166F3
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any* p0, Any* p1, Any* p2, Any* p3
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_JOB_ACTIVITY_END = 0xF8C54A461C3E11DC, // 0x04181752
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any* p0, Any* p1, Any* p2, Any* p3
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_JOB_BEND = 0xF5BB8DAC426A52C0, // 0x40520E70
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any* p0, Any* p1, Any* p2, Any* p3
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_JOB_LTS_END = 0xA736CF7FB7C5BFF4, // 0x31002201
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any* p0, Any* p1, Any* p2, Any* p3
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_JOB_LTS_ROUND_END = 0x14E0B2D1AD1044E0, // 0xDDD1F1F3
 
 		/// <summary>
-		/// Parameters: int element, string item
+		/// Parameters: int element, const char* item
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_QUICKFIX_TOOL = 0x90D0622866E80445, // 0x66FEB701
@@ -42395,7 +42395,7 @@ namespace GTA.Native
 		PLAYSTATS_SET_JOIN_TYPE = 0xD1032E482629049E, // 0x1AC97138
 
 		/// <summary>
-		/// Parameters: uint hash, int p1
+		/// Parameters: Hash hash, int p1
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_HEIST_SAVE_CHEAT = 0xF4FF020A08BC8863, // 0xB731DF54
@@ -42405,7 +42405,7 @@ namespace GTA.Native
 		_PLAYSTATS_HEIST_SAVE_CHEAT = 0xF4FF020A08BC8863, // 0xB731DF54
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any* p0
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_APPEND_DIRECTOR_METRIC = 0x46326E13DA4E0546,
@@ -42425,7 +42425,7 @@ namespace GTA.Native
 		_PLAYSTATS_AWARD_BADSPORT = 0x47B32F5611E6E483,
 
 		/// <summary>
-		/// Parameters: uint modelHash
+		/// Parameters: Hash modelHash
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_PEGASUS_AS_PERSONAL_AIRCRAFT = 0x9572BD4DD6B72122,
@@ -42435,7 +42435,7 @@ namespace GTA.Native
 		_PLAYSTATS_PEGASAIRCRAFT = 0x9572BD4DD6B72122,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_FM_EVENT_CHALLENGES = 0x6A60E43998228229,
@@ -42445,7 +42445,7 @@ namespace GTA.Native
 		_PLAYSTATS_FREEMODE_CHALLENGES = 0x6A60E43998228229,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_FM_EVENT_VEHICLETARGET = 0xBFAFDB5FAAA5C5AB,
@@ -42455,7 +42455,7 @@ namespace GTA.Native
 		_PLAYSTATS_FREEMODE_VEHICLE_TARGET = 0xBFAFDB5FAAA5C5AB,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_FM_EVENT_URBANWARFARE = 0x8C9D11605E59D955,
@@ -42465,7 +42465,7 @@ namespace GTA.Native
 		_PLAYSTATS_FREEMODE_URBAN_WARFARE = 0x8C9D11605E59D955,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_FM_EVENT_CHECKPOINTCOLLECTION = 0x3DE3AA516FB126A4,
@@ -42475,7 +42475,7 @@ namespace GTA.Native
 		_PLAYSTATS_FREEMODE_CHECKPOINT_COLLECTION = 0x3DE3AA516FB126A4,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_FM_EVENT_ATOB = 0xBAA2F0490E146BE8,
@@ -42485,7 +42485,7 @@ namespace GTA.Native
 		_PLAYSTATS_FREEMODE_ATOB = 0xBAA2F0490E146BE8,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_FM_EVENT_PENNEDIN = 0x1A7CE7CD3E653485,
@@ -42495,7 +42495,7 @@ namespace GTA.Native
 		_PLAYSTATS_FREEMODE_PENNED_IN = 0x1A7CE7CD3E653485,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_FM_EVENT_PASSTHEPARCEL = 0x419615486BBF1956,
@@ -42505,7 +42505,7 @@ namespace GTA.Native
 		_PLAYSTATS_FREEMODE_PASS_THE_PARCEL = 0x419615486BBF1956,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_FM_EVENT_HOTPROPERTY = 0x84DFC579C2FC214C,
@@ -42515,7 +42515,7 @@ namespace GTA.Native
 		_PLAYSTATS_FREEMODE_HOT_PROPERTY = 0x84DFC579C2FC214C,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_FM_EVENT_DEADDROP = 0x0A9C7F36E5D7B683,
@@ -42525,7 +42525,7 @@ namespace GTA.Native
 		_PLAYSTATS_FREEMODE_DEADDROP = 0x0A9C7F36E5D7B683,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_FM_EVENT_KINGOFTHECASTLE = 0x164C5FF663790845,
@@ -42535,7 +42535,7 @@ namespace GTA.Native
 		_PLAYSTATS_FREEMODE_KING_OF_THE_CASTLE = 0x164C5FF663790845,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_FM_EVENT_CRIMINALDAMAGE = 0xEDBF6C9B0D2C65C8,
@@ -42545,7 +42545,7 @@ namespace GTA.Native
 		_PLAYSTATS_FREEMODE_CRIMINAL_DAMAGE = 0xEDBF6C9B0D2C65C8,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_FM_EVENT_COMPETITIVEURBANWARFARE = 0x6551B1F7F6CD46EA,
@@ -42555,7 +42555,7 @@ namespace GTA.Native
 		_PLAYSTATS_FREEMODE_COMPETITIVE_URBAN_WARFARE = 0x6551B1F7F6CD46EA,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_FM_EVENT_HUNTBEAST = 0x2CD90358F67D0AA8,
@@ -42565,7 +42565,7 @@ namespace GTA.Native
 		_PLAYSTATS_FREEMODE_HUNT_BEAST = 0x2CD90358F67D0AA8,
 
 		/// <summary>
-		/// Parameters: IntPtr data
+		/// Parameters: Any* data
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_PIMENU_HIDE_OPTIONS = 0x203B381133817079,
@@ -42575,7 +42575,7 @@ namespace GTA.Native
 		_PLAYSTATS_PI_MENU_HIDE_SETTINGS = 0x203B381133817079,
 
 		/// <summary>
-		/// Parameters: int p0, IntPtr p1
+		/// Parameters: int p0, Any p1
 		/// </summary>
 		/// <returns>int</returns>
 		LEADERBOARDS_GET_NUMBER_OF_COLUMNS = 0x117B45156D7EFF2E, // 0x0A56EE34
@@ -42587,7 +42587,7 @@ namespace GTA.Native
 		LEADERBOARDS_GET_COLUMN_ID = 0xC4B5467A1886EA7E, // 0x3821A334
 
 		/// <summary>
-		/// Parameters: int p0, IntPtr p1, IntPtr p2
+		/// Parameters: int p0, Any p1, Any p2
 		/// </summary>
 		/// <returns>int</returns>
 		LEADERBOARDS_GET_COLUMN_TYPE = 0xBF4FEF46DB7894D3, // 0x6F2820F4
@@ -42596,13 +42596,13 @@ namespace GTA.Native
 		LEADERBOARDS_READ_CLEAR_ALL = 0xA34CB6E6F0DF4A0B, // 0x233E058A
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2
+		/// Parameters: Any p0, Any p1, Any p2
 		/// </summary>
 		/// <returns>int</returns>
 		LEADERBOARDS_READ_CLEAR = 0x7CCE5C737A665701, // 0x7090012F
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2
+		/// Parameters: Any p0, Any p1, Any p2
 		/// </summary>
 		/// <returns>BOOL</returns>
 		LEADERBOARDS_READ_PENDING = 0xAC392C8483342AC2, // 0xEEB8BF5C
@@ -42611,61 +42611,61 @@ namespace GTA.Native
 		LEADERBOARDS_READ_ANY_PENDING = 0xA31FD15197B192BD, // 0x1789437B
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2
+		/// Parameters: Any p0, Any p1, Any p2
 		/// </summary>
 		/// <returns>BOOL</returns>
 		LEADERBOARDS_READ_SUCCESSFUL = 0x2FB19228983E832C, // 0x3AC5B2F1
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, bool p3, IntPtr p4, IntPtr p5
+		/// Parameters: Any* p0, Any* p1, Any p2, BOOL p3, Any p4, Any p5
 		/// </summary>
 		/// <returns>BOOL</returns>
 		LEADERBOARDS2_READ_FRIENDS_BY_ROW = 0x918B101666F9CB83, // 0xBD91B136
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any* p0, Any* p1
 		/// </summary>
 		/// <returns>BOOL</returns>
 		LEADERBOARDS2_READ_BY_HANDLE = 0xC30713A383BFBF0E, // 0x6B553408
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3, IntPtr p4, IntPtr p5, IntPtr p6
+		/// Parameters: Any* p0, Any* p1, Any p2, Any* p3, Any p4, Any* p5, Any p6
 		/// </summary>
 		/// <returns>BOOL</returns>
 		LEADERBOARDS2_READ_BY_ROW = 0xA9CDB1E3F0A49883, // 0xCA931F34
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2
+		/// Parameters: Any* p0, Any p1, Any p2
 		/// </summary>
 		/// <returns>BOOL</returns>
 		LEADERBOARDS2_READ_BY_RANK = 0xBA2C7DB0C129449A, // 0x1B03F59F
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2
+		/// Parameters: Any* p0, Any p1, Any* p2
 		/// </summary>
 		/// <returns>BOOL</returns>
 		LEADERBOARDS2_READ_BY_RADIUS = 0x5CE587FB5A42C8C4, // 0xC5B7E685
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2
+		/// Parameters: Any* p0, Any p1, Any p2
 		/// </summary>
 		/// <returns>BOOL</returns>
 		LEADERBOARDS2_READ_BY_SCORE_INT = 0x7EEC7E4F6984A16A, // 0xAC020C18
 
 		/// <summary>
-		/// Parameters: IntPtr p0, float p1, IntPtr p2
+		/// Parameters: Any* p0, float p1, Any p2
 		/// </summary>
 		/// <returns>BOOL</returns>
 		LEADERBOARDS2_READ_BY_SCORE_FLOAT = 0xE662C8B759D08F3C, // 0xC678B29F
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2
+		/// Parameters: Any* p0, Any* p1, Any* p2
 		/// </summary>
 		/// <returns>BOOL</returns>
 		LEADERBOARDS2_READ_RANK_PREDICTION = 0xC38DC1E90D22547C, // 0x9BEC3401
 
 		/// <summary>
-		/// Parameters: IntPtr p0, string gamerHandleCsv, string platformName
+		/// Parameters: Any* p0, const char* gamerHandleCsv, const char* platformName
 		/// </summary>
 		/// <returns>BOOL</returns>
 		LEADERBOARDS2_READ_BY_PLAFORM = 0xF1AE5DCDBFCA2721,
@@ -42675,7 +42675,7 @@ namespace GTA.Native
 		_LEADERBOARDS2_READ_BY_PLATFORM = 0xF1AE5DCDBFCA2721,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any* p0
 		/// </summary>
 		/// <returns>BOOL</returns>
 		LEADERBOARDS2_READ_GET_ROW_DATA_START = 0xA0F93D5465B3094D, // 0xC977D6E2
@@ -42692,7 +42692,7 @@ namespace GTA.Native
 		LEADERBOARDS2_READ_BY_HELP_PURPLE_END = 0x71B008056E5692D6, // 0xF2DB6A82
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any* p1
 		/// </summary>
 		/// <returns>BOOL</returns>
 		LEADERBOARDS2_READ_GET_ROW_DATA_INFO = 0x34770B9CE0E03B91, // 0x766A74FE
@@ -42702,7 +42702,7 @@ namespace GTA.Native
 		LEADERBOARDS2_READ_BY_HELP_PURPLE_INFO = 0x34770B9CE0E03B91, // 0x766A74FE
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>int</returns>
 		LEADERBOARDS2_READ_GET_ROW_DATA_INT = 0x88578F6EC36B4A3A, // 0x6B90E730
@@ -42712,7 +42712,7 @@ namespace GTA.Native
 		LEADERBOARDS2_READ_BY_HELP_PURPLE_INT = 0x88578F6EC36B4A3A, // 0x6B90E730
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>float</returns>
 		LEADERBOARDS2_READ_GET_ROW_DATA_FLOAT = 0x38491439B6BA7F7D, // 0x509A286F
@@ -42722,25 +42722,25 @@ namespace GTA.Native
 		LEADERBOARDS2_READ_BY_HELP_PURPLE_FLOAT = 0x38491439B6BA7F7D, // 0x509A286F
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any* p0
 		/// </summary>
 		/// <returns>BOOL</returns>
 		LEADERBOARDS2_WRITE_DATA = 0xAE2206545888AE49, // 0x5F9DF634
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, float p2
+		/// Parameters: Any p0, Any p1, float p2
 		/// </summary>
 		/// <returns>void</returns>
 		LEADERBOARDS_WRITE_ADD_COLUMN = 0x0BCA1D2C47B0D269, // 0x7524E27B
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2
+		/// Parameters: Any p0, Any p1, Any p2
 		/// </summary>
 		/// <returns>void</returns>
 		LEADERBOARDS_WRITE_ADD_COLUMN_LONG = 0x2E65248609523599, // 0x1C5CCC3A
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any* p0
 		/// </summary>
 		/// <returns>BOOL</returns>
 		LEADERBOARDS_CACHE_DATA_ROW = 0xB9BB18E2C40142ED, // 0x44F7D82B
@@ -42749,37 +42749,37 @@ namespace GTA.Native
 		LEADERBOARDS_CLEAR_CACHE_DATA = 0xD4B02A6B476E1FDC, // 0x87F498C1
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		LEADERBOARDS_CLEAR_CACHE_DATA_ID = 0x8EC74CEB042E7CFF, // 0x88AE9667
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>BOOL</returns>
 		LEADERBOARDS_GET_CACHE_EXISTS = 0x9C51349BE6CDFE2C, // 0xFC8A71F3
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>int</returns>
 		LEADERBOARDS_GET_CACHE_TIME = 0xF04C1C27DA35F6C8, // 0xEDF02302
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>int</returns>
 		LEADERBOARDS_GET_CACHE_NUMBER_OF_ROWS = 0x58A651CD201D89AD, // 0xCE7CB520
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2
+		/// Parameters: Any p0, Any p1, Any* p2
 		/// </summary>
 		/// <returns>BOOL</returns>
 		LEADERBOARDS_GET_CACHE_DATA_ROW = 0x9120E8DBA3D69273, // 0xA11289EC
 
 		/// <summary>
-		/// Parameters: uint statHash, int value, int p2
+		/// Parameters: Hash statHash, int value, int p2
 		/// </summary>
 		/// <returns>void</returns>
 		PRESENCE_EVENT_UPDATESTAT_INT = 0x11FF1C80276097ED, // 0x4AC39C6C
@@ -42789,7 +42789,7 @@ namespace GTA.Native
 		_UPDATE_STAT_INT = 0x11FF1C80276097ED, // 0x4AC39C6C
 
 		/// <summary>
-		/// Parameters: uint statHash, float value, int p2
+		/// Parameters: Hash statHash, float value, int p2
 		/// </summary>
 		/// <returns>void</returns>
 		PRESENCE_EVENT_UPDATESTAT_FLOAT = 0x30A6614C1F7799B8, // 0x3E69E7C3
@@ -42799,7 +42799,7 @@ namespace GTA.Native
 		_UPDATE_STAT_FLOAT = 0x30A6614C1F7799B8, // 0x3E69E7C3
 
 		/// <summary>
-		/// Parameters: uint statHash, int value, int p2, string string
+		/// Parameters: Hash statHash, int value, int p2, const char* @string
 		/// </summary>
 		/// <returns>void</returns>
 		PRESENCE_EVENT_UPDATESTAT_INT_WITH_STRING = 0x6483C25849031C4F, // 0x2FFD2FA5
@@ -42847,13 +42847,13 @@ namespace GTA.Native
 		SET_PROFILE_SETTING_CREATOR_CTF_DONE = 0x55384438FC55AD8E, // 0xF03895A4
 
 		/// <summary>
-		/// Parameters: IntPtr p0, int characterSlot
+		/// Parameters: Any p0, int characterSlot
 		/// </summary>
 		/// <returns>void</returns>
 		SET_JOB_ACTIVITY_ID_STARTED = 0x723C1CE13FBFDB67, // 0x4C39CF10
 
 		/// <summary>
-		/// Parameters: IntPtr p0, int characterSlot
+		/// Parameters: Any p0, int characterSlot
 		/// </summary>
 		/// <returns>void</returns>
 		SET_FREEMODE_PROLOGUE_DONE = 0x0D01D20616FC73FB, // 0x2180AE13
@@ -42868,7 +42868,7 @@ namespace GTA.Native
 		SET_FREEMODE_STRAND_PROGRESSION_STATUS = 0x79D310A861697CC9,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, float p1
+		/// Parameters: Any p0, float p1
 		/// </summary>
 		/// <returns>void</returns>
 		STAT_NETWORK_INCREMENT_ON_SUICIDE = 0x428EAF89E24F6C36, // 0xEE292B91
@@ -42877,7 +42877,7 @@ namespace GTA.Native
 		STAT_SET_CHEAT_IS_ACTIVE = 0x047CBED6F6F8B63C, // 0xA063CABD
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any* p0, Any* p1
 		/// </summary>
 		/// <returns>BOOL</returns>
 		LEADERBOARDS2_WRITE_DATA_FOR_EVENT_TYPE = 0xC980E62E33DF1D5C, // 0x62C19A3D
@@ -42889,7 +42889,7 @@ namespace GTA.Native
 		STAT_MIGRATE_CLEAR_FOR_RESTART = 0xC847B43F369AC0B5,
 
 		/// <summary>
-		/// Parameters: string platformName
+		/// Parameters: const char* platformName
 		/// </summary>
 		/// <remarks>
 		/// platformName must be one of the following: ps3, xbox360, ps4, xboxone<br/>
@@ -42917,13 +42917,13 @@ namespace GTA.Native
 		STAT_MIGRATE_CHECK_GET_IS_PLATFORM_AVAILABLE = 0x5BD5F255321C4AAF,
 
 		/// <summary>
-		/// Parameters: int p0, IntPtr p1
+		/// Parameters: int p0, Any* p1
 		/// </summary>
 		/// <returns>int</returns>
 		STAT_MIGRATE_CHECK_GET_PLATFORM_STATUS = 0xDEAAF77EB3687E97,
 
 		/// <summary>
-		/// Parameters: IntPtr data
+		/// Parameters: Any* data
 		/// </summary>
 		/// <returns>int</returns>
 		STAT_GET_SAVE_MIGRATION_STATUS = 0x886913BBEACA68C1, // 0xE3F0D62D
@@ -42943,7 +42943,7 @@ namespace GTA.Native
 		_STAT_GET_CANCEL_SAVE_MIGRATION_STATUS = 0x567384DFA67029E6,
 
 		/// <summary>
-		/// Parameters: uint contentId, string srcPlatform, string srcGamerHandle
+		/// Parameters: Hash contentId, const char* srcPlatform, const char* srcGamerHandle
 		/// </summary>
 		/// <returns>BOOL</returns>
 		STAT_SAVE_MIGRATION_CONSUME_CONTENT = 0x3270F67EED31FBC1,
@@ -43215,13 +43215,13 @@ namespace GTA.Native
 		_SET_SAVE_MIGRATION_TRANSACTION_ID = 0xF6792800AC95350D,
 
 		/// <summary>
-		/// Parameters: int characterSlot, IntPtr p1, IntPtr p2
+		/// Parameters: int characterSlot, Any p1, Any p2
 		/// </summary>
 		/// <returns>void</returns>
 		GET_BOSS_GOON_UUID = 0x6BC0ACD0673ACEBE,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_BW_BOSSONBOSSDEATHMATCH = 0x8D8ADB562F09A245,
@@ -43231,7 +43231,7 @@ namespace GTA.Native
 		_PLAYSTATS_BW_BOSS_ON_BOSS_DEATH_MATCH = 0x8D8ADB562F09A245,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_BW_YATCHATTACK = 0xD1A1EE3B4FA8E760,
@@ -43241,7 +43241,7 @@ namespace GTA.Native
 		_PLAYSTATS_BW_YACHT_ATTACK = 0xD1A1EE3B4FA8E760,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_BW_HUNT_THE_BOSS = 0x88087EE1F28024AE,
@@ -43251,7 +43251,7 @@ namespace GTA.Native
 		_PLAYSTATS_BW_HUNT_THE_BOSS = 0x88087EE1F28024AE,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_BW_SIGHTSEER = 0xFCC228E07217FCAC,
@@ -43261,7 +43261,7 @@ namespace GTA.Native
 		_PLAYSTATS_BW_SIGHTSEER = 0xFCC228E07217FCAC,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_BW_ASSAULT = 0x678F86D8FC040BDB,
@@ -43271,7 +43271,7 @@ namespace GTA.Native
 		_PLAYSTATS_BW_ASSAULT = 0x678F86D8FC040BDB,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_BW_BELLY_OF_THE_BEAST = 0xA6F54BB2FFCA35EA,
@@ -43281,7 +43281,7 @@ namespace GTA.Native
 		_PLAYSTATS_BW_BELLY_OF_THE_BEAST = 0xA6F54BB2FFCA35EA,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_BW_HEAD_HUNTER = 0x5FF2C33B13A02A11,
@@ -43291,7 +43291,7 @@ namespace GTA.Native
 		_PLAYSTATS_BW_HEADHUNTER = 0x5FF2C33B13A02A11,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_BW_FRAGILE_GOODS = 0x282B6739644F4347,
@@ -43301,7 +43301,7 @@ namespace GTA.Native
 		_PLAYSTATS_BW_FRAGILE_GOOODS = 0x282B6739644F4347,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_BW_AIR_FREIGHT = 0xF06A6F41CB445443,
@@ -43311,7 +43311,7 @@ namespace GTA.Native
 		_PLAYSTATS_BW_AIR_FREIGHT = 0xF06A6F41CB445443,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_BC_CAR_JACKING = 0x7B18DA61F6BAE9D5,
@@ -43321,7 +43321,7 @@ namespace GTA.Native
 		_PLAYSTATS_BC_CAR_JACKING = 0x7B18DA61F6BAE9D5,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_BC_SMASH_AND_GRAB = 0x06EAF70AE066441E,
@@ -43331,7 +43331,7 @@ namespace GTA.Native
 		_PLAYSTATS_BC_SMASH_AND_GRAB = 0x06EAF70AE066441E,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_BC_PROTECTION_RACKET = 0x14EDA9EE27BD1626,
@@ -43341,7 +43341,7 @@ namespace GTA.Native
 		_PLAYSTATS_BC_PROTECTION_RACKET = 0x14EDA9EE27BD1626,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_BC_MOST_WANTED = 0x930F504203F561C9,
@@ -43351,7 +43351,7 @@ namespace GTA.Native
 		_PLAYSTATS_BC_MOST_WANTED = 0x930F504203F561C9,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_BC_FINDERS_KEEPERS = 0xE3261D791EB44ACB,
@@ -43361,7 +43361,7 @@ namespace GTA.Native
 		_PLAYSTATS_BC_FINDERS_KEEPERS = 0xE3261D791EB44ACB,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_BC_POINT_TO_POINT = 0x73001E34F85137F8,
@@ -43371,7 +43371,7 @@ namespace GTA.Native
 		_PLAYSTATS_BC_POINT_TO_POINT = 0x73001E34F85137F8,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_BC_CASHING = 0x53CAE13E9B426993,
@@ -43381,7 +43381,7 @@ namespace GTA.Native
 		_PLAYSTATS_BC_CASHING = 0x53CAE13E9B426993,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_BC_SALVAGE = 0x7D36291161859389,
@@ -43401,7 +43401,7 @@ namespace GTA.Native
 		_PLAYSTATS_SPENT_PI_CUSTOM_LOADOUT = 0xBE509B0A3693DE8B,
 
 		/// <summary>
-		/// Parameters: IntPtr data
+		/// Parameters: Any* data
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_BUY_CONTRABAND_MISSION = 0xD6781E42755531F7,
@@ -43411,7 +43411,7 @@ namespace GTA.Native
 		_PLAYSTATS_BUY_CONTRABAND = 0xD6781E42755531F7,
 
 		/// <summary>
-		/// Parameters: IntPtr data
+		/// Parameters: Any* data
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_SELL_CONTRABAND_MISSION = 0xC729991A9065376E,
@@ -43421,7 +43421,7 @@ namespace GTA.Native
 		_PLAYSTATS_SELL_CONTRABAND = 0xC729991A9065376E,
 
 		/// <summary>
-		/// Parameters: IntPtr data
+		/// Parameters: Any* data
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_DEFEND_CONTRABAND_MISSION = 0x2605663BD4F23B5D,
@@ -43431,7 +43431,7 @@ namespace GTA.Native
 		_PLAYSTATS_DEFEND_CONTRABAND = 0x2605663BD4F23B5D,
 
 		/// <summary>
-		/// Parameters: IntPtr data
+		/// Parameters: Any* data
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_RECOVER_CONTRABAND_MISSION = 0x04D90BA8207ADA2D,
@@ -43441,7 +43441,7 @@ namespace GTA.Native
 		_PLAYSTATS_RECOVER_CONTRABAND = 0x04D90BA8207ADA2D,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_HIT_CONTRABAND_DESTROY_LIMIT = 0x60EEDC12AF66E846,
@@ -43451,7 +43451,7 @@ namespace GTA.Native
 		_PLAYSTATS_HIT_CONTRABAND_DESTROY_LIMIT = 0x60EEDC12AF66E846,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		START_BEING_BOSS = 0x3EBEAC6C3F81F6BD,
@@ -43461,7 +43461,7 @@ namespace GTA.Native
 		_PLAYSTATS_BECOME_BOSS = 0x3EBEAC6C3F81F6BD,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2
+		/// Parameters: Any p0, Any p1, Any p2
 		/// </summary>
 		/// <returns>void</returns>
 		START_BEING_GOON = 0x96E6D5150DBF1C09,
@@ -43471,7 +43471,7 @@ namespace GTA.Native
 		_PLAYSTATS_BECOME_GOON = 0x96E6D5150DBF1C09,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		END_BEING_BOSS = 0xA3C53804BDB68ED2,
@@ -43481,7 +43481,7 @@ namespace GTA.Native
 		_PLAYSTATS_END_BEING_BOSS = 0xA3C53804BDB68ED2,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3, IntPtr p4
+		/// Parameters: Any p0, Any p1, Any p2, Any p3, Any p4
 		/// </summary>
 		/// <returns>void</returns>
 		END_BEING_GOON = 0x6BCCF9948492FD85,
@@ -43491,7 +43491,7 @@ namespace GTA.Native
 		_PLAYSTATS_END_BEING_GOON = 0x6BCCF9948492FD85,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		HIRED_LIMO = 0x792271AB35C356A4,
@@ -43501,7 +43501,7 @@ namespace GTA.Native
 		_HIRED_LIMO = 0x792271AB35C356A4,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, uint vehicleHash
+		/// Parameters: Any p0, Any p1, Hash vehicleHash
 		/// </summary>
 		/// <returns>void</returns>
 		ORDER_BOSS_VEHICLE = 0xCEA553E35C2246E1,
@@ -43511,7 +43511,7 @@ namespace GTA.Native
 		_ORDERED_BOSS_VEHICLE = 0xCEA553E35C2246E1,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2
+		/// Parameters: Any p0, Any p1, Any p2
 		/// </summary>
 		/// <returns>void</returns>
 		CHANGE_UNIFORM = 0xD1C9B92BDD3F151D,
@@ -43521,7 +43521,7 @@ namespace GTA.Native
 		_PLAYSTATS_CHANGE_UNIFORM = 0xD1C9B92BDD3F151D,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		CHANGE_GOON_LOOKING_FOR_WORK = 0x44919CC079BB60BF,
@@ -43531,7 +43531,7 @@ namespace GTA.Native
 		_PLAYSTATS_CHANGE_GOON_LOOKING_FOR_WORK = 0x44919CC079BB60BF,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		SEND_METRIC_GHOSTING_TO_PLAYER = 0x7033EEFD9B28088E,
@@ -43541,7 +43541,7 @@ namespace GTA.Native
 		_PLAYSTATS_GHOSTING_TO_PLAYER = 0x7033EEFD9B28088E,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2
+		/// Parameters: Any p0, Any p1, Any p2
 		/// </summary>
 		/// <returns>void</returns>
 		SEND_METRIC_VIP_POACH = 0xAA525DFF66BB82F5,
@@ -43551,7 +43551,7 @@ namespace GTA.Native
 		_PLAYSTATS_VIP_POACH = 0xAA525DFF66BB82F5,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		SEND_METRIC_PUNISH_BODYGUARD = 0x015B03EE1C43E6EC,
@@ -43581,7 +43581,7 @@ namespace GTA.Native
 		_PLAYSTATS_STUNT_PERFORMED_EVENT_DISALLOW_TRIGGER = 0x8A800DACCC0DA55D,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_MISSION_ENDED = 0xBF371CD2B64212FD,
@@ -43591,7 +43591,7 @@ namespace GTA.Native
 		_PLAYSTATS_MISSION_ENDED = 0xBF371CD2B64212FD,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_IMPEXP_MISSION_ENDED = 0x7D8BA05688AD64C7,
@@ -43601,7 +43601,7 @@ namespace GTA.Native
 		_PLAYSTATS_IMPEXP_MISSION_ENDED = 0x7D8BA05688AD64C7,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3, int role, int p5, IntPtr p6
+		/// Parameters: Any p0, Any p1, Any p2, Any p3, int role, int p5, Any p6
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_CHANGE_MC_ROLE = 0x0B565B0AAE56A0E8,
@@ -43611,7 +43611,7 @@ namespace GTA.Native
 		_PLAYSTATS_CHANGE_MC_ROLE = 0x0B565B0AAE56A0E8,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3, IntPtr p4
+		/// Parameters: Any p0, Any p1, Any p2, Any p3, Any p4
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_CHANGE_MC_OUTFIT = 0x28ECB8AC2F607DB2,
@@ -43621,7 +43621,7 @@ namespace GTA.Native
 		_PLAYSTATS_CHANGE_MC_OUTFIT = 0x28ECB8AC2F607DB2,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3, IntPtr p4
+		/// Parameters: Any p0, Any p1, Any p2, Any p3, Any p4
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_SWITCH_MC_EMBLEM = 0x0A50D2604E05CB94,
@@ -43631,7 +43631,7 @@ namespace GTA.Native
 		_PLAYSTATS_CHANGE_MC_EMBLEM = 0x0A50D2604E05CB94,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3, IntPtr p4
+		/// Parameters: Any p0, Any p1, Any p2, Any p3, Any p4
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_MC_REQUEST_BIKE = 0xCC25A4553DFBF9EA,
@@ -43641,7 +43641,7 @@ namespace GTA.Native
 		_PLAYSTATS_MC_REQUEST_BIKE = 0xCC25A4553DFBF9EA,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3, IntPtr p4
+		/// Parameters: Any p0, Any p1, Any p2, Any p3, Any p4
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_MC_KILLED_RIVAL_MC_MEMBER = 0xF534D94DFA2EAD26,
@@ -43651,7 +43651,7 @@ namespace GTA.Native
 		_PLAYSTATS_KILLED_RIVAL_MC_MEMBER = 0xF534D94DFA2EAD26,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3, IntPtr p4
+		/// Parameters: Any p0, Any p1, Any p2, Any p3, Any p4
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_ABANDONED_MC = 0xD558BEC0BBA7E8D2,
@@ -43661,7 +43661,7 @@ namespace GTA.Native
 		_PLAYSTATS_ABANDONING_MC = 0xD558BEC0BBA7E8D2,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3, IntPtr p4, IntPtr p5
+		/// Parameters: Any p0, Any p1, Any p2, Any p3, Any p4, Any p5
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_EARNED_MC_POINTS = 0x501478855A6074CE,
@@ -43671,7 +43671,7 @@ namespace GTA.Native
 		_PLAYSTATS_EARNED_MC_POINTS = 0x501478855A6074CE,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3, IntPtr p4, IntPtr p5, IntPtr p6
+		/// Parameters: Any p0, Any p1, Any p2, Any p3, Any p4, Any p5, Any p6
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_MC_FORMATION_ENDS = 0x03C2EEBB04B3FB72,
@@ -43681,7 +43681,7 @@ namespace GTA.Native
 		_PLAYSTATS_MC_FORMATION_ENDS = 0x03C2EEBB04B3FB72,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3, IntPtr p4, IntPtr p5, IntPtr p6
+		/// Parameters: Any p0, Any p1, Any p2, Any p3, Any p4, Any p5, Any p6
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_MC_CLUBHOUSE_ACTIVITY = 0x8989CBD7B4E82534,
@@ -43691,7 +43691,7 @@ namespace GTA.Native
 		_PLAYSTATS_MC_CLUBHOUSE_ACTIVITY = 0x8989CBD7B4E82534,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3, IntPtr p4, IntPtr p5, IntPtr p6, IntPtr p7, IntPtr p8, IntPtr p9
+		/// Parameters: Any p0, Any p1, Any p2, Any p3, Any p4, Any p5, Any p6, Any p7, Any p8, Any p9
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_RIVAL_BEHAVIOR = 0x27AA1C973CACFE63,
@@ -43701,7 +43701,7 @@ namespace GTA.Native
 		_PLAYSTATS_RIVAL_BEHAVIOUR = 0x27AA1C973CACFE63,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3, IntPtr p4, IntPtr p5, IntPtr p6
+		/// Parameters: Any p0, Any p1, Any p2, Any p3, Any p4, Any p5, Any p6
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_COPY_RANK_INTO_NEW_SLOT = 0xB7257BA2550EA10A,
@@ -43711,7 +43711,7 @@ namespace GTA.Native
 		_PLAYSTATS_COPY_RANK_INTO_NEW_SLOT = 0xB7257BA2550EA10A,
 
 		/// <summary>
-		/// Parameters: IntPtr data
+		/// Parameters: Any* data
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_DUPE_DETECTED = 0x848B66100EE33B05,
@@ -43731,7 +43731,7 @@ namespace GTA.Native
 		_PLAYSTATS_BAN_ALERT = 0x516FC96EB88EEFE5,
 
 		/// <summary>
-		/// Parameters: IntPtr data
+		/// Parameters: Any* data
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_GUNRUNNING_MISSION_ENDED = 0x0EACDF8487D5155A,
@@ -43741,7 +43741,7 @@ namespace GTA.Native
 		_PLAYSTATS_GUNRUN_MISSION_ENDED = 0x0EACDF8487D5155A,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_GUNRUNNING_RND = 0xDAF80797FC534BEC,
@@ -43751,7 +43751,7 @@ namespace GTA.Native
 		_PLAYSTATS_GUNRUN_RND = 0xDAF80797FC534BEC,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_BUSINESS_BATTLE_ENDED = 0x316DB59CD14C1774,
@@ -43761,7 +43761,7 @@ namespace GTA.Native
 		_PLAYSTATS_BUSINESS_BATTLE_ENDED = 0x316DB59CD14C1774,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_WAREHOUSE_MISSION_ENDED = 0x2D7A9B577E72385E,
@@ -43771,7 +43771,7 @@ namespace GTA.Native
 		_PLAYSTATS_WAREHOUSE_MISSION_ENDED = 0x2D7A9B577E72385E,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_NIGHTCLUB_MISSION_ENDED = 0x830C3A44EB3F2CF9,
@@ -43781,7 +43781,7 @@ namespace GTA.Native
 		_PLAYSTATS_NIGHTCLUB_MISSION_ENDED = 0x830C3A44EB3F2CF9,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_DJ_USAGE = 0xB26F670685631727,
@@ -43791,7 +43791,7 @@ namespace GTA.Native
 		_PLAYSTATS_DJ_USAGE = 0xB26F670685631727,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2
+		/// Parameters: Any p0, Any p1, Any p2
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_MINIGAME_USAGE = 0xC14BD9F5337219B2,
@@ -43801,7 +43801,7 @@ namespace GTA.Native
 		_PLAYSTATS_MINIGAME_USAGE = 0xC14BD9F5337219B2,
 
 		/// <summary>
-		/// Parameters: IntPtr data
+		/// Parameters: Any* data
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_STONE_HATCHET_ENDED = 0x35E39E5570358630,
@@ -43811,7 +43811,7 @@ namespace GTA.Native
 		_PLAYSTATS_STONE_HATCHET_END = 0x35E39E5570358630,
 
 		/// <summary>
-		/// Parameters: IntPtr data
+		/// Parameters: Any* data
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_SMUGGLER_MISSION_ENDED = 0x320C35147D5B5DDD,
@@ -43821,7 +43821,7 @@ namespace GTA.Native
 		_PLAYSTATS_SMUG_MISSION_ENDED = 0x320C35147D5B5DDD,
 
 		/// <summary>
-		/// Parameters: IntPtr data
+		/// Parameters: Any* data
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_FM_HEIST_PREP_ENDED = 0xD8AFB345A9C5CCBB,
@@ -43831,7 +43831,7 @@ namespace GTA.Native
 		_PLAYSTATS_H2_FMPREP_END = 0xD8AFB345A9C5CCBB,
 
 		/// <summary>
-		/// Parameters: IntPtr data, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any* data, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_INSTANCED_HEIST_ENDED = 0x1E1497D0D2108115,
@@ -43841,7 +43841,7 @@ namespace GTA.Native
 		_PLAYSTATS_H2_INSTANCE_END = 0x1E1497D0D2108115,
 
 		/// <summary>
-		/// Parameters: IntPtr data
+		/// Parameters: Any* data
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_DAR_CHECKPOINT = 0x0BC254FF3A911501,
@@ -43851,7 +43851,7 @@ namespace GTA.Native
 		_PLAYSTATS_DAR_MISSION_END = 0x0BC254FF3A911501,
 
 		/// <summary>
-		/// Parameters: IntPtr data
+		/// Parameters: Any* data
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_ENTER_SESSION_PACK = 0x878FF156D36E9956,
@@ -43891,7 +43891,7 @@ namespace GTA.Native
 		_PLAYSTATS_ARENA_WAR_SPECTATOR = 0x6F4F599753F8200A,
 
 		/// <summary>
-		/// Parameters: IntPtr data
+		/// Parameters: Any* data
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_ARENA_WARS_ENDED = 0xB479D9F0D48A1BC5,
@@ -43901,7 +43901,7 @@ namespace GTA.Native
 		_PLAYSTATS_ARENA_WARS_ENDED = 0xB479D9F0D48A1BC5,
 
 		/// <summary>
-		/// Parameters: bool p0, int p1, int p2, int p3
+		/// Parameters: BOOL p0, int p1, int p2, int p3
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_SWITCH_PASSIVE_MODE = 0x35EEC6C2BC821A71,
@@ -43911,7 +43911,7 @@ namespace GTA.Native
 		_PLAYSTATS_PASSIVE_MODE = 0x35EEC6C2BC821A71,
 
 		/// <summary>
-		/// Parameters: int p0, uint objectHash, IntPtr p2, IntPtr p3, int moneyAmount, int rpAmount, int chipsAmount, IntPtr p7, int p8, IntPtr p9, IntPtr p10
+		/// Parameters: int p0, Hash objectHash, Any p2, Any p3, int moneyAmount, int rpAmount, int chipsAmount, Any p7, int p8, Any p9, Any p10
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_COLLECTIBLE_PICKED_UP = 0xCD0A8A9338681CF2,
@@ -43921,7 +43921,7 @@ namespace GTA.Native
 		_PLAYSTATS_COLLECTIBLE = 0xCD0A8A9338681CF2,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_CASINO_STORY_MISSION_ENDED = 0xFCCCAC2BD3C1F180,
@@ -43931,7 +43931,7 @@ namespace GTA.Native
 		_PLAYSTATS_CASINO_STORY_MISSION_ENDED = 0xFCCCAC2BD3C1F180,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_CASINO_CHIP = 0x0999F3F090EC5012,
@@ -43941,7 +43941,7 @@ namespace GTA.Native
 		_PLAYSTATS_CASINO_CHIP = 0x0999F3F090EC5012,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_CASINO_ROULETTE = 0x95101C443A84E7F1,
@@ -43951,7 +43951,7 @@ namespace GTA.Native
 		_PLAYSTATS_CASINO_ROULETTE = 0x95101C443A84E7F1,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_CASINO_BLACKJACK = 0x3EAE97309727E7AD,
@@ -43961,7 +43961,7 @@ namespace GTA.Native
 		_PLAYSTATS_CASINO_BLACKJACK = 0x3EAE97309727E7AD,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_CASINO_THREE_CARD_POKER = 0xF740FB339D471C35,
@@ -43971,7 +43971,7 @@ namespace GTA.Native
 		_PLAYSTATS_CASINO_THREECARDPOKER = 0xF740FB339D471C35,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_CASINO_SLOT_MACHINE = 0xEF5EC67D392B830A,
@@ -43981,7 +43981,7 @@ namespace GTA.Native
 		_PLAYSTATS_CASINO_SLOTMACHINE = 0xEF5EC67D392B830A,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_CASINO_INSIDE_TRACK = 0x049F059625058A86,
@@ -43991,7 +43991,7 @@ namespace GTA.Native
 		_PLAYSTATS_CASINO_INSIDETRACK = 0x049F059625058A86,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_CASINO_LUCKY_SEVEN = 0x0C432C1435F5E4FA,
@@ -44001,7 +44001,7 @@ namespace GTA.Native
 		_PLAYSTATS_CASINO_LUCKYSEVEN = 0x0C432C1435F5E4FA,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_CASINO_ROULETTE_LIGHT = 0x6572ABA3DE1197FC,
@@ -44011,7 +44011,7 @@ namespace GTA.Native
 		_PLAYSTATS_CASINO_ROULETTE_LIGHT = 0x6572ABA3DE1197FC,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_CASINO_BLACKJACK_LIGHT = 0xD5451C7BF151EB6F,
@@ -44021,7 +44021,7 @@ namespace GTA.Native
 		_PLAYSTATS_CASINO_BLACKJACK_LIGHT = 0xD5451C7BF151EB6F,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_CASINO_THREE_CARD_POKER_LIGHT = 0xC9001364B4388F22,
@@ -44031,7 +44031,7 @@ namespace GTA.Native
 		_PLAYSTATS_CASINO_THREECARDPOKER_LIGHT = 0xC9001364B4388F22,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_CASINO_SLOT_MACHINE_LIGHT = 0xE60054A0FAE8227F,
@@ -44041,7 +44041,7 @@ namespace GTA.Native
 		_PLAYSTATS_CASINO_SLOTMACHINE_LIGHT = 0xE60054A0FAE8227F,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_CASINO_INSIDE_TRACK_LIGHT = 0x23A3CBCD50D54E47,
@@ -44051,7 +44051,7 @@ namespace GTA.Native
 		_PLAYSTATS_CASINO_INSIDETRACK_LIGHT = 0x23A3CBCD50D54E47,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3, IntPtr p4, IntPtr p5, IntPtr p6
+		/// Parameters: Any p0, Any p1, Any p2, Any p3, Any p4, Any p5, Any p6
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_ARCADE_GAME = 0x533A7D1EA58DF958,
@@ -44061,7 +44061,7 @@ namespace GTA.Native
 		_PLAYSTATS_ARCADEGAME = 0x533A7D1EA58DF958,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_ARCADE_LOVE_MATCH = 0x4FCDBD3F0A813C25,
@@ -44071,7 +44071,7 @@ namespace GTA.Native
 		_PLAYSTATS_ARCADE_LOVEMATCH = 0x4FCDBD3F0A813C25,
 
 		/// <summary>
-		/// Parameters: IntPtr data
+		/// Parameters: Any* data
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_FREEMODE_CASINO_MISSION_ENDED = 0x1A0D4A6C336B7BC5,
@@ -44081,7 +44081,7 @@ namespace GTA.Native
 		_PLAYSTATS_CASINO_MISSION_ENDED = 0x1A0D4A6C336B7BC5,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_HEIST3_DRONE = 0xDFBD93BF2943E29B,
@@ -44091,7 +44091,7 @@ namespace GTA.Native
 		_PLAYSTATS_HEIST3_DRONE = 0xDFBD93BF2943E29B,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3, IntPtr p4, IntPtr p5
+		/// Parameters: Any p0, Any p1, Any p2, Any p3, Any p4, Any p5
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_HEIST3_HACK = 0x92FC0EEDFAC04A14,
@@ -44101,7 +44101,7 @@ namespace GTA.Native
 		_PLAYSTATS_HEIST3_HACK = 0x92FC0EEDFAC04A14,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3, IntPtr p4, IntPtr p5
+		/// Parameters: Any p0, Any p1, Any p2, Any p3, Any p4, Any p5
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_NPC_PHONE = 0x0077F15613D36993,
@@ -44111,7 +44111,7 @@ namespace GTA.Native
 		_PLAYSTATS_NPC_PHONE = 0x0077F15613D36993,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_ARCADE_CABINET = 0xF9096193DF1F99D4,
@@ -44121,7 +44121,7 @@ namespace GTA.Native
 		_PLAYSTATS_ARCADE_CABINET = 0xF9096193DF1F99D4,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_HEIST3_FINALE = 0x2E0259BABC27A327,
@@ -44131,7 +44131,7 @@ namespace GTA.Native
 		_PLAYSTATS_HEIST3_FINALE = 0x2E0259BABC27A327,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_HEIST3_PREP = 0x53C31853EC9531FF,
@@ -44141,7 +44141,7 @@ namespace GTA.Native
 		_PLAYSTATS_HEIST3_PREP = 0x53C31853EC9531FF,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_MASTER_CONTROL = 0x810B5FCC52EC7FF0,
@@ -44151,7 +44151,7 @@ namespace GTA.Native
 		_PLAYSTATS_MASTER_CONTROL = 0x810B5FCC52EC7FF0,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3, IntPtr p4
+		/// Parameters: Any p0, Any p1, Any p2, Any p3, Any p4
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_QUIT_MODE = 0x5BF29846C6527C54,
@@ -44161,7 +44161,7 @@ namespace GTA.Native
 		_PLAYSTATS_QUIT_MODE = 0x5BF29846C6527C54,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_MISSION_VOTE = 0xC03FAB2C2F92289B,
@@ -44171,7 +44171,7 @@ namespace GTA.Native
 		_PLAYSTATS_MISSION_VOTE = 0xC03FAB2C2F92289B,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_NJVS_VOTE = 0x5CDAED54B34B0ED0,
@@ -44184,7 +44184,7 @@ namespace GTA.Native
 		PLAYSTATS_KILL_YOURSELF = 0x4AFF7E02E485E92B,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2
+		/// Parameters: Any p0, Any p1, Any p2
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_FM_MISSION_END = 0x46A70777BE6CEAB9,
@@ -44194,7 +44194,7 @@ namespace GTA.Native
 		_PLAYSTATS_FREEMODE_MISSION_END = 0x46A70777BE6CEAB9,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_HEIST4_PREP = 0xDFCDB14317A9B361,
@@ -44204,7 +44204,7 @@ namespace GTA.Native
 		_PLAYSTATS_HEIST4_PREP = 0xDFCDB14317A9B361,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_HEIST4_FINALE = 0xC1E963C58664B556,
@@ -44214,7 +44214,7 @@ namespace GTA.Native
 		_PLAYSTATS_HEIST4_FINALE = 0xC1E963C58664B556,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3, IntPtr p4
+		/// Parameters: Any p0, Any p1, Any p2, Any p3, Any p4
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_HEIST4_HACK = 0x2FA3173480008493,
@@ -44224,7 +44224,7 @@ namespace GTA.Native
 		_PLAYSTATS_HEIST4_HACK = 0x2FA3173480008493,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_SUB_WEAP = 0xD4367D310F079DB0,
@@ -44234,7 +44234,7 @@ namespace GTA.Native
 		_PLAYSTATS_SUB_WEAP = 0xD4367D310F079DB0,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3, IntPtr p4, IntPtr p5, IntPtr p6, IntPtr p7, IntPtr p8
+		/// Parameters: Any p0, Any p1, Any p2, Any p3, Any p4, Any p5, Any p6, Any p7, Any p8
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_FAST_TRVL = 0x4DC416F246A41FC8,
@@ -44244,7 +44244,7 @@ namespace GTA.Native
 		_PLAYSTATS_FAST_TRVL = 0x4DC416F246A41FC8,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_HUB_ENTRY = 0x2818FF6638CB09DE,
@@ -44254,7 +44254,7 @@ namespace GTA.Native
 		_PLAYSTATS_HUB_ENTRY = 0x2818FF6638CB09DE,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_DJ_MISSION_ENDED = 0xD6CA58B3B53A0F22,
@@ -44264,7 +44264,7 @@ namespace GTA.Native
 		_PLAYSTATS_DJ_MISSION_ENDED = 0xD6CA58B3B53A0F22,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_ROBBERY_PREP = 0x1A67DFBF1F5C3835,
@@ -44274,7 +44274,7 @@ namespace GTA.Native
 		_PLAYSTATS_ROBBERY_PREP = 0x1A67DFBF1F5C3835,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_ROBBERY_FINALE = 0xBBA55BE9AAAABF44,
@@ -44284,7 +44284,7 @@ namespace GTA.Native
 		_PLAYSTATS_ROBBERY_FINALE = 0xBBA55BE9AAAABF44,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_EXTRA_EVENT = 0xFA5B74BAB8A7EF99,
@@ -44294,7 +44294,7 @@ namespace GTA.Native
 		_PLAYSTATS_EXTRA_EVENT = 0xFA5B74BAB8A7EF99,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_CARCLUB_POINTS = 0xFF14D6FEEC507BBE,
@@ -44304,7 +44304,7 @@ namespace GTA.Native
 		_PLAYSTATS_CARCLUB_POINTS = 0xFF14D6FEEC507BBE,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_CARCLUB_CHALLENGE = 0x1187CB58D7F3BED7,
@@ -44314,7 +44314,7 @@ namespace GTA.Native
 		_PLAYSTATS_CARCLUB_CHALLENGE = 0x1187CB58D7F3BED7,
 
 		/// <summary>
-		/// Parameters: int p0, uint vehicleModel
+		/// Parameters: int p0, Hash vehicleModel
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_CARCLUB_PRIZE = 0x69C922B677621428,
@@ -44324,7 +44324,7 @@ namespace GTA.Native
 		_PLAYSTATS_CARCLUB_PRIZE = 0x69C922B677621428,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_AWARD_NAV = 0x70F52471E758EBAE,
@@ -44334,7 +44334,7 @@ namespace GTA.Native
 		_PLAYSTATS_AWARDS_NAV = 0x70F52471E758EBAE,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_INST_MISSION_END = 0xFEA3F7E83C0610FA,
@@ -44344,7 +44344,7 @@ namespace GTA.Native
 		_PLAYSTATS_INST_MISSION_END = 0xFEA3F7E83C0610FA,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_HUB_EXIT = 0x5A46ACE5C4661132,
@@ -44354,7 +44354,7 @@ namespace GTA.Native
 		_PLAYSTATS_HUB_EXIT = 0x5A46ACE5C4661132,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		PLAYSTATS_INVENTORY = 0x887DAD63CF5B7908,
@@ -44383,13 +44383,13 @@ namespace GTA.Native
 		IS_NETWORK_LOADING_SCENE = 0x41CA5A33160EA4AB, // 0x6DCFC021
 
 		/// <summary>
-		/// Parameters: int interiorID, bool toggle
+		/// Parameters: int interiorID, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_INTERIOR_ACTIVE = 0xE37B76C387BE28ED, // 0xE1013910
 
 		/// <summary>
-		/// Parameters: uint model
+		/// Parameters: Hash model
 		/// </summary>
 		/// <remarks>
 		/// Request a model to be loaded into memory.<br/>
@@ -44398,13 +44398,13 @@ namespace GTA.Native
 		REQUEST_MODEL = 0x963D27A58DF860AC, // 0xFFF1B500
 
 		/// <summary>
-		/// Parameters: uint model
+		/// Parameters: Hash model
 		/// </summary>
 		/// <returns>void</returns>
 		REQUEST_MENU_PED_MODEL = 0xA0261AEF7ACFC51E, // 0x48CEB6B4
 
 		/// <summary>
-		/// Parameters: uint model
+		/// Parameters: Hash model
 		/// </summary>
 		/// <remarks>
 		/// Checks if the specified model has loaded into memory.<br/>
@@ -44413,7 +44413,7 @@ namespace GTA.Native
 		HAS_MODEL_LOADED = 0x98A4EB5D89A0C952, // 0x62BFDB37
 
 		/// <summary>
-		/// Parameters: Interior interior, string roomName
+		/// Parameters: Interior interior, const char* roomName
 		/// </summary>
 		/// <remarks>
 		/// STREAMING::REQUEST_MODELS_IN_ROOM(l_13BC, "V_FIB01_cur_elev");<br/>
@@ -44431,7 +44431,7 @@ namespace GTA.Native
 		_REQUEST_INTERIOR_ROOM_BY_NAME = 0x8A7A40100EDFEC58, // 0x939243FB
 
 		/// <summary>
-		/// Parameters: uint model
+		/// Parameters: Hash model
 		/// </summary>
 		/// <remarks>
 		/// Unloads model from memory<br/>
@@ -44440,7 +44440,7 @@ namespace GTA.Native
 		SET_MODEL_AS_NO_LONGER_NEEDED = 0xE532F5D78798DAAB, // 0xAE0F069E
 
 		/// <summary>
-		/// Parameters: uint model
+		/// Parameters: Hash model
 		/// </summary>
 		/// <remarks>
 		/// Check if model is in cdimage(rpf)<br/>
@@ -44449,7 +44449,7 @@ namespace GTA.Native
 		IS_MODEL_IN_CDIMAGE = 0x35B9E0803292B641, // 0x1094782F
 
 		/// <summary>
-		/// Parameters: uint model
+		/// Parameters: Hash model
 		/// </summary>
 		/// <remarks>
 		/// Returns whether the specified model exists in the game.<br/>
@@ -44458,13 +44458,13 @@ namespace GTA.Native
 		IS_MODEL_VALID = 0xC0296A2EDF545E92, // 0xAF8F8E9D
 
 		/// <summary>
-		/// Parameters: uint model
+		/// Parameters: Hash model
 		/// </summary>
 		/// <returns>BOOL</returns>
 		IS_MODEL_A_PED = 0x75816577FEA6DAD5,
 
 		/// <summary>
-		/// Parameters: uint model
+		/// Parameters: Hash model
 		/// </summary>
 		/// <remarks>
 		/// Returns whether the specified model represents a vehicle.<br/>
@@ -44479,13 +44479,13 @@ namespace GTA.Native
 		REQUEST_COLLISION_AT_COORD = 0x07503F7948F491A7, // 0xCD9805E7
 
 		/// <summary>
-		/// Parameters: uint model
+		/// Parameters: Hash model
 		/// </summary>
 		/// <returns>void</returns>
 		REQUEST_COLLISION_FOR_MODEL = 0x923CB32A3B874FCB, // 0x3930C042
 
 		/// <summary>
-		/// Parameters: uint model
+		/// Parameters: Hash model
 		/// </summary>
 		/// <returns>BOOL</returns>
 		HAS_COLLISION_FOR_MODEL_LOADED = 0x22CCA434E368F03A, // 0x41A094F8
@@ -44500,7 +44500,7 @@ namespace GTA.Native
 		REQUEST_ADDITIONAL_COLLISION_AT_COORD = 0xC9156DC11411A9EA, // 0xC2CC1DF2
 
 		/// <summary>
-		/// Parameters: string animDict
+		/// Parameters: const char* animDict
 		/// </summary>
 		/// <remarks>
 		/// Full list of animation dictionaries and anims by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json</see><br/>
@@ -44509,7 +44509,7 @@ namespace GTA.Native
 		DOES_ANIM_DICT_EXIST = 0x2DA49C3B79856961, // 0xCD31C872
 
 		/// <summary>
-		/// Parameters: string animDict
+		/// Parameters: const char* animDict
 		/// </summary>
 		/// <remarks>
 		/// Full list of animation dictionaries and anims by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json</see><br/>
@@ -44518,7 +44518,7 @@ namespace GTA.Native
 		REQUEST_ANIM_DICT = 0xD3BD40951412FEF6, // 0xDCA96950
 
 		/// <summary>
-		/// Parameters: string animDict
+		/// Parameters: const char* animDict
 		/// </summary>
 		/// <remarks>
 		/// Full list of animation dictionaries and anims by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json</see><br/>
@@ -44527,7 +44527,7 @@ namespace GTA.Native
 		HAS_ANIM_DICT_LOADED = 0xD031A9162D01088C, // 0x05E6763C
 
 		/// <summary>
-		/// Parameters: string animDict
+		/// Parameters: const char* animDict
 		/// </summary>
 		/// <remarks>
 		/// Full list of animation dictionaries and anims by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json</see><br/>
@@ -44536,7 +44536,7 @@ namespace GTA.Native
 		REMOVE_ANIM_DICT = 0xF66A602F829E2A06, // 0x0AE050B5
 
 		/// <summary>
-		/// Parameters: string animSet
+		/// Parameters: const char* animSet
 		/// </summary>
 		/// <remarks>
 		/// Starts loading the specified animation set. An animation set provides movement animations for a ped. See SET_PED_MOVEMENT_CLIPSET.<br/>
@@ -44547,7 +44547,7 @@ namespace GTA.Native
 		REQUEST_ANIM_SET = 0x6EA47DAE7FAD0EED, // 0x2988B3FC
 
 		/// <summary>
-		/// Parameters: string animSet
+		/// Parameters: const char* animSet
 		/// </summary>
 		/// <remarks>
 		/// Gets whether the specified animation set has finished loading. An animation set provides movement animations for a ped. See SET_PED_MOVEMENT_CLIPSET.<br/>
@@ -44559,7 +44559,7 @@ namespace GTA.Native
 		HAS_ANIM_SET_LOADED = 0xC4EA073D86FB29B0, // 0x4FFF397D
 
 		/// <summary>
-		/// Parameters: string animSet
+		/// Parameters: const char* animSet
 		/// </summary>
 		/// <remarks>
 		/// Unloads the specified animation set. An animation set provides movement animations for a ped. See SET_PED_MOVEMENT_CLIPSET.<br/>
@@ -44571,7 +44571,7 @@ namespace GTA.Native
 		REMOVE_ANIM_SET = 0x16350528F93024B3, // 0xD04A817A
 
 		/// <summary>
-		/// Parameters: string clipSet
+		/// Parameters: const char* clipSet
 		/// </summary>
 		/// <remarks>
 		/// Full list of animation dictionaries and anims by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json</see><br/>
@@ -44581,7 +44581,7 @@ namespace GTA.Native
 		REQUEST_CLIP_SET = 0xD2A71E1A77418A49, // 0x546C627A
 
 		/// <summary>
-		/// Parameters: string clipSet
+		/// Parameters: const char* clipSet
 		/// </summary>
 		/// <remarks>
 		/// Alias for HAS_ANIM_SET_LOADED.<br/>
@@ -44592,7 +44592,7 @@ namespace GTA.Native
 		HAS_CLIP_SET_LOADED = 0x318234F4F3738AF3, // 0x230D5455
 
 		/// <summary>
-		/// Parameters: string clipSet
+		/// Parameters: const char* clipSet
 		/// </summary>
 		/// <remarks>
 		/// Alias for REMOVE_ANIM_SET.<br/>
@@ -44603,7 +44603,7 @@ namespace GTA.Native
 		REMOVE_CLIP_SET = 0x01F73A131C18CD94, // 0x1E21F7AA
 
 		/// <summary>
-		/// Parameters: string iplName
+		/// Parameters: const char* iplName
 		/// </summary>
 		/// <remarks>
 		/// Exemple: REQUEST_IPL("TrevorsTrailerTrash");<br/>
@@ -44613,7 +44613,7 @@ namespace GTA.Native
 		REQUEST_IPL = 0x41B4893843BBDB74, // 0x3B70D1DB
 
 		/// <summary>
-		/// Parameters: string iplName
+		/// Parameters: const char* iplName
 		/// </summary>
 		/// <remarks>
 		/// Removes an IPL from the map.<br/>
@@ -44629,7 +44629,7 @@ namespace GTA.Native
 		REMOVE_IPL = 0xEE6C5AD3ECE0A82D, // 0xDF7CBD36
 
 		/// <summary>
-		/// Parameters: string iplName
+		/// Parameters: const char* iplName
 		/// </summary>
 		/// <remarks>
 		/// Full list of IPLs and interior entity sets by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/ipls.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/ipls.json</see><br/>
@@ -44638,7 +44638,7 @@ namespace GTA.Native
 		IS_IPL_ACTIVE = 0x88A741E44A2B3495, // 0xB2C33714
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_STREAMING = 0x6E0C692677008888, // 0x27EF6CB2
@@ -44665,25 +44665,25 @@ namespace GTA.Native
 		_GET_GLOBAL_WATER_TYPE = 0xF741BD853611592D,
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_GAME_PAUSES_FOR_STREAMING = 0x717CD6E6FAEBBEDC, // 0x9211A28A
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_REDUCE_PED_MODEL_BUDGET = 0x77B5F9A36BF96710, // 0xAFCB2B86
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_REDUCE_VEHICLE_MODEL_BUDGET = 0x80C527893080CCF3, // 0xCDB4FB7E
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// This is a NOP function. It does nothing at all.<br/>
@@ -44707,7 +44707,7 @@ namespace GTA.Native
 		REMOVE_PTFX_ASSET = 0x88C6814073DD4A73, // 0xC10F178C
 
 		/// <summary>
-		/// Parameters: string fxName
+		/// Parameters: const char* fxName
 		/// </summary>
 		/// <remarks>
 		///  From the b678d decompiled scripts:<br/>
@@ -44729,13 +44729,13 @@ namespace GTA.Native
 		REQUEST_NAMED_PTFX_ASSET = 0xB80D8756B4668AB6, // 0xCFEA19A9
 
 		/// <summary>
-		/// Parameters: string fxName
+		/// Parameters: const char* fxName
 		/// </summary>
 		/// <returns>BOOL</returns>
 		HAS_NAMED_PTFX_ASSET_LOADED = 0x8702416E512EC454, // 0x9ACC6446
 
 		/// <summary>
-		/// Parameters: string fxName
+		/// Parameters: const char* fxName
 		/// </summary>
 		/// <returns>void</returns>
 		REMOVE_NAMED_PTFX_ASSET = 0x5F61EBBE1A00F96D, // 0xC44762A1
@@ -44799,7 +44799,7 @@ namespace GTA.Native
 		SET_RESTORE_FOCUS_ENTITY = 0x0811381EF5062FEC,
 
 		/// <summary>
-		/// Parameters: string name, bool toggle
+		/// Parameters: const char* name, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Possible p0 values:<br/>
@@ -44810,7 +44810,7 @@ namespace GTA.Native
 		SET_MAPDATACULLBOX_ENABLED = 0xAF12610C644A35C9, // 0x403CD434
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <remarks>
 		/// This native does absolutely nothing, just a nullsub<br/>
@@ -44819,7 +44819,7 @@ namespace GTA.Native
 		SET_ALL_MAPDATA_CULLED = 0x4E52E752C76E7E7A, // 0xA07BAEB9
 
 		/// <summary>
-		/// Parameters: float x, float y, float z, float rad, IntPtr p4, IntPtr p5
+		/// Parameters: float x, float y, float z, float rad, Any p4, Any p5
 		/// </summary>
 		/// <remarks>
 		/// Always returns zero.<br/>
@@ -44832,7 +44832,7 @@ namespace GTA.Native
 		FORMAT_FOCUS_HEADING = 0x219C7B8D53E429FD, // 0x10B6AB36
 
 		/// <summary>
-		/// Parameters: float p0, float p1, float p2, float p3, float p4, float p5, float p6, IntPtr p7, IntPtr p8
+		/// Parameters: float p0, float p1, float p2, float p3, float p4, float p5, float p6, Any p7, Any p8
 		/// </summary>
 		/// <remarks>
 		/// Always returns zero.<br/>
@@ -44841,7 +44841,7 @@ namespace GTA.Native
 		STREAMVOL_CREATE_FRUSTUM = 0x1F3F018BC3AFA77C, // 0x72344191
 
 		/// <summary>
-		/// Parameters: float p0, float p1, float p2, float p3, float p4, float p5, IntPtr p6
+		/// Parameters: float p0, float p1, float p2, float p3, float p4, float p5, Any p6
 		/// </summary>
 		/// <remarks>
 		/// Always returns zero.<br/>
@@ -44850,19 +44850,19 @@ namespace GTA.Native
 		STREAMVOL_CREATE_LINE = 0x0AD9710CEE2F590F, // 0xC0157255
 
 		/// <summary>
-		/// Parameters: IntPtr unused
+		/// Parameters: Any unused
 		/// </summary>
 		/// <returns>void</returns>
 		STREAMVOL_DELETE = 0x1EE7D8DF4425F053, // 0xE80F8ABE
 
 		/// <summary>
-		/// Parameters: IntPtr unused
+		/// Parameters: Any unused
 		/// </summary>
 		/// <returns>BOOL</returns>
 		STREAMVOL_HAS_LOADED = 0x7D41E9D2D17C5B2D, // 0x1B3521F4
 
 		/// <summary>
-		/// Parameters: IntPtr unused
+		/// Parameters: Any unused
 		/// </summary>
 		/// <returns>BOOL</returns>
 		STREAMVOL_IS_VALID = 0x07C313F94746702C, // 0x42CFE9C0
@@ -44882,7 +44882,7 @@ namespace GTA.Native
 		NEW_LOAD_SCENE_START = 0x212A8D0D2BABFAC2, // 0xDF9C38B6
 
 		/// <summary>
-		/// Parameters: float x, float y, float z, float radius, IntPtr p4
+		/// Parameters: float x, float y, float z, float radius, Any p4
 		/// </summary>
 		/// <returns>BOOL</returns>
 		NEW_LOAD_SCENE_START_SPHERE = 0xACCFB4ACF53551B0, // 0xFA037FEB
@@ -44970,7 +44970,7 @@ namespace GTA.Native
 		SET_PLAYER_SWITCH_OUTRO = 0xC208B673CE446B61, // 0x47352E14
 
 		/// <summary>
-		/// Parameters: string name
+		/// Parameters: const char* name
 		/// </summary>
 		/// <remarks>
 		/// All names can be found in playerswitchestablishingshots.meta<br/>
@@ -45080,7 +45080,7 @@ namespace GTA.Native
 		SUPPRESS_HD_MAP_STREAMING_THIS_FRAME = 0x472397322E92A856, // 0x4267DA87
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_RENDER_HD_ONLY = 0x40AEFD1A244741F2, // 0x9FA4AF99
@@ -45089,7 +45089,7 @@ namespace GTA.Native
 		FORCE_ALLOW_TIME_BASED_FADING_THIS_FRAME = 0x03F1A106BDA7DD3E,
 
 		/// <summary>
-		/// Parameters: string iplName1, string iplName2
+		/// Parameters: const char* iplName1, const char* iplName2
 		/// </summary>
 		/// <returns>void</returns>
 		IPL_GROUP_SWAP_START = 0x95A7DABDDBB78AE7, // 0x9EF0A9CF
@@ -45107,7 +45107,7 @@ namespace GTA.Native
 		IPL_GROUP_SWAP_IS_ACTIVE = 0x5068F488DDB54DD8, // 0xDAB4BAC0
 
 		/// <summary>
-		/// Parameters: string srl
+		/// Parameters: const char* srl
 		/// </summary>
 		/// <remarks>
 		/// This native is used to attribute the SRL that BEGIN_SRL is going to load. This is usually used for 'in-game' cinematics (not cutscenes but camera stuff) instead of SET_FOCUS_POS_AND_VEL because it loads a specific area of the map which is pretty useful when the camera moves from distant areas.<br/>
@@ -45140,25 +45140,25 @@ namespace GTA.Native
 		SET_SRL_TIME = 0xA74A541C6884E7B8, // 0x30F8A487
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3, IntPtr p4, IntPtr p5
+		/// Parameters: Any p0, Any p1, Any p2, Any p3, Any p4, Any p5
 		/// </summary>
 		/// <returns>void</returns>
 		SET_SRL_POST_CUTSCENE_CAMERA = 0xEF39EE20C537E98C, // 0x814D0752
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		SET_SRL_READAHEAD_TIMES = 0xBEB2D9A1D9A8F55A, // 0x62F02485
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>void</returns>
 		SET_SRL_LONG_JUMP_MODE = 0x20C6C7E4EB082A7F, // 0xA6459CAA
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		SET_SRL_FORCE_PRESTREAM = 0xF8155A7F03DDFC8E, // 0xF8F515E4
@@ -45183,13 +45183,13 @@ namespace GTA.Native
 		SHUTDOWN_CREATOR_BUDGET = 0xCCE26000E9A6FAD7, // 0x897A510F
 
 		/// <summary>
-		/// Parameters: uint modelHash
+		/// Parameters: Hash modelHash
 		/// </summary>
 		/// <returns>BOOL</returns>
 		ADD_MODEL_TO_CREATOR_BUDGET = 0x0BC3144DEB678666, // 0xC0E83320
 
 		/// <summary>
-		/// Parameters: uint modelHash
+		/// Parameters: Hash modelHash
 		/// </summary>
 		/// <returns>void</returns>
 		REMOVE_MODEL_FROM_CREATOR_BUDGET = 0xF086AD9354FAC3A3, // 0x1C576388
@@ -45207,7 +45207,7 @@ namespace GTA.Native
 		_GET_USED_CREATOR_MODEL_MEMORY_PERCENTAGE = 0x3D3D8B3BE5A83D35, // 0x3E9C4CBE
 
 		/// <summary>
-		/// Parameters: string name, bool toggle
+		/// Parameters: const char* name, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Enables the specified island. For more information, see islandhopper.meta<br/>
@@ -45242,7 +45242,7 @@ namespace GTA.Native
 		TASK_STAND_STILL = 0x919BE13EED931959, // 0x6F80965D
 
 		/// <summary>
-		/// Parameters: Ped ped, bool usePlayerLaunchForce, bool doSuperJump, bool useFullSuperJumpForce
+		/// Parameters: Ped ped, BOOL usePlayerLaunchForce, BOOL doSuperJump, BOOL useFullSuperJumpForce
 		/// </summary>
 		/// <remarks>
 		/// Definition is wrong. This has 4 parameters (Not sure when they were added. v350 has 2, v678 has 4).<br/>
@@ -45287,7 +45287,7 @@ namespace GTA.Native
 		TASK_OPEN_VEHICLE_DOOR = 0x965791A9A488A062, // 0x8EE06BF4
 
 		/// <summary>
-		/// Parameters: Ped ped, Vehicle vehicle, int timeout, int seat, float speed, int flag, string overrideEntryClipsetName
+		/// Parameters: Ped ped, Vehicle vehicle, int timeout, int seat, float speed, int flag, const char* overrideEntryClipsetName
 		/// </summary>
 		/// <remarks>
 		/// speed 1.0 = walk, 2.0 = run<br/>
@@ -45332,13 +45332,13 @@ namespace GTA.Native
 		_TASK_GET_OFF_BOAT = 0x9C00E77AF14B2DFF, // 0x4293601F
 
 		/// <summary>
-		/// Parameters: Ped ped, bool instant
+		/// Parameters: Ped ped, BOOL instant
 		/// </summary>
 		/// <returns>void</returns>
 		TASK_SKY_DIVE = 0x601736CFE536B0A0, // 0xD3874AFA
 
 		/// <summary>
-		/// Parameters: Ped ped, bool giveParachuteItem, bool instant
+		/// Parameters: Ped ped, BOOL giveParachuteItem, BOOL instant
 		/// </summary>
 		/// <remarks>
 		/// Second parameter is unused.<br/>
@@ -45381,7 +45381,7 @@ namespace GTA.Native
 		TASK_RAPPEL_FROM_HELI = 0x09693B0312F91649, // 0x2C7ADB93
 
 		/// <summary>
-		/// Parameters: Ped ped, Vehicle vehicle, float x, float y, float z, float speed, IntPtr p6, uint vehicleModel, int drivingMode, float stopRange, float straightLineDistance
+		/// Parameters: Ped ped, Vehicle vehicle, float x, float y, float z, float speed, Any p6, Hash vehicleModel, int drivingMode, float stopRange, float straightLineDistance
 		/// </summary>
 		/// <remarks>
 		/// info about driving modes: <see href='https://gtaforums.com/topic/822314-guide-driving-styles/'>https://gtaforums.com/topic/822314-guide-driving-styles/</see><br/>
@@ -45402,7 +45402,7 @@ namespace GTA.Native
 		TASK_VEHICLE_DRIVE_WANDER = 0x480142959D337D00, // 0x36EC0EB0
 
 		/// <summary>
-		/// Parameters: Ped ped, Entity entity, float offsetX, float offsetY, float offsetZ, float movementSpeed, int timeout, float stoppingRange, bool persistFollowing
+		/// Parameters: Ped ped, Entity entity, float offsetX, float offsetY, float offsetZ, float movementSpeed, int timeout, float stoppingRange, BOOL persistFollowing
 		/// </summary>
 		/// <remarks>
 		/// p6 always -1<br/>
@@ -45487,7 +45487,7 @@ namespace GTA.Native
 		TASK_GO_TO_ENTITY = 0x6A071245EB0D1882, // 0x374827C2
 
 		/// <summary>
-		/// Parameters: Ped ped, float x, float y, float z, float distance, int time, bool preferPavements, bool quitIfOutOfRange
+		/// Parameters: Ped ped, float x, float y, float z, float distance, int time, BOOL preferPavements, BOOL quitIfOutOfRange
 		/// </summary>
 		/// <remarks>
 		/// Makes the specified ped flee the specified distance from the specified position.<br/>
@@ -45496,7 +45496,7 @@ namespace GTA.Native
 		TASK_SMART_FLEE_COORD = 0x94587F17E9C365D5, // 0xB2E686FC
 
 		/// <summary>
-		/// Parameters: Ped ped, Ped fleeTarget, float safeDistance, int fleeTime, bool preferPavements, bool updateToNearestHatedPed
+		/// Parameters: Ped ped, Ped fleeTarget, float safeDistance, int fleeTime, BOOL preferPavements, BOOL updateToNearestHatedPed
 		/// </summary>
 		/// <remarks>
 		/// Makes a ped run away from another ped (fleeTarget).<br/>
@@ -45535,13 +45535,13 @@ namespace GTA.Native
 		TASK_WANDER_STANDARD = 0xBB9CE077274F6A1B, // 0xAF59151A
 
 		/// <summary>
-		/// Parameters: Ped ped, string conditionalAnimGroupStr, string conditionalAnimStr, float heading
+		/// Parameters: Ped ped, const char* conditionalAnimGroupStr, const char* conditionalAnimStr, float heading
 		/// </summary>
 		/// <returns>void</returns>
 		TASK_WANDER_SPECIFIC = 0x6919A2F136426098,
 
 		/// <summary>
-		/// Parameters: Ped ped, Vehicle vehicle, float x, float y, float z, float heading, int mode, float radius, bool keepEngineOn
+		/// Parameters: Ped ped, Vehicle vehicle, float x, float y, float z, float heading, int mode, float radius, BOOL keepEngineOn
 		/// </summary>
 		/// <remarks>
 		/// Modes:<br/>
@@ -45555,7 +45555,7 @@ namespace GTA.Native
 		TASK_VEHICLE_PARK = 0x0F3E34E968EA374E, // 0x5C85FF90
 
 		/// <summary>
-		/// Parameters: Ped killer, Ped target, uint stealthKillActionResultHash, float desiredMoveBlendRatio, int stealthFlags
+		/// Parameters: Ped killer, Ped target, Hash stealthKillActionResultHash, float desiredMoveBlendRatio, int stealthFlags
 		/// </summary>
 		/// <remarks>
 		/// known "killTypes" are: "AR_stealth_kill_knife" and "AR_stealth_kill_a".<br/>
@@ -45585,19 +45585,19 @@ namespace GTA.Native
 		TASK_FOLLOW_NAV_MESH_TO_COORD_ADVANCED = 0x17F58B88D085DBAC, // 0x6BF6E296
 
 		/// <summary>
-		/// Parameters: Ped ped, bool Toggle
+		/// Parameters: Ped ped, BOOL Toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_PATH_CAN_USE_CLIMBOVERS = 0x8E06A6FE76C9EFF4, // 0xB7B7D442
 
 		/// <summary>
-		/// Parameters: Ped ped, bool Toggle
+		/// Parameters: Ped ped, BOOL Toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_PATH_CAN_USE_LADDERS = 0x77A5B103C87F476E, // 0x53A879EE
 
 		/// <summary>
-		/// Parameters: Ped ped, bool Toggle
+		/// Parameters: Ped ped, BOOL Toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_PATH_CAN_DROP_FROM_HEIGHT = 0xE361C5C71C431A4F, // 0x394B7AC9
@@ -45612,7 +45612,7 @@ namespace GTA.Native
 		SET_PED_PATH_CLIMB_COST_MODIFIER = 0x88E32DB8C1A4AA4B, // 0x55E06443
 
 		/// <summary>
-		/// Parameters: Ped ped, bool mayEnterWater
+		/// Parameters: Ped ped, BOOL mayEnterWater
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_PATH_MAY_ENTER_WATER = 0xF35425A4204367EC, // 0x9C606EE3
@@ -45622,13 +45622,13 @@ namespace GTA.Native
 		SET_PED_PATHS_WIDTH_PLANT = 0xF35425A4204367EC, // 0x9C606EE3
 
 		/// <summary>
-		/// Parameters: Ped ped, bool avoidWater
+		/// Parameters: Ped ped, BOOL avoidWater
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_PATH_PREFER_TO_AVOID_WATER = 0x38FE1EC73743793C, // 0x0EA39A29
 
 		/// <summary>
-		/// Parameters: Ped ped, bool avoidFire
+		/// Parameters: Ped ped, BOOL avoidFire
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_PATH_AVOID_FIRE = 0x4455517B28441E60, // 0xDCC5B934
@@ -45673,7 +45673,7 @@ namespace GTA.Native
 		IS_CONTROLLED_VEHICLE_UNABLE_TO_GET_TO_ROAD = 0x3E38E28A1D80DDF6, // 0x54856309
 
 		/// <summary>
-		/// Parameters: Ped ped, float x, float y, float z, float moveBlendRatio, Vehicle vehicle, bool useLongRangeVehiclePathing, int drivingFlags, float maxRangeToShootTargets
+		/// Parameters: Ped ped, float x, float y, float z, float moveBlendRatio, Vehicle vehicle, BOOL useLongRangeVehiclePathing, int drivingFlags, float maxRangeToShootTargets
 		/// </summary>
 		/// <remarks>
 		/// example from fm_mission_controller<br/>
@@ -45684,19 +45684,19 @@ namespace GTA.Native
 		TASK_GO_TO_COORD_ANY_MEANS = 0x5BC448CB78FA3E88, // 0xF91DF93B
 
 		/// <summary>
-		/// Parameters: Ped ped, float x, float y, float z, float moveBlendRatio, Vehicle vehicle, bool useLongRangeVehiclePathing, int drivingFlags, float maxRangeToShootTargets, float extraVehToTargetDistToPreferVehicle, float driveStraightLineDistance, int extraFlags, float warpTimerMS
+		/// Parameters: Ped ped, float x, float y, float z, float moveBlendRatio, Vehicle vehicle, BOOL useLongRangeVehiclePathing, int drivingFlags, float maxRangeToShootTargets, float extraVehToTargetDistToPreferVehicle, float driveStraightLineDistance, int extraFlags, float warpTimerMS
 		/// </summary>
 		/// <returns>void</returns>
 		TASK_GO_TO_COORD_ANY_MEANS_EXTRA_PARAMS = 0x1DD45F9ECFDB1BC9, // 0x094B75EF
 
 		/// <summary>
-		/// Parameters: Ped ped, float x, float y, float z, float moveBlendRatio, Vehicle vehicle, bool useLongRangeVehiclePathing, int drivingFlags, float maxRangeToShootTargets, float extraVehToTargetDistToPreferVehicle, float driveStraightLineDistance, int extraFlags, float cruiseSpeed, float targetArriveDist
+		/// Parameters: Ped ped, float x, float y, float z, float moveBlendRatio, Vehicle vehicle, BOOL useLongRangeVehiclePathing, int drivingFlags, float maxRangeToShootTargets, float extraVehToTargetDistToPreferVehicle, float driveStraightLineDistance, int extraFlags, float cruiseSpeed, float targetArriveDist
 		/// </summary>
 		/// <returns>void</returns>
 		TASK_GO_TO_COORD_ANY_MEANS_EXTRA_PARAMS_WITH_CRUISE_SPEED = 0xB8ECD61F531A7B02, // 0x86DC03F9
 
 		/// <summary>
-		/// Parameters: Ped ped, string animDictionary, string animationName, float blendInSpeed, float blendOutSpeed, int duration, int flag, float playbackRate, bool lockX, bool lockY, bool lockZ
+		/// Parameters: Ped ped, const char* animDictionary, const char* animationName, float blendInSpeed, float blendOutSpeed, int duration, int flag, float playbackRate, BOOL lockX, BOOL lockY, BOOL lockZ
 		/// </summary>
 		/// <remarks>
 		/// Full list of animation dictionaries and anims by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json</see><br/>
@@ -45751,7 +45751,7 @@ namespace GTA.Native
 		TASK_PLAY_ANIM = 0xEA47FE3719165B94, // 0x5AB552C6
 
 		/// <summary>
-		/// Parameters: Ped ped, string animDict, string animName, float posX, float posY, float posZ, float rotX, float rotY, float rotZ, float animEnterSpeed, float animExitSpeed, int duration, IntPtr flag, float animTime, int rotOrder, int ikFlags
+		/// Parameters: Ped ped, const char* animDict, const char* animName, float posX, float posY, float posZ, float rotX, float rotY, float rotZ, float animEnterSpeed, float animExitSpeed, int duration, Any flag, float animTime, int rotOrder, int ikFlags
 		/// </summary>
 		/// <remarks>
 		/// It's similar to TASK_PLAY_ANIM, except the first 6 floats let you specify the initial position and rotation of the task. (Ped gets teleported to the position).<br/>
@@ -45761,7 +45761,7 @@ namespace GTA.Native
 		TASK_PLAY_ANIM_ADVANCED = 0x83CDB10EA29B370B, // 0x3DDEB0E6
 
 		/// <summary>
-		/// Parameters: Entity entity, string animDictionary, string animationName, float blendDelta
+		/// Parameters: Entity entity, const char* animDictionary, const char* animationName, float blendDelta
 		/// </summary>
 		/// <remarks>
 		/// Full list of animation dictionaries and anims by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json</see><br/>
@@ -45818,7 +45818,7 @@ namespace GTA.Native
 		PLAY_ENTITY_SCRIPTED_ANIM = 0x77A1EEC547E7FCF1, // 0x02F72AE5
 
 		/// <summary>
-		/// Parameters: Entity entity, int priority, bool secondary
+		/// Parameters: Entity entity, int priority, BOOL secondary
 		/// </summary>
 		/// <remarks>
 		/// Looks like p1 may be a flag, still need to do some research, though.<br/>
@@ -45827,13 +45827,13 @@ namespace GTA.Native
 		STOP_ANIM_PLAYBACK = 0xEE08C992D238C5D1, // 0xE5F16398
 
 		/// <summary>
-		/// Parameters: Entity entity, float weight, int priority, int index, bool secondary
+		/// Parameters: Entity entity, float weight, int priority, int index, BOOL secondary
 		/// </summary>
 		/// <returns>void</returns>
 		SET_ANIM_WEIGHT = 0x207F1A47C0342F48, // 0x17229D98
 
 		/// <summary>
-		/// Parameters: Entity entity, float phase, int priority, bool secondary
+		/// Parameters: Entity entity, float phase, int priority, BOOL secondary
 		/// </summary>
 		/// <returns>void</returns>
 		SET_ANIM_PHASE = 0xDDF3CB5A0A4C0B49, // 0xB621E7E4
@@ -45843,19 +45843,19 @@ namespace GTA.Native
 		_SET_ANIM_PLAYBACK_TIME = 0xDDF3CB5A0A4C0B49, // 0xB621E7E4
 
 		/// <summary>
-		/// Parameters: Entity entity, float rate, int priority, bool secondary
+		/// Parameters: Entity entity, float rate, int priority, BOOL secondary
 		/// </summary>
 		/// <returns>void</returns>
 		SET_ANIM_RATE = 0x032D49C5E359C847, // 0x6DB46584
 
 		/// <summary>
-		/// Parameters: Entity entity, bool looped, int priority, bool secondary
+		/// Parameters: Entity entity, BOOL looped, int priority, BOOL secondary
 		/// </summary>
 		/// <returns>void</returns>
 		SET_ANIM_LOOPED = 0x70033C3CC29A1FF4, // 0x095D61A4
 
 		/// <summary>
-		/// Parameters: Ped ped, string animDict, string animation, string boneMaskType, float blendInDuration, float blendOutDuration, bool isLooping, bool holdLastFrame
+		/// Parameters: Ped ped, const char* animDict, const char* animation, const char* boneMaskType, float blendInDuration, float blendOutDuration, BOOL isLooping, BOOL holdLastFrame
 		/// </summary>
 		/// <remarks>
 		/// Example from the scripts:<br/>
@@ -45908,7 +45908,7 @@ namespace GTA.Native
 		GET_PHONE_GESTURE_ANIM_TOTAL_TIME = 0x1EE0F68A7C25DEC6, // 0xEF8C3959
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, string animationSet, string animationName
+		/// Parameters: Vehicle vehicle, const char* animationSet, const char* animationName
 		/// </summary>
 		/// <remarks>
 		/// Most probably plays a specific animation on vehicle. For example getting chop out of van etc...<br/>
@@ -45994,7 +45994,7 @@ namespace GTA.Native
 		CLEAR_SEQUENCE_TASK = 0x3841422E9C488D8C, // 0x47ED03CE
 
 		/// <summary>
-		/// Parameters: int taskSequenceId, bool repeat
+		/// Parameters: int taskSequenceId, BOOL repeat
 		/// </summary>
 		/// <returns>void</returns>
 		SET_SEQUENCE_TO_REPEAT = 0x58C70CF3A41E4AE7, // 0xCDDF1508
@@ -46020,7 +46020,7 @@ namespace GTA.Native
 		GET_IS_TASK_ACTIVE = 0xB0760331C7AA4155, // 0x86FDDF55
 
 		/// <summary>
-		/// Parameters: Ped ped, uint taskHash
+		/// Parameters: Ped ped, Hash taskHash
 		/// </summary>
 		/// <remarks>
 		/// Gets the status of a script-assigned task.<br/>
@@ -46048,19 +46048,19 @@ namespace GTA.Native
 		TASK_LEAVE_ANY_VEHICLE = 0x504D54DF3F6F2247, // 0xDBDD79FA
 
 		/// <summary>
-		/// Parameters: Ped ped, uint scriptTask, bool disableBlockingClip, bool instantBlendToAim
+		/// Parameters: Ped ped, Hash scriptTask, BOOL disableBlockingClip, BOOL instantBlendToAim
 		/// </summary>
 		/// <returns>void</returns>
 		TASK_AIM_GUN_SCRIPTED = 0x7A192BE16D373D00, // 0x9D296BCD
 
 		/// <summary>
-		/// Parameters: Ped ped, Ped target, float x, float y, float z, int gunTaskType, bool disableBlockingClip, bool forceAim
+		/// Parameters: Ped ped, Ped target, float x, float y, float z, int gunTaskType, BOOL disableBlockingClip, BOOL forceAim
 		/// </summary>
 		/// <returns>void</returns>
 		TASK_AIM_GUN_SCRIPTED_WITH_TARGET = 0x8605AF0DE8B3A5AC, // 0xFD517CE3
 
 		/// <summary>
-		/// Parameters: Ped ped, Ped target, float x, float y, float z, bool disableBlockingClip
+		/// Parameters: Ped ped, Ped target, float x, float y, float z, BOOL disableBlockingClip
 		/// </summary>
 		/// <returns>void</returns>
 		UPDATE_TASK_AIM_GUN_SCRIPTED_TARGET = 0x9724FB59A3E72AD0, // 0x67E73525
@@ -46072,7 +46072,7 @@ namespace GTA.Native
 		GET_CLIP_SET_FOR_SCRIPTED_GUN_TASK = 0x3A8CADC7D37AACC5, // 0x249EB4EB
 
 		/// <summary>
-		/// Parameters: Ped ped, Entity entity, int duration, bool instantBlendToAim
+		/// Parameters: Ped ped, Entity entity, int duration, BOOL instantBlendToAim
 		/// </summary>
 		/// <remarks>
 		/// duration: the amount of time in milliseconds to do the task.  -1 will keep the task going until either another task is applied, or CLEAR_ALL_TASKS() is called with the ped<br/>
@@ -46090,13 +46090,13 @@ namespace GTA.Native
 		TASK_TURN_PED_TO_FACE_ENTITY = 0x5AD23D40115353AC, // 0x3C37C767
 
 		/// <summary>
-		/// Parameters: Ped ped, float x, float y, float z, int time, bool instantBlendToAim, bool playAnimIntro
+		/// Parameters: Ped ped, float x, float y, float z, int time, BOOL instantBlendToAim, BOOL playAnimIntro
 		/// </summary>
 		/// <returns>void</returns>
 		TASK_AIM_GUN_AT_COORD = 0x6671F3EEC681BDA1, // 0xFBF44AD3
 
 		/// <summary>
-		/// Parameters: Ped ped, float x, float y, float z, int duration, uint firingPattern
+		/// Parameters: Ped ped, float x, float y, float z, int duration, Hash firingPattern
 		/// </summary>
 		/// <remarks>
 		/// Firing Pattern Hash Information: <see href='https://pastebin.com/Px036isB'>https://pastebin.com/Px036isB</see><br/>
@@ -46105,7 +46105,7 @@ namespace GTA.Native
 		TASK_SHOOT_AT_COORD = 0x46A6CC01E0826106, // 0x601C22E3
 
 		/// <summary>
-		/// Parameters: Ped ped, Vehicle vehicle, bool useAlternateShuffle
+		/// Parameters: Ped ped, Vehicle vehicle, BOOL useAlternateShuffle
 		/// </summary>
 		/// <remarks>
 		/// Makes the specified ped shuffle to the next vehicle seat.<br/>
@@ -46199,7 +46199,7 @@ namespace GTA.Native
 		TASK_VEHICLE_TEMP_ACTION = 0xC429DCEEB339E129, // 0x0679DFB8
 
 		/// <summary>
-		/// Parameters: Ped driver, Vehicle vehicle, Vehicle vehicleTarget, int missionType, float cruiseSpeed, int drivingStyle, float targetReached, float straightLineDistance, bool DriveAgainstTraffic
+		/// Parameters: Ped driver, Vehicle vehicle, Vehicle vehicleTarget, int missionType, float cruiseSpeed, int drivingStyle, float targetReached, float straightLineDistance, BOOL DriveAgainstTraffic
 		/// </summary>
 		/// <remarks>
 		/// missionType: <see href='https://alloc8or.re/gta5/doc/enums/eVehicleMissionType.txt'>https://alloc8or.re/gta5/doc/enums/eVehicleMissionType.txt</see><br/>
@@ -46208,7 +46208,7 @@ namespace GTA.Native
 		TASK_VEHICLE_MISSION = 0x659427E0EF36BCDE, // 0x20609E56
 
 		/// <summary>
-		/// Parameters: Ped ped, Vehicle vehicle, Ped pedTarget, int missionType, float maxSpeed, int drivingStyle, float minDistance, float straightLineDistance, bool DriveAgainstTraffic
+		/// Parameters: Ped ped, Vehicle vehicle, Ped pedTarget, int missionType, float maxSpeed, int drivingStyle, float minDistance, float straightLineDistance, BOOL DriveAgainstTraffic
 		/// </summary>
 		/// <remarks>
 		/// See TASK_VEHICLE_MISSION<br/>
@@ -46217,7 +46217,7 @@ namespace GTA.Native
 		TASK_VEHICLE_MISSION_PED_TARGET = 0x9454528DF15D657A, // 0xC81C4677
 
 		/// <summary>
-		/// Parameters: Ped ped, Vehicle vehicle, float x, float y, float z, int mission, float cruiseSpeed, int drivingStyle, float targetReached, float straightLineDistance, bool DriveAgainstTraffic
+		/// Parameters: Ped ped, Vehicle vehicle, float x, float y, float z, int mission, float cruiseSpeed, int drivingStyle, float targetReached, float straightLineDistance, BOOL DriveAgainstTraffic
 		/// </summary>
 		/// <remarks>
 		/// See TASK_VEHICLE_MISSION<br/>
@@ -46285,7 +46285,7 @@ namespace GTA.Native
 		TASK_VEHICLE_HELI_PROTECT = 0x1E09C32048FEFD1C, // 0x0CB415EE
 
 		/// <summary>
-		/// Parameters: Ped ped, int flag, bool set
+		/// Parameters: Ped ped, int flag, BOOL set
 		/// </summary>
 		/// <remarks>
 		/// Flag 8: Medium-aggressive boxing tactic with a bit of PIT<br/>
@@ -46354,13 +46354,13 @@ namespace GTA.Native
 		CLEAR_VEHICLE_CRASH_TASK = 0x53DDC75BC3AC0A90,
 
 		/// <summary>
-		/// Parameters: Ped ped, Vehicle vehicle, float x, float y, float z, int flightHeight, int minHeightAboveTerrain, bool useDesiredOrientation, float desiredOrientation, bool autopilot
+		/// Parameters: Ped ped, Vehicle vehicle, float x, float y, float z, int flightHeight, int minHeightAboveTerrain, BOOL useDesiredOrientation, float desiredOrientation, BOOL autopilot
 		/// </summary>
 		/// <returns>void</returns>
 		TASK_PLANE_GOTO_PRECISE_VTOL = 0xF7F9DCCA89E7505B,
 
 		/// <summary>
-		/// Parameters: Ped ped, Vehicle submarine, float x, float y, float z, bool autopilot
+		/// Parameters: Ped ped, Vehicle submarine, float x, float y, float z, BOOL autopilot
 		/// </summary>
 		/// <remarks>
 		/// Used in am_vehicle_spawn.ysc and am_mp_submarine.ysc.<br/>
@@ -46421,7 +46421,7 @@ namespace GTA.Native
 		TASK_HELI_ESCORT_HELI = 0xB385523325077210,
 
 		/// <summary>
-		/// Parameters: Ped pilot, Vehicle aircraft, Vehicle targetVehicle, Ped targetPed, float destinationX, float destinationY, float destinationZ, int missionFlag, float angularDrag, float targetReached, float targetHeading, float maxZ, float minZ, bool precise
+		/// Parameters: Ped pilot, Vehicle aircraft, Vehicle targetVehicle, Ped targetPed, float destinationX, float destinationY, float destinationZ, int missionFlag, float angularDrag, float targetReached, float targetHeading, float maxZ, float minZ, BOOL precise
 		/// </summary>
 		/// <remarks>
 		/// EXAMPLE USAGE:<br/>
@@ -46471,7 +46471,7 @@ namespace GTA.Native
 		TASK_PLANE_TAXI = 0x92C360B5F15D2302,
 
 		/// <summary>
-		/// Parameters: Ped pedDriver, Vehicle vehicle, Vehicle targetVehicle, Ped targetPed, float x, float y, float z, int mission, float maxSpeed, int drivingStyle, float targetReached, IntPtr boatFlags
+		/// Parameters: Ped pedDriver, Vehicle vehicle, Vehicle targetVehicle, Ped targetPed, float x, float y, float z, int mission, float maxSpeed, int drivingStyle, float targetReached, Any boatFlags
 		/// </summary>
 		/// <remarks>
 		/// You need to call PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS after TASK_BOAT_MISSION in order for the task to execute.<br/>
@@ -46485,7 +46485,7 @@ namespace GTA.Native
 		TASK_BOAT_MISSION = 0x15C86013127CE63F, // 0x5865B031
 
 		/// <summary>
-		/// Parameters: Ped driverPed, Ped targetPed, Vehicle targetVehicle, float targetX, float targetY, float targetZ, float distanceToShoot, int pedAccuracy, bool pushUnderneathDrivingTaskIfDriving, uint firingPattern
+		/// Parameters: Ped driverPed, Ped targetPed, Vehicle targetVehicle, float targetX, float targetY, float targetZ, float distanceToShoot, int pedAccuracy, BOOL pushUnderneathDrivingTaskIfDriving, Hash firingPattern
 		/// </summary>
 		/// <remarks>
 		/// Example:<br/>
@@ -46530,7 +46530,7 @@ namespace GTA.Native
 		CONTROL_MOUNTED_WEAPON = 0xDCFE42068FE0135A, // 0x500D9244
 
 		/// <summary>
-		/// Parameters: Ped shootingPed, Ped targetPed, Vehicle targetVehicle, float x, float y, float z, int taskMode, bool ignoreTargetVehDeadCheck
+		/// Parameters: Ped shootingPed, Ped targetPed, Vehicle targetVehicle, float x, float y, float z, int taskMode, BOOL ignoreTargetVehDeadCheck
 		/// </summary>
 		/// <remarks>
 		/// Note: Look in decompiled scripts and the times that p1 and p2 aren't 0. They are filled with vars. If you look through out that script what other natives those vars are used in, you can tell p1 is a ped and p2 is a vehicle. Which most likely means if you want the mounted weapon to target a ped set targetVehicle to 0 or vice-versa.<br/>
@@ -46545,7 +46545,7 @@ namespace GTA.Native
 		IS_MOUNTED_WEAPON_TASK_UNDERNEATH_DRIVING_TASK = 0xA320EF046186FA3B, // 0x291E938C
 
 		/// <summary>
-		/// Parameters: Ped ped, bool usePhone, int desiredPhoneMode
+		/// Parameters: Ped ped, BOOL usePhone, int desiredPhoneMode
 		/// </summary>
 		/// <remarks>
 		/// Actually has 3 params, not 2.<br/>
@@ -46589,7 +46589,7 @@ namespace GTA.Native
 		TASK_WARP_PED_INTO_VEHICLE = 0x9A7D091411C5F684, // 0x65D4A35D
 
 		/// <summary>
-		/// Parameters: Entity entity, Entity target, int duration, uint firingPattern
+		/// Parameters: Entity entity, Entity target, int duration, Hash firingPattern
 		/// </summary>
 		/// <remarks>
 		/// //this part of the code is to determine at which entity the player is aiming, for example if you want to create a mod where you give orders to peds<br/>
@@ -46605,7 +46605,7 @@ namespace GTA.Native
 		TASK_SHOOT_AT_ENTITY = 0x08DA95E8298AE772, // 0xAC0631C9
 
 		/// <summary>
-		/// Parameters: Ped ped, bool usePlayerLaunchForce
+		/// Parameters: Ped ped, BOOL usePlayerLaunchForce
 		/// </summary>
 		/// <remarks>
 		/// Climbs or vaults the nearest thing.<br/>
@@ -46615,13 +46615,13 @@ namespace GTA.Native
 		TASK_CLIMB = 0x89D9FCC2435112F1, // 0x90847790
 
 		/// <summary>
-		/// Parameters: Ped ped, bool fast
+		/// Parameters: Ped ped, BOOL fast
 		/// </summary>
 		/// <returns>void</returns>
 		TASK_CLIMB_LADDER = 0xB6C987F9285A3814, // 0x35BB4EE0
 
 		/// <summary>
-		/// Parameters: Ped ped, float x1, float y1, float z1, float x2, float y2, float z2, float minZ, int ropeHandle, string clipSet, IntPtr p10
+		/// Parameters: Ped ped, float x1, float y1, float z1, float x2, float y2, float z2, float minZ, int ropeHandle, const char* clipSet, Any p10
 		/// </summary>
 		/// <remarks>
 		/// Attaches a ped to a rope and allows player control to rappel down a wall. Disables all collisions while on the rope.<br/>
@@ -46693,7 +46693,7 @@ namespace GTA.Native
 		TASK_GOTO_ENTITY_AIMING = 0xA9DA48FAB8A76C12, // 0xF1C493CF
 
 		/// <summary>
-		/// Parameters: Ped ped, uint decisionMakerId
+		/// Parameters: Ped ped, Hash decisionMakerId
 		/// </summary>
 		/// <remarks>
 		/// p1 is always GET_HASH_KEY("empty") in scripts, for the rare times this is used<br/>
@@ -46726,7 +46726,7 @@ namespace GTA.Native
 		TASK_PED_SLIDE_TO_COORD_HDG_RATE = 0x5A4A6A6D3DC64F52, // 0x38A995C1
 
 		/// <summary>
-		/// Parameters: float x, float y, float z, float direction, int usage, int height, int arc, bool isPriority
+		/// Parameters: float x, float y, float z, float direction, int usage, int height, int arc, BOOL isPriority
 		/// </summary>
 		/// <returns>ScrHandle</returns>
 		ADD_COVER_POINT = 0xD5C12A75C7B9497F, // 0xA0AF0B98
@@ -46780,19 +46780,19 @@ namespace GTA.Native
 		TASK_COMBAT_PED_TIMED = 0x944F30DCB7096BDE, // 0xF5CA2A45
 
 		/// <summary>
-		/// Parameters: Ped ped, float x, float y, float z, int duration, bool allowPeekingAndFiring
+		/// Parameters: Ped ped, float x, float y, float z, int duration, BOOL allowPeekingAndFiring
 		/// </summary>
 		/// <returns>void</returns>
 		TASK_SEEK_COVER_FROM_POS = 0x75AC2B60386D89F2, // 0x83F18EE9
 
 		/// <summary>
-		/// Parameters: Ped ped, Ped target, int duration, bool allowPeekingAndFiring
+		/// Parameters: Ped ped, Ped target, int duration, BOOL allowPeekingAndFiring
 		/// </summary>
 		/// <returns>void</returns>
 		TASK_SEEK_COVER_FROM_PED = 0x84D32B3BEC531324, // 0xC1EC907E
 
 		/// <summary>
-		/// Parameters: Ped ped, ScrHandle coverpoint, float x, float y, float z, int time, bool allowPeekingAndFiring
+		/// Parameters: Ped ped, ScrHandle coverpoint, float x, float y, float z, int time, BOOL allowPeekingAndFiring
 		/// </summary>
 		/// <remarks>
 		/// p5 is always -1<br/>
@@ -46801,7 +46801,7 @@ namespace GTA.Native
 		TASK_SEEK_COVER_TO_COVER_POINT = 0xD43D95C7A869447F, // 0x3D026B29
 
 		/// <summary>
-		/// Parameters: Ped ped, float x1, float y1, float z1, float x2, float y2, float z2, int timeout, bool shortRoute
+		/// Parameters: Ped ped, float x1, float y1, float z1, float x2, float y2, float z2, int timeout, BOOL shortRoute
 		/// </summary>
 		/// <remarks>
 		/// p8 causes the ped to take the shortest route to the cover position. It may have something to do with navmesh or pathfinding mechanics.<br/>
@@ -46815,13 +46815,13 @@ namespace GTA.Native
 		TASK_SEEK_COVER_TO_COORDS = 0x39246A6958EF072C, // 0xFFFE754E
 
 		/// <summary>
-		/// Parameters: Ped ped, float x, float y, float z, int time, bool allowPeekingAndFiring, float blendInDuration, bool forceInitialFacingDirection, bool forceFaceLeft, int identifier, bool doEntry
+		/// Parameters: Ped ped, float x, float y, float z, int time, BOOL allowPeekingAndFiring, float blendInDuration, BOOL forceInitialFacingDirection, BOOL forceFaceLeft, int identifier, BOOL doEntry
 		/// </summary>
 		/// <returns>void</returns>
 		TASK_PUT_PED_DIRECTLY_INTO_COVER = 0x4172393E6BE1FECE, // 0xC9F00E68
 
 		/// <summary>
-		/// Parameters: Ped ped, int time, bool allowPeekingAndFiring, bool forceInitialFacingDirection, bool forceFaceLeft, int identifier
+		/// Parameters: Ped ped, int time, BOOL allowPeekingAndFiring, BOOL forceInitialFacingDirection, BOOL forceFaceLeft, int identifier
 		/// </summary>
 		/// <returns>void</returns>
 		TASK_WARP_PED_DIRECTLY_INTO_COVER = 0x6E01E9E8D89F8276,
@@ -46856,7 +46856,7 @@ namespace GTA.Native
 		TASK_TOGGLE_DUCK = 0xAC96609B9995EDF8, // 0x61CFBCBF
 
 		/// <summary>
-		/// Parameters: Ped ped, float maxPatrolProximity, float defensiveAreaRadius, bool setDefensiveArea
+		/// Parameters: Ped ped, float maxPatrolProximity, float defensiveAreaRadius, BOOL setDefensiveArea
 		/// </summary>
 		/// <remarks>
 		/// From re_prisonvanbreak:<br/>
@@ -46878,7 +46878,7 @@ namespace GTA.Native
 		TASK_GUARD_SPHERE_DEFENSIVE_AREA = 0xC946FE14BE0EB5E2, // 0x86B76CB7
 
 		/// <summary>
-		/// Parameters: Ped ped, float x, float y, float z, float heading, string scenarioName
+		/// Parameters: Ped ped, float x, float y, float z, float heading, const char* scenarioName
 		/// </summary>
 		/// <remarks>
 		/// scenarioName example: "WORLD_HUMAN_GUARD_STAND"<br/>
@@ -46913,7 +46913,7 @@ namespace GTA.Native
 		SET_DRIVE_TASK_DRIVING_STYLE = 0xDACE1BE37D88AF67, // 0x59C5FAD7
 
 		/// <summary>
-		/// Parameters: float startX, float startY, float startZ, float endX, float endY, float endZ, bool blockObjects, bool blockVehicles, bool blockMap, bool blockPlayer
+		/// Parameters: float startX, float startY, float startZ, float endX, float endY, float endZ, BOOL blockObjects, BOOL blockVehicles, BOOL blockMap, BOOL blockPlayer
 		/// </summary>
 		/// <returns>void</returns>
 		ADD_COVER_BLOCKING_AREA = 0x45C597097DD7CB81, // 0x3536946F
@@ -46932,7 +46932,7 @@ namespace GTA.Native
 		_REMOVE_COVER_BLOCKING_AREAS_AT_COORD = 0xFA83CA6776038F64,
 
 		/// <summary>
-		/// Parameters: float startX, float startY, float startZ, float endX, float endY, float endZ, bool blockObjects, bool blockVehicles, bool blockMap, bool blockPlayer
+		/// Parameters: float startX, float startY, float startZ, float endX, float endY, float endZ, BOOL blockObjects, BOOL blockVehicles, BOOL blockMap, BOOL blockPlayer
 		/// </summary>
 		/// <returns>void</returns>
 		REMOVE_SPECIFIC_COVER_BLOCKING_AREAS = 0x1F351CF1C6475734,
@@ -46942,7 +46942,7 @@ namespace GTA.Native
 		_REMOVE_SPECIFIC_COVER_BLOCKING_AREA = 0x1F351CF1C6475734,
 
 		/// <summary>
-		/// Parameters: Ped ped, string scenarioName, int unkDelay, bool playEnterAnim
+		/// Parameters: Ped ped, const char* scenarioName, int unkDelay, BOOL playEnterAnim
 		/// </summary>
 		/// <remarks>
 		/// Plays a scenario on a Ped at their current location.<br/>
@@ -46985,7 +46985,7 @@ namespace GTA.Native
 		TASK_START_SCENARIO_IN_PLACE = 0x142A02425FF02BD9, // 0xE50D6DDE
 
 		/// <summary>
-		/// Parameters: Ped ped, string scenarioName, float x, float y, float z, float heading, int duration, bool sittingScenario, bool teleport
+		/// Parameters: Ped ped, const char* scenarioName, float x, float y, float z, float heading, int duration, BOOL sittingScenario, BOOL teleport
 		/// </summary>
 		/// <remarks>
 		/// Full list of ped scenarios by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/scenariosCompact.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/scenariosCompact.json</see><br/>
@@ -47038,19 +47038,19 @@ namespace GTA.Native
 		TASK_USE_NEAREST_SCENARIO_CHAIN_TO_COORD_WARP = 0x97A28E63F0BA5631, // 0xBAB4C0AE
 
 		/// <summary>
-		/// Parameters: float x, float y, float z, float radius, bool mustBeFree
+		/// Parameters: float x, float y, float z, float radius, BOOL mustBeFree
 		/// </summary>
 		/// <returns>BOOL</returns>
 		DOES_SCENARIO_EXIST_IN_AREA = 0x5A59271FFADD33C1, // 0xFA7F5047
 
 		/// <summary>
-		/// Parameters: float x, float y, float z, string scenarioName, float radius, bool mustBeFree
+		/// Parameters: float x, float y, float z, const char* scenarioName, float radius, BOOL mustBeFree
 		/// </summary>
 		/// <returns>BOOL</returns>
 		DOES_SCENARIO_OF_TYPE_EXIST_IN_AREA = 0x0A9D0C2A3BBC86C1, // 0x0FB138A5
 
 		/// <summary>
-		/// Parameters: float x, float y, float z, float maxRange, bool onlyUsersActuallyAtScenario
+		/// Parameters: float x, float y, float z, float maxRange, BOOL onlyUsersActuallyAtScenario
 		/// </summary>
 		/// <returns>BOOL</returns>
 		IS_SCENARIO_OCCUPIED = 0x788756D73AC2E07C, // 0x697FC008
@@ -47062,7 +47062,7 @@ namespace GTA.Native
 		PED_HAS_USE_SCENARIO_TASK = 0x295E3CCEC879CCD7, // 0x9BE9C691
 
 		/// <summary>
-		/// Parameters: Ped ped, string animDict, string animName
+		/// Parameters: Ped ped, const char* animDict, const char* animName
 		/// </summary>
 		/// <remarks>
 		/// Full list of animation dictionaries and anims by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/animDictsCompact.json</see><br/>
@@ -47071,7 +47071,7 @@ namespace GTA.Native
 		PLAY_ANIM_ON_RUNNING_SCENARIO = 0x748040460F8DF5DC, // 0x1984A5D1
 
 		/// <summary>
-		/// Parameters: string scenarioGroup
+		/// Parameters: const char* scenarioGroup
 		/// </summary>
 		/// <remarks>
 		/// Full list of scenario groups used in scripts by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/scenarioGroupNames.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/scenarioGroupNames.json</see><br/>
@@ -47112,7 +47112,7 @@ namespace GTA.Native
 		DOES_SCENARIO_GROUP_EXIST = 0xF9034C136C9E00D3, // 0x5F072EB9
 
 		/// <summary>
-		/// Parameters: string scenarioGroup
+		/// Parameters: const char* scenarioGroup
 		/// </summary>
 		/// <remarks>
 		/// Full list of scenario groups used in scripts by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/scenarioGroupNames.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/scenarioGroupNames.json</see><br/>
@@ -47148,7 +47148,7 @@ namespace GTA.Native
 		IS_SCENARIO_GROUP_ENABLED = 0x367A09DED4E05B99, // 0x90991122
 
 		/// <summary>
-		/// Parameters: string scenarioGroup, bool enabled
+		/// Parameters: const char* scenarioGroup, BOOL enabled
 		/// </summary>
 		/// <remarks>
 		/// Full list of scenario groups used in scripts by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/scenarioGroupNames.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/scenarioGroupNames.json</see><br/>
@@ -47161,7 +47161,7 @@ namespace GTA.Native
 		RESET_SCENARIO_GROUPS_ENABLED = 0xDD902D0349AFAD3A, // 0xBF55025D
 
 		/// <summary>
-		/// Parameters: string scenarioGroup
+		/// Parameters: const char* scenarioGroup
 		/// </summary>
 		/// <remarks>
 		/// Full list of scenario groups used in scripts by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/scenarioGroupNames.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/scenarioGroupNames.json</see><br/>
@@ -47179,7 +47179,7 @@ namespace GTA.Native
 		RESET_EXCLUSIVE_SCENARIO_GROUP = 0x4202BBCB8684563D, // 0x17F9DFE8
 
 		/// <summary>
-		/// Parameters: string scenarioType
+		/// Parameters: const char* scenarioType
 		/// </summary>
 		/// <remarks>
 		/// Full list of scenario types used in scripts by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/scenariosCompact.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/scenariosCompact.json</see><br/>
@@ -47197,7 +47197,7 @@ namespace GTA.Native
 		IS_SCENARIO_TYPE_ENABLED = 0x3A815DB3EA088722, // 0xAE37E969
 
 		/// <summary>
-		/// Parameters: string scenarioType, bool toggle
+		/// Parameters: const char* scenarioType, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Full list of scenario types used in scripts by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/scenariosCompact.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/scenariosCompact.json</see><br/>
@@ -47257,7 +47257,7 @@ namespace GTA.Native
 		IS_PED_PLAYING_BASE_CLIP_IN_SCENARIO = 0x621C6E4729388E41, // 0xA0DA6B1D
 
 		/// <summary>
-		/// Parameters: Ped ped, bool blockIdleClips, bool removeIdleClipIfPlaying
+		/// Parameters: Ped ped, BOOL blockIdleClips, BOOL removeIdleClipIfPlaying
 		/// </summary>
 		/// <remarks>
 		/// Appears only in fm_mission_controller and used only 3 times.<br/>
@@ -47294,7 +47294,7 @@ namespace GTA.Native
 		TASK_COMBAT_HATED_TARGETS_AROUND_PED_TIMED = 0x2BBA30B854534A0C, // 0xF127AD6A
 
 		/// <summary>
-		/// Parameters: Ped ped, float x, float y, float z, int ignoreCollisionEntityIndex, bool createInvincibleProjectile
+		/// Parameters: Ped ped, float x, float y, float z, int ignoreCollisionEntityIndex, BOOL createInvincibleProjectile
 		/// </summary>
 		/// <remarks>
 		/// In every case of this native, I've only seen the first parameter passed as 0, although I believe it's a Ped after seeing tasks around it using 0. That's because it's used in a Sequence Task.<br/>
@@ -47309,13 +47309,13 @@ namespace GTA.Native
 		TASK_THROW_PROJECTILE = 0x7285951DBF6B5A51, // 0xF65C20A7
 
 		/// <summary>
-		/// Parameters: Ped ped, bool drawWeapon
+		/// Parameters: Ped ped, BOOL drawWeapon
 		/// </summary>
 		/// <returns>void</returns>
 		TASK_SWAP_WEAPON = 0xA21C51255B205245, // 0xDAF4F8FC
 
 		/// <summary>
-		/// Parameters: Ped ped, bool drawWeapon
+		/// Parameters: Ped ped, BOOL drawWeapon
 		/// </summary>
 		/// <remarks>
 		/// The 2nd param (drawWeapon) is not implemented.<br/>
@@ -47335,7 +47335,7 @@ namespace GTA.Native
 		IS_PED_GETTING_UP = 0x2A74E1D5F2F00EEC, // 0x320813E6
 
 		/// <summary>
-		/// Parameters: Ped ped, Ped target, int minFireLoops, int startState, bool forceShootOnGround, int shootFromGroundTimer
+		/// Parameters: Ped ped, Ped target, int minFireLoops, int startState, BOOL forceShootOnGround, int shootFromGroundTimer
 		/// </summary>
 		/// <remarks>
 		/// EX: Function.Call(Ped1, Ped2, Time, 0);<br/>
@@ -47356,7 +47356,7 @@ namespace GTA.Native
 		IS_PED_IN_WRITHE = 0xDEB6D52126E7D640, // 0x09E61921
 
 		/// <summary>
-		/// Parameters: string patrolRoute
+		/// Parameters: const char* patrolRoute
 		/// </summary>
 		/// <remarks>
 		///  patrolRoutes found in the b617d scripts:<br/>
@@ -47388,7 +47388,7 @@ namespace GTA.Native
 		CLOSE_PATROL_ROUTE = 0xB043ECA801B8CBC1, // 0x67305E59
 
 		/// <summary>
-		/// Parameters: int nodeId, string nodeType, float posX, float posY, float posZ, float headingX, float headingY, float headingZ, int duration
+		/// Parameters: int nodeId, const char* nodeType, float posX, float posY, float posZ, float headingX, float headingY, float headingZ, int duration
 		/// </summary>
 		/// <remarks>
 		/// Example: <br/>
@@ -47415,7 +47415,7 @@ namespace GTA.Native
 		CREATE_PATROL_ROUTE = 0xAF8A443CCC8018DC, // 0x0A6C7864
 
 		/// <summary>
-		/// Parameters: string patrolRoute
+		/// Parameters: const char* patrolRoute
 		/// </summary>
 		/// <remarks>
 		/// From the b617d scripts:<br/>
@@ -47438,7 +47438,7 @@ namespace GTA.Native
 		_GET_PATROL_TASK_STATUS = 0x52F734CEBE20DFBA,
 
 		/// <summary>
-		/// Parameters: Ped ped, string patrolRouteName, int alertState, bool canChatToPeds, bool useHeadLookAt
+		/// Parameters: Ped ped, const char* patrolRouteName, int alertState, BOOL canChatToPeds, BOOL useHeadLookAt
 		/// </summary>
 		/// <remarks>
 		/// After looking at some scripts the second parameter seems to be an id of some kind. Here are some I found from some R* scripts:<br/>
@@ -47528,7 +47528,7 @@ namespace GTA.Native
 		TASK_VEHICLE_GOTO_NAVMESH = 0x195AEEB13CEFE2EE, // 0x55CF3BCD
 
 		/// <summary>
-		/// Parameters: Ped ped, float x, float y, float z, float aimAtX, float aimAtY, float aimAtZ, float moveBlendRatio, bool shoot, float targetRadius, float slowDistance, bool useNavMesh, int navFlags, bool instantBlendToAim, uint firingPattern
+		/// Parameters: Ped ped, float x, float y, float z, float aimAtX, float aimAtY, float aimAtZ, float moveBlendRatio, BOOL shoot, float targetRadius, float slowDistance, BOOL useNavMesh, int navFlags, BOOL instantBlendToAim, Hash firingPattern
 		/// </summary>
 		/// <remarks>
 		/// movement_speed: mostly 2f, but also 1/1.2f, etc.<br/>
@@ -47544,13 +47544,13 @@ namespace GTA.Native
 		TASK_GO_TO_COORD_WHILE_AIMING_AT_COORD = 0x11315AB3385B8AC0, // 0x1552DC91
 
 		/// <summary>
-		/// Parameters: Ped ped, float x, float y, float z, Entity aimAtID, float moveBlendRatio, bool shoot, float targetRadius, float slowDistance, bool useNavMesh, int navFlags, bool instantBlendToAim, uint firingPattern, int time
+		/// Parameters: Ped ped, float x, float y, float z, Entity aimAtID, float moveBlendRatio, BOOL shoot, float targetRadius, float slowDistance, BOOL useNavMesh, int navFlags, BOOL instantBlendToAim, Hash firingPattern, int time
 		/// </summary>
 		/// <returns>void</returns>
 		TASK_GO_TO_COORD_WHILE_AIMING_AT_ENTITY = 0xB2A16444EAD9AE47, // 0x9BD52ABD
 
 		/// <summary>
-		/// Parameters: Ped pedHandle, float goToLocationX, float goToLocationY, float goToLocationZ, float focusLocationX, float focusLocationY, float focusLocationZ, float speed, bool shootAtEnemies, float distanceToStopAt, float noRoadsDistance, bool useNavMesh, int navFlags, int taskFlags, uint firingPattern
+		/// Parameters: Ped pedHandle, float goToLocationX, float goToLocationY, float goToLocationZ, float focusLocationX, float focusLocationY, float focusLocationZ, float speed, BOOL shootAtEnemies, float distanceToStopAt, float noRoadsDistance, BOOL useNavMesh, int navFlags, int taskFlags, Hash firingPattern
 		/// </summary>
 		/// <remarks>
 		/// The ped will walk or run towards goToLocation, aiming towards goToLocation or focusLocation (depending on the aimingFlag) and shooting if shootAtEnemies = true to any enemy in his path.<br/>
@@ -47581,13 +47581,13 @@ namespace GTA.Native
 		TASK_GO_TO_COORD_AND_AIM_AT_HATED_ENTITIES_NEAR_COORD = 0xA55547801EB331FC, // 0x3F91358E
 
 		/// <summary>
-		/// Parameters: Ped ped, Entity entity, float aimX, float aimY, float aimZ, float moveBlendRatio, bool shoot, float targetRadius, float slowDistance, bool useNavMesh, bool instantBlendToAim, uint firingPattern
+		/// Parameters: Ped ped, Entity entity, float aimX, float aimY, float aimZ, float moveBlendRatio, BOOL shoot, float targetRadius, float slowDistance, BOOL useNavMesh, BOOL instantBlendToAim, Hash firingPattern
 		/// </summary>
 		/// <returns>void</returns>
 		TASK_GO_TO_ENTITY_WHILE_AIMING_AT_COORD = 0x04701832B739DCE5, // 0xD896CD82
 
 		/// <summary>
-		/// Parameters: Ped ped, Entity entityToWalkTo, Entity entityToAimAt, float speed, bool shootatEntity, float targetRadius, float slowDistance, bool useNavMesh, bool instantBlendToAim, uint firingPattern
+		/// Parameters: Ped ped, Entity entityToWalkTo, Entity entityToAimAt, float speed, BOOL shootatEntity, float targetRadius, float slowDistance, BOOL useNavMesh, BOOL instantBlendToAim, Hash firingPattern
 		/// </summary>
 		/// <remarks>
 		/// shootatEntity:<br/>
@@ -47607,7 +47607,7 @@ namespace GTA.Native
 		SET_HIGH_FALL_TASK = 0x8C825BDC7741D37C, // 0xBBB26172
 
 		/// <summary>
-		/// Parameters: string name
+		/// Parameters: const char* name
 		/// </summary>
 		/// <remarks>
 		/// Full list of waypoint recordings by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/waypointRecordings.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/waypointRecordings.json</see><br/>
@@ -47618,7 +47618,7 @@ namespace GTA.Native
 		REQUEST_WAYPOINT_RECORDING = 0x9EEFB62EB27B5792, // 0xAFABFB5D
 
 		/// <summary>
-		/// Parameters: string name
+		/// Parameters: const char* name
 		/// </summary>
 		/// <remarks>
 		/// Full list of waypoint recordings by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/waypointRecordings.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/waypointRecordings.json</see><br/>
@@ -47627,7 +47627,7 @@ namespace GTA.Native
 		GET_IS_WAYPOINT_RECORDING_LOADED = 0xCB4E8BE8A0063C5D, // 0x87125F5D
 
 		/// <summary>
-		/// Parameters: string name
+		/// Parameters: const char* name
 		/// </summary>
 		/// <remarks>
 		/// Full list of waypoint recordings by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/waypointRecordings.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/waypointRecordings.json</see><br/>
@@ -47636,7 +47636,7 @@ namespace GTA.Native
 		REMOVE_WAYPOINT_RECORDING = 0xFF1B8B4AA1C25DC8, // 0x624530B0
 
 		/// <summary>
-		/// Parameters: string name, int* points
+		/// Parameters: const char* name, int* points
 		/// </summary>
 		/// <remarks>
 		/// Full list of waypoint recordings by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/waypointRecordings.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/waypointRecordings.json</see><br/>
@@ -47646,7 +47646,7 @@ namespace GTA.Native
 		WAYPOINT_RECORDING_GET_NUM_POINTS = 0x5343532C01A07234, // 0xF5F9B71E
 
 		/// <summary>
-		/// Parameters: string name, int point, Vector3* coord
+		/// Parameters: const char* name, int point, Vector3* coord
 		/// </summary>
 		/// <remarks>
 		/// Full list of waypoint recordings by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/waypointRecordings.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/waypointRecordings.json</see><br/>
@@ -47656,7 +47656,7 @@ namespace GTA.Native
 		WAYPOINT_RECORDING_GET_COORD = 0x2FB897405C90B361, // 0x19266913
 
 		/// <summary>
-		/// Parameters: string name, int point
+		/// Parameters: const char* name, int point
 		/// </summary>
 		/// <remarks>
 		/// Full list of waypoint recordings by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/waypointRecordings.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/waypointRecordings.json</see><br/>
@@ -47665,7 +47665,7 @@ namespace GTA.Native
 		WAYPOINT_RECORDING_GET_SPEED_AT_POINT = 0x005622AEBC33ACA9, // 0xC765633A
 
 		/// <summary>
-		/// Parameters: string name, float x, float y, float z, int* point
+		/// Parameters: const char* name, float x, float y, float z, int* point
 		/// </summary>
 		/// <remarks>
 		/// Full list of waypoint recordings by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/waypointRecordings.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/waypointRecordings.json</see><br/>
@@ -47675,13 +47675,13 @@ namespace GTA.Native
 		WAYPOINT_RECORDING_GET_CLOSEST_WAYPOINT = 0xB629A298081F876F, // 0xC4CD35AF
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3, IntPtr p4
+		/// Parameters: Any p0, Any p1, Any p2, Any p3, Any p4
 		/// </summary>
 		/// <returns>void</returns>
 		TASK_FOLLOW_WAYPOINT_RECORDING = 0x0759591819534F7B, // 0xADF9904D
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>BOOL</returns>
 		IS_WAYPOINT_PLAYBACK_GOING_ON_FOR_PED = 0xE03B3F2D3DC59B64, // 0x85B7725F
@@ -47693,79 +47693,79 @@ namespace GTA.Native
 		GET_PED_WAYPOINT_PROGRESS = 0x2720AAA75001E094, // 0x3595B104
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>float</returns>
 		GET_PED_WAYPOINT_DISTANCE = 0xE6A877C64CAF1BC5, // 0x084B35B0
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, Any p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>BOOL</returns>
 		SET_PED_WAYPOINT_ROUTE_OFFSET = 0xED98E10B0AFCE4B4, // 0xF867F747
 
 		/// <summary>
-		/// Parameters: string p0, int p1
+		/// Parameters: const char* p0, int p1
 		/// </summary>
 		/// <returns>float</returns>
 		GET_WAYPOINT_DISTANCE_ALONG_ROUTE = 0xA5B769058763E497, // 0xE8422AC4
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>BOOL</returns>
 		WAYPOINT_PLAYBACK_GET_IS_PAUSED = 0x701375A7D43F01CB, // 0xA6BB5717
 
 		/// <summary>
-		/// Parameters: IntPtr p0, bool p1, bool p2
+		/// Parameters: Any p0, BOOL p1, BOOL p2
 		/// </summary>
 		/// <returns>void</returns>
 		WAYPOINT_PLAYBACK_PAUSE = 0x0F342546AA06FED5, // 0xFE39ECF8
 
 		/// <summary>
-		/// Parameters: IntPtr p0, bool p1, IntPtr p2, IntPtr p3
+		/// Parameters: Any p0, BOOL p1, Any p2, Any p3
 		/// </summary>
 		/// <returns>void</returns>
 		WAYPOINT_PLAYBACK_RESUME = 0x244F70C84C547D2D, // 0x50F392EF
 
 		/// <summary>
-		/// Parameters: IntPtr p0, float p1, bool p2
+		/// Parameters: Any p0, float p1, BOOL p2
 		/// </summary>
 		/// <returns>void</returns>
 		WAYPOINT_PLAYBACK_OVERRIDE_SPEED = 0x7D7D2B47FA788E85, // 0x23E6BA96
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		WAYPOINT_PLAYBACK_USE_DEFAULT_SPEED = 0x6599D834B12D0800, // 0x1BBB2CAC
 
 		/// <summary>
-		/// Parameters: string name, bool p1, float p2, float p3
+		/// Parameters: const char* name, BOOL p1, float p2, float p3
 		/// </summary>
 		/// <returns>void</returns>
 		USE_WAYPOINT_RECORDING_AS_ASSISTED_MOVEMENT_ROUTE = 0x5A353B8E6B1095B5, // 0x4DFD5FEC
 
 		/// <summary>
-		/// Parameters: Ped ped1, Ped ped2, bool p2
+		/// Parameters: Ped ped1, Ped ped2, BOOL p2
 		/// </summary>
 		/// <returns>void</returns>
 		WAYPOINT_PLAYBACK_START_AIMING_AT_PED = 0x20E330937C399D29, // 0x75E60CF6
 
 		/// <summary>
-		/// Parameters: Ped ped, float x, float y, float z, bool p4
+		/// Parameters: Ped ped, float x, float y, float z, BOOL p4
 		/// </summary>
 		/// <returns>void</returns>
 		WAYPOINT_PLAYBACK_START_AIMING_AT_COORD = 0x8968400D900ED8B3, // 0xF120A34E
 
 		/// <summary>
-		/// Parameters: Entity entity, Entity entity, bool p2, bool p3
+		/// Parameters: Entity entity, Entity entity, BOOL p2, BOOL p3
 		/// </summary>
 		/// <returns>void</returns>
 		WAYPOINT_PLAYBACK_START_SHOOTING_AT_PED = 0xE70BA7B90F8390DC, // 0xBD5F0EB8
 
 		/// <summary>
-		/// Parameters: Ped ped, float x, float y, float z, bool p4, bool p5
+		/// Parameters: Ped ped, float x, float y, float z, BOOL p4, BOOL p5
 		/// </summary>
 		/// <returns>void</returns>
 		WAYPOINT_PLAYBACK_START_SHOOTING_AT_COORD = 0x057A25CFCC9DB671, // 0xCDDB44D5
@@ -47777,7 +47777,7 @@ namespace GTA.Native
 		WAYPOINT_PLAYBACK_STOP_AIMING_OR_SHOOTING = 0x47EFA040EBB8E2EA, // 0x6D7CF40C
 
 		/// <summary>
-		/// Parameters: string route
+		/// Parameters: const char* route
 		/// </summary>
 		/// <remarks>
 		/// Routes: "1_FIBStairs", "2_FIBStairs", "3_FIBStairs", "4_FIBStairs", "5_FIBStairs", "5_TowardsFire", "6a_FIBStairs", "7_FIBStairs", "8_FIBStairs", "Aprtmnt_1", "AssAfterLift", "ATM_1", "coroner2", "coroner_stairs", "f5_jimmy1", "fame1", "family5b", "family5c", "Family5d", "family5d", "FIB_Glass1", "FIB_Glass2", "FIB_Glass3", "finaBroute1A", "finalb1st", "finalB1sta", "finalbround", "finalbroute2", "Hairdresser1", "jan_foyet_ft_door", "Jo_3", "Lemar1", "Lemar2", "mansion_1", "Mansion_1", "pols_1", "pols_2", "pols_3", "pols_4", "pols_5", "pols_6", "pols_7", "pols_8", "Pro_S1", "Pro_S1a", "Pro_S2", "Towards_case", "trev_steps", "tunrs1", "tunrs2", "tunrs3", "Wave01457s"<br/>
@@ -47786,19 +47786,19 @@ namespace GTA.Native
 		ASSISTED_MOVEMENT_REQUEST_ROUTE = 0x817268968605947A, // 0x48262EDA
 
 		/// <summary>
-		/// Parameters: string route
+		/// Parameters: const char* route
 		/// </summary>
 		/// <returns>void</returns>
 		ASSISTED_MOVEMENT_REMOVE_ROUTE = 0x3548536485DD792B, // 0xB3CEC06F
 
 		/// <summary>
-		/// Parameters: string route
+		/// Parameters: const char* route
 		/// </summary>
 		/// <returns>BOOL</returns>
 		ASSISTED_MOVEMENT_IS_ROUTE_LOADED = 0x60F9A4393A21F741, // 0x79B067AF
 
 		/// <summary>
-		/// Parameters: string route, int props
+		/// Parameters: const char* route, int props
 		/// </summary>
 		/// <returns>void</returns>
 		ASSISTED_MOVEMENT_SET_ROUTE_PROPERTIES = 0xD5002D78B7162E1B, // 0x01CAAFCC
@@ -47810,7 +47810,7 @@ namespace GTA.Native
 		ASSISTED_MOVEMENT_OVERRIDE_LOAD_DISTANCE_THIS_FRAME = 0x13945951E16EF912, // 0x8FB923EC
 
 		/// <summary>
-		/// Parameters: Ped ped, Vehicle vehicle, string WPRecording, int p3, int p4, int p5, int p6, float p7, bool p8, float p9
+		/// Parameters: Ped ped, Vehicle vehicle, const char* WPRecording, int p3, int p4, int p5, int p6, float p7, BOOL p8, float p9
 		/// </summary>
 		/// <remarks>
 		/// p2 = Waypoint recording string (found in update\update.rpf\x64\levels\gta5\waypointrec.rpf<br/>
@@ -47869,7 +47869,7 @@ namespace GTA.Native
 		VEHICLE_WAYPOINT_PLAYBACK_OVERRIDE_SPEED = 0x121F0593E0A431D7, // 0xBE1E7BB4
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// I cant believe I have to define this, this is one of the best natives.<br/>
@@ -47880,7 +47880,7 @@ namespace GTA.Native
 		TASK_SET_BLOCKING_OF_NON_TEMPORARY_EVENTS = 0x90D2156198831D69, // 0x1B54FB6B
 
 		/// <summary>
-		/// Parameters: Ped ped, uint state, bool forceRestart
+		/// Parameters: Ped ped, Hash state, BOOL forceRestart
 		/// </summary>
 		/// <remarks>
 		/// p2 always false<br/>
@@ -47891,7 +47891,7 @@ namespace GTA.Native
 		TASK_FORCE_MOTION_STATE = 0x4F056E1AFFEF17AB, // 0xCAD2EF77
 
 		/// <summary>
-		/// Parameters: Ped ped, string task, float multiplier, bool allowOverrideCloneUpdate, string animDict, int flags
+		/// Parameters: Ped ped, const char* task, float multiplier, BOOL allowOverrideCloneUpdate, const char* animDict, int flags
 		/// </summary>
 		/// <remarks>
 		/// Example:<br/>
@@ -47905,7 +47905,7 @@ namespace GTA.Native
 		_TASK_MOVE_NETWORK = 0x2D537BA194896636, // 0x6F5D215F
 
 		/// <summary>
-		/// Parameters: Ped ped, string network, float x, float y, float z, float rotX, float rotY, float rotZ, int rotOrder, float blendDuration, bool allowOverrideCloneUpdate, string animDict, int flags
+		/// Parameters: Ped ped, const char* network, float x, float y, float z, float rotX, float rotY, float rotZ, int rotOrder, float blendDuration, BOOL allowOverrideCloneUpdate, const char* animDict, int flags
 		/// </summary>
 		/// <remarks>
 		/// Example:<br/>
@@ -47919,7 +47919,7 @@ namespace GTA.Native
 		_TASK_MOVE_NETWORK_ADVANCED = 0xD5B35BEA41919ACB, // 0x71A5C5DB
 
 		/// <summary>
-		/// Parameters: Ped ped, string network, int* initialParameters, float blendDuration, bool allowOverrideCloneUpdate, string animDict, int flags
+		/// Parameters: Ped ped, const char* network, int* initialParameters, float blendDuration, BOOL allowOverrideCloneUpdate, const char* animDict, int flags
 		/// </summary>
 		/// <remarks>
 		/// Used only once in the scripts (am_mp_nightclub)<br/>
@@ -47936,7 +47936,7 @@ namespace GTA.Native
 		_TASK_MOVE_NETWORK_BY_NAME_WITH_INIT_PARAMS = 0x3D45B0B355C5E0C9,
 
 		/// <summary>
-		/// Parameters: Ped ped, string network, int* initialParameters, float x, float y, float z, float rotX, float rotY, float rotZ, int rotOrder, float blendDuration, bool allowOverrideCloneUpdate, string dictionary, int flags
+		/// Parameters: Ped ped, const char* network, int* initialParameters, float x, float y, float z, float rotX, float rotY, float rotZ, int rotOrder, float blendDuration, BOOL allowOverrideCloneUpdate, const char* dictionary, int flags
 		/// </summary>
 		/// <returns>void</returns>
 		TASK_MOVE_NETWORK_ADVANCED_BY_NAME_WITH_INIT_PARAMS = 0x29682E2CCF21E9B5,
@@ -47954,13 +47954,13 @@ namespace GTA.Native
 		IS_TASK_MOVE_NETWORK_READY_FOR_TRANSITION = 0x30ED88D5E0C56A37, // 0x92FDBAE6
 
 		/// <summary>
-		/// Parameters: Ped ped, string name
+		/// Parameters: Ped ped, const char* name
 		/// </summary>
 		/// <returns>BOOL</returns>
 		REQUEST_TASK_MOVE_NETWORK_STATE_TRANSITION = 0xD01015C7316AE176, // 0x885724DE
 
 		/// <summary>
-		/// Parameters: Ped ped, string state
+		/// Parameters: Ped ped, const char* state
 		/// </summary>
 		/// <remarks>
 		/// Used only once in the scripts (fm_mission_controller) like so:<br/>
@@ -47976,13 +47976,13 @@ namespace GTA.Native
 		GET_TASK_MOVE_NETWORK_STATE = 0x717E4D1F2048376D, // 0x96C0277B
 
 		/// <summary>
-		/// Parameters: Ped ped, uint clipSet, uint variableClipSet
+		/// Parameters: Ped ped, Hash clipSet, Hash variableClipSet
 		/// </summary>
 		/// <returns>void</returns>
 		SET_TASK_MOVE_NETWORK_ANIM_SET = 0x8423541E8B3A1589,
 
 		/// <summary>
-		/// Parameters: Ped ped, string signalName, float value
+		/// Parameters: Ped ped, const char* signalName, float value
 		/// </summary>
 		/// <remarks>
 		/// signalName - "Phase", "Wobble", "x_axis","y_axis","introphase","speed".<br/>
@@ -47997,7 +47997,7 @@ namespace GTA.Native
 		_SET_TASK_PROPERTY_FLOAT = 0xD5BB4025AE449A4E, // 0xA79BE783
 
 		/// <summary>
-		/// Parameters: Ped ped, string signalName, float value
+		/// Parameters: Ped ped, const char* signalName, float value
 		/// </summary>
 		/// <returns>void</returns>
 		SET_TASK_MOVE_NETWORK_SIGNAL_LOCAL_FLOAT = 0x373EF409B82697A3,
@@ -48007,13 +48007,13 @@ namespace GTA.Native
 		_SET_TASK_MOVE_NETWORK_SIGNAL_FLOAT_2 = 0x373EF409B82697A3,
 
 		/// <summary>
-		/// Parameters: Ped ped, string signalName, float value
+		/// Parameters: Ped ped, const char* signalName, float value
 		/// </summary>
 		/// <returns>void</returns>
 		SET_TASK_MOVE_NETWORK_SIGNAL_FLOAT_LERP_RATE = 0x8634CEF2522D987B,
 
 		/// <summary>
-		/// Parameters: Ped ped, string signalName, bool value
+		/// Parameters: Ped ped, const char* signalName, BOOL value
 		/// </summary>
 		/// <returns>void</returns>
 		SET_TASK_MOVE_NETWORK_SIGNAL_BOOL = 0xB0A6CFD2C69C1088, // 0xF3538041
@@ -48023,7 +48023,7 @@ namespace GTA.Native
 		_SET_TASK_PROPERTY_BOOL = 0xB0A6CFD2C69C1088, // 0xF3538041
 
 		/// <summary>
-		/// Parameters: Ped ped, string signalName
+		/// Parameters: Ped ped, const char* signalName
 		/// </summary>
 		/// <returns>float</returns>
 		GET_TASK_MOVE_NETWORK_SIGNAL_FLOAT = 0x44AB0B3AFECCE242,
@@ -48033,19 +48033,19 @@ namespace GTA.Native
 		_GET_TASK_MOVE_NETWORK_SIGNAL_FLOAT = 0x44AB0B3AFECCE242,
 
 		/// <summary>
-		/// Parameters: Ped ped, string signalName
+		/// Parameters: Ped ped, const char* signalName
 		/// </summary>
 		/// <returns>BOOL</returns>
 		GET_TASK_MOVE_NETWORK_SIGNAL_BOOL = 0xA7FFBA498E4AAF67, // 0x1EBB6F3D
 
 		/// <summary>
-		/// Parameters: Ped ped, string eventName
+		/// Parameters: Ped ped, const char* eventName
 		/// </summary>
 		/// <returns>BOOL</returns>
 		GET_TASK_MOVE_NETWORK_EVENT = 0xB4F47213DF45A64C, // 0x72FA5EF2
 
 		/// <summary>
-		/// Parameters: Ped ped, bool enable
+		/// Parameters: Ped ped, BOOL enable
 		/// </summary>
 		/// <remarks>
 		/// Doesn't actually return anything.<br/>
@@ -48111,7 +48111,7 @@ namespace GTA.Native
 		IS_PED_STRAFING = 0xE45B7F222DE47E09, // 0xEFEED13C
 
 		/// <summary>
-		/// Parameters: Ped ped, int scene, string animDictionary, string animationName, float blendIn, float blendOut, int flags, int ragdollBlockingFlags, float moverBlendDelta, int ikFlags
+		/// Parameters: Ped ped, int scene, const char* animDictionary, const char* animationName, float blendIn, float blendOut, int flags, int ragdollBlockingFlags, float moverBlendDelta, int ikFlags
 		/// </summary>
 		/// <remarks>
 		///  TASK::TASK_SYNCHRONIZED_SCENE(ped, scene, "creatures@rottweiler@in_vehicle@std_car", "get_in", 1000.0, -8.0, 4, 0, 0x447a0000, 0);<br/>
@@ -48131,7 +48131,7 @@ namespace GTA.Native
 		TASK_AGITATED_ACTION = 0x19D1B791CB3670FE,
 
 		/// <summary>
-		/// Parameters: Ped ped, string animDict, string lowAnimName, string medAnimName, string hiAnimName, int runtime, Entity targetEntity, float turnRate, float blendInDuration
+		/// Parameters: Ped ped, const char* animDict, const char* lowAnimName, const char* medAnimName, const char* hiAnimName, int runtime, Entity targetEntity, float turnRate, float blendInDuration
 		/// </summary>
 		/// <remarks>
 		/// This function is called on peds in vehicles.<br/>
@@ -48149,7 +48149,7 @@ namespace GTA.Native
 		UPDATE_TASK_SWEEP_AIM_ENTITY = 0xE4973DBDBE6E44B3, // 0xF65F0F4F
 
 		/// <summary>
-		/// Parameters: Ped ped, string animDict, string lowAnimName, string medAnimName, string hiAnimName, int runtime, float x, float y, float z, float turnRate, float blendInDuration
+		/// Parameters: Ped ped, const char* animDict, const char* lowAnimName, const char* medAnimName, const char* hiAnimName, int runtime, float x, float y, float z, float turnRate, float blendInDuration
 		/// </summary>
 		/// <returns>void</returns>
 		TASK_SWEEP_AIM_POSITION = 0x7AFE8FDC10BC07D2, // 0x1683FE66
@@ -48208,7 +48208,7 @@ namespace GTA.Native
 		#region VEHICLE
 
 		/// <summary>
-		/// Parameters: uint modelHash, float x, float y, float z, float heading, bool isNetwork, bool bScriptHostVeh, bool p7
+		/// Parameters: Hash modelHash, float x, float y, float z, float heading, BOOL isNetwork, BOOL bScriptHostVeh, BOOL p7
 		/// </summary>
 		/// <remarks>
 		/// p7 when set to true allows you to spawn vehicles under -100 z.<br/>
@@ -48232,13 +48232,13 @@ namespace GTA.Native
 		DELETE_VEHICLE = 0xEA386986E786A54F, // 0x9803AF60
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle, bool p2
+		/// Parameters: Vehicle vehicle, BOOL toggle, BOOL p2
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_ALLOW_HOMING_MISSLE_LOCKON = 0x7D6F9A3EF26136A0, // 0xBB54ECCA
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool canBeLockedOn, bool p2
+		/// Parameters: Vehicle vehicle, BOOL canBeLockedOn, BOOL p2
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_ALLOW_HOMING_MISSLE_LOCKON_SYNCED = 0x1DDA078D12879EEE,
@@ -48248,7 +48248,7 @@ namespace GTA.Native
 		_SET_VEHICLE_CAN_BE_LOCKED_ON = 0x1DDA078D12879EEE,
 
 		/// <summary>
-		/// Parameters: Vehicle veh, bool toggle
+		/// Parameters: Vehicle veh, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Makes the vehicle accept no passengers.<br/>
@@ -48269,19 +48269,19 @@ namespace GTA.Native
 		GET_VEHICLE_HOMING_LOCKON_STATE = 0xE6B0E8CFC3633BF0, // 0xFBDE9FD8
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>int</returns>
 		GET_VEHICLE_HOMING_LOCKEDONTO_STATE = 0x6EAAEFC76ACC311F,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_HOMING_LOCKEDONTO_STATE = 0x407DC5E97DB1A4D3,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, uint model
+		/// Parameters: Vehicle vehicle, Hash model
 		/// </summary>
 		/// <returns>BOOL</returns>
 		IS_VEHICLE_MODEL = 0x423E8DE37D934D89, // 0x013B10B6
@@ -48293,7 +48293,7 @@ namespace GTA.Native
 		DOES_SCRIPT_VEHICLE_GENERATOR_EXIST = 0xF6086BC836400876, // 0xF6BDDA30
 
 		/// <summary>
-		/// Parameters: float x, float y, float z, float heading, float p4, float p5, uint modelHash, int p7, int p8, int p9, int p10, bool p11, bool p12, bool p13, bool p14, bool p15, int p16
+		/// Parameters: float x, float y, float z, float heading, float p4, float p5, Hash modelHash, int p7, int p8, int p9, int p10, BOOL p11, BOOL p12, BOOL p13, BOOL p14, BOOL p15, int p16
 		/// </summary>
 		/// <remarks>
 		/// Creates a script vehicle generator at the given coordinates. Most parameters after the model hash are unknown.<br/>
@@ -48321,7 +48321,7 @@ namespace GTA.Native
 		DELETE_SCRIPT_VEHICLE_GENERATOR = 0x22102C9ABFCF125D, // 0xE4328E3F
 
 		/// <summary>
-		/// Parameters: int vehicleGenerator, bool enabled
+		/// Parameters: int vehicleGenerator, BOOL enabled
 		/// </summary>
 		/// <remarks>
 		/// Only called once in the decompiled scripts. Presumably activates the specified generator.<br/>
@@ -48330,7 +48330,7 @@ namespace GTA.Native
 		SET_SCRIPT_VEHICLE_GENERATOR = 0xD9D620E0AC6DC4B0, // 0x40D73747
 
 		/// <summary>
-		/// Parameters: float x1, float y1, float z1, float x2, float y2, float z2, bool toggle, bool p7
+		/// Parameters: float x1, float y1, float z1, float x2, float y2, float z2, BOOL toggle, BOOL p7
 		/// </summary>
 		/// <remarks>
 		/// When p6 is true, vehicle generators are active.<br/>
@@ -48343,7 +48343,7 @@ namespace GTA.Native
 		SET_ALL_VEHICLE_GENERATORS_ACTIVE = 0x34AD89078831A4BC, // 0xAB1FDD76
 
 		/// <summary>
-		/// Parameters: bool active
+		/// Parameters: BOOL active
 		/// </summary>
 		/// <returns>void</returns>
 		SET_ALL_LOW_PRIORITY_VEHICLE_GENERATORS_ACTIVE = 0x608207E7A8FB787C, // 0x87F767F2
@@ -48371,7 +48371,7 @@ namespace GTA.Native
 		SET_VEHICLE_ON_GROUND_PROPERLY = 0x49733E92263139D1, // 0xE14FDBA6
 
 		/// <summary>
-		/// Parameters: Vehicle p0, bool p1, bool p2, bool p3
+		/// Parameters: Vehicle p0, BOOL p1, BOOL p2, BOOL p3
 		/// </summary>
 		/// <returns>BOOL</returns>
 		SET_VEHICLE_USE_CUTSCENE_WHEEL_COMPRESSION = 0xE023E8AC4EF7C117, // 0xA0909ADB
@@ -48409,7 +48409,7 @@ namespace GTA.Native
 		IS_VEHICLE_STOPPED = 0x5721B434AD84D57A, // 0x655F072C
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool includeDriver, bool includeDeadOccupants
+		/// Parameters: Vehicle vehicle, BOOL includeDriver, BOOL includeDeadOccupants
 		/// </summary>
 		/// <remarks>
 		/// Gets the number of passengers.<br/>
@@ -48426,7 +48426,7 @@ namespace GTA.Native
 		GET_VEHICLE_MAX_NUMBER_OF_PASSENGERS = 0xA7C4F2C6E744A550, // 0x0A2FC08C
 
 		/// <summary>
-		/// Parameters: uint modelHash
+		/// Parameters: Hash modelHash
 		/// </summary>
 		/// <remarks>
 		/// Returns max number of passengers (including the driver) for the specified vehicle model.<br/>
@@ -48489,7 +48489,7 @@ namespace GTA.Native
 		SET_PARKED_VEHICLE_DENSITY_MULTIPLIER_THIS_FRAME = 0xEAE6DCC7EEE3DB1D, // 0xDD46CEBE
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_DISABLE_RANDOM_TRAINS_THIS_FRAME = 0xD4B8E3D1917BC86B, // 0x09462665
@@ -48509,7 +48509,7 @@ namespace GTA.Native
 		_SET_SOME_VEHICLE_DENSITY_MULTIPLIER_THIS_FRAME = 0x90B6DA738A9A25DA, // 0xDAE2A2BE
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_FAR_DRAW_VEHICLES = 0x26324F33423F3CC3, // 0x9F019C49
@@ -48560,7 +48560,7 @@ namespace GTA.Native
 		_SET_VEHICLE_DOOR_DESTROY_TYPE = 0xBE70724027F85BCD, // 0xD61D182D
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// If set to true, prevents vehicle sirens from having sound, leaving only the lights.<br/>
@@ -48577,7 +48577,7 @@ namespace GTA.Native
 		_SET_DISABLE_VEHICLE_SIREN_SOUND = 0xD8050E0EB60CF274, // 0xC54156A9
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, Player player, bool toggle
+		/// Parameters: Vehicle vehicle, Player player, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_DOORS_LOCKED_FOR_PLAYER = 0x517AAF684BB50CD1, // 0x49829236
@@ -48589,7 +48589,7 @@ namespace GTA.Native
 		GET_VEHICLE_DOORS_LOCKED_FOR_PLAYER = 0xF6AF6CB341349015, // 0x1DC50247
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// After some analysis, I've decided that these are what the parameters are.<br/>
@@ -48602,19 +48602,19 @@ namespace GTA.Native
 		SET_VEHICLE_DOORS_LOCKED_FOR_ALL_PLAYERS = 0xA2F80B8D040727CC, // 0x891BA8A4
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_DOORS_LOCKED_FOR_NON_SCRIPT_PLAYERS = 0x9737A37136F07E75, // 0xE4EF6514
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, int team, bool toggle
+		/// Parameters: Vehicle vehicle, int team, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_DOORS_LOCKED_FOR_TEAM = 0xB81F6D4A8F5EEBA8, // 0x4F85E783
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_DOORS_LOCKED_FOR_ALL_TEAMS = 0x203B527D1B77904C,
@@ -48630,7 +48630,7 @@ namespace GTA.Native
 		SET_VEHICLE_DONT_TERMINATE_TASK_WHEN_ACHIEVED = 0x76D26A22750E849E,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool isAudible, bool isInvisible
+		/// Parameters: Vehicle vehicle, BOOL isAudible, BOOL isInvisible
 		/// </summary>
 		/// <remarks>
 		/// Explodes a selected vehicle.<br/>
@@ -48643,7 +48643,7 @@ namespace GTA.Native
 		EXPLODE_VEHICLE = 0xBA71116ADF5B514C, // 0xBEDEACEB
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool killDriver, bool explodeOnImpact
+		/// Parameters: Vehicle vehicle, BOOL killDriver, BOOL explodeOnImpact
 		/// </summary>
 		/// <remarks>
 		/// Tested on the player's current vehicle. Unless you kill the driver, the vehicle doesn't loose control, however, if enabled, explodeOnImpact is still active. The moment you crash, boom.<br/>
@@ -48652,7 +48652,7 @@ namespace GTA.Native
 		SET_VEHICLE_OUT_OF_CONTROL = 0xF19D095E42D430CC, // 0x3764D734
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, Ped ped, bool toggle
+		/// Parameters: Vehicle vehicle, Ped ped, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_TIMED_EXPLOSION = 0x2E0A74E1002380B1, // 0xDB8CB8E2
@@ -48681,7 +48681,7 @@ namespace GTA.Native
 		_REQUEST_VEHICLE_PHONE_EXPLOSION = 0xEF49CF0270307CBE, // 0x65255524
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool state
+		/// Parameters: Vehicle vehicle, BOOL state
 		/// </summary>
 		/// <remarks>
 		/// This is not tested - it's just an assumption.<br/>
@@ -48702,7 +48702,7 @@ namespace GTA.Native
 		IS_TAXI_LIGHT_ON = 0x7504C0F113AB50FC, // 0x6FC4924A
 
 		/// <summary>
-		/// Parameters: string garageName, Vehicle vehicle
+		/// Parameters: const char* garageName, Vehicle vehicle
 		/// </summary>
 		/// <remarks>
 		/// garageName example "Michael - Beverly Hills"<br/>
@@ -48725,7 +48725,7 @@ namespace GTA.Native
 		SET_VEHICLE_COLOURS = 0x4F1D4BE3A7F24601, // 0x57F24253
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// It switch to highbeam when p1 is set to true.<br/>
@@ -48734,7 +48734,7 @@ namespace GTA.Native
 		SET_VEHICLE_FULLBEAM = 0x8B7FD87F0DDB421E, // 0x9C49CC15
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// p1 (toggle) was always 1 (true) except in one case in the b678 scripts.<br/>
@@ -48830,7 +48830,7 @@ namespace GTA.Native
 		_GET_VEHICLE_PAINT_FADE = 0xA82819CAC9C4C403, // 0xD5F1EEE1
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool state
+		/// Parameters: Vehicle vehicle, BOOL state
 		/// </summary>
 		/// <remarks>
 		/// Hardcoded to not work in multiplayer.<br/>
@@ -48839,7 +48839,7 @@ namespace GTA.Native
 		SET_CAN_RESPRAY_VEHICLE = 0x52BBA29D5EC69356, // 0x37677590
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Used for GTAO CEO/Associate spawned vehicles.<br/>
@@ -48848,25 +48848,25 @@ namespace GTA.Native
 		SET_GOON_BOSS_VEHICLE = 0xAB31EF4DE6800CE9,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_OPEN_REAR_DOORS_ON_EXPLOSION = 0x1B212B26DD3C04DF,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		FORCE_SUBMARINE_SURFACE_MODE = 0x33506883545AC0DF, // 0x54E9EE75
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		FORCE_SUBMARINE_NEURTAL_BUOYANCY = 0xC67DB108A9ADE3BE,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool p1, float depth1, float depth2, float depth3
+		/// Parameters: Vehicle vehicle, BOOL p1, float depth1, float depth2, float depth3
 		/// </summary>
 		/// <returns>void</returns>
 		SET_SUBMARINE_CRUSH_DEPTHS = 0xC59872A5134879C7, // 0x4A46E814
@@ -48896,13 +48896,13 @@ namespace GTA.Native
 		_GET_SUBMARINE_CRUSH_DEPTH_WARNING_STATE = 0x093D6DDCA5B8FBAE,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_BOAT_IGNORE_LAND_PROBES = 0xED5EDE9E676643C9,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_BOAT_ANCHOR = 0x75DBEC174AEEAD10, // 0xA3906284
@@ -48936,7 +48936,7 @@ namespace GTA.Native
 		_CAN_ANCHOR_BOAT_HERE_2 = 0x24F4121D07579880,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_BOAT_REMAINS_ANCHORED_WHILE_PLAYER_IS_DRIVER = 0xE3EBAAE484798530, // 0x0ED84792
@@ -48946,7 +48946,7 @@ namespace GTA.Native
 		_SET_BOAT_FROZEN_WHEN_ANCHORED = 0xE3EBAAE484798530, // 0x0ED84792
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool p1
+		/// Parameters: Vehicle vehicle, BOOL p1
 		/// </summary>
 		/// <remarks>
 		/// No observed effect.<br/>
@@ -48979,7 +48979,7 @@ namespace GTA.Native
 		_IS_BOAT_ANCHORED_AND_FROZEN = 0xB0AD1238A709B1A2,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_BOAT_SINKS_WHEN_WRECKED = 0x8F719973E1445BA2, // 0x35614622
@@ -49003,7 +49003,7 @@ namespace GTA.Native
 		_SET_BOAT_IS_SINKING = 0xBD32E46AA95C1DD2,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Activate siren on vehicle (Only works if the vehicle has a siren).<br/>
@@ -49028,7 +49028,7 @@ namespace GTA.Native
 		_IS_VEHICLE_SIREN_SOUND_ON = 0xB5CC40FBCB586380, // 0xC9458688
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// If set to true, vehicle will not take crash damage, but is still susceptible to damage from bullets and explosives<br/>
@@ -49049,7 +49049,7 @@ namespace GTA.Native
 		GET_VEHICLE_COLOURS = 0xA19435F193E081AC, // 0x40D82D88
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, int seatIndex, bool isTaskRunning
+		/// Parameters: Vehicle vehicle, int seatIndex, BOOL isTaskRunning
 		/// </summary>
 		/// <remarks>
 		/// Check if a vehicle seat is free.<br/>
@@ -49061,7 +49061,7 @@ namespace GTA.Native
 		IS_VEHICLE_SEAT_FREE = 0x22AC59A870E6A669, // 0xDAF42B02
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, int seatIndex, bool p2
+		/// Parameters: Vehicle vehicle, int seatIndex, BOOL p2
 		/// </summary>
 		/// <remarks>
 		/// If there is no ped in the seat, and the game considers the vehicle as ambient population, this will create a random occupant ped in the seat, which may be cleaned up by the game fairly soon if not marked as script-owned mission entity.<br/>
@@ -49091,7 +49091,7 @@ namespace GTA.Native
 		GET_VEHICLE_LIGHTS_STATE = 0xB91B4C20085BD12F, // 0x7C278621
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, int wheelID, bool completely
+		/// Parameters: Vehicle vehicle, int wheelID, BOOL completely
 		/// </summary>
 		/// <remarks>
 		/// wheelID used for 4 wheelers seem to be (0, 1, 4, 5)<br/>
@@ -49130,7 +49130,7 @@ namespace GTA.Native
 		SET_VEHICLE_FORWARD_SPEED_XY = 0x6501129C9E0FFA05,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, float distance, int duration, bool p3
+		/// Parameters: Vehicle vehicle, float distance, int duration, BOOL p3
 		/// </summary>
 		/// <remarks>
 		/// This native makes the vehicle stop immediately, as happens when we enter a MP garage.<br/>
@@ -49145,19 +49145,19 @@ namespace GTA.Native
 		_SET_VEHICLE_HALT = 0x260BE8F09E326A20, // 0xCBC7D3C8
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, IntPtr p1
+		/// Parameters: Vehicle vehicle, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_STEER_FOR_BUILDINGS = 0xDCE97BDF8A0EABC8,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_CAUSES_SWERVING = 0x9849DE24FCF23CCC,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_IGNORE_PLANES_SMALL_PITCH_CHANGE = 0x8664170EF165C4A6,
@@ -49258,13 +49258,13 @@ namespace GTA.Native
 		DETACH_CONTAINER_FROM_HANDLER_FRAME = 0x7C0043FDFF6436BC, // 0x0F11D01F
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool p1
+		/// Parameters: Vehicle vehicle, BOOL p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_DISABLE_HEIGHT_MAP_AVOIDANCE = 0x8AA9180DE2FEDD45, // 0xAE040377
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool p1
+		/// Parameters: Vehicle vehicle, BOOL p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_BOAT_DISABLE_AVOIDANCE = 0x0A6A279F3AA4FD70, // 0x4C0E4031
@@ -49300,7 +49300,7 @@ namespace GTA.Native
 		SET_CAR_BOOT_OPEN = 0xFC40CBF7B90CA77C,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, int index, bool onRim, float p3
+		/// Parameters: Vehicle vehicle, int index, BOOL onRim, float p3
 		/// </summary>
 		/// <remarks>
 		/// "To burst tyres VEHICLE::SET_VEHICLE_TYRE_BURST(vehicle, 0, true, 1000.0)<br/>
@@ -49319,7 +49319,7 @@ namespace GTA.Native
 		SET_VEHICLE_TYRE_BURST = 0xEC6A202EE4960385, // 0x89D28068
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool closeInstantly
+		/// Parameters: Vehicle vehicle, BOOL closeInstantly
 		/// </summary>
 		/// <remarks>
 		/// Closes all doors of a vehicle:<br/>
@@ -49328,7 +49328,7 @@ namespace GTA.Native
 		SET_VEHICLE_DOORS_SHUT = 0x781B3D62BB013EF5, // 0xBB1FF6E7
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Allows you to toggle bulletproof tires.<br/>
@@ -49343,13 +49343,13 @@ namespace GTA.Native
 		GET_VEHICLE_TYRES_CAN_BURST = 0x678B9BB8C3F58FEB, // 0x4D76CD2F
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool enabled
+		/// Parameters: Vehicle vehicle, BOOL enabled
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_WHEELS_CAN_BREAK = 0x29B18B4FD460CA8F, // 0x829ED654
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, int doorId, bool loose, bool openInstantly
+		/// Parameters: Vehicle vehicle, int doorId, BOOL loose, BOOL openInstantly
 		/// </summary>
 		/// <remarks>
 		/// doorId: see SET_VEHICLE_DOOR_SHUT<br/>
@@ -49358,7 +49358,7 @@ namespace GTA.Native
 		SET_VEHICLE_DOOR_OPEN = 0x7C65DAC73C35C862, // 0xBB75D38B
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, int doorId, bool toggle
+		/// Parameters: Vehicle vehicle, int doorId, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// doorId: see SET_VEHICLE_DOOR_SHUT<br/>
@@ -49368,7 +49368,7 @@ namespace GTA.Native
 		SET_VEHICLE_DOOR_AUTO_LOCK = 0x3B458DDB57038F08,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		SET_FLEEING_VEHICLES_USE_SWITCHED_OFF_NODES = 0xA247F9EF01D8082E,
@@ -49518,7 +49518,7 @@ namespace GTA.Native
 		SET_VEHICLE_LIGHTS = 0x34E710FF01247C5A, // 0xE8930226
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_USE_PLAYER_LIGHT_SETTINGS = 0xC45C27EF50F36ADC, // 0x4221E435
@@ -49545,7 +49545,7 @@ namespace GTA.Native
 		_SET_VEHICLE_LIGHTS_MODE = 0x1FD09E7390A74D54,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool state
+		/// Parameters: Vehicle vehicle, BOOL state
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_ALARM = 0xCDE5E70C1DDB954C, // 0x24877D84
@@ -49563,13 +49563,13 @@ namespace GTA.Native
 		IS_VEHICLE_ALARM_ACTIVATED = 0x4319E335B71FFF34, // 0xF2630A4C
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_INTERIORLIGHT = 0xBC2042F090AF6AD3, // 0x9AD1FE1E
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Sets some bit of vehicle<br/>
@@ -49665,7 +49665,7 @@ namespace GTA.Native
 		SET_VEHICLE_TYRE_FIXED = 0x6E13FC662B882D1D, // 0xA42EFA6B
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, string plateText
+		/// Parameters: Vehicle vehicle, const char* plateText
 		/// </summary>
 		/// <remarks>
 		/// Sets a vehicle's license plate text.  8 chars maximum.<br/>
@@ -49724,13 +49724,13 @@ namespace GTA.Native
 		GET_VEHICLE_NUMBER_PLATE_TEXT_INDEX = 0xF11BC2DD9A3E7195, // 0x499747B6
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_RANDOM_TRAINS = 0x80D9F74197EA47D9, // 0xD461CA7F
 
 		/// <summary>
-		/// Parameters: int variation, float x, float y, float z, bool direction, IntPtr p5, IntPtr p6
+		/// Parameters: int variation, float x, float y, float z, BOOL direction, Any p5, Any p6
 		/// </summary>
 		/// <remarks>
 		/// Train models HAVE TO be loaded (requested) before you use this.<br/>
@@ -49746,7 +49746,7 @@ namespace GTA.Native
 		CREATE_MISSION_TRAIN = 0x63C6CCA8E68AE8C8, // 0xD4C2EAFD
 
 		/// <summary>
-		/// Parameters: int trackId, bool state
+		/// Parameters: int trackId, BOOL state
 		/// </summary>
 		/// <remarks>
 		/// Toggles whether ambient trains can spawn on the specified track or not<br/>
@@ -49782,7 +49782,7 @@ namespace GTA.Native
 		SET_TRAIN_TRACK_SPAWN_FREQUENCY = 0x21973BBF8D17EDFA, // 0xD5774FB7
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		ALLOW_TRAIN_TO_BE_REMOVED_BY_POPULATION = 0x2310A8F9421EBF43,
@@ -49803,13 +49803,13 @@ namespace GTA.Native
 		SET_TRAIN_CRUISE_SPEED = 0x16469284DB8C62B5, // 0xB507F51D
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_RANDOM_BOATS = 0x84436EC293B1415F, // 0xB505BD89
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_RANDOM_BOATS_MP = 0xDA5E12F728DB30CA,
@@ -49819,7 +49819,7 @@ namespace GTA.Native
 		_SET_RANDOM_BOATS_IN_MP = 0xDA5E12F728DB30CA,
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_GARBAGE_TRUCKS = 0x2AFD795EEAC8D30D, // 0xD9ABB0FF
@@ -49834,7 +49834,7 @@ namespace GTA.Native
 		DOES_VEHICLE_HAVE_STUCK_VEHICLE_CHECK = 0x57E4C39DE5EE8470, // 0x5D91D9AC
 
 		/// <summary>
-		/// Parameters: int recording, string script
+		/// Parameters: int recording, const char* script
 		/// </summary>
 		/// <remarks>
 		/// See REQUEST_VEHICLE_RECORDING<br/>
@@ -49843,7 +49843,7 @@ namespace GTA.Native
 		GET_VEHICLE_RECORDING_ID = 0x21543C612379DB3C, // 0x328D601D
 
 		/// <summary>
-		/// Parameters: int recording, string script
+		/// Parameters: int recording, const char* script
 		/// </summary>
 		/// <remarks>
 		/// Request the vehicle recording defined by the lowercase format string "%s%03d.yvr". For example, REQUEST_VEHICLE_RECORDING(1, "FBIs1UBER") corresponds to fbis1uber001.yvr.<br/>
@@ -49854,7 +49854,7 @@ namespace GTA.Native
 		REQUEST_VEHICLE_RECORDING = 0xAF514CABE74CBF15, // 0x91AFEFD9
 
 		/// <summary>
-		/// Parameters: int recording, string script
+		/// Parameters: int recording, const char* script
 		/// </summary>
 		/// <remarks>
 		/// See REQUEST_VEHICLE_RECORDING<br/>
@@ -49863,7 +49863,7 @@ namespace GTA.Native
 		HAS_VEHICLE_RECORDING_BEEN_LOADED = 0x300D614A4C785FC4, // 0xF52CD7F5
 
 		/// <summary>
-		/// Parameters: int recording, string script
+		/// Parameters: int recording, const char* script
 		/// </summary>
 		/// <remarks>
 		/// See REQUEST_VEHICLE_RECORDING<br/>
@@ -49878,7 +49878,7 @@ namespace GTA.Native
 		GET_POSITION_OF_VEHICLE_RECORDING_ID_AT_TIME = 0x92523B76657A517D, // 0xF31973BB
 
 		/// <summary>
-		/// Parameters: int recording, float time, string script
+		/// Parameters: int recording, float time, const char* script
 		/// </summary>
 		/// <remarks>
 		/// This native does no interpolation between pathpoints. The same position will be returned for all times up to the next pathpoint in the recording.<br/>
@@ -49894,7 +49894,7 @@ namespace GTA.Native
 		GET_ROTATION_OF_VEHICLE_RECORDING_ID_AT_TIME = 0xF0F2103EFAF8CBA7, // 0x4D1C15C2
 
 		/// <summary>
-		/// Parameters: int recording, float time, string script
+		/// Parameters: int recording, float time, const char* script
 		/// </summary>
 		/// <remarks>
 		/// This native does no interpolation between pathpoints. The same rotation will be returned for all times up to the next pathpoint in the recording.<br/>
@@ -49910,7 +49910,7 @@ namespace GTA.Native
 		GET_TOTAL_DURATION_OF_VEHICLE_RECORDING_ID = 0x102D125411A7B6E6, // 0x7116785E
 
 		/// <summary>
-		/// Parameters: int recording, string script
+		/// Parameters: int recording, const char* script
 		/// </summary>
 		/// <remarks>
 		/// See REQUEST_VEHICLE_RECORDING<br/>
@@ -49937,7 +49937,7 @@ namespace GTA.Native
 		GET_TIME_POSITION_IN_RECORDING = 0x5746F3A7AB7FE544, // 0xF8C3E4A2
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, int recording, string script, bool p3
+		/// Parameters: Vehicle vehicle, int recording, const char* script, BOOL p3
 		/// </summary>
 		/// <remarks>
 		/// p3 is some flag related to 'trailers' (invokes CVehicle::GetTrailer).<br/>
@@ -49947,7 +49947,7 @@ namespace GTA.Native
 		START_PLAYBACK_RECORDED_VEHICLE = 0x3F878F92B3A7A071, // 0xCF614CA8
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, int recording, string script, int flags, int time, int drivingStyle
+		/// Parameters: Vehicle vehicle, int recording, const char* script, int flags, int time, int drivingStyle
 		/// </summary>
 		/// <remarks>
 		/// flags requires further research, e.g., 0x4/0x8 are related to the AI driving task and 0x20 is internally set and interacts with dynamic entity components.<br/>
@@ -49957,7 +49957,7 @@ namespace GTA.Native
 		START_PLAYBACK_RECORDED_VEHICLE_WITH_FLAGS = 0x7D80FD645D4DA346, // 0x4E721AD2
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool p1
+		/// Parameters: Vehicle vehicle, BOOL p1
 		/// </summary>
 		/// <remarks>
 		/// Often called after START_PLAYBACK_RECORDED_VEHICLE and SKIP_TIME_IN_PLAYBACK_RECORDED_VEHICLE; similar in use to FORCE_ENTITY_AI_AND_ANIMATION_UPDATE.<br/>
@@ -50014,7 +50014,7 @@ namespace GTA.Native
 		SET_PLAYBACK_SPEED = 0x6683AB880E427778, // 0x684E26E4
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, int recording, string script, float speed, int drivingStyle
+		/// Parameters: Vehicle vehicle, int recording, const char* script, float speed, int drivingStyle
 		/// </summary>
 		/// <remarks>
 		/// AI abides by the provided driving style (e.g., stopping at red lights or waiting behind traffic) while executing the specificed vehicle recording.<br/>
@@ -50042,7 +50042,7 @@ namespace GTA.Native
 		SET_PLAYBACK_TO_USE_AI = 0xA549C3B37EA28131, // 0xB536CCD7
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, int time, int drivingStyle, bool p3
+		/// Parameters: Vehicle vehicle, int time, int drivingStyle, BOOL p3
 		/// </summary>
 		/// <remarks>
 		/// Time is number of milliseconds before reverting, zero for indefinitely.<br/>
@@ -50051,7 +50051,7 @@ namespace GTA.Native
 		SET_PLAYBACK_TO_USE_AI_TRY_TO_REVERT_BACK_LATER = 0x6E63860BBB190730, // 0x0C8ABAA4
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, float x, float y, float z, IntPtr p4
+		/// Parameters: Vehicle vehicle, float x, float y, float z, Any p4
 		/// </summary>
 		/// <returns>void</returns>
 		SET_ADDITIONAL_ROTATION_FOR_RECORDED_VEHICLE_PLAYBACK = 0x5845066D8A1EA7F7, // 0x943A58EB
@@ -50069,7 +50069,7 @@ namespace GTA.Native
 		SET_GLOBAL_POSITION_OFFSET_FOR_RECORDED_VEHICLE_PLAYBACK = 0xFAF2A78061FD9EF4, // 0xCD83C393
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool p1
+		/// Parameters: Vehicle vehicle, BOOL p1
 		/// </summary>
 		/// <remarks>
 		/// A vehicle recording playback flag only used in jewelry_heist<br/>
@@ -50078,19 +50078,19 @@ namespace GTA.Native
 		SET_SHOULD_LERP_FROM_AI_TO_FULL_RECORDING = 0x063AE2B2CC273588, // 0x2EF8435C
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool p1
+		/// Parameters: Vehicle vehicle, BOOL p1
 		/// </summary>
 		/// <returns>void</returns>
 		EXPLODE_VEHICLE_IN_CUTSCENE = 0x786A4EB67B01BF0B, // 0xA85207B5
 
 		/// <summary>
-		/// Parameters: IntPtr p0, float p1, IntPtr p2, bool p3, bool p4, bool p5, IntPtr p6
+		/// Parameters: Any p0, float p1, Any p2, BOOL p3, BOOL p4, BOOL p5, Any p6
 		/// </summary>
 		/// <returns>void</returns>
 		ADD_VEHICLE_STUCK_CHECK_WITH_WARP = 0x2FA9923062DD396C, // 0xC8B789AD
 
 		/// <summary>
-		/// Parameters: uint model, bool suppressed
+		/// Parameters: Hash model, BOOL suppressed
 		/// </summary>
 		/// <remarks>
 		/// Makes the vehicle stop spawning naturally in traffic. Here's an essential example:<br/>
@@ -50101,7 +50101,7 @@ namespace GTA.Native
 		SET_VEHICLE_MODEL_IS_SUPPRESSED = 0x0FC2D89AC25A5814, // 0x42A08C9B
 
 		/// <summary>
-		/// Parameters: float x, float y, float z, float radius, uint modelHash, int flags
+		/// Parameters: float x, float y, float z, float radius, Hash modelHash, int flags
 		/// </summary>
 		/// <remarks>
 		/// Gets a random vehicle in a sphere at the specified position, of the specified radius.<br/>
@@ -50129,7 +50129,7 @@ namespace GTA.Native
 		GET_RANDOM_VEHICLE_BACK_BUMPER_IN_SPHERE = 0xB50807EABE20A8DC, // 0xD6343F6B
 
 		/// <summary>
-		/// Parameters: float x, float y, float z, float radius, uint modelHash, int flags
+		/// Parameters: float x, float y, float z, float radius, Hash modelHash, int flags
 		/// </summary>
 		/// <remarks>
 		/// Example usage<br/>
@@ -50179,7 +50179,7 @@ namespace GTA.Native
 		DELETE_MISSION_TRAIN = 0x5B76B14AE875C795, // 0x86C9497D
 
 		/// <summary>
-		/// Parameters: Vehicle* train, bool p1
+		/// Parameters: Vehicle* train, BOOL p1
 		/// </summary>
 		/// <remarks>
 		/// p1 is always 0<br/>
@@ -50194,13 +50194,13 @@ namespace GTA.Native
 		SET_MISSION_TRAIN_COORDS = 0x591CA673AA6AB736, // 0xD6D70803
 
 		/// <summary>
-		/// Parameters: uint model
+		/// Parameters: Hash model
 		/// </summary>
 		/// <returns>BOOL</returns>
 		IS_THIS_MODEL_A_BOAT = 0x45A9187928F4B9E3, // 0x10F6085C
 
 		/// <summary>
-		/// Parameters: uint model
+		/// Parameters: Hash model
 		/// </summary>
 		/// <remarks>
 		/// Checks if model is a boat, then checks for FLAG_IS_JETSKI.<br/>
@@ -50217,19 +50217,19 @@ namespace GTA.Native
 		_IS_THIS_MODEL_AN_EMERGENCY_BOAT = 0x9537097412CF75FE,
 
 		/// <summary>
-		/// Parameters: uint model
+		/// Parameters: Hash model
 		/// </summary>
 		/// <returns>BOOL</returns>
 		IS_THIS_MODEL_A_PLANE = 0xA0948AB42D7BA0DE, // 0x3B3907BB
 
 		/// <summary>
-		/// Parameters: uint model
+		/// Parameters: Hash model
 		/// </summary>
 		/// <returns>BOOL</returns>
 		IS_THIS_MODEL_A_HELI = 0xDCE4334788AF94EA, // 0x8AF7F568
 
 		/// <summary>
-		/// Parameters: uint model
+		/// Parameters: Hash model
 		/// </summary>
 		/// <remarks>
 		/// To check if the model is an amphibious car, use IS_THIS_MODEL_AN_AMPHIBIOUS_CAR.<br/>
@@ -50238,31 +50238,31 @@ namespace GTA.Native
 		IS_THIS_MODEL_A_CAR = 0x7F6DB52EEFC96DF8, // 0x60E4C22F
 
 		/// <summary>
-		/// Parameters: uint model
+		/// Parameters: Hash model
 		/// </summary>
 		/// <returns>BOOL</returns>
 		IS_THIS_MODEL_A_TRAIN = 0xAB935175B22E822B, // 0xF87DCFFD
 
 		/// <summary>
-		/// Parameters: uint model
+		/// Parameters: Hash model
 		/// </summary>
 		/// <returns>BOOL</returns>
 		IS_THIS_MODEL_A_BIKE = 0xB50C0B0CEDC6CE84, // 0x7E702CDD
 
 		/// <summary>
-		/// Parameters: uint model
+		/// Parameters: Hash model
 		/// </summary>
 		/// <returns>BOOL</returns>
 		IS_THIS_MODEL_A_BICYCLE = 0xBF94DD42F63BDED2, // 0x328E6FF5
 
 		/// <summary>
-		/// Parameters: uint model
+		/// Parameters: Hash model
 		/// </summary>
 		/// <returns>BOOL</returns>
 		IS_THIS_MODEL_A_QUADBIKE = 0x39DAC362EE65FA28, // 0xC1625277
 
 		/// <summary>
-		/// Parameters: uint model
+		/// Parameters: Hash model
 		/// </summary>
 		/// <returns>BOOL</returns>
 		IS_THIS_MODEL_AN_AMPHIBIOUS_CAR = 0x633F6F44A537EBB6,
@@ -50272,7 +50272,7 @@ namespace GTA.Native
 		_IS_THIS_MODEL_AN_AMPHIBIOUS_CAR = 0x633F6F44A537EBB6,
 
 		/// <summary>
-		/// Parameters: uint model
+		/// Parameters: Hash model
 		/// </summary>
 		/// <returns>BOOL</returns>
 		IS_THIS_MODEL_AN_AMPHIBIOUS_QUADBIKE = 0xA1A9FC1C76A6730D,
@@ -50309,7 +50309,7 @@ namespace GTA.Native
 		FORCE_SUB_THROTTLE_FOR_TIME = 0x99CAD8E7AFDB60FA, // 0x1128A45B
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool state
+		/// Parameters: Vehicle vehicle, BOOL state
 		/// </summary>
 		/// <remarks>
 		/// This has not yet been tested - it's just an assumption of what the types could be.<br/>
@@ -50318,19 +50318,19 @@ namespace GTA.Native
 		SET_VEHICLE_CAN_BE_TARGETTED = 0x3750146A28097A82, // 0x64B70B1D
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool p1
+		/// Parameters: Vehicle vehicle, BOOL p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_DONT_ALLOW_PLAYER_TO_ENTER_VEHICLE_IF_LOCKED_FOR_PLAYER = 0xDBC631F109350B8C, // 0x486C1280
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool state
+		/// Parameters: Vehicle vehicle, BOOL state
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_CAN_BE_VISIBLY_DAMAGED = 0x4C7028F78FFD3681, // 0xC5D94017
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_HAS_UNBREAKABLE_LIGHTS = 0x1AA8A837D2169D94, // 0x009AB49E
@@ -50340,13 +50340,13 @@ namespace GTA.Native
 		_SET_VEHICLE_LIGHTS_CAN_BE_VISIBLY_DAMAGED = 0x1AA8A837D2169D94, // 0x009AB49E
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool p1
+		/// Parameters: Vehicle vehicle, BOOL p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_RESPECTS_LOCKS_WHEN_HAS_DRIVER = 0x2311DD7159F00582, // 0x758C5E2E
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_CAN_EJECT_PASSENGERS_IF_LOCKED = 0x065D03A9D6B2C6B5,
@@ -50393,7 +50393,7 @@ namespace GTA.Native
 		IS_VEHICLE_DOOR_FULLY_OPEN = 0x3E933CFF7B111C22, // 0xC2385B6F
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool value, bool instantly, bool disableAutoStart
+		/// Parameters: Vehicle vehicle, BOOL value, BOOL instantly, BOOL disableAutoStart
 		/// </summary>
 		/// <remarks>
 		/// Starts or stops the engine on the specified vehicle.<br/>
@@ -50407,13 +50407,13 @@ namespace GTA.Native
 		SET_VEHICLE_ENGINE_ON = 0x2497C4717C8B881E, // 0x7FBC86F1
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_UNDRIVEABLE = 0x8ABA6AF54B942B95, // 0x48D02A4E
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_PROVIDES_COVER = 0x5AFEEDD9BB2899D7, // 0xEFC01CA9
@@ -50428,7 +50428,7 @@ namespace GTA.Native
 		SET_VEHICLE_DOOR_CONTROL = 0xF2BFA0430F0A0FCB, // 0x572DD360
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, int doorId, bool p2, bool p3, bool p4
+		/// Parameters: Vehicle vehicle, int doorId, BOOL p2, BOOL p3, BOOL p4
 		/// </summary>
 		/// <remarks>
 		/// doorId: see SET_VEHICLE_DOOR_SHUT<br/>
@@ -50459,7 +50459,7 @@ namespace GTA.Native
 		_GET_PED_USING_VEHICLE_DOOR = 0x218297BF0CFD853B, // 0x0630101F
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, int doorId, bool closeInstantly
+		/// Parameters: Vehicle vehicle, int doorId, BOOL closeInstantly
 		/// </summary>
 		/// <remarks>
 		/// enum eDoorId<br/>
@@ -50477,7 +50477,7 @@ namespace GTA.Native
 		SET_VEHICLE_DOOR_SHUT = 0x93D9BD300D7789E5, // 0x142606BD
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, int doorId, bool deleteDoor
+		/// Parameters: Vehicle vehicle, int doorId, BOOL deleteDoor
 		/// </summary>
 		/// <remarks>
 		/// doorId: see SET_VEHICLE_DOOR_SHUT<br/>
@@ -50486,7 +50486,7 @@ namespace GTA.Native
 		SET_VEHICLE_DOOR_BROKEN = 0xD4D4F6A4AB575A33, // 0x8147FEA7
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_CAN_BREAK = 0x59BF8C3D52C92F66, // 0x90A810D1
@@ -50498,19 +50498,19 @@ namespace GTA.Native
 		DOES_VEHICLE_HAVE_ROOF = 0x8AC862B0B32C5B80, // 0xDB817403
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_REMOVE_AGGRESSIVE_CARJACK_MISSION = 0xC4B3347BD68BD609,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_AVOID_PLAYER_VEHICLE_RIOT_VAN_MISSION = 0xD3301660A57C9272,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_CARJACK_MISSION_REMOVAL_PARAMETERS = 0xB9562064627FF9DB,
@@ -50600,7 +50600,7 @@ namespace GTA.Native
 		_GET_VEHICLE_XENON_LIGHTS_COLOR = 0x3DFF319A831E0CDB,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Setting this to false, makes the specified vehicle to where if you press Y your character doesn't even attempt the animation to enter the vehicle. Hence it's not considered aka ignored.<br/>
@@ -50609,31 +50609,31 @@ namespace GTA.Native
 		SET_VEHICLE_IS_CONSIDERED_BY_PLAYER = 0x31B927BBC44156CD, // 0x14413319
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_WILL_FORCE_OTHER_VEHICLES_TO_STOP = 0xBE5C1255A1830FF5, // 0xA6D8D7A5
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool p1
+		/// Parameters: Vehicle vehicle, BOOL p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_ACT_AS_IF_HAS_SIREN_ON = 0x9BECD4B9FEF3F8A6, // 0xACAB8FF3
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool p1
+		/// Parameters: Vehicle vehicle, BOOL p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_USE_MORE_RESTRICTIVE_SPAWN_CHECKS = 0x88BC673CA9E0AE99, // 0xF0E5C41D
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool p1
+		/// Parameters: Vehicle vehicle, BOOL p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_MAY_BE_USED_BY_GOTO_POINT_ANY_MEANS = 0xE851E480B814D4BA, // 0x2F98B4B7
 
 		/// <summary>
-		/// Parameters: bool p0, Hash* modelHash, int* successIndicator
+		/// Parameters: BOOL p0, Hash* modelHash, int* successIndicator
 		/// </summary>
 		/// <remarks>
 		/// Not present in the retail version! It's just a nullsub.<br/>
@@ -50684,7 +50684,7 @@ namespace GTA.Native
 		IS_VEHICLE_DOOR_DAMAGED = 0xB8E181E559464527, // 0x4999E3C3
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, int doorId, bool isBreakable
+		/// Parameters: Vehicle vehicle, int doorId, BOOL isBreakable
 		/// </summary>
 		/// <remarks>
 		/// doorId: see SET_VEHICLE_DOOR_SHUT<br/>
@@ -50701,13 +50701,13 @@ namespace GTA.Native
 		_SET_VEHICLE_DOOR_CAN_BREAK = 0x2FA133A4A9D37ED8, // 0x065B92B3
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool frontBumper
+		/// Parameters: Vehicle vehicle, BOOL frontBumper
 		/// </summary>
 		/// <returns>BOOL</returns>
 		IS_VEHICLE_BUMPER_BOUNCING = 0x27B926779DEB502D, // 0xB3A2CC4F
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool frontBumper
+		/// Parameters: Vehicle vehicle, BOOL frontBumper
 		/// </summary>
 		/// <returns>BOOL</returns>
 		IS_VEHICLE_BUMPER_BROKEN_OFF = 0x468056A6BB6F3846, // 0xAF25C027
@@ -50737,7 +50737,7 @@ namespace GTA.Native
 		IS_VEHICLE_ON_ALL_WHEELS = 0xB104CD1BABF302E2, // 0x10089F8E
 
 		/// <summary>
-		/// Parameters: uint vehicleModel
+		/// Parameters: Hash vehicleModel
 		/// </summary>
 		/// <remarks>
 		/// Returns `nMonetaryValue` from handling.meta for specific model.<br/>
@@ -50765,7 +50765,7 @@ namespace GTA.Native
 		GET_IN_VEHICLE_CLIPSET_HASH_FOR_SEAT = 0xA01BC64DD4BFBBAC,
 
 		/// <summary>
-		/// Parameters: Vehicle train, bool toggle
+		/// Parameters: Vehicle train, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Makes the train all jumbled up and derailed as it moves on the tracks (though that wont stop it from its normal operations)<br/>
@@ -50867,7 +50867,7 @@ namespace GTA.Native
 		SET_VEHICLE_DEFORMATION_FIXED = 0x953DA1E1B12C0491, // 0xDD2920C8
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_CAN_ENGINE_MISSFIRE = 0x206BC5DC9D1AC70A, // 0x8EACBD13
@@ -50877,43 +50877,43 @@ namespace GTA.Native
 		_SET_VEHICLE_CAN_ENGINE_OPERATE_ON_FIRE = 0x206BC5DC9D1AC70A, // 0x8EACBD13
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_CAN_LEAK_OIL = 0x51BB2D88D31A914B, // 0x88F0F7E7
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_CAN_LEAK_PETROL = 0x192547247864DFDD, // 0x90D6EE57
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_DISABLE_VEHICLE_PETROL_TANK_FIRES = 0x465BF26AB9684352, // 0xC40192B5
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_DISABLE_VEHICLE_PETROL_TANK_DAMAGE = 0x37C8252A7C92D017, // 0xAD3E05F2
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_DISABLE_VEHICLE_ENGINE_FIRES = 0x91A0BD635321F145, // 0x1784BA1A
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_LIMIT_SPEED_WHEN_PLAYER_INACTIVE = 0xC50CE861B55EAB8B, // 0x40C323AE
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// sfink: sets bit in vehicle's structure, used by maintransition, fm_mission_controller, mission_race and a couple of other scripts. see dissassembly: <br/>
@@ -50933,13 +50933,13 @@ namespace GTA.Native
 		SET_VEHICLE_STOP_INSTANTLY_WHEN_PLAYER_INACTIVE = 0x6EBFB22D646FFC18, // 0x847F1304
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_DISABLE_PRETEND_OCCUPANTS = 0x25367DE49D64CF16, // 0xCBD98BA1
 
 		/// <summary>
-		/// Parameters: float x1, float y1, float z1, float x2, float y2, float z2, IntPtr p6
+		/// Parameters: float x1, float y1, float z1, float x2, float y2, float z2, Any p6
 		/// </summary>
 		/// <returns>void</returns>
 		REMOVE_VEHICLES_FROM_GENERATORS_IN_AREA = 0x46A1E1A299EC4BBA, // 0x42CC15E0
@@ -50965,7 +50965,7 @@ namespace GTA.Native
 		IS_VEHICLE_EXTRA_TURNED_ON = 0xD2E6822DBFD6C8BD, // 0x042098B5
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, int extraId, bool disable
+		/// Parameters: Vehicle vehicle, int extraId, BOOL disable
 		/// </summary>
 		/// <remarks>
 		/// Available extraIds are 1-14, however none of the vehicles have extras above 12.<br/>
@@ -50996,19 +50996,19 @@ namespace GTA.Native
 		_DOES_VEHICLE_TYRE_EXIST = 0x534E36D4DB9ECC5D,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool p1
+		/// Parameters: Vehicle vehicle, BOOL p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_CONVERTIBLE_ROOF = 0xF39C4F538B5124C2, // 0xC87B6A51
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool instantlyLower
+		/// Parameters: Vehicle vehicle, BOOL instantlyLower
 		/// </summary>
 		/// <returns>void</returns>
 		LOWER_CONVERTIBLE_ROOF = 0xDED51F703D0FA83D, // 0xC5F72EAE
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool instantlyRaise
+		/// Parameters: Vehicle vehicle, BOOL instantlyRaise
 		/// </summary>
 		/// <returns>void</returns>
 		RAISE_CONVERTIBLE_ROOF = 0x8F5FB35D7E88FC70, // 0xA4E4CBA3
@@ -51026,7 +51026,7 @@ namespace GTA.Native
 		GET_CONVERTIBLE_ROOF_STATE = 0xF8C397922FC03F41, // 0x1B09714D
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool p1
+		/// Parameters: Vehicle vehicle, BOOL p1
 		/// </summary>
 		/// <remarks>
 		/// Returns true if the vehicle has a convertible roof.<br/>
@@ -51036,7 +51036,7 @@ namespace GTA.Native
 		IS_VEHICLE_A_CONVERTIBLE = 0x52F357A30698BCCE, // 0x6EF54490
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool noAnimation
+		/// Parameters: Vehicle vehicle, BOOL noAnimation
 		/// </summary>
 		/// <remarks>
 		/// Transforms the `stormberg`/`toreador` to its "submarine" variant. If the vehicle is already in that state then the vehicle transformation audio will still play, but the vehicle won't change at all.<br/>
@@ -51053,7 +51053,7 @@ namespace GTA.Native
 		_TRANSFORM_VEHICLE_TO_SUBMARINE = 0xBE4C854FFDB6EEBE, // 0xCAFE5FE0
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool noAnimation
+		/// Parameters: Vehicle vehicle, BOOL noAnimation
 		/// </summary>
 		/// <remarks>
 		/// Transforms the `stormberg`/`toreador` to its "road vehicle" variant. If the vehicle is already in that state then the vehicle transformation audio will still play, but the vehicle won't change at all.<br/>
@@ -51086,7 +51086,7 @@ namespace GTA.Native
 		IS_VEHICLE_STOPPED_AT_TRAFFIC_LIGHTS = 0x2959F696AE390A99, // 0x69200FA4
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, float xOffset, float yOffset, float zOffset, float damage, float radius, bool focusOnModel
+		/// Parameters: Vehicle vehicle, float xOffset, float yOffset, float zOffset, float damage, float radius, BOOL focusOnModel
 		/// </summary>
 		/// <remarks>
 		/// Apply damage to vehicle at a location. Location is relative to vehicle model (not world).<br/>
@@ -51097,7 +51097,7 @@ namespace GTA.Native
 		SET_VEHICLE_DAMAGE = 0xA1DD317EA8FD4F29, // 0x21B458B2
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_OCCUPANTS_TAKE_EXPLOSIVE_DAMAGE = 0x35BB21DE06784373,
@@ -51209,7 +51209,7 @@ namespace GTA.Native
 		RESET_VEHICLE_STUCK_TIMER = 0xD7591B0065AFAA7A, // 0xEF2A6016
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool isOnFireCheck
+		/// Parameters: Vehicle vehicle, BOOL isOnFireCheck
 		/// </summary>
 		/// <remarks>
 		/// p1 is always 0 in the scripts.<br/>
@@ -51219,31 +51219,31 @@ namespace GTA.Native
 		IS_VEHICLE_DRIVEABLE = 0x4C241E39B23DF959, // 0x41A7267A
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool owned
+		/// Parameters: Vehicle vehicle, BOOL owned
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_HAS_BEEN_OWNED_BY_PLAYER = 0x2B5F9D2AF1F1722D, // 0xB4D3DBFB
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_NEEDS_TO_BE_HOTWIRED = 0xFBA550EA44404EE6, // 0xD8260751
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool p1
+		/// Parameters: Vehicle vehicle, BOOL p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_BLIP_THROTTLE_RANDOMLY = 0x9F3F689B814F2599,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_POLICE_FOCUS_WILL_TRACK_VEHICLE = 0x4E74E62E0A97E901, // 0x5690F6C3
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, int duration, uint mode, bool forever
+		/// Parameters: Vehicle vehicle, int duration, Hash mode, BOOL forever
 		/// </summary>
 		/// <remarks>
 		/// Sounds the horn for the specified vehicle.<br/>
@@ -51256,7 +51256,7 @@ namespace GTA.Native
 		START_VEHICLE_HORN = 0x9C8C6504B5B63D2C, // 0x0DF5ADB3
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// If set to TRUE, it seems to suppress door noises and doesn't allow the horn to be continuous.<br/>
@@ -51269,7 +51269,7 @@ namespace GTA.Native
 		_SET_VEHICLE_SILENT = 0x9D44FCCE98450843, // 0x968E5770
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// if true, axles won't bend.<br/>
@@ -51278,7 +51278,7 @@ namespace GTA.Native
 		SET_VEHICLE_HAS_STRONG_AXLES = 0x92F0CF722BC4202F, // 0x0D1CBC65
 
 		/// <summary>
-		/// Parameters: uint modelHash
+		/// Parameters: Hash modelHash
 		/// </summary>
 		/// <remarks>
 		/// Returns model name of vehicle in all caps. Needs to be displayed through localizing text natives to get proper display name.<br/>
@@ -51293,7 +51293,7 @@ namespace GTA.Native
 		GET_DISPLAY_NAME_FROM_VEHICLE_MODEL = 0xB215AAC32D25D019, // 0xEC86DF39
 
 		/// <summary>
-		/// Parameters: uint modelHash
+		/// Parameters: Hash modelHash
 		/// </summary>
 		/// <remarks>
 		/// Will return a vehicle's manufacturer display label.<br/>
@@ -51426,13 +51426,13 @@ namespace GTA.Native
 		_IS_ANY_VEHICLE_SEAT_EMPTY = 0x2D34FC3BC4ADB780, // 0x648E685A
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		RESET_VEHICLE_WHEELS = 0x21D2E5662C1F6FED, // 0xD5FFE779
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool p1, bool p2, bool p3
+		/// Parameters: Vehicle vehicle, BOOL p1, BOOL p2, BOOL p3
 		/// </summary>
 		/// <returns>BOOL</returns>
 		IS_HELI_PART_BROKEN = 0xBC74B4BE25EB6C8A, // 0xF4E4C439
@@ -51500,7 +51500,7 @@ namespace GTA.Native
 		_SET_HELI_TAIL_ROTOR_HEALTH = 0xFE205F38AAA58E5B,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>BOOL</returns>
 		SET_HELI_TAIL_BOOM_CAN_BREAK_OFF = 0x3EC8BF18AA453FE9, // 0x2916D69B
@@ -51514,7 +51514,7 @@ namespace GTA.Native
 		SET_HELI_TAIL_EXPLODE_THROW_DASHBOARD = 0x3EC8BF18AA453FE9, // 0x2916D69B
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, string name
+		/// Parameters: Vehicle vehicle, const char* name
 		/// </summary>
 		/// <remarks>
 		/// NOTE: Debugging functions are not present in the retail version of the game.<br/>
@@ -51523,7 +51523,7 @@ namespace GTA.Native
 		SET_VEHICLE_NAME_DEBUG = 0xBFDF984E2C22B94F, // 0xA712FF5C
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Sets a vehicle to be strongly resistant to explosions. p0 is the vehicle; set p1 to false to toggle the effect on/off.<br/>
@@ -51532,19 +51532,19 @@ namespace GTA.Native
 		SET_VEHICLE_EXPLODES_ON_HIGH_EXPLOSION_DAMAGE = 0x71B0892EC081D60A, // 0x38CC692B
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_EXPLODES_ON_EXPLOSION_DAMAGE_AT_ZERO_BODY_HEALTH = 0xD565F438137F0E10,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_ALLOW_VEHICLE_EXPLODES_ON_CONTACT = 0x3441CAD2F2231923, // 0xC306A9A3
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_DISABLE_TOWING = 0x2B6747FAA9DB9D6B, // 0x95A9ACCB
@@ -51625,7 +51625,7 @@ namespace GTA.Native
 		IS_VEHICLE_HIGH_DETAIL = 0x1F25887F3C104278, // 0x55D41928
 
 		/// <summary>
-		/// Parameters: uint vehicleHash, int vehicleAsset
+		/// Parameters: Hash vehicleHash, int vehicleAsset
 		/// </summary>
 		/// <remarks>
 		/// REQUEST_VEHICLE_ASSET(GET_HASH_KEY(cargobob3), 3);<br/>
@@ -51667,7 +51667,7 @@ namespace GTA.Native
 		_SET_TOW_TRUCK_CRANE_HEIGHT = 0xFE54B92A344583CA, // 0x88236E22
 
 		/// <summary>
-		/// Parameters: Vehicle towTruck, Vehicle vehicle, bool rear, float hookOffsetX, float hookOffsetY, float hookOffsetZ
+		/// Parameters: Vehicle towTruck, Vehicle vehicle, BOOL rear, float hookOffsetX, float hookOffsetY, float hookOffsetZ
 		/// </summary>
 		/// <remarks>
 		/// HookOffset defines where the hook is attached. leave at 0 for default attachment.<br/>
@@ -51706,13 +51706,13 @@ namespace GTA.Native
 		GET_ENTITY_ATTACHED_TO_TOW_TRUCK = 0xEFEA18DCF10F8F75, // 0x11EC7844
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool p1, IntPtr p2
+		/// Parameters: Vehicle vehicle, BOOL p1, Any p2
 		/// </summary>
 		/// <returns>Entity</returns>
 		SET_VEHICLE_AUTOMATICALLY_ATTACHES = 0x8BA6F76BC53A1493, // 0x4273A8D3
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, float position, bool p2
+		/// Parameters: Vehicle vehicle, float position, BOOL p2
 		/// </summary>
 		/// <remarks>
 		/// Sets the arm position of a bulldozer. Position must be a value between 0.0 and 1.0. Ignored when `p2` is set to false, instead incrementing arm position by 0.1 (or 10%).<br/>
@@ -51721,19 +51721,19 @@ namespace GTA.Native
 		SET_VEHICLE_BULLDOZER_ARM_POSITION = 0xF8EBCCC96ADB9FB7, // 0xED23C8A3
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, float position, bool p2
+		/// Parameters: Vehicle vehicle, float position, BOOL p2
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_TANK_TURRET_POSITION = 0x56B94C6D7127DFBA, // 0xB1A52EF7
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool p1, float x, float y, float z, bool p5
+		/// Parameters: Vehicle vehicle, BOOL p1, float x, float y, float z, BOOL p5
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_TURRET_TARGET = 0x0581730AB9380412,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool p1
+		/// Parameters: Vehicle vehicle, BOOL p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_TANK_STATIONARY = 0x737E398138550FFF,
@@ -51805,7 +51805,7 @@ namespace GTA.Native
 		_GET_VEHICLE_FLIGHT_NOZZLE_POSITION = 0xDA62027C8BDB326E, // 0xAD40AD55
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// True stops vtols from switching modes. Doesn't stop the sound though.<br/>
@@ -51822,13 +51822,13 @@ namespace GTA.Native
 		_SET_DISABLE_VEHICLE_FLIGHT_NOZZLE_POSITION = 0xCE2B43770B655F8F,
 
 		/// <summary>
-		/// Parameters: Vector3* outVec, IntPtr p1, Vector3* outVec1, IntPtr p3, IntPtr p4, IntPtr p5, IntPtr p6, IntPtr p7, IntPtr p8
+		/// Parameters: Vector3* outVec, Any p1, Vector3* outVec1, Any p3, Any p4, Any p5, Any p6, Any p7, Any p8
 		/// </summary>
 		/// <returns>BOOL</returns>
 		GENERATE_VEHICLE_CREATION_POS_FROM_PATHS = 0xA4822F1CF23F4810, // 0x34E02FCD
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// On accelerating, spins the driven wheels with the others braked, so you don't go anywhere.<br/>
@@ -51850,7 +51850,7 @@ namespace GTA.Native
 		IS_VEHICLE_IN_BURNOUT = 0x1297A88E081430EB, // 0x6632BC12
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Reduces grip significantly so it's hard to go anywhere.<br/>
@@ -51873,7 +51873,7 @@ namespace GTA.Native
 		_SET_VEHICLE_REDUCE_TRACTION = 0x6DEE944E1EE90CFB,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, int turnSignal, bool toggle
+		/// Parameters: Vehicle vehicle, int turnSignal, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Sets the turn signal enabled for a vehicle.<br/>
@@ -51883,19 +51883,19 @@ namespace GTA.Native
 		SET_VEHICLE_INDICATOR_LIGHTS = 0xB5D45264751B7DF0, // 0xA6073B5D
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_BRAKE_LIGHTS = 0x92B35082E0B42F66, // 0x6D9BA11E
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_HANDBRAKE = 0x684785568EF26A22, // 0xBA729A25
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_BRAKE = 0xE4E2FD323574965C, // 0x5A36BC37
@@ -51911,7 +51911,7 @@ namespace GTA.Native
 		_HAS_FILLED_VEHICLE_POPULATION = 0x91D6DD290888CBAB, // 0x71D898EF
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		NETWORK_ENABLE_EMPTY_CROWDING_VEHICLES_REMOVAL = 0x51DB102F4A3BA5E0, // 0x0B0523B0
@@ -51935,7 +51935,7 @@ namespace GTA.Native
 		GET_VEHICLE_TRAILER_VEHICLE = 0x1CDD6BADC297830D, // 0xAE84D758
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// vehicle must be a plane<br/>
@@ -51944,13 +51944,13 @@ namespace GTA.Native
 		SET_VEHICLE_USES_LARGE_REAR_RAMP = 0xCAC66558B944DA67, // 0x0B200CE2
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_RUDDER_BROKEN = 0x09606148B6C71DEF, // 0x3FAC3CD4
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool state
+		/// Parameters: Vehicle vehicle, BOOL state
 		/// </summary>
 		/// <returns>void</returns>
 		SET_CONVERTIBLE_ROOF_LATCH_STATE = 0x1A78AD3D8240536F, // 0x0858678C
@@ -51987,7 +51987,7 @@ namespace GTA.Native
 		GET_VEHICLE_ACCELERATION = 0x5DD35C8D074E57AE, // 0x00478321
 
 		/// <summary>
-		/// Parameters: uint modelHash
+		/// Parameters: Hash modelHash
 		/// </summary>
 		/// <remarks>
 		/// Returns max speed (without mods) of the specified vehicle model in m/s.<br/>
@@ -52001,7 +52001,7 @@ namespace GTA.Native
 		_GET_VEHICLE_MODEL_MAX_SPEED = 0xF417C2502FFFED43, // 0x8F291C4A
 
 		/// <summary>
-		/// Parameters: uint modelHash
+		/// Parameters: Hash modelHash
 		/// </summary>
 		/// <remarks>
 		/// Returns max braking of the specified vehicle model.<br/>
@@ -52011,7 +52011,7 @@ namespace GTA.Native
 		GET_VEHICLE_MODEL_MAX_BRAKING = 0xDC53FD41B4ED944C, // 0x7EF02883
 
 		/// <summary>
-		/// Parameters: uint modelHash
+		/// Parameters: Hash modelHash
 		/// </summary>
 		/// <remarks>
 		/// Full list of vehicles by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/vehicles.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/vehicles.json</see><br/>
@@ -52024,7 +52024,7 @@ namespace GTA.Native
 		_GET_VEHICLE_MODEL_HAND_BRAKE = 0xBFBA3BA79CFF7EBF, // 0xF3A7293F
 
 		/// <summary>
-		/// Parameters: uint modelHash
+		/// Parameters: Hash modelHash
 		/// </summary>
 		/// <remarks>
 		/// Returns max traction of the specified vehicle model.<br/>
@@ -52034,7 +52034,7 @@ namespace GTA.Native
 		GET_VEHICLE_MODEL_MAX_TRACTION = 0x539DE94D44FDFD0D, // 0x7F985597
 
 		/// <summary>
-		/// Parameters: uint modelHash
+		/// Parameters: Hash modelHash
 		/// </summary>
 		/// <remarks>
 		/// Returns the acceleration of the specified model.<br/>
@@ -52044,7 +52044,7 @@ namespace GTA.Native
 		GET_VEHICLE_MODEL_ACCELERATION = 0x8C044C5C84505B6A, // 0x29CB3537
 
 		/// <summary>
-		/// Parameters: uint modelHash
+		/// Parameters: Hash modelHash
 		/// </summary>
 		/// <remarks>
 		/// 9.8 * thrust if air vehicle, else 0.38 + drive force?<br/>
@@ -52062,7 +52062,7 @@ namespace GTA.Native
 		_GET_VEHICLE_MODEL_ESTIMATED_AGILITY = 0x53409B5163D5B846, // 0x37FBA7BC
 
 		/// <summary>
-		/// Parameters: uint modelHash
+		/// Parameters: Hash modelHash
 		/// </summary>
 		/// <remarks>
 		/// Full list of vehicles by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/vehicles.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/vehicles.json</see><br/>
@@ -52075,7 +52075,7 @@ namespace GTA.Native
 		_GET_VEHICLE_MODEL_MAX_KNOTS = 0xC6AD107DDC9054CC, // 0x95BB67EB
 
 		/// <summary>
-		/// Parameters: uint modelHash
+		/// Parameters: Hash modelHash
 		/// </summary>
 		/// <remarks>
 		/// Full list of vehicles by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/vehicles.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/vehicles.json</see><br/>
@@ -52122,7 +52122,7 @@ namespace GTA.Native
 		GET_VEHICLE_CLASS_MAX_BRAKING = 0x4BF54C16EC8FEC03, // 0xD08CC1A5
 
 		/// <summary>
-		/// Parameters: float x, float y, float z, float radius, float speed, bool p5
+		/// Parameters: float x, float y, float z, float radius, float speed, BOOL p5
 		/// </summary>
 		/// <returns>int</returns>
 		ADD_ROAD_NODE_SPEED_ZONE = 0x2CE544C68FB812A0, // 0xD6685803
@@ -52185,7 +52185,7 @@ namespace GTA.Native
 		IS_VEHICLE_SEARCHLIGHT_ON = 0xC0F97FCE55094987, // 0xADAF3513
 
 		/// <summary>
-		/// Parameters: Vehicle heli, bool toggle, bool canBeUsedByAI
+		/// Parameters: Vehicle heli, BOOL toggle, BOOL canBeUsedByAI
 		/// </summary>
 		/// <remarks>
 		/// Only works during nighttime.<br/>
@@ -52204,7 +52204,7 @@ namespace GTA.Native
 		_DOES_VEHICLE_HAVE_SEARCHLIGHT = 0x99015ED7DBEA5113,
 
 		/// <summary>
-		/// Parameters: Ped ped, Vehicle vehicle, int seatIndex, bool side, bool onEnter
+		/// Parameters: Ped ped, Vehicle vehicle, int seatIndex, BOOL side, BOOL onEnter
 		/// </summary>
 		/// <remarks>
 		/// Check if a vehicle seat is accessible. If you park your vehicle near a wall and the ped cannot enter/exit this side, the return value toggles from true (not blocked) to false (blocked).<br/>
@@ -52313,7 +52313,7 @@ namespace GTA.Native
 		SET_VEHICLE_WHEEL_TYPE = 0x487EB21CC7295BA1, // 0x64BDAAAD
 
 		/// <summary>
-		/// Parameters: int paintType, bool p1
+		/// Parameters: int paintType, BOOL p1
 		/// </summary>
 		/// <remarks>
 		/// paintType:<br/>
@@ -52379,7 +52379,7 @@ namespace GTA.Native
 		GET_VEHICLE_MOD_COLOR_2 = 0x81592BE4E3878728, // 0x9B76BB8E
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool p1
+		/// Parameters: Vehicle vehicle, BOOL p1
 		/// </summary>
 		/// <remarks>
 		/// Returns a string which is the codename of the vehicle's currently selected primary color<br/>
@@ -52421,7 +52421,7 @@ namespace GTA.Native
 		_IS_VEHICLE_MOD_HSW_EXCLUSIVE = 0x00834EAC4A96E010,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, int modType, int modIndex, bool customTires
+		/// Parameters: Vehicle vehicle, int modType, int modIndex, BOOL customTires
 		/// </summary>
 		/// <remarks>
 		/// In b944, there are 50 (0 - 49) mod types.<br/>
@@ -52497,7 +52497,7 @@ namespace GTA.Native
 		REMOVE_VEHICLE_MOD = 0x92D619E420858204, // 0x9CC80A43
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, int modType, bool toggle
+		/// Parameters: Vehicle vehicle, int modType, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Toggles:<br/>
@@ -52753,7 +52753,7 @@ namespace GTA.Native
 		_SET_VEHICLE_MAX_SPEED = 0xBAA045B4E42F3C06,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Has something to do with trains. Always precedes SET_MISSION_TRAIN_AS_NO_LONGER_NEEDED.<br/>
@@ -52763,13 +52763,13 @@ namespace GTA.Native
 		SET_VEHICLE_STAYS_FROZEN_WHEN_CLEANED_UP = 0x1CF38D529D7441D9, // 0xDF594D8D
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool p1
+		/// Parameters: Vehicle vehicle, BOOL p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_ACT_AS_IF_HIGH_SPEED_FOR_FRAG_SMASHING = 0x1F9FB66F3A3842D2, // 0x4D840FC4
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle, float p2
+		/// Parameters: Vehicle vehicle, BOOL toggle, float p2
 		/// </summary>
 		/// <remarks>
 		/// Sets some bit and float of vehicle. float is &#38;gt;= 0<br/>
@@ -52826,13 +52826,13 @@ namespace GTA.Native
 		_SET_VEHICLE_ENGINE_TORQUE_MULTIPLIER = 0xB59E4BD37AE292DB, // 0x642DA5AA
 
 		/// <summary>
-		/// Parameters: IntPtr p0, bool p1
+		/// Parameters: Any p0, BOOL p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_INFLUENCES_WANTED_LEVEL = 0x0AD9E8F87FF7C16F, // 0x04F5546C
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool state
+		/// Parameters: Vehicle vehicle, BOOL state
 		/// </summary>
 		/// <remarks>
 		/// Sets the wanted state of this vehicle.<br/>
@@ -52856,7 +52856,7 @@ namespace GTA.Native
 		_SET_BOAT_BOOM_POSITION_RATIO = 0xF488C566413B4232, // 0xA25CCB8C
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Same call as ALLOW_BOAT_BOOM_TO_ANIMATE<br/>
@@ -52869,7 +52869,7 @@ namespace GTA.Native
 		_GET_BOAT_BOOM_POSITION_RATIO_2 = 0xC1F981A6F74F0C23, // 0x00966934
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		ALLOW_BOAT_BOOM_TO_ANIMATE = 0x0F3B4D4E43177236, // 0x113DF5FD
@@ -52885,7 +52885,7 @@ namespace GTA.Native
 		GET_BOAT_BOOM_POSITION_RATIO = 0x6636C535F6CC2725, // 0x7C8D6464
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool p1, bool p2
+		/// Parameters: Vehicle vehicle, BOOL p1, BOOL p2
 		/// </summary>
 		/// <returns>void</returns>
 		DISABLE_PLANE_AILERON = 0x23428FC53C60919C, // 0x7E84C45C
@@ -52904,7 +52904,7 @@ namespace GTA.Native
 		_IS_VEHICLE_ENGINE_ON = 0xAE31E7DF9B5B132E, // 0x7DC6D022
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_USE_ALTERNATE_HANDLING = 0x1D97D1E3A70A649F, // 0xA03E42DF
@@ -52927,7 +52927,7 @@ namespace GTA.Native
 		_SET_BIKE_LEAN_ANGLE = 0x9CFA4896C3A53CBB, // 0x15D40761
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool p1
+		/// Parameters: Vehicle vehicle, BOOL p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_NOT_STEALABLE_AMBIENTLY = 0xAB04325045427AAE, // 0x1984F88D
@@ -52951,7 +52951,7 @@ namespace GTA.Native
 		CLEAR_LAST_DRIVEN_VEHICLE = 0xE01903C47C7AC89E, // 0x07186AD9
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_HAS_BEEN_DRIVEN_FLAG = 0x02398B627547189C, // 0x08CD58F9
@@ -52977,7 +52977,7 @@ namespace GTA.Native
 		SET_VEHICLE_LOD_MULTIPLIER = 0x93AE6A61BE015BF1, // 0x569E5AE3
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_CAN_SAVE_IN_GARAGE = 0x428BACCDF5E26EAD, // 0x1604C2F5
@@ -53006,13 +53006,13 @@ namespace GTA.Native
 		_GET_VEHICLE_NUMBER_OF_BROKEN_BONES = 0x2C8CBFE1EA5FC631, // 0xABC99E21
 
 		/// <summary>
-		/// Parameters: IntPtr p0, bool p1
+		/// Parameters: Any p0, BOOL p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_FORCE_VEHICLE_ENGINE_DAMAGE_BY_BULLET = 0x4D9D109F63FEE1D4, // 0x900C878C
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Allows creation of CEventShockingPlaneFlyby, CEventShockingHelicopterOverhead, and other(?) Shocking events<br/>
@@ -53059,7 +53059,7 @@ namespace GTA.Native
 		_GET_VEHICLE_OWNER = 0x8F5EBAB1F260CFCE, // 0x4A557117
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_FORCE_HD_VEHICLE = 0x97CE68CB032583F0, // 0xE0FC6A32
@@ -53098,13 +53098,13 @@ namespace GTA.Native
 		IS_VEHICLE_VISIBLE = 0xAA0A52D24FB98293, // 0x7E0D6056
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_GRAVITY = 0x89F149B6131E57DA, // 0x07B2A6DC
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Enable/Disables global slipstream physics<br/>
@@ -53113,7 +53113,7 @@ namespace GTA.Native
 		SET_ENABLE_VEHICLE_SLIPSTREAMING = 0xE6C0C80B8C867537, // 0xD2B8ACBD
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_SLIPSTREAMING_SHOULD_TIME_OUT = 0xF051D9BFB6BA39C0,
@@ -53145,13 +53145,13 @@ namespace GTA.Native
 		_IS_VEHICLE_SLIPSTREAM_LEADER = 0x48C633E94A8142A7,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_INACTIVE_DURING_PLAYBACK = 0x06582AFF74894C75, // 0x50F89338
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_ACTIVE_DURING_PLAYBACK = 0xDFFCEF48E511DB48, // 0xEB7D7C27
@@ -53170,7 +53170,7 @@ namespace GTA.Native
 		_IS_VEHICLE_SHOP_RESPRAY_ALLOWED = 0x8D474C8FAEFF6CDE, // 0x5EB00A6A
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_ENGINE_CAN_DEGRADE = 0x983765856F2564F9, // 0x081DAC12
@@ -53233,7 +53233,7 @@ namespace GTA.Native
 		_SET_PLANE_PROPELLERS_HEALTH = 0x4C815EB175086F84,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_CAN_DEFORM_WHEELS = 0x0CDDA42F9E360CA6, // 0x9B581DE7
@@ -53248,7 +53248,7 @@ namespace GTA.Native
 		IS_VEHICLE_STOLEN = 0x4AF9BD80EEBEB453, // 0x20B61DDE
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool isStolen
+		/// Parameters: Vehicle vehicle, BOOL isStolen
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_IS_STOLEN = 0x67B2C79AA7FF5738, // 0x70912E42
@@ -53331,7 +53331,7 @@ namespace GTA.Native
 		GET_VEHICLE_ATTACHED_TO_CARGOBOB = 0x873B82D42AC2B9E5, // 0x301A1D24
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>Entity</returns>
 		GET_ENTITY_ATTACHED_TO_CARGOBOB = 0x99093F60746708CA,
@@ -53347,13 +53347,13 @@ namespace GTA.Native
 		ATTACH_VEHICLE_TO_CARGOBOB = 0x4127F1D84E347769, // 0x607DC9D5
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2, IntPtr p3, IntPtr p4, IntPtr p5
+		/// Parameters: Any p0, Any p1, Any p2, Any p3, Any p4, Any p5
 		/// </summary>
 		/// <returns>void</returns>
 		ATTACH_ENTITY_TO_CARGOBOB = 0xA1DD82F3CCF9A01E, // 0xAEB29F98
 
 		/// <summary>
-		/// Parameters: Vehicle cargobob, bool toggle
+		/// Parameters: Vehicle cargobob, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Stops cargobob from being able to detach the attached vehicle.<br/>
@@ -53366,13 +53366,13 @@ namespace GTA.Native
 		_SET_CARGOBOB_HOOK_CAN_DETACH = 0x571FEB383F629926, // 0x49949FDA
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_CARGOBOB_EXCLUDE_FROM_PICKUP_ENTITY = 0x1F34B0626C594380,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>BOOL</returns>
 		CAN_CARGOBOB_PICK_UP_ENTITY = 0x2C1D8B3B19E517CC,
@@ -53437,7 +53437,7 @@ namespace GTA.Native
 		_RETRACT_CARGOBOB_HOOK = 0x9768CF648F54C804, // 0xA8211EE9
 
 		/// <summary>
-		/// Parameters: Vehicle cargobob, float length1, float length2, bool p3
+		/// Parameters: Vehicle cargobob, float length1, float length2, BOOL p3
 		/// </summary>
 		/// <remarks>
 		/// min: 1.9f, max: 100.0f<br/>
@@ -53450,19 +53450,19 @@ namespace GTA.Native
 		_SET_CARGOBOB_HOOK_POSITION = 0x877C1EAEAC531023, // 0x3A8AB081
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2
+		/// Parameters: Any p0, Any p1, Any p2
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PICKUP_ROPE_LENGTH_WITHOUT_CREATING_ROPE_FOR_CARGOBOB = 0xC0ED6438E6D39BA8,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_CARGOBOB_PICKUP_ROPE_DAMPING_MULTIPLIER = 0xCF1182F682F65307, // 0x7D927E1B
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_CARGOBOB_PICKUP_ROPE_TYPE = 0x0D5F65A8F4EBDAB5, // 0xF258ADA1
@@ -53485,7 +53485,7 @@ namespace GTA.Native
 		_DOES_CARGOBOB_HAVE_PICKUP_MAGNET = 0x6E08BF5B3722BAC9, // 0x4778CA0A
 
 		/// <summary>
-		/// Parameters: Vehicle cargobob, bool isActive
+		/// Parameters: Vehicle cargobob, BOOL isActive
 		/// </summary>
 		/// <remarks>
 		/// Won't attract or magnetize to any helicopters or planes of course, but that's common sense.<br/>
@@ -53551,13 +53551,13 @@ namespace GTA.Native
 		SET_CARGOBOB_PICKUP_MAGNET_SET_TARGETED_MODE = 0xE301BD63E9E13CF0,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool p1, bool p2
+		/// Parameters: Vehicle vehicle, BOOL p1, BOOL p2
 		/// </summary>
 		/// <returns>void</returns>
 		SET_CARGOBOB_PICKUP_MAGNET_SET_AMBIENT_MODE = 0x9BDDC73CC6A115D4, // 0x50CDB295
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool p1
+		/// Parameters: Vehicle vehicle, BOOL p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_CARGOBOB_PICKUP_MAGNET_ENSURE_PICKUP_ENTITY_UPRIGHT = 0x56EB5E94318D3FB6, // 0x30F43FE3
@@ -53569,13 +53569,13 @@ namespace GTA.Native
 		DOES_VEHICLE_HAVE_WEAPONS = 0x25ECB9F8017D98E0, // 0xB2E1E1FB
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool p1
+		/// Parameters: Vehicle vehicle, BOOL p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_WILL_TELL_OTHERS_TO_HURRY = 0x2C4A1590ABF43E8B, // 0x2EC19A8B
 
 		/// <summary>
-		/// Parameters: bool disabled, uint weaponHash, Vehicle vehicle, Ped owner
+		/// Parameters: BOOL disabled, Hash weaponHash, Vehicle vehicle, Ped owner
 		/// </summary>
 		/// <remarks>
 		/// Full list of weapons by DurtyFree (Search for VEHICLE_*): <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json</see><br/>
@@ -53584,7 +53584,7 @@ namespace GTA.Native
 		DISABLE_VEHICLE_WEAPON = 0xF4FC6A6F67D8D856, // 0xA688B7D1
 
 		/// <summary>
-		/// Parameters: uint weaponHash, Vehicle vehicle, Ped owner
+		/// Parameters: Hash weaponHash, Vehicle vehicle, Ped owner
 		/// </summary>
 		/// <remarks>
 		/// Full list of weapons by DurtyFree (Search for VEHICLE_*): <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json</see><br/>
@@ -53597,13 +53597,13 @@ namespace GTA.Native
 		_IS_VEHICLE_WEAPON_DISABLED = 0x563B65A643ED072E,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_USED_FOR_PILOT_SCHOOL = 0xE05DD0E9707003A3, // 0x123E5B90
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_ACTIVE_FOR_PED_NAVIGATION = 0x21115BCD6E44656A, // 0xEBC225C1
@@ -53648,7 +53648,7 @@ namespace GTA.Native
 		GET_VEHICLE_CLASS = 0x29439776AAA00A62, // 0xC025338E
 
 		/// <summary>
-		/// Parameters: uint modelHash
+		/// Parameters: Hash modelHash
 		/// </summary>
 		/// <remarks>
 		/// char buffer[128];<br/>
@@ -53666,7 +53666,7 @@ namespace GTA.Native
 		SET_PLAYERS_LAST_VEHICLE = 0xBCDF8BAF56C87B6A, // 0xDE86447D
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_CAN_BE_USED_BY_FLEEING_PEDS = 0x300504B23BD3B711, // 0x5130DB1E
@@ -53678,7 +53678,7 @@ namespace GTA.Native
 		SET_AIRCRAFT_PILOT_SKILL_NOISE_SCALAR = 0xE5810AC70602F2F5, // 0xB6BE07E0
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Money pickups are created around cars when they explode. Only works when the vehicle model is a car. A single pickup is between 1 and 18 dollars in size. All car models seem to give the same amount of money.<br/>
@@ -53693,7 +53693,7 @@ namespace GTA.Native
 		_SET_VEHICLE_CREATES_MONEY_PICKUPS_WHEN_EXPLODED = 0x068F64F2470F9656, // 0x4BB5605D
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_KEEP_ENGINE_ON_WHEN_ABANDONED = 0xB8FBC8B1330CA9B4, // 0x51E0064F
@@ -53703,7 +53703,7 @@ namespace GTA.Native
 		_SET_VEHICLE_JET_ENGINE_ON = 0xB8FBC8B1330CA9B4, // 0x51E0064F
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, IntPtr p1
+		/// Parameters: Vehicle vehicle, Any p1
 		/// </summary>
 		/// <remarks>
 		/// Seems to copy some values in vehicle<br/>
@@ -53712,7 +53712,7 @@ namespace GTA.Native
 		SET_VEHICLE_IMPATIENCE_TIMER = 0x6A973569BA094650,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, uint hash
+		/// Parameters: Vehicle vehicle, Hash hash
 		/// </summary>
 		/// <remarks>
 		/// Use the "AIHandling" string found in handling.meta<br/>
@@ -53734,7 +53734,7 @@ namespace GTA.Native
 		SET_VEHICLE_EXTENDED_REMOVAL_RANGE = 0x79DF7E806202CE01, // 0xAEF9611C
 
 		/// <summary>
-		/// Parameters: IntPtr p0, float p1
+		/// Parameters: Any p0, float p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_STEERING_BIAS_SCALAR = 0x9007A2F21DC108D4, // 0x585E49B6
@@ -53762,7 +53762,7 @@ namespace GTA.Native
 		SET_VEHICLE_FRICTION_OVERRIDE = 0x1837AF7C627009BA, // 0x32AFD42E
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_WHEELS_CAN_BREAK_OFF_WHEN_BLOW_UP = 0xA37B9A517B133349, // 0x670913A4
@@ -53772,7 +53772,7 @@ namespace GTA.Native
 		SET_VEHICLE_MAX_STR_TRAP = 0xA37B9A517B133349, // 0x670913A4
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool p1
+		/// Parameters: Vehicle vehicle, BOOL p1
 		/// </summary>
 		/// <returns>BOOL</returns>
 		ARE_PLANE_CONTROL_PANELS_INTACT = 0xF78F94D60248C737, // 0x3B51B348
@@ -53788,7 +53788,7 @@ namespace GTA.Native
 		GET_VEHICLE_DEFORMATION_GET_TREE = 0xA46413066687A328, // 0x98A10A86
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_NO_EXPLOSION_DAMAGE_FROM_DRIVER = 0x5E569EC46EC21CAE, // 0xBC649C49
@@ -53800,13 +53800,13 @@ namespace GTA.Native
 		CLEAR_VEHICLE_ROUTE_HISTORY = 0x6D6AF961B72728AE, // 0x8DD9AA0C
 
 		/// <summary>
-		/// Parameters: string decorator
+		/// Parameters: const char* decorator
 		/// </summary>
 		/// <returns>Vehicle</returns>
 		DOES_VEHICLE_EXIST_WITH_DECORATOR = 0x956B409B984D9BF7, // 0x39E68EDD
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Used to be incorrectly named SET_VEHICLE_EXCLUSIVE_DRIVER<br/>
@@ -53842,13 +53842,13 @@ namespace GTA.Native
 		DISABLE_INDIVIDUAL_PLANE_PROPELLER = 0x500873A45724C863, // 0x004926A3
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_FORCE_AFTERBURNER = 0xB055A34527CB8FD7, // 0xC195803B
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// R* used it to "remove" vehicle windows when "nightshark" had some mod, which adding some kind of armored windows. When enabled, you can't break vehicles glass. All your bullets wiil shoot through glass. You also will not able to break the glass with any other way (hitting and etc)<br/>
@@ -53861,13 +53861,13 @@ namespace GTA.Native
 		_SET_DISABLE_VEHICLE_WINDOW_COLLISIONS = 0x1087BC8EC540DAEB,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_DISABLE_WANTED_CONES_RESPONSE = 0x4AD280EB48B2D8E6,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_USE_DESIRED_Z_CRUISE_SPEED_FOR_LANDING = 0xB68CFAF83A02768D,
@@ -53879,13 +53879,13 @@ namespace GTA.Native
 		SET_ARRIVE_DISTANCE_OVERRIDE_FOR_VEHICLE_PERSUIT_ATTACK = 0x0205F5365292D2EB,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_READY_FOR_CLEANUP = 0xCF9159024555488C,
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Toggles to render distant vehicles. They may not be vehicles but images to look like vehicles.<br/>
@@ -53938,7 +53938,7 @@ namespace GTA.Native
 		_GET_VEHICLE_NEON_LIGHTS_COLOUR = 0x7619EEE8C886757F,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, int index, bool toggle
+		/// Parameters: Vehicle vehicle, int index, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Sets the neon lights of the specified vehicle on/off.<br/>
@@ -53973,13 +53973,13 @@ namespace GTA.Native
 		_IS_VEHICLE_NEON_LIGHT_ENABLED = 0x8C4B92553E4766A5,
 
 		/// <summary>
-		/// Parameters: bool p0
+		/// Parameters: BOOL p0
 		/// </summary>
 		/// <returns>void</returns>
 		SET_AMBIENT_VEHICLE_NEON_ENABLED = 0x35E0654F4BAD7971,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SUPPRESS_NEONS_ON_VEHICLE = 0x83F813570FF519DE,
@@ -53989,7 +53989,7 @@ namespace GTA.Native
 		_DISABLE_VEHICLE_NEON_LIGHTS = 0x83F813570FF519DE,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool p1
+		/// Parameters: Vehicle vehicle, BOOL p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_DISABLE_SUPERDUMMY = 0xB088E9A47AE6EDD5,
@@ -54080,7 +54080,7 @@ namespace GTA.Native
 		_GET_NUMBER_OF_VEHICLE_DOORS = 0x92922A607497B14D,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// If false, lowers hydraulics (if raised) and disables hydraulics controls. If true, raises hydraulics and enables hydraulics controls.<br/>
@@ -54094,7 +54094,7 @@ namespace GTA.Native
 		_SET_HYDRAULIC_RAISED = 0x28B18377EB6E25F6,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool p1
+		/// Parameters: Vehicle vehicle, BOOL p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_CAN_ADJUST_GROUND_CLEARANCE = 0xA7DCDF4DED40A8F4,
@@ -54134,13 +54134,13 @@ namespace GTA.Native
 		GET_VEHICLE_IS_MERCENARY = 0xD4C4642CB7F50B5D, // 0x575504DE
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool p1
+		/// Parameters: Vehicle vehicle, BOOL p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_BROKEN_PARTS_DONT_AFFECT_AI_HANDLING = 0xC361AA040D6637A8, // 0x819CD954
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_KERS_ALLOWED = 0x99C82F8A139F3E4E, // 0x71CDD52F
@@ -54163,13 +54163,13 @@ namespace GTA.Native
 		_HAS_VEHICLE_KERS_BOOST = 0x50634E348C8D44EF, // 0x0761E635
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PLANE_RESIST_TO_EXPLOSION = 0xE16142B94664DEFD, // 0xFBBA699A
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_HELI_RESIST_TO_EXPLOSION = 0x8074CC1886802912,
@@ -54179,7 +54179,7 @@ namespace GTA.Native
 		_SET_HELI_RESIST_TO_EXPLOSION = 0x8074CC1886802912,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		SET_DISABLE_BMX_EXTRA_TRICK_FORCES = 0x26D99D5A82FD18E8,
@@ -54212,7 +54212,7 @@ namespace GTA.Native
 		_GET_HYDRAULIC_WHEEL_VALUE = 0x0BB5CBDDD0F25AE3,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_CAN_USE_HYDRAULICS = 0x1201E8A3290A3B98,
@@ -54238,7 +54238,7 @@ namespace GTA.Native
 		_SET_HYDRAULIC_WHEEL_STATE = 0x8EA86DF356801C7D,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, int wheelId, int state, float value, IntPtr p4
+		/// Parameters: Vehicle vehicle, int wheelId, int state, float value, Any p4
 		/// </summary>
 		/// <remarks>
 		/// Sets vehicle wheel hydraulic states transition. Known states:<br/>
@@ -54254,7 +54254,7 @@ namespace GTA.Native
 		_SET_HYDRAULIC_WHEEL_STATE_TRANSITION = 0xC24075310A8B9CD1,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>BOOL</returns>
 		HAS_VEHICLE_PETROLTANK_SET_ON_FIRE_BY_ENTITY = 0x5BA68A0840D546AC,
@@ -54276,7 +54276,7 @@ namespace GTA.Native
 		SET_VEHICLE_BOBBLEHEAD_VELOCITY = 0x870B8B7A766615C8,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>BOOL</returns>
 		GET_VEHICLE_IS_DUMMY = 0x8533CAFDE1F0F336,
@@ -54302,19 +54302,19 @@ namespace GTA.Native
 		_SET_VEHICLE_UNK_DAMAGE_MULTIPLIER = 0x45A561A9421AB6AD,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>BOOL</returns>
 		SET_DISABLE_DAMAGE_WITH_PICKED_UP_ENTITY = 0xD4196117AF7BB974,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_USES_MP_PLAYER_DAMAGE_MULTIPLIER = 0xBB2333BB87DDD87F,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// When enabled, the player won't fall off the bike when landing from large heights.<br/>
@@ -54323,7 +54323,7 @@ namespace GTA.Native
 		SET_BIKE_EASY_TO_LAND = 0x73561D4425A021A2,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool state
+		/// Parameters: Vehicle vehicle, BOOL state
 		/// </summary>
 		/// <remarks>
 		/// Inverts vehicle's controls. So INPUT_VEH_ACCELERATE will be INPUT_VEH_BRAKE and vise versa (same for A/D controls)<br/>
@@ -54337,7 +54337,7 @@ namespace GTA.Native
 		_SET_VEHICLE_CONTROLS_INVERTED = 0x5B91B229243351A8,
 
 		/// <summary>
-		/// Parameters: bool disabled
+		/// Parameters: BOOL disabled
 		/// </summary>
 		/// <remarks>
 		/// Disables the screen effects and sound effects when driving over a speed boost pad.<br/>
@@ -54346,7 +54346,7 @@ namespace GTA.Native
 		SET_SPEED_BOOST_EFFECT_DISABLED = 0x7BBE7FF626A591FE,
 
 		/// <summary>
-		/// Parameters: bool disabled
+		/// Parameters: BOOL disabled
 		/// </summary>
 		/// <remarks>
 		/// Disables the screen effects and sound effects when driving over a slowdown pad.<br/>
@@ -54373,7 +54373,7 @@ namespace GTA.Native
 		GET_IS_BOAT_CAPSIZED = 0xBA91D045575699AD,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_ALLOW_RAMMING_SOOP_OR_RAMP = 0x80E3357FDEF45C21,
@@ -54444,7 +54444,7 @@ namespace GTA.Native
 		_IS_VEHICLE_ROCKET_BOOST_ACTIVE = 0x3D34E80EED4AE3BE,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool active
+		/// Parameters: Vehicle vehicle, BOOL active
 		/// </summary>
 		/// <returns>void</returns>
 		SET_ROCKET_BOOST_ACTIVE = 0x81E1552E35DC3839,
@@ -54527,7 +54527,7 @@ namespace GTA.Native
 		_GET_CAN_VEHICLE_JUMP = 0x9078C0C5EF8C19E9,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Allows vehicles with the FLAG_JUMPING_CAR flag to jump higher (i.e. Ruiner 2000).<br/>
@@ -54540,7 +54540,7 @@ namespace GTA.Native
 		_SET_USE_HIGHER_VEHICLE_JUMP_FORCE = 0xF06A16CA55D138D8,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_CLEAR_FREEZE_WAITING_ON_COLLISION_ONCE_PLAYER_ENTERS = 0xB2E0C0D6922D31F2,
@@ -54603,7 +54603,7 @@ namespace GTA.Native
 		_GET_VEHICLE_CAN_ACTIVATE_PARACHUTE = 0xA916396DF4154EE3,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool active
+		/// Parameters: Vehicle vehicle, BOOL active
 		/// </summary>
 		/// <returns>void</returns>
 		VEHICLE_START_PARACHUTING = 0x0BFFB028B3DD0A97,
@@ -54623,7 +54623,7 @@ namespace GTA.Native
 		_IS_VEHICLE_PARACHUTE_ACTIVE = 0x3DE51E9C80B116CF,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		VEHICLE_SET_RAMP_AND_RAMMING_CARS_TAKE_DAMAGE = 0x28D034A93FE31BF5,
@@ -54637,7 +54637,7 @@ namespace GTA.Native
 		_SET_VEHICLE_RECEIVES_RAMP_DAMAGE = 0x28D034A93FE31BF5,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		VEHICLE_SET_ENABLE_RAMP_CAR_SIDE_IMPULSE = 0x1BBAC99C0BC53656,
@@ -54647,7 +54647,7 @@ namespace GTA.Native
 		_SET_VEHICLE_RAMP_SIDEWAYS_LAUNCH_MOTION = 0x1BBAC99C0BC53656,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		VEHICLE_SET_ENABLE_NORMALISE_RAMP_CAR_VERTICAL_VELOCTIY = 0x756AE6E962168A04,
@@ -54657,13 +54657,13 @@ namespace GTA.Native
 		_SET_VEHICLE_RAMP_UPWARDS_LAUNCH_MOTION = 0x756AE6E962168A04,
 
 		/// <summary>
-		/// Parameters: IntPtr p0
+		/// Parameters: Any p0
 		/// </summary>
 		/// <returns>void</returns>
 		VEHICLE_SET_JET_WASH_FORCE_ENABLED = 0x9D30687C57BAA0BB,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_WEAPON_CAN_TARGET_OBJECTS = 0x86B4B6212CB8B627,
@@ -54673,7 +54673,7 @@ namespace GTA.Native
 		_SET_VEHICLE_WEAPONS_DISABLED = 0x86B4B6212CB8B627,
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Used for blazer5. Changes the quadbike-jetski transformation input from raise/lower convertible roof (hold H by default) to horn (press E by default.)<br/>
@@ -54682,7 +54682,7 @@ namespace GTA.Native
 		SET_VEHICLE_USE_BOOST_BUTTON_FOR_WHEEL_RETRACT = 0x41290B40FA63E6DA,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, uint modelHash
+		/// Parameters: Vehicle vehicle, Hash modelHash
 		/// </summary>
 		/// <remarks>
 		/// Parachute models:<br/>
@@ -54727,25 +54727,25 @@ namespace GTA.Native
 		_SET_VEHICLE_PARACHUTE_TEXTURE_VARIATION = 0xA74AD2439468C883,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>int</returns>
 		VEHICLE_SET_OVERRIDE_EXTENABLE_SIDE_RATIO = 0x0419B167EE128F33,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>int</returns>
 		VEHICLE_SET_EXTENABLE_SIDE_TARGET_RATIO = 0xF3B0E0AED097A3F5,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>int</returns>
 		VEHICLE_SET_OVERRIDE_SIDE_RATIO = 0xD3E51C0AB8C26EEE,
 
 		/// <summary>
-		/// Parameters: IntPtr vehsStruct
+		/// Parameters: Any* vehsStruct
 		/// </summary>
 		/// <returns>int</returns>
 		GET_ALL_VEHICLES = 0x9B8E1BF04B51F2E8,
@@ -54755,19 +54755,19 @@ namespace GTA.Native
 		_GET_ALL_VEHICLES = 0x9B8E1BF04B51F2E8,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_CARGOBOB_EXTA_PICKUP_RANGE = 0x72BECCF4B829522E,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1, IntPtr p2
+		/// Parameters: Any p0, Any p1, Any p2
 		/// </summary>
 		/// <returns>void</returns>
 		SET_OVERRIDE_VEHICLE_DOOR_TORQUE = 0x66E3AAFACE2D1EB8,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool enabled
+		/// Parameters: Vehicle vehicle, BOOL enabled
 		/// </summary>
 		/// <remarks>
 		/// Enables/disables the ability to wheelie on motorcycles.<br/>
@@ -54776,7 +54776,7 @@ namespace GTA.Native
 		SET_WHEELIE_ENABLED = 0x1312DDD8385AEE4E,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_DISABLE_HELI_EXPLODE_FROM_BODY_DAMAGE = 0xEDBC8405B3895CC9,
@@ -54788,7 +54788,7 @@ namespace GTA.Native
 		SET_DISABLE_EXPLODE_FROM_BODY_DAMAGE_ON_COLLISION = 0x26E13D440E7F6064,
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_TRAILER_ATTACHMENT_ENABLED = 0x2FA2494B47FDD009,
@@ -54804,7 +54804,7 @@ namespace GTA.Native
 		_SET_VEHICLE_ROCKET_BOOST_PERCENTAGE = 0xFEB2DDED3509562E,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool state
+		/// Parameters: Vehicle vehicle, BOOL state
 		/// </summary>
 		/// <remarks>
 		/// Set state to true to extend the wings, false to retract them.<br/>
@@ -54817,7 +54817,7 @@ namespace GTA.Native
 		_SET_OPPRESSOR_TRANSFORM_STATE = 0x544996C0081ABDEB,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool shouldReset
+		/// Parameters: Vehicle vehicle, BOOL shouldReset
 		/// </summary>
 		/// <remarks>
 		/// Resets the vehicle's turret to its default position in scripted cameras. Doesn't seem to affect turrets that are occupied by a ped.<br/>
@@ -54826,13 +54826,13 @@ namespace GTA.Native
 		SET_SHOULD_RESET_TURRET_IN_SCRIPTED_CAMERAS = 0x78CEEE41F49F421F,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool disable
+		/// Parameters: Vehicle vehicle, BOOL disable
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_DISABLE_COLLISION_UPON_CREATION = 0xAF60E6A2936F982A,
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_GROUND_EFFECT_REDUCES_DRAG = 0x430A7631A84C9BE7,
@@ -54854,25 +54854,25 @@ namespace GTA.Native
 		_DISABLE_VEHICLE_WORLD_COLLISION = 0x75627043C6AA90AD,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_DISABLE_PED_STAND_ON_TOP = 0x8235F1BEAD557629,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, IntPtr p1, IntPtr p2, IntPtr p3, IntPtr p4
+		/// Parameters: Vehicle vehicle, Any p1, Any p2, Any p3, Any p4
 		/// </summary>
 		/// <returns>void</returns>
 		SET_VEHICLE_DAMAGE_SCALES = 0x9640E30A7F395E4B,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, IntPtr p1, IntPtr p2
+		/// Parameters: Vehicle vehicle, Any p1, Any p2
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PLANE_SECTION_DAMAGE_SCALE = 0x0BBB9A7A8FFE931B,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Stops the cargobob from being able to attach any vehicle<br/>
@@ -54965,7 +54965,7 @@ namespace GTA.Native
 		SET_HELI_COMBAT_OFFSET = 0x0A3F820A9A9A9AC5,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, float x, float y, float z, float rotX, float rotY, float rotZ, int p7, IntPtr p8
+		/// Parameters: Vehicle vehicle, float x, float y, float z, float rotX, float rotY, float rotZ, int p7, Any p8
 		/// </summary>
 		/// <remarks>
 		/// Used in decompiled scripts in combination with GET_VEHICLE_SIZE<br/>
@@ -54976,7 +54976,7 @@ namespace GTA.Native
 		GET_CAN_VEHICLE_BE_PLACED_HERE = 0x51F30DB60626A20E,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Sets a flag on heli and another vehicle type.<br/>
@@ -55028,7 +55028,7 @@ namespace GTA.Native
 		_SET_VEHICLE_HOVER_TRANSFORM_PERCENTAGE = 0x438B3D7CA026FE91,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// It will override the ability to transform deluxo. For oppressor it will work just like SET_DISABLE_HOVER_MODE_FLIGHT<br/>
@@ -55041,7 +55041,7 @@ namespace GTA.Native
 		_SET_VEHICLE_HOVER_TRANSFORM_ENABLED = 0xF1211889DF15A763,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Disables "wings" for some flying vehicles. Works only for oppressor _2_ and deluxo.<br/>
@@ -55086,7 +55086,7 @@ namespace GTA.Native
 		_FIND_RANDOM_POINT_IN_SPACE = 0x8DC9675797123522,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool deploy, bool p2
+		/// Parameters: Vehicle vehicle, BOOL deploy, BOOL p2
 		/// </summary>
 		/// <remarks>
 		/// Only used with the "akula" and "annihilator2" in the decompiled native scripts.<br/>
@@ -55112,13 +55112,13 @@ namespace GTA.Native
 		_ARE_HELI_STUB_WINGS_DEPLOYED = 0xAEF12960FA943792,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_DIP_STRAIGHT_DOWN_WHEN_CRASHING_PLANE = 0xAA653AE61924B0A0,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, int index, bool toggle
+		/// Parameters: Vehicle vehicle, int index, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Toggles specific flag on turret<br/>
@@ -55177,7 +55177,7 @@ namespace GTA.Native
 		_SET_UNK_FLOAT_FOR_SUBMARINE_VEHICLE_TASK = 0x498218259FB7C72D,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// When set to true, the key to transform a car to submarine mode changes from raise/lower convertible roof (hold H by default) to special vehicle transform (press X by default.)<br/>
@@ -55190,7 +55190,7 @@ namespace GTA.Native
 		_SET_UNK_BOOL_FOR_SUBMARINE_VEHICLE_TASK = 0x41B9FB92EDED32A6,
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Does nothing. It's a nullsub.<br/>
@@ -55199,7 +55199,7 @@ namespace GTA.Native
 		SET_VEHICLE_COMBAT_MODE = 0x36DE109527A2C0C4,
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Does nothing. It's a nullsub.<br/>
@@ -55208,7 +55208,7 @@ namespace GTA.Native
 		SET_VEHICLE_DETONATION_MODE = 0x82E0AC411E41A5B4,
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Does nothing. It's a nullsub.<br/>
@@ -55246,7 +55246,7 @@ namespace GTA.Native
 		_GET_LAST_RAMMED_VEHICLE = 0x04F2FA6E234162F7,
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_DISABLE_VEHICLE_EXPLOSIONS_DAMAGE = 0x143921E45EC44D62,
@@ -55256,7 +55256,7 @@ namespace GTA.Native
 		_SET_DISABLE_VEHICLE_UNK = 0x143921E45EC44D62,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle, float level, float power, float rechargeTime, bool disableSound
+		/// Parameters: Vehicle vehicle, BOOL toggle, float level, float power, float rechargeTime, BOOL disableSound
 		/// </summary>
 		/// <returns>void</returns>
 		SET_OVERRIDE_NITROUS_LEVEL = 0xC8E9B6B71B8E660D,
@@ -55266,7 +55266,7 @@ namespace GTA.Native
 		_SET_VEHICLE_NITRO_ENABLED = 0xC8E9B6B71B8E660D,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_INCREASE_WHEEL_CRUSH_DAMAGE = 0x2970EAA18FD5E42F,
@@ -55276,7 +55276,7 @@ namespace GTA.Native
 		_SET_VEHICLE_WHEELS_DEAL_DAMAGE = 0x2970EAA18FD5E42F,
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Sets some global vehicle related bool<br/>
@@ -55289,7 +55289,7 @@ namespace GTA.Native
 		_SET_DISABLE_VEHICLE_UNK_2 = 0x211E95CE9903940C,
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Changes the car jump control to require a double-tap to activate.<br/>
@@ -55311,7 +55311,7 @@ namespace GTA.Native
 		_GET_DOES_VEHICLE_HAVE_TOMBSTONE = 0x71AFB258CCED3A27,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Disables detachable bumber from domnator4, dominator5, dominator6, see <see href='https://gfycat.com/SecondUnluckyGosling'>https://gfycat.com/SecondUnluckyGosling</see><br/>
@@ -55337,7 +55337,7 @@ namespace GTA.Native
 		_GET_IS_VEHICLE_EMP_DISABLED = 0x0506ED94363AD905,
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_DISABLE_RETRACTING_WEAPON_BLADES = 0x8F0D5BA1C2CC91D7,
@@ -55477,7 +55477,7 @@ namespace GTA.Native
 		SET_AIRCRAFT_IGNORE_HIGHTMAP_OPTIMISATION = 0xF8B49F5BA7F850E7,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool enable
+		/// Parameters: Vehicle vehicle, BOOL enable
 		/// </summary>
 		/// <remarks>
 		/// Lowers the vehicle's stance. Only works for vehicles that have strAdvancedFlags 0x8000 and 0x4000000 set.<br/>
@@ -55490,7 +55490,7 @@ namespace GTA.Native
 		_SET_REDUCE_DRIFT_VEHICLE_SUSPENSION = 0x3A375167F5782A65,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_DRIFT_TYRES = 0x5AC79C98C5C17F05,
@@ -55510,7 +55510,7 @@ namespace GTA.Native
 		_GET_DRIFT_TYRES_ENABLED = 0x2F5A72430E78C8D3,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool toggle
+		/// Parameters: Vehicle vehicle, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Implemented only for trains.<br/>
@@ -55523,7 +55523,7 @@ namespace GTA.Native
 		_NETWORK_USE_HIGH_PRECISION_VEHICLE_BLENDING = 0xEC0C1D4922AF9754,
 
 		/// <summary>
-		/// Parameters: Vehicle vehicle, bool p1
+		/// Parameters: Vehicle vehicle, BOOL p1
 		/// </summary>
 		/// <remarks>
 		/// Only used in R* Script fm_content_cargo<br/>
@@ -55670,7 +55670,7 @@ namespace GTA.Native
 		#region WEAPON
 
 		/// <summary>
-		/// Parameters: bool toggle
+		/// Parameters: BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Enables laser sight on any weapon.<br/>
@@ -55680,13 +55680,13 @@ namespace GTA.Native
 		ENABLE_LASER_SIGHT_RENDERING = 0xC8B46D7727D864AA, // 0xE3438955
 
 		/// <summary>
-		/// Parameters: uint componentHash
+		/// Parameters: Hash componentHash
 		/// </summary>
 		/// <returns>Hash</returns>
 		GET_WEAPON_COMPONENT_TYPE_MODEL = 0x0DB57B41EC1DB083, // 0x324FA47A
 
 		/// <summary>
-		/// Parameters: uint weaponHash
+		/// Parameters: Hash weaponHash
 		/// </summary>
 		/// <remarks>
 		/// Returns the model of any weapon.<br/>
@@ -55697,19 +55697,19 @@ namespace GTA.Native
 		GET_WEAPONTYPE_MODEL = 0xF46CDC33180FDA94, // 0x44E1C269
 
 		/// <summary>
-		/// Parameters: uint weaponHash
+		/// Parameters: Hash weaponHash
 		/// </summary>
 		/// <returns>Hash</returns>
 		GET_WEAPONTYPE_SLOT = 0x4215460B9B8B7FA0, // 0x2E3759AF
 
 		/// <summary>
-		/// Parameters: uint weaponHash
+		/// Parameters: Hash weaponHash
 		/// </summary>
 		/// <returns>Hash</returns>
 		GET_WEAPONTYPE_GROUP = 0xC3287EE3050FB74C, // 0x5F2DE833
 
 		/// <summary>
-		/// Parameters: uint componentHash
+		/// Parameters: Hash componentHash
 		/// </summary>
 		/// <remarks>
 		/// Returns the amount of extra components the specified component has.<br/>
@@ -55723,7 +55723,7 @@ namespace GTA.Native
 		_GET_WEAPON_COMPONENT_VARIANT_EXTRA_COMPONENT_COUNT = 0x6558AC7C17BFEF58,
 
 		/// <summary>
-		/// Parameters: uint componentHash, int extraComponentIndex
+		/// Parameters: Hash componentHash, int extraComponentIndex
 		/// </summary>
 		/// <remarks>
 		/// Returns the model hash of the extra component at specified index.<br/>
@@ -55736,7 +55736,7 @@ namespace GTA.Native
 		_GET_WEAPON_COMPONENT_VARIANT_EXTRA_COMPONENT_MODEL = 0x4D1CB8DC40208A17,
 
 		/// <summary>
-		/// Parameters: Ped ped, uint weaponHash, bool bForceInHand
+		/// Parameters: Ped ped, Hash weaponHash, BOOL bForceInHand
 		/// </summary>
 		/// <remarks>
 		/// Full list of weapons by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json</see><br/>
@@ -55745,7 +55745,7 @@ namespace GTA.Native
 		SET_CURRENT_PED_WEAPON = 0xADF692B254977C0C, // 0xB8278882
 
 		/// <summary>
-		/// Parameters: Ped ped, Hash* weaponHash, bool p2
+		/// Parameters: Ped ped, Hash* weaponHash, BOOL p2
 		/// </summary>
 		/// <remarks>
 		/// The return value seems to indicate returns true if the hash of the weapon object weapon equals the weapon hash.<br/>
@@ -55757,13 +55757,13 @@ namespace GTA.Native
 		GET_CURRENT_PED_WEAPON = 0x3A87E44BB9A01D54, // 0xB0237302
 
 		/// <summary>
-		/// Parameters: Ped ped, IntPtr p1
+		/// Parameters: Ped ped, Any p1
 		/// </summary>
 		/// <returns>Entity</returns>
 		GET_CURRENT_PED_WEAPON_ENTITY_INDEX = 0x3B390A939AF0B5FC, // 0x5D73CD20
 
 		/// <summary>
-		/// Parameters: Ped ped, bool p1
+		/// Parameters: Ped ped, BOOL p1
 		/// </summary>
 		/// <remarks>
 		/// p1 is always 0 in the scripts.<br/>
@@ -55772,7 +55772,7 @@ namespace GTA.Native
 		GET_BEST_PED_WEAPON = 0x8483E98E8B888AE2, // 0xB998D444
 
 		/// <summary>
-		/// Parameters: Ped ped, uint weaponHash
+		/// Parameters: Ped ped, Hash weaponHash
 		/// </summary>
 		/// <remarks>
 		/// Full list of weapons by DurtyFree (Search for VEHICLE_*): <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json</see><br/>
@@ -55827,7 +55827,7 @@ namespace GTA.Native
 		IS_PED_ARMED = 0x475768A975D5AD17, // 0x0BFC892C
 
 		/// <summary>
-		/// Parameters: uint weaponHash
+		/// Parameters: Hash weaponHash
 		/// </summary>
 		/// <remarks>
 		/// Full list of weapons by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json</see><br/>
@@ -55836,7 +55836,7 @@ namespace GTA.Native
 		IS_WEAPON_VALID = 0x937C71165CF334B3, // 0x38CA2954
 
 		/// <summary>
-		/// Parameters: Ped ped, uint weaponHash, bool p2
+		/// Parameters: Ped ped, Hash weaponHash, BOOL p2
 		/// </summary>
 		/// <remarks>
 		/// p2 should be FALSE, otherwise it seems to always return FALSE<br/>
@@ -55853,13 +55853,13 @@ namespace GTA.Native
 		IS_PED_WEAPON_READY_TO_SHOOT = 0xB80CA294F2F26749, // 0x02A32CB0
 
 		/// <summary>
-		/// Parameters: Ped ped, uint weaponSlot
+		/// Parameters: Ped ped, Hash weaponSlot
 		/// </summary>
 		/// <returns>Hash</returns>
 		GET_PED_WEAPONTYPE_IN_SLOT = 0xEFFED78E9011134D, // 0x9BC64E16
 
 		/// <summary>
-		/// Parameters: Ped ped, uint weaponhash
+		/// Parameters: Ped ped, Hash weaponhash
 		/// </summary>
 		/// <remarks>
 		/// WEAPON::GET_AMMO_IN_PED_WEAPON(PLAYER::PLAYER_PED_ID(), a_0)<br/>
@@ -55873,7 +55873,7 @@ namespace GTA.Native
 		GET_AMMO_IN_PED_WEAPON = 0x015A522136D7F951, // 0x0C755733
 
 		/// <summary>
-		/// Parameters: Ped ped, uint weaponHash, int ammo
+		/// Parameters: Ped ped, Hash weaponHash, int ammo
 		/// </summary>
 		/// <remarks>
 		/// Full list of weapons by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json</see><br/>
@@ -55882,7 +55882,7 @@ namespace GTA.Native
 		ADD_AMMO_TO_PED = 0x78F0424C34306220, // 0x7F0580C7
 
 		/// <summary>
-		/// Parameters: Ped ped, uint weaponHash, int ammo, bool p3
+		/// Parameters: Ped ped, Hash weaponHash, int ammo, BOOL p3
 		/// </summary>
 		/// <remarks>
 		/// Full list of weapons by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json</see><br/>
@@ -55891,7 +55891,7 @@ namespace GTA.Native
 		SET_PED_AMMO = 0x14E56BC5B5DB6A19, // 0xBF90DF1A
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle, uint weaponHash
+		/// Parameters: Ped ped, BOOL toggle, Hash weaponHash
 		/// </summary>
 		/// <remarks>
 		/// Full list of weapons by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json</see><br/>
@@ -55900,19 +55900,19 @@ namespace GTA.Native
 		SET_PED_INFINITE_AMMO = 0x3EDCB0505123623B, // 0x9CB8D278
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_INFINITE_AMMO_CLIP = 0x183DADC6AA953186, // 0x5A5E3B67
 
 		/// <summary>
-		/// Parameters: IntPtr p0, IntPtr p1
+		/// Parameters: Any p0, Any p1
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_STUN_GUN_FINITE_AMMO = 0x24C024BA8379A70A,
 
 		/// <summary>
-		/// Parameters: Ped ped, uint weaponHash, int ammoCount, bool isHidden, bool bForceInHand
+		/// Parameters: Ped ped, Hash weaponHash, int ammoCount, BOOL isHidden, BOOL bForceInHand
 		/// </summary>
 		/// <remarks>
 		/// Full list of weapons by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json</see><br/>
@@ -55921,7 +55921,7 @@ namespace GTA.Native
 		GIVE_WEAPON_TO_PED = 0xBF0FD6E56C964FCB, // 0xC4D88A85
 
 		/// <summary>
-		/// Parameters: Ped ped, uint weaponHash, int ammoCount, bool bForceInHand
+		/// Parameters: Ped ped, Hash weaponHash, int ammoCount, BOOL bForceInHand
 		/// </summary>
 		/// <remarks>
 		/// Gives a weapon to PED with a delay, example:<br/>
@@ -55932,7 +55932,7 @@ namespace GTA.Native
 		GIVE_DELAYED_WEAPON_TO_PED = 0xB282DC6EBD803C75, // 0x5868D20D
 
 		/// <summary>
-		/// Parameters: Ped ped, bool p1
+		/// Parameters: Ped ped, BOOL p1
 		/// </summary>
 		/// <remarks>
 		/// setting the last params to false it does that same so I would suggest its not a toggle<br/>
@@ -55941,7 +55941,7 @@ namespace GTA.Native
 		REMOVE_ALL_PED_WEAPONS = 0xF25DF915FA38C5F3, // 0xA44CE817
 
 		/// <summary>
-		/// Parameters: Ped ped, uint weaponHash
+		/// Parameters: Ped ped, Hash weaponHash
 		/// </summary>
 		/// <remarks>
 		/// This native removes a specified weapon from your selected ped.<br/>
@@ -55957,7 +55957,7 @@ namespace GTA.Native
 		REMOVE_WEAPON_FROM_PED = 0x4899CB088EDF59B8, // 0x9C37F220
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Hides the players weapon during a cutscene.<br/>
@@ -55966,7 +55966,7 @@ namespace GTA.Native
 		HIDE_PED_WEAPON_FOR_SCRIPTED_CUTSCENE = 0x6F6981D2253C208F, // 0x00CFD6E9
 
 		/// <summary>
-		/// Parameters: Ped ped, bool visible, bool deselectWeapon, bool p3, bool p4
+		/// Parameters: Ped ped, BOOL visible, BOOL deselectWeapon, BOOL p3, BOOL p4
 		/// </summary>
 		/// <remarks>
 		/// Has 5 parameters since latest patches.<br/>
@@ -55975,13 +55975,13 @@ namespace GTA.Native
 		SET_PED_CURRENT_WEAPON_VISIBLE = 0x0725A4CCFDED9A70, // 0x00BECD77
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PED_DROPS_WEAPONS_WHEN_DEAD = 0x476AE72C1D19D1A8, // 0x8A444056
 
 		/// <summary>
-		/// Parameters: Ped ped, uint weaponHash, int weaponType
+		/// Parameters: Ped ped, Hash weaponHash, int weaponType
 		/// </summary>
 		/// <remarks>
 		/// It determines what weapons caused damage:<br/>
@@ -56003,7 +56003,7 @@ namespace GTA.Native
 		CLEAR_PED_LAST_WEAPON_DAMAGE = 0x0E98F88A24C5F4B8, // 0x52C68832
 
 		/// <summary>
-		/// Parameters: Entity entity, uint weaponHash, int weaponType
+		/// Parameters: Entity entity, Hash weaponHash, int weaponType
 		/// </summary>
 		/// <remarks>
 		/// It determines what weapons caused damage:<br/>
@@ -56028,7 +56028,7 @@ namespace GTA.Native
 		SET_PED_DROPS_WEAPON = 0x6B7513D9966FBEC0, // 0x3D3329FA
 
 		/// <summary>
-		/// Parameters: Ped ped, uint weaponHash, float xOffset, float yOffset, float zOffset, int ammoCount
+		/// Parameters: Ped ped, Hash weaponHash, float xOffset, float yOffset, float zOffset, int ammoCount
 		/// </summary>
 		/// <remarks>
 		/// Full list of weapons by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json</see><br/>
@@ -56037,7 +56037,7 @@ namespace GTA.Native
 		SET_PED_DROPS_INVENTORY_WEAPON = 0x208A1888007FC0E6, // 0x81FFB874
 
 		/// <summary>
-		/// Parameters: Ped ped, uint weaponHash, bool p2
+		/// Parameters: Ped ped, Hash weaponHash, BOOL p2
 		/// </summary>
 		/// <remarks>
 		/// p2 is mostly 1 in the scripts.<br/>
@@ -56047,7 +56047,7 @@ namespace GTA.Native
 		GET_MAX_AMMO_IN_CLIP = 0xA38DCFFCEA8962FA, // 0x6961E2A4
 
 		/// <summary>
-		/// Parameters: Ped ped, uint weaponHash, int* ammo
+		/// Parameters: Ped ped, Hash weaponHash, int* ammo
 		/// </summary>
 		/// <remarks>
 		/// Full list of weapons by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json</see><br/>
@@ -56056,7 +56056,7 @@ namespace GTA.Native
 		GET_AMMO_IN_CLIP = 0x2E1202248937775C, // 0x73C100C3
 
 		/// <summary>
-		/// Parameters: Ped ped, uint weaponHash, int ammo
+		/// Parameters: Ped ped, Hash weaponHash, int ammo
 		/// </summary>
 		/// <remarks>
 		/// Full list of weapons by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json</see><br/>
@@ -56065,7 +56065,7 @@ namespace GTA.Native
 		SET_AMMO_IN_CLIP = 0xDCD2A934D65CB497, // 0xA54B0B10
 
 		/// <summary>
-		/// Parameters: Ped ped, uint weaponHash, int* ammo
+		/// Parameters: Ped ped, Hash weaponHash, int* ammo
 		/// </summary>
 		/// <remarks>
 		/// Full list of weapons by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json</see><br/>
@@ -56074,7 +56074,7 @@ namespace GTA.Native
 		GET_MAX_AMMO = 0xDC16122C7A20C933, // 0x0B294796
 
 		/// <summary>
-		/// Parameters: Ped ped, uint ammoTypeHash, int* ammo
+		/// Parameters: Ped ped, Hash ammoTypeHash, int* ammo
 		/// </summary>
 		/// <remarks>
 		/// Returns the max ammo for an ammo type. Ammo types: <see href='https://gist.github.com/root-cause/faf41f59f7a6d818b7db0b839bd147c1'>https://gist.github.com/root-cause/faf41f59f7a6d818b7db0b839bd147c1</see><br/>
@@ -56091,7 +56091,7 @@ namespace GTA.Native
 		_GET_MAX_AMMO_BY_TYPE = 0x585847C5E4E11709,
 
 		/// <summary>
-		/// Parameters: Ped ped, uint ammoTypeHash, int ammo
+		/// Parameters: Ped ped, Hash ammoTypeHash, int ammo
 		/// </summary>
 		/// <remarks>
 		/// Ammo types: <see href='https://gist.github.com/root-cause/faf41f59f7a6d818b7db0b839bd147c1'>https://gist.github.com/root-cause/faf41f59f7a6d818b7db0b839bd147c1</see><br/>
@@ -56108,7 +56108,7 @@ namespace GTA.Native
 		_ADD_AMMO_TO_PED_BY_TYPE = 0x2472622CE1F2D45F,
 
 		/// <summary>
-		/// Parameters: Ped ped, uint ammoTypeHash, int ammo
+		/// Parameters: Ped ped, Hash ammoTypeHash, int ammo
 		/// </summary>
 		/// <remarks>
 		/// Ammo types: <see href='https://gist.github.com/root-cause/faf41f59f7a6d818b7db0b839bd147c1'>https://gist.github.com/root-cause/faf41f59f7a6d818b7db0b839bd147c1</see><br/>
@@ -56117,7 +56117,7 @@ namespace GTA.Native
 		SET_PED_AMMO_BY_TYPE = 0x5FD1E1F011E76D7E, // 0x311C52BB
 
 		/// <summary>
-		/// Parameters: Ped ped, uint ammoTypeHash
+		/// Parameters: Ped ped, Hash ammoTypeHash
 		/// </summary>
 		/// <returns>int</returns>
 		GET_PED_AMMO_BY_TYPE = 0x39D22031557946C1, // 0x54077C4D
@@ -56135,7 +56135,7 @@ namespace GTA.Native
 		SET_PICKUP_AMMO_AMOUNT_SCALER = 0xE620FD3512A04F18, // 0xD6460EA2
 
 		/// <summary>
-		/// Parameters: Ped ped, uint weaponHash
+		/// Parameters: Ped ped, Hash weaponHash
 		/// </summary>
 		/// <remarks>
 		/// Returns the current ammo type of the specified ped's specified weapon.<br/>
@@ -56151,7 +56151,7 @@ namespace GTA.Native
 		_GET_PED_AMMO_TYPE = 0x7FEAD38B326B9F74, // 0x09337863
 
 		/// <summary>
-		/// Parameters: Ped ped, uint weaponHash
+		/// Parameters: Ped ped, Hash weaponHash
 		/// </summary>
 		/// <remarks>
 		/// Returns the base/default ammo type of the specified ped's specified weapon.<br/>
@@ -56177,7 +56177,7 @@ namespace GTA.Native
 		GET_PED_LAST_WEAPON_IMPACT_COORD = 0x6C4D0409BA1A2BC2, // 0x9B266079
 
 		/// <summary>
-		/// Parameters: Ped ped, uint gadgetHash, bool p2
+		/// Parameters: Ped ped, Hash gadgetHash, BOOL p2
 		/// </summary>
 		/// <remarks>
 		/// p1/gadgetHash was always 0xFBAB5776 ("GADGET_PARACHUTE").<br/>
@@ -56187,7 +56187,7 @@ namespace GTA.Native
 		SET_PED_GADGET = 0xD0D7B1E680ED4A1A, // 0x8A256D0A
 
 		/// <summary>
-		/// Parameters: Ped ped, uint gadgetHash
+		/// Parameters: Ped ped, Hash gadgetHash
 		/// </summary>
 		/// <remarks>
 		/// gadgetHash - was always 0xFBAB5776 ("GADGET_PARACHUTE").<br/>
@@ -56214,7 +56214,7 @@ namespace GTA.Native
 		GET_SELECTED_PED_WEAPON = 0x0A6DB4965674D243, // 0xD240123E
 
 		/// <summary>
-		/// Parameters: Ped ped, uint weaponHash, bool p2
+		/// Parameters: Ped ped, Hash weaponHash, BOOL p2
 		/// </summary>
 		/// <remarks>
 		///              WEAPON::EXPLODE_PROJECTILES(PLAYER::PLAYER_PED_ID(), func_221(0x00000003), 0x00000001);<br/>
@@ -56223,7 +56223,7 @@ namespace GTA.Native
 		EXPLODE_PROJECTILES = 0xFC4BD125DE7611E4, // 0x35A0B955
 
 		/// <summary>
-		/// Parameters: uint weaponHash, bool explode
+		/// Parameters: Hash weaponHash, BOOL explode
 		/// </summary>
 		/// <remarks>
 		/// If `explode` true, then removal is done through exploding the projectile. Basically the same as EXPLODE_PROJECTILES but without defining the owner ped.<br/>
@@ -56248,7 +56248,7 @@ namespace GTA.Native
 		GET_MAX_RANGE_OF_CURRENT_PED_WEAPON = 0x814C9D19DFD69679, // 0xB2B2BBAA
 
 		/// <summary>
-		/// Parameters: Ped driver, Vehicle vehicle, uint weaponHash, IntPtr p3
+		/// Parameters: Ped driver, Vehicle vehicle, Hash weaponHash, Any p3
 		/// </summary>
 		/// <remarks>
 		/// Fourth Parameter = unsure, almost always -1<br/>
@@ -56257,7 +56257,7 @@ namespace GTA.Native
 		HAS_VEHICLE_GOT_PROJECTILE_ATTACHED = 0x717C8481234E3B88, // 0xA57E2E80
 
 		/// <summary>
-		/// Parameters: Ped ped, uint weaponHash, uint componentHash
+		/// Parameters: Ped ped, Hash weaponHash, Hash componentHash
 		/// </summary>
 		/// <remarks>
 		/// Full list of weapons &#38; components by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json</see><br/>
@@ -56266,7 +56266,7 @@ namespace GTA.Native
 		GIVE_WEAPON_COMPONENT_TO_PED = 0xD966D51AA5B28BB9, // 0x3E1E286D
 
 		/// <summary>
-		/// Parameters: Ped ped, uint weaponHash, uint componentHash
+		/// Parameters: Ped ped, Hash weaponHash, Hash componentHash
 		/// </summary>
 		/// <remarks>
 		/// Full list of weapons &#38; components by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json</see><br/>
@@ -56275,7 +56275,7 @@ namespace GTA.Native
 		REMOVE_WEAPON_COMPONENT_FROM_PED = 0x1E8BE90C74FB4C09, // 0x412AA00D
 
 		/// <summary>
-		/// Parameters: Ped ped, uint weaponHash, uint componentHash
+		/// Parameters: Ped ped, Hash weaponHash, Hash componentHash
 		/// </summary>
 		/// <remarks>
 		/// Full list of weapons &#38; components by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json</see><br/>
@@ -56284,7 +56284,7 @@ namespace GTA.Native
 		HAS_PED_GOT_WEAPON_COMPONENT = 0xC593212475FAE340, // 0xDC0FC145
 
 		/// <summary>
-		/// Parameters: Ped ped, uint weaponHash, uint componentHash
+		/// Parameters: Ped ped, Hash weaponHash, Hash componentHash
 		/// </summary>
 		/// <remarks>
 		/// Full list of weapons &#38; components by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json</see><br/>
@@ -56312,7 +56312,7 @@ namespace GTA.Native
 		MAKE_PED_RELOAD = 0x20AE33F3AC9C0033, // 0x515292C2
 
 		/// <summary>
-		/// Parameters: uint weaponHash, int p1, int p2
+		/// Parameters: Hash weaponHash, int p1, int p2
 		/// </summary>
 		/// <remarks>
 		/// Nearly every instance of p1 I found was 31. Nearly every instance of p2 I found was 0.<br/>
@@ -56322,19 +56322,19 @@ namespace GTA.Native
 		REQUEST_WEAPON_ASSET = 0x5443438F033E29C3, // 0x65D139A5
 
 		/// <summary>
-		/// Parameters: uint weaponHash
+		/// Parameters: Hash weaponHash
 		/// </summary>
 		/// <returns>BOOL</returns>
 		HAS_WEAPON_ASSET_LOADED = 0x36E353271F0E90EE, // 0x1891D5BB
 
 		/// <summary>
-		/// Parameters: uint weaponHash
+		/// Parameters: Hash weaponHash
 		/// </summary>
 		/// <returns>void</returns>
 		REMOVE_WEAPON_ASSET = 0xAA08EF13F341C8FC, // 0x2C0DFE3C
 
 		/// <summary>
-		/// Parameters: uint weaponHash, int ammoCount, float x, float y, float z, bool showWorldModel, float scale, IntPtr p7, IntPtr p8, IntPtr p9
+		/// Parameters: Hash weaponHash, int ammoCount, float x, float y, float z, BOOL showWorldModel, float scale, Any p7, Any p8, Any p9
 		/// </summary>
 		/// <remarks>
 		/// Now has 8 params.<br/>
@@ -56343,7 +56343,7 @@ namespace GTA.Native
 		CREATE_WEAPON_OBJECT = 0x9541D3CF0D398F36, // 0x62F5987F
 
 		/// <summary>
-		/// Parameters: Object weaponObject, uint componentHash
+		/// Parameters: Object weaponObject, Hash componentHash
 		/// </summary>
 		/// <remarks>
 		/// componentHash:<br/>
@@ -56354,7 +56354,7 @@ namespace GTA.Native
 		GIVE_WEAPON_COMPONENT_TO_WEAPON_OBJECT = 0x33E179436C0B31DB, // 0xF7612A37
 
 		/// <summary>
-		/// Parameters: Object object, uint componentHash
+		/// Parameters: Object @object, Hash componentHash
 		/// </summary>
 		/// <remarks>
 		/// see DOES_WEAPON_TAKE_WEAPON_COMPONENT for full list of weapons &#38; components<br/>
@@ -56363,7 +56363,7 @@ namespace GTA.Native
 		REMOVE_WEAPON_COMPONENT_FROM_WEAPON_OBJECT = 0xF7D82B0D66777611, // 0xA6E7ED3C
 
 		/// <summary>
-		/// Parameters: Object weapon, uint componentHash
+		/// Parameters: Object weapon, Hash componentHash
 		/// </summary>
 		/// <remarks>
 		/// see DOES_WEAPON_TAKE_WEAPON_COMPONENT for full list of weapons &#38; components<br/>
@@ -56378,7 +56378,7 @@ namespace GTA.Native
 		GIVE_WEAPON_OBJECT_TO_PED = 0xB1FA61371AF7C4B7, // 0x639AF3EF
 
 		/// <summary>
-		/// Parameters: uint weaponHash, uint componentHash
+		/// Parameters: Hash weaponHash, Hash componentHash
 		/// </summary>
 		/// <remarks>
 		/// Full list of weapons &#38; components by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json</see><br/>
@@ -56387,7 +56387,7 @@ namespace GTA.Native
 		DOES_WEAPON_TAKE_WEAPON_COMPONENT = 0x5CEE3DF569CECAB0, // 0xB1817BAA
 
 		/// <summary>
-		/// Parameters: Ped ped, bool p1
+		/// Parameters: Ped ped, BOOL p1
 		/// </summary>
 		/// <remarks>
 		/// Drops the current weapon and returns the object<br/>
@@ -56397,7 +56397,7 @@ namespace GTA.Native
 		GET_WEAPON_OBJECT_FROM_PED = 0xCAE1DC9A0E22A16D, // 0xDF939A38
 
 		/// <summary>
-		/// Parameters: Ped ped, uint loadoutHash
+		/// Parameters: Ped ped, Hash loadoutHash
 		/// </summary>
 		/// <remarks>
 		/// Gives the specified loadout to the specified ped. <br/>
@@ -56411,7 +56411,7 @@ namespace GTA.Native
 		_GIVE_LOADOUT_TO_PED = 0x68F8BE6AF5CDF8A6,
 
 		/// <summary>
-		/// Parameters: Ped ped, uint weaponHash, int tintIndex
+		/// Parameters: Ped ped, Hash weaponHash, int tintIndex
 		/// </summary>
 		/// <remarks>
 		/// tintIndex can be the following:<br/>
@@ -56429,7 +56429,7 @@ namespace GTA.Native
 		SET_PED_WEAPON_TINT_INDEX = 0x50969B9B89ED5738, // 0xEB2A7B23
 
 		/// <summary>
-		/// Parameters: Ped ped, uint weaponHash
+		/// Parameters: Ped ped, Hash weaponHash
 		/// </summary>
 		/// <remarks>
 		/// Full list of weapons, components &#38; tint indexes by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json</see><br/>
@@ -56453,7 +56453,7 @@ namespace GTA.Native
 		GET_WEAPON_OBJECT_TINT_INDEX = 0xCD183314F7CD2E57, // 0xD91D9576
 
 		/// <summary>
-		/// Parameters: uint weaponHash
+		/// Parameters: Hash weaponHash
 		/// </summary>
 		/// <remarks>
 		/// Full list of weapons by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json</see><br/>
@@ -56462,7 +56462,7 @@ namespace GTA.Native
 		GET_WEAPON_TINT_COUNT = 0x5DCF6C5CAB2E9BF7, // 0x99E4EAAB
 
 		/// <summary>
-		/// Parameters: Ped ped, uint weaponHash, uint camoComponentHash, int colorIndex
+		/// Parameters: Ped ped, Hash weaponHash, Hash camoComponentHash, int colorIndex
 		/// </summary>
 		/// <remarks>
 		/// Colors:<br/>
@@ -56508,7 +56508,7 @@ namespace GTA.Native
 		_SET_PED_WEAPON_LIVERY_COLOR = 0x9FE5633880ECD8ED,
 
 		/// <summary>
-		/// Parameters: Ped ped, uint weaponHash, uint camoComponentHash
+		/// Parameters: Ped ped, Hash weaponHash, Hash camoComponentHash
 		/// </summary>
 		/// <remarks>
 		/// Returns -1 if camoComponentHash is invalid/not attached to the weapon.<br/>
@@ -56522,7 +56522,7 @@ namespace GTA.Native
 		_GET_PED_WEAPON_LIVERY_COLOR = 0xF0A60040BE558F2D,
 
 		/// <summary>
-		/// Parameters: Object weaponObject, uint camoComponentHash, int colorIndex
+		/// Parameters: Object weaponObject, Hash camoComponentHash, int colorIndex
 		/// </summary>
 		/// <remarks>
 		/// Colors:<br/>
@@ -56568,7 +56568,7 @@ namespace GTA.Native
 		_SET_WEAPON_OBJECT_LIVERY_COLOR = 0x5DA825A85D0EA6E6,
 
 		/// <summary>
-		/// Parameters: Object weaponObject, uint camoComponentHash
+		/// Parameters: Object weaponObject, Hash camoComponentHash
 		/// </summary>
 		/// <remarks>
 		/// Returns -1 if camoComponentHash is invalid/not attached to the weapon object.<br/>
@@ -56582,7 +56582,7 @@ namespace GTA.Native
 		_GET_WEAPON_OBJECT_LIVERY_COLOR = 0xB3EA4FEABF41464B,
 
 		/// <summary>
-		/// Parameters: Ped ped, uint weaponHash
+		/// Parameters: Ped ped, Hash weaponHash
 		/// </summary>
 		/// <returns>int</returns>
 		GET_PED_WEAPON_CAMO_INDEX = 0xA2C9AC24B4061285,
@@ -56594,7 +56594,7 @@ namespace GTA.Native
 		SET_WEAPON_OBJECT_CAMO_INDEX = 0x977CA98939E82E4B,
 
 		/// <summary>
-		/// Parameters: uint weaponHash, IntPtr outData
+		/// Parameters: Hash weaponHash, Any* outData
 		/// </summary>
 		/// <remarks>
 		/// struct WeaponHudStatsData<br/>
@@ -56621,13 +56621,13 @@ namespace GTA.Native
 		GET_WEAPON_HUD_STATS = 0xD92C739EE34C9EBA, // 0xA9AD3D98
 
 		/// <summary>
-		/// Parameters: uint componentHash, IntPtr outData
+		/// Parameters: Hash componentHash, Any* outData
 		/// </summary>
 		/// <returns>BOOL</returns>
 		GET_WEAPON_COMPONENT_HUD_STATS = 0xB3CAF387AE12E9F8, // 0xBB5498F4
 
 		/// <summary>
-		/// Parameters: uint weaponHash, uint componentHash
+		/// Parameters: Hash weaponHash, Hash componentHash
 		/// </summary>
 		/// <remarks>
 		/// This native does not return damages of weapons from the melee and explosive group.<br/>
@@ -56641,7 +56641,7 @@ namespace GTA.Native
 		_GET_WEAPON_DAMAGE = 0x3133B907D8B32053, // 0xE81649C0
 
 		/// <summary>
-		/// Parameters: uint weaponHash
+		/// Parameters: Hash weaponHash
 		/// </summary>
 		/// <remarks>
 		/// // Returns the size of the default weapon component clip.<br/>
@@ -56663,7 +56663,7 @@ namespace GTA.Native
 		GET_WEAPON_CLIP_SIZE = 0x583BE370B1EC6EB4, // 0x8D515E66
 
 		/// <summary>
-		/// Parameters: uint weaponHash
+		/// Parameters: Hash weaponHash
 		/// </summary>
 		/// <remarks>
 		/// Full list of weapons by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json</see><br/>
@@ -56697,7 +56697,7 @@ namespace GTA.Native
 		REQUEST_WEAPON_HIGH_DETAIL_MODEL = 0x48164DBB970AC3F0, // 0xE3BD00F9
 
 		/// <summary>
-		/// Parameters: uint weaponHash, float damageMultiplier
+		/// Parameters: Hash weaponHash, float damageMultiplier
 		/// </summary>
 		/// <remarks>
 		/// Changes the weapon damage output by the given multiplier value. Must be run every frame.<br/>
@@ -56715,7 +56715,7 @@ namespace GTA.Native
 		_SET_WEAPON_DAMAGE_MODIFIER_THIS_FRAME = 0x4757F00BC6323CFE,
 
 		/// <summary>
-		/// Parameters: uint weaponHash, float multiplier
+		/// Parameters: Hash weaponHash, float multiplier
 		/// </summary>
 		/// <returns>void</returns>
 		SET_WEAPON_AOE_MODIFIER = 0x4AE5AC8B852D642C,
@@ -56725,7 +56725,7 @@ namespace GTA.Native
 		_SET_WEAPON_EXPLOSION_RADIUS_MULTIPLIER = 0x4AE5AC8B852D642C,
 
 		/// <summary>
-		/// Parameters: uint p0, float p1
+		/// Parameters: Hash p0, float p1
 		/// </summary>
 		/// <remarks>
 		/// ex, WEAPON::SET_WEAPON_EFFECT_DURATION_MODIFIER(joaat("vehicle_weapon_mine_slick"), 1.0);<br/>
@@ -56760,7 +56760,7 @@ namespace GTA.Native
 		SET_FLASH_LIGHT_FADE_DISTANCE = 0xCEA66DAD478CD39B, // 0xB0127EA7
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Enables/disables flashlight on ped's weapon.<br/>
@@ -56773,7 +56773,7 @@ namespace GTA.Native
 		_SET_FLASH_LIGHT_ENABLED = 0x988DB6FE9B3AC000,
 
 		/// <summary>
-		/// Parameters: Ped ped, uint animStyle
+		/// Parameters: Ped ped, Hash animStyle
 		/// </summary>
 		/// <remarks>
 		/// Changes the selected ped aiming animation style. <br/>
@@ -56814,7 +56814,7 @@ namespace GTA.Native
 		SET_WEAPON_ANIMATION_OVERRIDE = 0x1055AC3A667F09D9, // 0xA5DF7484
 
 		/// <summary>
-		/// Parameters: uint weaponHash
+		/// Parameters: Hash weaponHash
 		/// </summary>
 		/// <remarks>
 		/// enum class eDamageType<br/>
@@ -56848,7 +56848,7 @@ namespace GTA.Native
 		SET_EQIPPED_WEAPON_START_SPINNING_AT_FULL_SPEED = 0xE4DCEC7FD5B739A5, // 0x64646F1D
 
 		/// <summary>
-		/// Parameters: uint weaponHash
+		/// Parameters: Hash weaponHash
 		/// </summary>
 		/// <remarks>
 		/// this returns if you can use the weapon while using a parachute<br/>
@@ -56858,7 +56858,7 @@ namespace GTA.Native
 		CAN_USE_WEAPON_ON_PARACHUTE = 0xBC7BE5ABC0879F74, // 0x135E7AD4
 
 		/// <summary>
-		/// Parameters: float x, float y, float z, float radius, float p4, float p5, float p6, uint weaponHash
+		/// Parameters: float x, float y, float z, float radius, float p4, float p5, float p6, Hash weaponHash
 		/// </summary>
 		/// <remarks>
 		/// Both coordinates are from objects in the decompiled scripts. Native related to 0xECDC202B25E5CF48 p1 value. The only weapon hash used in the decompiled scripts is weapon_air_defence_gun. These two natives are used by the yacht script, decompiled scripts suggest it and the weapon hash used (valkyrie's rockets) are also used by yachts.<br/>
@@ -56871,7 +56871,7 @@ namespace GTA.Native
 		_CREATE_AIR_DEFENSE_SPHERE = 0x91EF34584710BE99,
 
 		/// <summary>
-		/// Parameters: float p0, float p1, float p2, float p3, float p4, float p5, float p6, float p7, float p8, float radius, uint weaponHash
+		/// Parameters: float p0, float p1, float p2, float p3, float p4, float p5, float p6, float p7, float p8, float radius, Hash weaponHash
 		/// </summary>
 		/// <remarks>
 		/// Full list of weapons by DurtyFree: <see href='https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json'>https://github.com/DurtyFree/gta-v-data-dumps/blob/master/weapons.json</see><br/>
@@ -56901,7 +56901,7 @@ namespace GTA.Native
 		_REMOVE_ALL_AIR_DEFENSE_ZONES = 0x1E45B34ADEBEE48E,
 
 		/// <summary>
-		/// Parameters: Player player, int zoneId, bool enable
+		/// Parameters: Player player, int zoneId, BOOL enable
 		/// </summary>
 		/// <returns>void</returns>
 		SET_PLAYER_TARGETTABLE_FOR_AIR_DEFENCE_SPHERE = 0xECDC202B25E5CF48,
@@ -56945,7 +56945,7 @@ namespace GTA.Native
 		_DOES_AIR_DEFENSE_ZONE_EXIST = 0xCD79A550999D7D4F,
 
 		/// <summary>
-		/// Parameters: Ped ped, uint weaponHash, bool toggle
+		/// Parameters: Ped ped, Hash weaponHash, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Disables selecting the given weapon. Ped isn't forced to put the gun away. However you can't reselect the weapon if you holster then unholster. Weapon is also grayed out on the weapon wheel.<br/>
@@ -56963,7 +56963,7 @@ namespace GTA.Native
 		_SET_CAN_PED_EQUIP_WEAPON = 0xB4771B9AAF4E68E4,
 
 		/// <summary>
-		/// Parameters: Ped ped, bool toggle
+		/// Parameters: Ped ped, BOOL toggle
 		/// </summary>
 		/// <remarks>
 		/// Disable all weapons. Does the same as 0xB4771B9AAF4E68E4 except for all weapons.<br/>
@@ -56986,7 +56986,7 @@ namespace GTA.Native
 		GET_ZONE_AT_COORDS = 0x27040C25DE6CB2F4, // 0xC9018181
 
 		/// <summary>
-		/// Parameters: string zoneName
+		/// Parameters: const char* zoneName
 		/// </summary>
 		/// <remarks>
 		/// 'zoneName' corresponds to an entry in 'popzone.ipl'.<br/>
@@ -57189,7 +57189,7 @@ namespace GTA.Native
 		GET_NAME_OF_ZONE = 0xCD90657D4C30E1CA, // 0x7875CE91
 
 		/// <summary>
-		/// Parameters: int zoneId, bool toggle
+		/// Parameters: int zoneId, BOOL toggle
 		/// </summary>
 		/// <returns>void</returns>
 		SET_ZONE_ENABLED = 0xBA5ECEEA120E5611, // 0x04E21B03
@@ -57204,7 +57204,7 @@ namespace GTA.Native
 		GET_ZONE_SCUMMINESS = 0x5F7B268D15BA0739, // 0xB2FB5C4C
 
 		/// <summary>
-		/// Parameters: int scheduleId, uint vehicleHash
+		/// Parameters: int scheduleId, Hash vehicleHash
 		/// </summary>
 		/// <remarks>
 		/// Only used once in the decompiled scripts. Seems to be related to scripted vehicle generators.<br/>
