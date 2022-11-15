@@ -1,7 +1,7 @@
 # SHVDN-NativeGen
 Source generator for [ScriptHookVDotNet](https://github.com/crosire/scripthookvdotnet)
 
-This program generates C# source file **NativeHashes.cs** and for [ScriptHookVDotNet](https://github.com/crosire/scripthookvdotnet) with parameters, return type and comments,
+This program generates C# source file **NativeHashes.cs** and **NativeInvoker.cs** for [ScriptHookVDotNet](https://github.com/crosire/scripthookvdotnet) with parameters, return type and comments,
 using data from [alloc8or's nativedb](https://github.com/alloc8or/gta5-nativedb-data/).
 Pre-generated file can be found in the main folder, along with source code.
 
