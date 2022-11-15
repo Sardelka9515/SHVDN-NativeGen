@@ -6,10 +6,16 @@
     <TargetFramework>net6.0</TargetFramework>
     <RootNamespace>SHVDN_NativeGen</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="NativeInvoker.cs~RF5643669.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="ScriptHookVDotNet3" Version="3.5.1" />
   </ItemGroup>
 
 </Project>
