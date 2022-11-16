@@ -47759,7 +47759,7 @@ namespace GTA.Native
 		WAYPOINT_PLAYBACK_START_AIMING_AT_COORD = 0x8968400D900ED8B3, // 0xF120A34E
 
 		/// <summary>
-		/// Parameters: Entity entity, Entity entity, BOOL p2, BOOL p3
+		/// Parameters: Entity entity, Entity entityi, BOOL p2, BOOL p3
 		/// </summary>
 		/// <returns>void</returns>
 		WAYPOINT_PLAYBACK_START_SHOOTING_AT_PED = 0xE70BA7B90F8390DC, // 0xBD5F0EB8

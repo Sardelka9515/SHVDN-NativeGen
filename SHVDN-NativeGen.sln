@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SHVDN-NativeGen", "SHVDN-NativeGen\SHVDN-NativeGen.csproj", "{617E9EBF-E0AD-4C8A-81E3-211995E13310}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SHVDN-NativeGen", "SHVDN-NativeGen\SHVDN-NativeGen.csproj", "{617E9EBF-E0AD-4C8A-81E3-211995E13310}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NativeInvoker", "NativeInvoker\NativeInvoker.csproj", "{6C63A5A5-8103-46B1-9E4F-C1622FEC0590}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{617E9EBF-E0AD-4C8A-81E3-211995E13310}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{617E9EBF-E0AD-4C8A-81E3-211995E13310}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{617E9EBF-E0AD-4C8A-81E3-211995E13310}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C63A5A5-8103-46B1-9E4F-C1622FEC0590}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C63A5A5-8103-46B1-9E4F-C1622FEC0590}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C63A5A5-8103-46B1-9E4F-C1622FEC0590}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C63A5A5-8103-46B1-9E4F-C1622FEC0590}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

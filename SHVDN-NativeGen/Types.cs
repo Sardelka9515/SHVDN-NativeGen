@@ -69,6 +69,7 @@ namespace NativeGen
         {
             return $"{type} {name}";
         }
+
     }
 
     internal class NativeInfo
@@ -101,7 +102,7 @@ namespace NativeGen
             _builder.AppendLine($"\t\t{line}");
         }
 
-        public void AddComment()
+        private void AddComment()
         {
             Add("/// <remarks>");
 
@@ -125,24 +126,31 @@ namespace NativeGen
             Add("[Obsolete]");
         }
 
+        private void Sanitize()
+        {
+
+            var dup = new HashSet<string>();
+            foreach (var p in Parameters)
+            {
+                var i = 0;
+                if (dup.Contains(p.name))
+                    while (dup.Contains(p.name = $"{p.name}i"))
+                        i++;
+                dup.Add(p.name);
+            }
+        }
+
         public void WriteInvoker(StringBuilder sb, string hash, HashSet<string> added, GenOptions o)
         {
             if (added.Contains(Name)) return;
-
             _builder = sb;
+            Sanitize();
 
             if (o.HasFlag(GenOptions.Parameters) && Parameters is { Length: > 0 })
             {
-                var dup = new HashSet<string>();
-                foreach (var p in Parameters)
-                {
-                    var i = 0;
-                    if (dup.Contains(p.name))
-                        while (dup.Contains(p.name = $"{p.name}i"))
-                            i++;
-                    dup.Add(p.name);
-                    Add($"/// <param name=\"{p.name}\"></param>");
-                }
+                Add("/// <summary>");
+                Add("/// Parameters: " + string.Join(", ", (object[])Parameters));
+                Add("/// </summary>");
             }
 
             if (o.HasFlag(GenOptions.Comments) && !string.IsNullOrEmpty(Comment)) AddComment();
@@ -164,12 +172,13 @@ namespace NativeGen
         private void WriteMethod(string hash, string name = null)
         {
             name ??= Name;
-            Add(
-                $"public static {ReturnType.ToSharpType()} {name}({string.Join(", ", Parameters.Select(x => $"{x.type.ToSharpType()} {x.name}"))})");
-
             var paras = "";
             foreach (var p in Parameters) paras += $", {p.name}";
             var ret = ReturnType != "void" ? $"<{ReturnType.ToSharpType()}>" : "";
+            if(ret=="<IntPtr>") Add($"/// <returns>{ReturnType}</returns>");
+
+            Add($"public static {ReturnType.ToSharpType()} {name}" +
+                $"({string.Join(", ", Parameters.Select(x => $"{x.type.ToSharpType()} {x.name}"))})");
             Add($"\t=> Function.Call{ret}((Hash){hash}{paras});");
         }
 
@@ -177,6 +186,8 @@ namespace NativeGen
         {
             if (added.Contains(Name)) return;
             _builder = sb;
+            Sanitize();
+
             if (o.HasFlag(GenOptions.Parameters) && Parameters is { Length: > 0 })
             {
                 Add("/// <summary>");
