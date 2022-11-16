@@ -68,7 +68,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		START_NEW_SCRIPT_WITH_NAME_HASH = 0xEB1C67C3A5333A92, // 0x8D15BE5D
 
-		///<remarks>This function has been replaced by <see cref="START_NEW_SCRIPT_WITH_NAME_HASH"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="START_NEW_SCRIPT_WITH_NAME_HASH"/></remarks>
 		[Obsolete]
 		_START_NEW_STREAMED_SCRIPT = 0xEB1C67C3A5333A92, // 0x8D15BE5D
 
@@ -78,7 +78,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		START_NEW_SCRIPT_WITH_NAME_HASH_AND_ARGS = 0xC4BB298BD441BE78, // 0xE38A3AD4
 
-		///<remarks>This function has been replaced by <see cref="START_NEW_SCRIPT_WITH_NAME_HASH_AND_ARGS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="START_NEW_SCRIPT_WITH_NAME_HASH_AND_ARGS"/></remarks>
 		[Obsolete]
 		_START_NEW_STREAMED_SCRIPT_WITH_ARGS = 0xC4BB298BD441BE78, // 0xE38A3AD4
 
@@ -139,7 +139,7 @@ namespace GTA.Native
 		/// <returns>float</returns>
 		LOG10 = 0xE816E655DE37FE20,
 
-		///<remarks>This function has been replaced by <see cref="LOG10"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="LOG10"/></remarks>
 		[Obsolete]
 		_LOG10 = 0xE816E655DE37FE20,
 
@@ -230,7 +230,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_THIS_THREAD_PRIORITY = 0x42B65DEEF2EDF2A1,
 
-		///<remarks>This function has been replaced by <see cref="SET_THIS_THREAD_PRIORITY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_THIS_THREAD_PRIORITY"/></remarks>
 		[Obsolete]
 		SET_THREAD_PRIORITY = 0x42B65DEEF2EDF2A1,
 
@@ -807,7 +807,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAY_PED_AMBIENT_SPEECH_NATIVE = 0x8E04FEDD28D42462, // 0x5C57B85D
 
-		///<remarks>This function has been replaced by <see cref="PLAY_PED_AMBIENT_SPEECH_NATIVE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAY_PED_AMBIENT_SPEECH_NATIVE"/></remarks>
 		[Obsolete]
 		_PLAY_AMBIENT_SPEECH1 = 0x8E04FEDD28D42462, // 0x5C57B85D
 
@@ -822,7 +822,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAY_PED_AMBIENT_SPEECH_AND_CLONE_NATIVE = 0xC6941B4A3A8FBBB9, // 0x444180DB
 
-		///<remarks>This function has been replaced by <see cref="PLAY_PED_AMBIENT_SPEECH_AND_CLONE_NATIVE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAY_PED_AMBIENT_SPEECH_AND_CLONE_NATIVE"/></remarks>
 		[Obsolete]
 		_PLAY_AMBIENT_SPEECH2 = 0xC6941B4A3A8FBBB9, // 0x444180DB
 
@@ -839,7 +839,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAY_PED_AMBIENT_SPEECH_WITH_VOICE_NATIVE = 0x3523634255FC3318, // 0x8386AE28
 
-		///<remarks>This function has been replaced by <see cref="PLAY_PED_AMBIENT_SPEECH_WITH_VOICE_NATIVE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAY_PED_AMBIENT_SPEECH_WITH_VOICE_NATIVE"/></remarks>
 		[Obsolete]
 		_PLAY_AMBIENT_SPEECH_WITH_VOICE = 0x3523634255FC3318, // 0x8386AE28
 
@@ -852,7 +852,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAY_AMBIENT_SPEECH_FROM_POSITION_NATIVE = 0xED640017ED337E45, // 0xA1A1402E
 
-		///<remarks>This function has been replaced by <see cref="PLAY_AMBIENT_SPEECH_FROM_POSITION_NATIVE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAY_AMBIENT_SPEECH_FROM_POSITION_NATIVE"/></remarks>
 		[Obsolete]
 		_PLAY_AMBIENT_SPEECH_AT_COORDS = 0xED640017ED337E45, // 0xA1A1402E
 
@@ -940,7 +940,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_AMBIENT_VOICE_NAME_HASH = 0x9A53DED9921DE990,
 
-		///<remarks>This function has been replaced by <see cref="SET_AMBIENT_VOICE_NAME_HASH"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_AMBIENT_VOICE_NAME_HASH"/></remarks>
 		[Obsolete]
 		_SET_AMBIENT_VOICE_NAME_HASH = 0x9A53DED9921DE990,
 
@@ -950,7 +950,7 @@ namespace GTA.Native
 		/// <returns>Hash</returns>
 		GET_AMBIENT_VOICE_NAME_HASH = 0x5E203DA2BA15D436,
 
-		///<remarks>This function has been replaced by <see cref="GET_AMBIENT_VOICE_NAME_HASH"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_AMBIENT_VOICE_NAME_HASH"/></remarks>
 		[Obsolete]
 		_GET_AMBIENT_VOICE_NAME_HASH = 0x5E203DA2BA15D436,
 
@@ -963,7 +963,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_PED_VOICE_FULL = 0x40CF0D12D142A9E8,
 
-		///<remarks>This function has been replaced by <see cref="SET_PED_VOICE_FULL"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_PED_VOICE_FULL"/></remarks>
 		[Obsolete]
 		_SET_PED_SCREAM = 0x40CF0D12D142A9E8,
 
@@ -986,7 +986,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_PED_VOICE_GROUP = 0x7CDC8C3B89F661B3,
 
-		///<remarks>This function has been replaced by <see cref="SET_PED_VOICE_GROUP"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_PED_VOICE_GROUP"/></remarks>
 		[Obsolete]
 		_SET_PED_VOICE_GROUP = 0x7CDC8C3B89F661B3,
 
@@ -999,7 +999,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_PED_VOICE_GROUP_FROM_RACE_TO_PVG = 0x0BABC1345ABBFB16,
 
-		///<remarks>This function has been replaced by <see cref="SET_PED_VOICE_GROUP_FROM_RACE_TO_PVG"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_PED_VOICE_GROUP_FROM_RACE_TO_PVG"/></remarks>
 		[Obsolete]
 		_SET_PED_VOICE_GROUP_RACE = 0x0BABC1345ABBFB16,
 
@@ -1012,7 +1012,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_PED_GENDER = 0xA5342D390CDA41D6,
 
-		///<remarks>This function has been replaced by <see cref="SET_PED_GENDER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_PED_GENDER"/></remarks>
 		[Obsolete]
 		_SET_PED_AUDIO_GENDER = 0xA5342D390CDA41D6,
 
@@ -1022,7 +1022,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		STOP_CURRENT_PLAYING_SPEECH = 0x7A73D05A607734C7, // 0x5B7463F4
 
-		///<remarks>This function has been replaced by <see cref="STOP_CURRENT_PLAYING_SPEECH"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="STOP_CURRENT_PLAYING_SPEECH"/></remarks>
 		[Obsolete]
 		_SET_PED_MUTE = 0x7A73D05A607734C7, // 0x5B7463F4
 
@@ -1062,7 +1062,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		DOES_CONTEXT_EXIST_FOR_THIS_PED = 0x49B99BF3FDA89A7A, // 0x8BD5F11E
 
-		///<remarks>This function has been replaced by <see cref="DOES_CONTEXT_EXIST_FOR_THIS_PED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DOES_CONTEXT_EXIST_FOR_THIS_PED"/></remarks>
 		[Obsolete]
 		_CAN_PED_SPEAK = 0x49B99BF3FDA89A7A, // 0x8BD5F11E
 
@@ -1195,7 +1195,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_VEH_HAS_NORMAL_RADIO = 0x3E45765F3FBB582F,
 
-		///<remarks>This function has been replaced by <see cref="SET_VEH_HAS_NORMAL_RADIO"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_VEH_HAS_NORMAL_RADIO"/></remarks>
 		[Obsolete]
 		_SET_VEH_HAS_RADIO_OVERRIDE = 0x3E45765F3FBB582F,
 
@@ -1205,7 +1205,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		IS_VEHICLE_RADIO_ON = 0x0BE4BE946463F917,
 
-		///<remarks>This function has been replaced by <see cref="IS_VEHICLE_RADIO_ON"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_VEHICLE_RADIO_ON"/></remarks>
 		[Obsolete]
 		_IS_VEHICLE_RADIO_ENABLED = 0x0BE4BE946463F917,
 
@@ -1245,7 +1245,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		LINK_STATIC_EMITTER_TO_ENTITY = 0x651D3228960D08AF,
 
-		///<remarks>This function has been replaced by <see cref="LINK_STATIC_EMITTER_TO_ENTITY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="LINK_STATIC_EMITTER_TO_ENTITY"/></remarks>
 		[Obsolete]
 		_LINK_STATIC_EMITTER_TO_ENTITY = 0x651D3228960D08AF,
 
@@ -1279,7 +1279,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		IS_MISSION_NEWS_STORY_UNLOCKED = 0x66E49BF55B4B1874, // 0x27305D37
 
-		///<remarks>This function has been replaced by <see cref="IS_MISSION_NEWS_STORY_UNLOCKED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_MISSION_NEWS_STORY_UNLOCKED"/></remarks>
 		[Obsolete]
 		GET_NUMBER_OF_PASSENGER_VOICE_VARIATIONS = 0x66E49BF55B4B1874, // 0x27305D37
 
@@ -1341,7 +1341,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_RADIO_TRACK_WITH_START_OFFSET = 0x2CB0075110BE1E56,
 
-		///<remarks>This function has been replaced by <see cref="SET_RADIO_TRACK_WITH_START_OFFSET"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_RADIO_TRACK_WITH_START_OFFSET"/></remarks>
 		[Obsolete]
 		_SET_RADIO_TRACK_MIX = 0x2CB0075110BE1E56,
 
@@ -1363,7 +1363,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		CAN_VEHICLE_RECEIVE_CB_RADIO = 0x032A116663A4D5AC, // 0xCBA99F4A
 
-		///<remarks>This function has been replaced by <see cref="CAN_VEHICLE_RECEIVE_CB_RADIO"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CAN_VEHICLE_RECEIVE_CB_RADIO"/></remarks>
 		[Obsolete]
 		_IS_VEHICLE_RADIO_LOUD = 0x032A116663A4D5AC, // 0xCBA99F4A
 
@@ -1379,7 +1379,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		IS_PLAYER_VEH_RADIO_ENABLE = 0x5F43D83FD6738741, // 0x2A3E5E8B
 
-		///<remarks>This function has been replaced by <see cref="IS_PLAYER_VEH_RADIO_ENABLE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_PLAYER_VEH_RADIO_ENABLE"/></remarks>
 		[Obsolete]
 		_IS_PLAYER_VEHICLE_RADIO_ENABLED = 0x5F43D83FD6738741, // 0x2A3E5E8B
 
@@ -1429,7 +1429,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		GET_NUM_UNLOCKED_RADIO_STATIONS = 0xF1620ECB50E01DE7, // 0xCC91FCF5
 
-		///<remarks>This function has been replaced by <see cref="GET_NUM_UNLOCKED_RADIO_STATIONS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_NUM_UNLOCKED_RADIO_STATIONS"/></remarks>
 		[Obsolete]
 		_MAX_RADIO_STATION_INDEX = 0xF1620ECB50E01DE7, // 0xCC91FCF5
 
@@ -1472,7 +1472,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		LOCK_RADIO_STATION_TRACK_LIST = 0xFF5E5EA2DCEEACF3,
 
-		///<remarks>This function has been replaced by <see cref="LOCK_RADIO_STATION_TRACK_LIST"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="LOCK_RADIO_STATION_TRACK_LIST"/></remarks>
 		[Obsolete]
 		_LOCK_RADIO_STATION_TRACK_LIST = 0xFF5E5EA2DCEEACF3,
 
@@ -1485,7 +1485,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		UPDATE_UNLOCKABLE_DJ_RADIO_TRACKS = 0x47AED84213A47510,
 
-		///<remarks>This function has been replaced by <see cref="UPDATE_UNLOCKABLE_DJ_RADIO_TRACKS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="UPDATE_UNLOCKABLE_DJ_RADIO_TRACKS"/></remarks>
 		[Obsolete]
 		_UPDATE_LSUR = 0x47AED84213A47510,
 
@@ -1498,11 +1498,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		LOCK_RADIO_STATION = 0x477D9DB48F889591,
 
-		///<remarks>This function has been replaced by <see cref="LOCK_RADIO_STATION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="LOCK_RADIO_STATION"/></remarks>
 		[Obsolete]
 		_SET_RADIO_STATION_DISABLED = 0x477D9DB48F889591,
 
-		///<remarks>This function has been replaced by <see cref="LOCK_RADIO_STATION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="LOCK_RADIO_STATION"/></remarks>
 		[Obsolete]
 		_LOCK_RADIO_STATION = 0x477D9DB48F889591,
 
@@ -1515,7 +1515,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_RADIO_STATION_AS_FAVOURITE = 0x4CAFEBFA21EC188D,
 
-		///<remarks>This function has been replaced by <see cref="SET_RADIO_STATION_AS_FAVOURITE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_RADIO_STATION_AS_FAVOURITE"/></remarks>
 		[Obsolete]
 		_SET_RADIO_STATION_IS_VISIBLE = 0x4CAFEBFA21EC188D,
 
@@ -1525,7 +1525,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		IS_RADIO_STATION_FAVOURITED = 0x2B1784DB08AFEA79,
 
-		///<remarks>This function has been replaced by <see cref="IS_RADIO_STATION_FAVOURITED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_RADIO_STATION_FAVOURITED"/></remarks>
 		[Obsolete]
 		_IS_RADIO_STATION_VISIBLE = 0x2B1784DB08AFEA79,
 
@@ -1545,7 +1545,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		FORCE_MUSIC_TRACK_LIST = 0x4E0AF9114608257C,
 
-		///<remarks>This function has been replaced by <see cref="FORCE_MUSIC_TRACK_LIST"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="FORCE_MUSIC_TRACK_LIST"/></remarks>
 		[Obsolete]
 		_FORCE_RADIO_TRACK_LIST_POSITION = 0x4E0AF9114608257C,
 
@@ -1555,7 +1555,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		GET_CURRENT_TRACK_PLAY_TIME = 0x3E65CDE5215832C1,
 
-		///<remarks>This function has been replaced by <see cref="GET_CURRENT_TRACK_PLAY_TIME"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_CURRENT_TRACK_PLAY_TIME"/></remarks>
 		[Obsolete]
 		_GET_CURRENT_RADIO_TRACK_PLAYBACK_TIME = 0x3E65CDE5215832C1,
 
@@ -1565,7 +1565,7 @@ namespace GTA.Native
 		/// <returns>Hash</returns>
 		GET_CURRENT_TRACK_SOUND_NAME = 0x34D66BC058019CE0,
 
-		///<remarks>This function has been replaced by <see cref="GET_CURRENT_TRACK_SOUND_NAME"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_CURRENT_TRACK_SOUND_NAME"/></remarks>
 		[Obsolete]
 		_GET_CURRENT_RADIO_TRACK_NAME = 0x34D66BC058019CE0,
 
@@ -1656,11 +1656,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_VARIABLE_ON_SYNCH_SCENE_AUDIO = 0xBCC29F935ED07688, // 0xD63CF33A
 
-		///<remarks>This function has been replaced by <see cref="SET_VARIABLE_ON_SYNCH_SCENE_AUDIO"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_VARIABLE_ON_SYNCH_SCENE_AUDIO"/></remarks>
 		[Obsolete]
 		GET_PLAYER_HEADSET_SOUND_ALTERNATE = 0xBCC29F935ED07688, // 0xD63CF33A
 
-		///<remarks>This function has been replaced by <see cref="SET_VARIABLE_ON_SYNCH_SCENE_AUDIO"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_VARIABLE_ON_SYNCH_SCENE_AUDIO"/></remarks>
 		[Obsolete]
 		_SET_VARIABLE_ON_CUTSCENE_AUDIO = 0xBCC29F935ED07688, // 0xD63CF33A
 
@@ -1678,11 +1678,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		CANCEL_ALL_POLICE_REPORTS = 0xB4F90FAF7670B16F,
 
-		///<remarks>This function has been replaced by <see cref="CANCEL_ALL_POLICE_REPORTS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CANCEL_ALL_POLICE_REPORTS"/></remarks>
 		[Obsolete]
 		_DISABLE_POLICE_REPORTS = 0xB4F90FAF7670B16F,
 
-		///<remarks>This function has been replaced by <see cref="CANCEL_ALL_POLICE_REPORTS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CANCEL_ALL_POLICE_REPORTS"/></remarks>
 		[Obsolete]
 		_CANCEL_CURRENT_POLICE_REPORT = 0xB4F90FAF7670B16F,
 
@@ -1822,7 +1822,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAY_STREAM_FROM_POSITION = 0x21442F412E8DE56B, // 0x6FE5D865
 
-		///<remarks>This function has been replaced by <see cref="PLAY_STREAM_FROM_POSITION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAY_STREAM_FROM_POSITION"/></remarks>
 		[Obsolete]
 		SPECIAL_FRONTEND_EQUAL = 0x21442F412E8DE56B, // 0x6FE5D865
 
@@ -1887,7 +1887,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_SIREN_BYPASS_MP_DRIVER_CHECK = 0xF584CF8529B51434,
 
-		///<remarks>This function has been replaced by <see cref="SET_SIREN_BYPASS_MP_DRIVER_CHECK"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_SIREN_BYPASS_MP_DRIVER_CHECK"/></remarks>
 		[Obsolete]
 		_SET_SIREN_KEEP_ON = 0xF584CF8529B51434,
 
@@ -1897,7 +1897,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		TRIGGER_SIREN_AUDIO = 0x66C3FB05206041BA,
 
-		///<remarks>This function has been replaced by <see cref="TRIGGER_SIREN_AUDIO"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="TRIGGER_SIREN_AUDIO"/></remarks>
 		[Obsolete]
 		_TRIGGER_SIREN = 0x66C3FB05206041BA,
 
@@ -1907,7 +1907,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_HORN_PERMANENTLY_ON = 0x9C11908013EA4715, // 0xDE8BA3CD
 
-		///<remarks>This function has been replaced by <see cref="SET_HORN_PERMANENTLY_ON"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_HORN_PERMANENTLY_ON"/></remarks>
 		[Obsolete]
 		_SOUND_VEHICLE_HORN_THIS_FRAME = 0x9C11908013EA4715, // 0xDE8BA3CD
 
@@ -1948,11 +1948,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		FORCE_USE_AUDIO_GAME_OBJECT = 0x4F0C413926060B38, // 0x33B0B007
 
-		///<remarks>This function has been replaced by <see cref="FORCE_USE_AUDIO_GAME_OBJECT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="FORCE_USE_AUDIO_GAME_OBJECT"/></remarks>
 		[Obsolete]
 		_SET_VEHICLE_AUDIO = 0x4F0C413926060B38, // 0x33B0B007
 
-		///<remarks>This function has been replaced by <see cref="FORCE_USE_AUDIO_GAME_OBJECT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="FORCE_USE_AUDIO_GAME_OBJECT"/></remarks>
 		[Obsolete]
 		_FORCE_VEHICLE_ENGINE_AUDIO = 0x4F0C413926060B38, // 0x33B0B007
 
@@ -1962,7 +1962,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PRELOAD_VEHICLE_AUDIO_BANK = 0xCA4CEA6AE0000A7E,
 
-		///<remarks>This function has been replaced by <see cref="PRELOAD_VEHICLE_AUDIO_BANK"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PRELOAD_VEHICLE_AUDIO_BANK"/></remarks>
 		[Obsolete]
 		_PRELOAD_VEHICLE_AUDIO = 0xCA4CEA6AE0000A7E,
 
@@ -1978,7 +1978,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		RESET_VEHICLE_STARTUP_REV_SOUND = 0xD2DCCD8E16E20997,
 
-		///<remarks>This function has been replaced by <see cref="RESET_VEHICLE_STARTUP_REV_SOUND"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="RESET_VEHICLE_STARTUP_REV_SOUND"/></remarks>
 		[Obsolete]
 		_RESET_VEHICLE_STARTUP_REV_SOUND = 0xD2DCCD8E16E20997,
 
@@ -2170,7 +2170,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		ADD_ENTITY_TO_AUDIO_MIX_GROUP = 0x153973AB99FE8980, // 0x2BC93264
 
-		///<remarks>This function has been replaced by <see cref="ADD_ENTITY_TO_AUDIO_MIX_GROUP"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="ADD_ENTITY_TO_AUDIO_MIX_GROUP"/></remarks>
 		[Obsolete]
 		_DYNAMIC_MIXER_RELATED_FN = 0x153973AB99FE8980, // 0x2BC93264
 
@@ -2183,7 +2183,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		AUDIO_IS_MUSIC_PLAYING = 0x845FFC3A4FEEFA3E,
 
-		///<remarks>This function has been replaced by <see cref="AUDIO_IS_MUSIC_PLAYING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="AUDIO_IS_MUSIC_PLAYING"/></remarks>
 		[Obsolete]
 		AUDIO_IS_SCRIPTED_MUSIC_PLAYING = 0x845FFC3A4FEEFA3E,
 
@@ -2350,7 +2350,7 @@ namespace GTA.Native
 		/// <returns>Hash</returns>
 		GET_VEHICLE_DEFAULT_HORN_IGNORE_MODS = 0xACB5DCCA1EC76840, // 0xFD4B5B3B
 
-		///<remarks>This function has been replaced by <see cref="GET_VEHICLE_DEFAULT_HORN_IGNORE_MODS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_VEHICLE_DEFAULT_HORN_IGNORE_MODS"/></remarks>
 		[Obsolete]
 		_GET_VEHICLE_HORN_HASH = 0xACB5DCCA1EC76840, // 0xFD4B5B3B
 
@@ -2369,7 +2369,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_PED_FOOTSTEPS_EVENTS_ENABLED = 0x0653B735BFBDFE87,
 
-		///<remarks>This function has been replaced by <see cref="SET_PED_FOOTSTEPS_EVENTS_ENABLED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_PED_FOOTSTEPS_EVENTS_ENABLED"/></remarks>
 		[Obsolete]
 		_SET_PED_AUDIO_FOOTSTEP_LOUD = 0x0653B735BFBDFE87,
 
@@ -2382,7 +2382,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_PED_CLOTH_EVENTS_ENABLED = 0x29DA3CA8D8B2692D,
 
-		///<remarks>This function has been replaced by <see cref="SET_PED_CLOTH_EVENTS_ENABLED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_PED_CLOTH_EVENTS_ENABLED"/></remarks>
 		[Obsolete]
 		_SET_PED_AUDIO_FOOTSTEP_QUIET = 0x29DA3CA8D8B2692D,
 
@@ -2410,7 +2410,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		OVERRIDE_MICROPHONE_SETTINGS = 0x75773E11BA459E90,
 
-		///<remarks>This function has been replaced by <see cref="OVERRIDE_MICROPHONE_SETTINGS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="OVERRIDE_MICROPHONE_SETTINGS"/></remarks>
 		[Obsolete]
 		_OVERRIDE_MICROPHONE_SETTINGS = 0x75773E11BA459E90,
 
@@ -2427,7 +2427,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		DISTANT_COP_CAR_SIRENS = 0x552369F549563AD5, // 0x13EB5861
 
-		///<remarks>This function has been replaced by <see cref="DISTANT_COP_CAR_SIRENS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DISTANT_COP_CAR_SIRENS"/></remarks>
 		[Obsolete]
 		_FORCE_AMBIENT_SIREN = 0x552369F549563AD5, // 0x13EB5861
 
@@ -2591,7 +2591,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		INIT_SYNCH_SCENE_AUDIO_WITH_ENTITY = 0x950A154B8DAB6185, // 0xA17F9AB0
 
-		///<remarks>This function has been replaced by <see cref="INIT_SYNCH_SCENE_AUDIO_WITH_ENTITY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="INIT_SYNCH_SCENE_AUDIO_WITH_ENTITY"/></remarks>
 		[Obsolete]
 		_SET_SYNCHRONIZED_AUDIO_EVENT_POSITION_THIS_FRAME = 0x950A154B8DAB6185, // 0xA17F9AB0
 
@@ -2648,7 +2648,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		REQUEST_TENNIS_BANKS = 0x4ADA3F19BE4A6047, // 0x13777A0B
 
-		///<remarks>This function has been replaced by <see cref="REQUEST_TENNIS_BANKS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="REQUEST_TENNIS_BANKS"/></remarks>
 		[Obsolete]
 		_SET_PED_TALK = 0x4ADA3F19BE4A6047, // 0x13777A0B
 
@@ -2667,14 +2667,14 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		HAS_LOADED_MP_DATA_SET = 0x544810ED9DB6BBE6,
 
-		///<remarks>This function has been replaced by <see cref="HAS_LOADED_MP_DATA_SET"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="HAS_LOADED_MP_DATA_SET"/></remarks>
 		[Obsolete]
 		_HAS_MULTIPLAYER_AUDIO_DATA_LOADED = 0x544810ED9DB6BBE6,
 
 		/// <returns>BOOL</returns>
 		HAS_LOADED_SP_DATA_SET = 0x5B50ABB1FE3746F4,
 
-		///<remarks>This function has been replaced by <see cref="HAS_LOADED_SP_DATA_SET"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="HAS_LOADED_SP_DATA_SET"/></remarks>
 		[Obsolete]
 		_HAS_MULTIPLAYER_AUDIO_DATA_UNLOADED = 0x5B50ABB1FE3746F4,
 
@@ -2684,7 +2684,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		GET_VEHICLE_HORN_SOUND_INDEX = 0xD53F3A29BCE2580E,
 
-		///<remarks>This function has been replaced by <see cref="GET_VEHICLE_HORN_SOUND_INDEX"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_VEHICLE_HORN_SOUND_INDEX"/></remarks>
 		[Obsolete]
 		_GET_VEHICLE_DEFAULT_HORN_VARIATION = 0xD53F3A29BCE2580E,
 
@@ -2694,7 +2694,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_VEHICLE_HORN_SOUND_INDEX = 0x0350E7E17BA767D0,
 
-		///<remarks>This function has been replaced by <see cref="SET_VEHICLE_HORN_SOUND_INDEX"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_VEHICLE_HORN_SOUND_INDEX"/></remarks>
 		[Obsolete]
 		_SET_VEHICLE_HORN_VARIATION = 0x0350E7E17BA767D0,
 
@@ -2761,7 +2761,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		REACTIVATE_ALL_OBJECT_BRAINS_THAT_ARE_WAITING_TILL_OUT_OF_RANGE = 0x4D953DF78EBF8158, // 0xF3A3AB08
 
-		///<remarks>This function has been replaced by <see cref="REACTIVATE_ALL_OBJECT_BRAINS_THAT_ARE_WAITING_TILL_OUT_OF_RANGE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="REACTIVATE_ALL_OBJECT_BRAINS_THAT_ARE_WAITING_TILL_OUT_OF_RANGE"/></remarks>
 		[Obsolete]
 		_PREPARE_SCRIPT_BRAIN = 0x4D953DF78EBF8158, // 0xF3A3AB08
 
@@ -2838,7 +2838,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		STOP_RENDERING_SCRIPT_CAMS_USING_CATCH_UP = 0xC819F3CBB62BF692, // 0xD3C08183
 
-		///<remarks>This function has been replaced by <see cref="STOP_RENDERING_SCRIPT_CAMS_USING_CATCH_UP"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="STOP_RENDERING_SCRIPT_CAMS_USING_CATCH_UP"/></remarks>
 		[Obsolete]
 		_RENDER_FIRST_PERSON_CAM = 0xC819F3CBB62BF692, // 0xD3C08183
 
@@ -2980,7 +2980,7 @@ namespace GTA.Native
 		/// <returns>float</returns>
 		GET_CAM_NEAR_DOF = 0xC2612D223D915A1C,
 
-		///<remarks>This function has been replaced by <see cref="GET_CAM_NEAR_DOF"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_CAM_NEAR_DOF"/></remarks>
 		[Obsolete]
 		_GET_CAM_NEAR_DOF = 0xC2612D223D915A1C,
 
@@ -2996,7 +2996,7 @@ namespace GTA.Native
 		/// <returns>float</returns>
 		GET_CAM_DOF_STRENGTH = 0x06D153C0B99B6128,
 
-		///<remarks>This function has been replaced by <see cref="GET_CAM_DOF_STRENGTH"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_CAM_DOF_STRENGTH"/></remarks>
 		[Obsolete]
 		_GET_CAM_DOF_STRENGTH = 0x06D153C0B99B6128,
 
@@ -3101,7 +3101,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_USE_HI_DOF_ON_SYNCED_SCENE_THIS_UPDATE = 0x731A880555DA3647,
 
-		///<remarks>This function has been replaced by <see cref="SET_USE_HI_DOF_ON_SYNCED_SCENE_THIS_UPDATE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_USE_HI_DOF_ON_SYNCED_SCENE_THIS_UPDATE"/></remarks>
 		[Obsolete]
 		_SET_USE_HI_DOF_IN_CUTSCENE = 0x731A880555DA3647,
 
@@ -3126,7 +3126,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_CAM_DOF_FNUMBER_OF_LENS = 0x7DD234D6F3914C5B,
 
-		///<remarks>This function has been replaced by <see cref="SET_CAM_DOF_FNUMBER_OF_LENS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_CAM_DOF_FNUMBER_OF_LENS"/></remarks>
 		[Obsolete]
 		_SET_CAM_DOF_FNUMBER_OF_LENS = 0x7DD234D6F3914C5B,
 
@@ -3139,7 +3139,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_CAM_DOF_FOCAL_LENGTH_MULTIPLIER = 0x47B595D60664CFFA,
 
-		///<remarks>This function has been replaced by <see cref="SET_CAM_DOF_FOCAL_LENGTH_MULTIPLIER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_CAM_DOF_FOCAL_LENGTH_MULTIPLIER"/></remarks>
 		[Obsolete]
 		_SET_CAM_DOF_FOCAL_LENGTH_MULTIPLIER = 0x47B595D60664CFFA,
 
@@ -3152,7 +3152,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_CAM_DOF_FOCUS_DISTANCE_BIAS = 0xC669EEA5D031B7DE,
 
-		///<remarks>This function has been replaced by <see cref="SET_CAM_DOF_FOCUS_DISTANCE_BIAS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_CAM_DOF_FOCUS_DISTANCE_BIAS"/></remarks>
 		[Obsolete]
 		_SET_CAM_DOF_FOCUS_DISTANCE_BIAS = 0xC669EEA5D031B7DE,
 
@@ -3165,7 +3165,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_CAM_DOF_MAX_NEAR_IN_FOCUS_DISTANCE = 0xC3654A441402562D,
 
-		///<remarks>This function has been replaced by <see cref="SET_CAM_DOF_MAX_NEAR_IN_FOCUS_DISTANCE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_CAM_DOF_MAX_NEAR_IN_FOCUS_DISTANCE"/></remarks>
 		[Obsolete]
 		_SET_CAM_DOF_MAX_NEAR_IN_FOCUS_DISTANCE = 0xC3654A441402562D,
 
@@ -3178,7 +3178,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_CAM_DOF_MAX_NEAR_IN_FOCUS_DISTANCE_BLEND_LEVEL = 0x2C654B4943BDDF7C,
 
-		///<remarks>This function has been replaced by <see cref="SET_CAM_DOF_MAX_NEAR_IN_FOCUS_DISTANCE_BLEND_LEVEL"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_CAM_DOF_MAX_NEAR_IN_FOCUS_DISTANCE_BLEND_LEVEL"/></remarks>
 		[Obsolete]
 		_SET_CAM_DOF_MAX_NEAR_IN_FOCUS_DISTANCE_BLEND_LEVEL = 0x2C654B4943BDDF7C,
 
@@ -3203,7 +3203,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		HARD_ATTACH_CAM_TO_PED_BONE = 0x149916F50C34A40D,
 
-		///<remarks>This function has been replaced by <see cref="HARD_ATTACH_CAM_TO_PED_BONE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="HARD_ATTACH_CAM_TO_PED_BONE"/></remarks>
 		[Obsolete]
 		_ATTACH_CAM_TO_PED_BONE_2 = 0x149916F50C34A40D,
 
@@ -3217,7 +3217,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		HARD_ATTACH_CAM_TO_ENTITY = 0x202A5ED9CE01D6E7,
 
-		///<remarks>This function has been replaced by <see cref="HARD_ATTACH_CAM_TO_ENTITY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="HARD_ATTACH_CAM_TO_ENTITY"/></remarks>
 		[Obsolete]
 		_ATTACH_CAM_TO_ENTITY_WITH_FIXED_DIRECTION = 0x202A5ED9CE01D6E7,
 
@@ -3230,7 +3230,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		ATTACH_CAM_TO_VEHICLE_BONE = 0x8DB3F12A02CAEF72,
 
-		///<remarks>This function has been replaced by <see cref="ATTACH_CAM_TO_VEHICLE_BONE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="ATTACH_CAM_TO_VEHICLE_BONE"/></remarks>
 		[Obsolete]
 		_ATTACH_CAM_TO_VEHICLE_BONE = 0x8DB3F12A02CAEF72,
 
@@ -3300,7 +3300,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_CAM_CONTROLS_MINI_MAP_HEADING = 0x661B5C8654ADD825, // 0xE1A0B2F1
 
-		///<remarks>This function has been replaced by <see cref="SET_CAM_CONTROLS_MINI_MAP_HEADING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_CAM_CONTROLS_MINI_MAP_HEADING"/></remarks>
 		[Obsolete]
 		_SET_CAM_CONTROLS_RADAR_ROTATION = 0x661B5C8654ADD825, // 0xE1A0B2F1
 
@@ -3314,7 +3314,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_CAM_IS_INSIDE_VEHICLE = 0xA2767257A320FC82,
 
-		///<remarks>This function has been replaced by <see cref="SET_CAM_IS_INSIDE_VEHICLE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_CAM_IS_INSIDE_VEHICLE"/></remarks>
 		[Obsolete]
 		_SET_CAM_SMOOTH_SHADOWS = 0xA2767257A320FC82,
 
@@ -3336,7 +3336,7 @@ namespace GTA.Native
 		/// <returns>Cam</returns>
 		GET_DEBUG_CAM = 0x77C3CEC46BE286F6,
 
-		///<remarks>This function has been replaced by <see cref="GET_DEBUG_CAM"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_DEBUG_CAM"/></remarks>
 		[Obsolete]
 		_GET_DEBUG_CAMERA = 0x77C3CEC46BE286F6,
 
@@ -3635,7 +3635,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_FLY_CAM_VERTICAL_RESPONSE = 0xE827B9382CFB41BA,
 
-		///<remarks>This function has been replaced by <see cref="SET_FLY_CAM_VERTICAL_RESPONSE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_FLY_CAM_VERTICAL_RESPONSE"/></remarks>
 		[Obsolete]
 		_SET_FLY_CAM_VERTICAL_SPEED_MULTIPLIER = 0xE827B9382CFB41BA,
 
@@ -3645,7 +3645,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_FLY_CAM_MAX_HEIGHT = 0xF9D02130ECDD1D77, // 0x71570DBA
 
-		///<remarks>This function has been replaced by <see cref="SET_FLY_CAM_MAX_HEIGHT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_FLY_CAM_MAX_HEIGHT"/></remarks>
 		[Obsolete]
 		_SET_CAMERA_RANGE = 0xF9D02130ECDD1D77, // 0x71570DBA
 
@@ -3784,7 +3784,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		FORCE_CAMERA_RELATIVE_HEADING_AND_PITCH = 0x48608C3464F58AB4,
 
-		///<remarks>This function has been replaced by <see cref="FORCE_CAMERA_RELATIVE_HEADING_AND_PITCH"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="FORCE_CAMERA_RELATIVE_HEADING_AND_PITCH"/></remarks>
 		[Obsolete]
 		_SET_GAMEPLAY_CAM_RELATIVE_ROTATION = 0x48608C3464F58AB4,
 
@@ -3803,7 +3803,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_FIRST_PERSON_SHOOTER_CAMERA_HEADING = 0x103991D4A307D472,
 
-		///<remarks>This function has been replaced by <see cref="SET_FIRST_PERSON_SHOOTER_CAMERA_HEADING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_FIRST_PERSON_SHOOTER_CAMERA_HEADING"/></remarks>
 		[Obsolete]
 		_SET_GAMEPLAY_CAM_RAW_YAW = 0x103991D4A307D472,
 
@@ -3813,7 +3813,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_FIRST_PERSON_SHOOTER_CAMERA_PITCH = 0x759E13EBC1C15C5A,
 
-		///<remarks>This function has been replaced by <see cref="SET_FIRST_PERSON_SHOOTER_CAMERA_PITCH"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_FIRST_PERSON_SHOOTER_CAMERA_PITCH"/></remarks>
 		[Obsolete]
 		_SET_GAMEPLAY_CAM_RAW_PITCH = 0x759E13EBC1C15C5A,
 
@@ -3899,7 +3899,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		DISABLE_GAMEPLAY_CAM_ALTITUDE_FOV_SCALING_THIS_UPDATE = 0xEA7F0AD7E9BA676F, // 0xA61FF9AC
 
-		///<remarks>This function has been replaced by <see cref="DISABLE_GAMEPLAY_CAM_ALTITUDE_FOV_SCALING_THIS_UPDATE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DISABLE_GAMEPLAY_CAM_ALTITUDE_FOV_SCALING_THIS_UPDATE"/></remarks>
 		[Obsolete]
 		_ENABLE_CROSSHAIR_THIS_FRAME = 0xEA7F0AD7E9BA676F, // 0xA61FF9AC
 
@@ -3912,7 +3912,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_GAMEPLAY_CAM_IGNORE_ENTITY_COLLISION_THIS_UPDATE = 0x2AED6301F67007D5, // 0x2701A9AD
 
-		///<remarks>This function has been replaced by <see cref="SET_GAMEPLAY_CAM_IGNORE_ENTITY_COLLISION_THIS_UPDATE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_GAMEPLAY_CAM_IGNORE_ENTITY_COLLISION_THIS_UPDATE"/></remarks>
 		[Obsolete]
 		_DISABLE_CAM_COLLISION_FOR_ENTITY = 0x2AED6301F67007D5, // 0x2701A9AD
 
@@ -3964,7 +3964,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		SET_FOLLOW_PED_CAM_THIS_UPDATE = 0x44A113DD6FFC48D1, // 0x1425F6AC
 
-		///<remarks>This function has been replaced by <see cref="SET_FOLLOW_PED_CAM_THIS_UPDATE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_FOLLOW_PED_CAM_THIS_UPDATE"/></remarks>
 		[Obsolete]
 		SET_FOLLOW_PED_CAM_CUTSCENE_CHAT = 0x44A113DD6FFC48D1, // 0x1425F6AC
 
@@ -3989,7 +3989,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_THIRD_PERSON_CAM_RELATIVE_HEADING_LIMITS_THIS_UPDATE = 0x8F993D26E0CA5E8E, // 0x749909AC
 
-		///<remarks>This function has been replaced by <see cref="SET_THIRD_PERSON_CAM_RELATIVE_HEADING_LIMITS_THIS_UPDATE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_THIRD_PERSON_CAM_RELATIVE_HEADING_LIMITS_THIS_UPDATE"/></remarks>
 		[Obsolete]
 		_CLAMP_GAMEPLAY_CAM_YAW = 0x8F993D26E0CA5E8E, // 0x749909AC
 
@@ -4005,7 +4005,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_THIRD_PERSON_CAM_RELATIVE_PITCH_LIMITS_THIS_UPDATE = 0xA516C198B7DCA1E1, // 0xFA3A16E7
 
-		///<remarks>This function has been replaced by <see cref="SET_THIRD_PERSON_CAM_RELATIVE_PITCH_LIMITS_THIS_UPDATE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_THIRD_PERSON_CAM_RELATIVE_PITCH_LIMITS_THIS_UPDATE"/></remarks>
 		[Obsolete]
 		_CLAMP_GAMEPLAY_CAM_PITCH = 0xA516C198B7DCA1E1, // 0xFA3A16E7
 
@@ -4027,7 +4027,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_THIRD_PERSON_CAM_ORBIT_DISTANCE_LIMITS_THIS_UPDATE = 0xDF2E1F7742402E81, // 0x77340650
 
-		///<remarks>This function has been replaced by <see cref="SET_THIRD_PERSON_CAM_ORBIT_DISTANCE_LIMITS_THIS_UPDATE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_THIRD_PERSON_CAM_ORBIT_DISTANCE_LIMITS_THIS_UPDATE"/></remarks>
 		[Obsolete]
 		_ANIMATE_GAMEPLAY_CAM_ZOOM = 0xDF2E1F7742402E81, // 0x77340650
 
@@ -4049,7 +4049,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		DISABLE_ON_FOOT_FIRST_PERSON_VIEW_THIS_UPDATE = 0xDE2EF5DA284CC8DF,
 
-		///<remarks>This function has been replaced by <see cref="DISABLE_ON_FOOT_FIRST_PERSON_VIEW_THIS_UPDATE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DISABLE_ON_FOOT_FIRST_PERSON_VIEW_THIS_UPDATE"/></remarks>
 		[Obsolete]
 		_DISABLE_FIRST_PERSON_CAM_THIS_FRAME = 0xDE2EF5DA284CC8DF,
 
@@ -4096,7 +4096,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_FOLLOW_VEHICLE_CAM_HIGH_ANGLE_MODE_EVERY_UPDATE = 0x9DFE13ECDC1EC196, // 0x92302899
 
-		///<remarks>This function has been replaced by <see cref="SET_FOLLOW_VEHICLE_CAM_HIGH_ANGLE_MODE_EVERY_UPDATE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_FOLLOW_VEHICLE_CAM_HIGH_ANGLE_MODE_EVERY_UPDATE"/></remarks>
 		[Obsolete]
 		SET_TIME_IDLE_DROP = 0x9DFE13ECDC1EC196, // 0x92302899
 
@@ -4173,14 +4173,14 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		GET_CAM_ACTIVE_VIEW_MODE_CONTEXT = 0x19CAFA3C87F7C2FF,
 
-		///<remarks>This function has been replaced by <see cref="GET_CAM_ACTIVE_VIEW_MODE_CONTEXT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_CAM_ACTIVE_VIEW_MODE_CONTEXT"/></remarks>
 		[Obsolete]
 		_GET_CAM_ACTIVE_VIEW_MODE_CONTEXT = 0x19CAFA3C87F7C2FF,
 
 		/// <returns>void</returns>
 		USE_VEHICLE_CAM_STUNT_SETTINGS_THIS_UPDATE = 0x6493CF69859B116A,
 
-		///<remarks>This function has been replaced by <see cref="USE_VEHICLE_CAM_STUNT_SETTINGS_THIS_UPDATE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="USE_VEHICLE_CAM_STUNT_SETTINGS_THIS_UPDATE"/></remarks>
 		[Obsolete]
 		_USE_STUNT_CAMERA_THIS_FRAME = 0x6493CF69859B116A,
 
@@ -4193,7 +4193,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		USE_DEDICATED_STUNT_CAMERA_THIS_UPDATE = 0x425A920FDB9A0DDA,
 
-		///<remarks>This function has been replaced by <see cref="USE_DEDICATED_STUNT_CAMERA_THIS_UPDATE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="USE_DEDICATED_STUNT_CAMERA_THIS_UPDATE"/></remarks>
 		[Obsolete]
 		_SET_GAMEPLAY_CAM_HASH = 0x425A920FDB9A0DDA,
 
@@ -4206,7 +4206,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_FOLLOW_VEHICLE_CAM_SEAT_THIS_UPDATE = 0x5C90CAB09951A12F,
 
-		///<remarks>This function has been replaced by <see cref="SET_FOLLOW_VEHICLE_CAM_SEAT_THIS_UPDATE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_FOLLOW_VEHICLE_CAM_SEAT_THIS_UPDATE"/></remarks>
 		[Obsolete]
 		_SET_FOLLOW_TURRET_SEAT_CAM = 0x5C90CAB09951A12F,
 
@@ -4216,7 +4216,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		IS_AIM_CAM_ACTIVE_IN_ACCURATE_MODE = 0x74BD83EA840F6BC9, // 0x8F320DE4
 
-		///<remarks>This function has been replaced by <see cref="IS_AIM_CAM_ACTIVE_IN_ACCURATE_MODE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_AIM_CAM_ACTIVE_IN_ACCURATE_MODE"/></remarks>
 		[Obsolete]
 		_IS_AIM_CAM_THIRD_PERSON_ACTIVE = 0x74BD83EA840F6BC9, // 0x8F320DE4
 
@@ -4229,7 +4229,7 @@ namespace GTA.Native
 		/// <returns>float</returns>
 		GET_FIRST_PERSON_AIM_CAM_ZOOM_FACTOR = 0x7EC52CC40597D170, // 0x33951005
 
-		///<remarks>This function has been replaced by <see cref="GET_FIRST_PERSON_AIM_CAM_ZOOM_FACTOR"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_FIRST_PERSON_AIM_CAM_ZOOM_FACTOR"/></remarks>
 		[Obsolete]
 		_GET_GAMEPLAY_CAM_ZOOM = 0x7EC52CC40597D170, // 0x33951005
 
@@ -4257,7 +4257,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_FIRST_PERSON_AIM_CAM_RELATIVE_PITCH_LIMITS_THIS_UPDATE = 0xBCFC632DB7673BF0, // 0x76DAC96C
 
-		///<remarks>This function has been replaced by <see cref="SET_FIRST_PERSON_AIM_CAM_RELATIVE_PITCH_LIMITS_THIS_UPDATE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_FIRST_PERSON_AIM_CAM_RELATIVE_PITCH_LIMITS_THIS_UPDATE"/></remarks>
 		[Obsolete]
 		_SET_FIRST_PERSON_CAM_PITCH_RANGE = 0xBCFC632DB7673BF0, // 0x76DAC96C
 
@@ -4267,7 +4267,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_FIRST_PERSON_AIM_CAM_NEAR_CLIP_THIS_UPDATE = 0x0AF7B437918103B3, // 0x0E21069D
 
-		///<remarks>This function has been replaced by <see cref="SET_FIRST_PERSON_AIM_CAM_NEAR_CLIP_THIS_UPDATE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_FIRST_PERSON_AIM_CAM_NEAR_CLIP_THIS_UPDATE"/></remarks>
 		[Obsolete]
 		_SET_FIRST_PERSON_CAM_NEAR_CLIP = 0x0AF7B437918103B3, // 0x0E21069D
 
@@ -4277,7 +4277,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_THIRD_PERSON_AIM_CAM_NEAR_CLIP_THIS_UPDATE = 0x42156508606DE65E, // 0x71E9C63E
 
-		///<remarks>This function has been replaced by <see cref="SET_THIRD_PERSON_AIM_CAM_NEAR_CLIP_THIS_UPDATE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_THIRD_PERSON_AIM_CAM_NEAR_CLIP_THIS_UPDATE"/></remarks>
 		[Obsolete]
 		_SET_THIRD_PERSON_AIM_CAM_NEAR_CLIP = 0x42156508606DE65E, // 0x71E9C63E
 
@@ -4293,7 +4293,7 @@ namespace GTA.Native
 		/// <returns>Vector3</returns>
 		GET_FINAL_RENDERED_CAM_COORD = 0xA200EB1EE790F448, // 0x9C84BDA0
 
-		///<remarks>This function has been replaced by <see cref="GET_FINAL_RENDERED_CAM_COORD"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_FINAL_RENDERED_CAM_COORD"/></remarks>
 		[Obsolete]
 		_GET_GAMEPLAY_CAM_COORDS = 0xA200EB1EE790F448, // 0x9C84BDA0
 
@@ -4307,7 +4307,7 @@ namespace GTA.Native
 		/// <returns>Vector3</returns>
 		GET_FINAL_RENDERED_CAM_ROT = 0x5B4E4C817FCC2DFB, // 0x1FFBEFC5
 
-		///<remarks>This function has been replaced by <see cref="GET_FINAL_RENDERED_CAM_ROT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_FINAL_RENDERED_CAM_ROT"/></remarks>
 		[Obsolete]
 		_GET_GAMEPLAY_CAM_ROT_2 = 0x5B4E4C817FCC2DFB, // 0x1FFBEFC5
 
@@ -4317,7 +4317,7 @@ namespace GTA.Native
 		/// <returns>Vector3</returns>
 		GET_FINAL_RENDERED_REMOTE_PLAYER_CAM_ROT = 0x26903D9CD1175F2C, // 0xACADF916
 
-		///<remarks>This function has been replaced by <see cref="GET_FINAL_RENDERED_REMOTE_PLAYER_CAM_ROT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_FINAL_RENDERED_REMOTE_PLAYER_CAM_ROT"/></remarks>
 		[Obsolete]
 		GET_FINAL_RENDERED_IN_WHEN_FRIENDLY_ROT = 0x26903D9CD1175F2C, // 0xACADF916
 
@@ -4333,42 +4333,42 @@ namespace GTA.Native
 		/// <returns>float</returns>
 		GET_FINAL_RENDERED_REMOTE_PLAYER_CAM_FOV = 0x5F35F6732C3FBBA0, // 0x23E3F106
 
-		///<remarks>This function has been replaced by <see cref="GET_FINAL_RENDERED_REMOTE_PLAYER_CAM_FOV"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_FINAL_RENDERED_REMOTE_PLAYER_CAM_FOV"/></remarks>
 		[Obsolete]
 		GET_FINAL_RENDERED_IN_WHEN_FRIENDLY_FOV = 0x5F35F6732C3FBBA0, // 0x23E3F106
 
 		/// <returns>float</returns>
 		GET_FINAL_RENDERED_CAM_NEAR_CLIP = 0xD0082607100D7193, // 0x457AE195
 
-		///<remarks>This function has been replaced by <see cref="GET_FINAL_RENDERED_CAM_NEAR_CLIP"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_FINAL_RENDERED_CAM_NEAR_CLIP"/></remarks>
 		[Obsolete]
 		_GET_GAMEPLAY_CAM_NEAR_CLIP = 0xD0082607100D7193, // 0x457AE195
 
 		/// <returns>float</returns>
 		GET_FINAL_RENDERED_CAM_FAR_CLIP = 0xDFC8CBC606FDB0FC, // 0x46CB3A49
 
-		///<remarks>This function has been replaced by <see cref="GET_FINAL_RENDERED_CAM_FAR_CLIP"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_FINAL_RENDERED_CAM_FAR_CLIP"/></remarks>
 		[Obsolete]
 		_GET_GAMEPLAY_CAM_FAR_CLIP = 0xDFC8CBC606FDB0FC, // 0x46CB3A49
 
 		/// <returns>float</returns>
 		GET_FINAL_RENDERED_CAM_NEAR_DOF = 0xA03502FC581F7D9B, // 0x19297A7A
 
-		///<remarks>This function has been replaced by <see cref="GET_FINAL_RENDERED_CAM_NEAR_DOF"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_FINAL_RENDERED_CAM_NEAR_DOF"/></remarks>
 		[Obsolete]
 		_GET_GAMEPLAY_CAM_NEAR_DOF = 0xA03502FC581F7D9B, // 0x19297A7A
 
 		/// <returns>float</returns>
 		GET_FINAL_RENDERED_CAM_FAR_DOF = 0x9780F32BCAF72431, // 0xF24777CA
 
-		///<remarks>This function has been replaced by <see cref="GET_FINAL_RENDERED_CAM_FAR_DOF"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_FINAL_RENDERED_CAM_FAR_DOF"/></remarks>
 		[Obsolete]
 		_GET_GAMEPLAY_CAM_FAR_DOF = 0x9780F32BCAF72431, // 0xF24777CA
 
 		/// <returns>float</returns>
 		GET_FINAL_RENDERED_CAM_MOTION_BLUR_STRENGTH = 0x162F9D995753DC19, // 0x38992E83
 
-		///<remarks>This function has been replaced by <see cref="GET_FINAL_RENDERED_CAM_MOTION_BLUR_STRENGTH"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_FINAL_RENDERED_CAM_MOTION_BLUR_STRENGTH"/></remarks>
 		[Obsolete]
 		_GET_GAMEPLAY_CAM_FAR_CLIP_2 = 0x162F9D995753DC19, // 0x38992E83
 
@@ -4451,7 +4451,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_GAMEPLAY_HINT_FOLLOW_DISTANCE_SCALAR = 0xF8BDBF3D573049A1, // 0x72E8CD3A
 
-		///<remarks>This function has been replaced by <see cref="SET_GAMEPLAY_HINT_FOLLOW_DISTANCE_SCALAR"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_GAMEPLAY_HINT_FOLLOW_DISTANCE_SCALAR"/></remarks>
 		[Obsolete]
 		_SET_GAMEPLAY_HINT_ANIM_OFFSETZ = 0xF8BDBF3D573049A1, // 0x72E8CD3A
 
@@ -4461,7 +4461,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_GAMEPLAY_HINT_BASE_ORBIT_PITCH_OFFSET = 0xD1F8363DFAD03848, // 0x79472AE3
 
-		///<remarks>This function has been replaced by <see cref="SET_GAMEPLAY_HINT_BASE_ORBIT_PITCH_OFFSET"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_GAMEPLAY_HINT_BASE_ORBIT_PITCH_OFFSET"/></remarks>
 		[Obsolete]
 		_SET_GAMEPLAY_HINT_ANGLE = 0xD1F8363DFAD03848, // 0x79472AE3
 
@@ -4471,7 +4471,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_GAMEPLAY_HINT_CAMERA_RELATIVE_SIDE_OFFSET = 0x5D7B620DAE436138, // 0xFC7464A0
 
-		///<remarks>This function has been replaced by <see cref="SET_GAMEPLAY_HINT_CAMERA_RELATIVE_SIDE_OFFSET"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_GAMEPLAY_HINT_CAMERA_RELATIVE_SIDE_OFFSET"/></remarks>
 		[Obsolete]
 		_SET_GAMEPLAY_HINT_ANIM_OFFSETX = 0x5D7B620DAE436138, // 0xFC7464A0
 
@@ -4481,7 +4481,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_GAMEPLAY_HINT_CAMERA_RELATIVE_VERTICAL_OFFSET = 0xC92717EF615B6704, // 0x3554AA0E
 
-		///<remarks>This function has been replaced by <see cref="SET_GAMEPLAY_HINT_CAMERA_RELATIVE_VERTICAL_OFFSET"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_GAMEPLAY_HINT_CAMERA_RELATIVE_VERTICAL_OFFSET"/></remarks>
 		[Obsolete]
 		_SET_GAMEPLAY_HINT_ANIM_OFFSETY = 0xC92717EF615B6704, // 0x3554AA0E
 
@@ -4491,11 +4491,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_GAMEPLAY_HINT_CAMERA_BLEND_TO_FOLLOW_PED_MEDIUM_VIEW_MODE = 0xE3433EADAAF7EE40, // 0x2F0CE859
 
-		///<remarks>This function has been replaced by <see cref="SET_GAMEPLAY_HINT_CAMERA_BLEND_TO_FOLLOW_PED_MEDIUM_VIEW_MODE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_GAMEPLAY_HINT_CAMERA_BLEND_TO_FOLLOW_PED_MEDIUM_VIEW_MODE"/></remarks>
 		[Obsolete]
 		GET_IS_MULTIPLAYER_BRIEF = 0xE3433EADAAF7EE40, // 0x2F0CE859
 
-		///<remarks>This function has been replaced by <see cref="SET_GAMEPLAY_HINT_CAMERA_BLEND_TO_FOLLOW_PED_MEDIUM_VIEW_MODE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_GAMEPLAY_HINT_CAMERA_BLEND_TO_FOLLOW_PED_MEDIUM_VIEW_MODE"/></remarks>
 		[Obsolete]
 		_SET_GAMEPLAY_HINT_ANIM_CLOSEUP = 0xE3433EADAAF7EE40, // 0x2F0CE859
 
@@ -4536,7 +4536,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		DISABLE_CINEMATIC_BONNET_CAMERA_THIS_UPDATE = 0xADFF1B2A555F5FBA, // 0x5AC6DAC9
 
-		///<remarks>This function has been replaced by <see cref="DISABLE_CINEMATIC_BONNET_CAMERA_THIS_UPDATE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DISABLE_CINEMATIC_BONNET_CAMERA_THIS_UPDATE"/></remarks>
 		[Obsolete]
 		_DISABLE_VEHICLE_FIRST_PERSON_CAM_THIS_FRAME = 0xADFF1B2A555F5FBA, // 0x5AC6DAC9
 
@@ -4549,7 +4549,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		INVALIDATE_CINEMATIC_VEHICLE_IDLE_MODE = 0x9E4CFFF989258472, // 0x65DDE8AF
 
-		///<remarks>This function has been replaced by <see cref="INVALIDATE_CINEMATIC_VEHICLE_IDLE_MODE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="INVALIDATE_CINEMATIC_VEHICLE_IDLE_MODE"/></remarks>
 		[Obsolete]
 		_INVALIDATE_VEHICLE_IDLE_CAM = 0x9E4CFFF989258472, // 0x65DDE8AF
 
@@ -4565,7 +4565,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		IS_CINEMATIC_FIRST_PERSON_VEHICLE_INTERIOR_CAM_RENDERING = 0x4F32C0D5A90A9B40,
 
-		///<remarks>This function has been replaced by <see cref="IS_CINEMATIC_FIRST_PERSON_VEHICLE_INTERIOR_CAM_RENDERING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_CINEMATIC_FIRST_PERSON_VEHICLE_INTERIOR_CAM_RENDERING"/></remarks>
 		[Obsolete]
 		_IS_IN_VEHICLE_CAM_DISABLED = 0x4F32C0D5A90A9B40,
 
@@ -4629,7 +4629,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		IS_CINEMATIC_CAM_INPUT_ACTIVE = 0xF5F1E89A970B7796, // 0x1A900C84
 
-		///<remarks>This function has been replaced by <see cref="IS_CINEMATIC_CAM_INPUT_ACTIVE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_CINEMATIC_CAM_INPUT_ACTIVE"/></remarks>
 		[Obsolete]
 		_IS_CINEMATIC_CAM_ACTIVE = 0xF5F1E89A970B7796, // 0x1A900C84
 
@@ -4639,7 +4639,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		BYPASS_CUTSCENE_CAM_RENDERING_THIS_UPDATE = 0xDB629FFD9285FA06,
 
-		///<remarks>This function has been replaced by <see cref="BYPASS_CUTSCENE_CAM_RENDERING_THIS_UPDATE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="BYPASS_CUTSCENE_CAM_RENDERING_THIS_UPDATE"/></remarks>
 		[Obsolete]
 		STOP_CUTSCENE_CAM_SHAKING = 0xDB629FFD9285FA06,
 
@@ -4673,7 +4673,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_CAM_DEATH_FAIL_EFFECT_STATE = 0x80C8B1846639BB19, // 0xB06CCD38
 
-		///<remarks>This function has been replaced by <see cref="SET_CAM_DEATH_FAIL_EFFECT_STATE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_CAM_DEATH_FAIL_EFFECT_STATE"/></remarks>
 		[Obsolete]
 		_SET_CAM_EFFECT = 0x80C8B1846639BB19, // 0xB06CCD38
 
@@ -4695,7 +4695,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_FIRST_PERSON_FLASH_EFFECT_VEHICLE_MODEL_NAME = 0x21E253A7F8DA5DFB,
 
-		///<remarks>This function has been replaced by <see cref="SET_FIRST_PERSON_FLASH_EFFECT_VEHICLE_MODEL_NAME"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_FIRST_PERSON_FLASH_EFFECT_VEHICLE_MODEL_NAME"/></remarks>
 		[Obsolete]
 		_SET_GAMEPLAY_CAM_VEHICLE_CAMERA = 0x21E253A7F8DA5DFB,
 
@@ -4705,7 +4705,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_FIRST_PERSON_FLASH_EFFECT_VEHICLE_MODEL_HASH = 0x11FA5D3479C7DD47,
 
-		///<remarks>This function has been replaced by <see cref="SET_FIRST_PERSON_FLASH_EFFECT_VEHICLE_MODEL_HASH"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_FIRST_PERSON_FLASH_EFFECT_VEHICLE_MODEL_HASH"/></remarks>
 		[Obsolete]
 		_SET_GAMEPLAY_CAM_VEHICLE_CAMERA_NAME = 0x11FA5D3479C7DD47,
 
@@ -4718,7 +4718,7 @@ namespace GTA.Native
 		/// <returns>float</returns>
 		REPLAY_GET_MAX_DISTANCE_ALLOWED_FROM_PLAYER = 0x8BFCEB5EA1B161B6,
 
-		///<remarks>This function has been replaced by <see cref="REPLAY_GET_MAX_DISTANCE_ALLOWED_FROM_PLAYER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="REPLAY_GET_MAX_DISTANCE_ALLOWED_FROM_PLAYER"/></remarks>
 		[Obsolete]
 		_REPLAY_FREE_CAM_GET_MAX_RANGE = 0x8BFCEB5EA1B161B6,
 
@@ -4828,11 +4828,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		GET_UTC_TIME = 0x8117E09A19EEF4D3, // 0xC589CD7D
 
-		///<remarks>This function has been replaced by <see cref="GET_UTC_TIME"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_UTC_TIME"/></remarks>
 		[Obsolete]
 		_GET_LOCAL_TIME = 0x8117E09A19EEF4D3, // 0xC589CD7D
 
-		///<remarks>This function has been replaced by <see cref="GET_UTC_TIME"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_UTC_TIME"/></remarks>
 		[Obsolete]
 		_GET_UTC_TIME = 0x8117E09A19EEF4D3, // 0xC589CD7D
 
@@ -4880,7 +4880,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		REQUEST_CUTSCENE_WITH_PLAYBACK_LIST = 0xC23DE0E91C30B58C, // 0xD98F656A
 
-		///<remarks>This function has been replaced by <see cref="REQUEST_CUTSCENE_WITH_PLAYBACK_LIST"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="REQUEST_CUTSCENE_WITH_PLAYBACK_LIST"/></remarks>
 		[Obsolete]
 		_REQUEST_CUTSCENE_EX = 0xC23DE0E91C30B58C, // 0xD98F656A
 
@@ -4962,7 +4962,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		GET_CUT_FILE_CONCAT_COUNT = 0x0ABC54DE641DC0FC, // 0xFD8B1AC2
 
-		///<remarks>This function has been replaced by <see cref="GET_CUT_FILE_CONCAT_COUNT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_CUT_FILE_CONCAT_COUNT"/></remarks>
 		[Obsolete]
 		_GET_CUT_FILE_NUM_SECTIONS = 0x0ABC54DE641DC0FC, // 0xFD8B1AC2
 
@@ -5167,7 +5167,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_CAN_DISPLAY_MINIMAP_DURING_CUTSCENE_THIS_UPDATE = 0x2131046957F31B04, // 0xB60CFBB9
 
-		///<remarks>This function has been replaced by <see cref="SET_CAN_DISPLAY_MINIMAP_DURING_CUTSCENE_THIS_UPDATE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_CAN_DISPLAY_MINIMAP_DURING_CUTSCENE_THIS_UPDATE"/></remarks>
 		[Obsolete]
 		REGISTER_SYNCHRONISED_SCRIPT_SPEECH = 0x2131046957F31B04, // 0xB60CFBB9
 
@@ -5212,7 +5212,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		HAS_CUTSCENE_CUT_THIS_FRAME = 0x708BDD8CD795B043, // 0x4315A7C5
 
-		///<remarks>This function has been replaced by <see cref="HAS_CUTSCENE_CUT_THIS_FRAME"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="HAS_CUTSCENE_CUT_THIS_FRAME"/></remarks>
 		[Obsolete]
 		_HAS_CUTSCENE_CUT_THIS_FRAME = 0x708BDD8CD795B043, // 0x4315A7C5
 
@@ -5328,7 +5328,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		DATAFILE_LOAD_OFFLINE_UGC = 0xC5238C011AF405E4, // 0x660C468E
 
-		///<remarks>This function has been replaced by <see cref="DATAFILE_LOAD_OFFLINE_UGC"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DATAFILE_LOAD_OFFLINE_UGC"/></remarks>
 		[Obsolete]
 		_LOAD_UGC_FILE = 0xC5238C011AF405E4, // 0x660C468E
 
@@ -5398,7 +5398,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		DATADICT_SET_BOOL = 0x35124302A556A325, // 0x9B29D99B
 
-		///<remarks>This function has been replaced by <see cref="DATADICT_SET_BOOL"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DATADICT_SET_BOOL"/></remarks>
 		[Obsolete]
 		_OBJECT_VALUE_ADD_BOOLEAN = 0x35124302A556A325, // 0x9B29D99B
 
@@ -5408,7 +5408,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		DATADICT_SET_INT = 0xE7E035450A7948D5, // 0xEFCF554A
 
-		///<remarks>This function has been replaced by <see cref="DATADICT_SET_INT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DATADICT_SET_INT"/></remarks>
 		[Obsolete]
 		_OBJECT_VALUE_ADD_INTEGER = 0xE7E035450A7948D5, // 0xEFCF554A
 
@@ -5418,7 +5418,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		DATADICT_SET_FLOAT = 0xC27E1CC2D795105E, // 0xE972CACF
 
-		///<remarks>This function has been replaced by <see cref="DATADICT_SET_FLOAT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DATADICT_SET_FLOAT"/></remarks>
 		[Obsolete]
 		_OBJECT_VALUE_ADD_FLOAT = 0xC27E1CC2D795105E, // 0xE972CACF
 
@@ -5428,7 +5428,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		DATADICT_SET_STRING = 0x8FF3847DADD8E30C, // 0xD437615C
 
-		///<remarks>This function has been replaced by <see cref="DATADICT_SET_STRING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DATADICT_SET_STRING"/></remarks>
 		[Obsolete]
 		_OBJECT_VALUE_ADD_STRING = 0x8FF3847DADD8E30C, // 0xD437615C
 
@@ -5438,7 +5438,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		DATADICT_SET_VECTOR = 0x4CD49B76338C7DEE, // 0x75FC6C3C
 
-		///<remarks>This function has been replaced by <see cref="DATADICT_SET_VECTOR"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DATADICT_SET_VECTOR"/></remarks>
 		[Obsolete]
 		_OBJECT_VALUE_ADD_VECTOR3 = 0x4CD49B76338C7DEE, // 0x75FC6C3C
 
@@ -5448,7 +5448,7 @@ namespace GTA.Native
 		/// <returns>Any*</returns>
 		DATADICT_CREATE_DICT = 0xA358F56F10732EE1, // 0x96A8E05F
 
-		///<remarks>This function has been replaced by <see cref="DATADICT_CREATE_DICT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DATADICT_CREATE_DICT"/></remarks>
 		[Obsolete]
 		_OBJECT_VALUE_ADD_OBJECT = 0xA358F56F10732EE1, // 0x96A8E05F
 
@@ -5458,7 +5458,7 @@ namespace GTA.Native
 		/// <returns>Any*</returns>
 		DATADICT_CREATE_ARRAY = 0x5B11728527CA6E5F, // 0x03939B8D
 
-		///<remarks>This function has been replaced by <see cref="DATADICT_CREATE_ARRAY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DATADICT_CREATE_ARRAY"/></remarks>
 		[Obsolete]
 		_OBJECT_VALUE_ADD_ARRAY = 0x5B11728527CA6E5F, // 0x03939B8D
 
@@ -5468,7 +5468,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		DATADICT_GET_BOOL = 0x1186940ED72FFEEC, // 0x8876C872
 
-		///<remarks>This function has been replaced by <see cref="DATADICT_GET_BOOL"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DATADICT_GET_BOOL"/></remarks>
 		[Obsolete]
 		_OBJECT_VALUE_GET_BOOLEAN = 0x1186940ED72FFEEC, // 0x8876C872
 
@@ -5478,7 +5478,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		DATADICT_GET_INT = 0x78F06F6B1FB5A80C, // 0xA6C68693
 
-		///<remarks>This function has been replaced by <see cref="DATADICT_GET_INT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DATADICT_GET_INT"/></remarks>
 		[Obsolete]
 		_OBJECT_VALUE_GET_INTEGER = 0x78F06F6B1FB5A80C, // 0xA6C68693
 
@@ -5488,7 +5488,7 @@ namespace GTA.Native
 		/// <returns>float</returns>
 		DATADICT_GET_FLOAT = 0x06610343E73B9727, // 0xA92C1AF4
 
-		///<remarks>This function has been replaced by <see cref="DATADICT_GET_FLOAT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DATADICT_GET_FLOAT"/></remarks>
 		[Obsolete]
 		_OBJECT_VALUE_GET_FLOAT = 0x06610343E73B9727, // 0xA92C1AF4
 
@@ -5498,7 +5498,7 @@ namespace GTA.Native
 		/// <returns>const char*</returns>
 		DATADICT_GET_STRING = 0x3D2FD9E763B24472, // 0x942160EC
 
-		///<remarks>This function has been replaced by <see cref="DATADICT_GET_STRING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DATADICT_GET_STRING"/></remarks>
 		[Obsolete]
 		_OBJECT_VALUE_GET_STRING = 0x3D2FD9E763B24472, // 0x942160EC
 
@@ -5508,7 +5508,7 @@ namespace GTA.Native
 		/// <returns>Vector3</returns>
 		DATADICT_GET_VECTOR = 0x46CD3CB66E0825CC, // 0xE84A127A
 
-		///<remarks>This function has been replaced by <see cref="DATADICT_GET_VECTOR"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DATADICT_GET_VECTOR"/></remarks>
 		[Obsolete]
 		_OBJECT_VALUE_GET_VECTOR3 = 0x46CD3CB66E0825CC, // 0xE84A127A
 
@@ -5518,7 +5518,7 @@ namespace GTA.Native
 		/// <returns>Any*</returns>
 		DATADICT_GET_DICT = 0xB6B9DDC412FCEEE2, // 0xC9C13D8D
 
-		///<remarks>This function has been replaced by <see cref="DATADICT_GET_DICT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DATADICT_GET_DICT"/></remarks>
 		[Obsolete]
 		_OBJECT_VALUE_GET_OBJECT = 0xB6B9DDC412FCEEE2, // 0xC9C13D8D
 
@@ -5528,7 +5528,7 @@ namespace GTA.Native
 		/// <returns>Any*</returns>
 		DATADICT_GET_ARRAY = 0x7A983AA9DA2659ED, // 0x1F2F7D00
 
-		///<remarks>This function has been replaced by <see cref="DATADICT_GET_ARRAY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DATADICT_GET_ARRAY"/></remarks>
 		[Obsolete]
 		_OBJECT_VALUE_GET_ARRAY = 0x7A983AA9DA2659ED, // 0x1F2F7D00
 
@@ -5548,7 +5548,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		DATADICT_GET_TYPE = 0x031C55ED33227371, // 0x2678342A
 
-		///<remarks>This function has been replaced by <see cref="DATADICT_GET_TYPE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DATADICT_GET_TYPE"/></remarks>
 		[Obsolete]
 		_OBJECT_VALUE_GET_TYPE = 0x031C55ED33227371, // 0x2678342A
 
@@ -5558,7 +5558,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		DATAARRAY_ADD_BOOL = 0xF8B0F5A43E928C76, // 0x08174B90
 
-		///<remarks>This function has been replaced by <see cref="DATAARRAY_ADD_BOOL"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DATAARRAY_ADD_BOOL"/></remarks>
 		[Obsolete]
 		_ARRAY_VALUE_ADD_BOOLEAN = 0xF8B0F5A43E928C76, // 0x08174B90
 
@@ -5568,7 +5568,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		DATAARRAY_ADD_INT = 0xCABDB751D86FE93B, // 0xF29C0B36
 
-		///<remarks>This function has been replaced by <see cref="DATAARRAY_ADD_INT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DATAARRAY_ADD_INT"/></remarks>
 		[Obsolete]
 		_ARRAY_VALUE_ADD_INTEGER = 0xCABDB751D86FE93B, // 0xF29C0B36
 
@@ -5578,7 +5578,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		DATAARRAY_ADD_FLOAT = 0x57A995FD75D37F56, // 0xE4302123
 
-		///<remarks>This function has been replaced by <see cref="DATAARRAY_ADD_FLOAT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DATAARRAY_ADD_FLOAT"/></remarks>
 		[Obsolete]
 		_ARRAY_VALUE_ADD_FLOAT = 0x57A995FD75D37F56, // 0xE4302123
 
@@ -5588,7 +5588,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		DATAARRAY_ADD_STRING = 0x2F0661C155AEEEAA, // 0xF3C01350
 
-		///<remarks>This function has been replaced by <see cref="DATAARRAY_ADD_STRING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DATAARRAY_ADD_STRING"/></remarks>
 		[Obsolete]
 		_ARRAY_VALUE_ADD_STRING = 0x2F0661C155AEEEAA, // 0xF3C01350
 
@@ -5598,7 +5598,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		DATAARRAY_ADD_VECTOR = 0x407F8D034F70F0C2, // 0x16F464B6
 
-		///<remarks>This function has been replaced by <see cref="DATAARRAY_ADD_VECTOR"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DATAARRAY_ADD_VECTOR"/></remarks>
 		[Obsolete]
 		_ARRAY_VALUE_ADD_VECTOR3 = 0x407F8D034F70F0C2, // 0x16F464B6
 
@@ -5608,7 +5608,7 @@ namespace GTA.Native
 		/// <returns>Any*</returns>
 		DATAARRAY_ADD_DICT = 0x6889498B3E19C797, // 0xC174C71B
 
-		///<remarks>This function has been replaced by <see cref="DATAARRAY_ADD_DICT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DATAARRAY_ADD_DICT"/></remarks>
 		[Obsolete]
 		_ARRAY_VALUE_ADD_OBJECT = 0x6889498B3E19C797, // 0xC174C71B
 
@@ -5618,7 +5618,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		DATAARRAY_GET_BOOL = 0x50C1B2874E50C114, // 0xA2E5F921
 
-		///<remarks>This function has been replaced by <see cref="DATAARRAY_GET_BOOL"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DATAARRAY_GET_BOOL"/></remarks>
 		[Obsolete]
 		_ARRAY_VALUE_GET_BOOLEAN = 0x50C1B2874E50C114, // 0xA2E5F921
 
@@ -5628,7 +5628,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		DATAARRAY_GET_INT = 0x3E5AE19425CD74BE, // 0xBB120CFC
 
-		///<remarks>This function has been replaced by <see cref="DATAARRAY_GET_INT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DATAARRAY_GET_INT"/></remarks>
 		[Obsolete]
 		_ARRAY_VALUE_GET_INTEGER = 0x3E5AE19425CD74BE, // 0xBB120CFC
 
@@ -5638,7 +5638,7 @@ namespace GTA.Native
 		/// <returns>float</returns>
 		DATAARRAY_GET_FLOAT = 0xC0C527B525D7CFB5, // 0x08AD2CC2
 
-		///<remarks>This function has been replaced by <see cref="DATAARRAY_GET_FLOAT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DATAARRAY_GET_FLOAT"/></remarks>
 		[Obsolete]
 		_ARRAY_VALUE_GET_FLOAT = 0xC0C527B525D7CFB5, // 0x08AD2CC2
 
@@ -5648,7 +5648,7 @@ namespace GTA.Native
 		/// <returns>const char*</returns>
 		DATAARRAY_GET_STRING = 0xD3F2FFEB8D836F52, // 0x93F985A6
 
-		///<remarks>This function has been replaced by <see cref="DATAARRAY_GET_STRING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DATAARRAY_GET_STRING"/></remarks>
 		[Obsolete]
 		_ARRAY_VALUE_GET_STRING = 0xD3F2FFEB8D836F52, // 0x93F985A6
 
@@ -5658,7 +5658,7 @@ namespace GTA.Native
 		/// <returns>Vector3</returns>
 		DATAARRAY_GET_VECTOR = 0x8D2064E5B64A628A, // 0x80E3DA55
 
-		///<remarks>This function has been replaced by <see cref="DATAARRAY_GET_VECTOR"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DATAARRAY_GET_VECTOR"/></remarks>
 		[Obsolete]
 		_ARRAY_VALUE_GET_VECTOR3 = 0x8D2064E5B64A628A, // 0x80E3DA55
 
@@ -5668,7 +5668,7 @@ namespace GTA.Native
 		/// <returns>Any*</returns>
 		DATAARRAY_GET_DICT = 0x8B5FADCC4E3A145F, // 0xECE81278
 
-		///<remarks>This function has been replaced by <see cref="DATAARRAY_GET_DICT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DATAARRAY_GET_DICT"/></remarks>
 		[Obsolete]
 		_ARRAY_VALUE_GET_OBJECT = 0x8B5FADCC4E3A145F, // 0xECE81278
 
@@ -5678,7 +5678,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		DATAARRAY_GET_COUNT = 0x065DB281590CEA2D, // 0xA8A21766
 
-		///<remarks>This function has been replaced by <see cref="DATAARRAY_GET_COUNT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DATAARRAY_GET_COUNT"/></remarks>
 		[Obsolete]
 		_ARRAY_VALUE_GET_SIZE = 0x065DB281590CEA2D, // 0xA8A21766
 
@@ -5698,7 +5698,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		DATAARRAY_GET_TYPE = 0x3A0014ADB172A3C5, // 0xFA2402C8
 
-		///<remarks>This function has been replaced by <see cref="DATAARRAY_GET_TYPE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DATAARRAY_GET_TYPE"/></remarks>
 		[Obsolete]
 		_ARRAY_VALUE_GET_TYPE = 0x3A0014ADB172A3C5, // 0xFA2402C8
 
@@ -5727,7 +5727,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		DECOR_SET_FLOAT = 0x211AB1DD8D0F363A, // 0xBC7BD5CB
 
-		///<remarks>This function has been replaced by <see cref="DECOR_SET_FLOAT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DECOR_SET_FLOAT"/></remarks>
 		[Obsolete]
 		_DECOR_SET_FLOAT = 0x211AB1DD8D0F363A, // 0xBC7BD5CB
 
@@ -5752,7 +5752,7 @@ namespace GTA.Native
 		/// <returns>float</returns>
 		DECOR_GET_FLOAT = 0x6524A2F114706F43, // 0x8DE5382F
 
-		///<remarks>This function has been replaced by <see cref="DECOR_GET_FLOAT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DECOR_GET_FLOAT"/></remarks>
 		[Obsolete]
 		_DECOR_GET_FLOAT = 0x6524A2F114706F43, // 0x8DE5382F
 
@@ -5838,7 +5838,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		GET_EVER_HAD_BAD_PACK_ORDER = 0x8D30F648014A92B5, // 0xF69B729C
 
-		///<remarks>This function has been replaced by <see cref="GET_EVER_HAD_BAD_PACK_ORDER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_EVER_HAD_BAD_PACK_ORDER"/></remarks>
 		[Obsolete]
 		_GET_EXTRA_CONTENT_PACK_HAS_BEEN_INSTALLED = 0x8D30F648014A92B5, // 0xF69B729C
 
@@ -5858,7 +5858,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		HAS_CLOUD_REQUESTS_FINISHED = 0x46E2B844905BC5F0, // 0x6087C10C
 
-		///<remarks>This function has been replaced by <see cref="HAS_CLOUD_REQUESTS_FINISHED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="HAS_CLOUD_REQUESTS_FINISHED"/></remarks>
 		[Obsolete]
 		_NULLIFY = 0x46E2B844905BC5F0, // 0x6087C10C
 
@@ -5869,7 +5869,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		ON_ENTER_SP = 0xD7C10C4A637992C9, // 0x8BF60FC3
 
-		///<remarks>This function has been replaced by <see cref="ON_ENTER_SP"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="ON_ENTER_SP"/></remarks>
 		[Obsolete]
 		_LOAD_SP_DLC_MAPS = 0xD7C10C4A637992C9, // 0x8BF60FC3
 
@@ -5881,7 +5881,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		ON_ENTER_MP = 0x0888C3502DBBEEF5, // 0xC65586A9
 
-		///<remarks>This function has been replaced by <see cref="ON_ENTER_MP"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="ON_ENTER_MP"/></remarks>
 		[Obsolete]
 		_LOAD_MP_DLC_MAPS = 0x0888C3502DBBEEF5, // 0xC65586A9
 
@@ -5922,7 +5922,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		DOES_ENTITY_HAVE_SKELETON = 0x764EB96874EFFDC1,
 
-		///<remarks>This function has been replaced by <see cref="DOES_ENTITY_HAVE_SKELETON"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DOES_ENTITY_HAVE_SKELETON"/></remarks>
 		[Obsolete]
 		_DOES_ENTITY_HAVE_SKELETON_DATA = 0x764EB96874EFFDC1,
 
@@ -5932,7 +5932,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		DOES_ENTITY_HAVE_ANIM_DIRECTOR = 0x2158E81A6AF65EA9,
 
-		///<remarks>This function has been replaced by <see cref="DOES_ENTITY_HAVE_ANIM_DIRECTOR"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DOES_ENTITY_HAVE_ANIM_DIRECTOR"/></remarks>
 		[Obsolete]
 		_DOES_ENTITY_HAVE_ANIM_DIRECTOR = 0x2158E81A6AF65EA9,
 
@@ -5994,7 +5994,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		HAS_ENTITY_CLEAR_LOS_TO_ENTITY_ADJUST_FOR_COVER = 0x394BDE2A7BBA031E,
 
-		///<remarks>This function has been replaced by <see cref="HAS_ENTITY_CLEAR_LOS_TO_ENTITY_ADJUST_FOR_COVER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="HAS_ENTITY_CLEAR_LOS_TO_ENTITY_ADJUST_FOR_COVER"/></remarks>
 		[Obsolete]
 		_HAS_ENTITY_CLEAR_LOS_TO_ENTITY_2 = 0x394BDE2A7BBA031E,
 
@@ -6076,7 +6076,7 @@ namespace GTA.Native
 		/// <returns>float</returns>
 		GET_ANIM_DURATION = 0xFEDDF04D62B8D790, // 0x8B5E3E3D
 
-		///<remarks>This function has been replaced by <see cref="GET_ANIM_DURATION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_ANIM_DURATION"/></remarks>
 		[Obsolete]
 		_GET_ANIM_DURATION = 0xFEDDF04D62B8D790, // 0x8B5E3E3D
 
@@ -6143,7 +6143,7 @@ namespace GTA.Native
 		/// <returns>float</returns>
 		GET_ENTITY_HEADING_FROM_EULERS = 0x846BF6291198A71E, // 0x9320E642
 
-		///<remarks>This function has been replaced by <see cref="GET_ENTITY_HEADING_FROM_EULERS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_ENTITY_HEADING_FROM_EULERS"/></remarks>
 		[Obsolete]
 		_GET_ENTITY_PHYSICS_HEADING = 0x846BF6291198A71E, // 0x9320E642
 
@@ -6708,7 +6708,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		ATTACH_ENTITY_BONE_TO_ENTITY_BONE = 0x5C48B75732C8456C,
 
-		///<remarks>This function has been replaced by <see cref="ATTACH_ENTITY_BONE_TO_ENTITY_BONE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="ATTACH_ENTITY_BONE_TO_ENTITY_BONE"/></remarks>
 		[Obsolete]
 		_ATTACH_ENTITY_BONE_TO_ENTITY_BONE = 0x5C48B75732C8456C,
 
@@ -6718,7 +6718,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		ATTACH_ENTITY_BONE_TO_ENTITY_BONE_Y_FORWARD = 0xFD1695C5D3B05439,
 
-		///<remarks>This function has been replaced by <see cref="ATTACH_ENTITY_BONE_TO_ENTITY_BONE_Y_FORWARD"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="ATTACH_ENTITY_BONE_TO_ENTITY_BONE_Y_FORWARD"/></remarks>
 		[Obsolete]
 		_ATTACH_ENTITY_BONE_TO_ENTITY_BONE_PHYSICALLY = 0xFD1695C5D3B05439,
 
@@ -6842,15 +6842,15 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_ENTITY_SHOULD_FREEZE_WAITING_ON_COLLISION = 0x3910051CCECDB00C, // 0xD3850671
 
-		///<remarks>This function has been replaced by <see cref="SET_ENTITY_SHOULD_FREEZE_WAITING_ON_COLLISION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_ENTITY_SHOULD_FREEZE_WAITING_ON_COLLISION"/></remarks>
 		[Obsolete]
 		_SET_ENTITY_REGISTER = 0x3910051CCECDB00C, // 0xD3850671
 
-		///<remarks>This function has been replaced by <see cref="SET_ENTITY_SHOULD_FREEZE_WAITING_ON_COLLISION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_ENTITY_SHOULD_FREEZE_WAITING_ON_COLLISION"/></remarks>
 		[Obsolete]
 		_SET_ENTITY_SOMETHING = 0x3910051CCECDB00C, // 0xD3850671
 
-		///<remarks>This function has been replaced by <see cref="SET_ENTITY_SHOULD_FREEZE_WAITING_ON_COLLISION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_ENTITY_SHOULD_FREEZE_WAITING_ON_COLLISION"/></remarks>
 		[Obsolete]
 		_SET_ENTITY_CLEANUP_BY_ENGINE = 0x3910051CCECDB00C, // 0xD3850671
 
@@ -7027,7 +7027,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		GET_ENTITY_CAN_BE_DAMAGED = 0xD95CC5D2AB15A09F, // 0xE4938B5D
 
-		///<remarks>This function has been replaced by <see cref="GET_ENTITY_CAN_BE_DAMAGED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_ENTITY_CAN_BE_DAMAGED"/></remarks>
 		[Obsolete]
 		_GET_ENTITY_CAN_BE_DAMAGED = 0xD95CC5D2AB15A09F, // 0xE4938B5D
 
@@ -7064,7 +7064,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		GET_ENTITY_COLLISION_DISABLED = 0xCCF1E97BEFDAE480, // 0xE8C0C629
 
-		///<remarks>This function has been replaced by <see cref="GET_ENTITY_COLLISION_DISABLED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_ENTITY_COLLISION_DISABLED"/></remarks>
 		[Obsolete]
 		_GET_ENTITY_COLLISON_DISABLED = 0xCCF1E97BEFDAE480, // 0xE8C0C629
 
@@ -7074,7 +7074,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_ENTITY_COMPLETELY_DISABLE_COLLISION = 0x9EBC85ED0FFFE51C, // 0xBD0D4831
 
-		///<remarks>This function has been replaced by <see cref="SET_ENTITY_COMPLETELY_DISABLE_COLLISION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_ENTITY_COMPLETELY_DISABLE_COLLISION"/></remarks>
 		[Obsolete]
 		_SET_ENTITY_COLLISION_2 = 0x9EBC85ED0FFFE51C, // 0xBD0D4831
 
@@ -7096,7 +7096,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_ENTITY_COORDS_WITHOUT_PLANTS_RESET = 0x621873ECE1178967, // 0x749B282E
 
-		///<remarks>This function has been replaced by <see cref="SET_ENTITY_COORDS_WITHOUT_PLANTS_RESET"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_ENTITY_COORDS_WITHOUT_PLANTS_RESET"/></remarks>
 		[Obsolete]
 		_SET_ENTITY_COORDS_2 = 0x621873ECE1178967, // 0x749B282E
 
@@ -7221,7 +7221,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		GET_ENTITY_PROOFS = 0xBE8CD9BE829BBEBF,
 
-		///<remarks>This function has been replaced by <see cref="GET_ENTITY_PROOFS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_ENTITY_PROOFS"/></remarks>
 		[Obsolete]
 		_GET_ENTITY_PROOFS = 0xBE8CD9BE829BBEBF,
 
@@ -7289,7 +7289,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_ENTITY_ANGULAR_VELOCITY = 0x8339643499D1222E,
 
-		///<remarks>This function has been replaced by <see cref="SET_ENTITY_ANGULAR_VELOCITY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_ENTITY_ANGULAR_VELOCITY"/></remarks>
 		[Obsolete]
 		_SET_ENTITY_ANGULAR_VELOCITY = 0x8339643499D1222E,
 
@@ -7503,7 +7503,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_ENTITY_NOWEAPONDECALS = 0x2C2E3DC128F44309,
 
-		///<remarks>This function has been replaced by <see cref="SET_ENTITY_NOWEAPONDECALS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_ENTITY_NOWEAPONDECALS"/></remarks>
 		[Obsolete]
 		_SET_ENTITY_DECALS_DISABLED = 0x2C2E3DC128F44309,
 
@@ -7522,11 +7522,11 @@ namespace GTA.Native
 		/// <returns>Vector3</returns>
 		GET_ENTITY_BONE_ROTATION = 0xCE6294A232D03786,
 
-		///<remarks>This function has been replaced by <see cref="GET_ENTITY_BONE_ROTATION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_ENTITY_BONE_ROTATION"/></remarks>
 		[Obsolete]
 		_GET_WORLD_ROTATION_OF_ENTITY_BONE = 0xCE6294A232D03786,
 
-		///<remarks>This function has been replaced by <see cref="GET_ENTITY_BONE_ROTATION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_ENTITY_BONE_ROTATION"/></remarks>
 		[Obsolete]
 		_GET_ENTITY_BONE_ROTATION = 0xCE6294A232D03786,
 
@@ -7539,11 +7539,11 @@ namespace GTA.Native
 		/// <returns>Vector3</returns>
 		GET_ENTITY_BONE_POSTION = 0x46F8696933A63C9B,
 
-		///<remarks>This function has been replaced by <see cref="GET_ENTITY_BONE_POSTION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_ENTITY_BONE_POSTION"/></remarks>
 		[Obsolete]
 		_GET_WORLD_POSITION_OF_ENTITY_BONE_2 = 0x46F8696933A63C9B,
 
-		///<remarks>This function has been replaced by <see cref="GET_ENTITY_BONE_POSTION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_ENTITY_BONE_POSTION"/></remarks>
 		[Obsolete]
 		_GET_ENTITY_BONE_POSITION_2 = 0x46F8696933A63C9B,
 
@@ -7556,7 +7556,7 @@ namespace GTA.Native
 		/// <returns>Vector3</returns>
 		GET_ENTITY_BONE_OBJECT_ROTATION = 0xBD8D32550E5CEBFE,
 
-		///<remarks>This function has been replaced by <see cref="GET_ENTITY_BONE_OBJECT_ROTATION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_ENTITY_BONE_OBJECT_ROTATION"/></remarks>
 		[Obsolete]
 		_GET_ENTITY_BONE_ROTATION_LOCAL = 0xBD8D32550E5CEBFE,
 
@@ -7566,7 +7566,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		GET_ENTITY_BONE_COUNT = 0xB328DCC3A3AA401B,
 
-		///<remarks>This function has been replaced by <see cref="GET_ENTITY_BONE_COUNT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_ENTITY_BONE_COUNT"/></remarks>
 		[Obsolete]
 		_GET_ENTITY_BONE_COUNT = 0xB328DCC3A3AA401B,
 
@@ -7576,7 +7576,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		ENABLE_ENTITY_BULLET_COLLISION = 0x6CE177D014502E8A,
 
-		///<remarks>This function has been replaced by <see cref="ENABLE_ENTITY_BULLET_COLLISION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="ENABLE_ENTITY_BULLET_COLLISION"/></remarks>
 		[Obsolete]
 		_ENABLE_ENTITY_UNK = 0x6CE177D014502E8A,
 
@@ -7613,7 +7613,7 @@ namespace GTA.Native
 		/// <returns>Entity</returns>
 		GET_ENTITY_OF_TYPE_ATTACHED_TO_ENTITY = 0x1F922734E259BD26,
 
-		///<remarks>This function has been replaced by <see cref="GET_ENTITY_OF_TYPE_ATTACHED_TO_ENTITY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_ENTITY_OF_TYPE_ATTACHED_TO_ENTITY"/></remarks>
 		[Obsolete]
 		_GET_ENTITY_ATTACHED_TO_WITH_HASH = 0x1F922734E259BD26,
 
@@ -7736,7 +7736,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		GET_NUM_TATTOO_SHOP_DLC_ITEMS = 0x278F76C3B0A8F109, // 0x71D0CF3E
 
-		///<remarks>This function has been replaced by <see cref="GET_NUM_TATTOO_SHOP_DLC_ITEMS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_NUM_TATTOO_SHOP_DLC_ITEMS"/></remarks>
 		[Obsolete]
 		_GET_NUM_DECORATIONS = 0x278F76C3B0A8F109, // 0x71D0CF3E
 
@@ -7778,7 +7778,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		GET_TATTOO_SHOP_DLC_ITEM_DATA = 0xFF56381874F82086, // 0x2E9D628C
 
-		///<remarks>This function has been replaced by <see cref="GET_TATTOO_SHOP_DLC_ITEM_DATA"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_TATTOO_SHOP_DLC_ITEM_DATA"/></remarks>
 		[Obsolete]
 		_GET_TATTOO_COLLECTION_DATA = 0xFF56381874F82086, // 0x2E9D628C
 
@@ -7830,7 +7830,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		SETUP_SHOP_PED_APPAREL_QUERY_TU = 0x9BDF59818B1E38C1, // 0x594E862C
 
-		///<remarks>This function has been replaced by <see cref="SETUP_SHOP_PED_APPAREL_QUERY_TU"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SETUP_SHOP_PED_APPAREL_QUERY_TU"/></remarks>
 		[Obsolete]
 		_GET_NUM_PROPS_FROM_OUTFIT = 0x9BDF59818B1E38C1, // 0x594E862C
 
@@ -7918,7 +7918,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		GET_SHOP_PED_APPAREL_VARIANT_PROP_COUNT = 0xD40AAC51E8E4C663,
 
-		///<remarks>This function has been replaced by <see cref="GET_SHOP_PED_APPAREL_VARIANT_PROP_COUNT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_SHOP_PED_APPAREL_VARIANT_PROP_COUNT"/></remarks>
 		[Obsolete]
 		_GET_SHOP_PED_APPAREL_VARIANT_PROP_COUNT = 0xD40AAC51E8E4C663,
 
@@ -7934,7 +7934,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		GET_VARIANT_PROP = 0xD81B7F27BC773E66,
 
-		///<remarks>This function has been replaced by <see cref="GET_VARIANT_PROP"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_VARIANT_PROP"/></remarks>
 		[Obsolete]
 		_GET_VARIANT_PROP = 0xD81B7F27BC773E66,
 
@@ -7947,7 +7947,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		GET_SHOP_PED_APPAREL_FORCED_COMPONENT_COUNT = 0xC6B9DB42C04DD8C3, // 0xCE70F183
 
-		///<remarks>This function has been replaced by <see cref="GET_SHOP_PED_APPAREL_FORCED_COMPONENT_COUNT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_SHOP_PED_APPAREL_FORCED_COMPONENT_COUNT"/></remarks>
 		[Obsolete]
 		_GET_NUM_FORCED_COMPONENTS = 0xC6B9DB42C04DD8C3, // 0xCE70F183
 
@@ -7988,7 +7988,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		DOES_CURRENT_PED_COMPONENT_HAVE_RESTRICTION_TAG = 0x7796B21B76221BC5,
 
-		///<remarks>This function has been replaced by <see cref="DOES_CURRENT_PED_COMPONENT_HAVE_RESTRICTION_TAG"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DOES_CURRENT_PED_COMPONENT_HAVE_RESTRICTION_TAG"/></remarks>
 		[Obsolete]
 		_DOES_CUSTOMIZATION_COMPONENT_HAVE_RESTRICTION_TAG = 0x7796B21B76221BC5,
 
@@ -7998,7 +7998,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		DOES_CURRENT_PED_PROP_HAVE_RESTRICTION_TAG = 0xD726BAB4554DA580,
 
-		///<remarks>This function has been replaced by <see cref="DOES_CURRENT_PED_PROP_HAVE_RESTRICTION_TAG"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DOES_CURRENT_PED_PROP_HAVE_RESTRICTION_TAG"/></remarks>
 		[Obsolete]
 		_DOES_CUSTOMIZATION_PROP_HAVE_RESTRICTION_TAG = 0xD726BAB4554DA580,
 
@@ -8056,7 +8056,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		GET_SHOP_PED_OUTFIT_COMPONENT_VARIANT = 0x19F2A026EDF0013F, // 0x818534AC
 
-		///<remarks>This function has been replaced by <see cref="GET_SHOP_PED_OUTFIT_COMPONENT_VARIANT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_SHOP_PED_OUTFIT_COMPONENT_VARIANT"/></remarks>
 		[Obsolete]
 		_GET_PROP_FROM_OUTFIT = 0x19F2A026EDF0013F, // 0x818534AC
 
@@ -8101,7 +8101,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		GET_NUM_DLC_WEAPONS_SP = 0x4160B65AE085B5A9,
 
-		///<remarks>This function has been replaced by <see cref="GET_NUM_DLC_WEAPONS_SP"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_NUM_DLC_WEAPONS_SP"/></remarks>
 		[Obsolete]
 		_GET_NUM_DLC_WEAPONS_SP = 0x4160B65AE085B5A9,
 
@@ -8144,7 +8144,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		GET_DLC_WEAPON_DATA_SP = 0x310836EE7129BA33,
 
-		///<remarks>This function has been replaced by <see cref="GET_DLC_WEAPON_DATA_SP"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_DLC_WEAPON_DATA_SP"/></remarks>
 		[Obsolete]
 		_GET_DLC_WEAPON_DATA_SP = 0x310836EE7129BA33,
 
@@ -8166,7 +8166,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		GET_NUM_DLC_WEAPON_COMPONENTS_SP = 0xAD2A7A6DFF55841B,
 
-		///<remarks>This function has been replaced by <see cref="GET_NUM_DLC_WEAPON_COMPONENTS_SP"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_NUM_DLC_WEAPON_COMPONENTS_SP"/></remarks>
 		[Obsolete]
 		_GET_NUM_DLC_WEAPON_COMPONENTS_SP = 0xAD2A7A6DFF55841B,
 
@@ -8205,7 +8205,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		GET_DLC_WEAPON_COMPONENT_DATA_SP = 0x31D5E073B6F93CDC,
 
-		///<remarks>This function has been replaced by <see cref="GET_DLC_WEAPON_COMPONENT_DATA_SP"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_DLC_WEAPON_COMPONENT_DATA_SP"/></remarks>
 		[Obsolete]
 		_GET_DLC_WEAPON_COMPONENT_DATA_SP = 0x31D5E073B6F93CDC,
 
@@ -8215,11 +8215,11 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		IS_CONTENT_ITEM_LOCKED = 0xD4D7B033C3AA243C, // 0x06396058
 
-		///<remarks>This function has been replaced by <see cref="IS_CONTENT_ITEM_LOCKED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_CONTENT_ITEM_LOCKED"/></remarks>
 		[Obsolete]
 		_IS_OUTFIT_EMPTY = 0xD4D7B033C3AA243C, // 0x06396058
 
-		///<remarks>This function has been replaced by <see cref="IS_CONTENT_ITEM_LOCKED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_CONTENT_ITEM_LOCKED"/></remarks>
 		[Obsolete]
 		_IS_DLC_DATA_EMPTY = 0xD4D7B033C3AA243C, // 0x06396058
 
@@ -8246,7 +8246,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		EXECUTE_CONTENT_CHANGESET_GROUP_FOR_ALL = 0x6BEDF5769AC2DC07,
 
-		///<remarks>This function has been replaced by <see cref="EXECUTE_CONTENT_CHANGESET_GROUP_FOR_ALL"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="EXECUTE_CONTENT_CHANGESET_GROUP_FOR_ALL"/></remarks>
 		[Obsolete]
 		_LOAD_CONTENT_CHANGE_SET_GROUP = 0x6BEDF5769AC2DC07,
 
@@ -8261,7 +8261,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		REVERT_CONTENT_CHANGESET_GROUP_FOR_ALL = 0x3C1978285B036B25,
 
-		///<remarks>This function has been replaced by <see cref="REVERT_CONTENT_CHANGESET_GROUP_FOR_ALL"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="REVERT_CONTENT_CHANGESET_GROUP_FOR_ALL"/></remarks>
 		[Obsolete]
 		_UNLOAD_CONTENT_CHANGE_SET_GROUP = 0x3C1978285B036B25,
 
@@ -8317,7 +8317,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_FLAMMABILITY_MULTIPLIER = 0x8F390AC4155099BA,
 
-		///<remarks>This function has been replaced by <see cref="SET_FLAMMABILITY_MULTIPLIER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_FLAMMABILITY_MULTIPLIER"/></remarks>
 		[Obsolete]
 		_SET_FIRE_SPREAD_RATE = 0x8F390AC4155099BA,
 
@@ -8369,7 +8369,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		ADD_EXPLOSION_WITH_USER_VFX = 0x36DD3FE58B5E5212, // 0xCF358946
 
-		///<remarks>This function has been replaced by <see cref="ADD_EXPLOSION_WITH_USER_VFX"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="ADD_EXPLOSION_WITH_USER_VFX"/></remarks>
 		[Obsolete]
 		_ADD_SPECFX_EXPLOSION = 0x36DD3FE58B5E5212, // 0xCF358946
 
@@ -8409,7 +8409,7 @@ namespace GTA.Native
 		/// <returns>Entity</returns>
 		GET_OWNER_OF_EXPLOSION_IN_SPHERE = 0xB3CD51E3DB86F176,
 
-		///<remarks>This function has been replaced by <see cref="GET_OWNER_OF_EXPLOSION_IN_SPHERE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_OWNER_OF_EXPLOSION_IN_SPHERE"/></remarks>
 		[Obsolete]
 		_GET_ENTITY_INSIDE_EXPLOSION_SPHERE = 0xB3CD51E3DB86F176,
 
@@ -8432,11 +8432,11 @@ namespace GTA.Native
 		/// <returns>Entity</returns>
 		GET_OWNER_OF_EXPLOSION_IN_ANGLED_AREA = 0x14BA4BA137AF6CEC, // 0xAEC0D176
 
-		///<remarks>This function has been replaced by <see cref="GET_OWNER_OF_EXPLOSION_IN_ANGLED_AREA"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_OWNER_OF_EXPLOSION_IN_ANGLED_AREA"/></remarks>
 		[Obsolete]
 		_GET_PED_INSIDE_EXPLOSION_AREA = 0x14BA4BA137AF6CEC, // 0xAEC0D176
 
-		///<remarks>This function has been replaced by <see cref="GET_OWNER_OF_EXPLOSION_IN_ANGLED_AREA"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_OWNER_OF_EXPLOSION_IN_ANGLED_AREA"/></remarks>
 		[Obsolete]
 		_GET_ENTITY_INSIDE_EXPLOSION_AREA = 0x14BA4BA137AF6CEC, // 0xAEC0D176
 
@@ -8571,7 +8571,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		DRAW_TEXTURED_POLY = 0x29280002282F1928,
 
-		///<remarks>This function has been replaced by <see cref="DRAW_TEXTURED_POLY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DRAW_TEXTURED_POLY"/></remarks>
 		[Obsolete]
 		_DRAW_SPRITE_POLY = 0x29280002282F1928,
 
@@ -8586,7 +8586,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		DRAW_TEXTURED_POLY_WITH_THREE_COLOURS = 0x736D7AA1B750856B,
 
-		///<remarks>This function has been replaced by <see cref="DRAW_TEXTURED_POLY_WITH_THREE_COLOURS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DRAW_TEXTURED_POLY_WITH_THREE_COLOURS"/></remarks>
 		[Obsolete]
 		_DRAW_SPRITE_POLY_2 = 0x736D7AA1B750856B,
 
@@ -8707,7 +8707,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		GET_STATUS_OF_CREATE_LOW_QUALITY_COPY_OF_PHOTO = 0xCB82A0BF0E3E3265, // 0xCFCDC518
 
-		///<remarks>This function has been replaced by <see cref="GET_STATUS_OF_CREATE_LOW_QUALITY_COPY_OF_PHOTO"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_STATUS_OF_CREATE_LOW_QUALITY_COPY_OF_PHOTO"/></remarks>
 		[Obsolete]
 		_GET_STATUS_OF_DRAW_LOW_QUALITY_PHOTO = 0xCB82A0BF0E3E3265, // 0xCFCDC518
 
@@ -8732,18 +8732,18 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		GET_MAXIMUM_NUMBER_OF_CLOUD_PHOTOS = 0xDC54A7AF8B3A14EF, // 0x239272BD
 
-		///<remarks>This function has been replaced by <see cref="GET_MAXIMUM_NUMBER_OF_CLOUD_PHOTOS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_MAXIMUM_NUMBER_OF_CLOUD_PHOTOS"/></remarks>
 		[Obsolete]
 		_GET_MAXIMUM_NUMBER_OF_PHOTOS_2 = 0xDC54A7AF8B3A14EF, // 0x239272BD
 
 		/// <returns>int</returns>
 		GET_CURRENT_NUMBER_OF_CLOUD_PHOTOS = 0x473151EBC762C6DA, // 0x21DBF0C9
 
-		///<remarks>This function has been replaced by <see cref="GET_CURRENT_NUMBER_OF_CLOUD_PHOTOS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_CURRENT_NUMBER_OF_CLOUD_PHOTOS"/></remarks>
 		[Obsolete]
 		_GET_NUMBER_OF_PHOTOS = 0x473151EBC762C6DA, // 0x21DBF0C9
 
-		///<remarks>This function has been replaced by <see cref="GET_CURRENT_NUMBER_OF_CLOUD_PHOTOS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_CURRENT_NUMBER_OF_CLOUD_PHOTOS"/></remarks>
 		[Obsolete]
 		_GET_CURRENT_NUMBER_OF_PHOTOS = 0x473151EBC762C6DA, // 0x21DBF0C9
 
@@ -8796,7 +8796,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		GET_LOAD_HIGH_QUALITY_PHOTO_STATUS = 0x40AFB081F8ADD4EE, // 0x762E5C5F
 
-		///<remarks>This function has been replaced by <see cref="GET_LOAD_HIGH_QUALITY_PHOTO_STATUS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_LOAD_HIGH_QUALITY_PHOTO_STATUS"/></remarks>
 		[Obsolete]
 		_RETURN_TWO = 0x40AFB081F8ADD4EE, // 0x762E5C5F
 
@@ -8806,11 +8806,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		DRAW_LIGHT_WITH_RANGEEX = 0xF49E9A9716A04595,
 
-		///<remarks>This function has been replaced by <see cref="DRAW_LIGHT_WITH_RANGEEX"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DRAW_LIGHT_WITH_RANGEEX"/></remarks>
 		[Obsolete]
 		_DRAW_LIGHT_WITH_RANGE_WITH_SHADOW = 0xF49E9A9716A04595,
 
-		///<remarks>This function has been replaced by <see cref="DRAW_LIGHT_WITH_RANGEEX"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DRAW_LIGHT_WITH_RANGEEX"/></remarks>
 		[Obsolete]
 		_DRAW_LIGHT_WITH_RANGE_AND_SHADOW = 0xF49E9A9716A04595,
 
@@ -8850,7 +8850,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		DRAW_SHADOWED_SPOT_LIGHT = 0x5BCA583A583194DB, // 0x32BF9598
 
-		///<remarks>This function has been replaced by <see cref="DRAW_SHADOWED_SPOT_LIGHT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DRAW_SHADOWED_SPOT_LIGHT"/></remarks>
 		[Obsolete]
 		_DRAW_SPOT_LIGHT_WITH_SHADOW = 0x5BCA583A583194DB, // 0x32BF9598
 
@@ -8866,7 +8866,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		UPDATE_LIGHTS_ON_ENTITY = 0xDEADC0DEDEADC0DE, // 0xC12AC47A
 
-		///<remarks>This function has been replaced by <see cref="UPDATE_LIGHTS_ON_ENTITY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="UPDATE_LIGHTS_ON_ENTITY"/></remarks>
 		[Obsolete]
 		_ENTITY_DESCRIPTION_TEXT = 0xDEADC0DEDEADC0DE, // 0xC12AC47A
 
@@ -8939,7 +8939,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		DRAW_MARKER_EX = 0xE82728F0DE75D13A,
 
-		///<remarks>This function has been replaced by <see cref="DRAW_MARKER_EX"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DRAW_MARKER_EX"/></remarks>
 		[Obsolete]
 		_DRAW_MARKER_2 = 0xE82728F0DE75D13A,
 
@@ -8953,7 +8953,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		DRAW_MARKER_SPHERE = 0x799017F9E3B10112,
 
-		///<remarks>This function has been replaced by <see cref="DRAW_MARKER_SPHERE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DRAW_MARKER_SPHERE"/></remarks>
 		[Obsolete]
 		_DRAW_SPHERE = 0x799017F9E3B10112,
 
@@ -9005,7 +9005,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_CHECKPOINT_INSIDE_CYLINDER_HEIGHT_SCALE = 0x4B5B4DA5D79F1943, // 0x80151CCF
 
-		///<remarks>This function has been replaced by <see cref="SET_CHECKPOINT_INSIDE_CYLINDER_HEIGHT_SCALE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_CHECKPOINT_INSIDE_CYLINDER_HEIGHT_SCALE"/></remarks>
 		[Obsolete]
 		_SET_CHECKPOINT_SCALE = 0x4B5B4DA5D79F1943, // 0x80151CCF
 
@@ -9015,7 +9015,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_CHECKPOINT_INSIDE_CYLINDER_SCALE = 0x44621483FF966526,
 
-		///<remarks>This function has been replaced by <see cref="SET_CHECKPOINT_INSIDE_CYLINDER_SCALE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_CHECKPOINT_INSIDE_CYLINDER_SCALE"/></remarks>
 		[Obsolete]
 		_SET_CHECKPOINT_ICON_SCALE = 0x44621483FF966526,
 
@@ -9050,7 +9050,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_CHECKPOINT_RGBA2 = 0xB9EA40907C680580, // 0xA5456DBB
 
-		///<remarks>This function has been replaced by <see cref="SET_CHECKPOINT_RGBA2"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_CHECKPOINT_RGBA2"/></remarks>
 		[Obsolete]
 		_SET_CHECKPOINT_ICON_RGBA = 0xB9EA40907C680580, // 0xA5456DBB
 
@@ -9175,11 +9175,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_SCRIPT_GFX_DRAW_ORDER = 0x61BB1D9B3A95D802, // 0xADF81D24
 
-		///<remarks>This function has been replaced by <see cref="SET_SCRIPT_GFX_DRAW_ORDER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_SCRIPT_GFX_DRAW_ORDER"/></remarks>
 		[Obsolete]
 		_SET_2D_LAYER = 0x61BB1D9B3A95D802, // 0xADF81D24
 
-		///<remarks>This function has been replaced by <see cref="SET_SCRIPT_GFX_DRAW_ORDER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_SCRIPT_GFX_DRAW_ORDER"/></remarks>
 		[Obsolete]
 		_SET_UI_LAYER = 0x61BB1D9B3A95D802, // 0xADF81D24
 
@@ -9198,11 +9198,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_SCRIPT_GFX_ALIGN = 0xB8A850F20A067EB6, // 0x228A2598
 
-		///<remarks>This function has been replaced by <see cref="SET_SCRIPT_GFX_ALIGN"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_SCRIPT_GFX_ALIGN"/></remarks>
 		[Obsolete]
 		_SET_SCREEN_DRAW_POSITION = 0xB8A850F20A067EB6, // 0x228A2598
 
-		///<remarks>This function has been replaced by <see cref="SET_SCRIPT_GFX_ALIGN"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_SCRIPT_GFX_ALIGN"/></remarks>
 		[Obsolete]
 		_SCREEN_DRAW_POSITION_BEGIN = 0xB8A850F20A067EB6, // 0x228A2598
 
@@ -9213,7 +9213,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		RESET_SCRIPT_GFX_ALIGN = 0xE3A3DB414A373DAB, // 0x3FE33BD6
 
-		///<remarks>This function has been replaced by <see cref="RESET_SCRIPT_GFX_ALIGN"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="RESET_SCRIPT_GFX_ALIGN"/></remarks>
 		[Obsolete]
 		_SCREEN_DRAW_POSITION_END = 0xE3A3DB414A373DAB, // 0x3FE33BD6
 
@@ -9226,7 +9226,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_SCRIPT_GFX_ALIGN_PARAMS = 0xF5A2C681787E579D, // 0x76C641E4
 
-		///<remarks>This function has been replaced by <see cref="SET_SCRIPT_GFX_ALIGN_PARAMS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_SCRIPT_GFX_ALIGN_PARAMS"/></remarks>
 		[Obsolete]
 		_SCREEN_DRAW_POSITION_RATIO = 0xF5A2C681787E579D, // 0x76C641E4
 
@@ -9239,7 +9239,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		GET_SCRIPT_GFX_ALIGN_POSITION = 0x6DD8F5AA635EB4B2,
 
-		///<remarks>This function has been replaced by <see cref="GET_SCRIPT_GFX_ALIGN_POSITION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_SCRIPT_GFX_ALIGN_POSITION"/></remarks>
 		[Obsolete]
 		_GET_SCRIPT_GFX_POSITION = 0x6DD8F5AA635EB4B2,
 
@@ -9301,7 +9301,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		DRAW_SPRITE_NAMED_RENDERTARGET = 0x2BC54A8188768488,
 
-		///<remarks>This function has been replaced by <see cref="DRAW_SPRITE_NAMED_RENDERTARGET"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DRAW_SPRITE_NAMED_RENDERTARGET"/></remarks>
 		[Obsolete]
 		_DRAW_INTERACTIVE_SPRITE = 0x2BC54A8188768488,
 
@@ -9316,7 +9316,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		DRAW_SPRITE_ARX_WITH_UV = 0x95812F9B26074726,
 
-		///<remarks>This function has been replaced by <see cref="DRAW_SPRITE_ARX_WITH_UV"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DRAW_SPRITE_ARX_WITH_UV"/></remarks>
 		[Obsolete]
 		_DRAW_SPRITE_UV = 0x95812F9B26074726,
 
@@ -9378,11 +9378,11 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		SET_BINK_MOVIE = 0x338D9F609FD632DB,
 
-		///<remarks>This function has been replaced by <see cref="SET_BINK_MOVIE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_BINK_MOVIE"/></remarks>
 		[Obsolete]
 		_SET_BINK_MOVIE_REQUESTED = 0x338D9F609FD632DB,
 
-		///<remarks>This function has been replaced by <see cref="SET_BINK_MOVIE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_BINK_MOVIE"/></remarks>
 		[Obsolete]
 		_SET_BINK_MOVIE = 0x338D9F609FD632DB,
 
@@ -9392,7 +9392,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAY_BINK_MOVIE = 0x70D2CC8A542A973C,
 
-		///<remarks>This function has been replaced by <see cref="PLAY_BINK_MOVIE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAY_BINK_MOVIE"/></remarks>
 		[Obsolete]
 		_PLAY_BINK_MOVIE = 0x70D2CC8A542A973C,
 
@@ -9402,7 +9402,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		STOP_BINK_MOVIE = 0x63606A61DE68898A,
 
-		///<remarks>This function has been replaced by <see cref="STOP_BINK_MOVIE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="STOP_BINK_MOVIE"/></remarks>
 		[Obsolete]
 		_STOP_BINK_MOVIE = 0x63606A61DE68898A,
 
@@ -9412,7 +9412,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		RELEASE_BINK_MOVIE = 0x04D950EEFA4EED8C,
 
-		///<remarks>This function has been replaced by <see cref="RELEASE_BINK_MOVIE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="RELEASE_BINK_MOVIE"/></remarks>
 		[Obsolete]
 		_RELEASE_BINK_MOVIE = 0x04D950EEFA4EED8C,
 
@@ -9422,7 +9422,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		DRAW_BINK_MOVIE = 0x7118E83EEB9F7238,
 
-		///<remarks>This function has been replaced by <see cref="DRAW_BINK_MOVIE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DRAW_BINK_MOVIE"/></remarks>
 		[Obsolete]
 		_DRAW_BINK_MOVIE = 0x7118E83EEB9F7238,
 
@@ -9435,11 +9435,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_BINK_MOVIE_TIME = 0x0CB6B3446855B57A,
 
-		///<remarks>This function has been replaced by <see cref="SET_BINK_MOVIE_TIME"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_BINK_MOVIE_TIME"/></remarks>
 		[Obsolete]
 		_SET_BINK_MOVIE_PROGRESS = 0x0CB6B3446855B57A,
 
-		///<remarks>This function has been replaced by <see cref="SET_BINK_MOVIE_TIME"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_BINK_MOVIE_TIME"/></remarks>
 		[Obsolete]
 		_SET_BINK_MOVIE_TIME = 0x0CB6B3446855B57A,
 
@@ -9452,7 +9452,7 @@ namespace GTA.Native
 		/// <returns>float</returns>
 		GET_BINK_MOVIE_TIME = 0x8E17DDD6B9D5BF29,
 
-		///<remarks>This function has been replaced by <see cref="GET_BINK_MOVIE_TIME"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_BINK_MOVIE_TIME"/></remarks>
 		[Obsolete]
 		_GET_BINK_MOVIE_TIME = 0x8E17DDD6B9D5BF29,
 
@@ -9465,11 +9465,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_BINK_MOVIE_VOLUME = 0xAFF33B1178172223,
 
-		///<remarks>This function has been replaced by <see cref="SET_BINK_MOVIE_VOLUME"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_BINK_MOVIE_VOLUME"/></remarks>
 		[Obsolete]
 		_SET_BINK_MOVIE_UNK = 0xAFF33B1178172223,
 
-		///<remarks>This function has been replaced by <see cref="SET_BINK_MOVIE_VOLUME"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_BINK_MOVIE_VOLUME"/></remarks>
 		[Obsolete]
 		_SET_BINK_MOVIE_VOLUME = 0xAFF33B1178172223,
 
@@ -9488,7 +9488,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_BINK_MOVIE_AUDIO_FRONTEND = 0xF816F2933752322D,
 
-		///<remarks>This function has been replaced by <see cref="SET_BINK_MOVIE_AUDIO_FRONTEND"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_BINK_MOVIE_AUDIO_FRONTEND"/></remarks>
 		[Obsolete]
 		_SET_BINK_MOVIE_UNK_2 = 0xF816F2933752322D,
 
@@ -9507,7 +9507,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_BINK_SHOULD_SKIP = 0x6805D58CAA427B72,
 
-		///<remarks>This function has been replaced by <see cref="SET_BINK_SHOULD_SKIP"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_BINK_SHOULD_SKIP"/></remarks>
 		[Obsolete]
 		_SET_BINK_SHOULD_SKIP = 0x6805D58CAA427B72,
 
@@ -9548,11 +9548,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		GET_ACTUAL_SCREEN_RESOLUTION = 0x873C9F3104101DD3,
 
-		///<remarks>This function has been replaced by <see cref="GET_ACTUAL_SCREEN_RESOLUTION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_ACTUAL_SCREEN_RESOLUTION"/></remarks>
 		[Obsolete]
 		_GET_SCREEN_ACTIVE_RESOLUTION = 0x873C9F3104101DD3,
 
-		///<remarks>This function has been replaced by <see cref="GET_ACTUAL_SCREEN_RESOLUTION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_ACTUAL_SCREEN_RESOLUTION"/></remarks>
 		[Obsolete]
 		_GET_ACTIVE_SCREEN_RESOLUTION = 0x873C9F3104101DD3,
 
@@ -9562,11 +9562,11 @@ namespace GTA.Native
 		/// <returns>float</returns>
 		GET_ASPECT_RATIO = 0xF1307EF624A80D87,
 
-		///<remarks>This function has been replaced by <see cref="GET_ASPECT_RATIO"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_ASPECT_RATIO"/></remarks>
 		[Obsolete]
 		_GET_SCREEN_ASPECT_RATIO = 0xF1307EF624A80D87,
 
-		///<remarks>This function has been replaced by <see cref="GET_ASPECT_RATIO"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_ASPECT_RATIO"/></remarks>
 		[Obsolete]
 		_GET_ASPECT_RATIO = 0xF1307EF624A80D87,
 
@@ -9613,11 +9613,11 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		GET_USINGNIGHTVISION = 0x2202A3F42C8E5F79, // 0x62619061
 
-		///<remarks>This function has been replaced by <see cref="GET_USINGNIGHTVISION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_USINGNIGHTVISION"/></remarks>
 		[Obsolete]
 		_IS_NIGHTVISION_INACTIVE = 0x2202A3F42C8E5F79, // 0x62619061
 
-		///<remarks>This function has been replaced by <see cref="GET_USINGNIGHTVISION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_USINGNIGHTVISION"/></remarks>
 		[Obsolete]
 		_IS_NIGHTVISION_ACTIVE = 0x2202A3F42C8E5F79, // 0x62619061
 
@@ -9680,7 +9680,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		GET_SCREEN_COORD_FROM_WORLD_COORD = 0x34E82F05DF2974F5, // 0x1F950E4B
 
-		///<remarks>This function has been replaced by <see cref="GET_SCREEN_COORD_FROM_WORLD_COORD"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_SCREEN_COORD_FROM_WORLD_COORD"/></remarks>
 		[Obsolete]
 		_WORLD3D_TO_SCREEN2D = 0x34E82F05DF2974F5, // 0x1F950E4B
 
@@ -9703,7 +9703,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		OVERRIDE_PED_CREW_LOGO_TEXTURE = 0x95EB5E34F821BABE,
 
-		///<remarks>This function has been replaced by <see cref="OVERRIDE_PED_CREW_LOGO_TEXTURE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="OVERRIDE_PED_CREW_LOGO_TEXTURE"/></remarks>
 		[Obsolete]
 		_OVERRIDE_PED_BADGE_TEXTURE = 0x95EB5E34F821BABE,
 
@@ -9737,7 +9737,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_ARTIFICIAL_LIGHTS_STATE = 0x1268615ACE24D504, // 0xAA2A0EAF
 
-		///<remarks>This function has been replaced by <see cref="SET_ARTIFICIAL_LIGHTS_STATE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_ARTIFICIAL_LIGHTS_STATE"/></remarks>
 		[Obsolete]
 		_SET_BLACKOUT = 0x1268615ACE24D504, // 0xAA2A0EAF
 
@@ -9750,7 +9750,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_ARTIFICIAL_VEHICLE_LIGHTS_STATE = 0xE2B187C0939B3D32,
 
-		///<remarks>This function has been replaced by <see cref="SET_ARTIFICIAL_VEHICLE_LIGHTS_STATE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_ARTIFICIAL_VEHICLE_LIGHTS_STATE"/></remarks>
 		[Obsolete]
 		_SET_ARTIFICIAL_LIGHTS_STATE_AFFECTS_VEHICLES = 0xE2B187C0939B3D32,
 
@@ -9844,14 +9844,14 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		GRASSBATCH_ENABLE_FLATTENING_IN_SPHERE = 0x6D955F6A9E0295B1,
 
-		///<remarks>This function has been replaced by <see cref="GRASSBATCH_ENABLE_FLATTENING_IN_SPHERE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GRASSBATCH_ENABLE_FLATTENING_IN_SPHERE"/></remarks>
 		[Obsolete]
 		_GRASS_LOD_SHRINK_SCRIPT_AREAS = 0x6D955F6A9E0295B1,
 
 		/// <returns>void</returns>
 		GRASSBATCH_DISABLE_FLATTENING = 0x302C91AB2D477F7E,
 
-		///<remarks>This function has been replaced by <see cref="GRASSBATCH_DISABLE_FLATTENING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GRASSBATCH_DISABLE_FLATTENING"/></remarks>
 		[Obsolete]
 		_GRASS_LOD_RESET_SCRIPT_AREAS = 0x302C91AB2D477F7E,
 
@@ -9898,7 +9898,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		CASCADE_SHADOWS_ENABLE_ENTITY_TRACKER = 0x80ECBC0C856D3B0B, // 0xFE903D0F
 
-		///<remarks>This function has been replaced by <see cref="CASCADE_SHADOWS_ENABLE_ENTITY_TRACKER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CASCADE_SHADOWS_ENABLE_ENTITY_TRACKER"/></remarks>
 		[Obsolete]
 		_SET_FAR_SHADOWS_SUPPRESSED = 0x80ECBC0C856D3B0B, // 0xFE903D0F
 
@@ -9939,14 +9939,14 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		CASCADE_SHADOWS_SET_SHADOW_SAMPLE_TYPE = 0xB11D94BC55F41932, // 0xDE10BA1F
 
-		///<remarks>This function has been replaced by <see cref="CASCADE_SHADOWS_SET_SHADOW_SAMPLE_TYPE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CASCADE_SHADOWS_SET_SHADOW_SAMPLE_TYPE"/></remarks>
 		[Obsolete]
 		_CASCADESHADOWS_SET_TYPE = 0xB11D94BC55F41932, // 0xDE10BA1F
 
 		/// <returns>void</returns>
 		CASCADE_SHADOWS_CLEAR_SHADOW_SAMPLE_TYPE = 0x27CB772218215325,
 
-		///<remarks>This function has been replaced by <see cref="CASCADE_SHADOWS_CLEAR_SHADOW_SAMPLE_TYPE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CASCADE_SHADOWS_CLEAR_SHADOW_SAMPLE_TYPE"/></remarks>
 		[Obsolete]
 		_CASCADESHADOWS_RESET_TYPE = 0x27CB772218215325,
 
@@ -10068,7 +10068,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		GET_USINGSEETHROUGH = 0x44B80ABAB9D80BD3, // 0x1FE547F2
 
-		///<remarks>This function has been replaced by <see cref="GET_USINGSEETHROUGH"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_USINGSEETHROUGH"/></remarks>
 		[Obsolete]
 		_IS_SEETHROUGH_ACTIVE = 0x44B80ABAB9D80BD3, // 0x1FE547F2
 
@@ -10081,7 +10081,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SEETHROUGH_SET_FADE_STARTDISTANCE = 0xA78DE25577300BA1,
 
-		///<remarks>This function has been replaced by <see cref="SEETHROUGH_SET_FADE_STARTDISTANCE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SEETHROUGH_SET_FADE_STARTDISTANCE"/></remarks>
 		[Obsolete]
 		_SEETHROUGH_SET_FADE_START_DISTANCE = 0xA78DE25577300BA1,
 
@@ -10091,14 +10091,14 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SEETHROUGH_SET_FADE_ENDDISTANCE = 0x9D75795B9DC6EBBF,
 
-		///<remarks>This function has been replaced by <see cref="SEETHROUGH_SET_FADE_ENDDISTANCE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SEETHROUGH_SET_FADE_ENDDISTANCE"/></remarks>
 		[Obsolete]
 		_SEETHROUGH_SET_FADE_END_DISTANCE = 0x9D75795B9DC6EBBF,
 
 		/// <returns>float</returns>
 		SEETHROUGH_GET_MAX_THICKNESS = 0x43DBAE39626CE83F,
 
-		///<remarks>This function has been replaced by <see cref="SEETHROUGH_GET_MAX_THICKNESS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SEETHROUGH_GET_MAX_THICKNESS"/></remarks>
 		[Obsolete]
 		_SEETHROUGH_GET_MAX_THICKNESS = 0x43DBAE39626CE83F,
 
@@ -10113,7 +10113,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SEETHROUGH_SET_MAX_THICKNESS = 0x0C8FAC83902A62DF,
 
-		///<remarks>This function has been replaced by <see cref="SEETHROUGH_SET_MAX_THICKNESS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SEETHROUGH_SET_MAX_THICKNESS"/></remarks>
 		[Obsolete]
 		_SEETHROUGH_SET_MAX_THICKNESS = 0x0C8FAC83902A62DF,
 
@@ -10123,7 +10123,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SEETHROUGH_SET_NOISE_MIN = 0xFF5992E1C9E65D05,
 
-		///<remarks>This function has been replaced by <see cref="SEETHROUGH_SET_NOISE_MIN"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SEETHROUGH_SET_NOISE_MIN"/></remarks>
 		[Obsolete]
 		_SEETHROUGH_SET_NOISE_AMOUNT_MIN = 0xFF5992E1C9E65D05,
 
@@ -10133,7 +10133,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SEETHROUGH_SET_NOISE_MAX = 0xFEBFBFDFB66039DE,
 
-		///<remarks>This function has been replaced by <see cref="SEETHROUGH_SET_NOISE_MAX"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SEETHROUGH_SET_NOISE_MAX"/></remarks>
 		[Obsolete]
 		_SEETHROUGH_SET_NOISE_AMOUNT_MAX = 0xFEBFBFDFB66039DE,
 
@@ -10143,7 +10143,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SEETHROUGH_SET_HILIGHT_INTENSITY = 0x19E50EB6E33E1D28,
 
-		///<remarks>This function has been replaced by <see cref="SEETHROUGH_SET_HILIGHT_INTENSITY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SEETHROUGH_SET_HILIGHT_INTENSITY"/></remarks>
 		[Obsolete]
 		_SEETHROUGH_SET_HI_LIGHT_INTENSITY = 0x19E50EB6E33E1D28,
 
@@ -10153,7 +10153,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SEETHROUGH_SET_HIGHLIGHT_NOISE = 0x1636D7FC127B10D2,
 
-		///<remarks>This function has been replaced by <see cref="SEETHROUGH_SET_HIGHLIGHT_NOISE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SEETHROUGH_SET_HIGHLIGHT_NOISE"/></remarks>
 		[Obsolete]
 		_SEETHROUGH_SET_HI_LIGHT_NOISE = 0x1636D7FC127B10D2,
 
@@ -10173,7 +10173,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SEETHROUGH_SET_COLOR_NEAR = 0x1086127B3A63505E, // 0x5B2A67A8
 
-		///<remarks>This function has been replaced by <see cref="SEETHROUGH_SET_COLOR_NEAR"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SEETHROUGH_SET_COLOR_NEAR"/></remarks>
 		[Obsolete]
 		_SEETHROUGH_SET_COLOR_NEAR = 0x1086127B3A63505E, // 0x5B2A67A8
 
@@ -10222,7 +10222,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		TRIGGER_SCREENBLUR_FADE_IN = 0xA328A24AAA6B7FDC, // 0x5604B890
 
-		///<remarks>This function has been replaced by <see cref="TRIGGER_SCREENBLUR_FADE_IN"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="TRIGGER_SCREENBLUR_FADE_IN"/></remarks>
 		[Obsolete]
 		_TRANSITION_TO_BLURRED = 0xA328A24AAA6B7FDC, // 0x5604B890
 
@@ -10235,21 +10235,21 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		TRIGGER_SCREENBLUR_FADE_OUT = 0xEFACC8AEF94430D5, // 0x46617502
 
-		///<remarks>This function has been replaced by <see cref="TRIGGER_SCREENBLUR_FADE_OUT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="TRIGGER_SCREENBLUR_FADE_OUT"/></remarks>
 		[Obsolete]
 		_TRANSITION_FROM_BLURRED = 0xEFACC8AEF94430D5, // 0x46617502
 
 		/// <returns>void</returns>
 		DISABLE_SCREENBLUR_FADE = 0xDE81239437E8C5A8, // 0xDB7AECDA
 
-		///<remarks>This function has been replaced by <see cref="DISABLE_SCREENBLUR_FADE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DISABLE_SCREENBLUR_FADE"/></remarks>
 		[Obsolete]
 		PAUSED_SCREENBLUR_LOADED = 0xDE81239437E8C5A8, // 0xDB7AECDA
 
 		/// <returns>float</returns>
 		GET_SCREENBLUR_FADE_CURRENT_TIME = 0x5CCABFFCA31DDE33, // 0xEA432A94
 
-		///<remarks>This function has been replaced by <see cref="GET_SCREENBLUR_FADE_CURRENT_TIME"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_SCREENBLUR_FADE_CURRENT_TIME"/></remarks>
 		[Obsolete]
 		IS_PARTICLE_FX_DELAYED_BLINK = 0x5CCABFFCA31DDE33, // 0xEA432A94
 
@@ -10265,11 +10265,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		TOGGLE_PAUSED_RENDERPHASES = 0xDFC252D8A3E15AB7, // 0x30ADE541
 
-		///<remarks>This function has been replaced by <see cref="TOGGLE_PAUSED_RENDERPHASES"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="TOGGLE_PAUSED_RENDERPHASES"/></remarks>
 		[Obsolete]
 		_ENABLE_GAMEPLAY_CAM = 0xDFC252D8A3E15AB7, // 0x30ADE541
 
-		///<remarks>This function has been replaced by <see cref="TOGGLE_PAUSED_RENDERPHASES"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="TOGGLE_PAUSED_RENDERPHASES"/></remarks>
 		[Obsolete]
 		_SET_FROZEN_RENDERING_DISABLED = 0xDFC252D8A3E15AB7, // 0x30ADE541
 
@@ -10288,7 +10288,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_HIDOF_OVERRIDE = 0xBA3D65906822BED5, // 0x513D444B
 
-		///<remarks>This function has been replaced by <see cref="SET_HIDOF_OVERRIDE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_HIDOF_OVERRIDE"/></remarks>
 		[Obsolete]
 		_SET_HIDOF_ENV_BLUR_PARAMS = 0xBA3D65906822BED5, // 0x513D444B
 
@@ -10343,7 +10343,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		START_NETWORKED_PARTICLE_FX_NON_LOOPED_AT_COORD = 0xF56B8137DF10135D, // 0x633F8C48
 
-		///<remarks>This function has been replaced by <see cref="START_NETWORKED_PARTICLE_FX_NON_LOOPED_AT_COORD"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="START_NETWORKED_PARTICLE_FX_NON_LOOPED_AT_COORD"/></remarks>
 		[Obsolete]
 		_START_PARTICLE_FX_NON_LOOPED_AT_COORD_2 = 0xF56B8137DF10135D, // 0x633F8C48
 
@@ -10367,7 +10367,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		START_NETWORKED_PARTICLE_FX_NON_LOOPED_ON_PED_BONE = 0xA41B6A43642AC2CF, // 0x161780C1
 
-		///<remarks>This function has been replaced by <see cref="START_NETWORKED_PARTICLE_FX_NON_LOOPED_ON_PED_BONE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="START_NETWORKED_PARTICLE_FX_NON_LOOPED_ON_PED_BONE"/></remarks>
 		[Obsolete]
 		_START_PARTICLE_FX_NON_LOOPED_ON_PED_BONE_2 = 0xA41B6A43642AC2CF, // 0x161780C1
 
@@ -10396,7 +10396,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		START_NETWORKED_PARTICLE_FX_NON_LOOPED_ON_ENTITY = 0xC95EB1DB6E92113D, // 0x469A2B4A
 
-		///<remarks>This function has been replaced by <see cref="START_NETWORKED_PARTICLE_FX_NON_LOOPED_ON_ENTITY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="START_NETWORKED_PARTICLE_FX_NON_LOOPED_ON_ENTITY"/></remarks>
 		[Obsolete]
 		_START_PARTICLE_FX_NON_LOOPED_ON_ENTITY_2 = 0xC95EB1DB6E92113D, // 0x469A2B4A
 
@@ -10409,7 +10409,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		START_PARTICLE_FX_NON_LOOPED_ON_ENTITY_BONE = 0x02B1F2A72E0F5325,
 
-		///<remarks>This function has been replaced by <see cref="START_PARTICLE_FX_NON_LOOPED_ON_ENTITY_BONE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="START_PARTICLE_FX_NON_LOOPED_ON_ENTITY_BONE"/></remarks>
 		[Obsolete]
 		_START_NETWORKED_PARTICLE_FX_NON_LOOPED_ON_ENTITY_BONE = 0x02B1F2A72E0F5325,
 
@@ -10439,7 +10439,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_PARTICLE_FX_NON_LOOPED_EMITTER_SIZE = 0x1E2E01C00837D26E,
 
-		///<remarks>This function has been replaced by <see cref="SET_PARTICLE_FX_NON_LOOPED_EMITTER_SIZE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_PARTICLE_FX_NON_LOOPED_EMITTER_SIZE"/></remarks>
 		[Obsolete]
 		_SET_PARTICLE_FX_NON_LOOPED_EMITTER_SCALE = 0x1E2E01C00837D26E,
 
@@ -10499,7 +10499,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		START_NETWORKED_PARTICLE_FX_LOOPED_ON_ENTITY = 0x6F60E89A7B64EE1D, // 0x110752B2
 
-		///<remarks>This function has been replaced by <see cref="START_NETWORKED_PARTICLE_FX_LOOPED_ON_ENTITY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="START_NETWORKED_PARTICLE_FX_LOOPED_ON_ENTITY"/></remarks>
 		[Obsolete]
 		_START_PARTICLE_FX_LOOPED_ON_ENTITY_2 = 0x6F60E89A7B64EE1D, // 0x110752B2
 
@@ -10512,7 +10512,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		START_NETWORKED_PARTICLE_FX_LOOPED_ON_ENTITY_BONE = 0xDDE23F30CC5A0F03, // 0xF478EFCF
 
-		///<remarks>This function has been replaced by <see cref="START_NETWORKED_PARTICLE_FX_LOOPED_ON_ENTITY_BONE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="START_NETWORKED_PARTICLE_FX_LOOPED_ON_ENTITY_BONE"/></remarks>
 		[Obsolete]
 		_START_PARTICLE_FX_LOOPED_ON_ENTITY_BONE_2 = 0xDDE23F30CC5A0F03, // 0xF478EFCF
 
@@ -10595,7 +10595,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_PARTICLE_FX_LOOPED_FAR_CLIP_DIST = 0xDCB194B85EF7B541, // 0x233DE879
 
-		///<remarks>This function has been replaced by <see cref="SET_PARTICLE_FX_LOOPED_FAR_CLIP_DIST"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_PARTICLE_FX_LOOPED_FAR_CLIP_DIST"/></remarks>
 		[Obsolete]
 		_SET_PARTICLE_FX_LOOPED_RANGE = 0xDCB194B85EF7B541, // 0x233DE879
 
@@ -10653,7 +10653,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		ENABLE_CLOWN_BLOOD_VFX = 0xD821490579791273, // 0xC61C75E9
 
-		///<remarks>This function has been replaced by <see cref="ENABLE_CLOWN_BLOOD_VFX"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="ENABLE_CLOWN_BLOOD_VFX"/></remarks>
 		[Obsolete]
 		SET_CAMERA_ENDTIME = 0xD821490579791273, // 0xC61C75E9
 
@@ -10740,11 +10740,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		USE_PARTICLE_FX_ASSET = 0x6C38AF3693A69A91, // 0x9C720B61
 
-		///<remarks>This function has been replaced by <see cref="USE_PARTICLE_FX_ASSET"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="USE_PARTICLE_FX_ASSET"/></remarks>
 		[Obsolete]
 		_SET_PTFX_ASSET_NEXT_CALL = 0x6C38AF3693A69A91, // 0x9C720B61
 
-		///<remarks>This function has been replaced by <see cref="USE_PARTICLE_FX_ASSET"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="USE_PARTICLE_FX_ASSET"/></remarks>
 		[Obsolete]
 		_USE_PARTICLE_FX_ASSET_NEXT_CALL = 0x6C38AF3693A69A91, // 0x9C720B61
 
@@ -10757,11 +10757,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_PARTICLE_FX_OVERRIDE = 0xEA1E2D93F6F75ED9, // 0xC92719A7
 
-		///<remarks>This function has been replaced by <see cref="SET_PARTICLE_FX_OVERRIDE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_PARTICLE_FX_OVERRIDE"/></remarks>
 		[Obsolete]
 		_SET_PTFX_ASSET_OLD_2_NEW = 0xEA1E2D93F6F75ED9, // 0xC92719A7
 
-		///<remarks>This function has been replaced by <see cref="SET_PARTICLE_FX_OVERRIDE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_PARTICLE_FX_OVERRIDE"/></remarks>
 		[Obsolete]
 		_SET_PARTICLE_FX_ASSET_OLD_TO_NEW = 0xEA1E2D93F6F75ED9, // 0xC92719A7
 
@@ -10775,7 +10775,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		RESET_PARTICLE_FX_OVERRIDE = 0x89C8553DD3274AAE, // 0x9E8D8B72
 
-		///<remarks>This function has been replaced by <see cref="RESET_PARTICLE_FX_OVERRIDE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="RESET_PARTICLE_FX_OVERRIDE"/></remarks>
 		[Obsolete]
 		_RESET_PARTICLE_FX_ASSET_OLD_TO_NEW = 0x89C8553DD3274AAE, // 0x9E8D8B72
 
@@ -10915,11 +10915,11 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		ADD_OIL_DECAL = 0x126D7F89FE859A5E,
 
-		///<remarks>This function has been replaced by <see cref="ADD_OIL_DECAL"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="ADD_OIL_DECAL"/></remarks>
 		[Obsolete]
 		_ADD_PETROL_DECAL_2 = 0x126D7F89FE859A5E,
 
-		///<remarks>This function has been replaced by <see cref="ADD_OIL_DECAL"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="ADD_OIL_DECAL"/></remarks>
 		[Obsolete]
 		_ADD_OIL_DECAL = 0x126D7F89FE859A5E,
 
@@ -10977,11 +10977,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PATCH_DECAL_DIFFUSE_MAP = 0x8A35C742130C6080, // 0x335695CF
 
-		///<remarks>This function has been replaced by <see cref="PATCH_DECAL_DIFFUSE_MAP"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PATCH_DECAL_DIFFUSE_MAP"/></remarks>
 		[Obsolete]
 		_ADD_DECAL_TO_MARKER = 0x8A35C742130C6080, // 0x335695CF
 
-		///<remarks>This function has been replaced by <see cref="PATCH_DECAL_DIFFUSE_MAP"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PATCH_DECAL_DIFFUSE_MAP"/></remarks>
 		[Obsolete]
 		_OVERRIDE_DECAL_TEXTURE = 0x8A35C742130C6080, // 0x335695CF
 
@@ -10991,7 +10991,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		UNPATCH_DECAL_DIFFUSE_MAP = 0xB7ED70C49521A61D, // 0x7B786555
 
-		///<remarks>This function has been replaced by <see cref="UNPATCH_DECAL_DIFFUSE_MAP"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="UNPATCH_DECAL_DIFFUSE_MAP"/></remarks>
 		[Obsolete]
 		_UNDO_DECAL_TEXTURE_OVERRIDE = 0xB7ED70C49521A61D, // 0x7B786555
 
@@ -11010,7 +11010,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		ADD_VEHICLE_CREW_EMBLEM = 0x428BDCB9DA58DA53, // 0x12077738
 
-		///<remarks>This function has been replaced by <see cref="ADD_VEHICLE_CREW_EMBLEM"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="ADD_VEHICLE_CREW_EMBLEM"/></remarks>
 		[Obsolete]
 		_ADD_CLAN_DECAL_TO_VEHICLE = 0x428BDCB9DA58DA53, // 0x12077738
 
@@ -11038,11 +11038,11 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		DOES_VEHICLE_HAVE_CREW_EMBLEM = 0x060D935D3981A275, // 0x6D58F73B
 
-		///<remarks>This function has been replaced by <see cref="DOES_VEHICLE_HAVE_CREW_EMBLEM"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DOES_VEHICLE_HAVE_CREW_EMBLEM"/></remarks>
 		[Obsolete]
 		_HAS_VEHICLE_GOT_DECAL = 0x060D935D3981A275, // 0x6D58F73B
 
-		///<remarks>This function has been replaced by <see cref="DOES_VEHICLE_HAVE_CREW_EMBLEM"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DOES_VEHICLE_HAVE_CREW_EMBLEM"/></remarks>
 		[Obsolete]
 		_DOES_VEHICLE_HAVE_DECAL = 0x060D935D3981A275, // 0x6D58F73B
 
@@ -11085,7 +11085,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		REGISTER_NOIR_LENS_EFFECT = 0xA44FF770DFBC5DAE,
 
-		///<remarks>This function has been replaced by <see cref="REGISTER_NOIR_LENS_EFFECT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="REGISTER_NOIR_LENS_EFFECT"/></remarks>
 		[Obsolete]
 		_REGISTER_NOIR_SCREEN_EFFECT_THIS_FRAME = 0xA44FF770DFBC5DAE,
 
@@ -11113,7 +11113,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		USE_SNOW_FOOT_VFX_WHEN_UNSHELTERED = 0xAEEDAD1420C65CC0, // 0xC53576CA
 
-		///<remarks>This function has been replaced by <see cref="USE_SNOW_FOOT_VFX_WHEN_UNSHELTERED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="USE_SNOW_FOOT_VFX_WHEN_UNSHELTERED"/></remarks>
 		[Obsolete]
 		_SET_FORCE_PED_FOOTSTEPS_TRACKS = 0xAEEDAD1420C65CC0, // 0xC53576CA
 
@@ -11126,7 +11126,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		USE_SNOW_WHEEL_VFX_WHEN_UNSHELTERED = 0x4CC7F0FEA5283FE0, // 0x7158B1EA
 
-		///<remarks>This function has been replaced by <see cref="USE_SNOW_WHEEL_VFX_WHEN_UNSHELTERED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="USE_SNOW_WHEEL_VFX_WHEN_UNSHELTERED"/></remarks>
 		[Obsolete]
 		_SET_FORCE_VEHICLE_TRAILS = 0x4CC7F0FEA5283FE0, // 0x7158B1EA
 
@@ -11136,7 +11136,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		DISABLE_REGION_VFX = 0xEFD97FF47B745B8D,
 
-		///<remarks>This function has been replaced by <see cref="DISABLE_REGION_VFX"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DISABLE_REGION_VFX"/></remarks>
 		[Obsolete]
 		_DISABLE_SCRIPT_AMBIENT_EFFECTS = 0xEFD97FF47B745B8D,
 
@@ -11150,7 +11150,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PRESET_INTERIOR_AMBIENT_CACHE = 0xD7021272EB0A451E, // 0x137E3E24
 
-		///<remarks>This function has been replaced by <see cref="PRESET_INTERIOR_AMBIENT_CACHE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PRESET_INTERIOR_AMBIENT_CACHE"/></remarks>
 		[Obsolete]
 		_PRESET_INTERIOR_AMBIENT_CACHE = 0xD7021272EB0A451E, // 0x137E3E24
 
@@ -11187,7 +11187,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_TRANSITION_OUT_OF_TIMECYCLE_MODIFIER = 0x1CBA05AE7BD7EE05, // 0x56345F6B
 
-		///<remarks>This function has been replaced by <see cref="SET_TRANSITION_OUT_OF_TIMECYCLE_MODIFIER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_TRANSITION_OUT_OF_TIMECYCLE_MODIFIER"/></remarks>
 		[Obsolete]
 		_SET_TRANSITION_TIMECYCLE_MODIFIER_STOP_WITH_BLEND = 0x1CBA05AE7BD7EE05, // 0x56345F6B
 
@@ -11243,7 +11243,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		CLEAR_ALL_TCMODIFIER_OVERRIDES = 0x15E33297C3E8DC60,
 
-		///<remarks>This function has been replaced by <see cref="CLEAR_ALL_TCMODIFIER_OVERRIDES"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CLEAR_ALL_TCMODIFIER_OVERRIDES"/></remarks>
 		[Obsolete]
 		REMOVE_TCMODIFIER_OVERRIDE = 0x15E33297C3E8DC60,
 
@@ -11256,7 +11256,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_EXTRA_TCMODIFIER = 0x5096FD9CCB49056D,
 
-		///<remarks>This function has been replaced by <see cref="SET_EXTRA_TCMODIFIER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_EXTRA_TCMODIFIER"/></remarks>
 		[Obsolete]
 		_SET_EXTRA_TIMECYCLE_MODIFIER = 0x5096FD9CCB49056D,
 
@@ -11266,7 +11266,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		CLEAR_EXTRA_TCMODIFIER = 0x92CCC17A7A2285DA,
 
-		///<remarks>This function has been replaced by <see cref="CLEAR_EXTRA_TCMODIFIER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CLEAR_EXTRA_TCMODIFIER"/></remarks>
 		[Obsolete]
 		_CLEAR_EXTRA_TIMECYCLE_MODIFIER = 0x92CCC17A7A2285DA,
 
@@ -11277,7 +11277,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		GET_EXTRA_TCMODIFIER = 0xBB0527EC6341496D,
 
-		///<remarks>This function has been replaced by <see cref="GET_EXTRA_TCMODIFIER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_EXTRA_TCMODIFIER"/></remarks>
 		[Obsolete]
 		_GET_EXTRA_TIMECYCLE_MODIFIER_INDEX = 0xBB0527EC6341496D,
 
@@ -11290,11 +11290,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		ENABLE_MOON_CYCLE_OVERRIDE = 0x2C328AF17210F009,
 
-		///<remarks>This function has been replaced by <see cref="ENABLE_MOON_CYCLE_OVERRIDE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="ENABLE_MOON_CYCLE_OVERRIDE"/></remarks>
 		[Obsolete]
 		_SET_EXTRA_TIMECYCLE_MODIFIER_STRENGTH = 0x2C328AF17210F009,
 
-		///<remarks>This function has been replaced by <see cref="ENABLE_MOON_CYCLE_OVERRIDE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="ENABLE_MOON_CYCLE_OVERRIDE"/></remarks>
 		[Obsolete]
 		_ENABLE_EXTRA_TIMECYCLE_MODIFIER_STRENGTH = 0x2C328AF17210F009,
 
@@ -11304,7 +11304,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		DISABLE_MOON_CYCLE_OVERRIDE = 0x2BF72AD5B41AA739,
 
-		///<remarks>This function has been replaced by <see cref="DISABLE_MOON_CYCLE_OVERRIDE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DISABLE_MOON_CYCLE_OVERRIDE"/></remarks>
 		[Obsolete]
 		_RESET_EXTRA_TIMECYCLE_MODIFIER_STRENGTH = 0x2BF72AD5B41AA739,
 
@@ -11323,7 +11323,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		REQUEST_SCALEFORM_MOVIE_WITH_IGNORE_SUPER_WIDESCREEN = 0x65E7E78842E74CDB,
 
-		///<remarks>This function has been replaced by <see cref="REQUEST_SCALEFORM_MOVIE_WITH_IGNORE_SUPER_WIDESCREEN"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="REQUEST_SCALEFORM_MOVIE_WITH_IGNORE_SUPER_WIDESCREEN"/></remarks>
 		[Obsolete]
 		_REQUEST_SCALEFORM_MOVIE_2 = 0x65E7E78842E74CDB,
 
@@ -11349,11 +11349,11 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		REQUEST_SCALEFORM_MOVIE_SKIP_RENDER_WHILE_PAUSED = 0xBD06C611BB9048C2,
 
-		///<remarks>This function has been replaced by <see cref="REQUEST_SCALEFORM_MOVIE_SKIP_RENDER_WHILE_PAUSED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="REQUEST_SCALEFORM_MOVIE_SKIP_RENDER_WHILE_PAUSED"/></remarks>
 		[Obsolete]
 		_REQUEST_SCALEFORM_MOVIE3 = 0xBD06C611BB9048C2,
 
-		///<remarks>This function has been replaced by <see cref="REQUEST_SCALEFORM_MOVIE_SKIP_RENDER_WHILE_PAUSED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="REQUEST_SCALEFORM_MOVIE_SKIP_RENDER_WHILE_PAUSED"/></remarks>
 		[Obsolete]
 		_REQUEST_SCALEFORM_MOVIE_INTERACTIVE = 0xBD06C611BB9048C2,
 
@@ -11394,7 +11394,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		HAS_SCALEFORM_MOVIE_FILENAME_LOADED = 0x0C1C5D756FB5F337, // 0x494A9E50
 
-		///<remarks>This function has been replaced by <see cref="HAS_SCALEFORM_MOVIE_FILENAME_LOADED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="HAS_SCALEFORM_MOVIE_FILENAME_LOADED"/></remarks>
 		[Obsolete]
 		_HAS_NAMED_SCALEFORM_MOVIE_LOADED = 0x0C1C5D756FB5F337, // 0x494A9E50
 
@@ -11431,7 +11431,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_SCALEFORM_MOVIE_TO_USE_SUPER_LARGE_RT = 0xE6A9F00D4240B519,
 
-		///<remarks>This function has been replaced by <see cref="SET_SCALEFORM_MOVIE_TO_USE_SUPER_LARGE_RT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_SCALEFORM_MOVIE_TO_USE_SUPER_LARGE_RT"/></remarks>
 		[Obsolete]
 		_SET_SCALEFORM_FIT_RENDERTARGET = 0xE6A9F00D4240B519,
 
@@ -11468,7 +11468,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		DRAW_SCALEFORM_MOVIE_3D_SOLID = 0x1CE592FDC749D6F5, // 0x899933C8
 
-		///<remarks>This function has been replaced by <see cref="DRAW_SCALEFORM_MOVIE_3D_SOLID"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DRAW_SCALEFORM_MOVIE_3D_SOLID"/></remarks>
 		[Obsolete]
 		_DRAW_SCALEFORM_MOVIE_3D_NON_ADDITIVE = 0x1CE592FDC749D6F5, // 0x899933C8
 
@@ -11481,7 +11481,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		CALL_SCALEFORM_MOVIE_METHOD = 0xFBD96D87AC96D533, // 0x7AB77B57
 
-		///<remarks>This function has been replaced by <see cref="CALL_SCALEFORM_MOVIE_METHOD"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CALL_SCALEFORM_MOVIE_METHOD"/></remarks>
 		[Obsolete]
 		_CALL_SCALEFORM_MOVIE_FUNCTION_VOID = 0xFBD96D87AC96D533, // 0x7AB77B57
 
@@ -11495,7 +11495,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		CALL_SCALEFORM_MOVIE_METHOD_WITH_NUMBER = 0xD0837058AE2E4BEE, // 0x557EDA1D
 
-		///<remarks>This function has been replaced by <see cref="CALL_SCALEFORM_MOVIE_METHOD_WITH_NUMBER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CALL_SCALEFORM_MOVIE_METHOD_WITH_NUMBER"/></remarks>
 		[Obsolete]
 		_CALL_SCALEFORM_MOVIE_FUNCTION_FLOAT_PARAMS = 0xD0837058AE2E4BEE, // 0x557EDA1D
 
@@ -11509,7 +11509,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		CALL_SCALEFORM_MOVIE_METHOD_WITH_STRING = 0x51BC1ED3CC44E8F7, // 0x91A7FCEB
 
-		///<remarks>This function has been replaced by <see cref="CALL_SCALEFORM_MOVIE_METHOD_WITH_STRING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CALL_SCALEFORM_MOVIE_METHOD_WITH_STRING"/></remarks>
 		[Obsolete]
 		_CALL_SCALEFORM_MOVIE_FUNCTION_STRING_PARAMS = 0x51BC1ED3CC44E8F7, // 0x91A7FCEB
 
@@ -11529,7 +11529,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		CALL_SCALEFORM_MOVIE_METHOD_WITH_NUMBER_AND_STRING = 0xEF662D8D57E290B1, // 0x6EAF56DE
 
-		///<remarks>This function has been replaced by <see cref="CALL_SCALEFORM_MOVIE_METHOD_WITH_NUMBER_AND_STRING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CALL_SCALEFORM_MOVIE_METHOD_WITH_NUMBER_AND_STRING"/></remarks>
 		[Obsolete]
 		_CALL_SCALEFORM_MOVIE_FUNCTION_MIXED_PARAMS = 0xEF662D8D57E290B1, // 0x6EAF56DE
 
@@ -11546,11 +11546,11 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		BEGIN_SCALEFORM_SCRIPT_HUD_MOVIE_METHOD = 0x98C494FD5BDFBFD5, // 0x5D66CE1E
 
-		///<remarks>This function has been replaced by <see cref="BEGIN_SCALEFORM_SCRIPT_HUD_MOVIE_METHOD"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="BEGIN_SCALEFORM_SCRIPT_HUD_MOVIE_METHOD"/></remarks>
 		[Obsolete]
 		_PUSH_SCALEFORM_MOVIE_FUNCTION_FROM_HUD_COMPONENT = 0x98C494FD5BDFBFD5, // 0x5D66CE1E
 
-		///<remarks>This function has been replaced by <see cref="BEGIN_SCALEFORM_SCRIPT_HUD_MOVIE_METHOD"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="BEGIN_SCALEFORM_SCRIPT_HUD_MOVIE_METHOD"/></remarks>
 		[Obsolete]
 		_BEGIN_SCALEFORM_MOVIE_METHOD_HUD_COMPONENT = 0x98C494FD5BDFBFD5, // 0x5D66CE1E
 
@@ -11563,7 +11563,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		BEGIN_SCALEFORM_MOVIE_METHOD = 0xF6E48914C7A8694E, // 0x215ABBE8
 
-		///<remarks>This function has been replaced by <see cref="BEGIN_SCALEFORM_MOVIE_METHOD"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="BEGIN_SCALEFORM_MOVIE_METHOD"/></remarks>
 		[Obsolete]
 		_PUSH_SCALEFORM_MOVIE_FUNCTION = 0xF6E48914C7A8694E, // 0x215ABBE8
 
@@ -11578,11 +11578,11 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		BEGIN_SCALEFORM_MOVIE_METHOD_ON_FRONTEND = 0xAB58C27C2E6123C6, // 0xF6015178
 
-		///<remarks>This function has been replaced by <see cref="BEGIN_SCALEFORM_MOVIE_METHOD_ON_FRONTEND"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="BEGIN_SCALEFORM_MOVIE_METHOD_ON_FRONTEND"/></remarks>
 		[Obsolete]
 		_PUSH_SCALEFORM_MOVIE_FUNCTION_N = 0xAB58C27C2E6123C6, // 0xF6015178
 
-		///<remarks>This function has been replaced by <see cref="BEGIN_SCALEFORM_MOVIE_METHOD_ON_FRONTEND"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="BEGIN_SCALEFORM_MOVIE_METHOD_ON_FRONTEND"/></remarks>
 		[Obsolete]
 		_BEGIN_SCALEFORM_MOVIE_METHOD_N = 0xAB58C27C2E6123C6, // 0xF6015178
 
@@ -11596,7 +11596,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		BEGIN_SCALEFORM_MOVIE_METHOD_ON_FRONTEND_HEADER = 0xB9449845F73F5E9C, // 0x5E219B67
 
-		///<remarks>This function has been replaced by <see cref="BEGIN_SCALEFORM_MOVIE_METHOD_ON_FRONTEND_HEADER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="BEGIN_SCALEFORM_MOVIE_METHOD_ON_FRONTEND_HEADER"/></remarks>
 		[Obsolete]
 		_BEGIN_SCALEFORM_MOVIE_METHOD_V = 0xB9449845F73F5E9C, // 0x5E219B67
 
@@ -11606,18 +11606,18 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		END_SCALEFORM_MOVIE_METHOD = 0xC6796A8FFA375E53, // 0x02DBF2D7
 
-		///<remarks>This function has been replaced by <see cref="END_SCALEFORM_MOVIE_METHOD"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="END_SCALEFORM_MOVIE_METHOD"/></remarks>
 		[Obsolete]
 		_POP_SCALEFORM_MOVIE_FUNCTION_VOID = 0xC6796A8FFA375E53, // 0x02DBF2D7
 
 		/// <returns>int</returns>
 		END_SCALEFORM_MOVIE_METHOD_RETURN_VALUE = 0xC50AA39A577AF886, // 0x2F38B526
 
-		///<remarks>This function has been replaced by <see cref="END_SCALEFORM_MOVIE_METHOD_RETURN_VALUE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="END_SCALEFORM_MOVIE_METHOD_RETURN_VALUE"/></remarks>
 		[Obsolete]
 		_POP_SCALEFORM_MOVIE_FUNCTION = 0xC50AA39A577AF886, // 0x2F38B526
 
-		///<remarks>This function has been replaced by <see cref="END_SCALEFORM_MOVIE_METHOD_RETURN_VALUE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="END_SCALEFORM_MOVIE_METHOD_RETURN_VALUE"/></remarks>
 		[Obsolete]
 		_END_SCALEFORM_MOVIE_METHOD_RETURN = 0xC50AA39A577AF886, // 0x2F38B526
 
@@ -11631,7 +11631,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		IS_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_READY = 0x768FF8961BA904D6, // 0x5CD7C3C0
 
-		///<remarks>This function has been replaced by <see cref="IS_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_READY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_READY"/></remarks>
 		[Obsolete]
 		_GET_SCALEFORM_MOVIE_FUNCTION_RETURN_BOOL = 0x768FF8961BA904D6, // 0x5CD7C3C0
 
@@ -11645,7 +11645,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		GET_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_INT = 0x2DE7EFA66B906036, // 0x2CFB0E6D
 
-		///<remarks>This function has been replaced by <see cref="GET_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_INT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_INT"/></remarks>
 		[Obsolete]
 		_GET_SCALEFORM_MOVIE_FUNCTION_RETURN_INT = 0x2DE7EFA66B906036, // 0x2CFB0E6D
 
@@ -11658,7 +11658,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		GET_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_BOOL = 0xD80A80346A45D761,
 
-		///<remarks>This function has been replaced by <see cref="GET_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_BOOL"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_BOOL"/></remarks>
 		[Obsolete]
 		_GET_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_BOOL = 0xD80A80346A45D761,
 
@@ -11672,11 +11672,11 @@ namespace GTA.Native
 		/// <returns>const char*</returns>
 		GET_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_STRING = 0xE1E258829A885245, // 0x516862EB
 
-		///<remarks>This function has been replaced by <see cref="GET_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_STRING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_STRING"/></remarks>
 		[Obsolete]
 		SITTING_TV = 0xE1E258829A885245, // 0x516862EB
 
-		///<remarks>This function has been replaced by <see cref="GET_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_STRING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_STRING"/></remarks>
 		[Obsolete]
 		_GET_SCALEFORM_MOVIE_FUNCTION_RETURN_STRING = 0xE1E258829A885245, // 0x516862EB
 
@@ -11689,11 +11689,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT = 0xC3D0841A0CC546A6, // 0x716777CB
 
-		///<remarks>This function has been replaced by <see cref="SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT"/></remarks>
 		[Obsolete]
 		_PUSH_SCALEFORM_MOVIE_FUNCTION_PARAMETER_INT = 0xC3D0841A0CC546A6, // 0x716777CB
 
-		///<remarks>This function has been replaced by <see cref="SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT"/></remarks>
 		[Obsolete]
 		_PUSH_SCALEFORM_MOVIE_METHOD_PARAMETER_INT = 0xC3D0841A0CC546A6, // 0x716777CB
 
@@ -11706,11 +11706,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT = 0xD69736AAE04DB51A, // 0x9A01FFDA
 
-		///<remarks>This function has been replaced by <see cref="SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT"/></remarks>
 		[Obsolete]
 		_PUSH_SCALEFORM_MOVIE_FUNCTION_PARAMETER_FLOAT = 0xD69736AAE04DB51A, // 0x9A01FFDA
 
-		///<remarks>This function has been replaced by <see cref="SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT"/></remarks>
 		[Obsolete]
 		_PUSH_SCALEFORM_MOVIE_METHOD_PARAMETER_FLOAT = 0xD69736AAE04DB51A, // 0x9A01FFDA
 
@@ -11723,11 +11723,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL = 0xC58424BA936EB458, // 0x0D4AE8CB
 
-		///<remarks>This function has been replaced by <see cref="SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL"/></remarks>
 		[Obsolete]
 		_PUSH_SCALEFORM_MOVIE_FUNCTION_PARAMETER_BOOL = 0xC58424BA936EB458, // 0x0D4AE8CB
 
-		///<remarks>This function has been replaced by <see cref="SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL"/></remarks>
 		[Obsolete]
 		_PUSH_SCALEFORM_MOVIE_METHOD_PARAMETER_BOOL = 0xC58424BA936EB458, // 0x0D4AE8CB
 
@@ -11754,14 +11754,14 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		BEGIN_TEXT_COMMAND_SCALEFORM_STRING = 0x80338406F3475E55, // 0x3AC9CB55
 
-		///<remarks>This function has been replaced by <see cref="BEGIN_TEXT_COMMAND_SCALEFORM_STRING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="BEGIN_TEXT_COMMAND_SCALEFORM_STRING"/></remarks>
 		[Obsolete]
 		_BEGIN_TEXT_COMPONENT = 0x80338406F3475E55, // 0x3AC9CB55
 
 		/// <returns>void</returns>
 		END_TEXT_COMMAND_SCALEFORM_STRING = 0x362E2D3FE93A9959, // 0x386CE0B8
 
-		///<remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_SCALEFORM_STRING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_SCALEFORM_STRING"/></remarks>
 		[Obsolete]
 		_END_TEXT_COMPONENT = 0x362E2D3FE93A9959, // 0x386CE0B8
 
@@ -11772,7 +11772,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		END_TEXT_COMMAND_UNPARSED_SCALEFORM_STRING = 0xAE4E8157D9ECF087, // 0x2E80DB52
 
-		///<remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_UNPARSED_SCALEFORM_STRING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_UNPARSED_SCALEFORM_STRING"/></remarks>
 		[Obsolete]
 		_END_TEXT_COMMAND_SCALEFORM_STRING_2 = 0xAE4E8157D9ECF087, // 0x2E80DB52
 
@@ -11786,11 +11786,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SCALEFORM_MOVIE_METHOD_ADD_PARAM_LITERAL_STRING = 0x77FE3402004CD1B0,
 
-		///<remarks>This function has been replaced by <see cref="SCALEFORM_MOVIE_METHOD_ADD_PARAM_LITERAL_STRING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SCALEFORM_MOVIE_METHOD_ADD_PARAM_LITERAL_STRING"/></remarks>
 		[Obsolete]
 		_PUSH_SCALEFORM_MOVIE_METHOD_PARAMETER_STRING_2 = 0x77FE3402004CD1B0,
 
-		///<remarks>This function has been replaced by <see cref="SCALEFORM_MOVIE_METHOD_ADD_PARAM_LITERAL_STRING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SCALEFORM_MOVIE_METHOD_ADD_PARAM_LITERAL_STRING"/></remarks>
 		[Obsolete]
 		_SCALEFORM_MOVIE_METHOD_ADD_PARAM_TEXTURE_NAME_STRING_2 = 0x77FE3402004CD1B0,
 
@@ -11800,11 +11800,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SCALEFORM_MOVIE_METHOD_ADD_PARAM_TEXTURE_NAME_STRING = 0xBA7148484BD90365, // 0x4DAAD55B
 
-		///<remarks>This function has been replaced by <see cref="SCALEFORM_MOVIE_METHOD_ADD_PARAM_TEXTURE_NAME_STRING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SCALEFORM_MOVIE_METHOD_ADD_PARAM_TEXTURE_NAME_STRING"/></remarks>
 		[Obsolete]
 		_PUSH_SCALEFORM_MOVIE_FUNCTION_PARAMETER_STRING = 0xBA7148484BD90365, // 0x4DAAD55B
 
-		///<remarks>This function has been replaced by <see cref="SCALEFORM_MOVIE_METHOD_ADD_PARAM_TEXTURE_NAME_STRING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SCALEFORM_MOVIE_METHOD_ADD_PARAM_TEXTURE_NAME_STRING"/></remarks>
 		[Obsolete]
 		_PUSH_SCALEFORM_MOVIE_METHOD_PARAMETER_STRING = 0xBA7148484BD90365, // 0x4DAAD55B
 
@@ -11814,7 +11814,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SCALEFORM_MOVIE_METHOD_ADD_PARAM_PLAYER_NAME_STRING = 0xE83A3E3557A56640, // 0xCCBF0334
 
-		///<remarks>This function has been replaced by <see cref="SCALEFORM_MOVIE_METHOD_ADD_PARAM_PLAYER_NAME_STRING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SCALEFORM_MOVIE_METHOD_ADD_PARAM_PLAYER_NAME_STRING"/></remarks>
 		[Obsolete]
 		_PUSH_SCALEFORM_MOVIE_METHOD_PARAMETER_BUTTON_NAME = 0xE83A3E3557A56640, // 0xCCBF0334
 
@@ -11830,7 +11830,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SCALEFORM_MOVIE_METHOD_ADD_PARAM_LATEST_BRIEF_STRING = 0xEC52C631A1831C03, // 0x83A9811D
 
-		///<remarks>This function has been replaced by <see cref="SCALEFORM_MOVIE_METHOD_ADD_PARAM_LATEST_BRIEF_STRING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SCALEFORM_MOVIE_METHOD_ADD_PARAM_LATEST_BRIEF_STRING"/></remarks>
 		[Obsolete]
 		_SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT_STRING = 0xEC52C631A1831C03, // 0x83A9811D
 
@@ -11840,7 +11840,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		REQUEST_SCALEFORM_SCRIPT_HUD_MOVIE = 0x9304881D6F6537EA, // 0x7AF85862
 
-		///<remarks>This function has been replaced by <see cref="REQUEST_SCALEFORM_SCRIPT_HUD_MOVIE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="REQUEST_SCALEFORM_SCRIPT_HUD_MOVIE"/></remarks>
 		[Obsolete]
 		_REQUEST_HUD_SCALEFORM = 0x9304881D6F6537EA, // 0x7AF85862
 
@@ -11850,7 +11850,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		HAS_SCALEFORM_SCRIPT_HUD_MOVIE_LOADED = 0xDF6E5987D2B4D140, // 0x79B43255
 
-		///<remarks>This function has been replaced by <see cref="HAS_SCALEFORM_SCRIPT_HUD_MOVIE_LOADED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="HAS_SCALEFORM_SCRIPT_HUD_MOVIE_LOADED"/></remarks>
 		[Obsolete]
 		_HAS_HUD_SCALEFORM_LOADED = 0xDF6E5987D2B4D140, // 0x79B43255
 
@@ -11949,7 +11949,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_TV_CHANNEL_PLAYLIST = 0xF7B38B8305F1FE8B, // 0xB262DE67
 
-		///<remarks>This function has been replaced by <see cref="SET_TV_CHANNEL_PLAYLIST"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_TV_CHANNEL_PLAYLIST"/></remarks>
 		[Obsolete]
 		_LOAD_TV_CHANNEL_SEQUENCE = 0xF7B38B8305F1FE8B, // 0xB262DE67
 
@@ -11971,7 +11971,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		IS_PLAYLIST_ON_CHANNEL = 0x1F710BFF7DAE6261,
 
-		///<remarks>This function has been replaced by <see cref="IS_PLAYLIST_ON_CHANNEL"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_PLAYLIST_ON_CHANNEL"/></remarks>
 		[Obsolete]
 		_IS_PLAYLIST_UNK = 0x1F710BFF7DAE6261,
 
@@ -11981,11 +11981,11 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		IS_TVSHOW_CURRENTLY_PLAYING = 0x0AD973CA1E077B60, // 0x4D1EB0FB
 
-		///<remarks>This function has been replaced by <see cref="IS_TVSHOW_CURRENTLY_PLAYING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_TVSHOW_CURRENTLY_PLAYING"/></remarks>
 		[Obsolete]
 		_LOAD_TV_CHANNEL = 0x0AD973CA1E077B60, // 0x4D1EB0FB
 
-		///<remarks>This function has been replaced by <see cref="IS_TVSHOW_CURRENTLY_PLAYING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_TVSHOW_CURRENTLY_PLAYING"/></remarks>
 		[Obsolete]
 		_IS_TV_PLAYLIST_ITEM_PLAYING = 0x0AD973CA1E077B60, // 0x4D1EB0FB
 
@@ -12089,7 +12089,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		ANIMPOSTFX_PLAY = 0x2206BF9A37B7F724, // 0x1D980479
 
-		///<remarks>This function has been replaced by <see cref="ANIMPOSTFX_PLAY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="ANIMPOSTFX_PLAY"/></remarks>
 		[Obsolete]
 		_START_SCREEN_EFFECT = 0x2206BF9A37B7F724, // 0x1D980479
 
@@ -12103,7 +12103,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		ANIMPOSTFX_STOP = 0x068E835A1D0DC0E3, // 0x06BB5CDA
 
-		///<remarks>This function has been replaced by <see cref="ANIMPOSTFX_STOP"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="ANIMPOSTFX_STOP"/></remarks>
 		[Obsolete]
 		_STOP_SCREEN_EFFECT = 0x068E835A1D0DC0E3, // 0x06BB5CDA
 
@@ -12117,7 +12117,7 @@ namespace GTA.Native
 		/// <returns>float</returns>
 		ANIMPOSTFX_GET_CURRENT_TIME = 0xE35B38A27E8E7179,
 
-		///<remarks>This function has been replaced by <see cref="ANIMPOSTFX_GET_CURRENT_TIME"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="ANIMPOSTFX_GET_CURRENT_TIME"/></remarks>
 		[Obsolete]
 		_ANIMPOSTFX_GET_UNK = 0xE35B38A27E8E7179,
 
@@ -12132,7 +12132,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		ANIMPOSTFX_IS_RUNNING = 0x36AD3E690DA5ACEB, // 0x089D5921
 
-		///<remarks>This function has been replaced by <see cref="ANIMPOSTFX_IS_RUNNING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="ANIMPOSTFX_IS_RUNNING"/></remarks>
 		[Obsolete]
 		_GET_SCREEN_EFFECT_IS_ACTIVE = 0x36AD3E690DA5ACEB, // 0x089D5921
 
@@ -12142,7 +12142,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		ANIMPOSTFX_STOP_ALL = 0xB4EDDC19532BFB85, // 0x4E6D875B
 
-		///<remarks>This function has been replaced by <see cref="ANIMPOSTFX_STOP_ALL"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="ANIMPOSTFX_STOP_ALL"/></remarks>
 		[Obsolete]
 		_STOP_ALL_SCREEN_EFFECTS = 0xB4EDDC19532BFB85, // 0x4E6D875B
 
@@ -12157,7 +12157,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		ANIMPOSTFX_STOP_AND_FLUSH_REQUESTS = 0xD2209BE128B5418C,
 
-		///<remarks>This function has been replaced by <see cref="ANIMPOSTFX_STOP_AND_FLUSH_REQUESTS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="ANIMPOSTFX_STOP_AND_FLUSH_REQUESTS"/></remarks>
 		[Obsolete]
 		_ANIMPOSTFX_STOP_AND_DO_UNK = 0xD2209BE128B5418C,
 
@@ -12205,11 +12205,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		BEGIN_TEXT_COMMAND_BUSYSPINNER_ON = 0xABA17D7CE615ADBF, // 0xCB7C8994
 
-		///<remarks>This function has been replaced by <see cref="BEGIN_TEXT_COMMAND_BUSYSPINNER_ON"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="BEGIN_TEXT_COMMAND_BUSYSPINNER_ON"/></remarks>
 		[Obsolete]
 		_SET_LOADING_PROMPT_TEXT_ENTRY = 0xABA17D7CE615ADBF, // 0xCB7C8994
 
-		///<remarks>This function has been replaced by <see cref="BEGIN_TEXT_COMMAND_BUSYSPINNER_ON"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="BEGIN_TEXT_COMMAND_BUSYSPINNER_ON"/></remarks>
 		[Obsolete]
 		_BEGIN_TEXT_COMMAND_BUSY_STRING = 0xABA17D7CE615ADBF, // 0xCB7C8994
 
@@ -12229,11 +12229,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		END_TEXT_COMMAND_BUSYSPINNER_ON = 0xBD12F8228410D9B4, // 0x903F5EE4
 
-		///<remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_BUSYSPINNER_ON"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_BUSYSPINNER_ON"/></remarks>
 		[Obsolete]
 		_SHOW_LOADING_PROMPT = 0xBD12F8228410D9B4, // 0x903F5EE4
 
-		///<remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_BUSYSPINNER_ON"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_BUSYSPINNER_ON"/></remarks>
 		[Obsolete]
 		_END_TEXT_COMMAND_BUSY_STRING = 0xBD12F8228410D9B4, // 0x903F5EE4
 
@@ -12243,7 +12243,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		BUSYSPINNER_OFF = 0x10D373323E5B9C0D, // 0x94119534
 
-		///<remarks>This function has been replaced by <see cref="BUSYSPINNER_OFF"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="BUSYSPINNER_OFF"/></remarks>
 		[Obsolete]
 		_REMOVE_LOADING_PROMPT = 0x10D373323E5B9C0D, // 0x94119534
 
@@ -12253,7 +12253,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		BUSYSPINNER_IS_ON = 0xD422FCC5F239A915, // 0xB8B3A5D0
 
-		///<remarks>This function has been replaced by <see cref="BUSYSPINNER_IS_ON"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="BUSYSPINNER_IS_ON"/></remarks>
 		[Obsolete]
 		_IS_LOADING_PROMPT_BEING_DISPLAYED = 0xD422FCC5F239A915, // 0xB8B3A5D0
 
@@ -12266,7 +12266,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		DISABLE_PAUSEMENU_SPINNER = 0x9245E81072704B8A,
 
-		///<remarks>This function has been replaced by <see cref="DISABLE_PAUSEMENU_SPINNER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DISABLE_PAUSEMENU_SPINNER"/></remarks>
 		[Obsolete]
 		_DISABLE_PAUSE_MENU_BUSYSPINNER = 0x9245E81072704B8A,
 
@@ -12276,11 +12276,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_MOUSE_CURSOR_THIS_FRAME = 0xAAE7CE1D63167423,
 
-		///<remarks>This function has been replaced by <see cref="SET_MOUSE_CURSOR_THIS_FRAME"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_MOUSE_CURSOR_THIS_FRAME"/></remarks>
 		[Obsolete]
 		_SHOW_CURSOR_THIS_FRAME = 0xAAE7CE1D63167423,
 
-		///<remarks>This function has been replaced by <see cref="SET_MOUSE_CURSOR_THIS_FRAME"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_MOUSE_CURSOR_THIS_FRAME"/></remarks>
 		[Obsolete]
 		_SET_MOUSE_CURSOR_ACTIVE_THIS_FRAME = 0xAAE7CE1D63167423,
 
@@ -12296,11 +12296,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_MOUSE_CURSOR_STYLE = 0x8DB8CFFD58B62552,
 
-		///<remarks>This function has been replaced by <see cref="SET_MOUSE_CURSOR_STYLE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_MOUSE_CURSOR_STYLE"/></remarks>
 		[Obsolete]
 		_SET_CURSOR_SPRITE = 0x8DB8CFFD58B62552,
 
-		///<remarks>This function has been replaced by <see cref="SET_MOUSE_CURSOR_STYLE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_MOUSE_CURSOR_STYLE"/></remarks>
 		[Obsolete]
 		_SET_MOUSE_CURSOR_SPRITE = 0x8DB8CFFD58B62552,
 
@@ -12314,7 +12314,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_MOUSE_CURSOR_VISIBLE = 0x98215325A695E78A,
 
-		///<remarks>This function has been replaced by <see cref="SET_MOUSE_CURSOR_VISIBLE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_MOUSE_CURSOR_VISIBLE"/></remarks>
 		[Obsolete]
 		_SET_MOUSE_CURSOR_VISIBLE_IN_MENUS = 0x98215325A695E78A,
 
@@ -12324,7 +12324,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		IS_MOUSE_ROLLED_OVER_INSTRUCTIONAL_BUTTONS = 0x3D9ACB1EB139E702,
 
-		///<remarks>This function has been replaced by <see cref="IS_MOUSE_ROLLED_OVER_INSTRUCTIONAL_BUTTONS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_MOUSE_ROLLED_OVER_INSTRUCTIONAL_BUTTONS"/></remarks>
 		[Obsolete]
 		_IS_MOUSE_CURSOR_ABOVE_INSTRUCTIONAL_BUTTONS = 0x3D9ACB1EB139E702,
 
@@ -12346,7 +12346,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		THEFEED_SET_SCRIPTED_MENU_HEIGHT = 0x55598D21339CB998, // 0x1DA7E41A
 
-		///<remarks>This function has been replaced by <see cref="THEFEED_SET_SCRIPTED_MENU_HEIGHT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="THEFEED_SET_SCRIPTED_MENU_HEIGHT"/></remarks>
 		[Obsolete]
 		_CLEAR_NOTIFICATIONS_POS = 0x55598D21339CB998, // 0x1DA7E41A
 
@@ -12356,11 +12356,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		THEFEED_HIDE = 0x32888337579A5970,
 
-		///<remarks>This function has been replaced by <see cref="THEFEED_HIDE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="THEFEED_HIDE"/></remarks>
 		[Obsolete]
 		_THEFEED_DISABLE = 0x32888337579A5970,
 
-		///<remarks>This function has been replaced by <see cref="THEFEED_HIDE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="THEFEED_HIDE"/></remarks>
 		[Obsolete]
 		_THEFEED_DISABLE_LOADING_SCREEN_TIPS = 0x32888337579A5970,
 
@@ -12370,7 +12370,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		THEFEED_HIDE_THIS_FRAME = 0x25F87B30C382FCA7, // 0x1E63088A
 
-		///<remarks>This function has been replaced by <see cref="THEFEED_HIDE_THIS_FRAME"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="THEFEED_HIDE_THIS_FRAME"/></remarks>
 		[Obsolete]
 		_HIDE_HUD_NOTIFICATIONS_THIS_FRAME = 0x25F87B30C382FCA7, // 0x1E63088A
 
@@ -12380,11 +12380,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		THEFEED_SHOW = 0x15CFA549788D35EF,
 
-		///<remarks>This function has been replaced by <see cref="THEFEED_SHOW"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="THEFEED_SHOW"/></remarks>
 		[Obsolete]
 		_THEFEED_ENABLE = 0x15CFA549788D35EF,
 
-		///<remarks>This function has been replaced by <see cref="THEFEED_SHOW"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="THEFEED_SHOW"/></remarks>
 		[Obsolete]
 		_THEFEED_DISPLAY_LOADING_SCREEN_TIPS = 0x15CFA549788D35EF,
 
@@ -12400,7 +12400,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		THEFEED_REMOVE_ITEM = 0xBE4390CB40B3E627, // 0xECA8ACB9
 
-		///<remarks>This function has been replaced by <see cref="THEFEED_REMOVE_ITEM"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="THEFEED_REMOVE_ITEM"/></remarks>
 		[Obsolete]
 		_REMOVE_NOTIFICATION = 0xBE4390CB40B3E627, // 0xECA8ACB9
 
@@ -12413,7 +12413,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		THEFEED_FORCE_RENDER_OFF = 0x583049884A2EEE3C, // 0xC8BAB2F2
 
-		///<remarks>This function has been replaced by <see cref="THEFEED_FORCE_RENDER_OFF"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="THEFEED_FORCE_RENDER_OFF"/></remarks>
 		[Obsolete]
 		_THEFEED_HIDE_GTAO_TOOLTIPS = 0x583049884A2EEE3C, // 0xC8BAB2F2
 
@@ -12429,22 +12429,22 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		THEFEED_REPORT_LOGO_ON = 0xD4438C0564490E63, // 0x709B4BCB
 
-		///<remarks>This function has been replaced by <see cref="THEFEED_REPORT_LOGO_ON"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="THEFEED_REPORT_LOGO_ON"/></remarks>
 		[Obsolete]
 		_THEFEED_ENABLE_BASELINE_OFFSET = 0xD4438C0564490E63, // 0x709B4BCB
 
-		///<remarks>This function has been replaced by <see cref="THEFEED_REPORT_LOGO_ON"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="THEFEED_REPORT_LOGO_ON"/></remarks>
 		[Obsolete]
 		THEFEED_SPS_EXTEND_WIDESCREEN_ON = 0xD4438C0564490E63, // 0x709B4BCB
 
 		/// <returns>void</returns>
 		THEFEED_REPORT_LOGO_OFF = 0xB695E2CD0A2DA9EE, // 0x4A4A40A4
 
-		///<remarks>This function has been replaced by <see cref="THEFEED_REPORT_LOGO_OFF"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="THEFEED_REPORT_LOGO_OFF"/></remarks>
 		[Obsolete]
 		_THEFEED_DISABLE_BASELINE_OFFSET = 0xB695E2CD0A2DA9EE, // 0x4A4A40A4
 
-		///<remarks>This function has been replaced by <see cref="THEFEED_REPORT_LOGO_OFF"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="THEFEED_REPORT_LOGO_OFF"/></remarks>
 		[Obsolete]
 		THEFEED_SPS_EXTEND_WIDESCREEN_OFF = 0xB695E2CD0A2DA9EE, // 0x4A4A40A4
 
@@ -12454,15 +12454,15 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		THEFEED_GET_LAST_SHOWN_PHONE_ACTIVATABLE_FEED_ID = 0x82352748437638CA, // 0x294405D4
 
-		///<remarks>This function has been replaced by <see cref="THEFEED_GET_LAST_SHOWN_PHONE_ACTIVATABLE_FEED_ID"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="THEFEED_GET_LAST_SHOWN_PHONE_ACTIVATABLE_FEED_ID"/></remarks>
 		[Obsolete]
 		_GET_CURRENT_NOTIFICATION = 0x82352748437638CA, // 0x294405D4
 
-		///<remarks>This function has been replaced by <see cref="THEFEED_GET_LAST_SHOWN_PHONE_ACTIVATABLE_FEED_ID"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="THEFEED_GET_LAST_SHOWN_PHONE_ACTIVATABLE_FEED_ID"/></remarks>
 		[Obsolete]
 		_THEFEED_GET_CURRENT_NOTIFICATION = 0x82352748437638CA, // 0x294405D4
 
-		///<remarks>This function has been replaced by <see cref="THEFEED_GET_LAST_SHOWN_PHONE_ACTIVATABLE_FEED_ID"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="THEFEED_GET_LAST_SHOWN_PHONE_ACTIVATABLE_FEED_ID"/></remarks>
 		[Obsolete]
 		THEFEED_GET_FIRST_VISIBLE_DELETE_REMAINING = 0x82352748437638CA, // 0x294405D4
 
@@ -12472,7 +12472,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		THEFEED_AUTO_POST_GAMETIPS_ON = 0x56C8B608CFD49854, // 0xF881AB87
 
-		///<remarks>This function has been replaced by <see cref="THEFEED_AUTO_POST_GAMETIPS_ON"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="THEFEED_AUTO_POST_GAMETIPS_ON"/></remarks>
 		[Obsolete]
 		THEFEED_COMMENT_TELEPORT_POOL_ON = 0x56C8B608CFD49854, // 0xF881AB87
 
@@ -12482,11 +12482,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		THEFEED_AUTO_POST_GAMETIPS_OFF = 0xADED7F5748ACAFE6, // 0x1D6859CA
 
-		///<remarks>This function has been replaced by <see cref="THEFEED_AUTO_POST_GAMETIPS_OFF"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="THEFEED_AUTO_POST_GAMETIPS_OFF"/></remarks>
 		[Obsolete]
 		_THEFEED_SHOW_GTAO_TOOLTIPS = 0xADED7F5748ACAFE6, // 0x1D6859CA
 
-		///<remarks>This function has been replaced by <see cref="THEFEED_AUTO_POST_GAMETIPS_OFF"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="THEFEED_AUTO_POST_GAMETIPS_OFF"/></remarks>
 		[Obsolete]
 		THEFEED_COMMENT_TELEPORT_POOL_OFF = 0xADED7F5748ACAFE6, // 0x1D6859CA
 
@@ -12507,15 +12507,15 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		THEFEED_SET_BACKGROUND_COLOR_FOR_NEXT_POST = 0x92F0DA1E27DB96DC, // 0x07CE2EA4
 
-		///<remarks>This function has been replaced by <see cref="THEFEED_SET_BACKGROUND_COLOR_FOR_NEXT_POST"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="THEFEED_SET_BACKGROUND_COLOR_FOR_NEXT_POST"/></remarks>
 		[Obsolete]
 		_SET_NOTIFICATION_BACKGROUND_COLOR = 0x92F0DA1E27DB96DC, // 0x07CE2EA4
 
-		///<remarks>This function has been replaced by <see cref="THEFEED_SET_BACKGROUND_COLOR_FOR_NEXT_POST"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="THEFEED_SET_BACKGROUND_COLOR_FOR_NEXT_POST"/></remarks>
 		[Obsolete]
 		_THEFEED_NEXT_POST_BACKGROUND_COLOR = 0x92F0DA1E27DB96DC, // 0x07CE2EA4
 
-		///<remarks>This function has been replaced by <see cref="THEFEED_SET_BACKGROUND_COLOR_FOR_NEXT_POST"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="THEFEED_SET_BACKGROUND_COLOR_FOR_NEXT_POST"/></remarks>
 		[Obsolete]
 		_THEFEED_SET_NEXT_POST_BACKGROUND_COLOR = 0x92F0DA1E27DB96DC, // 0x07CE2EA4
 
@@ -12525,11 +12525,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		THEFEED_SET_RGBA_PARAMETER_FOR_NEXT_MESSAGE = 0x17430B918701C342, // 0xCF14D7F2
 
-		///<remarks>This function has been replaced by <see cref="THEFEED_SET_RGBA_PARAMETER_FOR_NEXT_MESSAGE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="THEFEED_SET_RGBA_PARAMETER_FOR_NEXT_MESSAGE"/></remarks>
 		[Obsolete]
 		_SET_NOTIFICATION_FLASH_COLOR = 0x17430B918701C342, // 0xCF14D7F2
 
-		///<remarks>This function has been replaced by <see cref="THEFEED_SET_RGBA_PARAMETER_FOR_NEXT_MESSAGE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="THEFEED_SET_RGBA_PARAMETER_FOR_NEXT_MESSAGE"/></remarks>
 		[Obsolete]
 		_THEFEED_SET_ANIMPOSTFX_COLOR = 0x17430B918701C342, // 0xCF14D7F2
 
@@ -12542,7 +12542,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		THEFEED_SET_FLASH_DURATION_PARAMETER_FOR_NEXT_MESSAGE = 0x17AD8C9706BDD88A, // 0x24A97AF8
 
-		///<remarks>This function has been replaced by <see cref="THEFEED_SET_FLASH_DURATION_PARAMETER_FOR_NEXT_MESSAGE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="THEFEED_SET_FLASH_DURATION_PARAMETER_FOR_NEXT_MESSAGE"/></remarks>
 		[Obsolete]
 		_THEFEED_SET_ANIMPOSTFX_COUNT = 0x17AD8C9706BDD88A, // 0x24A97AF8
 
@@ -12552,14 +12552,14 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		THEFEED_SET_VIBRATE_PARAMETER_FOR_NEXT_MESSAGE = 0x4A0C7C9BB10ABB36, // 0x44018EDB
 
-		///<remarks>This function has been replaced by <see cref="THEFEED_SET_VIBRATE_PARAMETER_FOR_NEXT_MESSAGE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="THEFEED_SET_VIBRATE_PARAMETER_FOR_NEXT_MESSAGE"/></remarks>
 		[Obsolete]
 		_THEFEED_SET_ANIMPOSTFX_SOUND = 0x4A0C7C9BB10ABB36, // 0x44018EDB
 
 		/// <returns>void</returns>
 		THEFEED_RESET_ALL_PARAMETERS = 0xFDD85225B2DEA55E, // 0xA4524B23
 
-		///<remarks>This function has been replaced by <see cref="THEFEED_RESET_ALL_PARAMETERS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="THEFEED_RESET_ALL_PARAMETERS"/></remarks>
 		[Obsolete]
 		_THEFEED_CLEAR_ANIMPOSTFX = 0xFDD85225B2DEA55E, // 0xA4524B23
 
@@ -12569,14 +12569,14 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		THEFEED_FREEZE_NEXT_POST = 0xFDEC055AB549E328, // 0xAFA1148B
 
-		///<remarks>This function has been replaced by <see cref="THEFEED_FREEZE_NEXT_POST"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="THEFEED_FREEZE_NEXT_POST"/></remarks>
 		[Obsolete]
 		_THEFEED_SET_NEXT_POST_PERSISTENT = 0xFDEC055AB549E328, // 0xAFA1148B
 
 		/// <returns>void</returns>
 		THEFEED_CLEAR_FROZEN_POST = 0x80FE4F3AB4E1B62A, // 0x3CD4307C
 
-		///<remarks>This function has been replaced by <see cref="THEFEED_CLEAR_FROZEN_POST"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="THEFEED_CLEAR_FROZEN_POST"/></remarks>
 		[Obsolete]
 		_THEFEED_FLUSH_PERSISTENT = 0x80FE4F3AB4E1B62A, // 0x3CD4307C
 
@@ -12586,7 +12586,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		THEFEED_SET_SNAP_FEED_ITEM_POSITIONS = 0xBAE4F9B97CD43B30,
 
-		///<remarks>This function has been replaced by <see cref="THEFEED_SET_SNAP_FEED_ITEM_POSITIONS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="THEFEED_SET_SNAP_FEED_ITEM_POSITIONS"/></remarks>
 		[Obsolete]
 		_THEFEED_SET_FLUSH_ANIMPOSTFX = 0xBAE4F9B97CD43B30,
 
@@ -12599,7 +12599,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		THEFEED_UPDATE_ITEM_TEXTURE = 0x317EBA71D7543F52, // 0x6A3F747D
 
-		///<remarks>This function has been replaced by <see cref="THEFEED_UPDATE_ITEM_TEXTURE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="THEFEED_UPDATE_ITEM_TEXTURE"/></remarks>
 		[Obsolete]
 		_THEFEED_ADD_TXD_REF = 0x317EBA71D7543F52, // 0x6A3F747D
 
@@ -12618,7 +12618,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		BEGIN_TEXT_COMMAND_THEFEED_POST = 0x202709F4C58A0424, // 0x574EE85C
 
-		///<remarks>This function has been replaced by <see cref="BEGIN_TEXT_COMMAND_THEFEED_POST"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="BEGIN_TEXT_COMMAND_THEFEED_POST"/></remarks>
 		[Obsolete]
 		_SET_NOTIFICATION_TEXT_ENTRY = 0x202709F4C58A0424, // 0x574EE85C
 
@@ -12632,7 +12632,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		END_TEXT_COMMAND_THEFEED_POST_STATS = 0x2B7E9A4EAAA93C89, // 0xED130FA1
 
-		///<remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_THEFEED_POST_STATS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_THEFEED_POST_STATS"/></remarks>
 		[Obsolete]
 		_SET_NOTIFICATION_MESSAGE_2 = 0x2B7E9A4EAAA93C89, // 0xED130FA1
 
@@ -12659,7 +12659,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT = 0x1CCD9A37359072CF, // 0xE7E3C98B
 
-		///<remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT"/></remarks>
 		[Obsolete]
 		_SET_NOTIFICATION_MESSAGE = 0x1CCD9A37359072CF, // 0xE7E3C98B
 
@@ -12675,15 +12675,15 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT_SUBTITLE_LABEL = 0xC6F580E4C94926AC,
 
-		///<remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT_SUBTITLE_LABEL"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT_SUBTITLE_LABEL"/></remarks>
 		[Obsolete]
 		_SET_NOTIFICATION_MESSAGE_3 = 0xC6F580E4C94926AC,
 
-		///<remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT_SUBTITLE_LABEL"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT_SUBTITLE_LABEL"/></remarks>
 		[Obsolete]
 		_END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT_ENTRY = 0xC6F580E4C94926AC,
 
-		///<remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT_SUBTITLE_LABEL"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT_SUBTITLE_LABEL"/></remarks>
 		[Obsolete]
 		_END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT_GXT_ENTRY = 0xC6F580E4C94926AC,
 
@@ -12699,7 +12699,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT_TU = 0x1E6611149DB3DB6B, // 0x0EB382B7
 
-		///<remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT_TU"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT_TU"/></remarks>
 		[Obsolete]
 		_SET_NOTIFICATION_MESSAGE_4 = 0x1E6611149DB3DB6B, // 0x0EB382B7
 
@@ -12728,7 +12728,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT_WITH_CREW_TAG = 0x5CBF7BADE20DB93E, // 0x3E807FE3
 
-		///<remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT_WITH_CREW_TAG"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT_WITH_CREW_TAG"/></remarks>
 		[Obsolete]
 		_SET_NOTIFICATION_MESSAGE_CLAN_TAG = 0x5CBF7BADE20DB93E, // 0x3E807FE3
 
@@ -12765,7 +12765,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT_WITH_CREW_TAG_AND_ADDITIONAL_ICON = 0x531B84E7DA981FB6, // 0xDEB491C8
 
-		///<remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT_WITH_CREW_TAG_AND_ADDITIONAL_ICON"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT_WITH_CREW_TAG_AND_ADDITIONAL_ICON"/></remarks>
 		[Obsolete]
 		_SET_NOTIFICATION_MESSAGE_CLAN_TAG_2 = 0x531B84E7DA981FB6, // 0xDEB491C8
 
@@ -12775,7 +12775,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		END_TEXT_COMMAND_THEFEED_POST_TICKER = 0x2ED7843F8F801023, // 0x08F7AF78
 
-		///<remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_THEFEED_POST_TICKER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_THEFEED_POST_TICKER"/></remarks>
 		[Obsolete]
 		_DRAW_NOTIFICATION = 0x2ED7843F8F801023, // 0x08F7AF78
 
@@ -12785,7 +12785,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		END_TEXT_COMMAND_THEFEED_POST_TICKER_FORCED = 0x44FA03975424A0EE, // 0x57B8D0D4
 
-		///<remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_THEFEED_POST_TICKER_FORCED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_THEFEED_POST_TICKER_FORCED"/></remarks>
 		[Obsolete]
 		_DRAW_NOTIFICATION_2 = 0x44FA03975424A0EE, // 0x57B8D0D4
 
@@ -12795,7 +12795,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		END_TEXT_COMMAND_THEFEED_POST_TICKER_WITH_TOKENS = 0x378E809BF61EC840, // 0x02BCAF9B
 
-		///<remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_THEFEED_POST_TICKER_WITH_TOKENS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_THEFEED_POST_TICKER_WITH_TOKENS"/></remarks>
 		[Obsolete]
 		_DRAW_NOTIFICATION_3 = 0x378E809BF61EC840, // 0x02BCAF9B
 
@@ -12811,11 +12811,11 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		END_TEXT_COMMAND_THEFEED_POST_AWARD = 0xAA295B6F28BD587D, // 0x02DED2B8
 
-		///<remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_THEFEED_POST_AWARD"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_THEFEED_POST_AWARD"/></remarks>
 		[Obsolete]
 		_DRAW_NOTIFICATION_ICON = 0xAA295B6F28BD587D, // 0x02DED2B8
 
-		///<remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_THEFEED_POST_AWARD"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_THEFEED_POST_AWARD"/></remarks>
 		[Obsolete]
 		_DRAW_NOTIFICATION_AWARD = 0xAA295B6F28BD587D, // 0x02DED2B8
 
@@ -12825,11 +12825,11 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		END_TEXT_COMMAND_THEFEED_POST_CREWTAG = 0x97C9E4E7024A8F2C, // 0xA9CCEF66
 
-		///<remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_THEFEED_POST_CREWTAG"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_THEFEED_POST_CREWTAG"/></remarks>
 		[Obsolete]
 		_NOTIFICATION_SEND_APARTMENT_INVITE = 0x97C9E4E7024A8F2C, // 0xA9CCEF66
 
-		///<remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_THEFEED_POST_CREWTAG"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_THEFEED_POST_CREWTAG"/></remarks>
 		[Obsolete]
 		_DRAW_NOTIFICATION_APARTMENT_INVITE = 0x97C9E4E7024A8F2C, // 0xA9CCEF66
 
@@ -12839,11 +12839,11 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		END_TEXT_COMMAND_THEFEED_POST_CREWTAG_WITH_GAME_NAME = 0x137BC35589E34E1E, // 0x88B9B909
 
-		///<remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_THEFEED_POST_CREWTAG_WITH_GAME_NAME"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_THEFEED_POST_CREWTAG_WITH_GAME_NAME"/></remarks>
 		[Obsolete]
 		_NOTIFICATION_SEND_CLAN_INVITE = 0x137BC35589E34E1E, // 0x88B9B909
 
-		///<remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_THEFEED_POST_CREWTAG_WITH_GAME_NAME"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_THEFEED_POST_CREWTAG_WITH_GAME_NAME"/></remarks>
 		[Obsolete]
 		_DRAW_NOTIFICATION_CLAN_INVITE = 0x137BC35589E34E1E, // 0x88B9B909
 
@@ -12871,7 +12871,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		END_TEXT_COMMAND_THEFEED_POST_MPTICKER = 0xF020C96915705B3A, // 0x8E319AB8
 
-		///<remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_THEFEED_POST_MPTICKER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_THEFEED_POST_MPTICKER"/></remarks>
 		[Obsolete]
 		_DRAW_NOTIFICATION_4 = 0xF020C96915705B3A, // 0x8E319AB8
 
@@ -12881,7 +12881,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		END_TEXT_COMMAND_THEFEED_POST_CREW_RANKUP_WITH_LITERAL_FLAG = 0x8EFCCF6EC66D85E4,
 
-		///<remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_THEFEED_POST_CREW_RANKUP_WITH_LITERAL_FLAG"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_THEFEED_POST_CREW_RANKUP_WITH_LITERAL_FLAG"/></remarks>
 		[Obsolete]
 		END_TEXT_COMMAND_THEFEED_POST_CREW_RANKUP = 0x8EFCCF6EC66D85E4,
 
@@ -12911,11 +12911,11 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		END_TEXT_COMMAND_THEFEED_POST_REPLAY = 0xD202B92CBF1D816F,
 
-		///<remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_THEFEED_POST_REPLAY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_THEFEED_POST_REPLAY"/></remarks>
 		[Obsolete]
 		_DRAW_NOTIFICATION_WITH_ICON = 0xD202B92CBF1D816F,
 
-		///<remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_THEFEED_POST_REPLAY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_THEFEED_POST_REPLAY"/></remarks>
 		[Obsolete]
 		_END_TEXT_COMMAND_THEFEED_POST_REPLAY_ICON = 0xD202B92CBF1D816F,
 
@@ -12938,11 +12938,11 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		END_TEXT_COMMAND_THEFEED_POST_REPLAY_INPUT = 0xDD6CB2CCE7C2735C,
 
-		///<remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_THEFEED_POST_REPLAY_INPUT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_THEFEED_POST_REPLAY_INPUT"/></remarks>
 		[Obsolete]
 		_DRAW_NOTIFICATION_WITH_BUTTON = 0xDD6CB2CCE7C2735C,
 
-		///<remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_THEFEED_POST_REPLAY_INPUT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_THEFEED_POST_REPLAY_INPUT"/></remarks>
 		[Obsolete]
 		_END_TEXT_COMMAND_THEFEED_POST_REPLAY_INPUT = 0xDD6CB2CCE7C2735C,
 
@@ -12960,7 +12960,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		BEGIN_TEXT_COMMAND_PRINT = 0xB87A37EEB7FAA67D, // 0xF42C43C7
 
-		///<remarks>This function has been replaced by <see cref="BEGIN_TEXT_COMMAND_PRINT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="BEGIN_TEXT_COMMAND_PRINT"/></remarks>
 		[Obsolete]
 		_SET_TEXT_ENTRY_2 = 0xB87A37EEB7FAA67D, // 0xF42C43C7
 
@@ -12976,7 +12976,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		END_TEXT_COMMAND_PRINT = 0x9D77056A530643F6, // 0x38F82261
 
-		///<remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_PRINT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_PRINT"/></remarks>
 		[Obsolete]
 		_DRAW_SUBTITLE_TIMED = 0x9D77056A530643F6, // 0x38F82261
 
@@ -13011,7 +13011,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		BEGIN_TEXT_COMMAND_DISPLAY_TEXT = 0x25FBB336DF1804CB, // 0x3E35563E
 
-		///<remarks>This function has been replaced by <see cref="BEGIN_TEXT_COMMAND_DISPLAY_TEXT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="BEGIN_TEXT_COMMAND_DISPLAY_TEXT"/></remarks>
 		[Obsolete]
 		_SET_TEXT_ENTRY = 0x25FBB336DF1804CB, // 0x3E35563E
 
@@ -13025,7 +13025,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		END_TEXT_COMMAND_DISPLAY_TEXT = 0xCD015E5BB0D96A57, // 0x6F8350CE
 
-		///<remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_DISPLAY_TEXT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_DISPLAY_TEXT"/></remarks>
 		[Obsolete]
 		_DRAW_TEXT = 0xCD015E5BB0D96A57, // 0x6F8350CE
 
@@ -13035,15 +13035,15 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		BEGIN_TEXT_COMMAND_GET_SCREEN_WIDTH_OF_DISPLAY_TEXT = 0x54CE8AC98E120CAB, // 0x51E7A037
 
-		///<remarks>This function has been replaced by <see cref="BEGIN_TEXT_COMMAND_GET_SCREEN_WIDTH_OF_DISPLAY_TEXT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="BEGIN_TEXT_COMMAND_GET_SCREEN_WIDTH_OF_DISPLAY_TEXT"/></remarks>
 		[Obsolete]
 		_SET_TEXT_ENTRY_FOR_WIDTH = 0x54CE8AC98E120CAB, // 0x51E7A037
 
-		///<remarks>This function has been replaced by <see cref="BEGIN_TEXT_COMMAND_GET_SCREEN_WIDTH_OF_DISPLAY_TEXT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="BEGIN_TEXT_COMMAND_GET_SCREEN_WIDTH_OF_DISPLAY_TEXT"/></remarks>
 		[Obsolete]
 		_BEGIN_TEXT_COMMAND_WIDTH = 0x54CE8AC98E120CAB, // 0x51E7A037
 
-		///<remarks>This function has been replaced by <see cref="BEGIN_TEXT_COMMAND_GET_SCREEN_WIDTH_OF_DISPLAY_TEXT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="BEGIN_TEXT_COMMAND_GET_SCREEN_WIDTH_OF_DISPLAY_TEXT"/></remarks>
 		[Obsolete]
 		_BEGIN_TEXT_COMMAND_GET_WIDTH = 0x54CE8AC98E120CAB, // 0x51E7A037
 
@@ -13053,11 +13053,11 @@ namespace GTA.Native
 		/// <returns>float</returns>
 		END_TEXT_COMMAND_GET_SCREEN_WIDTH_OF_DISPLAY_TEXT = 0x85F061DA64ED2F67, // 0xD12A643A
 
-		///<remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_GET_SCREEN_WIDTH_OF_DISPLAY_TEXT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_GET_SCREEN_WIDTH_OF_DISPLAY_TEXT"/></remarks>
 		[Obsolete]
 		_GET_TEXT_SCREEN_WIDTH = 0x85F061DA64ED2F67, // 0xD12A643A
 
-		///<remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_GET_SCREEN_WIDTH_OF_DISPLAY_TEXT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_GET_SCREEN_WIDTH_OF_DISPLAY_TEXT"/></remarks>
 		[Obsolete]
 		_END_TEXT_COMMAND_GET_WIDTH = 0x85F061DA64ED2F67, // 0xD12A643A
 
@@ -13075,11 +13075,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		BEGIN_TEXT_COMMAND_GET_NUMBER_OF_LINES_FOR_STRING = 0x521FB041D93DD0E4, // 0x94B82066
 
-		///<remarks>This function has been replaced by <see cref="BEGIN_TEXT_COMMAND_GET_NUMBER_OF_LINES_FOR_STRING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="BEGIN_TEXT_COMMAND_GET_NUMBER_OF_LINES_FOR_STRING"/></remarks>
 		[Obsolete]
 		_SET_TEXT_GXT_ENTRY = 0x521FB041D93DD0E4, // 0x94B82066
 
-		///<remarks>This function has been replaced by <see cref="BEGIN_TEXT_COMMAND_GET_NUMBER_OF_LINES_FOR_STRING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="BEGIN_TEXT_COMMAND_GET_NUMBER_OF_LINES_FOR_STRING"/></remarks>
 		[Obsolete]
 		_BEGIN_TEXT_COMMAND_LINE_COUNT = 0x521FB041D93DD0E4, // 0x94B82066
 
@@ -13093,15 +13093,15 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		END_TEXT_COMMAND_GET_NUMBER_OF_LINES_FOR_STRING = 0x9040DFB09BE75706, // 0xAA318785
 
-		///<remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_GET_NUMBER_OF_LINES_FOR_STRING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_GET_NUMBER_OF_LINES_FOR_STRING"/></remarks>
 		[Obsolete]
 		_GET_TEXT_SCREEN_LINE_COUNT = 0x9040DFB09BE75706, // 0xAA318785
 
-		///<remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_GET_NUMBER_OF_LINES_FOR_STRING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_GET_NUMBER_OF_LINES_FOR_STRING"/></remarks>
 		[Obsolete]
 		_END_TEXT_COMMAND_GET_LINE_COUNT = 0x9040DFB09BE75706, // 0xAA318785
 
-		///<remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_GET_NUMBER_OF_LINES_FOR_STRING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_GET_NUMBER_OF_LINES_FOR_STRING"/></remarks>
 		[Obsolete]
 		_END_TEXT_COMMAND_LINE_COUNT = 0x9040DFB09BE75706, // 0xAA318785
 
@@ -13114,7 +13114,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		BEGIN_TEXT_COMMAND_DISPLAY_HELP = 0x8509B634FBE7DA11, // 0xB245FC10
 
-		///<remarks>This function has been replaced by <see cref="BEGIN_TEXT_COMMAND_DISPLAY_HELP"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="BEGIN_TEXT_COMMAND_DISPLAY_HELP"/></remarks>
 		[Obsolete]
 		_SET_TEXT_COMPONENT_FORMAT = 0x8509B634FBE7DA11, // 0xB245FC10
 
@@ -13140,7 +13140,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		END_TEXT_COMMAND_DISPLAY_HELP = 0x238FFE5C7B0498A6, // 0xB59B530D
 
-		///<remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_DISPLAY_HELP"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_DISPLAY_HELP"/></remarks>
 		[Obsolete]
 		_DISPLAY_HELP_TEXT_FROM_STRING_LABEL = 0x238FFE5C7B0498A6, // 0xB59B530D
 
@@ -13192,7 +13192,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		BEGIN_TEXT_COMMAND_ADD_DIRECTLY_TO_PREVIOUS_BRIEFS = 0x23D69E0465570028, // 0x0E103475
 
-		///<remarks>This function has been replaced by <see cref="BEGIN_TEXT_COMMAND_ADD_DIRECTLY_TO_PREVIOUS_BRIEFS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="BEGIN_TEXT_COMMAND_ADD_DIRECTLY_TO_PREVIOUS_BRIEFS"/></remarks>
 		[Obsolete]
 		_BEGIN_TEXT_COMMAND_OBJECTIVE = 0x23D69E0465570028, // 0x0E103475
 
@@ -13202,7 +13202,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		END_TEXT_COMMAND_ADD_DIRECTLY_TO_PREVIOUS_BRIEFS = 0xCFDBDF5AE59BA0F4, // 0x2944A6C5
 
-		///<remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_ADD_DIRECTLY_TO_PREVIOUS_BRIEFS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_ADD_DIRECTLY_TO_PREVIOUS_BRIEFS"/></remarks>
 		[Obsolete]
 		_END_TEXT_COMMAND_OBJECTIVE = 0xCFDBDF5AE59BA0F4, // 0x2944A6C5
 
@@ -13224,7 +13224,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		BEGIN_TEXT_COMMAND_OVERRIDE_BUTTON_TEXT = 0x8F9EE5687F8EECCD, // 0xBF855650
 
-		///<remarks>This function has been replaced by <see cref="BEGIN_TEXT_COMMAND_OVERRIDE_BUTTON_TEXT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="BEGIN_TEXT_COMMAND_OVERRIDE_BUTTON_TEXT"/></remarks>
 		[Obsolete]
 		_BEGIN_TEXT_COMMAND_TIMER = 0x8F9EE5687F8EECCD, // 0xBF855650
 
@@ -13234,7 +13234,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		END_TEXT_COMMAND_OVERRIDE_BUTTON_TEXT = 0xA86911979638106F, // 0x6E7FDA1C
 
-		///<remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_OVERRIDE_BUTTON_TEXT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="END_TEXT_COMMAND_OVERRIDE_BUTTON_TEXT"/></remarks>
 		[Obsolete]
 		_END_TEXT_COMMAND_TIMER = 0xA86911979638106F, // 0x6E7FDA1C
 
@@ -13256,7 +13256,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL = 0xC63CD5D2920ACBE7, // 0xDCE05406
 
-		///<remarks>This function has been replaced by <see cref="ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL"/></remarks>
 		[Obsolete]
 		_ADD_TEXT_COMPONENT_ITEM_STRING = 0xC63CD5D2920ACBE7, // 0xDCE05406
 
@@ -13281,7 +13281,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME = 0x6C188BE134E074AA, // 0x27A244D8
 
-		///<remarks>This function has been replaced by <see cref="ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME"/></remarks>
 		[Obsolete]
 		_ADD_TEXT_COMPONENT_STRING = 0x6C188BE134E074AA, // 0x27A244D8
 
@@ -13309,7 +13309,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		ADD_TEXT_COMPONENT_SUBSTRING_PHONE_NUMBER = 0x761B77454205A61D, // 0x65E1D404
 
-		///<remarks>This function has been replaced by <see cref="ADD_TEXT_COMPONENT_SUBSTRING_PHONE_NUMBER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="ADD_TEXT_COMPONENT_SUBSTRING_PHONE_NUMBER"/></remarks>
 		[Obsolete]
 		_ADD_TEXT_COMPONENT_APP_TITLE = 0x761B77454205A61D, // 0x65E1D404
 
@@ -13322,7 +13322,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		ADD_TEXT_COMPONENT_SUBSTRING_WEBSITE = 0x94CF4AC034C9C986, // 0xC736999E
 
-		///<remarks>This function has been replaced by <see cref="ADD_TEXT_COMPONENT_SUBSTRING_WEBSITE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="ADD_TEXT_COMPONENT_SUBSTRING_WEBSITE"/></remarks>
 		[Obsolete]
 		_ADD_TEXT_COMPONENT_STRING2 = 0x94CF4AC034C9C986, // 0xC736999E
 
@@ -13332,11 +13332,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		ADD_TEXT_COMPONENT_SUBSTRING_KEYBOARD_DISPLAY = 0x5F68520888E69014, // 0x0829A799
 
-		///<remarks>This function has been replaced by <see cref="ADD_TEXT_COMPONENT_SUBSTRING_KEYBOARD_DISPLAY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="ADD_TEXT_COMPONENT_SUBSTRING_KEYBOARD_DISPLAY"/></remarks>
 		[Obsolete]
 		_ADD_TEXT_COMPONENT_STRING3 = 0x5F68520888E69014, // 0x0829A799
 
-		///<remarks>This function has been replaced by <see cref="ADD_TEXT_COMPONENT_SUBSTRING_KEYBOARD_DISPLAY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="ADD_TEXT_COMPONENT_SUBSTRING_KEYBOARD_DISPLAY"/></remarks>
 		[Obsolete]
 		_ADD_TEXT_COMPONENT_SCALEFORM = 0x5F68520888E69014, // 0x0829A799
 
@@ -13346,7 +13346,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_COLOUR_OF_NEXT_TEXT_COMPONENT = 0x39BBF623FC803EAC, // 0x6F1A1901
 
-		///<remarks>This function has been replaced by <see cref="SET_COLOUR_OF_NEXT_TEXT_COMPONENT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_COLOUR_OF_NEXT_TEXT_COMPONENT"/></remarks>
 		[Obsolete]
 		_SET_NOTIFICATION_COLOR_NEXT = 0x39BBF623FC803EAC, // 0x6F1A1901
 
@@ -13362,7 +13362,7 @@ namespace GTA.Native
 		/// <returns>const char*</returns>
 		GET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME = 0x169BD9382084C8C0, // 0x34A396EE
 
-		///<remarks>This function has been replaced by <see cref="GET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME"/></remarks>
 		[Obsolete]
 		_GET_TEXT_SUBSTRING = 0x169BD9382084C8C0, // 0x34A396EE
 
@@ -13391,7 +13391,7 @@ namespace GTA.Native
 		/// <returns>const char*</returns>
 		GET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME_WITH_BYTE_LIMIT = 0xB2798643312205C5, // 0x0183A66C
 
-		///<remarks>This function has been replaced by <see cref="GET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME_WITH_BYTE_LIMIT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME_WITH_BYTE_LIMIT"/></remarks>
 		[Obsolete]
 		_GET_TEXT_SUBSTRING_SAFE = 0xB2798643312205C5, // 0x0183A66C
 
@@ -13409,7 +13409,7 @@ namespace GTA.Native
 		/// <returns>const char*</returns>
 		GET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME_BYTES = 0xCE94AEBA5D82908A, // 0xFA6373BB
 
-		///<remarks>This function has been replaced by <see cref="GET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME_BYTES"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME_BYTES"/></remarks>
 		[Obsolete]
 		_GET_TEXT_SUBSTRING_SLICE = 0xCE94AEBA5D82908A, // 0xFA6373BB
 
@@ -13422,7 +13422,7 @@ namespace GTA.Native
 		/// <returns>const char*</returns>
 		GET_FILENAME_FOR_AUDIO_CONVERSATION = 0x7B5280EBA9840C72, // 0x95C4B5AD
 
-		///<remarks>This function has been replaced by <see cref="GET_FILENAME_FOR_AUDIO_CONVERSATION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_FILENAME_FOR_AUDIO_CONVERSATION"/></remarks>
 		[Obsolete]
 		_GET_LABEL_TEXT = 0x7B5280EBA9840C72, // 0x95C4B5AD
 
@@ -13468,7 +13468,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		REQUEST_ADDITIONAL_TEXT_FOR_DLC = 0x6009F9F1AE90D8A6, // 0xF4D27EBE
 
-		///<remarks>This function has been replaced by <see cref="REQUEST_ADDITIONAL_TEXT_FOR_DLC"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="REQUEST_ADDITIONAL_TEXT_FOR_DLC"/></remarks>
 		[Obsolete]
 		_REQUEST_ADDITIONAL_TEXT_2 = 0x6009F9F1AE90D8A6, // 0xF4D27EBE
 
@@ -13541,7 +13541,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		GET_LENGTH_OF_LITERAL_STRING_IN_BYTES = 0x43E4111189E54F0E, // 0x7DBC0764
 
-		///<remarks>This function has been replaced by <see cref="GET_LENGTH_OF_LITERAL_STRING_IN_BYTES"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_LENGTH_OF_LITERAL_STRING_IN_BYTES"/></remarks>
 		[Obsolete]
 		_GET_LENGTH_OF_STRING = 0x43E4111189E54F0E, // 0x7DBC0764
 
@@ -13579,7 +13579,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		DISPLAY_HUD_WHEN_NOT_IN_STATE_OF_PLAY_THIS_FRAME = 0x7669F9E39DC17063, // 0xC380AC85
 
-		///<remarks>This function has been replaced by <see cref="DISPLAY_HUD_WHEN_NOT_IN_STATE_OF_PLAY_THIS_FRAME"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DISPLAY_HUD_WHEN_NOT_IN_STATE_OF_PLAY_THIS_FRAME"/></remarks>
 		[Obsolete]
 		_DISPLAY_HUD_WHEN_DEAD_THIS_FRAME = 0x7669F9E39DC17063, // 0xC380AC85
 
@@ -13619,7 +13619,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		IS_MINIMAP_RENDERING = 0xAF754F20EB5CD51A, // 0x9CD18314
 
-		///<remarks>This function has been replaced by <see cref="IS_MINIMAP_RENDERING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_MINIMAP_RENDERING"/></remarks>
 		[Obsolete]
 		_IS_RADAR_ENABLED = 0xAF754F20EB5CD51A, // 0x9CD18314
 
@@ -13650,7 +13650,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		CLEAR_ALL_BLIP_ROUTES = 0xD12882D3FF82BF11,
 
-		///<remarks>This function has been replaced by <see cref="CLEAR_ALL_BLIP_ROUTES"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CLEAR_ALL_BLIP_ROUTES"/></remarks>
 		[Obsolete]
 		_CLEAR_ALL_BLIP_ROUTES = 0xD12882D3FF82BF11,
 
@@ -13666,7 +13666,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_FORCE_SHOW_GPS = 0x2790F4B17D098E26,
 
-		///<remarks>This function has been replaced by <see cref="SET_FORCE_SHOW_GPS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_FORCE_SHOW_GPS"/></remarks>
 		[Obsolete]
 		_SET_FORCE_BLIP_ROUTES_ON_FOOT = 0x2790F4B17D098E26,
 
@@ -13676,7 +13676,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_USE_SET_DESTINATION_IN_PAUSE_MAP = 0x6CDD58146A436083,
 
-		///<remarks>This function has been replaced by <see cref="SET_USE_SET_DESTINATION_IN_PAUSE_MAP"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_USE_SET_DESTINATION_IN_PAUSE_MAP"/></remarks>
 		[Obsolete]
 		_SET_USE_WAYPOINT_AS_DESTINATION = 0x6CDD58146A436083,
 
@@ -13707,7 +13707,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_RADAR_ZOOM_PRECISE = 0xBD12C5EEE184C337, // 0xDCA3F423
 
-		///<remarks>This function has been replaced by <see cref="SET_RADAR_ZOOM_PRECISE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_RADAR_ZOOM_PRECISE"/></remarks>
 		[Obsolete]
 		RESPONDING_AS_TEMP = 0xBD12C5EEE184C337, // 0xDCA3F423
 
@@ -13732,7 +13732,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_RADAR_ZOOM_TO_DISTANCE = 0xCB7CC0D58405AD41, // 0x09CF1CE5
 
-		///<remarks>This function has been replaced by <see cref="SET_RADAR_ZOOM_TO_DISTANCE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_RADAR_ZOOM_TO_DISTANCE"/></remarks>
 		[Obsolete]
 		_SET_RADAR_ZOOM_LEVEL_THIS_FRAME = 0xCB7CC0D58405AD41, // 0x09CF1CE5
 
@@ -13766,7 +13766,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_SECOND_SCRIPT_VARIABLE_HUD_COLOUR = 0x16A304E6CB2BFAB9, // 0x6BE3ACA8
 
-		///<remarks>This function has been replaced by <see cref="SET_SECOND_SCRIPT_VARIABLE_HUD_COLOUR"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_SECOND_SCRIPT_VARIABLE_HUD_COLOUR"/></remarks>
 		[Obsolete]
 		_SET_SCRIPT_VARIABLE_2_HUD_COLOUR = 0x16A304E6CB2BFAB9, // 0x6BE3ACA8
 
@@ -13779,7 +13779,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		REPLACE_HUD_COLOUR = 0x1CCC708F0F850613, // 0x3B216749
 
-		///<remarks>This function has been replaced by <see cref="REPLACE_HUD_COLOUR"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="REPLACE_HUD_COLOUR"/></remarks>
 		[Obsolete]
 		_SET_HUD_COLOURS_SWITCH = 0x1CCC708F0F850613, // 0x3B216749
 
@@ -13789,7 +13789,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		REPLACE_HUD_COLOUR_WITH_RGBA = 0xF314CF4F0211894E, // 0xF6E7E92B
 
-		///<remarks>This function has been replaced by <see cref="REPLACE_HUD_COLOUR_WITH_RGBA"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="REPLACE_HUD_COLOUR_WITH_RGBA"/></remarks>
 		[Obsolete]
 		_SET_HUD_COLOUR = 0xF314CF4F0211894E, // 0xF6E7E92B
 
@@ -13799,7 +13799,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_ABILITY_BAR_VISIBILITY = 0x1DFEDD15019315A9,
 
-		///<remarks>This function has been replaced by <see cref="SET_ABILITY_BAR_VISIBILITY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_ABILITY_BAR_VISIBILITY"/></remarks>
 		[Obsolete]
 		_SET_ABILITY_BAR_VISIBILITY_IN_MULTIPLAYER = 0x1DFEDD15019315A9,
 
@@ -13809,7 +13809,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_ALLOW_ABILITY_BAR = 0x889329C80FE5963C,
 
-		///<remarks>This function has been replaced by <see cref="SET_ALLOW_ABILITY_BAR"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_ALLOW_ABILITY_BAR"/></remarks>
 		[Obsolete]
 		_SET_ALLOW_ABILITY_BAR_IN_MULTIPLAYER = 0x889329C80FE5963C,
 
@@ -13843,7 +13843,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_CUSTOM_MP_HUD_COLOR = 0x2ACCB195F3CCD9DE,
 
-		///<remarks>This function has been replaced by <see cref="SET_CUSTOM_MP_HUD_COLOR"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_CUSTOM_MP_HUD_COLOR"/></remarks>
 		[Obsolete]
 		_SET_CURRENT_CHARACTER_HUD_COLOR = 0x2ACCB195F3CCD9DE,
 
@@ -13856,7 +13856,7 @@ namespace GTA.Native
 		/// <returns>float</returns>
 		GET_RENDERED_CHARACTER_HEIGHT = 0xDB88A37483346780, // 0x3330175B
 
-		///<remarks>This function has been replaced by <see cref="GET_RENDERED_CHARACTER_HEIGHT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_RENDERED_CHARACTER_HEIGHT"/></remarks>
 		[Obsolete]
 		_GET_TEXT_SCALE_HEIGHT = 0xDB88A37483346780, // 0x3330175B
 
@@ -14037,21 +14037,21 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_HELP_MESSAGE_STYLE = 0xB9C362BABECDDC7A,
 
-		///<remarks>This function has been replaced by <see cref="SET_HELP_MESSAGE_STYLE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_HELP_MESSAGE_STYLE"/></remarks>
 		[Obsolete]
 		_SET_HELP_MESSAGE_TEXT_STYLE = 0xB9C362BABECDDC7A,
 
 		/// <returns>int</returns>
 		GET_STANDARD_BLIP_ENUM_ID = 0x4A9923385BDB9DAD, // 0x87871CE0
 
-		///<remarks>This function has been replaced by <see cref="GET_STANDARD_BLIP_ENUM_ID"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_STANDARD_BLIP_ENUM_ID"/></remarks>
 		[Obsolete]
 		_GET_LEVEL_BLIP_SPRITE = 0x4A9923385BDB9DAD, // 0x87871CE0
 
 		/// <returns>int</returns>
 		GET_WAYPOINT_BLIP_ENUM_ID = 0x186E5D252FA50E7D, // 0xB9827942
 
-		///<remarks>This function has been replaced by <see cref="GET_WAYPOINT_BLIP_ENUM_ID"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_WAYPOINT_BLIP_ENUM_ID"/></remarks>
 		[Obsolete]
 		_GET_BLIP_INFO_ID_ITERATOR = 0x186E5D252FA50E7D, // 0xB9827942
 
@@ -14076,7 +14076,7 @@ namespace GTA.Native
 		/// <returns>Blip</returns>
 		GET_CLOSEST_BLIP_INFO_ID = 0xD484BF71050CA1EE,
 
-		///<remarks>This function has been replaced by <see cref="GET_CLOSEST_BLIP_INFO_ID"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_CLOSEST_BLIP_INFO_ID"/></remarks>
 		[Obsolete]
 		_GET_CLOSEST_BLIP_OF_TYPE = 0xD484BF71050CA1EE,
 
@@ -14153,7 +14153,7 @@ namespace GTA.Native
 		/// <returns>Blip</returns>
 		ADD_BLIP_FOR_AREA = 0xCE5D0E5E315DB238,
 
-		///<remarks>This function has been replaced by <see cref="ADD_BLIP_FOR_AREA"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="ADD_BLIP_FOR_AREA"/></remarks>
 		[Obsolete]
 		_ADD_BLIP_FOR_AREA = 0xCE5D0E5E315DB238,
 
@@ -14290,7 +14290,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		GET_BLIP_FADE_DIRECTION = 0x2C173AE2BDB9385E,
 
-		///<remarks>This function has been replaced by <see cref="GET_BLIP_FADE_DIRECTION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_BLIP_FADE_DIRECTION"/></remarks>
 		[Obsolete]
 		_GET_BLIP_FADE_STATUS = 0x2C173AE2BDB9385E,
 
@@ -14312,7 +14312,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_BLIP_ROTATION_WITH_FLOAT = 0xA8B6AFDAC320AC87,
 
-		///<remarks>This function has been replaced by <see cref="SET_BLIP_ROTATION_WITH_FLOAT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_BLIP_ROTATION_WITH_FLOAT"/></remarks>
 		[Obsolete]
 		_SET_BLIP_SQUARED_ROTATION = 0xA8B6AFDAC320AC87,
 
@@ -14322,7 +14322,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		GET_BLIP_ROTATION = 0x003E92BA477F9D7F,
 
-		///<remarks>This function has been replaced by <see cref="GET_BLIP_ROTATION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_BLIP_ROTATION"/></remarks>
 		[Obsolete]
 		_GET_BLIP_ROTATION = 0x003E92BA477F9D7F,
 
@@ -14416,7 +14416,7 @@ namespace GTA.Native
 		/// <returns>Blip</returns>
 		GET_NEW_SELECTED_MISSION_CREATOR_BLIP = 0x5C90988E7C8E1AF4, // 0xFFD7476C
 
-		///<remarks>This function has been replaced by <see cref="GET_NEW_SELECTED_MISSION_CREATOR_BLIP"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_NEW_SELECTED_MISSION_CREATOR_BLIP"/></remarks>
 		[Obsolete]
 		DISABLE_BLIP_NAME_FOR_VAR = 0x5C90988E7C8E1AF4, // 0xFFD7476C
 
@@ -14435,7 +14435,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SHOW_CONTACT_INSTRUCTIONAL_BUTTON = 0xC772A904CDE1186F,
 
-		///<remarks>This function has been replaced by <see cref="SHOW_CONTACT_INSTRUCTIONAL_BUTTON"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SHOW_CONTACT_INSTRUCTIONAL_BUTTON"/></remarks>
 		[Obsolete]
 		_SHOW_CONTACT_INSTRUCTIONAL_BUTTON = 0xC772A904CDE1186F,
 
@@ -14490,7 +14490,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_BLIP_SCALE_2D = 0xCD6524439909C979,
 
-		///<remarks>This function has been replaced by <see cref="SET_BLIP_SCALE_2D"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_BLIP_SCALE_2D"/></remarks>
 		[Obsolete]
 		_SET_BLIP_SCALE_TRANSFORMATION = 0xCD6524439909C979,
 
@@ -14614,7 +14614,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SHOW_TICK_ON_BLIP = 0x74513EA3E505181E, // 0x3DCF0092
 
-		///<remarks>This function has been replaced by <see cref="SHOW_TICK_ON_BLIP"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SHOW_TICK_ON_BLIP"/></remarks>
 		[Obsolete]
 		_SET_BLIP_CHECKED = 0x74513EA3E505181E, // 0x3DCF0092
 
@@ -14628,11 +14628,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SHOW_GOLD_TICK_ON_BLIP = 0xCAC2031EBF79B1A8,
 
-		///<remarks>This function has been replaced by <see cref="SHOW_GOLD_TICK_ON_BLIP"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SHOW_GOLD_TICK_ON_BLIP"/></remarks>
 		[Obsolete]
 		_SHOW_TICK_ON_BLIP_2 = 0xCAC2031EBF79B1A8,
 
-		///<remarks>This function has been replaced by <see cref="SHOW_GOLD_TICK_ON_BLIP"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SHOW_GOLD_TICK_ON_BLIP"/></remarks>
 		[Obsolete]
 		_SHOW_HAS_COMPLETED_INDICATOR_ON_BLIP = 0xCAC2031EBF79B1A8,
 
@@ -14655,7 +14655,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SHOW_OUTLINE_INDICATOR_ON_BLIP = 0xB81656BC81FE24D1, // 0x8DE82C15
 
-		///<remarks>This function has been replaced by <see cref="SHOW_OUTLINE_INDICATOR_ON_BLIP"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SHOW_OUTLINE_INDICATOR_ON_BLIP"/></remarks>
 		[Obsolete]
 		SET_BLIP_FRIENDLY = 0xB81656BC81FE24D1, // 0x8DE82C15
 
@@ -14670,7 +14670,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SHOW_FRIEND_INDICATOR_ON_BLIP = 0x23C3EB807312F01A, // 0x4C8F02B4
 
-		///<remarks>This function has been replaced by <see cref="SHOW_FRIEND_INDICATOR_ON_BLIP"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SHOW_FRIEND_INDICATOR_ON_BLIP"/></remarks>
 		[Obsolete]
 		SET_BLIP_FRIEND = 0x23C3EB807312F01A, // 0x4C8F02B4
 
@@ -14683,7 +14683,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SHOW_CREW_INDICATOR_ON_BLIP = 0xDCFB5D4DB8BF367E, // 0xABBE1E45
 
-		///<remarks>This function has been replaced by <see cref="SHOW_CREW_INDICATOR_ON_BLIP"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SHOW_CREW_INDICATOR_ON_BLIP"/></remarks>
 		[Obsolete]
 		SET_BLIP_CREW = 0xDCFB5D4DB8BF367E, // 0xABBE1E45
 
@@ -14696,7 +14696,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_BLIP_EXTENDED_HEIGHT_THRESHOLD = 0xC4278F70131BAA6D, // 0x6AA6A1CC
 
-		///<remarks>This function has been replaced by <see cref="SET_BLIP_EXTENDED_HEIGHT_THRESHOLD"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_BLIP_EXTENDED_HEIGHT_THRESHOLD"/></remarks>
 		[Obsolete]
 		_SET_BLIP_DISPLAY_INDICATOR_ON_BLIP = 0xC4278F70131BAA6D, // 0x6AA6A1CC
 
@@ -14721,7 +14721,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_BLIP_AS_MINIMAL_ON_EDGE = 0x2B6D467DAB714E8D, // 0xC575F0BC
 
-		///<remarks>This function has been replaced by <see cref="SET_BLIP_AS_MINIMAL_ON_EDGE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_BLIP_AS_MINIMAL_ON_EDGE"/></remarks>
 		[Obsolete]
 		_SET_BLIP_SHRINK = 0x2B6D467DAB714E8D, // 0xC575F0BC
 
@@ -14754,7 +14754,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		DELETE_WAYPOINTS_FROM_THIS_PLAYER = 0xD8E694757BCEA8E9, // 0x62BABF2C
 
-		///<remarks>This function has been replaced by <see cref="DELETE_WAYPOINTS_FROM_THIS_PLAYER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DELETE_WAYPOINTS_FROM_THIS_PLAYER"/></remarks>
 		[Obsolete]
 		_DELETE_WAYPOINT = 0xD8E694757BCEA8E9, // 0x62BABF2C
 
@@ -14825,14 +14825,14 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_MINIMAP_SONAR_SWEEP = 0x6B50FC8749632EC1,
 
-		///<remarks>This function has been replaced by <see cref="SET_MINIMAP_SONAR_SWEEP"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_MINIMAP_SONAR_SWEEP"/></remarks>
 		[Obsolete]
 		_SET_MINIMAP_SONAR_ENABLED = 0x6B50FC8749632EC1,
 
 		/// <returns>void</returns>
 		SHOW_ACCOUNT_PICKER = 0x60E892BA4F5BDCA4,
 
-		///<remarks>This function has been replaced by <see cref="SHOW_ACCOUNT_PICKER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SHOW_ACCOUNT_PICKER"/></remarks>
 		[Obsolete]
 		_SHOW_SIGNIN_UI = 0x60E892BA4F5BDCA4,
 
@@ -14864,7 +14864,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_INSIDE_VERY_SMALL_INTERIOR = 0x504DFE62A1692296,
 
-		///<remarks>This function has been replaced by <see cref="SET_INSIDE_VERY_SMALL_INTERIOR"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_INSIDE_VERY_SMALL_INTERIOR"/></remarks>
 		[Obsolete]
 		_SET_INTERIOR_ZOOM_LEVEL_INCREASED = 0x504DFE62A1692296,
 
@@ -14874,7 +14874,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_INSIDE_VERY_LARGE_INTERIOR = 0x7EC8ABA5E74B3D7A,
 
-		///<remarks>This function has been replaced by <see cref="SET_INSIDE_VERY_LARGE_INTERIOR"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_INSIDE_VERY_LARGE_INTERIOR"/></remarks>
 		[Obsolete]
 		_SET_INTERIOR_ZOOM_LEVEL_DECREASED = 0x7EC8ABA5E74B3D7A,
 
@@ -14891,7 +14891,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_FAKE_PAUSEMAP_PLAYER_POSITION_THIS_FRAME = 0x77E2DD177910E1CF, // 0x54E75C7D
 
-		///<remarks>This function has been replaced by <see cref="SET_FAKE_PAUSEMAP_PLAYER_POSITION_THIS_FRAME"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_FAKE_PAUSEMAP_PLAYER_POSITION_THIS_FRAME"/></remarks>
 		[Obsolete]
 		_SET_PLAYER_BLIP_POSITION_THIS_FRAME = 0x77E2DD177910E1CF, // 0x54E75C7D
 
@@ -14907,14 +14907,14 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		IS_PAUSEMAP_IN_INTERIOR_MODE = 0x9049FE339D5F6F6F, // 0x199DED14
 
-		///<remarks>This function has been replaced by <see cref="IS_PAUSEMAP_IN_INTERIOR_MODE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_PAUSEMAP_IN_INTERIOR_MODE"/></remarks>
 		[Obsolete]
 		_IS_MINIMAP_IN_INTERIOR = 0x9049FE339D5F6F6F, // 0x199DED14
 
 		/// <returns>void</returns>
 		HIDE_MINIMAP_EXTERIOR_MAP_THIS_FRAME = 0x5FBAE526203990C9, // 0x1A4318F7
 
-		///<remarks>This function has been replaced by <see cref="HIDE_MINIMAP_EXTERIOR_MAP_THIS_FRAME"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="HIDE_MINIMAP_EXTERIOR_MAP_THIS_FRAME"/></remarks>
 		[Obsolete]
 		_DISABLE_RADAR_THIS_FRAME = 0x5FBAE526203990C9, // 0x1A4318F7
 
@@ -14930,7 +14930,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_USE_ISLAND_MAP = 0x5E1460624D194A38,
 
-		///<remarks>This function has been replaced by <see cref="SET_USE_ISLAND_MAP"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_USE_ISLAND_MAP"/></remarks>
 		[Obsolete]
 		_SET_TOGGLE_MINIMAP_HEIST_ISLAND = 0x5E1460624D194A38,
 
@@ -14940,7 +14940,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		DONT_TILT_MINIMAP_THIS_FRAME = 0x6D14BFDC33B34F55, // 0x334EFD46
 
-		///<remarks>This function has been replaced by <see cref="DONT_TILT_MINIMAP_THIS_FRAME"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DONT_TILT_MINIMAP_THIS_FRAME"/></remarks>
 		[Obsolete]
 		_CENTER_PLAYER_ON_RADAR_THIS_FRAME = 0x6D14BFDC33B34F55, // 0x334EFD46
 
@@ -14988,7 +14988,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		CHANGE_FAKE_MP_CASH = 0x0772DF77852C2E30, // 0xE319F90B
 
-		///<remarks>This function has been replaced by <see cref="CHANGE_FAKE_MP_CASH"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CHANGE_FAKE_MP_CASH"/></remarks>
 		[Obsolete]
 		_SET_SINGLEPLAYER_HUD_CASH = 0x0772DF77852C2E30, // 0xE319F90B
 
@@ -15019,7 +15019,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		ALLOW_DISPLAY_OF_MULTIPLAYER_CASH_TEXT = 0xE67C6DFD386EA5E7, // 0x5476B9FD
 
-		///<remarks>This function has been replaced by <see cref="ALLOW_DISPLAY_OF_MULTIPLAYER_CASH_TEXT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="ALLOW_DISPLAY_OF_MULTIPLAYER_CASH_TEXT"/></remarks>
 		[Obsolete]
 		_ALLOW_ADDITIONAL_INFO_FOR_MULTIPLAYER_HUD_CASH = 0xE67C6DFD386EA5E7, // 0x5476B9FD
 
@@ -15084,7 +15084,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		HUD_FORCE_WEAPON_WHEEL = 0xEB354E5376BC81A7, // 0x1EFFB02A
 
-		///<remarks>This function has been replaced by <see cref="HUD_FORCE_WEAPON_WHEEL"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="HUD_FORCE_WEAPON_WHEEL"/></remarks>
 		[Obsolete]
 		_SHOW_WEAPON_WHEEL = 0xEB354E5376BC81A7, // 0x1EFFB02A
 
@@ -15094,7 +15094,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		HUD_FORCE_SPECIAL_VEHICLE_WEAPON_WHEEL = 0x488043841BBE156F,
 
-		///<remarks>This function has been replaced by <see cref="HUD_FORCE_SPECIAL_VEHICLE_WEAPON_WHEEL"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="HUD_FORCE_SPECIAL_VEHICLE_WEAPON_WHEEL"/></remarks>
 		[Obsolete]
 		_HUD_DISPLAY_LOADING_SCREEN_TIPS = 0x488043841BBE156F,
 
@@ -15104,11 +15104,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		HUD_SUPPRESS_WEAPON_WHEEL_RESULTS_THIS_FRAME = 0x0AFC4AF510774B47, // 0xB26FED2B
 
-		///<remarks>This function has been replaced by <see cref="HUD_SUPPRESS_WEAPON_WHEEL_RESULTS_THIS_FRAME"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="HUD_SUPPRESS_WEAPON_WHEEL_RESULTS_THIS_FRAME"/></remarks>
 		[Obsolete]
 		_BLOCK_WEAPON_WHEEL_THIS_FRAME = 0x0AFC4AF510774B47, // 0xB26FED2B
 
-		///<remarks>This function has been replaced by <see cref="HUD_SUPPRESS_WEAPON_WHEEL_RESULTS_THIS_FRAME"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="HUD_SUPPRESS_WEAPON_WHEEL_RESULTS_THIS_FRAME"/></remarks>
 		[Obsolete]
 		_HUD_WEAPON_WHEEL_IGNORE_SELECTION = 0x0AFC4AF510774B47, // 0xB26FED2B
 
@@ -15118,7 +15118,7 @@ namespace GTA.Native
 		/// <returns>Hash</returns>
 		HUD_GET_WEAPON_WHEEL_CURRENTLY_HIGHLIGHTED = 0xA48931185F0536FE, // 0x22E9F555
 
-		///<remarks>This function has been replaced by <see cref="HUD_GET_WEAPON_WHEEL_CURRENTLY_HIGHLIGHTED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="HUD_GET_WEAPON_WHEEL_CURRENTLY_HIGHLIGHTED"/></remarks>
 		[Obsolete]
 		_HUD_WEAPON_WHEEL_GET_SELECTED_HASH = 0xA48931185F0536FE, // 0x22E9F555
 
@@ -15131,7 +15131,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		HUD_SET_WEAPON_WHEEL_TOP_SLOT = 0x72C1056D678BB7D8, // 0x83B608A0
 
-		///<remarks>This function has been replaced by <see cref="HUD_SET_WEAPON_WHEEL_TOP_SLOT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="HUD_SET_WEAPON_WHEEL_TOP_SLOT"/></remarks>
 		[Obsolete]
 		_HUD_WEAPON_WHEEL_SET_SLOT_HASH = 0x72C1056D678BB7D8, // 0x83B608A0
 
@@ -15144,7 +15144,7 @@ namespace GTA.Native
 		/// <returns>Hash</returns>
 		HUD_GET_WEAPON_WHEEL_TOP_SLOT = 0xA13E93403F26C812,
 
-		///<remarks>This function has been replaced by <see cref="HUD_GET_WEAPON_WHEEL_TOP_SLOT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="HUD_GET_WEAPON_WHEEL_TOP_SLOT"/></remarks>
 		[Obsolete]
 		_HUD_WEAPON_WHEEL_GET_SLOT_HASH = 0xA13E93403F26C812,
 
@@ -15157,7 +15157,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		HUD_SHOWING_CHARACTER_SWITCH_SELECTION = 0x14C9FDCC41F81F63, // 0xE70D1F43
 
-		///<remarks>This function has been replaced by <see cref="HUD_SHOWING_CHARACTER_SWITCH_SELECTION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="HUD_SHOWING_CHARACTER_SWITCH_SELECTION"/></remarks>
 		[Obsolete]
 		_HUD_WEAPON_WHEEL_IGNORE_CONTROL_INPUT = 0x14C9FDCC41F81F63, // 0xE70D1F43
 
@@ -15273,7 +15273,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_PLAYER_ICON_COLOUR = 0x7B21E0BB01E8224A,
 
-		///<remarks>This function has been replaced by <see cref="SET_PLAYER_ICON_COLOUR"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_PLAYER_ICON_COLOUR"/></remarks>
 		[Obsolete]
 		_SET_MAIN_PLAYER_BLIP_COLOUR = 0x7B21E0BB01E8224A,
 
@@ -15302,7 +15302,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_MINIMAP_IN_SPECTATOR_MODE = 0x1A5CD7752DD28CD3, // 0xD5BFCADB
 
-		///<remarks>This function has been replaced by <see cref="SET_MINIMAP_IN_SPECTATOR_MODE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_MINIMAP_IN_SPECTATOR_MODE"/></remarks>
 		[Obsolete]
 		KEY_HUD_COLOUR = 0x1A5CD7752DD28CD3, // 0xD5BFCADB
 
@@ -15318,7 +15318,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_MISSION_NAME_FOR_UGC_MISSION = 0xE45087D85F468BC2, // 0x8D9A1734
 
-		///<remarks>This function has been replaced by <see cref="SET_MISSION_NAME_FOR_UGC_MISSION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_MISSION_NAME_FOR_UGC_MISSION"/></remarks>
 		[Obsolete]
 		_SET_MISSION_NAME_2 = 0xE45087D85F468BC2, // 0x8D9A1734
 
@@ -15343,11 +15343,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_MINIMAP_IN_PROLOGUE = 0x9133955F1A2DA957, // 0x02F5F1D1
 
-		///<remarks>This function has been replaced by <see cref="SET_MINIMAP_IN_PROLOGUE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_MINIMAP_IN_PROLOGUE"/></remarks>
 		[Obsolete]
 		_SET_DRAW_MAP_VISIBLE = 0x9133955F1A2DA957, // 0x02F5F1D1
 
-		///<remarks>This function has been replaced by <see cref="SET_MINIMAP_IN_PROLOGUE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_MINIMAP_IN_PROLOGUE"/></remarks>
 		[Obsolete]
 		_SET_NORTH_YANKTON_MAP = 0x9133955F1A2DA957, // 0x02F5F1D1
 
@@ -15361,14 +15361,14 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_MINIMAP_HIDE_FOW = 0xF8DEE0A5600CBB93, // 0xD8D77733
 
-		///<remarks>This function has been replaced by <see cref="SET_MINIMAP_HIDE_FOW"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_MINIMAP_HIDE_FOW"/></remarks>
 		[Obsolete]
 		_SET_MINIMAP_REVEALED = 0xF8DEE0A5600CBB93, // 0xD8D77733
 
 		/// <returns>float</returns>
 		GET_MINIMAP_FOW_DISCOVERY_RATIO = 0xE0130B41D3CF4574, // 0xA4098ACC
 
-		///<remarks>This function has been replaced by <see cref="GET_MINIMAP_FOW_DISCOVERY_RATIO"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_MINIMAP_FOW_DISCOVERY_RATIO"/></remarks>
 		[Obsolete]
 		_GET_MINIMAP_REVEAL_PERCENTAGE = 0xE0130B41D3CF4574, // 0xA4098ACC
 
@@ -15378,7 +15378,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		GET_MINIMAP_FOW_COORDINATE_IS_REVEALED = 0x6E31B91145873922, // 0x65B705F6
 
-		///<remarks>This function has been replaced by <see cref="GET_MINIMAP_FOW_COORDINATE_IS_REVEALED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_MINIMAP_FOW_COORDINATE_IS_REVEALED"/></remarks>
 		[Obsolete]
 		_IS_MINIMAP_AREA_REVEALED = 0x6E31B91145873922, // 0x65B705F6
 
@@ -15447,11 +15447,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_FAKE_MINIMAP_MAX_ALTIMETER_HEIGHT = 0xD201F3FF917A506D, // 0x0308EDF6
 
-		///<remarks>This function has been replaced by <see cref="SET_FAKE_MINIMAP_MAX_ALTIMETER_HEIGHT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_FAKE_MINIMAP_MAX_ALTIMETER_HEIGHT"/></remarks>
 		[Obsolete]
 		_SET_MINIMAP_ATTITUDE_INDICATOR_LEVEL = 0xD201F3FF917A506D, // 0x0308EDF6
 
-		///<remarks>This function has been replaced by <see cref="SET_FAKE_MINIMAP_MAX_ALTIMETER_HEIGHT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_FAKE_MINIMAP_MAX_ALTIMETER_HEIGHT"/></remarks>
 		[Obsolete]
 		_SET_MINIMAP_ALTITUDE_INDICATOR_LEVEL = 0xD201F3FF917A506D, // 0x0308EDF6
 
@@ -15482,7 +15482,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_BIGMAP_ACTIVE = 0x231C8F89D0539D8F, // 0x08EB83D2
 
-		///<remarks>This function has been replaced by <see cref="SET_BIGMAP_ACTIVE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_BIGMAP_ACTIVE"/></remarks>
 		[Obsolete]
 		_SET_RADAR_BIGMAP_ENABLED = 0x231C8F89D0539D8F, // 0x08EB83D2
 
@@ -15537,7 +15537,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SHOW_SCRIPTED_HUD_COMPONENT_THIS_FRAME = 0x4F38DCA127DAAEA2,
 
-		///<remarks>This function has been replaced by <see cref="SHOW_SCRIPTED_HUD_COMPONENT_THIS_FRAME"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SHOW_SCRIPTED_HUD_COMPONENT_THIS_FRAME"/></remarks>
 		[Obsolete]
 		_SHOW_SCRIPTED_HUD_COMPONENT_THIS_FRAME = 0x4F38DCA127DAAEA2,
 
@@ -15619,7 +15619,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		HIDE_STREET_AND_CAR_NAMES_THIS_FRAME = 0xA4DEDE28B1814289, // 0x52746FE1
 
-		///<remarks>This function has been replaced by <see cref="HIDE_STREET_AND_CAR_NAMES_THIS_FRAME"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="HIDE_STREET_AND_CAR_NAMES_THIS_FRAME"/></remarks>
 		[Obsolete]
 		_HIDE_AREA_AND_VEHICLE_NAME_THIS_FRAME = 0xA4DEDE28B1814289, // 0x52746FE1
 
@@ -15659,7 +15659,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		GET_HUD_SCREEN_POSITION_FROM_WORLD_POSITION = 0xF9904D11F1ACBEC3, // 0xFE9A39F8
 
-		///<remarks>This function has been replaced by <see cref="GET_HUD_SCREEN_POSITION_FROM_WORLD_POSITION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_HUD_SCREEN_POSITION_FROM_WORLD_POSITION"/></remarks>
 		[Obsolete]
 		_GET_2D_COORD_FROM_3D_COORD = 0xF9904D11F1ACBEC3, // 0xFE9A39F8
 
@@ -15669,7 +15669,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		OPEN_REPORTUGC_MENU = 0x523A590C1A3CC0D3, // 0x10DE5150
 
-		///<remarks>This function has been replaced by <see cref="OPEN_REPORTUGC_MENU"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="OPEN_REPORTUGC_MENU"/></remarks>
 		[Obsolete]
 		_DISPLAY_JOB_REPORT = 0x523A590C1A3CC0D3, // 0x10DE5150
 
@@ -15724,22 +15724,22 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		CREATE_MP_GAMER_TAG_WITH_CREW_COLOR = 0x6DD05E9D83EFA4C9, // 0xC969F2D0
 
-		///<remarks>This function has been replaced by <see cref="CREATE_MP_GAMER_TAG_WITH_CREW_COLOR"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CREATE_MP_GAMER_TAG_WITH_CREW_COLOR"/></remarks>
 		[Obsolete]
 		_CREATE_MP_GAMER_TAG_COLOR = 0x6DD05E9D83EFA4C9, // 0xC969F2D0
 
-		///<remarks>This function has been replaced by <see cref="CREATE_MP_GAMER_TAG_WITH_CREW_COLOR"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CREATE_MP_GAMER_TAG_WITH_CREW_COLOR"/></remarks>
 		[Obsolete]
 		_SET_MP_GAMER_TAG_COLOR = 0x6DD05E9D83EFA4C9, // 0xC969F2D0
 
-		///<remarks>This function has been replaced by <see cref="CREATE_MP_GAMER_TAG_WITH_CREW_COLOR"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CREATE_MP_GAMER_TAG_WITH_CREW_COLOR"/></remarks>
 		[Obsolete]
 		_CREATE_MP_GAMER_TAG_FOR_NET_PLAYER = 0x6DD05E9D83EFA4C9, // 0xC969F2D0
 
 		/// <returns>BOOL</returns>
 		IS_MP_GAMER_TAG_MOVIE_ACTIVE = 0x6E0EB3EB47C8D7AA, // 0xEFD2564A
 
-		///<remarks>This function has been replaced by <see cref="IS_MP_GAMER_TAG_MOVIE_ACTIVE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_MP_GAMER_TAG_MOVIE_ACTIVE"/></remarks>
 		[Obsolete]
 		_HAS_MP_GAMER_TAG = 0x6E0EB3EB47C8D7AA, // 0xEFD2564A
 
@@ -15752,7 +15752,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		CREATE_FAKE_MP_GAMER_TAG = 0xBFEFE3321A3F5015, // 0xF5CD2AA4
 
-		///<remarks>This function has been replaced by <see cref="CREATE_FAKE_MP_GAMER_TAG"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CREATE_FAKE_MP_GAMER_TAG"/></remarks>
 		[Obsolete]
 		_CREATE_MP_GAMER_TAG = 0xBFEFE3321A3F5015, // 0xF5CD2AA4
 
@@ -15774,7 +15774,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		IS_MP_GAMER_TAG_FREE = 0x595B5178E412E199, // 0x63959059
 
-		///<remarks>This function has been replaced by <see cref="IS_MP_GAMER_TAG_FREE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_MP_GAMER_TAG_FREE"/></remarks>
 		[Obsolete]
 		ADD_TREVOR_RANDOM_MODIFIER = 0x595B5178E412E199, // 0x63959059
 
@@ -15825,15 +15825,15 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_ALL_MP_GAMER_TAGS_VISIBILITY = 0xEE76FF7E6A0166B0, // 0x767DED29
 
-		///<remarks>This function has been replaced by <see cref="SET_ALL_MP_GAMER_TAGS_VISIBILITY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_ALL_MP_GAMER_TAGS_VISIBILITY"/></remarks>
 		[Obsolete]
 		_SET_MP_GAMER_TAG_ = 0xEE76FF7E6A0166B0, // 0x767DED29
 
-		///<remarks>This function has been replaced by <see cref="SET_ALL_MP_GAMER_TAGS_VISIBILITY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_ALL_MP_GAMER_TAGS_VISIBILITY"/></remarks>
 		[Obsolete]
 		_SET_MP_GAMER_TAG = 0xEE76FF7E6A0166B0, // 0x767DED29
 
-		///<remarks>This function has been replaced by <see cref="SET_ALL_MP_GAMER_TAGS_VISIBILITY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_ALL_MP_GAMER_TAGS_VISIBILITY"/></remarks>
 		[Obsolete]
 		_SET_MP_GAMER_TAG_ENABLED = 0xEE76FF7E6A0166B0, // 0x767DED29
 
@@ -15846,7 +15846,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_MP_GAMER_TAGS_SHOULD_USE_VEHICLE_HEALTH = 0xA67F9C46D612B6F1, // 0xB01A5434
 
-		///<remarks>This function has been replaced by <see cref="SET_MP_GAMER_TAGS_SHOULD_USE_VEHICLE_HEALTH"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_MP_GAMER_TAGS_SHOULD_USE_VEHICLE_HEALTH"/></remarks>
 		[Obsolete]
 		_SET_MP_GAMER_TAG_ICONS = 0xA67F9C46D612B6F1, // 0xB01A5434
 
@@ -15856,7 +15856,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_MP_GAMER_TAGS_SHOULD_USE_POINTS_HEALTH = 0xD29EC58C2F6B5014,
 
-		///<remarks>This function has been replaced by <see cref="SET_MP_GAMER_TAGS_SHOULD_USE_POINTS_HEALTH"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_MP_GAMER_TAGS_SHOULD_USE_POINTS_HEALTH"/></remarks>
 		[Obsolete]
 		_SET_MP_GAMER_HEALTH_BAR_DISPLAY = 0xD29EC58C2F6B5014,
 
@@ -15866,7 +15866,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_MP_GAMER_TAGS_POINT_HEALTH = 0x1563FE35E9928E67,
 
-		///<remarks>This function has been replaced by <see cref="SET_MP_GAMER_TAGS_POINT_HEALTH"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_MP_GAMER_TAGS_POINT_HEALTH"/></remarks>
 		[Obsolete]
 		_SET_MP_GAMER_HEALTH_BAR_MAX = 0x1563FE35E9928E67,
 
@@ -15893,7 +15893,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_MP_GAMER_TAG_HEALTH_BAR_COLOUR = 0x3158C77A7E888AB4, // 0x5777EC77
 
-		///<remarks>This function has been replaced by <see cref="SET_MP_GAMER_TAG_HEALTH_BAR_COLOUR"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_MP_GAMER_TAG_HEALTH_BAR_COLOUR"/></remarks>
 		[Obsolete]
 		_SET_MP_GAMER_TAG_HEALTH_BAR_COLOR = 0x3158C77A7E888AB4, // 0x5777EC77
 
@@ -15921,7 +15921,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_MP_GAMER_TAG_NUM_PACKAGES = 0x9C16459B2324B2CF,
 
-		///<remarks>This function has been replaced by <see cref="SET_MP_GAMER_TAG_NUM_PACKAGES"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_MP_GAMER_TAG_NUM_PACKAGES"/></remarks>
 		[Obsolete]
 		_SET_MP_GAMER_TAG_UNK = 0x9C16459B2324B2CF,
 
@@ -15937,15 +15937,15 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		IS_UPDATING_MP_GAMER_TAG_NAME_AND_CREW_DETAILS = 0xEB709A36958ABE0D, // 0xF11414C4
 
-		///<remarks>This function has been replaced by <see cref="IS_UPDATING_MP_GAMER_TAG_NAME_AND_CREW_DETAILS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_UPDATING_MP_GAMER_TAG_NAME_AND_CREW_DETAILS"/></remarks>
 		[Obsolete]
 		_HAS_MP_GAMER_TAG_2 = 0xEB709A36958ABE0D, // 0xF11414C4
 
-		///<remarks>This function has been replaced by <see cref="IS_UPDATING_MP_GAMER_TAG_NAME_AND_CREW_DETAILS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_UPDATING_MP_GAMER_TAG_NAME_AND_CREW_DETAILS"/></remarks>
 		[Obsolete]
 		_HAS_MP_GAMER_TAG_CREW_FLAGS_SET = 0xEB709A36958ABE0D, // 0xF11414C4
 
-		///<remarks>This function has been replaced by <see cref="IS_UPDATING_MP_GAMER_TAG_NAME_AND_CREW_DETAILS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_UPDATING_MP_GAMER_TAG_NAME_AND_CREW_DETAILS"/></remarks>
 		[Obsolete]
 		_IS_VALID_MP_GAMER_TAG_MOVIE = 0xEB709A36958ABE0D, // 0xF11414C4
 
@@ -15955,14 +15955,14 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_MP_GAMER_TAG_BIG_TEXT = 0x7B7723747CCB55B6, // 0x939218AB
 
-		///<remarks>This function has been replaced by <see cref="SET_MP_GAMER_TAG_BIG_TEXT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_MP_GAMER_TAG_BIG_TEXT"/></remarks>
 		[Obsolete]
 		_SET_MP_GAMER_TAG_CHATTING = 0x7B7723747CCB55B6, // 0x939218AB
 
 		/// <returns>int</returns>
 		GET_CURRENT_WEBPAGE_ID = 0x01A358D9128B7A86, // 0xAB5B7C18
 
-		///<remarks>This function has been replaced by <see cref="GET_CURRENT_WEBPAGE_ID"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_CURRENT_WEBPAGE_ID"/></remarks>
 		[Obsolete]
 		_GET_ACTIVE_WEBSITE_ID = 0x01A358D9128B7A86, // 0xAB5B7C18
 
@@ -15994,7 +15994,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		IS_WARNING_MESSAGE_READY_FOR_CONTROL = 0xAF42195A42C63BBA,
 
-		///<remarks>This function has been replaced by <see cref="IS_WARNING_MESSAGE_READY_FOR_CONTROL"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_WARNING_MESSAGE_READY_FOR_CONTROL"/></remarks>
 		[Obsolete]
 		_IS_WARNING_MESSAGE_ACTIVE_2 = 0xAF42195A42C63BBA,
 
@@ -16020,7 +16020,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_WARNING_MESSAGE_WITH_HEADER = 0xDC38CC1E35B6A5D7, // 0x2DB9EAB5
 
-		///<remarks>This function has been replaced by <see cref="SET_WARNING_MESSAGE_WITH_HEADER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_WARNING_MESSAGE_WITH_HEADER"/></remarks>
 		[Obsolete]
 		_SET_WARNING_MESSAGE_2 = 0xDC38CC1E35B6A5D7, // 0x2DB9EAB5
 
@@ -16046,7 +16046,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_WARNING_MESSAGE_WITH_HEADER_AND_SUBSTRING_FLAGS = 0x701919482C74B5AB, // 0x749929D3
 
-		///<remarks>This function has been replaced by <see cref="SET_WARNING_MESSAGE_WITH_HEADER_AND_SUBSTRING_FLAGS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_WARNING_MESSAGE_WITH_HEADER_AND_SUBSTRING_FLAGS"/></remarks>
 		[Obsolete]
 		_SET_WARNING_MESSAGE_3 = 0x701919482C74B5AB, // 0x749929D3
 
@@ -16056,7 +16056,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_WARNING_MESSAGE_WITH_HEADER_EXTENDED = 0x38B55259C2E078ED,
 
-		///<remarks>This function has been replaced by <see cref="SET_WARNING_MESSAGE_WITH_HEADER_EXTENDED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_WARNING_MESSAGE_WITH_HEADER_EXTENDED"/></remarks>
 		[Obsolete]
 		_SET_WARNING_MESSAGE_WITH_HEADER_UNK = 0x38B55259C2E078ED,
 
@@ -16123,11 +16123,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_WARNING_MESSAGE_WITH_HEADER_AND_SUBSTRING_FLAGS_EXTENDED = 0x15803FEC3B9A872B,
 
-		///<remarks>This function has been replaced by <see cref="SET_WARNING_MESSAGE_WITH_HEADER_AND_SUBSTRING_FLAGS_EXTENDED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_WARNING_MESSAGE_WITH_HEADER_AND_SUBSTRING_FLAGS_EXTENDED"/></remarks>
 		[Obsolete]
 		_DRAW_FRONTEND_ALERT = 0x15803FEC3B9A872B,
 
-		///<remarks>This function has been replaced by <see cref="SET_WARNING_MESSAGE_WITH_HEADER_AND_SUBSTRING_FLAGS_EXTENDED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_WARNING_MESSAGE_WITH_HEADER_AND_SUBSTRING_FLAGS_EXTENDED"/></remarks>
 		[Obsolete]
 		_SET_WARNING_MESSAGE_WITH_ALERT = 0x15803FEC3B9A872B,
 
@@ -16137,7 +16137,7 @@ namespace GTA.Native
 		/// <returns>Hash</returns>
 		GET_WARNING_SCREEN_MESSAGE_HASH = 0x81DF9ABA6C83DFF9,
 
-		///<remarks>This function has been replaced by <see cref="GET_WARNING_SCREEN_MESSAGE_HASH"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_WARNING_SCREEN_MESSAGE_HASH"/></remarks>
 		[Obsolete]
 		_GET_WARNING_MESSAGE_TITLE_HASH = 0x81DF9ABA6C83DFF9,
 
@@ -16152,7 +16152,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		SET_WARNING_MESSAGE_OPTION_ITEMS = 0x0C5A80A9E096D529,
 
-		///<remarks>This function has been replaced by <see cref="SET_WARNING_MESSAGE_OPTION_ITEMS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_WARNING_MESSAGE_OPTION_ITEMS"/></remarks>
 		[Obsolete]
 		_SET_WARNING_MESSAGE_LIST_ROW = 0x0C5A80A9E096D529,
 
@@ -16165,14 +16165,14 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		REMOVE_WARNING_MESSAGE_OPTION_ITEMS = 0x6EF54AB721DC6242,
 
-		///<remarks>This function has been replaced by <see cref="REMOVE_WARNING_MESSAGE_OPTION_ITEMS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="REMOVE_WARNING_MESSAGE_OPTION_ITEMS"/></remarks>
 		[Obsolete]
 		_REMOVE_WARNING_MESSAGE_LIST_ITEMS = 0x6EF54AB721DC6242,
 
 		/// <returns>BOOL</returns>
 		IS_WARNING_MESSAGE_ACTIVE = 0xE18B138FABC53103, // 0x94C834AD
 
-		///<remarks>This function has been replaced by <see cref="IS_WARNING_MESSAGE_ACTIVE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_WARNING_MESSAGE_ACTIVE"/></remarks>
 		[Obsolete]
 		IS_MEDICAL_DISABLED = 0xE18B138FABC53103, // 0x94C834AD
 
@@ -16189,11 +16189,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		CUSTOM_MINIMAP_SET_ACTIVE = 0x5354C5BA2EA868A4, // 0xE4FD20D8
 
-		///<remarks>This function has been replaced by <see cref="CUSTOM_MINIMAP_SET_ACTIVE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CUSTOM_MINIMAP_SET_ACTIVE"/></remarks>
 		[Obsolete]
 		_SET_MAP_FULL_SCREEN = 0x5354C5BA2EA868A4, // 0xE4FD20D8
 
-		///<remarks>This function has been replaced by <see cref="CUSTOM_MINIMAP_SET_ACTIVE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CUSTOM_MINIMAP_SET_ACTIVE"/></remarks>
 		[Obsolete]
 		_RACE_GALLERY_FULLSCREEN = 0x5354C5BA2EA868A4, // 0xE4FD20D8
 
@@ -16206,7 +16206,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		CUSTOM_MINIMAP_SET_BLIP_OBJECT = 0x1EAE6DD17B7A5EFA, // 0x13E7A5A9
 
-		///<remarks>This function has been replaced by <see cref="CUSTOM_MINIMAP_SET_BLIP_OBJECT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CUSTOM_MINIMAP_SET_BLIP_OBJECT"/></remarks>
 		[Obsolete]
 		_RACE_GALLERY_NEXT_BLIP_SPRITE = 0x1EAE6DD17B7A5EFA, // 0x13E7A5A9
 
@@ -16219,14 +16219,14 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		CUSTOM_MINIMAP_CREATE_BLIP = 0x551DF99658DB6EE8, // 0x786CA0A2
 
-		///<remarks>This function has been replaced by <see cref="CUSTOM_MINIMAP_CREATE_BLIP"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CUSTOM_MINIMAP_CREATE_BLIP"/></remarks>
 		[Obsolete]
 		_RACE_GALLERY_ADD_BLIP = 0x551DF99658DB6EE8, // 0x786CA0A2
 
 		/// <returns>void</returns>
 		CUSTOM_MINIMAP_CLEAR_BLIPS = 0x2708FC083123F9FF, // 0xCBEC9369
 
-		///<remarks>This function has been replaced by <see cref="CUSTOM_MINIMAP_CLEAR_BLIPS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CUSTOM_MINIMAP_CLEAR_BLIPS"/></remarks>
 		[Obsolete]
 		_CLEAR_RACE_GALLERY_BLIPS = 0x2708FC083123F9FF, // 0xCBEC9369
 
@@ -16239,7 +16239,7 @@ namespace GTA.Native
 		/// <returns>Blip</returns>
 		GET_NORTH_BLID_INDEX = 0x3F0CF9CB7E589B88,
 
-		///<remarks>This function has been replaced by <see cref="GET_NORTH_BLID_INDEX"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_NORTH_BLID_INDEX"/></remarks>
 		[Obsolete]
 		_GET_NORTH_RADAR_BLIP = 0x3F0CF9CB7E589B88,
 
@@ -16330,7 +16330,7 @@ namespace GTA.Native
 		/// <returns>Hash</returns>
 		GET_CURRENT_FRONTEND_MENU_VERSION = 0x2309595AD6145265, // 0x33D6868F
 
-		///<remarks>This function has been replaced by <see cref="GET_CURRENT_FRONTEND_MENU_VERSION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_CURRENT_FRONTEND_MENU_VERSION"/></remarks>
 		[Obsolete]
 		_GET_CURRENT_FRONTEND_MENU = 0x2309595AD6145265, // 0x33D6868F
 
@@ -16352,7 +16352,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		ALLOW_PAUSE_WHEN_NOT_IN_STATE_OF_PLAY_THIS_FRAME = 0xCC3FDDED67BCFC63, // 0x630CD8EE
 
-		///<remarks>This function has been replaced by <see cref="ALLOW_PAUSE_WHEN_NOT_IN_STATE_OF_PLAY_THIS_FRAME"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="ALLOW_PAUSE_WHEN_NOT_IN_STATE_OF_PLAY_THIS_FRAME"/></remarks>
 		[Obsolete]
 		_ALLOW_PAUSE_MENU_WHEN_DEAD_THIS_FRAME = 0xCC3FDDED67BCFC63, // 0x630CD8EE
 
@@ -16398,7 +16398,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		FORCE_SCRIPTED_GFX_WHEN_FRONTEND_ACTIVE = 0x2162C446DFDF38FD, // 0x2DFD35C7
 
-		///<remarks>This function has been replaced by <see cref="FORCE_SCRIPTED_GFX_WHEN_FRONTEND_ACTIVE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="FORCE_SCRIPTED_GFX_WHEN_FRONTEND_ACTIVE"/></remarks>
 		[Obsolete]
 		_LOG_DEBUG_INFO = 0x2162C446DFDF38FD, // 0x2DFD35C7
 
@@ -16430,7 +16430,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PAUSE_MENU_ACTIVATE_CONTEXT = 0xDD564BDD0472C936, // 0x9FE8FD5E
 
-		///<remarks>This function has been replaced by <see cref="PAUSE_MENU_ACTIVATE_CONTEXT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PAUSE_MENU_ACTIVATE_CONTEXT"/></remarks>
 		[Obsolete]
 		_ADD_FRONTEND_MENU_CONTEXT = 0xDD564BDD0472C936, // 0x9FE8FD5E
 
@@ -16440,7 +16440,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PAUSE_MENU_DEACTIVATE_CONTEXT = 0x444D8CF241EC25C5, // 0x0029046E
 
-		///<remarks>This function has been replaced by <see cref="PAUSE_MENU_DEACTIVATE_CONTEXT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PAUSE_MENU_DEACTIVATE_CONTEXT"/></remarks>
 		[Obsolete]
 		OBJECT_DECAL_TOGGLE = 0x444D8CF241EC25C5, // 0x0029046E
 
@@ -16474,7 +16474,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PAUSE_MENU_REDRAW_INSTRUCTIONAL_BUTTONS = 0x4895BDEA16E7C080, // 0x15B24768
 
-		///<remarks>This function has been replaced by <see cref="PAUSE_MENU_REDRAW_INSTRUCTIONAL_BUTTONS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PAUSE_MENU_REDRAW_INSTRUCTIONAL_BUTTONS"/></remarks>
 		[Obsolete]
 		ENABLE_DEATHBLOOD_SEETHROUGH = 0x4895BDEA16E7C080, // 0x15B24768
 
@@ -16534,7 +16534,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		GET_MENU_TRIGGER_EVENT_DETAILS = 0x36C1451A88A09630, // 0x8543AAC8
 
-		///<remarks>This function has been replaced by <see cref="GET_MENU_TRIGGER_EVENT_DETAILS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_MENU_TRIGGER_EVENT_DETAILS"/></remarks>
 		[Obsolete]
 		_GET_PAUSE_MENU_SELECTION = 0x36C1451A88A09630, // 0x8543AAC8
 
@@ -16561,7 +16561,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		GET_MENU_LAYOUT_CHANGED_EVENT_DETAILS = 0x7E17BE53E1AAABAF, // 0x6025AA2F
 
-		///<remarks>This function has been replaced by <see cref="GET_MENU_LAYOUT_CHANGED_EVENT_DETAILS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_MENU_LAYOUT_CHANGED_EVENT_DETAILS"/></remarks>
 		[Obsolete]
 		_GET_PAUSE_MENU_SELECTION_DATA = 0x7E17BE53E1AAABAF, // 0x6025AA2F
 
@@ -16577,7 +16577,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		GET_MENU_PED_INT_STAT = 0xEF4CED81CEBEDC6D, // 0x4370999E
 
-		///<remarks>This function has been replaced by <see cref="GET_MENU_PED_INT_STAT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_MENU_PED_INT_STAT"/></remarks>
 		[Obsolete]
 		SET_USERIDS_UIHIDDEN = 0xEF4CED81CEBEDC6D, // 0x4370999E
 
@@ -16659,7 +16659,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		OPEN_ONLINE_POLICIES_MENU = 0x805D7CBB36FD6C4C, // 0x19FCBBB2
 
-		///<remarks>This function has been replaced by <see cref="OPEN_ONLINE_POLICIES_MENU"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="OPEN_ONLINE_POLICIES_MENU"/></remarks>
 		[Obsolete]
 		_SHOW_SOCIAL_CLUB_LEGAL_SCREEN = 0x805D7CBB36FD6C4C, // 0x19FCBBB2
 
@@ -16705,7 +16705,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		FORCE_CLOSE_TEXT_INPUT_BOX = 0x8817605C2BA76200,
 
-		///<remarks>This function has been replaced by <see cref="FORCE_CLOSE_TEXT_INPUT_BOX"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="FORCE_CLOSE_TEXT_INPUT_BOX"/></remarks>
 		[Obsolete]
 		_FORCE_CLOSE_TEXT_INPUT_BOX = 0x8817605C2BA76200,
 
@@ -16721,7 +16721,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		OVERRIDE_MP_TEXT_CHAT_TEAM_STRING = 0x6A1738B4323FE2D9,
 
-		///<remarks>This function has been replaced by <see cref="OVERRIDE_MP_TEXT_CHAT_TEAM_STRING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="OVERRIDE_MP_TEXT_CHAT_TEAM_STRING"/></remarks>
 		[Obsolete]
 		_OVERRIDE_MULTIPLAYER_CHAT_PREFIX = 0x6A1738B4323FE2D9,
 
@@ -16731,22 +16731,22 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		IS_MP_TEXT_CHAT_TYPING = 0xB118AF58B5F332A1,
 
-		///<remarks>This function has been replaced by <see cref="IS_MP_TEXT_CHAT_TYPING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_MP_TEXT_CHAT_TYPING"/></remarks>
 		[Obsolete]
 		_IS_TEXT_CHAT_ACTIVE = 0xB118AF58B5F332A1,
 
-		///<remarks>This function has been replaced by <see cref="IS_MP_TEXT_CHAT_TYPING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_MP_TEXT_CHAT_TYPING"/></remarks>
 		[Obsolete]
 		_IS_MULTIPLAYER_CHAT_ACTIVE = 0xB118AF58B5F332A1,
 
 		/// <returns>void</returns>
 		CLOSE_MP_TEXT_CHAT = 0x1AC8F4AD40E22127,
 
-		///<remarks>This function has been replaced by <see cref="CLOSE_MP_TEXT_CHAT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CLOSE_MP_TEXT_CHAT"/></remarks>
 		[Obsolete]
 		_ABORT_TEXT_CHAT = 0x1AC8F4AD40E22127,
 
-		///<remarks>This function has been replaced by <see cref="CLOSE_MP_TEXT_CHAT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CLOSE_MP_TEXT_CHAT"/></remarks>
 		[Obsolete]
 		_CLOSE_MULTIPLAYER_CHAT = 0x1AC8F4AD40E22127,
 
@@ -16762,7 +16762,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		OVERRIDE_MP_TEXT_CHAT_COLOR = 0xF47E567B3630DD12,
 
-		///<remarks>This function has been replaced by <see cref="OVERRIDE_MP_TEXT_CHAT_COLOR"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="OVERRIDE_MP_TEXT_CHAT_COLOR"/></remarks>
 		[Obsolete]
 		_OVERRIDE_MULTIPLAYER_CHAT_COLOUR = 0xF47E567B3630DD12,
 
@@ -16775,11 +16775,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		MP_TEXT_CHAT_DISABLE = 0x1DB21A44B09E8BA3,
 
-		///<remarks>This function has been replaced by <see cref="MP_TEXT_CHAT_DISABLE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="MP_TEXT_CHAT_DISABLE"/></remarks>
 		[Obsolete]
 		_SET_TEXT_CHAT_UNK = 0x1DB21A44B09E8BA3,
 
-		///<remarks>This function has been replaced by <see cref="MP_TEXT_CHAT_DISABLE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="MP_TEXT_CHAT_DISABLE"/></remarks>
 		[Obsolete]
 		_MULTIPLAYER_CHAT_SET_DISABLED = 0x1DB21A44B09E8BA3,
 
@@ -16789,7 +16789,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		FLAG_PLAYER_CONTEXT_IN_TOURNAMENT = 0xCEF214315D276FD1, // 0xFF06772A
 
-		///<remarks>This function has been replaced by <see cref="FLAG_PLAYER_CONTEXT_IN_TOURNAMENT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="FLAG_PLAYER_CONTEXT_IN_TOURNAMENT"/></remarks>
 		[Obsolete]
 		_SET_IS_IN_TOURNAMENT = 0xCEF214315D276FD1, // 0xFF06772A
 
@@ -16803,11 +16803,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_PED_HAS_AI_BLIP = 0xD30C50DF888D58B5, // 0x96C4C4DD
 
-		///<remarks>This function has been replaced by <see cref="SET_PED_HAS_AI_BLIP"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_PED_HAS_AI_BLIP"/></remarks>
 		[Obsolete]
 		_SET_PED_ENEMY_AI_BLIP = 0xD30C50DF888D58B5, // 0x96C4C4DD
 
-		///<remarks>This function has been replaced by <see cref="SET_PED_HAS_AI_BLIP"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_PED_HAS_AI_BLIP"/></remarks>
 		[Obsolete]
 		_SET_PED_AI_BLIP = 0xD30C50DF888D58B5, // 0x96C4C4DD
 
@@ -16820,7 +16820,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_PED_HAS_AI_BLIP_WITH_COLOUR = 0xB13DCB4C6FAAD238,
 
-		///<remarks>This function has been replaced by <see cref="SET_PED_HAS_AI_BLIP_WITH_COLOUR"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_PED_HAS_AI_BLIP_WITH_COLOUR"/></remarks>
 		[Obsolete]
 		_SET_PED_HAS_AI_BLIP_WITH_COLOR = 0xB13DCB4C6FAAD238,
 
@@ -16836,7 +16836,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_PED_AI_BLIP_GANG_ID = 0xE52B8E7F85D39A08, // 0xD8E31B1A
 
-		///<remarks>This function has been replaced by <see cref="SET_PED_AI_BLIP_GANG_ID"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_PED_AI_BLIP_GANG_ID"/></remarks>
 		[Obsolete]
 		_SET_AI_BLIP_TYPE = 0xE52B8E7F85D39A08, // 0xD8E31B1A
 
@@ -16846,7 +16846,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_PED_AI_BLIP_HAS_CONE = 0x3EED80DFF7325CAA, // 0x872C2CFB
 
-		///<remarks>This function has been replaced by <see cref="SET_PED_AI_BLIP_HAS_CONE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_PED_AI_BLIP_HAS_CONE"/></remarks>
 		[Obsolete]
 		HIDE_SPECIAL_ABILITY_LOCKON_OPERATION = 0x3EED80DFF7325CAA, // 0x872C2CFB
 
@@ -16856,7 +16856,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_PED_AI_BLIP_FORCED_ON = 0x0C4BBF625CA98C4E, // 0xFFDF46F0
 
-		///<remarks>This function has been replaced by <see cref="SET_PED_AI_BLIP_FORCED_ON"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_PED_AI_BLIP_FORCED_ON"/></remarks>
 		[Obsolete]
 		_IS_AI_BLIP_ALWAYS_SHOWN = 0x0C4BBF625CA98C4E, // 0xFFDF46F0
 
@@ -16866,7 +16866,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_PED_AI_BLIP_NOTICE_RANGE = 0x97C65887D4B37FA9, // 0xF9DC2AF7
 
-		///<remarks>This function has been replaced by <see cref="SET_PED_AI_BLIP_NOTICE_RANGE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_PED_AI_BLIP_NOTICE_RANGE"/></remarks>
 		[Obsolete]
 		_SET_AI_BLIP_MAX_DISTANCE = 0x97C65887D4B37FA9, // 0xF9DC2AF7
 
@@ -16876,7 +16876,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_PED_AI_BLIP_SPRITE = 0xFCFACD0DB9D7A57D,
 
-		///<remarks>This function has been replaced by <see cref="SET_PED_AI_BLIP_SPRITE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_PED_AI_BLIP_SPRITE"/></remarks>
 		[Obsolete]
 		_SET_PED_AI_BLIP_SPRITE = 0xFCFACD0DB9D7A57D,
 
@@ -16886,7 +16886,7 @@ namespace GTA.Native
 		/// <returns>Blip</returns>
 		GET_AI_PED_PED_BLIP_INDEX = 0x7CD934010E115C2C, // 0x06349065
 
-		///<remarks>This function has been replaced by <see cref="GET_AI_PED_PED_BLIP_INDEX"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_AI_PED_PED_BLIP_INDEX"/></remarks>
 		[Obsolete]
 		_GET_AI_BLIP_2 = 0x7CD934010E115C2C, // 0x06349065
 
@@ -16899,21 +16899,21 @@ namespace GTA.Native
 		/// <returns>Blip</returns>
 		GET_AI_PED_VEHICLE_BLIP_INDEX = 0x56176892826A4FE8, // 0xCA52CF43
 
-		///<remarks>This function has been replaced by <see cref="GET_AI_PED_VEHICLE_BLIP_INDEX"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_AI_PED_VEHICLE_BLIP_INDEX"/></remarks>
 		[Obsolete]
 		_GET_AI_BLIP = 0x56176892826A4FE8, // 0xCA52CF43
 
 		/// <returns>BOOL</returns>
 		HAS_DIRECTOR_MODE_BEEN_LAUNCHED_BY_CODE = 0xA277800A9EAE340E,
 
-		///<remarks>This function has been replaced by <see cref="HAS_DIRECTOR_MODE_BEEN_LAUNCHED_BY_CODE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="HAS_DIRECTOR_MODE_BEEN_LAUNCHED_BY_CODE"/></remarks>
 		[Obsolete]
 		_HAS_DIRECTOR_MODE_BEEN_TRIGGERED = 0xA277800A9EAE340E,
 
 		/// <returns>void</returns>
 		SET_DIRECTOR_MODE_LAUNCHED_BY_SCRIPT = 0x2632482FD6B9AB87,
 
-		///<remarks>This function has been replaced by <see cref="SET_DIRECTOR_MODE_LAUNCHED_BY_SCRIPT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_DIRECTOR_MODE_LAUNCHED_BY_SCRIPT"/></remarks>
 		[Obsolete]
 		_SET_DIRECTOR_MODE_CLEAR_TRIGGERED_FLAG = 0x2632482FD6B9AB87,
 
@@ -16927,11 +16927,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_PLAYER_IS_IN_DIRECTOR_MODE = 0x808519373FD336A3,
 
-		///<remarks>This function has been replaced by <see cref="SET_PLAYER_IS_IN_DIRECTOR_MODE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_PLAYER_IS_IN_DIRECTOR_MODE"/></remarks>
 		[Obsolete]
 		_SET_DIRECTOR_MODE = 0x808519373FD336A3,
 
-		///<remarks>This function has been replaced by <see cref="SET_PLAYER_IS_IN_DIRECTOR_MODE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_PLAYER_IS_IN_DIRECTOR_MODE"/></remarks>
 		[Obsolete]
 		_SET_PLAYER_IS_IN_DIRECTOR_MODE = 0x808519373FD336A3,
 
@@ -16954,7 +16954,7 @@ namespace GTA.Native
 		/// <returns>float</returns>
 		GET_INTERIOR_HEADING = 0xF49B58631D9E22D9,
 
-		///<remarks>This function has been replaced by <see cref="GET_INTERIOR_HEADING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_INTERIOR_HEADING"/></remarks>
 		[Obsolete]
 		_GET_INTERIOR_HEADING = 0xF49B58631D9E22D9,
 
@@ -16964,7 +16964,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		GET_INTERIOR_LOCATION_AND_NAMEHASH = 0x252BDC06B73FA6EA, // 0x75885CB3
 
-		///<remarks>This function has been replaced by <see cref="GET_INTERIOR_LOCATION_AND_NAMEHASH"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_INTERIOR_LOCATION_AND_NAMEHASH"/></remarks>
 		[Obsolete]
 		_GET_INTERIOR_INFO = 0x252BDC06B73FA6EA, // 0x75885CB3
 
@@ -17046,7 +17046,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		CLEAR_INTERIOR_STATE_OF_ENTITY = 0x85D5422B2039A70D,
 
-		///<remarks>This function has been replaced by <see cref="CLEAR_INTERIOR_STATE_OF_ENTITY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CLEAR_INTERIOR_STATE_OF_ENTITY"/></remarks>
 		[Obsolete]
 		_CLEAR_INTERIOR_FOR_ENTITY = 0x85D5422B2039A70D,
 
@@ -17084,7 +17084,7 @@ namespace GTA.Native
 		/// <returns>Hash</returns>
 		GET_ROOM_KEY_FOR_GAME_VIEWPORT = 0xA6575914D2A0B450, // 0x4FF3D3F5
 
-		///<remarks>This function has been replaced by <see cref="GET_ROOM_KEY_FOR_GAME_VIEWPORT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_ROOM_KEY_FOR_GAME_VIEWPORT"/></remarks>
 		[Obsolete]
 		_GET_ROOM_KEY_FROM_GAMEPLAY_CAM = 0xA6575914D2A0B450, // 0x4FF3D3F5
 
@@ -17097,7 +17097,7 @@ namespace GTA.Native
 		/// <returns>Interior</returns>
 		GET_INTERIOR_FROM_PRIMARY_VIEW = 0xE7D267EC6CA966C3, // 0xA83C3D15
 
-		///<remarks>This function has been replaced by <see cref="GET_INTERIOR_FROM_PRIMARY_VIEW"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_INTERIOR_FROM_PRIMARY_VIEW"/></remarks>
 		[Obsolete]
 		_GET_INTERIOR_FROM_GAMEPLAY_CAM = 0xE7D267EC6CA966C3, // 0xA83C3D15
 
@@ -17124,7 +17124,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PIN_INTERIOR_IN_MEMORY = 0x2CA429C029CCF247, // 0x3ADA414E
 
-		///<remarks>This function has been replaced by <see cref="PIN_INTERIOR_IN_MEMORY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PIN_INTERIOR_IN_MEMORY"/></remarks>
 		[Obsolete]
 		_LOAD_INTERIOR = 0x2CA429C029CCF247, // 0x3ADA414E
 
@@ -17175,7 +17175,7 @@ namespace GTA.Native
 		/// <returns>Interior</returns>
 		GET_INTERIOR_AT_COORDS_WITH_TYPEHASH = 0xF0F77ADB9F67E79D, // 0x11718507
 
-		///<remarks>This function has been replaced by <see cref="GET_INTERIOR_AT_COORDS_WITH_TYPEHASH"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_INTERIOR_AT_COORDS_WITH_TYPEHASH"/></remarks>
 		[Obsolete]
 		_UNK_GET_INTERIOR_AT_COORDS = 0xF0F77ADB9F67E79D, // 0x11718507
 
@@ -17191,7 +17191,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		IS_COLLISION_MARKED_OUTSIDE = 0xEEA5AC2EDA7C33E8, // 0x7762249C
 
-		///<remarks>This function has been replaced by <see cref="IS_COLLISION_MARKED_OUTSIDE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_COLLISION_MARKED_OUTSIDE"/></remarks>
 		[Obsolete]
 		_ARE_COORDS_COLLIDING_WITH_EXTERIOR = 0xEEA5AC2EDA7C33E8, // 0x7762249C
 
@@ -17217,7 +17217,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		ACTIVATE_INTERIOR_ENTITY_SET = 0x55E86AF2712B36A1, // 0xC80A5DDF
 
-		///<remarks>This function has been replaced by <see cref="ACTIVATE_INTERIOR_ENTITY_SET"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="ACTIVATE_INTERIOR_ENTITY_SET"/></remarks>
 		[Obsolete]
 		_ENABLE_INTERIOR_PROP = 0x55E86AF2712B36A1, // 0xC80A5DDF
 
@@ -17230,7 +17230,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		DEACTIVATE_INTERIOR_ENTITY_SET = 0x420BD37289EEE162, // 0xDBA768A1
 
-		///<remarks>This function has been replaced by <see cref="DEACTIVATE_INTERIOR_ENTITY_SET"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DEACTIVATE_INTERIOR_ENTITY_SET"/></remarks>
 		[Obsolete]
 		_DISABLE_INTERIOR_PROP = 0x420BD37289EEE162, // 0xDBA768A1
 
@@ -17243,7 +17243,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		IS_INTERIOR_ENTITY_SET_ACTIVE = 0x35F7DD45E8C0A16D, // 0x39A3CC6F
 
-		///<remarks>This function has been replaced by <see cref="IS_INTERIOR_ENTITY_SET_ACTIVE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_INTERIOR_ENTITY_SET_ACTIVE"/></remarks>
 		[Obsolete]
 		_IS_INTERIOR_PROP_ENABLED = 0x35F7DD45E8C0A16D, // 0x39A3CC6F
 
@@ -17256,11 +17256,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_INTERIOR_ENTITY_SET_TINT_INDEX = 0xC1F1920BAF281317,
 
-		///<remarks>This function has been replaced by <see cref="SET_INTERIOR_ENTITY_SET_TINT_INDEX"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_INTERIOR_ENTITY_SET_TINT_INDEX"/></remarks>
 		[Obsolete]
 		_SET_INTERIOR_PROP_COLOR = 0xC1F1920BAF281317,
 
-		///<remarks>This function has been replaced by <see cref="SET_INTERIOR_ENTITY_SET_TINT_INDEX"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_INTERIOR_ENTITY_SET_TINT_INDEX"/></remarks>
 		[Obsolete]
 		_SET_INTERIOR_ENTITY_SET_COLOR = 0xC1F1920BAF281317,
 
@@ -17280,7 +17280,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		ENABLE_EXTERIOR_CULL_MODEL_THIS_FRAME = 0xA97F257D0151A6AB, // 0x1F375B4C
 
-		///<remarks>This function has been replaced by <see cref="ENABLE_EXTERIOR_CULL_MODEL_THIS_FRAME"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="ENABLE_EXTERIOR_CULL_MODEL_THIS_FRAME"/></remarks>
 		[Obsolete]
 		_HIDE_MAP_OBJECT_THIS_FRAME = 0xA97F257D0151A6AB, // 0x1F375B4C
 
@@ -17290,7 +17290,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		ENABLE_SHADOW_CULL_MODEL_THIS_FRAME = 0x50C375537449F369,
 
-		///<remarks>This function has been replaced by <see cref="ENABLE_SHADOW_CULL_MODEL_THIS_FRAME"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="ENABLE_SHADOW_CULL_MODEL_THIS_FRAME"/></remarks>
 		[Obsolete]
 		_ENABLE_SCRIPT_CULL_MODEL_THIS_FRAME = 0x50C375537449F369,
 
@@ -17409,14 +17409,14 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		LOBBY_AUTO_MULTIPLAYER_MENU = 0xF2CA003F167E21D2, // 0x106C8317
 
-		///<remarks>This function has been replaced by <see cref="LOBBY_AUTO_MULTIPLAYER_MENU"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="LOBBY_AUTO_MULTIPLAYER_MENU"/></remarks>
 		[Obsolete]
 		_RETURN_ZERO = 0xF2CA003F167E21D2, // 0x106C8317
 
 		/// <returns>BOOL</returns>
 		LOBBY_AUTO_MULTIPLAYER_FREEMODE = 0xEF7D17BC6C85264C, // 0xD87F3A9E
 
-		///<remarks>This function has been replaced by <see cref="LOBBY_AUTO_MULTIPLAYER_FREEMODE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="LOBBY_AUTO_MULTIPLAYER_FREEMODE"/></remarks>
 		[Obsolete]
 		_LOADINGSCREEN_GET_LOAD_FREEMODE = 0xEF7D17BC6C85264C, // 0xD87F3A9E
 
@@ -17426,18 +17426,18 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		LOBBY_SET_AUTO_MULTIPLAYER = 0xB0C56BD3D808D863, // 0xC0B971EA
 
-		///<remarks>This function has been replaced by <see cref="LOBBY_SET_AUTO_MULTIPLAYER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="LOBBY_SET_AUTO_MULTIPLAYER"/></remarks>
 		[Obsolete]
 		_GET_BROADCAST_FINSHED_LOS_SOUND = 0xB0C56BD3D808D863, // 0xC0B971EA
 
-		///<remarks>This function has been replaced by <see cref="LOBBY_SET_AUTO_MULTIPLAYER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="LOBBY_SET_AUTO_MULTIPLAYER"/></remarks>
 		[Obsolete]
 		_LOADINGSCREEN_SET_LOAD_FREEMODE = 0xB0C56BD3D808D863, // 0xC0B971EA
 
 		/// <returns>BOOL</returns>
 		LOBBY_AUTO_MULTIPLAYER_EVENT = 0x8AA464D4E0F6ACCD, // 0x94BCAC7C
 
-		///<remarks>This function has been replaced by <see cref="LOBBY_AUTO_MULTIPLAYER_EVENT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="LOBBY_AUTO_MULTIPLAYER_EVENT"/></remarks>
 		[Obsolete]
 		_LOADINGSCREEN_GET_LOAD_FREEMODE_WITH_EVENT_NAME = 0x8AA464D4E0F6ACCD, // 0x94BCAC7C
 
@@ -17447,22 +17447,22 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		LOBBY_SET_AUTO_MULTIPLAYER_EVENT = 0xFC309E94546FCDB5, // 0x7D90EEE5
 
-		///<remarks>This function has been replaced by <see cref="LOBBY_SET_AUTO_MULTIPLAYER_EVENT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="LOBBY_SET_AUTO_MULTIPLAYER_EVENT"/></remarks>
 		[Obsolete]
 		_IS_IN_LOADING_SCREEN = 0xFC309E94546FCDB5, // 0x7D90EEE5
 
-		///<remarks>This function has been replaced by <see cref="LOBBY_SET_AUTO_MULTIPLAYER_EVENT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="LOBBY_SET_AUTO_MULTIPLAYER_EVENT"/></remarks>
 		[Obsolete]
 		_LOADINGSCREEN_SET_LOAD_FREEMODE_WITH_EVENT_NAME = 0xFC309E94546FCDB5, // 0x7D90EEE5
 
 		/// <returns>BOOL</returns>
 		LOBBY_AUTO_MULTIPLAYER_RANDOM_JOB = 0xC6DC823253FBB366, // 0x734CFEDA
 
-		///<remarks>This function has been replaced by <see cref="LOBBY_AUTO_MULTIPLAYER_RANDOM_JOB"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="LOBBY_AUTO_MULTIPLAYER_RANDOM_JOB"/></remarks>
 		[Obsolete]
 		_IS_UI_LOADING_MULTIPLAYER = 0xC6DC823253FBB366, // 0x734CFEDA
 
-		///<remarks>This function has been replaced by <see cref="LOBBY_AUTO_MULTIPLAYER_RANDOM_JOB"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="LOBBY_AUTO_MULTIPLAYER_RANDOM_JOB"/></remarks>
 		[Obsolete]
 		_LOADINGSCREEN_IS_LOADING_FREEMODE = 0xC6DC823253FBB366, // 0x734CFEDA
 
@@ -17472,7 +17472,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		LOBBY_SET_AUTO_MP_RANDOM_JOB = 0xC7E7181C09F33B69, // 0x8C227332
 
-		///<remarks>This function has been replaced by <see cref="LOBBY_SET_AUTO_MP_RANDOM_JOB"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="LOBBY_SET_AUTO_MP_RANDOM_JOB"/></remarks>
 		[Obsolete]
 		_LOADINGSCREEN_SET_IS_LOADING_FREEMODE = 0xC7E7181C09F33B69, // 0x8C227332
 
@@ -17492,7 +17492,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		LOCALIZATION_GET_SYSTEM_LANGUAGE = 0x497420E022796B3F,
 
-		///<remarks>This function has been replaced by <see cref="LOCALIZATION_GET_SYSTEM_LANGUAGE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="LOCALIZATION_GET_SYSTEM_LANGUAGE"/></remarks>
 		[Obsolete]
 		_LOCALIZATION_GET_SYSTEM_LANGUAGE = 0x497420E022796B3F,
 
@@ -17514,11 +17514,11 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		GET_CURRENT_LANGUAGE = 0x2BDD44CC428A7EAE, // 0x761BE00B
 
-		///<remarks>This function has been replaced by <see cref="GET_CURRENT_LANGUAGE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_CURRENT_LANGUAGE"/></remarks>
 		[Obsolete]
 		_GET_UI_LANGUAGE_ID = 0x2BDD44CC428A7EAE, // 0x761BE00B
 
-		///<remarks>This function has been replaced by <see cref="GET_CURRENT_LANGUAGE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_CURRENT_LANGUAGE"/></remarks>
 		[Obsolete]
 		_GET_CURRENT_LANGUAGE_ID = 0x2BDD44CC428A7EAE, // 0x761BE00B
 
@@ -17528,11 +17528,11 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		LOCALIZATION_GET_SYSTEM_DATE_TYPE = 0xA8AE43AEC1A61314,
 
-		///<remarks>This function has been replaced by <see cref="LOCALIZATION_GET_SYSTEM_DATE_TYPE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="LOCALIZATION_GET_SYSTEM_DATE_TYPE"/></remarks>
 		[Obsolete]
 		_GET_USER_LANGUAGE_ID = 0xA8AE43AEC1A61314,
 
-		///<remarks>This function has been replaced by <see cref="LOCALIZATION_GET_SYSTEM_DATE_TYPE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="LOCALIZATION_GET_SYSTEM_DATE_TYPE"/></remarks>
 		[Obsolete]
 		_LOCALIZATION_GET_SYSTEM_DATE_FORMAT = 0xA8AE43AEC1A61314,
 
@@ -17549,7 +17549,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		GET_NUMBER_OF_FREE_STACKS_OF_THIS_SIZE = 0xFEAD16FC8F9DFC0F, // 0x11A178B8
 
-		///<remarks>This function has been replaced by <see cref="GET_NUMBER_OF_FREE_STACKS_OF_THIS_SIZE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_NUMBER_OF_FREE_STACKS_OF_THIS_SIZE"/></remarks>
 		[Obsolete]
 		_GET_FREE_STACK_SLOTS_COUNT = 0xFEAD16FC8F9DFC0F, // 0x11A178B8
 
@@ -17605,7 +17605,7 @@ namespace GTA.Native
 		/// <returns>const char*</returns>
 		GET_CONTENT_TO_LOAD = 0x24DA7D7667FD7B09,
 
-		///<remarks>This function has been replaced by <see cref="GET_CONTENT_TO_LOAD"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_CONTENT_TO_LOAD"/></remarks>
 		[Obsolete]
 		_GET_GLOBAL_CHAR_BUFFER = 0x24DA7D7667FD7B09,
 
@@ -17694,7 +17694,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		HAS_RESUMED_FROM_SUSPEND = 0xE8B9C0EC9E183F35,
 
-		///<remarks>This function has been replaced by <see cref="HAS_RESUMED_FROM_SUSPEND"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="HAS_RESUMED_FROM_SUSPEND"/></remarks>
 		[Obsolete]
 		_HAS_RESUMED_FROM_SUSPEND = 0xE8B9C0EC9E183F35,
 
@@ -17728,7 +17728,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		GET_BASE_ELEMENT_LOCATION_FROM_METADATA_BLOCK = 0xB335F761606DB47C,
 
-		///<remarks>This function has been replaced by <see cref="GET_BASE_ELEMENT_LOCATION_FROM_METADATA_BLOCK"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_BASE_ELEMENT_LOCATION_FROM_METADATA_BLOCK"/></remarks>
 		[Obsolete]
 		_GET_BASE_ELEMENT_METADATA = 0xB335F761606DB47C,
 
@@ -17738,7 +17738,7 @@ namespace GTA.Native
 		/// <returns>Hash</returns>
 		GET_PREV_WEATHER_TYPE_HASH_NAME = 0x564B884A05EC45A3, // 0xA8171E9E
 
-		///<remarks>This function has been replaced by <see cref="GET_PREV_WEATHER_TYPE_HASH_NAME"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_PREV_WEATHER_TYPE_HASH_NAME"/></remarks>
 		[Obsolete]
 		_GET_PREV_WEATHER_TYPE = 0x564B884A05EC45A3, // 0xA8171E9E
 
@@ -17748,7 +17748,7 @@ namespace GTA.Native
 		/// <returns>Hash</returns>
 		GET_NEXT_WEATHER_TYPE_HASH_NAME = 0x711327CD09C8F162, // 0x353E8056
 
-		///<remarks>This function has been replaced by <see cref="GET_NEXT_WEATHER_TYPE_HASH_NAME"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_NEXT_WEATHER_TYPE_HASH_NAME"/></remarks>
 		[Obsolete]
 		_GET_NEXT_WEATHER_TYPE = 0x711327CD09C8F162, // 0x353E8056
 
@@ -17842,7 +17842,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_WEATHER_TYPE_OVERTIME_PERSIST = 0xFB5045B7C42B75BF, // 0x386F0D25
 
-		///<remarks>This function has been replaced by <see cref="SET_WEATHER_TYPE_OVERTIME_PERSIST"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_WEATHER_TYPE_OVERTIME_PERSIST"/></remarks>
 		[Obsolete]
 		_SET_WEATHER_TYPE_OVER_TIME = 0xFB5045B7C42B75BF, // 0x386F0D25
 
@@ -17858,7 +17858,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		CLEAR_WEATHER_TYPE_NOW_PERSIST_NETWORK = 0x0CF97F497FE7D048,
 
-		///<remarks>This function has been replaced by <see cref="CLEAR_WEATHER_TYPE_NOW_PERSIST_NETWORK"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CLEAR_WEATHER_TYPE_NOW_PERSIST_NETWORK"/></remarks>
 		[Obsolete]
 		_CLEAR_WEATHER_TYPE_OVERTIME_PERSIST = 0x0CF97F497FE7D048,
 
@@ -17868,7 +17868,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		GET_CURR_WEATHER_STATE = 0xF3BBE884A14BB413, // 0x9A5C1D56
 
-		///<remarks>This function has been replaced by <see cref="GET_CURR_WEATHER_STATE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_CURR_WEATHER_STATE"/></remarks>
 		[Obsolete]
 		_GET_WEATHER_TYPE_TRANSITION = 0xF3BBE884A14BB413, // 0x9A5C1D56
 
@@ -17900,7 +17900,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_CURR_WEATHER_STATE = 0x578C752848ECFA0C, // 0x5CA74040
 
-		///<remarks>This function has been replaced by <see cref="SET_CURR_WEATHER_STATE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_CURR_WEATHER_STATE"/></remarks>
 		[Obsolete]
 		_SET_WEATHER_TYPE_TRANSITION = 0x578C752848ECFA0C, // 0x5CA74040
 
@@ -18061,11 +18061,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_RAIN = 0x643E26EA6E024D92,
 
-		///<remarks>This function has been replaced by <see cref="SET_RAIN"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_RAIN"/></remarks>
 		[Obsolete]
 		_SET_RAIN_FX_INTENSITY = 0x643E26EA6E024D92,
 
-		///<remarks>This function has been replaced by <see cref="SET_RAIN"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_RAIN"/></remarks>
 		[Obsolete]
 		_SET_RAIN_LEVEL = 0x643E26EA6E024D92,
 
@@ -18078,7 +18078,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_SNOW = 0x7F06937B0CDCBC1A,
 
-		///<remarks>This function has been replaced by <see cref="SET_SNOW"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_SNOW"/></remarks>
 		[Obsolete]
 		_SET_SNOW_LEVEL = 0x7F06937B0CDCBC1A,
 
@@ -18091,7 +18091,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		FORCE_LIGHTNING_FLASH = 0xF6062E089251C898, // 0xDF38165E
 
-		///<remarks>This function has been replaced by <see cref="FORCE_LIGHTNING_FLASH"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="FORCE_LIGHTNING_FLASH"/></remarks>
 		[Obsolete]
 		_CREATE_LIGHTNING_THUNDER = 0xF6062E089251C898, // 0xDF38165E
 
@@ -18136,7 +18136,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		LOAD_CLOUD_HAT = 0xFC4842A34657BFCB, // 0xED88FC61
 
-		///<remarks>This function has been replaced by <see cref="LOAD_CLOUD_HAT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="LOAD_CLOUD_HAT"/></remarks>
 		[Obsolete]
 		_SET_CLOUD_HAT_TRANSITION = 0xFC4842A34657BFCB, // 0xED88FC61
 
@@ -18149,7 +18149,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		UNLOAD_ALL_CLOUD_HATS = 0x957E790EA1727B64, // 0x2D7787BC
 
-		///<remarks>This function has been replaced by <see cref="UNLOAD_ALL_CLOUD_HATS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="UNLOAD_ALL_CLOUD_HATS"/></remarks>
 		[Obsolete]
 		_CLEAR_CLOUD_HAT = 0x957E790EA1727B64, // 0x2D7787BC
 
@@ -18159,14 +18159,14 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_CLOUDS_ALPHA = 0xF36199225D6D8C86,
 
-		///<remarks>This function has been replaced by <see cref="SET_CLOUDS_ALPHA"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_CLOUDS_ALPHA"/></remarks>
 		[Obsolete]
 		_SET_CLOUD_HAT_OPACITY = 0xF36199225D6D8C86,
 
 		/// <returns>float</returns>
 		GET_CLOUDS_ALPHA = 0x20AC25E781AE4A84,
 
-		///<remarks>This function has been replaced by <see cref="GET_CLOUDS_ALPHA"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_CLOUDS_ALPHA"/></remarks>
 		[Obsolete]
 		_GET_CLOUD_HAT_OPACITY = 0x20AC25E781AE4A84,
 
@@ -18179,7 +18179,7 @@ namespace GTA.Native
 		/// <returns>float</returns>
 		GET_SYSTEM_TIME_STEP = 0xE599A503B3837E1B,
 
-		///<remarks>This function has been replaced by <see cref="GET_SYSTEM_TIME_STEP"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_SYSTEM_TIME_STEP"/></remarks>
 		[Obsolete]
 		_GET_BENCHMARK_TIME = 0xE599A503B3837E1B,
 
@@ -18204,7 +18204,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		GET_RANDOM_MWC_INT_IN_RANGE = 0xF2D49816A804D134,
 
-		///<remarks>This function has been replaced by <see cref="GET_RANDOM_MWC_INT_IN_RANGE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_RANDOM_MWC_INT_IN_RANGE"/></remarks>
 		[Obsolete]
 		_GET_RANDOM_INT_IN_RANGE_2 = 0xF2D49816A804D134,
 
@@ -18229,7 +18229,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		GET_GROUND_Z_AND_NORMAL_FOR_3D_COORD = 0x8BDC7BFC57A81E76, // 0x64D91CED
 
-		///<remarks>This function has been replaced by <see cref="GET_GROUND_Z_AND_NORMAL_FOR_3D_COORD"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_GROUND_Z_AND_NORMAL_FOR_3D_COORD"/></remarks>
 		[Obsolete]
 		_GET_GROUND_Z_COORD_WITH_OFFSETS = 0x8BDC7BFC57A81E76, // 0x64D91CED
 
@@ -18239,7 +18239,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		GET_GROUND_Z_EXCLUDING_OBJECTS_FOR_3D_COORD = 0x9E82F0F362881B29,
 
-		///<remarks>This function has been replaced by <see cref="GET_GROUND_Z_EXCLUDING_OBJECTS_FOR_3D_COORD"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_GROUND_Z_EXCLUDING_OBJECTS_FOR_3D_COORD"/></remarks>
 		[Obsolete]
 		_GET_GROUND_Z_FOR_3D_COORD_2 = 0x9E82F0F362881B29,
 
@@ -18309,7 +18309,7 @@ namespace GTA.Native
 		/// <returns>float</returns>
 		GET_RATIO_OF_CLOSEST_POINT_ON_LINE = 0x7F8F6405F4777AF6, // 0x89459F0A
 
-		///<remarks>This function has been replaced by <see cref="GET_RATIO_OF_CLOSEST_POINT_ON_LINE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_RATIO_OF_CLOSEST_POINT_ON_LINE"/></remarks>
 		[Obsolete]
 		_GET_PROGRESS_ALONG_LINE_BETWEEN_COORDS = 0x7F8F6405F4777AF6, // 0x89459F0A
 
@@ -18431,7 +18431,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		CLEAR_AREA_LEAVE_VEHICLE_HEALTH = 0x957838AAF91BD12D, // 0x20E4FFD9
 
-		///<remarks>This function has been replaced by <see cref="CLEAR_AREA_LEAVE_VEHICLE_HEALTH"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CLEAR_AREA_LEAVE_VEHICLE_HEALTH"/></remarks>
 		[Obsolete]
 		_CLEAR_AREA_OF_EVERYTHING = 0x957838AAF91BD12D, // 0x20E4FFD9
 
@@ -18572,22 +18572,22 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_RESTART_COORD_OVERRIDE = 0x706B5EDCAA7FA663,
 
-		///<remarks>This function has been replaced by <see cref="SET_RESTART_COORD_OVERRIDE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_RESTART_COORD_OVERRIDE"/></remarks>
 		[Obsolete]
 		_SET_CUSTOM_RESPAWN_POSITION = 0x706B5EDCAA7FA663,
 
-		///<remarks>This function has been replaced by <see cref="SET_RESTART_COORD_OVERRIDE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_RESTART_COORD_OVERRIDE"/></remarks>
 		[Obsolete]
 		_SET_RESTART_CUSTOM_POSITION = 0x706B5EDCAA7FA663,
 
 		/// <returns>void</returns>
 		CLEAR_RESTART_COORD_OVERRIDE = 0xA2716D40842EAF79,
 
-		///<remarks>This function has been replaced by <see cref="CLEAR_RESTART_COORD_OVERRIDE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CLEAR_RESTART_COORD_OVERRIDE"/></remarks>
 		[Obsolete]
 		_SET_NEXT_RESPAWN_TO_CUSTOM = 0xA2716D40842EAF79,
 
-		///<remarks>This function has been replaced by <see cref="CLEAR_RESTART_COORD_OVERRIDE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CLEAR_RESTART_COORD_OVERRIDE"/></remarks>
 		[Obsolete]
 		_CLEAR_RESTART_CUSTOM_POSITION = 0xA2716D40842EAF79,
 
@@ -18597,7 +18597,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PAUSE_DEATH_ARREST_RESTART = 0x2C2B3493FBF51C71, // 0x296574AE
 
-		///<remarks>This function has been replaced by <see cref="PAUSE_DEATH_ARREST_RESTART"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PAUSE_DEATH_ARREST_RESTART"/></remarks>
 		[Obsolete]
 		_DISABLE_AUTOMATIC_RESPAWN = 0x2C2B3493FBF51C71, // 0x296574AE
 
@@ -18755,7 +18755,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SHOOT_SINGLE_BULLET_BETWEEN_COORDS_IGNORE_ENTITY = 0xE3A7742E0B7A2F8B, // 0x52ACCB7B
 
-		///<remarks>This function has been replaced by <see cref="SHOOT_SINGLE_BULLET_BETWEEN_COORDS_IGNORE_ENTITY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SHOOT_SINGLE_BULLET_BETWEEN_COORDS_IGNORE_ENTITY"/></remarks>
 		[Obsolete]
 		_SHOOT_SINGLE_BULLET_BETWEEN_COORDS_PRESET_PARAMS = 0xE3A7742E0B7A2F8B, // 0x52ACCB7B
 
@@ -18769,7 +18769,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SHOOT_SINGLE_BULLET_BETWEEN_COORDS_IGNORE_ENTITY_NEW = 0xBFE5756E7407064A, // 0xCCDC33CC
 
-		///<remarks>This function has been replaced by <see cref="SHOOT_SINGLE_BULLET_BETWEEN_COORDS_IGNORE_ENTITY_NEW"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SHOOT_SINGLE_BULLET_BETWEEN_COORDS_IGNORE_ENTITY_NEW"/></remarks>
 		[Obsolete]
 		_SHOOT_SINGLE_BULLET_BETWEEN_COORDS_WITH_EXTRA_PARAMS = 0xBFE5756E7407064A, // 0xCCDC33CC
 
@@ -18833,7 +18833,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		SHOULD_USE_METRIC_MEASUREMENTS = 0xD3D15555431AB793, // 0xBAF17315
 
-		///<remarks>This function has been replaced by <see cref="SHOULD_USE_METRIC_MEASUREMENTS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SHOULD_USE_METRIC_MEASUREMENTS"/></remarks>
 		[Obsolete]
 		_IS_GAME_USING_METRIC_MEASUREMENT_SYSTEM = 0xD3D15555431AB793, // 0xBAF17315
 
@@ -18933,7 +18933,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		IS_PROJECTILE_TYPE_WITHIN_DISTANCE = 0x34318593248C8FB2, // 0xBE81F1E2
 
-		///<remarks>This function has been replaced by <see cref="IS_PROJECTILE_TYPE_WITHIN_DISTANCE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_PROJECTILE_TYPE_WITHIN_DISTANCE"/></remarks>
 		[Obsolete]
 		_IS_PROJECTILE_TYPE_IN_RADIUS = 0x34318593248C8FB2, // 0xBE81F1E2
 
@@ -18943,7 +18943,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		GET_COORDS_OF_PROJECTILE_TYPE_IN_AREA = 0x8D7A43EC6A5FEA45, // 0x1A40454B
 
-		///<remarks>This function has been replaced by <see cref="GET_COORDS_OF_PROJECTILE_TYPE_IN_AREA"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_COORDS_OF_PROJECTILE_TYPE_IN_AREA"/></remarks>
 		[Obsolete]
 		_GET_IS_PROJECTILE_TYPE_IN_AREA = 0x8D7A43EC6A5FEA45, // 0x1A40454B
 
@@ -18953,7 +18953,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		GET_COORDS_OF_PROJECTILE_TYPE_WITHIN_DISTANCE = 0xDFB4138EEFED7B81, // 0x6BDE5CE4
 
-		///<remarks>This function has been replaced by <see cref="GET_COORDS_OF_PROJECTILE_TYPE_WITHIN_DISTANCE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_COORDS_OF_PROJECTILE_TYPE_WITHIN_DISTANCE"/></remarks>
 		[Obsolete]
 		_GET_PROJECTILE_NEAR_PED_COORDS = 0xDFB4138EEFED7B81, // 0x6BDE5CE4
 
@@ -18963,7 +18963,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		GET_PROJECTILE_OF_PROJECTILE_TYPE_WITHIN_DISTANCE = 0x82FDE6A57EE4EE44, // 0x507BC6F7
 
-		///<remarks>This function has been replaced by <see cref="GET_PROJECTILE_OF_PROJECTILE_TYPE_WITHIN_DISTANCE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_PROJECTILE_OF_PROJECTILE_TYPE_WITHIN_DISTANCE"/></remarks>
 		[Obsolete]
 		_GET_PROJECTILE_NEAR_PED = 0x82FDE6A57EE4EE44, // 0x507BC6F7
 
@@ -19038,7 +19038,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		IS_JAPANESE_VERSION = 0xB8C0BB75D8A77DB3,
 
-		///<remarks>This function has been replaced by <see cref="IS_JAPANESE_VERSION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_JAPANESE_VERSION"/></remarks>
 		[Obsolete]
 		_IS_JAPANESE_VERSION = 0xB8C0BB75D8A77DB3,
 
@@ -19202,7 +19202,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		HAS_CHEAT_WITH_HASH_BEEN_ACTIVATED = 0x071E2A839DE82D90, // 0xFF6191E1
 
-		///<remarks>This function has been replaced by <see cref="HAS_CHEAT_WITH_HASH_BEEN_ACTIVATED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="HAS_CHEAT_WITH_HASH_BEEN_ACTIVATED"/></remarks>
 		[Obsolete]
 		_HAS_BUTTON_COMBINATION_JUST_BEEN_ENTERED = 0x071E2A839DE82D90, // 0xFF6191E1
 
@@ -19224,7 +19224,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		HAS_PC_CHEAT_WITH_HASH_BEEN_ACTIVATED = 0x557E43C447E700A8,
 
-		///<remarks>This function has been replaced by <see cref="HAS_PC_CHEAT_WITH_HASH_BEEN_ACTIVATED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="HAS_PC_CHEAT_WITH_HASH_BEEN_ACTIVATED"/></remarks>
 		[Obsolete]
 		_HAS_CHEAT_STRING_JUST_BEEN_ENTERED = 0x557E43C447E700A8,
 
@@ -19245,15 +19245,15 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_INSTANCE_PRIORITY_MODE = 0x9BAE5AD2508DF078, // 0x721B2492
 
-		///<remarks>This function has been replaced by <see cref="SET_INSTANCE_PRIORITY_MODE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_INSTANCE_PRIORITY_MODE"/></remarks>
 		[Obsolete]
 		_ENABLE_MP_DLC_MAPS = 0x9BAE5AD2508DF078, // 0x721B2492
 
-		///<remarks>This function has been replaced by <see cref="SET_INSTANCE_PRIORITY_MODE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_INSTANCE_PRIORITY_MODE"/></remarks>
 		[Obsolete]
 		_USE_FREEMODE_MAP_BEHAVIOR = 0x9BAE5AD2508DF078, // 0x721B2492
 
-		///<remarks>This function has been replaced by <see cref="SET_INSTANCE_PRIORITY_MODE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_INSTANCE_PRIORITY_MODE"/></remarks>
 		[Obsolete]
 		_LOWER_MAP_PROP_DENSITY = 0x9BAE5AD2508DF078, // 0x721B2492
 
@@ -19266,7 +19266,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_INSTANCE_PRIORITY_HINT = 0xC5F0A8EBD3F361CE, // 0xE202879D
 
-		///<remarks>This function has been replaced by <see cref="SET_INSTANCE_PRIORITY_HINT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_INSTANCE_PRIORITY_HINT"/></remarks>
 		[Obsolete]
 		_SET_UNK_MAP_FLAG = 0xC5F0A8EBD3F361CE, // 0xE202879D
 
@@ -19325,7 +19325,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		REGISTER_INT64_TO_SAVE = 0xA735353C77334EA0,
 
-		///<remarks>This function has been replaced by <see cref="REGISTER_INT64_TO_SAVE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="REGISTER_INT64_TO_SAVE"/></remarks>
 		[Obsolete]
 		_REGISTER_INT64_TO_SAVE = 0xA735353C77334EA0,
 
@@ -19364,7 +19364,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		REGISTER_TEXT_LABEL_15_TO_SAVE = 0x6F7794F28C6B2535, // 0xE2089749
 
-		///<remarks>This function has been replaced by <see cref="REGISTER_TEXT_LABEL_15_TO_SAVE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="REGISTER_TEXT_LABEL_15_TO_SAVE"/></remarks>
 		[Obsolete]
 		_REGISTER_TEXT_LABEL_TO_SAVE_2 = 0x6F7794F28C6B2535, // 0xE2089749
 
@@ -19415,7 +19415,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		START_SAVE_STRUCT_WITH_SIZE = 0xBF737600CDDBEADD, // 0xFB45728E
 
-		///<remarks>This function has been replaced by <see cref="START_SAVE_STRUCT_WITH_SIZE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="START_SAVE_STRUCT_WITH_SIZE"/></remarks>
 		[Obsolete]
 		_START_SAVE_STRUCT = 0xBF737600CDDBEADD, // 0xFB45728E
 
@@ -19428,7 +19428,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		START_SAVE_ARRAY_WITH_SIZE = 0x60FE567DF1B1AF9D, // 0x893A342C
 
-		///<remarks>This function has been replaced by <see cref="START_SAVE_ARRAY_WITH_SIZE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="START_SAVE_ARRAY_WITH_SIZE"/></remarks>
 		[Obsolete]
 		_START_SAVE_ARRAY = 0x60FE567DF1B1AF9D, // 0x893A342C
 
@@ -19441,7 +19441,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		COPY_SCRIPT_STRUCT = 0x213AEB2B90CBA7AC,
 
-		///<remarks>This function has been replaced by <see cref="COPY_SCRIPT_STRUCT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="COPY_SCRIPT_STRUCT"/></remarks>
 		[Obsolete]
 		_COPY_MEMORY = 0x213AEB2B90CBA7AC,
 
@@ -19466,11 +19466,11 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		GET_NUMBER_RESOURCES_ALLOCATED_TO_WANTED_LEVEL = 0xEB4A0C2D56441717, // 0x3CE5BF6B
 
-		///<remarks>This function has been replaced by <see cref="GET_NUMBER_RESOURCES_ALLOCATED_TO_WANTED_LEVEL"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_NUMBER_RESOURCES_ALLOCATED_TO_WANTED_LEVEL"/></remarks>
 		[Obsolete]
 		_GET_NUMBER_OF_DISPATCHED_UNITS_FOR_PLAYER = 0xEB4A0C2D56441717, // 0x3CE5BF6B
 
-		///<remarks>This function has been replaced by <see cref="GET_NUMBER_RESOURCES_ALLOCATED_TO_WANTED_LEVEL"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_NUMBER_RESOURCES_ALLOCATED_TO_WANTED_LEVEL"/></remarks>
 		[Obsolete]
 		_GET_NUM_DISPATCHED_UNITS_FOR_PLAYER = 0xEB4A0C2D56441717, // 0x3CE5BF6B
 
@@ -19539,7 +19539,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_IDEAL_SPAWN_DISTANCE_FOR_INCIDENT = 0xD261BA3E7E998072, // 0x1F38102E
 
-		///<remarks>This function has been replaced by <see cref="SET_IDEAL_SPAWN_DISTANCE_FOR_INCIDENT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_IDEAL_SPAWN_DISTANCE_FOR_INCIDENT"/></remarks>
 		[Obsolete]
 		_SET_INCIDENT_UNK = 0xD261BA3E7E998072, // 0x1F38102E
 
@@ -19578,7 +19578,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		IS_POP_MULTIPLIER_AREA_NETWORKED = 0x1312F4B242609CE3,
 
-		///<remarks>This function has been replaced by <see cref="IS_POP_MULTIPLIER_AREA_NETWORKED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_POP_MULTIPLIER_AREA_NETWORKED"/></remarks>
 		[Obsolete]
 		_IS_POP_MULTIPLIER_AREA_UNK = 0x1312F4B242609CE3,
 
@@ -19668,7 +19668,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		RESET_DISPATCH_SPAWN_LOCATION = 0x5896F2BD5683A4E1,
 
-		///<remarks>This function has been replaced by <see cref="RESET_DISPATCH_SPAWN_LOCATION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="RESET_DISPATCH_SPAWN_LOCATION"/></remarks>
 		[Obsolete]
 		_RESET_DISPATCH_SPAWN_LOCATION = 0x5896F2BD5683A4E1,
 
@@ -19715,7 +19715,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		ADD_DISPATCH_SPAWN_ANGLED_BLOCKING_AREA = 0x918C7B2D2FF3928B, // 0xF557BAF9
 
-		///<remarks>This function has been replaced by <see cref="ADD_DISPATCH_SPAWN_ANGLED_BLOCKING_AREA"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="ADD_DISPATCH_SPAWN_ANGLED_BLOCKING_AREA"/></remarks>
 		[Obsolete]
 		_ADD_DISPATCH_SPAWN_BLOCKING_ANGLED_AREA = 0x918C7B2D2FF3928B, // 0xF557BAF9
 
@@ -19725,7 +19725,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		ADD_DISPATCH_SPAWN_SPHERE_BLOCKING_AREA = 0x2D4259F1FEB81DA9,
 
-		///<remarks>This function has been replaced by <see cref="ADD_DISPATCH_SPAWN_SPHERE_BLOCKING_AREA"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="ADD_DISPATCH_SPAWN_SPHERE_BLOCKING_AREA"/></remarks>
 		[Obsolete]
 		_ADD_DISPATCH_SPAWN_BLOCKING_AREA = 0x2D4259F1FEB81DA9,
 
@@ -19753,14 +19753,14 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		ADD_TACTICAL_NAV_MESH_POINT = 0xB8721407EE9C3FF6, // 0x24A4E0B2
 
-		///<remarks>This function has been replaced by <see cref="ADD_TACTICAL_NAV_MESH_POINT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="ADD_TACTICAL_NAV_MESH_POINT"/></remarks>
 		[Obsolete]
 		_ADD_TACTICAL_ANALYSIS_POINT = 0xB8721407EE9C3FF6, // 0x24A4E0B2
 
 		/// <returns>void</returns>
 		CLEAR_TACTICAL_NAV_MESH_POINTS = 0xB3CD58CCA6CDA852, // 0x66C3C59C
 
-		///<remarks>This function has been replaced by <see cref="CLEAR_TACTICAL_NAV_MESH_POINTS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CLEAR_TACTICAL_NAV_MESH_POINTS"/></remarks>
 		[Obsolete]
 		_CLEAR_TACTICAL_ANALYSIS_POINTS = 0xB3CD58CCA6CDA852, // 0x66C3C59C
 
@@ -19779,7 +19779,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		DISPLAY_ONSCREEN_KEYBOARD_WITH_LONGER_INITIAL_STRING = 0xCA78CFA0366592FE, // 0xD2688412
 
-		///<remarks>This function has been replaced by <see cref="DISPLAY_ONSCREEN_KEYBOARD_WITH_LONGER_INITIAL_STRING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DISPLAY_ONSCREEN_KEYBOARD_WITH_LONGER_INITIAL_STRING"/></remarks>
 		[Obsolete]
 		_DISPLAY_ONSCREEN_KEYBOARD_2 = 0xCA78CFA0366592FE, // 0xD2688412
 
@@ -19844,7 +19844,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		CANCEL_ONSCREEN_KEYBOARD = 0x58A39BE597CE99CD,
 
-		///<remarks>This function has been replaced by <see cref="CANCEL_ONSCREEN_KEYBOARD"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CANCEL_ONSCREEN_KEYBOARD"/></remarks>
 		[Obsolete]
 		_CANCEL_ONSCREEN_KEYBOARD = 0x58A39BE597CE99CD,
 
@@ -19867,7 +19867,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		ACTION_MANAGER_ENABLE_ACTION = 0xA6A12939F16D85BE, // 0x42B484ED
 
-		///<remarks>This function has been replaced by <see cref="ACTION_MANAGER_ENABLE_ACTION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="ACTION_MANAGER_ENABLE_ACTION"/></remarks>
 		[Obsolete]
 		_REMOVE_STEALTH_KILL = 0xA6A12939F16D85BE, // 0x42B484ED
 
@@ -19913,7 +19913,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_BEAST_JUMP_THIS_FRAME = 0x438822C279B73B93,
 
-		///<remarks>This function has been replaced by <see cref="SET_BEAST_JUMP_THIS_FRAME"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_BEAST_JUMP_THIS_FRAME"/></remarks>
 		[Obsolete]
 		_SET_BEAST_MODE_ACTIVE = 0x438822C279B73B93,
 
@@ -19923,7 +19923,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_FORCED_JUMP_THIS_FRAME = 0xA1183BCFEE0F93D1,
 
-		///<remarks>This function has been replaced by <see cref="SET_FORCED_JUMP_THIS_FRAME"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_FORCED_JUMP_THIS_FRAME"/></remarks>
 		[Obsolete]
 		_SET_FORCE_PLAYER_TO_JUMP = 0xA1183BCFEE0F93D1,
 
@@ -19954,7 +19954,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		FORCE_GAME_STATE_PLAYING = 0xC0AA53F866B3134D, // 0x5D209F25
 
-		///<remarks>This function has been replaced by <see cref="FORCE_GAME_STATE_PLAYING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="FORCE_GAME_STATE_PLAYING"/></remarks>
 		[Obsolete]
 		_RESET_LOCALPLAYER_STATE = 0xC0AA53F866B3134D, // 0x5D209F25
 
@@ -19982,21 +19982,21 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		START_END_USER_BENCHMARK = 0x92790862E36C2ADA,
 
-		///<remarks>This function has been replaced by <see cref="START_END_USER_BENCHMARK"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="START_END_USER_BENCHMARK"/></remarks>
 		[Obsolete]
 		_START_BENCHMARK_RECORDING = 0x92790862E36C2ADA,
 
 		/// <returns>void</returns>
 		STOP_END_USER_BENCHMARK = 0xC7DB36C24634F52B,
 
-		///<remarks>This function has been replaced by <see cref="STOP_END_USER_BENCHMARK"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="STOP_END_USER_BENCHMARK"/></remarks>
 		[Obsolete]
 		_STOP_BENCHMARK_RECORDING = 0xC7DB36C24634F52B,
 
 		/// <returns>void</returns>
 		RESET_END_USER_BENCHMARK = 0x437138B6A830166A,
 
-		///<remarks>This function has been replaced by <see cref="RESET_END_USER_BENCHMARK"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="RESET_END_USER_BENCHMARK"/></remarks>
 		[Obsolete]
 		_RESET_BENCHMARK_RECORDING = 0x437138B6A830166A,
 
@@ -20006,7 +20006,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SAVE_END_USER_BENCHMARK = 0x37DEB0AA183FB6D8,
 
-		///<remarks>This function has been replaced by <see cref="SAVE_END_USER_BENCHMARK"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SAVE_END_USER_BENCHMARK"/></remarks>
 		[Obsolete]
 		_SAVE_BENCHMARK_RECORDING = 0x37DEB0AA183FB6D8,
 
@@ -20016,7 +20016,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		UI_STARTED_END_USER_BENCHMARK = 0xEA2F2061875EED90,
 
-		///<remarks>This function has been replaced by <see cref="UI_STARTED_END_USER_BENCHMARK"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="UI_STARTED_END_USER_BENCHMARK"/></remarks>
 		[Obsolete]
 		_UI_IS_SINGLEPLAYER_PAUSE_MENU_ACTIVE = 0xEA2F2061875EED90,
 
@@ -20026,7 +20026,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		LANDING_SCREEN_STARTED_END_USER_BENCHMARK = 0x3BBBD13E5041A79E,
 
-		///<remarks>This function has been replaced by <see cref="LANDING_SCREEN_STARTED_END_USER_BENCHMARK"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="LANDING_SCREEN_STARTED_END_USER_BENCHMARK"/></remarks>
 		[Obsolete]
 		_LANDING_MENU_IS_ACTIVE = 0x3BBBD13E5041A79E,
 
@@ -20036,7 +20036,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		IS_COMMANDLINE_END_USER_BENCHMARK = 0xA049A5BE0F04F2F8,
 
-		///<remarks>This function has been replaced by <see cref="IS_COMMANDLINE_END_USER_BENCHMARK"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_COMMANDLINE_END_USER_BENCHMARK"/></remarks>
 		[Obsolete]
 		_IS_COMMAND_LINE_BENCHMARK_VALUE_SET = 0xA049A5BE0F04F2F8,
 
@@ -20046,7 +20046,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		GET_BENCHMARK_ITERATIONS = 0x4750FC27570311EC,
 
-		///<remarks>This function has been replaced by <see cref="GET_BENCHMARK_ITERATIONS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_BENCHMARK_ITERATIONS"/></remarks>
 		[Obsolete]
 		_GET_BENCHMARK_ITERATIONS_FROM_COMMAND_LINE = 0x4750FC27570311EC,
 
@@ -20056,7 +20056,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		GET_BENCHMARK_PASS = 0x1B2366C3F2A5C8DF,
 
-		///<remarks>This function has been replaced by <see cref="GET_BENCHMARK_PASS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_BENCHMARK_PASS"/></remarks>
 		[Obsolete]
 		_GET_BENCHMARK_PASS_FROM_COMMAND_LINE = 0x1B2366C3F2A5C8DF,
 
@@ -20066,7 +20066,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		RESTART_GAME = 0xE574A662ACAEFBB1,
 
-		///<remarks>This function has been replaced by <see cref="RESTART_GAME"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="RESTART_GAME"/></remarks>
 		[Obsolete]
 		_RESTART_GAME = 0xE574A662ACAEFBB1,
 
@@ -20076,7 +20076,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		QUIT_GAME = 0xEB6891F03362FB12,
 
-		///<remarks>This function has been replaced by <see cref="QUIT_GAME"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="QUIT_GAME"/></remarks>
 		[Obsolete]
 		_FORCE_SOCIAL_CLUB_UPDATE = 0xEB6891F03362FB12,
 
@@ -20086,14 +20086,14 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		HAS_ASYNC_INSTALL_FINISHED = 0x14832BF2ABA53FC5,
 
-		///<remarks>This function has been replaced by <see cref="HAS_ASYNC_INSTALL_FINISHED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="HAS_ASYNC_INSTALL_FINISHED"/></remarks>
 		[Obsolete]
 		_HAS_ASYNC_INSTALL_FINISHED = 0x14832BF2ABA53FC5,
 
 		/// <returns>void</returns>
 		CLEANUP_ASYNC_INSTALL = 0xC79AE21974B01FB2,
 
-		///<remarks>This function has been replaced by <see cref="CLEANUP_ASYNC_INSTALL"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CLEANUP_ASYNC_INSTALL"/></remarks>
 		[Obsolete]
 		_CLEANUP_ASYNC_INSTALL = 0xC79AE21974B01FB2,
 
@@ -20103,7 +20103,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		PLM_IS_IN_CONSTRAINED_MODE = 0x684A41975F077262,
 
-		///<remarks>This function has been replaced by <see cref="PLM_IS_IN_CONSTRAINED_MODE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLM_IS_IN_CONSTRAINED_MODE"/></remarks>
 		[Obsolete]
 		_IS_IN_POWER_SAVING_MODE = 0x684A41975F077262,
 
@@ -20113,7 +20113,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		PLM_GET_CONSTRAINED_DURATION_MS = 0xABB2FA71C83A1B72,
 
-		///<remarks>This function has been replaced by <see cref="PLM_GET_CONSTRAINED_DURATION_MS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLM_GET_CONSTRAINED_DURATION_MS"/></remarks>
 		[Obsolete]
 		_GET_POWER_SAVING_MODE_DURATION = 0xABB2FA71C83A1B72,
 
@@ -20127,11 +20127,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_PLAYER_IS_IN_ANIMAL_FORM = 0x4EBB7E87AA0DBED4,
 
-		///<remarks>This function has been replaced by <see cref="SET_PLAYER_IS_IN_ANIMAL_FORM"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_PLAYER_IS_IN_ANIMAL_FORM"/></remarks>
 		[Obsolete]
 		_SHOW_PED_IN_PAUSE_MENU = 0x4EBB7E87AA0DBED4,
 
-		///<remarks>This function has been replaced by <see cref="SET_PLAYER_IS_IN_ANIMAL_FORM"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_PLAYER_IS_IN_ANIMAL_FORM"/></remarks>
 		[Obsolete]
 		_SET_PLAYER_IS_IN_ANIMAL_FORM = 0x4EBB7E87AA0DBED4,
 
@@ -20147,7 +20147,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_PLAYER_IS_REPEATING_A_MISSION = 0x9D8D44ADBBA61EF2,
 
-		///<remarks>This function has been replaced by <see cref="SET_PLAYER_IS_REPEATING_A_MISSION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_PLAYER_IS_REPEATING_A_MISSION"/></remarks>
 		[Obsolete]
 		_SET_PLAYER_ROCKSTAR_EDITOR_DISABLED = 0x9D8D44ADBBA61EF2,
 
@@ -20169,7 +20169,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_CONTENT_ID_INDEX = 0x4B82FA6F2D624634,
 
-		///<remarks>This function has been replaced by <see cref="SET_CONTENT_ID_INDEX"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_CONTENT_ID_INDEX"/></remarks>
 		[Obsolete]
 		_SET_CONTENT_MAP_INDEX = 0x4B82FA6F2D624634,
 
@@ -20179,7 +20179,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		GET_CONTENT_ID_INDEX = 0xECF041186C5A94DC,
 
-		///<remarks>This function has been replaced by <see cref="GET_CONTENT_ID_INDEX"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_CONTENT_ID_INDEX"/></remarks>
 		[Obsolete]
 		_GET_CONTENT_MAP_INDEX = 0xECF041186C5A94DC,
 
@@ -20268,7 +20268,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_MOBILE_PHONE_DOF_STATE = 0x375A706A5C2FD084,
 
-		///<remarks>This function has been replaced by <see cref="SET_MOBILE_PHONE_DOF_STATE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_MOBILE_PHONE_DOF_STATE"/></remarks>
 		[Obsolete]
 		_SET_MOBILE_PHONE_UNK = 0x375A706A5C2FD084,
 
@@ -20281,11 +20281,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		CELL_SET_INPUT = 0x95C9E72F3D7DEC9B,
 
-		///<remarks>This function has been replaced by <see cref="CELL_SET_INPUT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CELL_SET_INPUT"/></remarks>
 		[Obsolete]
 		_MOVE_FINGER = 0x95C9E72F3D7DEC9B,
 
-		///<remarks>This function has been replaced by <see cref="CELL_SET_INPUT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CELL_SET_INPUT"/></remarks>
 		[Obsolete]
 		_CELL_CAM_MOVE_FINGER = 0x95C9E72F3D7DEC9B,
 
@@ -20299,11 +20299,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		CELL_HORIZONTAL_MODE_TOGGLE = 0x44E44169EF70138E,
 
-		///<remarks>This function has been replaced by <see cref="CELL_HORIZONTAL_MODE_TOGGLE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CELL_HORIZONTAL_MODE_TOGGLE"/></remarks>
 		[Obsolete]
 		_SET_PHONE_LEAN = 0x44E44169EF70138E,
 
-		///<remarks>This function has been replaced by <see cref="CELL_HORIZONTAL_MODE_TOGGLE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CELL_HORIZONTAL_MODE_TOGGLE"/></remarks>
 		[Obsolete]
 		_CELL_CAM_SET_LEAN = 0x44E44169EF70138E,
 
@@ -20319,11 +20319,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		CELL_CAM_ACTIVATE_SELFIE_MODE = 0x015C49A93E3E086E, // 0x4479B304
 
-		///<remarks>This function has been replaced by <see cref="CELL_CAM_ACTIVATE_SELFIE_MODE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CELL_CAM_ACTIVATE_SELFIE_MODE"/></remarks>
 		[Obsolete]
 		_DISABLE_PHONE_THIS_FRAME = 0x015C49A93E3E086E, // 0x4479B304
 
-		///<remarks>This function has been replaced by <see cref="CELL_CAM_ACTIVATE_SELFIE_MODE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CELL_CAM_ACTIVATE_SELFIE_MODE"/></remarks>
 		[Obsolete]
 		_CELL_CAM_DISABLE_THIS_FRAME = 0x015C49A93E3E086E, // 0x4479B304
 
@@ -20418,14 +20418,14 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_MANUAL_DELETE_CHARACTER = 0x821418C727FCACD7,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_MANUAL_DELETE_CHARACTER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_MANUAL_DELETE_CHARACTER"/></remarks>
 		[Obsolete]
 		_NETWORK_MANUAL_DELETE_CHARACTER = 0x821418C727FCACD7,
 
 		/// <returns>BOOL</returns>
 		NETWORK_GET_PLAYER_IS_HIGH_EARNER = 0xFB2456B2040A6A67, // 0x63F093A6
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_GET_PLAYER_IS_HIGH_EARNER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_GET_PLAYER_IS_HIGH_EARNER"/></remarks>
 		[Obsolete]
 		_NETWORK_GET_IS_HIGH_EARNER = 0xFB2456B2040A6A67, // 0x63F093A6
 
@@ -20496,7 +20496,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_DEDUCT_CASH = 0x18B7AE224B087E26,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_DEDUCT_CASH"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_DEDUCT_CASH"/></remarks>
 		[Obsolete]
 		_NETWORK_DEDUCT_CASH = 0x18B7AE224B087E26,
 
@@ -20528,14 +20528,14 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NETWORK_CASINO_CAN_BET = 0x158C16F5E4CF41F8,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_CASINO_CAN_BET"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_CASINO_CAN_BET"/></remarks>
 		[Obsolete]
 		_NETWORK_CASINO_CAN_USE_GAMBLING_TYPE = 0x158C16F5E4CF41F8,
 
 		/// <returns>BOOL</returns>
 		NETWORK_CASINO_CAN_BET_PVC = 0x394DCDB9E836B7A9,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_CASINO_CAN_BET_PVC"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_CASINO_CAN_BET_PVC"/></remarks>
 		[Obsolete]
 		_NETWORK_CASINO_CAN_PURCHASE_CHIPS_WITH_PVC = 0x394DCDB9E836B7A9,
 
@@ -20545,14 +20545,14 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NETWORK_CASINO_CAN_BET_AMOUNT = 0xF62F6D9528358FE4,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_CASINO_CAN_BET_AMOUNT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_CASINO_CAN_BET_AMOUNT"/></remarks>
 		[Obsolete]
 		_NETWORK_CASINO_CAN_GAMBLE = 0xF62F6D9528358FE4,
 
 		/// <returns>BOOL</returns>
 		NETWORK_CASINO_CAN_BUY_CHIPS_PVC = 0x8968D4D8C6C40C11,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_CASINO_CAN_BUY_CHIPS_PVC"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_CASINO_CAN_BUY_CHIPS_PVC"/></remarks>
 		[Obsolete]
 		_NETWORK_CASINO_CAN_PURCHASE_CHIPS_WITH_PVC_2 = 0x8968D4D8C6C40C11,
 
@@ -20562,7 +20562,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NETWORK_CASINO_BUY_CHIPS = 0x3BD101471C7F9EEC,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_CASINO_BUY_CHIPS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_CASINO_BUY_CHIPS"/></remarks>
 		[Obsolete]
 		_NETWORK_CASINO_PURCHASE_CHIPS = 0x3BD101471C7F9EEC,
 
@@ -20572,7 +20572,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NETWORK_CASINO_SELL_CHIPS = 0xED44897CB336F480,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_CASINO_SELL_CHIPS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_CASINO_SELL_CHIPS"/></remarks>
 		[Obsolete]
 		_NETWORK_CASINO_SELL_CHIPS = 0xED44897CB336F480,
 
@@ -20588,7 +20588,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		CAN_PAY_AMOUNT_TO_BOSS = 0x9777734DAD16992F,
 
-		///<remarks>This function has been replaced by <see cref="CAN_PAY_AMOUNT_TO_BOSS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CAN_PAY_AMOUNT_TO_BOSS"/></remarks>
 		[Obsolete]
 		_CAN_PAY_GOON = 0x9777734DAD16992F,
 
@@ -20604,7 +20604,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_FROM_CASHING_OUT = 0x718FBBF67414FA36,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_FROM_CASHING_OUT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_FROM_CASHING_OUT"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_CASHING_OUT = 0x718FBBF67414FA36,
 
@@ -20620,7 +20620,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_ASSASSINATE_TARGET_KILLED = 0xFA700D8A9905F78A,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_ASSASSINATE_TARGET_KILLED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_ASSASSINATE_TARGET_KILLED"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_ASSASSINATE_TARGET_KILLED = 0xFA700D8A9905F78A,
 
@@ -20634,7 +20634,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_FROM_ROB_ARMORED_CARS = 0xF514621E8EA463D0, // 0x30B3EC0A
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_FROM_ROB_ARMORED_CARS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_FROM_ROB_ARMORED_CARS"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_ARMOUR_TRUCK = 0xF514621E8EA463D0, // 0x30B3EC0A
 
@@ -20662,7 +20662,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_FROM_JOBX2 = 0xDEBBF584665411D0,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_FROM_JOBX2"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_FROM_JOBX2"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_JOB_X2 = 0xDEBBF584665411D0,
 
@@ -20672,7 +20672,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_FROM_PREMIUM_JOB = 0xC8407624CEF2354B,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_FROM_PREMIUM_JOB"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_FROM_PREMIUM_JOB"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_PREMIUM_JOB = 0xC8407624CEF2354B,
 
@@ -20682,7 +20682,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_FROM_BEND_JOB = 0x61326EE6DF15B0CA, // 0xBB293400
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_FROM_BEND_JOB"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_FROM_BEND_JOB"/></remarks>
 		[Obsolete]
 		NETWORK_EARN_FROM_MISSION_H = 0x61326EE6DF15B0CA, // 0xBB293400
 
@@ -20758,7 +20758,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_FROM_DAILY_OBJECTIVES = 0x6EA318C91C1A8786, // 0xAB6BD72F
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_FROM_DAILY_OBJECTIVES"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_FROM_DAILY_OBJECTIVES"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_DAILY_OBJECTIVE = 0x6EA318C91C1A8786, // 0xAB6BD72F
 
@@ -20771,7 +20771,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_FROM_AMBIENT_JOB = 0xFB6DB092FBAE29E6, // 0xA14CC95D
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_FROM_AMBIENT_JOB"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_FROM_AMBIENT_JOB"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_AMBIENT_JOB = 0xFB6DB092FBAE29E6, // 0xA14CC95D
 
@@ -20781,7 +20781,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_FROM_JOB_BONUS = 0x6816FB4416760775, // 0xBEE23713
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_FROM_JOB_BONUS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_FROM_JOB_BONUS"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_JOB_BONUS = 0x6816FB4416760775, // 0xBEE23713
 
@@ -20797,7 +20797,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_HEIST_AWARD = 0x9D4FDBB035229669,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_HEIST_AWARD"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_HEIST_AWARD"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_JOB_BONUS_HEIST_AWARD = 0x9D4FDBB035229669,
 
@@ -20807,7 +20807,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_FIRST_TIME_BONUS = 0x11B0A20C493F7E36,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_FIRST_TIME_BONUS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_FIRST_TIME_BONUS"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_JOB_BONUS_FIRST_TIME_BONUS = 0x11B0A20C493F7E36,
 
@@ -20817,7 +20817,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_GOON = 0xCDA1C62BE2777802,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_GOON"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_GOON"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_GOON = 0xCDA1C62BE2777802,
 
@@ -20827,7 +20827,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_BOSS = 0x08B0CA7A6AB3AC32,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_BOSS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_BOSS"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_BOSS = 0x08B0CA7A6AB3AC32,
 
@@ -20837,7 +20837,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_AGENCY = 0x0CB1BE0633C024A8,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_AGENCY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_AGENCY"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_BOSS_AGENCY = 0x0CB1BE0633C024A8,
 
@@ -20847,7 +20847,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_FROM_WAREHOUSE = 0x3E4ADAFF1830F146,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_FROM_WAREHOUSE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_FROM_WAREHOUSE"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_WAREHOUSE = 0x3E4ADAFF1830F146,
 
@@ -20857,7 +20857,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_FROM_CONTRABAND = 0xECA658CE2A4E5A72,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_FROM_CONTRABAND"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_FROM_CONTRABAND"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_CONTRABAND = 0xECA658CE2A4E5A72,
 
@@ -20867,7 +20867,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_FROM_DESTROYING_CONTRABAND = 0x84C0116D012E8FC2,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_FROM_DESTROYING_CONTRABAND"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_FROM_DESTROYING_CONTRABAND"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_DESTROYING_CONTRABAND = 0x84C0116D012E8FC2,
 
@@ -20877,7 +20877,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_FROM_SMUGGLER_WORK = 0x6B7E4FB50D5F3D65,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_FROM_SMUGGLER_WORK"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_FROM_SMUGGLER_WORK"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_SMUGGLER_WORK = 0x6B7E4FB50D5F3D65,
 
@@ -20887,7 +20887,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_FROM_HANGAR_TRADE = 0x31BA138F6304FB9F,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_FROM_HANGAR_TRADE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_FROM_HANGAR_TRADE"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_HANGAR_TRADE = 0x31BA138F6304FB9F,
 
@@ -20897,7 +20897,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_PURCHASE_CLUB_HOUSE = 0x55A1E095DB052FA5,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_PURCHASE_CLUB_HOUSE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_PURCHASE_CLUB_HOUSE"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_PURCHASE_CLUBHOUSE = 0x55A1E095DB052FA5,
 
@@ -20907,7 +20907,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_FROM_BUSINESS_PRODUCT = 0x8586789730B10CAF,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_FROM_BUSINESS_PRODUCT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_FROM_BUSINESS_PRODUCT"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_BUSINESS_PRODUCT = 0x8586789730B10CAF,
 
@@ -20917,7 +20917,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_FROM_VEHICLE_EXPORT = 0xEDEAD9A91EC768B3,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_FROM_VEHICLE_EXPORT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_FROM_VEHICLE_EXPORT"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_VEHICLE_EXPORT = 0xEDEAD9A91EC768B3,
 
@@ -20927,7 +20927,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_SMUGGLER_AGENCY = 0xDEE612F2D71B0308,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_SMUGGLER_AGENCY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_SMUGGLER_AGENCY"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_SMUGGLING = 0xDEE612F2D71B0308,
 
@@ -20937,7 +20937,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_BOUNTY_HUNTER_REWARD = 0xF6B170F9A02E9E87,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_BOUNTY_HUNTER_REWARD"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_BOUNTY_HUNTER_REWARD"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_BOUNTY_HUNTER_REWARD = 0xF6B170F9A02E9E87,
 
@@ -20947,7 +20947,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_FROM_BUSINESS_BATTLE = 0x42FCE14F50F27291,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_FROM_BUSINESS_BATTLE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_FROM_BUSINESS_BATTLE"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_BUSINESS_BATTLE = 0x42FCE14F50F27291,
 
@@ -20957,7 +20957,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_FROM_CLUB_MANAGEMENT_PARTICIPATION = 0xA75EAC69F59E96E7,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_FROM_CLUB_MANAGEMENT_PARTICIPATION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_FROM_CLUB_MANAGEMENT_PARTICIPATION"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_CLUB_MANAGEMENT_PARTICIPATION = 0xA75EAC69F59E96E7,
 
@@ -20967,7 +20967,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_FROM_FMBB_PHONECALL_MISSION = 0xC5156361F26E2212,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_FROM_FMBB_PHONECALL_MISSION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_FROM_FMBB_PHONECALL_MISSION"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_FMBB_PHONECALL_MISSION = 0xC5156361F26E2212,
 
@@ -20977,7 +20977,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_FROM_BUSINESS_HUB_SELL = 0x0B39CF0D53F1C883,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_FROM_BUSINESS_HUB_SELL"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_FROM_BUSINESS_HUB_SELL"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_BUSINESS_HUB_SELL = 0x0B39CF0D53F1C883,
 
@@ -20987,7 +20987,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_FROM_FMBB_BOSS_WORK = 0x1FDA0AA679C9919B,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_FROM_FMBB_BOSS_WORK"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_FROM_FMBB_BOSS_WORK"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_FMBB_BOSS_WORK = 0x1FDA0AA679C9919B,
 
@@ -20997,7 +20997,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_FMBB_WAGE_BONUS = 0xFFFBA1B1F7C0B6F4,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_FMBB_WAGE_BONUS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_FMBB_WAGE_BONUS"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FMBB_WAGE_BONUS = 0xFFFBA1B1F7C0B6F4,
 
@@ -21013,7 +21013,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NETWORK_CAN_SPEND_MONEY2 = 0x7303E27CC6532080,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_CAN_SPEND_MONEY2"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_CAN_SPEND_MONEY2"/></remarks>
 		[Obsolete]
 		_NETWORK_CAN_SPEND_MONEY_2 = 0x7303E27CC6532080,
 
@@ -21053,7 +21053,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPENT_WAGER = 0xD99DB210089617FE,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPENT_WAGER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPENT_WAGER"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_WAGER = 0xD99DB210089617FE,
 
@@ -21292,7 +21292,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPENT_MOVE_SUBMARINE = 0xCD4D66B43B1DD28D,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPENT_MOVE_SUBMARINE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPENT_MOVE_SUBMARINE"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_ON_MOVE_SUBMARINE = 0xCD4D66B43B1DD28D,
 
@@ -21314,7 +21314,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPENT_CARGO_SOURCING = 0x948705F6F9C50824,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPENT_CARGO_SOURCING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPENT_CARGO_SOURCING"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_CARGO_SOURCING = 0x948705F6F9C50824,
 
@@ -21330,7 +21330,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPENT_REQUEST_HEIST = 0x9D26502BB97BFE62, // 0xF4287778
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPENT_REQUEST_HEIST"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPENT_REQUEST_HEIST"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_REQUEST_HEIST = 0x9D26502BB97BFE62, // 0xF4287778
 
@@ -21355,7 +21355,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPENT_JOB_SKIP = 0x28F174A67B8D0C2F,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPENT_JOB_SKIP"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPENT_JOB_SKIP"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_JOB_SKIP = 0x28F174A67B8D0C2F,
 
@@ -21365,7 +21365,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NETWORK_SPENT_BOSS_GOON = 0xFFBE02CD385356BD,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPENT_BOSS_GOON"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPENT_BOSS_GOON"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_BOSS = 0xFFBE02CD385356BD,
 
@@ -21375,11 +21375,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPEND_GOON = 0x08A1B82B91900682,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPEND_GOON"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPEND_GOON"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_PAY_GOON = 0x08A1B82B91900682,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPEND_GOON"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPEND_GOON"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_GOON_PAY = 0x08A1B82B91900682,
 
@@ -21389,11 +21389,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPEND_BOSS = 0xDBC966A01C02BCA7,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPEND_BOSS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPEND_BOSS"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_PAY_BOSS = 0xDBC966A01C02BCA7,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPEND_BOSS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPEND_BOSS"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_BOSS_PAY = 0xDBC966A01C02BCA7,
 
@@ -21403,7 +21403,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPENT_MOVE_YACHT = 0xE7DF4E0545DFB56E,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPENT_MOVE_YACHT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPENT_MOVE_YACHT"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_MOVE_YACHT = 0xE7DF4E0545DFB56E,
 
@@ -21413,7 +21413,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPENT_RENAME_ORGANIZATION = 0xFC4EE00A7B3BFB76,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPENT_RENAME_ORGANIZATION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPENT_RENAME_ORGANIZATION"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_RENAME_ORGANIZATION = 0xFC4EE00A7B3BFB76,
 
@@ -21423,7 +21423,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_BUY_CONTRABAND_MISSION = 0x30FD873ECE50E9F6,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_BUY_CONTRABAND_MISSION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_BUY_CONTRABAND_MISSION"/></remarks>
 		[Obsolete]
 		_NETWORK_BUY_CONTRABAND = 0x30FD873ECE50E9F6,
 
@@ -21433,7 +21433,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPENT_PA_SERVICE_HELI = 0x112209CE0290C03A,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPENT_PA_SERVICE_HELI"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPENT_PA_SERVICE_HELI"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_PA_SERVICE_HELI = 0x112209CE0290C03A,
 
@@ -21443,7 +21443,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPENT_PA_SERVICE_VEHICLE = 0xED5FD7AF10F5E262,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPENT_PA_SERVICE_VEHICLE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPENT_PA_SERVICE_VEHICLE"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_PA_SERVICE_VEHICLE = 0xED5FD7AF10F5E262,
 
@@ -21453,7 +21453,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPENT_PA_SERVICE_SNACK = 0x0D30EB83668E63C5,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPENT_PA_SERVICE_SNACK"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPENT_PA_SERVICE_SNACK"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_PA_SERVICE_SNACK = 0x0D30EB83668E63C5,
 
@@ -21463,7 +21463,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPENT_PA_SERVICE_DANCER = 0xB49ECA122467D05F,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPENT_PA_SERVICE_DANCER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPENT_PA_SERVICE_DANCER"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_PA_SERVICE_DANCER = 0xB49ECA122467D05F,
 
@@ -21473,7 +21473,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPENT_PA_SERVICE_IMPOUND = 0xE23ADC6FCB1F29AE,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPENT_PA_SERVICE_IMPOUND"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPENT_PA_SERVICE_IMPOUND"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_PA_SERVICE_IMPOUND = 0xE23ADC6FCB1F29AE,
 
@@ -21483,7 +21483,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPENT_PA_HELI_PICKUP = 0x0FE8E1FCD2B86B33,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPENT_PA_HELI_PICKUP"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPENT_PA_HELI_PICKUP"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_PA_SERVICE_HELI_PICKUP = 0x0FE8E1FCD2B86B33,
 
@@ -21493,7 +21493,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPENT_PURCHASE_OFFICE_PROPERTY = 0x69EF772B192614C1,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPENT_PURCHASE_OFFICE_PROPERTY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPENT_PURCHASE_OFFICE_PROPERTY"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_PURCHASE_OFFICE = 0x69EF772B192614C1,
 
@@ -21503,7 +21503,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPENT_UPGRADE_OFFICE_PROPERTY = 0x8E243837643D9583,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPENT_UPGRADE_OFFICE_PROPERTY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPENT_UPGRADE_OFFICE_PROPERTY"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_UPGRADE_OFFICE = 0x8E243837643D9583,
 
@@ -21513,7 +21513,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPENT_PURCHASE_WAREHOUSE_PROPERTY = 0xBD0EFB25CCA8F97A,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPENT_PURCHASE_WAREHOUSE_PROPERTY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPENT_PURCHASE_WAREHOUSE_PROPERTY"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_PURCHASE_WAREHOUSE = 0xBD0EFB25CCA8F97A,
 
@@ -21523,7 +21523,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPENT_UPGRADE_WAREHOUSE_PROPERTY = 0xA95F667A755725DA,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPENT_UPGRADE_WAREHOUSE_PROPERTY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPENT_UPGRADE_WAREHOUSE_PROPERTY"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_UPGRADE_WAREHOUSE = 0xA95F667A755725DA,
 
@@ -21533,7 +21533,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPENT_PURCHASE_IMPEXP_WAREHOUSE_PROPERTY = 0x33981D6804E62F49,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPENT_PURCHASE_IMPEXP_WAREHOUSE_PROPERTY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPENT_PURCHASE_IMPEXP_WAREHOUSE_PROPERTY"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_PURCHASE_IMPORTEXPORT_WAREHOUSE = 0x33981D6804E62F49,
 
@@ -21543,7 +21543,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPENT_UPGRADE_IMPEXP_WAREHOUSE_PROPERTY = 0x4128464231E3CA0B,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPENT_UPGRADE_IMPEXP_WAREHOUSE_PROPERTY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPENT_UPGRADE_IMPEXP_WAREHOUSE_PROPERTY"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_UPGRADE_IMPORTEXPORT_WAREHOUSE = 0x4128464231E3CA0B,
 
@@ -21559,7 +21559,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPENT_ORDER_WAREHOUSE_VEHICLE = 0x05F04155A226FBBF,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPENT_ORDER_WAREHOUSE_VEHICLE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPENT_ORDER_WAREHOUSE_VEHICLE"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_ORDER_WAREHOUSE_VEHICLE = 0x05F04155A226FBBF,
 
@@ -21569,7 +21569,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPENT_ORDER_BODYGUARD_VEHICLE = 0xE8B0B270B6E7C76E,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPENT_ORDER_BODYGUARD_VEHICLE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPENT_ORDER_BODYGUARD_VEHICLE"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_ORDER_BODYGUARD_VEHICLE = 0xE8B0B270B6E7C76E,
 
@@ -21579,7 +21579,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPENT_JUKEBOX = 0x5BCDE0F640C773D2,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPENT_JUKEBOX"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPENT_JUKEBOX"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_JUKEBOX = 0x5BCDE0F640C773D2,
 
@@ -21589,7 +21589,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPENT_PURCHASE_CLUB_HOUSE = 0x998E18CEB44487FC,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPENT_PURCHASE_CLUB_HOUSE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPENT_PURCHASE_CLUB_HOUSE"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_PURCHASE_CLUBHOUSE = 0x998E18CEB44487FC,
 
@@ -21599,7 +21599,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPENT_UPGRADE_CLUB_HOUSE = 0xFA07759E6FDDD7CF,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPENT_UPGRADE_CLUB_HOUSE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPENT_UPGRADE_CLUB_HOUSE"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_UPGRADE_CLUBHOUSE = 0xFA07759E6FDDD7CF,
 
@@ -21615,7 +21615,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPENT_UPGRADE_BUSINESS_PROPERTY = 0x675D19C6067CAE08,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPENT_UPGRADE_BUSINESS_PROPERTY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPENT_UPGRADE_BUSINESS_PROPERTY"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_UPGRADE_BUSINESS_PROPERTY = 0x675D19C6067CAE08,
 
@@ -21631,7 +21631,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPENT_MC_ABILITY = 0xD7CCCBA28C4ECAF0,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPENT_MC_ABILITY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPENT_MC_ABILITY"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_BA_SERVICE = 0xD7CCCBA28C4ECAF0,
 
@@ -21641,7 +21641,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPENT_PAY_BUSINESS_SUPPLIES = 0x0035BB914316F1E3,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPENT_PAY_BUSINESS_SUPPLIES"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPENT_PAY_BUSINESS_SUPPLIES"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_BUSINESS = 0x0035BB914316F1E3,
 
@@ -21651,7 +21651,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPENT_CHANGE_APPEARANCE = 0x5F456788B05FAEAC,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPENT_CHANGE_APPEARANCE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPENT_CHANGE_APPEARANCE"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_CHANGE_APPEARANCE = 0x5F456788B05FAEAC,
 
@@ -21661,7 +21661,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPENT_VEHICLE_EXPORT_MODS = 0xA75CCF58A60A5FD1,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPENT_VEHICLE_EXPORT_MODS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPENT_VEHICLE_EXPORT_MODS"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_VEHICLE_EXPORT_MODS = 0xA75CCF58A60A5FD1,
 
@@ -21671,7 +21671,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPENT_PURCHASE_OFFICE_GARAGE = 0xB4C2EC463672474E,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPENT_PURCHASE_OFFICE_GARAGE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPENT_PURCHASE_OFFICE_GARAGE"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_PURCHASE_OFFICE_GARAGE = 0xB4C2EC463672474E,
 
@@ -21681,7 +21681,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPENT_UPGRADE_OFFICE_GARAGE = 0x2AFC2D19B50797F2,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPENT_UPGRADE_OFFICE_GARAGE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPENT_UPGRADE_OFFICE_GARAGE"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_UPGRADE_OFFICE_GARAGE = 0x2AFC2D19B50797F2,
 
@@ -21691,7 +21691,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPENT_IMPORT_EXPORT_REPAIR = 0xC1952F3773BA18FE,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPENT_IMPORT_EXPORT_REPAIR"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPENT_IMPORT_EXPORT_REPAIR"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_IMPORT_EXPORT_REPAIR = 0xC1952F3773BA18FE,
 
@@ -21701,7 +21701,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPENT_PURCHASE_HANGAR = 0xCCB339CC970452DA,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPENT_PURCHASE_HANGAR"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPENT_PURCHASE_HANGAR"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_PURCHASE_HANGAR = 0xCCB339CC970452DA,
 
@@ -21711,7 +21711,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPENT_UPGRADE_HANGAR = 0x615EB504B0788DAF,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPENT_UPGRADE_HANGAR"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPENT_UPGRADE_HANGAR"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_UPGRADE_HANGAR = 0x615EB504B0788DAF,
 
@@ -21721,7 +21721,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPENT_HANGAR_UTILITY_CHARGES = 0xB18AC2ECBB15CB6A,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPENT_HANGAR_UTILITY_CHARGES"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPENT_HANGAR_UTILITY_CHARGES"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_HANGAR_UTILITY_CHARGES = 0xB18AC2ECBB15CB6A,
 
@@ -21731,7 +21731,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPENT_HANGAR_STAFF_CHARGES = 0xB1F1346FD57685D7,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPENT_HANGAR_STAFF_CHARGES"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPENT_HANGAR_STAFF_CHARGES"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_HANGAR_STAFF_CHARGES = 0xB1F1346FD57685D7,
 
@@ -21741,7 +21741,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPENT_BUY_TRUCK = 0xAC272C0AE01B4BD8,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPENT_BUY_TRUCK"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPENT_BUY_TRUCK"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_BUY_TRUCK = 0xAC272C0AE01B4BD8,
 
@@ -21751,7 +21751,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPENT_UPGRADE_TRUCK = 0x365E877C61D6988B,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPENT_UPGRADE_TRUCK"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPENT_UPGRADE_TRUCK"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_UPGRADE_TRUCK = 0x365E877C61D6988B,
 
@@ -21761,7 +21761,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPENT_BUY_BUNKER = 0x12D148D26538D0F9,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPENT_BUY_BUNKER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPENT_BUY_BUNKER"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_BUY_BUNKER = 0x12D148D26538D0F9,
 
@@ -21771,7 +21771,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPENT_UPRADE_BUNKER = 0x0C82D21A77C22D49,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPENT_UPRADE_BUNKER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPENT_UPRADE_BUNKER"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_UPGRADE_BUNKER = 0x0C82D21A77C22D49,
 
@@ -21781,7 +21781,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_FROM_SELL_BUNKER = 0x9251B6ABF2D0A5B4,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_FROM_SELL_BUNKER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_FROM_SELL_BUNKER"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_SELL_BUNKER = 0x9251B6ABF2D0A5B4,
 
@@ -21791,7 +21791,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPENT_BALLISTIC_EQUIPMENT = 0x5D97630A8A0EF123,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPENT_BALLISTIC_EQUIPMENT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPENT_BALLISTIC_EQUIPMENT"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_BALLISTIC_EQUIPMENT = 0x5D97630A8A0EF123,
 
@@ -21801,7 +21801,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_RDR_BONUS = 0x7A5349B773584675,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_RDR_BONUS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_RDR_BONUS"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_RDR_BONUS = 0x7A5349B773584675,
 
@@ -21811,7 +21811,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_WAGE_PAYMENT = 0x35F8DA0E8A31EF1B,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_WAGE_PAYMENT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_WAGE_PAYMENT"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_WAGE_PAYMENT = 0x35F8DA0E8A31EF1B,
 
@@ -21821,7 +21821,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_WAGE_PAYMENT_BONUS = 0x005ACA7100BD101D,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_WAGE_PAYMENT_BONUS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_WAGE_PAYMENT_BONUS"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_WAGE_PAYMENT_BONUS = 0x005ACA7100BD101D,
 
@@ -21831,7 +21831,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPENT_BUY_BASE = 0x4EA3F425C7744D21,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPENT_BUY_BASE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPENT_BUY_BASE"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_BUY_BASE = 0x4EA3F425C7744D21,
 
@@ -21841,7 +21841,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPENT_UPGRADE_BASE = 0x3DD3F33A5D55EA6F,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPENT_UPGRADE_BASE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPENT_UPGRADE_BASE"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_UPGRADE_BASE = 0x3DD3F33A5D55EA6F,
 
@@ -21851,7 +21851,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPENT_BUY_TILTROTOR = 0x0CCE73BC7A11E885,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPENT_BUY_TILTROTOR"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPENT_BUY_TILTROTOR"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_BUY_TILTROTOR = 0x0CCE73BC7A11E885,
 
@@ -21861,7 +21861,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPENT_UPGRADE_TILTROTOR = 0x165E135D6DFA2907,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPENT_UPGRADE_TILTROTOR"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPENT_UPGRADE_TILTROTOR"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_UPGRADE_TILTROTOR = 0x165E135D6DFA2907,
 
@@ -21871,7 +21871,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPENT_EMPLOY_ASSASSINS = 0x5BBBD92186E1F1C5,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPENT_EMPLOY_ASSASSINS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPENT_EMPLOY_ASSASSINS"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_EMPLOY_ASSASSINS = 0x5BBBD92186E1F1C5,
 
@@ -21881,7 +21881,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPEND_GANGOPS_CANNON = 0x771ADB0E7635B7BF,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPEND_GANGOPS_CANNON"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPEND_GANGOPS_CANNON"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_GANGOPS_CANNON = 0x771ADB0E7635B7BF,
 
@@ -21891,7 +21891,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPEND_GANGOPS_SKIP_MISSION = 0xDA947AE8880D5C18,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPEND_GANGOPS_SKIP_MISSION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPEND_GANGOPS_SKIP_MISSION"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_GANGOPS_START_MISSION = 0xDA947AE8880D5C18,
 
@@ -21901,7 +21901,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPEND_CASINO_HEIST_SKIP_MISSION = 0x487009DD91D93429,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPEND_CASINO_HEIST_SKIP_MISSION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPEND_CASINO_HEIST_SKIP_MISSION"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_CASINO_HEIST_SKIP_MISSION = 0x487009DD91D93429,
 
@@ -21911,7 +21911,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_SELL_BASE = 0x0E1E2FF3F4EC11AA,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_SELL_BASE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_SELL_BASE"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_SELL_BASE = 0x0E1E2FF3F4EC11AA,
 
@@ -21921,7 +21921,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_TARGET_REFUND = 0x5B669CF2299A271F,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_TARGET_REFUND"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_TARGET_REFUND"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_TARGET_REFUND = 0x5B669CF2299A271F,
 
@@ -21931,7 +21931,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_GANGOPS_WAGES = 0x2DCB19ABAB0380A8,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_GANGOPS_WAGES"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_GANGOPS_WAGES"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_GANGOPS_WAGES = 0x2DCB19ABAB0380A8,
 
@@ -21941,7 +21941,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_GANGOPS_WAGES_BONUS = 0x15BB2A5C757EB91F,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_GANGOPS_WAGES_BONUS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_GANGOPS_WAGES_BONUS"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_GANGOPS_WAGES_BONUS = 0x15BB2A5C757EB91F,
 
@@ -21951,7 +21951,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_DAR_CHALLENGE = 0xCAC672087B4A24AB,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_DAR_CHALLENGE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_DAR_CHALLENGE"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_DAR_CHALLENGE = 0xCAC672087B4A24AB,
 
@@ -21961,7 +21961,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_DOOMSDAY_FINALE_BONUS = 0x128A747F4A230952,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_DOOMSDAY_FINALE_BONUS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_DOOMSDAY_FINALE_BONUS"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_DOOMSDAY_FINALE_BONUS = 0x128A747F4A230952,
 
@@ -21971,7 +21971,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_GANGOPS_AWARD = 0xA9A31475F530DFDA,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_GANGOPS_AWARD"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_GANGOPS_AWARD"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_GANGOPS_AWARDS = 0xA9A31475F530DFDA,
 
@@ -21981,7 +21981,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_GANGOPS_ELITE = 0x2597A0D4A4FC2C77,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_GANGOPS_ELITE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_GANGOPS_ELITE"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_GANGOPS_ELITE = 0x2597A0D4A4FC2C77,
 
@@ -21991,7 +21991,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SERVICE_EARN_GANGOPS_RIVAL_DELIVERY = 0x1B882107C23A9022,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SERVICE_EARN_GANGOPS_RIVAL_DELIVERY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SERVICE_EARN_GANGOPS_RIVAL_DELIVERY"/></remarks>
 		[Obsolete]
 		_NETWORK_RIVAL_DELIVERY_COMPLETED = 0x1B882107C23A9022,
 
@@ -22001,7 +22001,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPEND_GANGOPS_START_STRAND = 0xA19EC0786E326E06,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPEND_GANGOPS_START_STRAND"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPEND_GANGOPS_START_STRAND"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_GANGOPS_START_STRAND = 0xA19EC0786E326E06,
 
@@ -22011,7 +22011,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPEND_GANGOPS_TRIP_SKIP = 0x5ECE6FD7B4EC8D6A,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPEND_GANGOPS_TRIP_SKIP"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPEND_GANGOPS_TRIP_SKIP"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_GANGOPS_TRIP_SKIP = 0x5ECE6FD7B4EC8D6A,
 
@@ -22021,7 +22021,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_GANGOPS_PREP_PARTICIPATION = 0xED26584F6BDCBBFD,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_GANGOPS_PREP_PARTICIPATION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_GANGOPS_PREP_PARTICIPATION"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_GANGOPS_JOBS_PREP_PARTICIPATION = 0xED26584F6BDCBBFD,
 
@@ -22031,7 +22031,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_GANGOPS_SETUP = 0xA9160796D47A2CF8,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_GANGOPS_SETUP"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_GANGOPS_SETUP"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_GANGOPS_JOBS_SETUP = 0xA9160796D47A2CF8,
 
@@ -22041,7 +22041,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_GANGOPS_FINALE = 0x1C121FC9545E0D52,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_GANGOPS_FINALE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_GANGOPS_FINALE"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_GANGOPS_JOBS_FINALE = 0x1C121FC9545E0D52,
 
@@ -22051,7 +22051,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPEND_GANGOPS_REPAIR_COST = 0x2A7CEC72C3443BCC,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPEND_GANGOPS_REPAIR_COST"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPEND_GANGOPS_REPAIR_COST"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_GANGOPS_REPAIR_COST = 0x2A7CEC72C3443BCC,
 
@@ -22061,7 +22061,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_NIGHTCLUB = 0xE0F82D68C7039158,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_NIGHTCLUB"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_NIGHTCLUB"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_NIGHTCLUB_INCOME = 0xE0F82D68C7039158,
 
@@ -22071,7 +22071,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_NIGHTCLUB_DANCING = 0xB4DEAE67F35E2ACD,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_NIGHTCLUB_DANCING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_NIGHTCLUB_DANCING"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_NIGHTCLUB_DANCING = 0xB4DEAE67F35E2ACD,
 
@@ -22081,7 +22081,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_BB_EVENT_BONUS = 0xFDD8D2440DAF1590,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_BB_EVENT_BONUS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_BB_EVENT_BONUS"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_BB_EVENT_BONUS = 0xFDD8D2440DAF1590,
 
@@ -22091,7 +22091,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPENT_PURCHASE_HACKER_TRUCK = 0x2A93C46AAB1EACC9,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPENT_PURCHASE_HACKER_TRUCK"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPENT_PURCHASE_HACKER_TRUCK"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_PURCHASE_HACKER = 0x2A93C46AAB1EACC9,
 
@@ -22101,7 +22101,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPENT_UPGRADE_HACKER_TRUCK = 0x226C284C830D0CA8,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPENT_UPGRADE_HACKER_TRUCK"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPENT_UPGRADE_HACKER_TRUCK"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_UPGRADE_HACKER = 0x226C284C830D0CA8,
 
@@ -22111,7 +22111,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_HACKER_TRUCK = 0xE8815FE993896AD3,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_HACKER_TRUCK"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_HACKER_TRUCK"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_HACKER_TRUCK_MISSION = 0xE8815FE993896AD3,
 
@@ -22121,7 +22121,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPENT_PURCHASE_NIGHTCLUB_AND_WAREHOUSE = 0xED76D195E6E3BF7F,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPENT_PURCHASE_NIGHTCLUB_AND_WAREHOUSE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPENT_PURCHASE_NIGHTCLUB_AND_WAREHOUSE"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_PURCHASE_NIGHTCLUB = 0xED76D195E6E3BF7F,
 
@@ -22131,7 +22131,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPENT_UPGRADE_NIGHTCLUB_AND_WAREHOUSE = 0x1DC9B749E7AE282B,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPENT_UPGRADE_NIGHTCLUB_AND_WAREHOUSE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPENT_UPGRADE_NIGHTCLUB_AND_WAREHOUSE"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_UPGRADE_NIGHTCLUB = 0x1DC9B749E7AE282B,
 
@@ -22141,7 +22141,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_NIGHTCLUB_AND_WAREHOUSE = 0xC6E74CF8C884C880,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_NIGHTCLUB_AND_WAREHOUSE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_NIGHTCLUB_AND_WAREHOUSE"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_NIGHTCLUB_LOCATION = 0xC6E74CF8C884C880,
 
@@ -22151,7 +22151,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPEND_NIGHTCLUB_AND_WAREHOUSE = 0x65482BFD0923C8A1,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPEND_NIGHTCLUB_AND_WAREHOUSE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPEND_NIGHTCLUB_AND_WAREHOUSE"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_NIGHTCLUB_BATHROOM_ATTENDANT = 0x65482BFD0923C8A1,
 
@@ -22161,7 +22161,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPENT_RDR_HATCHET_BONUS = 0xE284D46FFDB82E36,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPENT_RDR_HATCHET_BONUS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPENT_RDR_HATCHET_BONUS"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_RDRHATCHET_BONUS = 0xE284D46FFDB82E36,
 
@@ -22171,7 +22171,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPENT_NIGHTCLUB_ENTRY_FEE = 0x876056684281655D,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPENT_NIGHTCLUB_ENTRY_FEE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPENT_NIGHTCLUB_ENTRY_FEE"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_NIGHTCLUB_ENTRY_FEE = 0x876056684281655D,
 
@@ -22181,7 +22181,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPEND_NIGHTCLUB_BAR_DRINK = 0xDD21B016E4289465,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPEND_NIGHTCLUB_BAR_DRINK"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPEND_NIGHTCLUB_BAR_DRINK"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_NIGHTCLUB_BAR_DRINK = 0xDD21B016E4289465,
 
@@ -22191,7 +22191,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPEND_BOUNTY_HUNTER_MISSION = 0x1BEA0CD93470BB1F,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPEND_BOUNTY_HUNTER_MISSION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPEND_BOUNTY_HUNTER_MISSION"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_BOUNTY_HUNTER_MISSION = 0x1BEA0CD93470BB1F,
 
@@ -22201,7 +22201,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPENT_REHIRE_DJ = 0xF6C8A544E4CF14FC,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPENT_REHIRE_DJ"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPENT_REHIRE_DJ"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_REHIRE_DJ = 0xF6C8A544E4CF14FC,
 
@@ -22211,7 +22211,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPENT_ARENA_JOIN_SPECTATOR = 0x14EAEA58F93B55AF,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPENT_ARENA_JOIN_SPECTATOR"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPENT_ARENA_JOIN_SPECTATOR"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_ARENA_JOIN_SPECTATOR = 0x14EAEA58F93B55AF,
 
@@ -22221,7 +22221,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_ARENA_SKILL_LEVEL_PROGRESSION = 0xE08256F972C7BB2C,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_ARENA_SKILL_LEVEL_PROGRESSION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_ARENA_SKILL_LEVEL_PROGRESSION"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_ARENA_SKILL_LEVEL_PROGRESSION = 0xE08256F972C7BB2C,
 
@@ -22231,7 +22231,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_ARENA_CAREER_PROGRESSION = 0x0F99F70C61F14619,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_ARENA_CAREER_PROGRESSION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_ARENA_CAREER_PROGRESSION"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_ARENA_CAREER_PROGRESSION = 0x0F99F70C61F14619,
 
@@ -22241,7 +22241,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPEND_MAKE_IT_RAIN = 0xE5F5A060439C2F5D,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPEND_MAKE_IT_RAIN"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPEND_MAKE_IT_RAIN"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_MAKE_IT_RAIN = 0xE5F5A060439C2F5D,
 
@@ -22251,7 +22251,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPEND_BUY_ARENA = 0x40D5DA9550B7CB46,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPEND_BUY_ARENA"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPEND_BUY_ARENA"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_BUY_ARENA = 0x40D5DA9550B7CB46,
 
@@ -22261,7 +22261,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPEND_UPGRADE_ARENA = 0x037ABB06825D7AB1,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPEND_UPGRADE_ARENA"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPEND_UPGRADE_ARENA"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_UPGRADE_ARENA = 0x037ABB06825D7AB1,
 
@@ -22274,7 +22274,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPEND_ARENA_SPECTATOR_BOX = 0x7049BF858601DC0F,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPEND_ARENA_SPECTATOR_BOX"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPEND_ARENA_SPECTATOR_BOX"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_ARENA_SPECTATOR_BOX = 0x7049BF858601DC0F,
 
@@ -22284,7 +22284,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPEND_SPIN_THE_WHEEL_PAYMENT = 0x9A5BD1D0000B339C,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPEND_SPIN_THE_WHEEL_PAYMENT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPEND_SPIN_THE_WHEEL_PAYMENT"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_SPIN_THE_WHEEL_PAYMENT = 0x9A5BD1D0000B339C,
 
@@ -22294,7 +22294,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_SPIN_THE_WHEEL_CASH = 0x676C48776CACBB5A,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_SPIN_THE_WHEEL_CASH"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_SPIN_THE_WHEEL_CASH"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_SPIN_THE_WHEEL_CASH = 0x676C48776CACBB5A,
 
@@ -22304,7 +22304,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPEND_ARENA_PREMIUM = 0x619496D837EFD920,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPEND_ARENA_PREMIUM"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPEND_ARENA_PREMIUM"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_ARENA_PREMIUM = 0x619496D837EFD920,
 
@@ -22314,7 +22314,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_ARENA_WAR = 0x631F1CB8FB4130AA,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_ARENA_WAR"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_ARENA_WAR"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_ARENA_WAR = 0x631F1CB8FB4130AA,
 
@@ -22324,7 +22324,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_ARENA_WAR_ASSASSINATE_TARGET = 0x5E7AE8AABE8B7C0D,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_ARENA_WAR_ASSASSINATE_TARGET"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_ARENA_WAR_ASSASSINATE_TARGET"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_ASSASSINATE_TARGET_KILLED_2 = 0x5E7AE8AABE8B7C0D,
 
@@ -22334,7 +22334,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_ARENA_WAR_EVENT_CARGO = 0xA82959062361B259,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_ARENA_WAR_EVENT_CARGO"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_ARENA_WAR_EVENT_CARGO"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_BB_EVENT_CARGO = 0xA82959062361B259,
 
@@ -22344,7 +22344,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_RC_TIME_TRIAL = 0xDFF49EE984E7AAE8,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_RC_TIME_TRIAL"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_RC_TIME_TRIAL"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_RC_TIME_TRIAL = 0xDFF49EE984E7AAE8,
 
@@ -22354,7 +22354,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_DAILY_OBJECTIVE_EVENT = 0x5128DF14A5BB86FC,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_DAILY_OBJECTIVE_EVENT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_DAILY_OBJECTIVE_EVENT"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_DAILY_OBJECTIVE_EVENT = 0x5128DF14A5BB86FC,
 
@@ -22364,7 +22364,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPEND_CASINO_MEMBERSHIP = 0xFBBE0570EDF39D46,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPEND_CASINO_MEMBERSHIP"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPEND_CASINO_MEMBERSHIP"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_CASINO_MEMBERSHIP = 0xFBBE0570EDF39D46,
 
@@ -22374,7 +22374,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPEND_BUY_CASINO = 0x34A6FC4D06C4DA0F,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPEND_BUY_CASINO"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPEND_BUY_CASINO"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_BUY_CASINO = 0x34A6FC4D06C4DA0F,
 
@@ -22384,7 +22384,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPEND_UPGRADE_CASINO = 0x4740D62BC1B4EBEA,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPEND_UPGRADE_CASINO"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPEND_UPGRADE_CASINO"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_UPGRADE_CASINO = 0x4740D62BC1B4EBEA,
 
@@ -22394,7 +22394,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPEND_CASINO_GENERIC = 0x88BF9B612B84D3C3,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPEND_CASINO_GENERIC"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPEND_CASINO_GENERIC"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_CASINO_GENERIC = 0x88BF9B612B84D3C3,
 
@@ -22404,7 +22404,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_CASINO_TIME_TRIAL_WIN = 0x0819DB99FD2FBBD8,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_CASINO_TIME_TRIAL_WIN"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_CASINO_TIME_TRIAL_WIN"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_TIME_TRIAL_WIN = 0x0819DB99FD2FBBD8,
 
@@ -22414,7 +22414,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_COLLECTABLES_ACTION_FIGURES = 0x5517F90043466049,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_COLLECTABLES_ACTION_FIGURES"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_COLLECTABLES_ACTION_FIGURES"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_COLLECTABLES_ACTION_FIGURES = 0x5517F90043466049,
 
@@ -22424,7 +22424,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_CASINO_COLLECTABLE_COMPLETED_COLLECTION = 0x83AD64F53F4E9483,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_CASINO_COLLECTABLE_COMPLETED_COLLECTION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_CASINO_COLLECTABLE_COMPLETED_COLLECTION"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_COMPLETE_COLLECTION = 0x83AD64F53F4E9483,
 
@@ -22434,7 +22434,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_SELL_PRIZE_VEHICLE = 0x8BCB27A057DF7B7F,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_SELL_PRIZE_VEHICLE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_SELL_PRIZE_VEHICLE"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_SELLING_VEHICLE = 0x8BCB27A057DF7B7F,
 
@@ -22444,7 +22444,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_CASINO_MISSION_REWARD = 0x566FD402B25787DE,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_CASINO_MISSION_REWARD"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_CASINO_MISSION_REWARD"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_CASINO_MISSION_REWARD = 0x566FD402B25787DE,
 
@@ -22454,7 +22454,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_CASINO_STORY_MISSION_REWARD = 0xAC95ED552157E092,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_CASINO_STORY_MISSION_REWARD"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_CASINO_STORY_MISSION_REWARD"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_CASINO_STORY_MISSION_REWARD = 0xAC95ED552157E092,
 
@@ -22464,7 +22464,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_CASINO_MISSION_PARTICIPATION = 0x09E8F18641BE2575,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_CASINO_MISSION_PARTICIPATION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_CASINO_MISSION_PARTICIPATION"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_CASINO_MISSION_PARTICIPATION = 0x09E8F18641BE2575,
 
@@ -22474,7 +22474,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_CASINO_AWARD = 0x973A9781A34F8DEB,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_CASINO_AWARD"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_CASINO_AWARD"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_CASINO_AWARD = 0x973A9781A34F8DEB,
 
@@ -22484,7 +22484,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPEND_BUY_ARCADE = 0x870289A558348378,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPEND_BUY_ARCADE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPEND_BUY_ARCADE"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_BUY_ARCADE = 0x870289A558348378,
 
@@ -22494,7 +22494,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPEND_UPGRADE_ARCADE = 0x5574637681911FDA,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPEND_UPGRADE_ARCADE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPEND_UPGRADE_ARCADE"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_UPGRADE_ARCADE = 0x5574637681911FDA,
 
@@ -22504,7 +22504,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPEND_CASINO_HEIST = 0xD30E8392F407C328,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPEND_CASINO_HEIST"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPEND_CASINO_HEIST"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_CASINO_HEIST = 0xD30E8392F407C328,
 
@@ -22514,7 +22514,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPEND_ARCADE_MGMT = 0xB5B58E24868CB09E,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPEND_ARCADE_MGMT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPEND_ARCADE_MGMT"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_ARCADE_MGMT_CABINET = 0xB5B58E24868CB09E,
 
@@ -22524,11 +22524,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPEND_PLAY_ARCADE = 0xEAD3D81F2C3A1458,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPEND_PLAY_ARCADE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPEND_PLAY_ARCADE"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_ARCADE_GAME = 0xEAD3D81F2C3A1458,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPEND_PLAY_ARCADE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPEND_PLAY_ARCADE"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_PLAY_ARCADE_CABINET = 0xEAD3D81F2C3A1458,
 
@@ -22538,7 +22538,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPEND_ARCADE = 0x43AA7FAC4E6D6687,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPEND_ARCADE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPEND_ARCADE"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_ARCADE_GENERIC = 0x43AA7FAC4E6D6687,
 
@@ -22548,7 +22548,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_CASINO_HEIST = 0x72E7C7B9615FA3C3,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_CASINO_HEIST"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_CASINO_HEIST"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_CASINO_HEIST = 0x72E7C7B9615FA3C3,
 
@@ -22558,7 +22558,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_UPGRADE_ARCADE = 0x4C3B75694F7E0D9C,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_UPGRADE_ARCADE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_UPGRADE_ARCADE"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_UPGRADE_ARCADE_LOCATION = 0x4C3B75694F7E0D9C,
 
@@ -22568,11 +22568,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_ARCADE = 0xD29334ED1A256DBF,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_ARCADE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_ARCADE"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_ARCADE = 0xD29334ED1A256DBF,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_ARCADE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_ARCADE"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_ARCADE_AWARD = 0xD29334ED1A256DBF,
 
@@ -22582,7 +22582,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_COLLECTABLES = 0xA95CFB4E02390842,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_COLLECTABLES"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_COLLECTABLES"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_ARCADE_COLLECTABLES = 0xA95CFB4E02390842,
 
@@ -22592,7 +22592,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_CHALLENGE = 0x0DD362F14F18942A,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_CHALLENGE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_CHALLENGE"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_ARCADE_KILLS_CHALLENGE = 0x0DD362F14F18942A,
 
@@ -22602,7 +22602,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_CASINO_HEIST_AWARDS = 0x3EC7471E6909798A,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_CASINO_HEIST_AWARDS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_CASINO_HEIST_AWARDS"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_CASINO_HEIST_BONUS = 0x3EC7471E6909798A,
 
@@ -22612,7 +22612,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_COLLECTABLE_ITEM = 0x84FF63BD4966F33D,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_COLLECTABLE_ITEM"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_COLLECTABLE_ITEM"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_COLLECTION_ITEM = 0x84FF63BD4966F33D,
 
@@ -22622,7 +22622,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_COLLECTABLE_COMPLETED_COLLECTION = 0x5C9B198AF5A54FA6,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_COLLECTABLE_COMPLETED_COLLECTION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_COLLECTABLE_COMPLETED_COLLECTION"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_COLLECTABLE_COMPLETED_COLLECTION = 0x5C9B198AF5A54FA6,
 
@@ -22632,7 +22632,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_YATCH_MISSION = 0xDE68E30D89F97132,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_YATCH_MISSION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_YATCH_MISSION"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_YACHT_MISSION = 0xDE68E30D89F97132,
 
@@ -22642,7 +22642,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_DISPATCH_CALL = 0xE2E244AB823B4483,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_DISPATCH_CALL"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_DISPATCH_CALL"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_YACHT_MISSION_2 = 0xE2E244AB823B4483,
 
@@ -22652,7 +22652,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPEND_BEACH_PARTY = 0x54ABA22FA6371249,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPEND_BEACH_PARTY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPEND_BEACH_PARTY"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_BEACH_PARTY_GENERIC = 0x54ABA22FA6371249,
 
@@ -22662,7 +22662,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPEND_SUBMARINE = 0x6C8BC1488527AAAB,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPEND_SUBMARINE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPEND_SUBMARINE"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_SUBMARINE = 0x6C8BC1488527AAAB,
 
@@ -22672,7 +22672,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPEND_CASINO_CLUB = 0xC991C255AA6D90B2,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPEND_CASINO_CLUB"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPEND_CASINO_CLUB"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_CASINO_CLUB_GENERIC = 0xC991C255AA6D90B2,
 
@@ -22682,7 +22682,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPEND_BUY_SUB = 0x90CD7C6871FBF1B4,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPEND_BUY_SUB"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPEND_BUY_SUB"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_BUY_SUB = 0x90CD7C6871FBF1B4,
 
@@ -22692,7 +22692,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPEND_UPGRADE_SUB = 0x89049A84065CE68E,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPEND_UPGRADE_SUB"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPEND_UPGRADE_SUB"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_UPGRADE_SUB = 0x89049A84065CE68E,
 
@@ -22702,7 +22702,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPEND_ISLAND_HEIST = 0xE86689E5F82DE429,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPEND_ISLAND_HEIST"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPEND_ISLAND_HEIST"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_ISLAND_HEIST = 0xE86689E5F82DE429,
 
@@ -22712,7 +22712,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_ISLAND_HEIST = 0xD21D111C46BA9F15,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_ISLAND_HEIST"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_ISLAND_HEIST"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_ISLAND_HEIST = 0xD21D111C46BA9F15,
 
@@ -22722,7 +22722,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_BEACH_PARTY_LOST_FOUND = 0xA51338E0DCCD4065,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_BEACH_PARTY_LOST_FOUND"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_BEACH_PARTY_LOST_FOUND"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_BEACH_PARTY_LOST_FOUND = 0xA51338E0DCCD4065,
 
@@ -22732,7 +22732,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_FROM_ISLAND_HEIST_DJ_MISSION = 0xE2BB399D90942091,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_FROM_ISLAND_HEIST_DJ_MISSION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_FROM_ISLAND_HEIST_DJ_MISSION"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_ISLAND_HEIST_DJMISSION = 0xE2BB399D90942091,
 
@@ -22742,7 +22742,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPEND_CAR_CLUB_MEMBERSHIP = 0x1464E17207CD36E2,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPEND_CAR_CLUB_MEMBERSHIP"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPEND_CAR_CLUB_MEMBERSHIP"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_CARCLUB_MEMBERSHIP = 0x1464E17207CD36E2,
 
@@ -22752,7 +22752,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPEND_CAR_CLUB_BAR = 0x925227803A0EAA1B,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPEND_CAR_CLUB_BAR"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPEND_CAR_CLUB_BAR"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_CARCLUB = 0x925227803A0EAA1B,
 
@@ -22762,7 +22762,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPEND_AUTOSHOP_MODIFY = 0x9BEA350D7C48061B,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPEND_AUTOSHOP_MODIFY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPEND_AUTOSHOP_MODIFY"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_AUTOSHOP_MODIFICATIONS = 0x9BEA350D7C48061B,
 
@@ -22772,7 +22772,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPEND_CAR_CLUB_TAKEOVER = 0xD1E46824E6FB92B5,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPEND_CAR_CLUB_TAKEOVER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPEND_CAR_CLUB_TAKEOVER"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_CARCLUB_TAKEOVER = 0xD1E46824E6FB92B5,
 
@@ -22782,7 +22782,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPEND_BUY_AUTOSHOP = 0xEEB7E5D1FEB20869,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPEND_BUY_AUTOSHOP"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPEND_BUY_AUTOSHOP"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_BUY_AUTOSHOP = 0xEEB7E5D1FEB20869,
 
@@ -22792,7 +22792,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPEND_UPGRADE_AUTOSHOP = 0xDD829AA198FDC46C,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPEND_UPGRADE_AUTOSHOP"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPEND_UPGRADE_AUTOSHOP"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_UPGRADE_AUTOSHOP = 0xDD829AA198FDC46C,
 
@@ -22802,7 +22802,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_AUTOSHOP_BUSINESS = 0x36A7FD5A7194B03E,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_AUTOSHOP_BUSINESS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_AUTOSHOP_BUSINESS"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_AUTOSHOP_BUSINESS = 0x36A7FD5A7194B03E,
 
@@ -22812,7 +22812,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_AUTOSHOP_INCOME = 0xC66D1CF99ED7FE25,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_AUTOSHOP_INCOME"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_AUTOSHOP_INCOME"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_AUTOSHOP_INCOME = 0xC66D1CF99ED7FE25,
 
@@ -22822,7 +22822,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_CARCLUB_MEMBERSHIP = 0xBC6227792A188E2E,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_CARCLUB_MEMBERSHIP"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_CARCLUB_MEMBERSHIP"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_CARCLUB_MEMBERSHIP = 0xBC6227792A188E2E,
 
@@ -22832,7 +22832,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_DAILY_VEHICLE = 0x533073E8A596008C,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_DAILY_VEHICLE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_DAILY_VEHICLE"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_VEHICLE_AUTOSHOP = 0x533073E8A596008C,
 
@@ -22842,7 +22842,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_DAILY_VEHICLE_BONUS = 0xFE65AFE7308E32B2,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_DAILY_VEHICLE_BONUS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_DAILY_VEHICLE_BONUS"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_VEHICLE_AUTOSHOP_BONUS = 0xFE65AFE7308E32B2,
 
@@ -22852,7 +22852,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_TUNER_AWARD = 0xB846F547D3792DF6,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_TUNER_AWARD"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_TUNER_AWARD"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_TUNER_AWARD = 0xB846F547D3792DF6,
 
@@ -22862,7 +22862,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_TUNER_ROBBERY = 0xBCB266247193AC61,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_TUNER_ROBBERY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_TUNER_ROBBERY"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_TUNER_FINALE = 0xBCB266247193AC61,
 
@@ -22872,7 +22872,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_UPGRADE_AUTOSHOP = 0xC10322A8D3E061EE,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_UPGRADE_AUTOSHOP"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_UPGRADE_AUTOSHOP"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_UPGRADE_AUTOSHOP_LOCATION = 0xC10322A8D3E061EE,
 
@@ -22882,7 +22882,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPEND_INTERACTION_MENU_ABILITY = 0x93AA4165CB67E925,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPEND_INTERACTION_MENU_ABILITY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPEND_INTERACTION_MENU_ABILITY"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_INTERACTION_MENU_ABILITY = 0x93AA4165CB67E925,
 
@@ -22892,7 +22892,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPEND_SET_COMMON_FIELDS = 0xB9F7A469460E7A4A,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPEND_SET_COMMON_FIELDS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPEND_SET_COMMON_FIELDS"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_FROM_BANK = 0xB9F7A469460E7A4A,
 
@@ -22902,7 +22902,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPEND_SET_DISCOUNT = 0x7E2F4E8F44CAF4E0,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPEND_SET_DISCOUNT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPEND_SET_DISCOUNT"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_SALES_DISPLAY = 0x7E2F4E8F44CAF4E0,
 
@@ -22912,7 +22912,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPEND_BUY_AGENCY = 0xEA8CD3C9B3C35884,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPEND_BUY_AGENCY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPEND_BUY_AGENCY"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_BUY_AGENCY = 0xEA8CD3C9B3C35884,
 
@@ -22922,7 +22922,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPEND_UPGRADE_AGENCY = 0x6CCA64840589A3B6,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPEND_UPGRADE_AGENCY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPEND_UPGRADE_AGENCY"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_UPGRADE_AGENCY = 0x6CCA64840589A3B6,
 
@@ -22932,7 +22932,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPEND_AGENCY = 0x1B2120405080125C,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPEND_AGENCY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPEND_AGENCY"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_AGENCY_CONCIERGE = 0x1B2120405080125C,
 
@@ -22942,7 +22942,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPEND_HIDDEN = 0xBF8793B91EA094A7,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPEND_HIDDEN"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPEND_HIDDEN"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_HIDDEN_CONTACT_SERVICE = 0xBF8793B91EA094A7,
 
@@ -22952,7 +22952,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPEND_SOURCE_BIKE = 0xD9DF467CBE4398C8,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPEND_SOURCE_BIKE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPEND_SOURCE_BIKE"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_SOURCE_BIKE_CONTACT_SERVICE = 0xD9DF467CBE4398C8,
 
@@ -22962,7 +22962,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPEND_COMP_SUV = 0xD86581F9E7CDA383,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPEND_COMP_SUV"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPEND_COMP_SUV"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_COMPANY_SUV_CONTACT_SERVICE = 0xD86581F9E7CDA383,
 
@@ -22972,7 +22972,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPEND_SUV_FST_TRVL = 0x61A2DF64ED2D396E,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPEND_SUV_FST_TRVL"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPEND_SUV_FST_TRVL"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_SUV_FAST_TRAVEL = 0x61A2DF64ED2D396E,
 
@@ -22982,7 +22982,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPEND_SUPPLY = 0xEBD482B82ACB8BAD,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPEND_SUPPLY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPEND_SUPPLY"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_SUPPLY_CONTACT_SERVICE = 0xEBD482B82ACB8BAD,
 
@@ -22992,7 +22992,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPEND_BIKE_SHOP = 0x923AEA8E78F8DF0B,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPEND_BIKE_SHOP"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPEND_BIKE_SHOP"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_BIKE_SHOP_MODIFY = 0x923AEA8E78F8DF0B,
 
@@ -23002,7 +23002,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPEND_VEHICLE_REQUESTED = 0x02D24A35A9CC3503,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPEND_VEHICLE_REQUESTED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPEND_VEHICLE_REQUESTED"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_VEHICLE_REQUESTED = 0x02D24A35A9CC3503,
 
@@ -23012,7 +23012,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPEND_GUNRUNNING = 0x2CEB0E0BC2A77C05,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPEND_GUNRUNNING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPEND_GUNRUNNING"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_GUNRUNNING_CONTACT_SERVICE = 0x2CEB0E0BC2A77C05,
 
@@ -23022,7 +23022,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_AGENCY_SAFE = 0x663B4B9D11742A12,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_AGENCY_SAFE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_AGENCY_SAFE"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_AGENCY_INCOME = 0x663B4B9D11742A12,
 
@@ -23032,7 +23032,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_AWARD_CONTRACT = 0x146D4EB6D22A403F,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_AWARD_CONTRACT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_AWARD_CONTRACT"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_AWARD_SECURITY_CONTRACT = 0x146D4EB6D22A403F,
 
@@ -23042,7 +23042,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_AGENCY_CONTRACT = 0x38482AD49CB905C7,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_AGENCY_CONTRACT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_AGENCY_CONTRACT"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_AGENCY_SECURITY_CONTRACT = 0x38482AD49CB905C7,
 
@@ -23052,7 +23052,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_AWARD_PHONE = 0x7397A115030F1BE3,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_AWARD_PHONE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_AWARD_PHONE"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_AWARD_PHONE_HIT = 0x7397A115030F1BE3,
 
@@ -23062,7 +23062,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_AGENCY_PHONE = 0xE29F3D5FA63B1B82,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_AGENCY_PHONE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_AGENCY_PHONE"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_AGENCY_PHONE_HIT = 0xE29F3D5FA63B1B82,
 
@@ -23072,7 +23072,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_AWARD_FIXER_MISSION = 0x88D6C327D6C57C45,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_AWARD_FIXER_MISSION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_AWARD_FIXER_MISSION"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_AWARD_AGENCY_STORY = 0x88D6C327D6C57C45,
 
@@ -23082,7 +23082,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_FIXER_PREP = 0x6283E5DE4C4460C6,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_FIXER_PREP"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_FIXER_PREP"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_AGENCY_STORY_PREP = 0x6283E5DE4C4460C6,
 
@@ -23092,7 +23092,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_FIXER_FINALE = 0xBA154373C5FE51E8,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_FIXER_FINALE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_FIXER_FINALE"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_AGENCY_STORY_FINALE = 0xBA154373C5FE51E8,
 
@@ -23102,7 +23102,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_FIXER_AGENCY_SHORT_TRIP = 0xF4A8E57460BF2037,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_FIXER_AGENCY_SHORT_TRIP"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_FIXER_AGENCY_SHORT_TRIP"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_AGENCY_SHORT_TRIP = 0xF4A8E57460BF2037,
 
@@ -23112,7 +23112,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_AWARD_SHORT_TRIP = 0x5B4DBDED84D6A420,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_AWARD_SHORT_TRIP"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_AWARD_SHORT_TRIP"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_AWARD_SHORT_TRIP = 0x5B4DBDED84D6A420,
 
@@ -23122,7 +23122,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_FIXER_RIVAL_DELIVERY = 0x235D41210B3A1A5E,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_FIXER_RIVAL_DELIVERY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_FIXER_RIVAL_DELIVERY"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_RIVAL_DELIVERY_SECURITY_CONTRACT = 0x235D41210B3A1A5E,
 
@@ -23132,7 +23132,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_UPGRADE_AGENCY = 0xD07C7C3F1995108C,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_UPGRADE_AGENCY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_UPGRADE_AGENCY"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_UPGRADE_AGENCY_LOCATION = 0xD07C7C3F1995108C,
 
@@ -23142,7 +23142,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPEND_APARTMENT_UTILITIES = 0x1254B5B3925EFD3D,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPEND_APARTMENT_UTILITIES"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPEND_APARTMENT_UTILITIES"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_AGGREGATED_UTILITY_BILLS = 0x1254B5B3925EFD3D,
 
@@ -23152,7 +23152,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SPEND_BUSINESS_PROPERTY_FEES = 0x92D1CFDA1227FF1C,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SPEND_BUSINESS_PROPERTY_FEES"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SPEND_BUSINESS_PROPERTY_FEES"/></remarks>
 		[Obsolete]
 		_NETWORK_SPENT_BUSINESS_EXPENSES = 0x92D1CFDA1227FF1C,
 
@@ -23162,7 +23162,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_SIGHTSEEING_REWARD = 0x45087AE480B233AC,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_SIGHTSEEING_REWARD"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_SIGHTSEEING_REWARD"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_SIGHTSEEING = 0x45087AE480B233AC,
 
@@ -23172,7 +23172,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_BIKER_SHOP = 0x2C5809EB9DF57257,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_BIKER_SHOP"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_BIKER_SHOP"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_BIKE_SHOP_BUSINESS = 0x2C5809EB9DF57257,
 
@@ -23182,7 +23182,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_EARN_BIKER = 0x71BEC32FA466E105,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_EARN_BIKER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_EARN_BIKER"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_BIKER_INCOME = 0x71BEC32FA466E105,
 
@@ -23192,7 +23192,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_YOHAN_SOURCE_GOODS = 0x59498BC8B1C8B15C,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_YOHAN_SOURCE_GOODS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_YOHAN_SOURCE_GOODS"/></remarks>
 		[Obsolete]
 		_NETWORK_EARN_FROM_BUSINESS_HUB_SOURCE = 0x59498BC8B1C8B15C,
 
@@ -23223,7 +23223,7 @@ namespace GTA.Native
 		/// <returns>const char*</returns>
 		NETWORK_GET_STRING_BANK_BALANCE = 0xA6FA3979BED01B81, // 0xAA7EA3BD
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_GET_STRING_BANK_BALANCE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_GET_STRING_BANK_BALANCE"/></remarks>
 		[Obsolete]
 		_NETWORK_GET_BANK_BALANCE_STRING = 0xA6FA3979BED01B81, // 0xAA7EA3BD
 
@@ -23239,7 +23239,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NETWORK_GET_CAN_SPEND_FROM_WALLET = 0xED5AB8860415BABA, // 0x0EA2188C
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_GET_CAN_SPEND_FROM_WALLET"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_GET_CAN_SPEND_FROM_WALLET"/></remarks>
 		[Obsolete]
 		_NETWORK_GET_VC_WALLET_BALANCE_IS_NOT_LESS_THAN = 0xED5AB8860415BABA, // 0x0EA2188C
 
@@ -23252,7 +23252,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NETWORK_GET_CAN_SPEND_FROM_BANK = 0xA31FD6A0865B6D14, // 0xABED6020
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_GET_CAN_SPEND_FROM_BANK"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_GET_CAN_SPEND_FROM_BANK"/></remarks>
 		[Obsolete]
 		_NETWORK_GET_VC_BANK_BALANCE_IS_NOT_LESS_THAN = 0xA31FD6A0865B6D14, // 0xABED6020
 
@@ -23265,7 +23265,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NETWORK_GET_CAN_SPEND_FROM_BANK_AND_WALLET = 0xDC18531D7019A535, // 0xCA23FD25
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_GET_CAN_SPEND_FROM_BANK_AND_WALLET"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_GET_CAN_SPEND_FROM_BANK_AND_WALLET"/></remarks>
 		[Obsolete]
 		_NETWORK_GET_VC_BANK_WALLET_BALANCE_IS_NOT_LESS_THAN = 0xDC18531D7019A535, // 0xCA23FD25
 
@@ -23275,7 +23275,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		NETWORK_GET_PVC_TRANSFER_BALANCE = 0x13A8DE2FD77D04F3, // 0xC670C814
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_GET_PVC_TRANSFER_BALANCE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_GET_PVC_TRANSFER_BALANCE"/></remarks>
 		[Obsolete]
 		_NETWORK_GET_REMAINING_VC_DAILY_TRANSFERS = 0x13A8DE2FD77D04F3, // 0xC670C814
 
@@ -23300,7 +23300,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		NETWORK_GET_REMAINING_TRANSFER_BALANCE = 0xEA560AC9EEB1E19B, // 0xA9021211
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_GET_REMAINING_TRANSFER_BALANCE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_GET_REMAINING_TRANSFER_BALANCE"/></remarks>
 		[Obsolete]
 		_NETWORK_GET_REMAINING_VC_DAILY_TRANSFERS_2 = 0xEA560AC9EEB1E19B, // 0xA9021211
 
@@ -23347,7 +23347,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NET_GAMESERVER_USE_SERVER_TRANSACTIONS = 0x7D2708796355B20B,
 
-		///<remarks>This function has been replaced by <see cref="NET_GAMESERVER_USE_SERVER_TRANSACTIONS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NET_GAMESERVER_USE_SERVER_TRANSACTIONS"/></remarks>
 		[Obsolete]
 		_NET_GAMESERVER_USE_SERVER_TRANSACTIONS = 0x7D2708796355B20B,
 
@@ -23357,15 +23357,15 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NET_GAMESERVER_CATALOG_ITEM_IS_VALID = 0xBD4D7EAF8A30F637,
 
-		///<remarks>This function has been replaced by <see cref="NET_GAMESERVER_CATALOG_ITEM_IS_VALID"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NET_GAMESERVER_CATALOG_ITEM_IS_VALID"/></remarks>
 		[Obsolete]
 		_NETWORK_SHOP_IS_ITEM_UNLOCKED = 0xBD4D7EAF8A30F637,
 
-		///<remarks>This function has been replaced by <see cref="NET_GAMESERVER_CATALOG_ITEM_IS_VALID"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NET_GAMESERVER_CATALOG_ITEM_IS_VALID"/></remarks>
 		[Obsolete]
 		_NETWORK_SHOP_DOES_ITEM_EXIST = 0xBD4D7EAF8A30F637,
 
-		///<remarks>This function has been replaced by <see cref="NET_GAMESERVER_CATALOG_ITEM_IS_VALID"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NET_GAMESERVER_CATALOG_ITEM_IS_VALID"/></remarks>
 		[Obsolete]
 		_NET_GAMESERVER_CATALOG_ITEM_EXISTS = 0xBD4D7EAF8A30F637,
 
@@ -23375,15 +23375,15 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NET_GAMESERVER_CATALOG_ITEM_KEY_IS_VALID = 0x247F0F73A182EA0B,
 
-		///<remarks>This function has been replaced by <see cref="NET_GAMESERVER_CATALOG_ITEM_KEY_IS_VALID"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NET_GAMESERVER_CATALOG_ITEM_KEY_IS_VALID"/></remarks>
 		[Obsolete]
 		_NETWORK_SHOP_IS_ITEM_UNLOCKED_HASH = 0x247F0F73A182EA0B,
 
-		///<remarks>This function has been replaced by <see cref="NET_GAMESERVER_CATALOG_ITEM_KEY_IS_VALID"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NET_GAMESERVER_CATALOG_ITEM_KEY_IS_VALID"/></remarks>
 		[Obsolete]
 		_NETWORK_SHOP_DOES_ITEM_EXIST_HASH = 0x247F0F73A182EA0B,
 
-		///<remarks>This function has been replaced by <see cref="NET_GAMESERVER_CATALOG_ITEM_KEY_IS_VALID"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NET_GAMESERVER_CATALOG_ITEM_KEY_IS_VALID"/></remarks>
 		[Obsolete]
 		_NET_GAMESERVER_CATALOG_ITEM_EXISTS_HASH = 0x247F0F73A182EA0B,
 
@@ -23396,28 +23396,28 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		NET_GAMESERVER_GET_PRICE = 0xC27009422FCCA88D,
 
-		///<remarks>This function has been replaced by <see cref="NET_GAMESERVER_GET_PRICE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NET_GAMESERVER_GET_PRICE"/></remarks>
 		[Obsolete]
 		_NETWORK_SHOP_GET_PRICE = 0xC27009422FCCA88D,
 
 		/// <returns>BOOL</returns>
 		NET_GAMESERVER_CATALOG_IS_VALID = 0x3C4487461E9B0DCB,
 
-		///<remarks>This function has been replaced by <see cref="NET_GAMESERVER_CATALOG_IS_VALID"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NET_GAMESERVER_CATALOG_IS_VALID"/></remarks>
 		[Obsolete]
 		_NET_GAMESERVER_CATALOG_IS_READY = 0x3C4487461E9B0DCB,
 
 		/// <returns>BOOL</returns>
 		NET_GAMESERVER_IS_CATALOG_CURRENT = 0x2B949A1E6AEC8F6A,
 
-		///<remarks>This function has been replaced by <see cref="NET_GAMESERVER_IS_CATALOG_CURRENT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NET_GAMESERVER_IS_CATALOG_CURRENT"/></remarks>
 		[Obsolete]
 		_NET_GAMESERVER_IS_CATALOG_VALID = 0x2B949A1E6AEC8F6A,
 
 		/// <returns>Hash</returns>
 		NET_GAMESERVER_GET_CATALOG_CLOUD_CRC = 0x85F6C9ABA1DE2BCF,
 
-		///<remarks>This function has been replaced by <see cref="NET_GAMESERVER_GET_CATALOG_CLOUD_CRC"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NET_GAMESERVER_GET_CATALOG_CLOUD_CRC"/></remarks>
 		[Obsolete]
 		_NET_GAMESERVER_GET_CATALOG_CRC = 0x85F6C9ABA1DE2BCF,
 
@@ -23430,7 +23430,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NET_GAMESERVER_RETRIEVE_CATALOG_REFRESH_STATUS = 0xCF38DAFBB49EDE5E,
 
-		///<remarks>This function has been replaced by <see cref="NET_GAMESERVER_RETRIEVE_CATALOG_REFRESH_STATUS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NET_GAMESERVER_RETRIEVE_CATALOG_REFRESH_STATUS"/></remarks>
 		[Obsolete]
 		_NET_GAMESERVER_GET_CATALOG_STATE = 0xCF38DAFBB49EDE5E,
 
@@ -23449,7 +23449,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NET_GAMESERVER_START_SESSION = 0xA135AC892A58FC07,
 
-		///<remarks>This function has been replaced by <see cref="NET_GAMESERVER_START_SESSION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NET_GAMESERVER_START_SESSION"/></remarks>
 		[Obsolete]
 		_NETWORK_SHOP_START_SESSION = 0xA135AC892A58FC07,
 
@@ -23474,7 +23474,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NET_GAMESERVER_IS_SESSION_VALID = 0xB24F0944DA203D9E,
 
-		///<remarks>This function has been replaced by <see cref="NET_GAMESERVER_IS_SESSION_VALID"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NET_GAMESERVER_IS_SESSION_VALID"/></remarks>
 		[Obsolete]
 		_NETWORK_SHOP_GET_TRANSACTIONS_ENABLED_FOR_CHARACTER = 0xB24F0944DA203D9E,
 
@@ -23490,14 +23490,14 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NET_GAMESERVER_SESSION_APPLY_RECEIVED_DATA = 0x2F41D51BA3BCD1F1,
 
-		///<remarks>This function has been replaced by <see cref="NET_GAMESERVER_SESSION_APPLY_RECEIVED_DATA"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NET_GAMESERVER_SESSION_APPLY_RECEIVED_DATA"/></remarks>
 		[Obsolete]
 		_NETWORK_SHOP_SESSION_APPLY_RECEIVED_DATA = 0x2F41D51BA3BCD1F1,
 
 		/// <returns>BOOL</returns>
 		NET_GAMESERVER_IS_SESSION_REFRESH_PENDING = 0x810E8431C0614BF9,
 
-		///<remarks>This function has been replaced by <see cref="NET_GAMESERVER_IS_SESSION_REFRESH_PENDING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NET_GAMESERVER_IS_SESSION_REFRESH_PENDING"/></remarks>
 		[Obsolete]
 		_NETWORK_SHOP_GET_TRANSACTIONS_DISABLED = 0x810E8431C0614BF9,
 
@@ -23510,7 +23510,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NET_GAMESERVER_START_SESSION_RESTART = 0x35A1B3E1D1315CFA,
 
-		///<remarks>This function has been replaced by <see cref="NET_GAMESERVER_START_SESSION_RESTART"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NET_GAMESERVER_START_SESSION_RESTART"/></remarks>
 		[Obsolete]
 		_NET_GAMESERVER_UPDATE_BALANCE = 0x35A1B3E1D1315CFA,
 
@@ -23523,7 +23523,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NET_GAMESERVER_GET_SESSION_STATE_AND_STATUS = 0x897433D292B44130,
 
-		///<remarks>This function has been replaced by <see cref="NET_GAMESERVER_GET_SESSION_STATE_AND_STATUS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NET_GAMESERVER_GET_SESSION_STATE_AND_STATUS"/></remarks>
 		[Obsolete]
 		_NET_GAMESERVER_GET_TRANSACTION_MANAGER_DATA = 0x897433D292B44130,
 
@@ -23533,21 +23533,21 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NET_GAMESERVER_BASKET_START = 0x279F08B1A4B29B7E,
 
-		///<remarks>This function has been replaced by <see cref="NET_GAMESERVER_BASKET_START"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NET_GAMESERVER_BASKET_START"/></remarks>
 		[Obsolete]
 		_NETWORK_SHOP_BASKET_START = 0x279F08B1A4B29B7E,
 
 		/// <returns>BOOL</returns>
 		NET_GAMESERVER_BASKET_END = 0xFA336E7F40C0A0D0,
 
-		///<remarks>This function has been replaced by <see cref="NET_GAMESERVER_BASKET_END"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NET_GAMESERVER_BASKET_END"/></remarks>
 		[Obsolete]
 		_NET_GAMESERVER_BASKET_DELETE = 0xFA336E7F40C0A0D0,
 
 		/// <returns>BOOL</returns>
 		NET_GAMESERVER_BASKET_IS_ACTIVE = 0xA65568121DF2EA26,
 
-		///<remarks>This function has been replaced by <see cref="NET_GAMESERVER_BASKET_IS_ACTIVE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NET_GAMESERVER_BASKET_IS_ACTIVE"/></remarks>
 		[Obsolete]
 		_NETWORK_SHOP_BASKET_END = 0xA65568121DF2EA26,
 
@@ -23557,14 +23557,14 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NET_GAMESERVER_BASKET_ADD_ITEM = 0xF30980718C8ED876,
 
-		///<remarks>This function has been replaced by <see cref="NET_GAMESERVER_BASKET_ADD_ITEM"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NET_GAMESERVER_BASKET_ADD_ITEM"/></remarks>
 		[Obsolete]
 		_NETWORK_SHOP_BASKET_ADD_ITEM = 0xF30980718C8ED876,
 
 		/// <returns>BOOL</returns>
 		NET_GAMESERVER_BASKET_IS_FULL = 0x27F76CC6C55AD30E,
 
-		///<remarks>This function has been replaced by <see cref="NET_GAMESERVER_BASKET_IS_FULL"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NET_GAMESERVER_BASKET_IS_FULL"/></remarks>
 		[Obsolete]
 		_NETWORK_SHOP_BASKET_IS_FULL = 0x27F76CC6C55AD30E,
 
@@ -23574,7 +23574,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NET_GAMESERVER_BASKET_APPLY_SERVER_DATA = 0xE1A0450ED46A7812,
 
-		///<remarks>This function has been replaced by <see cref="NET_GAMESERVER_BASKET_APPLY_SERVER_DATA"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NET_GAMESERVER_BASKET_APPLY_SERVER_DATA"/></remarks>
 		[Obsolete]
 		_NETWORK_SHOP_BASKET_APPLY_SERVER_DATA = 0xE1A0450ED46A7812,
 
@@ -23584,7 +23584,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NET_GAMESERVER_CHECKOUT_START = 0x39BE7CEA8D9CC8E6,
 
-		///<remarks>This function has been replaced by <see cref="NET_GAMESERVER_CHECKOUT_START"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NET_GAMESERVER_CHECKOUT_START"/></remarks>
 		[Obsolete]
 		_NETWORK_SHOP_CHECKOUT_START = 0x39BE7CEA8D9CC8E6,
 
@@ -23594,7 +23594,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NET_GAMESERVER_BEGIN_SERVICE = 0x3C5FD37B5499582E,
 
-		///<remarks>This function has been replaced by <see cref="NET_GAMESERVER_BEGIN_SERVICE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NET_GAMESERVER_BEGIN_SERVICE"/></remarks>
 		[Obsolete]
 		_NETWORK_SHOP_BEGIN_SERVICE = 0x3C5FD37B5499582E,
 
@@ -23604,11 +23604,11 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NET_GAMESERVER_END_SERVICE = 0xE2A99A9B524BEFFF,
 
-		///<remarks>This function has been replaced by <see cref="NET_GAMESERVER_END_SERVICE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NET_GAMESERVER_END_SERVICE"/></remarks>
 		[Obsolete]
 		_NETWORK_SHOP_END_SERVICE = 0xE2A99A9B524BEFFF,
 
-		///<remarks>This function has been replaced by <see cref="NET_GAMESERVER_END_SERVICE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NET_GAMESERVER_END_SERVICE"/></remarks>
 		[Obsolete]
 		_NETWORK_SHOP_TERMINATE_SERVICE = 0xE2A99A9B524BEFFF,
 
@@ -23618,21 +23618,21 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NET_GAMESERVER_DELETE_CHARACTER = 0x51F1A8E48C3D2F6D,
 
-		///<remarks>This function has been replaced by <see cref="NET_GAMESERVER_DELETE_CHARACTER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NET_GAMESERVER_DELETE_CHARACTER"/></remarks>
 		[Obsolete]
 		_NET_GAMESERVER_DELETE_CHARACTER_SLOT = 0x51F1A8E48C3D2F6D,
 
 		/// <returns>int</returns>
 		NET_GAMESERVER_DELETE_CHARACTER_GET_STATUS = 0x0A6D923DFFC9BD89,
 
-		///<remarks>This function has been replaced by <see cref="NET_GAMESERVER_DELETE_CHARACTER_GET_STATUS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NET_GAMESERVER_DELETE_CHARACTER_GET_STATUS"/></remarks>
 		[Obsolete]
 		_NET_GAMESERVER_DELETE_CHARACTER_SLOT_GET_STATUS = 0x0A6D923DFFC9BD89,
 
 		/// <returns>BOOL</returns>
 		NET_GAMESERVER_DELETE_SET_TELEMETRY_NONCE_SEED = 0x112CEF1615A1139F,
 
-		///<remarks>This function has been replaced by <see cref="NET_GAMESERVER_DELETE_SET_TELEMETRY_NONCE_SEED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NET_GAMESERVER_DELETE_SET_TELEMETRY_NONCE_SEED"/></remarks>
 		[Obsolete]
 		_NETWORK_SHOP_DELETE_SET_TELEMETRY_NONCE_SEED = 0x112CEF1615A1139F,
 
@@ -23642,11 +23642,11 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NET_GAMESERVER_TRANSFER_BANK_TO_WALLET = 0xD47A2C1BA117471D,
 
-		///<remarks>This function has been replaced by <see cref="NET_GAMESERVER_TRANSFER_BANK_TO_WALLET"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NET_GAMESERVER_TRANSFER_BANK_TO_WALLET"/></remarks>
 		[Obsolete]
 		_NETWORK_TRANSFER_BANK_TO_WALLET = 0xD47A2C1BA117471D,
 
-		///<remarks>This function has been replaced by <see cref="NET_GAMESERVER_TRANSFER_BANK_TO_WALLET"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NET_GAMESERVER_TRANSFER_BANK_TO_WALLET"/></remarks>
 		[Obsolete]
 		_NET_GAMESERVER_TRANSFER_BANK_TO_WALLET = 0xD47A2C1BA117471D,
 
@@ -23656,11 +23656,11 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NET_GAMESERVER_TRANSFER_WALLET_TO_BANK = 0xC2F7FE5309181C7D,
 
-		///<remarks>This function has been replaced by <see cref="NET_GAMESERVER_TRANSFER_WALLET_TO_BANK"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NET_GAMESERVER_TRANSFER_WALLET_TO_BANK"/></remarks>
 		[Obsolete]
 		_NETWORK_TRANSFER_WALLET_TO_BANK = 0xC2F7FE5309181C7D,
 
-		///<remarks>This function has been replaced by <see cref="NET_GAMESERVER_TRANSFER_WALLET_TO_BANK"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NET_GAMESERVER_TRANSFER_WALLET_TO_BANK"/></remarks>
 		[Obsolete]
 		_NET_GAMESERVER_TRANSFER_WALLET_TO_BANK = 0xC2F7FE5309181C7D,
 
@@ -23670,7 +23670,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		NET_GAMESERVER_TRANSFER_BANK_TO_WALLET_GET_STATUS = 0x23789E777D14CE44,
 
-		///<remarks>This function has been replaced by <see cref="NET_GAMESERVER_TRANSFER_BANK_TO_WALLET_GET_STATUS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NET_GAMESERVER_TRANSFER_BANK_TO_WALLET_GET_STATUS"/></remarks>
 		[Obsolete]
 		_NET_GAMESERVER_TRANSFER_CASH_GET_STATUS = 0x23789E777D14CE44,
 
@@ -23680,7 +23680,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		NET_GAMESERVER_TRANSFER_WALLET_TO_BANK_GET_STATUS = 0x350AA5EBC03D3BD2,
 
-		///<remarks>This function has been replaced by <see cref="NET_GAMESERVER_TRANSFER_WALLET_TO_BANK_GET_STATUS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NET_GAMESERVER_TRANSFER_WALLET_TO_BANK_GET_STATUS"/></remarks>
 		[Obsolete]
 		_NET_GAMESERVER_TRANSFER_CASH_GET_STATUS_2 = 0x350AA5EBC03D3BD2,
 
@@ -23690,11 +23690,11 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NET_GAMESERVER_TRANSFER_CASH_SET_TELEMETRY_NONCE_SEED = 0x498C1E05CE5F7877,
 
-		///<remarks>This function has been replaced by <see cref="NET_GAMESERVER_TRANSFER_CASH_SET_TELEMETRY_NONCE_SEED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NET_GAMESERVER_TRANSFER_CASH_SET_TELEMETRY_NONCE_SEED"/></remarks>
 		[Obsolete]
 		_NETWORK_SHOP_CASH_TRANSFER_SET_TELEMETRY_NONCE_SEED = 0x498C1E05CE5F7877,
 
-		///<remarks>This function has been replaced by <see cref="NET_GAMESERVER_TRANSFER_CASH_SET_TELEMETRY_NONCE_SEED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NET_GAMESERVER_TRANSFER_CASH_SET_TELEMETRY_NONCE_SEED"/></remarks>
 		[Obsolete]
 		_NET_GAMESERVER_TRANSFER_CASH_SET_TELEMETRY_NONCE_SEED = 0x498C1E05CE5F7877,
 
@@ -23704,7 +23704,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NET_GAMESERVER_SET_TELEMETRY_NONCE_SEED = 0x9507D4271988E1AE,
 
-		///<remarks>This function has been replaced by <see cref="NET_GAMESERVER_SET_TELEMETRY_NONCE_SEED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NET_GAMESERVER_SET_TELEMETRY_NONCE_SEED"/></remarks>
 		[Obsolete]
 		_NETWORK_SHOP_SET_TELEMETRY_NONCE_SEED = 0x9507D4271988E1AE,
 
@@ -23722,11 +23722,11 @@ namespace GTA.Native
 		/// <returns>const char*</returns>
 		GET_ONLINE_VERSION = 0xFCA9373EF340AC0A,
 
-		///<remarks>This function has been replaced by <see cref="GET_ONLINE_VERSION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_ONLINE_VERSION"/></remarks>
 		[Obsolete]
 		_GET_GAME_VERSION = 0xFCA9373EF340AC0A,
 
-		///<remarks>This function has been replaced by <see cref="GET_ONLINE_VERSION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_ONLINE_VERSION"/></remarks>
 		[Obsolete]
 		_GET_ONLINE_VERSION = 0xFCA9373EF340AC0A,
 
@@ -23789,11 +23789,11 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NETWORK_HAS_VALID_ROS_CREDENTIALS = 0x85443FF4C328F53B, // 0x3FB40673
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_HAS_VALID_ROS_CREDENTIALS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_HAS_VALID_ROS_CREDENTIALS"/></remarks>
 		[Obsolete]
 		_NETWORK_ARE_ROS_AVAILABLE = 0x85443FF4C328F53B, // 0x3FB40673
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_HAS_VALID_ROS_CREDENTIALS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_HAS_VALID_ROS_CREDENTIALS"/></remarks>
 		[Obsolete]
 		NETWORK_HAVE_JUST_UPLOAD_LATER = 0x85443FF4C328F53B, // 0x3FB40673
 
@@ -23818,7 +23818,7 @@ namespace GTA.Native
 		/// <returns>Player</returns>
 		NETWORK_GET_HOST_PLAYER_INDEX = 0x8251FB94DC4FDFC8,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_GET_HOST_PLAYER_INDEX"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_GET_HOST_PLAYER_INDEX"/></remarks>
 		[Obsolete]
 		_NETWORK_GET_HOST = 0x8251FB94DC4FDFC8,
 
@@ -23831,7 +23831,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NETWORK_HAS_AGE_RESTRICTIONS = 0x1353F87E89946207,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_HAS_AGE_RESTRICTIONS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_HAS_AGE_RESTRICTIONS"/></remarks>
 		[Obsolete]
 		_NETWORK_HAS_AGE_RESTRICTED_PROFILE = 0x1353F87E89946207,
 
@@ -23907,7 +23907,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NETWORK_HAVE_PLATFORM_SUBSCRIPTION = 0x5EA784D197556507,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_HAVE_PLATFORM_SUBSCRIPTION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_HAVE_PLATFORM_SUBSCRIPTION"/></remarks>
 		[Obsolete]
 		_NETWORK_HAVE_ONLINE_PRIVILEGE_2 = 0x5EA784D197556507,
 
@@ -23947,7 +23947,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NETWORK_TRANSITION_ADD_STAGE = 0xC3BFED92026A2AAD,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_TRANSITION_ADD_STAGE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_TRANSITION_ADD_STAGE"/></remarks>
 		[Obsolete]
 		_NETWORK_TRANSITION_TRACK = 0xC3BFED92026A2AAD,
 
@@ -23991,7 +23991,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NETWORK_SESSION_DO_FREEROAM_QUICKMATCH = 0x330ED4D05491934F,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SESSION_DO_FREEROAM_QUICKMATCH"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SESSION_DO_FREEROAM_QUICKMATCH"/></remarks>
 		[Obsolete]
 		NETWORK_SESSION_ENTER = 0x330ED4D05491934F,
 
@@ -24001,7 +24001,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NETWORK_SESSION_DO_FRIEND_MATCHMAKING = 0x2CFC76E0D087C994,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SESSION_DO_FRIEND_MATCHMAKING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SESSION_DO_FRIEND_MATCHMAKING"/></remarks>
 		[Obsolete]
 		NETWORK_SESSION_FRIEND_MATCHMAKING = 0x2CFC76E0D087C994,
 
@@ -24014,7 +24014,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NETWORK_SESSION_DO_CREW_MATCHMAKING = 0x94BC51E9449D917F,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SESSION_DO_CREW_MATCHMAKING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SESSION_DO_CREW_MATCHMAKING"/></remarks>
 		[Obsolete]
 		NETWORK_SESSION_CREW_MATCHMAKING = 0x94BC51E9449D917F,
 
@@ -24024,7 +24024,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NETWORK_SESSION_DO_ACTIVITY_QUICKMATCH = 0xBE3E347A87ACEB82,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SESSION_DO_ACTIVITY_QUICKMATCH"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SESSION_DO_ACTIVITY_QUICKMATCH"/></remarks>
 		[Obsolete]
 		NETWORK_SESSION_ACTIVITY_QUICKMATCH = 0xBE3E347A87ACEB82,
 
@@ -24097,11 +24097,11 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NETWORK_SESSION_GET_KICK_VOTE = 0xD6D09A6F32F49EF1, // 0x8A559D26
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SESSION_GET_KICK_VOTE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SESSION_GET_KICK_VOTE"/></remarks>
 		[Obsolete]
 		_NETWORK_SESSION_ARE_PLAYERS_VOTING_TO_KICK = 0xD6D09A6F32F49EF1, // 0x8A559D26
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SESSION_GET_KICK_VOTE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SESSION_GET_KICK_VOTE"/></remarks>
 		[Obsolete]
 		_NETWORK_SESSION_IS_PLAYER_VOTED_TO_KICK = 0xD6D09A6F32F49EF1, // 0x8A559D26
 
@@ -24123,7 +24123,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SESSION_SET_MATCHMAKING_GROUP = 0x49EC8030F5015F8B, // 0x3C3E2AB6
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SESSION_SET_MATCHMAKING_GROUP"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SESSION_SET_MATCHMAKING_GROUP"/></remarks>
 		[Obsolete]
 		_NETWORK_SCTV_SLOTS = 0x49EC8030F5015F8B, // 0x3C3E2AB6
 
@@ -24138,7 +24138,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SESSION_SET_MATCHMAKING_GROUP_MAX = 0x8B6A4DD0AF9CE215, // 0x5F29A7E0
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SESSION_SET_MATCHMAKING_GROUP_MAX"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SESSION_SET_MATCHMAKING_GROUP_MAX"/></remarks>
 		[Obsolete]
 		_NETWORK_SESSION_SET_MAX_PLAYERS = 0x8B6A4DD0AF9CE215, // 0x5F29A7E0
 
@@ -24148,7 +24148,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		NETWORK_SESSION_GET_MATCHMAKING_GROUP_FREE = 0x56CE820830EF040B, // 0x36EAD960
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SESSION_GET_MATCHMAKING_GROUP_FREE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SESSION_GET_MATCHMAKING_GROUP_FREE"/></remarks>
 		[Obsolete]
 		_NETWORK_SESSION_GET_UNK = 0x56CE820830EF040B, // 0x36EAD960
 
@@ -24215,7 +24215,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SESSION_VALIDATE_JOIN = 0xC19F6C8E7865A6FF, // 0xF3768F90
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SESSION_VALIDATE_JOIN"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SESSION_VALIDATE_JOIN"/></remarks>
 		[Obsolete]
 		_NETWORK_SESSION_HOSTED = 0xC19F6C8E7865A6FF, // 0xF3768F90
 
@@ -24237,7 +24237,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_GET_GLOBAL_MULTIPLAYER_CLOCK = 0x6D03BFBD643B2A02, // 0x74E8C53E
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_GET_GLOBAL_MULTIPLAYER_CLOCK"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_GET_GLOBAL_MULTIPLAYER_CLOCK"/></remarks>
 		[Obsolete]
 		_NETWORK_GET_SERVER_TIME = 0x6D03BFBD643B2A02, // 0x74E8C53E
 
@@ -24250,7 +24250,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		NETWORK_SESSION_GET_HOST_AIM_PREFERENCE = 0xDFFA5BE8381C3314,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SESSION_GET_HOST_AIM_PREFERENCE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SESSION_GET_HOST_AIM_PREFERENCE"/></remarks>
 		[Obsolete]
 		_NETWORK_GET_TARGETING_MODE = 0xDFFA5BE8381C3314,
 
@@ -24260,7 +24260,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NETWORK_FIND_GAMERS_IN_CREW = 0xE532D6811B3A4D2A, // 0x7771AB83
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_FIND_GAMERS_IN_CREW"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_FIND_GAMERS_IN_CREW"/></remarks>
 		[Obsolete]
 		NETWORK_X_AFFECTS_GAMERS = 0xE532D6811B3A4D2A, // 0x7771AB83
 
@@ -24308,7 +24308,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NETWORK_QUEUE_GAMER_FOR_STATUS = 0x85A0EF54A500882C, // 0x42BD0780
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_QUEUE_GAMER_FOR_STATUS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_QUEUE_GAMER_FOR_STATUS"/></remarks>
 		[Obsolete]
 		_NETWORK_GET_GAMER_STATUS = 0x85A0EF54A500882C, // 0x42BD0780
 
@@ -24333,7 +24333,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SESSION_JOIN_INVITE = 0xC6F8AB8A4189CF3A, // 0x3D6360B5
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SESSION_JOIN_INVITE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SESSION_JOIN_INVITE"/></remarks>
 		[Obsolete]
 		NETWORK_IS_PLAYER_ANIMATION_DRAWING_SYNCHRONIZED = 0xC6F8AB8A4189CF3A, // 0x3D6360B5
 
@@ -24355,7 +24355,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NETWORK_REQUEST_INVITE_CONFIRMED_EVENT = 0x62A0296C1BB1CEB3, // 0x0907A6BF
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_REQUEST_INVITE_CONFIRMED_EVENT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_REQUEST_INVITE_CONFIRMED_EVENT"/></remarks>
 		[Obsolete]
 		_NETWORK_ACCEPT_INVITE = 0x62A0296C1BB1CEB3, // 0x0907A6BF
 
@@ -24395,7 +24395,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_BLOCK_JOIN_QUEUE_INVITES = 0xCFEB8AF24FC1D0BB, // 0x8AB4890B
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_BLOCK_JOIN_QUEUE_INVITES"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_BLOCK_JOIN_QUEUE_INVITES"/></remarks>
 		[Obsolete]
 		_NETWORK_BLOCK_INVITES_2 = 0xCFEB8AF24FC1D0BB, // 0x8AB4890B
 
@@ -24414,7 +24414,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_ALLOW_INVITE_PROCESS_IN_PLAYER_SWITCH = 0x6B07B9CE4D390375, // 0x0FCE995D
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_ALLOW_INVITE_PROCESS_IN_PLAYER_SWITCH"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_ALLOW_INVITE_PROCESS_IN_PLAYER_SWITCH"/></remarks>
 		[Obsolete]
 		_NETWORK_BLOCK_KICKED_PLAYERS = 0x6B07B9CE4D390375, // 0x0FCE995D
 
@@ -24509,7 +24509,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SESSION_VOICE_CONNECT_TO_PLAYER = 0xABD5E88B8A2D3DB2, // 0x9DFD89E6
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SESSION_VOICE_CONNECT_TO_PLAYER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SESSION_VOICE_CONNECT_TO_PLAYER"/></remarks>
 		[Obsolete]
 		_NETWORK_VOICE_CONNECT_TO_PLAYER = 0xABD5E88B8A2D3DB2, // 0x9DFD89E6
 
@@ -24519,7 +24519,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SESSION_VOICE_RESPOND_TO_REQUEST = 0x7F8413B7FC2AA6B9, // 0x075321B5
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SESSION_VOICE_RESPOND_TO_REQUEST"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SESSION_VOICE_RESPOND_TO_REQUEST"/></remarks>
 		[Obsolete]
 		NETWORK_SET_KEEP_FOCUSPOINT = 0x7F8413B7FC2AA6B9, // 0x075321B5
 
@@ -24700,7 +24700,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_CANCEL_TRANSITION_MATCHMAKING = 0x023782EFC70585EE,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_CANCEL_TRANSITION_MATCHMAKING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_CANCEL_TRANSITION_MATCHMAKING"/></remarks>
 		[Obsolete]
 		_NETWORK_BAIL_TRANSITION_QUICKMATCH = 0x023782EFC70585EE,
 
@@ -24916,7 +24916,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NETWORK_SEND_INVITE_VIA_PRESENCE = 0xC3C7A6AFDB244624, // 0x8B99B72B
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SEND_INVITE_VIA_PRESENCE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SEND_INVITE_VIA_PRESENCE"/></remarks>
 		[Obsolete]
 		_NETWORK_SEND_PRESENCE_INVITE = 0xC3C7A6AFDB244624, // 0x8B99B72B
 
@@ -24926,7 +24926,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NETWORK_SEND_TRANSITION_INVITE_VIA_PRESENCE = 0xC116FF9B4D488291, // 0x877C0E1C
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SEND_TRANSITION_INVITE_VIA_PRESENCE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SEND_TRANSITION_INVITE_VIA_PRESENCE"/></remarks>
 		[Obsolete]
 		_NETWORK_SEND_PRESENCE_TRANSITION_INVITE = 0xC116FF9B4D488291, // 0x877C0E1C
 
@@ -25056,7 +25056,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NETWORK_HAS_MADE_INVITE_DECISION = 0x71DC455F5CD1C2B1,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_HAS_MADE_INVITE_DECISION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_HAS_MADE_INVITE_DECISION"/></remarks>
 		[Obsolete]
 		NETWORK_HAS_INVITE_BEEN_ACKED = 0x71DC455F5CD1C2B1,
 
@@ -25120,7 +25120,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		REFRESH_PLAYER_LIST_STATS = 0xE26CCFF8094D8C74, // 0xF49C1533
 
-		///<remarks>This function has been replaced by <see cref="REFRESH_PLAYER_LIST_STATS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="REFRESH_PLAYER_LIST_STATS"/></remarks>
 		[Obsolete]
 		USING_NETWORK_WEAPONTYPE = 0xE26CCFF8094D8C74, // 0xF49C1533
 
@@ -25130,7 +25130,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NETWORK_SET_CURRENT_DATA_MANAGER_HANDLE = 0x796A87B3B68D1F3D,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SET_CURRENT_DATA_MANAGER_HANDLE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SET_CURRENT_DATA_MANAGER_HANDLE"/></remarks>
 		[Obsolete]
 		_NETWORK_CHECK_DATA_MANAGER_FOR_HANDLE = 0x796A87B3B68D1F3D,
 
@@ -25143,7 +25143,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		NETWORK_GET_PLATFORM_PARTY_MEMBER_COUNT = 0x01ABCE5E7CBDA196,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_GET_PLATFORM_PARTY_MEMBER_COUNT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_GET_PLATFORM_PARTY_MEMBER_COUNT"/></remarks>
 		[Obsolete]
 		_NETWORK_GET_PLATFORM_PARTY_UNK = 0x01ABCE5E7CBDA196,
 
@@ -25203,7 +25203,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		NETWORK_GET_RANDOM_INT_RANGED = 0xE30CF56F1EFA5F43, // 0xF9B6426D
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_GET_RANDOM_INT_RANGED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_GET_RANDOM_INT_RANGED"/></remarks>
 		[Obsolete]
 		_NETWORK_GET_RANDOM_INT_IN_RANGE = 0xE30CF56F1EFA5F43, // 0xF9B6426D
 
@@ -25213,7 +25213,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		NETWORK_PLAYER_GET_CHEATER_REASON = 0x172F75B6EE2233BA, // 0x1720ABA6
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_PLAYER_GET_CHEATER_REASON"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_PLAYER_GET_CHEATER_REASON"/></remarks>
 		[Obsolete]
 		_NETWORK_PLAYER_IS_UNK = 0x172F75B6EE2233BA, // 0x1720ABA6
 
@@ -25229,11 +25229,11 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		TRIGGER_PLAYER_CRC_HACKER_CHECK = 0x46FB3ED415C7641C, // 0xF9A51B92
 
-		///<remarks>This function has been replaced by <see cref="TRIGGER_PLAYER_CRC_HACKER_CHECK"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="TRIGGER_PLAYER_CRC_HACKER_CHECK"/></remarks>
 		[Obsolete]
 		_NETWORK_IS_PLAYER_IN_SCRIPT = 0x46FB3ED415C7641C, // 0xF9A51B92
 
-		///<remarks>This function has been replaced by <see cref="TRIGGER_PLAYER_CRC_HACKER_CHECK"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="TRIGGER_PLAYER_CRC_HACKER_CHECK"/></remarks>
 		[Obsolete]
 		_TRIGGER_SCRIPT_CRC_CHECK_ON_PLAYER = 0x46FB3ED415C7641C, // 0xF9A51B92
 
@@ -25255,7 +25255,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		REMOTE_CHEATER_PLAYER_DETECTED = 0x472841A026D26D8B,
 
-		///<remarks>This function has been replaced by <see cref="REMOTE_CHEATER_PLAYER_DETECTED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="REMOTE_CHEATER_PLAYER_DETECTED"/></remarks>
 		[Obsolete]
 		_REMOTE_CHEAT_DETECTED = 0x472841A026D26D8B,
 
@@ -25271,7 +25271,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_ADD_INVALID_OBJECT_MODEL = 0x7F562DBC212E81F9,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_ADD_INVALID_OBJECT_MODEL"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_ADD_INVALID_OBJECT_MODEL"/></remarks>
 		[Obsolete]
 		_NETWORK_ADD_INVALID_MODEL = 0x7F562DBC212E81F9,
 
@@ -25281,14 +25281,14 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_REMOVE_INVALID_OBJECT_MODEL = 0x791EDB5803B2F468,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_REMOVE_INVALID_OBJECT_MODEL"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_REMOVE_INVALID_OBJECT_MODEL"/></remarks>
 		[Obsolete]
 		_NETWORK_REMOVE_INVALID_MODEL = 0x791EDB5803B2F468,
 
 		/// <returns>void</returns>
 		NETWORK_CLEAR_INVALID_OBJECT_MODELS = 0x03B2F03A53D85E41,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_CLEAR_INVALID_OBJECT_MODELS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_CLEAR_INVALID_OBJECT_MODELS"/></remarks>
 		[Obsolete]
 		_NETWORK_CLEAR_INVALID_MODELS = 0x03B2F03A53D85E41,
 
@@ -25310,11 +25310,11 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NETWORK_TRY_TO_SET_THIS_SCRIPT_IS_NETWORK_SCRIPT = 0xD1110739EEADB592,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_TRY_TO_SET_THIS_SCRIPT_IS_NETWORK_SCRIPT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_TRY_TO_SET_THIS_SCRIPT_IS_NETWORK_SCRIPT"/></remarks>
 		[Obsolete]
 		_NETWORK_SET_THIS_SCRIPT_MARKED = 0xD1110739EEADB592,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_TRY_TO_SET_THIS_SCRIPT_IS_NETWORK_SCRIPT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_TRY_TO_SET_THIS_SCRIPT_IS_NETWORK_SCRIPT"/></remarks>
 		[Obsolete]
 		_NETWORK_IS_THIS_SCRIPT_MARKED = 0xD1110739EEADB592,
 
@@ -25324,7 +25324,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		NETWORK_GET_MAX_NUM_PARTICIPANTS = 0xA6C90FBC38E395EE, // 0xCCD8C02D
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_GET_MAX_NUM_PARTICIPANTS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_GET_MAX_NUM_PARTICIPANTS"/></remarks>
 		[Obsolete]
 		_NETWORK_GET_NUM_PARTICIPANTS_HOST = 0xA6C90FBC38E395EE, // 0xCCD8C02D
 
@@ -25458,7 +25458,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NETWORK_IS_THREAD_A_NETWORK_SCRIPT = 0x560B423D73015E77,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_IS_THREAD_A_NETWORK_SCRIPT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_IS_THREAD_A_NETWORK_SCRIPT"/></remarks>
 		[Obsolete]
 		_NETWORK_IS_THREAD_ACTIVE = 0x560B423D73015E77,
 
@@ -25474,7 +25474,7 @@ namespace GTA.Native
 		/// <returns>Hash</returns>
 		NETWORK_GET_POSITION_HASH_OF_THIS_SCRIPT = 0x257ED0FADF750BCF,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_GET_POSITION_HASH_OF_THIS_SCRIPT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_GET_POSITION_HASH_OF_THIS_SCRIPT"/></remarks>
 		[Obsolete]
 		_NETWORK_GET_POSITION_HASH_OF_THIS_SCRIPT = 0x257ED0FADF750BCF,
 
@@ -25509,7 +25509,7 @@ namespace GTA.Native
 		/// <returns>Player</returns>
 		NETWORK_GET_KILLER_OF_PLAYER = 0x2DA41ED6E1FCD7A5,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_GET_KILLER_OF_PLAYER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_GET_KILLER_OF_PLAYER"/></remarks>
 		[Obsolete]
 		_NETWORK_GET_PLAYER_KILLER_OF_PLAYER = 0x2DA41ED6E1FCD7A5,
 
@@ -25525,7 +25525,7 @@ namespace GTA.Native
 		/// <returns>Player</returns>
 		NETWORK_GET_DESTROYER_OF_ENTITY = 0xC434133D9BA52777,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_GET_DESTROYER_OF_ENTITY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_GET_DESTROYER_OF_ENTITY"/></remarks>
 		[Obsolete]
 		_NETWORK_GET_DESTROYER_OF_ENTITY = 0xC434133D9BA52777,
 
@@ -25538,7 +25538,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NETWORK_GET_ASSISTED_KILL_OF_ENTITY = 0x83660B734994124D,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_GET_ASSISTED_KILL_OF_ENTITY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_GET_ASSISTED_KILL_OF_ENTITY"/></remarks>
 		[Obsolete]
 		_NETWORK_GET_ASSISTED_DAMAGE_OF_DEAD_ENTITY = 0x83660B734994124D,
 
@@ -25548,7 +25548,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NETWORK_GET_ASSISTED_DAMAGE_OF_ENTITY = 0x4CACA84440FA26F6, // 0x28A45454
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_GET_ASSISTED_DAMAGE_OF_ENTITY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_GET_ASSISTED_DAMAGE_OF_ENTITY"/></remarks>
 		[Obsolete]
 		_NETWORK_GET_DESROYER_OF_ENTITY = 0x4CACA84440FA26F6, // 0x28A45454
 
@@ -25564,7 +25564,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SET_CURRENT_PUBLIC_CONTENT_ID = 0x2C863ACDCD12B3DB,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SET_CURRENT_PUBLIC_CONTENT_ID"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SET_CURRENT_PUBLIC_CONTENT_ID"/></remarks>
 		[Obsolete]
 		_NETWORK_SET_CURRENT_MISSION_ID = 0x2C863ACDCD12B3DB,
 
@@ -25601,7 +25601,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SET_CURRENT_SPAWN_LOCATION_OPTION = 0xAA6D5451DC3448B6,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SET_CURRENT_SPAWN_LOCATION_OPTION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SET_CURRENT_SPAWN_LOCATION_OPTION"/></remarks>
 		[Obsolete]
 		_NETWORK_SET_CURRENT_SPAWN_SETTING = 0xAA6D5451DC3448B6,
 
@@ -25614,7 +25614,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SET_VEHICLE_DRIVEN_IN_TEST_DRIVE = 0x8C70252FC40F320B,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SET_VEHICLE_DRIVEN_IN_TEST_DRIVE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SET_VEHICLE_DRIVEN_IN_TEST_DRIVE"/></remarks>
 		[Obsolete]
 		_NETWORK_SET_VEHICLE_TEST_DRIVE = 0x8C70252FC40F320B,
 
@@ -25645,7 +25645,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_PATCH_POST_CUTSCENE_HS4F_TUN_ENT = 0xF0BC9BCD24A511D5,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_PATCH_POST_CUTSCENE_HS4F_TUN_ENT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_PATCH_POST_CUTSCENE_HS4F_TUN_ENT"/></remarks>
 		[Obsolete]
 		_NETWORK_PED_FORCE_GAME_STATE_UPDATE = 0xF0BC9BCD24A511D5,
 
@@ -25730,7 +25730,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NETWORK_IS_NETWORK_ID_REMOTELY_CONTROLLED = 0x7242F8B741CE1086,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_IS_NETWORK_ID_REMOTELY_CONTROLLED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_IS_NETWORK_ID_REMOTELY_CONTROLLED"/></remarks>
 		[Obsolete]
 		_NETWORK_IS_NETWORK_ID_A_CLONE = 0x7242F8B741CE1086,
 
@@ -25770,7 +25770,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NETWORK_IS_DOOR_NETWORKED = 0xC01E93FAC20C3346, // 0xD14D9C07
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_IS_DOOR_NETWORKED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_IS_DOOR_NETWORKED"/></remarks>
 		[Obsolete]
 		_NETWORK_HAS_CONTROL_OF_PAVEMENT_STATS = 0xC01E93FAC20C3346, // 0xD14D9C07
 
@@ -25865,7 +25865,7 @@ namespace GTA.Native
 		/// <returns>Hash</returns>
 		NETWORK_HASH_FROM_PLAYER_HANDLE = 0xBC1D768F2F5D6C05, // 0xF8D7AF3B
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_HASH_FROM_PLAYER_HANDLE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_HASH_FROM_PLAYER_HANDLE"/></remarks>
 		[Obsolete]
 		_NETWORK_HASH_FROM_PLAYER_HANDLE = 0xBC1D768F2F5D6C05, // 0xF8D7AF3B
 
@@ -25875,7 +25875,7 @@ namespace GTA.Native
 		/// <returns>Hash</returns>
 		NETWORK_HASH_FROM_GAMER_HANDLE = 0x58575AC3CF2CA8EC, // 0x5AC9F04D
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_HASH_FROM_GAMER_HANDLE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_HASH_FROM_GAMER_HANDLE"/></remarks>
 		[Obsolete]
 		_NETWORK_HASH_FROM_GAMER_HANDLE = 0x58575AC3CF2CA8EC, // 0x5AC9F04D
 
@@ -25976,7 +25976,7 @@ namespace GTA.Native
 		/// <returns>const char*</returns>
 		NETWORK_PLAYER_GET_USERID = 0x4927FC39CD0869A0, // 0x4EC0D983
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_PLAYER_GET_USERID"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_PLAYER_GET_USERID"/></remarks>
 		[Obsolete]
 		_NETWORK_PLAYER_GET_USER_ID = 0x4927FC39CD0869A0, // 0x4EC0D983
 
@@ -25999,7 +25999,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NETWORK_PLAYER_INDEX_IS_CHEATER = 0x565E430DB3B05BEC, // 0xD265B049
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_PLAYER_INDEX_IS_CHEATER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_PLAYER_INDEX_IS_CHEATER"/></remarks>
 		[Obsolete]
 		_NETWORK_PLAYER_SOMETHING = 0x565E430DB3B05BEC, // 0xD265B049
 
@@ -26009,7 +26009,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		NETWORK_ENTITY_GET_OBJECT_ID = 0x815F18AD865F057F,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_ENTITY_GET_OBJECT_ID"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_ENTITY_GET_OBJECT_ID"/></remarks>
 		[Obsolete]
 		_NETWORK_GET_ENTITY_NET_SCRIPT_ID = 0x815F18AD865F057F,
 
@@ -26050,11 +26050,11 @@ namespace GTA.Native
 		/// <returns>const char*</returns>
 		NETWORK_GET_FRIEND_DISPLAY_NAME = 0x4164F227D052E293,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_GET_FRIEND_DISPLAY_NAME"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_GET_FRIEND_DISPLAY_NAME"/></remarks>
 		[Obsolete]
 		_NETWORK_GET_FRIEND_NAME = 0x4164F227D052E293,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_GET_FRIEND_DISPLAY_NAME"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_GET_FRIEND_DISPLAY_NAME"/></remarks>
 		[Obsolete]
 		_NETWORK_GET_FRIEND_NAME_FROM_INDEX = 0x4164F227D052E293,
 
@@ -26070,7 +26070,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NETWORK_IS_FRIEND_HANDLE_ONLINE = 0x87EB7A3FFCB314DB,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_IS_FRIEND_HANDLE_ONLINE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_IS_FRIEND_HANDLE_ONLINE"/></remarks>
 		[Obsolete]
 		_NETWORK_IS_FRIEND_ONLINE_2 = 0x87EB7A3FFCB314DB,
 
@@ -26158,7 +26158,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NETWORK_IS_PUSH_TO_TALK_ACTIVE = 0xC0D2AF00BCC234CA,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_IS_PUSH_TO_TALK_ACTIVE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_IS_PUSH_TO_TALK_ACTIVE"/></remarks>
 		[Obsolete]
 		NETWORK_IS_LOCAL_TALKING = 0xC0D2AF00BCC234CA,
 
@@ -26186,7 +26186,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NETWORK_CAN_COMMUNICATE_WITH_GAMER = 0x8F5D1AD832AEB06C, // 0xD05EB7F6
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_CAN_COMMUNICATE_WITH_GAMER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_CAN_COMMUNICATE_WITH_GAMER"/></remarks>
 		[Obsolete]
 		_NETWORK_CAN_COMMUNICATE_WITH_GAMER_2 = 0x8F5D1AD832AEB06C, // 0xD05EB7F6
 
@@ -26401,7 +26401,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_OVERRIDE_SEND_RESTRICTIONS = 0x97DD4C5944CC2E6A, // 0x6C344AE3
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_OVERRIDE_SEND_RESTRICTIONS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_OVERRIDE_SEND_RESTRICTIONS"/></remarks>
 		[Obsolete]
 		_NETWORK_OVERRIDE_SEND_RESTRICTIONS = 0x97DD4C5944CC2E6A, // 0x6C344AE3
 
@@ -26411,7 +26411,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_OVERRIDE_SEND_RESTRICTIONS_ALL = 0x57B192B4D4AD23D5, // 0x2F98B405
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_OVERRIDE_SEND_RESTRICTIONS_ALL"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_OVERRIDE_SEND_RESTRICTIONS_ALL"/></remarks>
 		[Obsolete]
 		_NETWORK_CHAT_MUTE = 0x57B192B4D4AD23D5, // 0x2F98B405
 
@@ -26449,7 +26449,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_APPLY_VOICE_PROXIMITY_OVERRIDE = 0xDBD2056652689917, // 0xF1E84832
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_APPLY_VOICE_PROXIMITY_OVERRIDE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_APPLY_VOICE_PROXIMITY_OVERRIDE"/></remarks>
 		[Obsolete]
 		IS_NETWORK_VEHICLE_BEEN_DAMAGED_BY_ANY_OBJECT = 0xDBD2056652689917, // 0xF1E84832
 
@@ -26489,7 +26489,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NETWORK_TEXT_CHAT_IS_TYPING = 0x5FCF4D7069B09026,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_TEXT_CHAT_IS_TYPING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_TEXT_CHAT_IS_TYPING"/></remarks>
 		[Obsolete]
 		_NETWORK_IS_TEXT_CHAT_ACTIVE = 0x5FCF4D7069B09026,
 
@@ -26508,7 +26508,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		SHUTDOWN_AND_LOAD_MOST_RECENT_SAVE = 0x9ECA15ADFE141431,
 
-		///<remarks>This function has been replaced by <see cref="SHUTDOWN_AND_LOAD_MOST_RECENT_SAVE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SHUTDOWN_AND_LOAD_MOST_RECENT_SAVE"/></remarks>
 		[Obsolete]
 		_SHUTDOWN_AND_LOAD_MOST_RECENT_SAVE = 0x9ECA15ADFE141431,
 
@@ -26536,7 +26536,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SET_RICH_PRESENCE_STRING = 0x3E200C2BCF4164EB, // 0x017E6777
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SET_RICH_PRESENCE_STRING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SET_RICH_PRESENCE_STRING"/></remarks>
 		[Obsolete]
 		_NETWORK_SET_RICH_PRESENCE_2 = 0x3E200C2BCF4164EB, // 0x017E6777
 
@@ -26552,7 +26552,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_LEAVE_PED_BEHIND_BEFORE_WARP = 0x9769F811D1785B03, // 0xBE6A30C3
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_LEAVE_PED_BEHIND_BEFORE_WARP"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_LEAVE_PED_BEHIND_BEFORE_WARP"/></remarks>
 		[Obsolete]
 		_NETWORK_RESPAWN_COORDS = 0x9769F811D1785B03, // 0xBE6A30C3
 
@@ -26586,7 +26586,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NETWORK_CLAN_SERVICE_IS_VALID = 0x579CCED0265D4896, // 0xF5F4BD95
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_CLAN_SERVICE_IS_VALID"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_CLAN_SERVICE_IS_VALID"/></remarks>
 		[Obsolete]
 		_NETWORK_PLAYER_IS_IN_CLAN = 0x579CCED0265D4896, // 0xF5F4BD95
 
@@ -26629,11 +26629,11 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		NETWORK_CLAN_GET_LOCAL_MEMBERSHIPS_COUNT = 0x1F471B79ACC90BEF, // 0x807B3450
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_CLAN_GET_LOCAL_MEMBERSHIPS_COUNT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_CLAN_GET_LOCAL_MEMBERSHIPS_COUNT"/></remarks>
 		[Obsolete]
 		_GET_NUM_MEMBERSHIP_DESC = 0x1F471B79ACC90BEF, // 0x807B3450
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_CLAN_GET_LOCAL_MEMBERSHIPS_COUNT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_CLAN_GET_LOCAL_MEMBERSHIPS_COUNT"/></remarks>
 		[Obsolete]
 		_NETWORK_CLAN_GET_NUM_MEMBERSHIP_DESC = 0x1F471B79ACC90BEF, // 0x807B3450
 
@@ -26658,7 +26658,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NETWORK_CLAN_ANY_DOWNLOAD_MEMBERSHIP_PENDING = 0xB3F64A6A91432477, // 0x83ED8E08
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_CLAN_ANY_DOWNLOAD_MEMBERSHIP_PENDING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_CLAN_ANY_DOWNLOAD_MEMBERSHIP_PENDING"/></remarks>
 		[Obsolete]
 		_NETWORK_IS_CLAN_MEMBERSHIP_FINISHED_DOWNLOADING = 0xB3F64A6A91432477, // 0x83ED8E08
 
@@ -26702,7 +26702,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NETWORK_CLAN_CREWINFO_GET_STRING_VALUE = 0x729E3401F0430686, // 0xBDA90BAC
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_CLAN_CREWINFO_GET_STRING_VALUE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_CLAN_CREWINFO_GET_STRING_VALUE"/></remarks>
 		[Obsolete]
 		_NETWORK_CLAN_ANIMATION = 0x729E3401F0430686, // 0xBDA90BAC
 
@@ -26721,7 +26721,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NETWORK_CLAN_GET_EMBLEM_TXD_NAME = 0x5835D9CD92E83184, // 0xBA672146
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_CLAN_GET_EMBLEM_TXD_NAME"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_CLAN_GET_EMBLEM_TXD_NAME"/></remarks>
 		[Obsolete]
 		_NETWORK_GET_PLAYER_CREW_EMBLEM_TXD_NAME = 0x5835D9CD92E83184, // 0xBA672146
 
@@ -26788,7 +26788,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_NETWORK_ID_ALWAYS_EXISTS_FOR_PLAYER = 0xA8A024587329F36A, // 0x4D15FDB1
 
-		///<remarks>This function has been replaced by <see cref="SET_NETWORK_ID_ALWAYS_EXISTS_FOR_PLAYER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_NETWORK_ID_ALWAYS_EXISTS_FOR_PLAYER"/></remarks>
 		[Obsolete]
 		_SET_NETWORK_ID_SYNC_TO_PLAYER = 0xA8A024587329F36A, // 0x4D15FDB1
 
@@ -26801,7 +26801,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_NETWORK_ID_CAN_BE_REASSIGNED = 0x9D724B400A7E8FFC,
 
-		///<remarks>This function has been replaced by <see cref="SET_NETWORK_ID_CAN_BE_REASSIGNED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_NETWORK_ID_CAN_BE_REASSIGNED"/></remarks>
 		[Obsolete]
 		_SET_NETWORK_ID_CAN_BE_REASSIGNED = 0x9D724B400A7E8FFC,
 
@@ -26817,7 +26817,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SET_OBJECT_CAN_BLEND_WHEN_FIXED = 0x0379DAF89BA09AA5,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SET_OBJECT_CAN_BLEND_WHEN_FIXED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SET_OBJECT_CAN_BLEND_WHEN_FIXED"/></remarks>
 		[Obsolete]
 		_NETWORK_SET_OBJECT_FORCE_STATIC_BLEND = 0x0379DAF89BA09AA5,
 
@@ -26835,11 +26835,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SET_ENTITY_ONLY_EXISTS_FOR_PARTICIPANTS = 0xF1CA12B18AEF5298, // 0x09CBC4B0
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SET_ENTITY_ONLY_EXISTS_FOR_PARTICIPANTS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SET_ENTITY_ONLY_EXISTS_FOR_PARTICIPANTS"/></remarks>
 		[Obsolete]
 		_NETWORK_SET_ENTITY_VISIBLE_TO_NETWORK = 0xF1CA12B18AEF5298, // 0x09CBC4B0
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SET_ENTITY_ONLY_EXISTS_FOR_PARTICIPANTS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SET_ENTITY_ONLY_EXISTS_FOR_PARTICIPANTS"/></remarks>
 		[Obsolete]
 		_NETWORK_SET_ENTITY_INVISIBLE_TO_NETWORK = 0xF1CA12B18AEF5298, // 0x09CBC4B0
 
@@ -26855,7 +26855,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_NETWORK_ID_VISIBLE_IN_CUTSCENE_HACK = 0x32EBD154CB6B8B99,
 
-		///<remarks>This function has been replaced by <see cref="SET_NETWORK_ID_VISIBLE_IN_CUTSCENE_HACK"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_NETWORK_ID_VISIBLE_IN_CUTSCENE_HACK"/></remarks>
 		[Obsolete]
 		_SET_NETWORK_ID_VISIBLE_IN_CUTSCENE_NO_COLLISION = 0x32EBD154CB6B8B99,
 
@@ -26877,7 +26877,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		ARE_CUTSCENE_ENTITIES_NETWORKED = 0x66D6A5E9C511214A,
 
-		///<remarks>This function has been replaced by <see cref="ARE_CUTSCENE_ENTITIES_NETWORKED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="ARE_CUTSCENE_ENTITIES_NETWORKED"/></remarks>
 		[Obsolete]
 		_NETWORK_ARE_CUTSCENE_ENTITIES = 0x66D6A5E9C511214A,
 
@@ -26893,7 +26893,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		IS_NETWORK_ID_OWNED_BY_PARTICIPANT = 0xA1607996431332DF, // 0xEA5176C0
 
-		///<remarks>This function has been replaced by <see cref="IS_NETWORK_ID_OWNED_BY_PARTICIPANT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_NETWORK_ID_OWNED_BY_PARTICIPANT"/></remarks>
 		[Obsolete]
 		_NETWORK_CAN_NETWORK_ID_BE_SEEN = 0xA1607996431332DF, // 0xEA5176C0
 
@@ -27015,7 +27015,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		IS_DAMAGE_TRACKER_ACTIVE_ON_PLAYER = 0xB2092A1EAA7FD45F,
 
-		///<remarks>This function has been replaced by <see cref="IS_DAMAGE_TRACKER_ACTIVE_ON_PLAYER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_DAMAGE_TRACKER_ACTIVE_ON_PLAYER"/></remarks>
 		[Obsolete]
 		_IS_DAMAGE_TRACKER_ACTIVE_ON_PLAYER = 0xB2092A1EAA7FD45F,
 
@@ -27025,7 +27025,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		ACTIVATE_DAMAGE_TRACKER_ON_PLAYER = 0xBEC0816FF5ACBCDA,
 
-		///<remarks>This function has been replaced by <see cref="ACTIVATE_DAMAGE_TRACKER_ON_PLAYER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="ACTIVATE_DAMAGE_TRACKER_ON_PLAYER"/></remarks>
 		[Obsolete]
 		_ACTIVATE_DAMAGE_TRACKER_ON_PLAYER = 0xBEC0816FF5ACBCDA,
 
@@ -27065,7 +27065,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		RESERVE_LOCAL_NETWORK_MISSION_OBJECTS = 0x797F9C5E661D920E,
 
-		///<remarks>This function has been replaced by <see cref="RESERVE_LOCAL_NETWORK_MISSION_OBJECTS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="RESERVE_LOCAL_NETWORK_MISSION_OBJECTS"/></remarks>
 		[Obsolete]
 		_RESERVE_NETWORK_LOCAL_OBJECTS = 0x797F9C5E661D920E,
 
@@ -27075,7 +27075,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		RESERVE_LOCAL_NETWORK_MISSION_PEDS = 0x2C8DF5D129595281,
 
-		///<remarks>This function has been replaced by <see cref="RESERVE_LOCAL_NETWORK_MISSION_PEDS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="RESERVE_LOCAL_NETWORK_MISSION_PEDS"/></remarks>
 		[Obsolete]
 		_RESERVE_NETWORK_LOCAL_PEDS = 0x2C8DF5D129595281,
 
@@ -27085,7 +27085,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		RESERVE_LOCAL_NETWORK_MISSION_VEHICLES = 0x42613035157E4208,
 
-		///<remarks>This function has been replaced by <see cref="RESERVE_LOCAL_NETWORK_MISSION_VEHICLES"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="RESERVE_LOCAL_NETWORK_MISSION_VEHICLES"/></remarks>
 		[Obsolete]
 		_RESERVE_NETWORK_LOCAL_VEHICLES = 0x42613035157E4208,
 
@@ -27113,7 +27113,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		CAN_REGISTER_MISSION_PICKUPS = 0x0A49D1CB6E34AF72,
 
-		///<remarks>This function has been replaced by <see cref="CAN_REGISTER_MISSION_PICKUPS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CAN_REGISTER_MISSION_PICKUPS"/></remarks>
 		[Obsolete]
 		_CAN_REGISTER_MISSION_PICKUPS = 0x0A49D1CB6E34AF72,
 
@@ -27180,7 +27180,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		GET_RESERVED_MISSION_ENTITIES_IN_AREA = 0xE42D626EEC94E5D9,
 
-		///<remarks>This function has been replaced by <see cref="GET_RESERVED_MISSION_ENTITIES_IN_AREA"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_RESERVED_MISSION_ENTITIES_IN_AREA"/></remarks>
 		[Obsolete]
 		_GET_RESERVATIONS_FOR_SLOT_WORLD_POSITION = 0xE42D626EEC94E5D9,
 
@@ -27202,7 +27202,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SET_OBJECT_SCOPE_DISTANCE = 0xBA7F0B77D80A4EB7,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SET_OBJECT_SCOPE_DISTANCE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SET_OBJECT_SCOPE_DISTANCE"/></remarks>
 		[Obsolete]
 		_NETWORK_SET_OBJECT_INTEREST_RANGE = 0xBA7F0B77D80A4EB7,
 
@@ -27253,7 +27253,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		IS_TIME_LESS_THAN = 0xCB2CF5148012C8D0, // 0x50EF8FC6
 
-		///<remarks>This function has been replaced by <see cref="IS_TIME_LESS_THAN"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_TIME_LESS_THAN"/></remarks>
 		[Obsolete]
 		_SUBTRACT_B_FROM_A_AND_CHECK_IF_NEGATIVE = 0xCB2CF5148012C8D0, // 0x50EF8FC6
 
@@ -27266,7 +27266,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		IS_TIME_MORE_THAN = 0xDE350F8651E4346C, // 0xBBB6DF61
 
-		///<remarks>This function has been replaced by <see cref="IS_TIME_MORE_THAN"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_TIME_MORE_THAN"/></remarks>
 		[Obsolete]
 		_SUBTRACT_A_FROM_B_AND_CHECK_IF_NEGATIVE = 0xDE350F8651E4346C, // 0xBBB6DF61
 
@@ -27279,7 +27279,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		IS_TIME_EQUAL_TO = 0xF5BC95857BD6D512, // 0x8B4D1C06
 
-		///<remarks>This function has been replaced by <see cref="IS_TIME_EQUAL_TO"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_TIME_EQUAL_TO"/></remarks>
 		[Obsolete]
 		_ARE_INTEGERS_EQUAL = 0xF5BC95857BD6D512, // 0x8B4D1C06
 
@@ -27298,7 +27298,7 @@ namespace GTA.Native
 		/// <returns>const char*</returns>
 		GET_TIME_AS_STRING = 0x9E23B1777A927DAD, // 0x8218944E
 
-		///<remarks>This function has been replaced by <see cref="GET_TIME_AS_STRING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_TIME_AS_STRING"/></remarks>
 		[Obsolete]
 		_FORMAT_TIME = 0x9E23B1777A927DAD, // 0x8218944E
 
@@ -27308,7 +27308,7 @@ namespace GTA.Native
 		/// <returns>const char*</returns>
 		GET_CLOUD_TIME_AS_STRING = 0xF12E6CD06C73D69E,
 
-		///<remarks>This function has been replaced by <see cref="GET_CLOUD_TIME_AS_STRING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_CLOUD_TIME_AS_STRING"/></remarks>
 		[Obsolete]
 		_GET_CLOUD_TIME_AS_STRING = 0xF12E6CD06C73D69E,
 
@@ -27342,7 +27342,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		CONVERT_POSIX_TIME = 0xAC97AF97FA68E5D5, // 0xBB7CCE49
 
-		///<remarks>This function has been replaced by <see cref="CONVERT_POSIX_TIME"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CONVERT_POSIX_TIME"/></remarks>
 		[Obsolete]
 		_GET_DATE_AND_TIME_FROM_UNIX_EPOCH = 0xAC97AF97FA68E5D5, // 0xBB7CCE49
 
@@ -27370,7 +27370,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_SET_ANTAGONISTIC_TO_PLAYER = 0x5C707A667DF8B9FA, // 0x64235620
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SET_ANTAGONISTIC_TO_PLAYER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SET_ANTAGONISTIC_TO_PLAYER"/></remarks>
 		[Obsolete]
 		NETWORK_SET_CHOICE_MIGRATE_OPTIONS = 0x5C707A667DF8B9FA, // 0x64235620
 
@@ -27407,7 +27407,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_NETWORK_VEHICLE_AS_GHOST = 0x6274C4712850841E, // 0xEA235081
 
-		///<remarks>This function has been replaced by <see cref="SET_NETWORK_VEHICLE_AS_GHOST"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_NETWORK_VEHICLE_AS_GHOST"/></remarks>
 		[Obsolete]
 		_SET_NETWORK_OBJECT_NON_CONTACT = 0x6274C4712850841E, // 0xEA235081
 
@@ -27420,7 +27420,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_NETWORK_VEHICLE_MAX_POSITION_DELTA_MULTIPLIER = 0xA2A707979FE754DC,
 
-		///<remarks>This function has been replaced by <see cref="SET_NETWORK_VEHICLE_MAX_POSITION_DELTA_MULTIPLIER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_NETWORK_VEHICLE_MAX_POSITION_DELTA_MULTIPLIER"/></remarks>
 		[Obsolete]
 		_SET_NETWORK_VEHICLE_POSITION_UPDATE_MULTIPLIER = 0xA2A707979FE754DC,
 
@@ -27433,7 +27433,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_NETWORK_ENABLE_HIGH_SPEED_EDGE_FALL_DETECTION = 0x838DA0936A24ED4D,
 
-		///<remarks>This function has been replaced by <see cref="SET_NETWORK_ENABLE_HIGH_SPEED_EDGE_FALL_DETECTION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_NETWORK_ENABLE_HIGH_SPEED_EDGE_FALL_DETECTION"/></remarks>
 		[Obsolete]
 		_SET_NETWORK_ENABLE_VEHICLE_POSITION_CORRECTION = 0x838DA0936A24ED4D,
 
@@ -27443,7 +27443,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_LOCAL_PLAYER_AS_GHOST = 0x5FFE9B4144F9712F,
 
-		///<remarks>This function has been replaced by <see cref="SET_LOCAL_PLAYER_AS_GHOST"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_LOCAL_PLAYER_AS_GHOST"/></remarks>
 		[Obsolete]
 		_SET_LOCAL_PLAYER_AS_GHOST = 0x5FFE9B4144F9712F,
 
@@ -27453,11 +27453,11 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		IS_ENTITY_A_GHOST = 0x21D04D7BC538C146,
 
-		///<remarks>This function has been replaced by <see cref="IS_ENTITY_A_GHOST"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_ENTITY_A_GHOST"/></remarks>
 		[Obsolete]
 		_IS_ENTITY_A_GHOST = 0x21D04D7BC538C146,
 
-		///<remarks>This function has been replaced by <see cref="IS_ENTITY_A_GHOST"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_ENTITY_A_GHOST"/></remarks>
 		[Obsolete]
 		_IS_ENTITY_GHOSTED_TO_LOCAL_PLAYER = 0x21D04D7BC538C146,
 
@@ -27476,7 +27476,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_REMOTE_PLAYER_AS_GHOST = 0xA7C511FA1C5BDA38,
 
-		///<remarks>This function has been replaced by <see cref="SET_REMOTE_PLAYER_AS_GHOST"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_REMOTE_PLAYER_AS_GHOST"/></remarks>
 		[Obsolete]
 		_SET_RELATIONSHIP_TO_PLAYER = 0xA7C511FA1C5BDA38,
 
@@ -27489,7 +27489,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_GHOST_ALPHA = 0x658500AE6D723A7E,
 
-		///<remarks>This function has been replaced by <see cref="SET_GHOST_ALPHA"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_GHOST_ALPHA"/></remarks>
 		[Obsolete]
 		_SET_GHOSTED_ENTITY_ALPHA = 0x658500AE6D723A7E,
 
@@ -27499,7 +27499,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		RESET_GHOST_ALPHA = 0x17330EBF2F2124A8,
 
-		///<remarks>This function has been replaced by <see cref="RESET_GHOST_ALPHA"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="RESET_GHOST_ALPHA"/></remarks>
 		[Obsolete]
 		_RESET_GHOSTED_ENTITY_ALPHA = 0x17330EBF2F2124A8,
 
@@ -27509,7 +27509,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_ENTITY_GHOSTED_FOR_GHOST_PLAYERS = 0x4BA166079D658ED4,
 
-		///<remarks>This function has been replaced by <see cref="SET_ENTITY_GHOSTED_FOR_GHOST_PLAYERS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_ENTITY_GHOSTED_FOR_GHOST_PLAYERS"/></remarks>
 		[Obsolete]
 		_NETWORK_SET_ENTITY_GHOSTED_WITH_OWNER = 0x4BA166079D658ED4,
 
@@ -27595,11 +27595,11 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		NETWORK_GET_LOCAL_SCENE_FROM_NETWORK_ID = 0x02C40BF885C567B6, // 0x16AED87B
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_GET_LOCAL_SCENE_FROM_NETWORK_ID"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_GET_LOCAL_SCENE_FROM_NETWORK_ID"/></remarks>
 		[Obsolete]
 		_NETWORK_UNLINK_NETWORKED_SYNCHRONISED_SCENE = 0x02C40BF885C567B6, // 0x16AED87B
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_GET_LOCAL_SCENE_FROM_NETWORK_ID"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_GET_LOCAL_SCENE_FROM_NETWORK_ID"/></remarks>
 		[Obsolete]
 		_NETWORK_CONVERT_SYNCHRONISED_SCENE_TO_SYNCHRONIZED_SCENE = 0x02C40BF885C567B6, // 0x16AED87B
 
@@ -27609,7 +27609,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_FORCE_LOCAL_USE_OF_SYNCED_SCENE_CAMERA = 0xC9B43A33D09CADA7, // 0xC3AA2EC7
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_FORCE_LOCAL_USE_OF_SYNCED_SCENE_CAMERA"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_FORCE_LOCAL_USE_OF_SYNCED_SCENE_CAMERA"/></remarks>
 		[Obsolete]
 		_NETWORK_FORCE_LOCAL_USE_OF_SYNCED_SCENE_CAMERA = 0xC9B43A33D09CADA7, // 0xC3AA2EC7
 
@@ -27708,7 +27708,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NETWORK_ARE_PLAYERS_IN_SAME_TUTORIAL_SESSION = 0x9DE986FC9A87C474, // 0xE66A0B40
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_ARE_PLAYERS_IN_SAME_TUTORIAL_SESSION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_ARE_PLAYERS_IN_SAME_TUTORIAL_SESSION"/></remarks>
 		[Obsolete]
 		_NETWORK_IS_PLAYER_EQUAL_TO_INDEX = 0x9DE986FC9A87C474, // 0xE66A0B40
 
@@ -27736,7 +27736,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_CONCEAL_ENTITY = 0x1632BE0AC1E62876,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_CONCEAL_ENTITY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_CONCEAL_ENTITY"/></remarks>
 		[Obsolete]
 		_NETWORK_CONCEAL_ENTITY = 0x1632BE0AC1E62876,
 
@@ -27749,7 +27749,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NETWORK_IS_ENTITY_CONCEALED = 0x71302EC70689052A,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_IS_ENTITY_CONCEALED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_IS_ENTITY_CONCEALED"/></remarks>
 		[Obsolete]
 		_NETWORK_IS_ENTITY_CONCEALED = 0x71302EC70689052A,
 
@@ -27769,7 +27769,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_OVERRIDE_CLOCK_RATE = 0x42BF1D2E723B6D7E,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_OVERRIDE_CLOCK_RATE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_OVERRIDE_CLOCK_RATE"/></remarks>
 		[Obsolete]
 		_NETWORK_OVERRIDE_CLOCK_MILLISECONDS_PER_GAME_MINUTE = 0x42BF1D2E723B6D7E,
 
@@ -27795,7 +27795,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		NETWORK_ADD_ENTITY_ANGLED_AREA = 0x376C6375BA60293A, // 0xCD69BEA1
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_ADD_ENTITY_ANGLED_AREA"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_ADD_ENTITY_ANGLED_AREA"/></remarks>
 		[Obsolete]
 		_NETWORK_ADD_ENTITY_ANGLED_AREA = 0x376C6375BA60293A, // 0xCD69BEA1
 
@@ -27805,7 +27805,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		NETWORK_ADD_CLIENT_ENTITY_AREA = 0x25B99872D588A101, // 0x4C2C2B12
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_ADD_CLIENT_ENTITY_AREA"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_ADD_CLIENT_ENTITY_AREA"/></remarks>
 		[Obsolete]
 		NETWORK_ADD_ENTITY_DISPLAYED_BOUNDARIES = 0x25B99872D588A101, // 0x4C2C2B12
 
@@ -27845,7 +27845,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_USE_HIGH_PRECISION_BLENDING = 0x2B1813ABA29016C5, // 0x155465EE
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_USE_HIGH_PRECISION_BLENDING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_USE_HIGH_PRECISION_BLENDING"/></remarks>
 		[Obsolete]
 		_NETWORK_SET_NETWORK_ID_DYNAMIC = 0x2B1813ABA29016C5, // 0x155465EE
 
@@ -27864,18 +27864,18 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NETWORK_REQUEST_CLOUD_BACKGROUND_SCRIPTS = 0x924426BFFD82E915, // 0x98EFB921
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_REQUEST_CLOUD_BACKGROUND_SCRIPTS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_REQUEST_CLOUD_BACKGROUND_SCRIPTS"/></remarks>
 		[Obsolete]
 		_NETWORK_REQUEST_CLOUD_BACKGROUND_SCRIPTS = 0x924426BFFD82E915, // 0x98EFB921
 
 		/// <returns>BOOL</returns>
 		NETWORK_IS_CLOUD_BACKGROUND_SCRIPT_REQUEST_PENDING = 0x8132C0EB8B2B3293, // 0x20AB933A
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_IS_CLOUD_BACKGROUND_SCRIPT_REQUEST_PENDING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_IS_CLOUD_BACKGROUND_SCRIPT_REQUEST_PENDING"/></remarks>
 		[Obsolete]
 		_HAS_BG_SCRIPT_BEEN_DOWNLOADED = 0x8132C0EB8B2B3293, // 0x20AB933A
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_IS_CLOUD_BACKGROUND_SCRIPT_REQUEST_PENDING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_IS_CLOUD_BACKGROUND_SCRIPT_REQUEST_PENDING"/></remarks>
 		[Obsolete]
 		_NETWORK_IS_CLOUD_BACKGROUND_SCRIPTS_REQUEST_PENDING = 0x8132C0EB8B2B3293, // 0x20AB933A
 
@@ -27885,7 +27885,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NETWORK_IS_TUNABLE_CLOUD_REQUEST_PENDING = 0x0467C11ED88B7D28, // 0x47978D7F
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_IS_TUNABLE_CLOUD_REQUEST_PENDING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_IS_TUNABLE_CLOUD_REQUEST_PENDING"/></remarks>
 		[Obsolete]
 		_HAS_TUNABLES_BEEN_DOWNLOADED = 0x0467C11ED88B7D28, // 0x47978D7F
 
@@ -27895,7 +27895,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		NETWORK_GET_TUNABLE_CLOUD_CRC = 0x10BD227A753B0D84, // 0x231CFD12
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_GET_TUNABLE_CLOUD_CRC"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_GET_TUNABLE_CLOUD_CRC"/></remarks>
 		[Obsolete]
 		_NETWORK_GET_TUNABLES_VERSION = 0x10BD227A753B0D84, // 0x231CFD12
 
@@ -27929,7 +27929,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NETWORK_DOES_TUNABLE_EXIST_HASH = 0xE4E53E1419D81127, // 0x25915CB9
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_DOES_TUNABLE_EXIST_HASH"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_DOES_TUNABLE_EXIST_HASH"/></remarks>
 		[Obsolete]
 		_NETWORK_DOES_TUNABLE_EXIST_HASH = 0xE4E53E1419D81127, // 0x25915CB9
 
@@ -27942,7 +27942,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NETWORK_ACCESS_TUNABLE_INT_HASH = 0x40FCE03E50E8DBE8, // 0xB2E83B75
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_ACCESS_TUNABLE_INT_HASH"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_ACCESS_TUNABLE_INT_HASH"/></remarks>
 		[Obsolete]
 		_NETWORK_ACCESS_TUNABLE_INT_HASH = 0x40FCE03E50E8DBE8, // 0xB2E83B75
 
@@ -27952,7 +27952,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NETWORK_ACCESS_TUNABLE_INT_MODIFICATION_DETECTION_REGISTRATION_HASH = 0x3A8B55FDA4C8DDEF,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_ACCESS_TUNABLE_INT_MODIFICATION_DETECTION_REGISTRATION_HASH"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_ACCESS_TUNABLE_INT_MODIFICATION_DETECTION_REGISTRATION_HASH"/></remarks>
 		[Obsolete]
 		_NETWORK_REGISTER_TUNABLE_INT_HASH = 0x3A8B55FDA4C8DDEF,
 
@@ -27962,7 +27962,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NETWORK_ACCESS_TUNABLE_FLOAT_HASH = 0x972BC203BBC4C4D5, // 0x3972551F
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_ACCESS_TUNABLE_FLOAT_HASH"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_ACCESS_TUNABLE_FLOAT_HASH"/></remarks>
 		[Obsolete]
 		_NETWORK_ACCESS_TUNABLE_FLOAT_HASH = 0x972BC203BBC4C4D5, // 0x3972551F
 
@@ -27972,7 +27972,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NETWORK_ACCESS_TUNABLE_FLOAT_MODIFICATION_DETECTION_REGISTRATION_HASH = 0x1950DAE9848A4739,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_ACCESS_TUNABLE_FLOAT_MODIFICATION_DETECTION_REGISTRATION_HASH"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_ACCESS_TUNABLE_FLOAT_MODIFICATION_DETECTION_REGISTRATION_HASH"/></remarks>
 		[Obsolete]
 		_NETWORK_REGISTER_TUNABLE_FLOAT_HASH = 0x1950DAE9848A4739,
 
@@ -27982,7 +27982,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NETWORK_ACCESS_TUNABLE_BOOL_HASH = 0xEA16B69D93D71A45, // 0x18867C61
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_ACCESS_TUNABLE_BOOL_HASH"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_ACCESS_TUNABLE_BOOL_HASH"/></remarks>
 		[Obsolete]
 		_NETWORK_ACCESS_TUNABLE_BOOL_HASH = 0xEA16B69D93D71A45, // 0x18867C61
 
@@ -27992,7 +27992,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NETWORK_ACCESS_TUNABLE_BOOL_MODIFICATION_DETECTION_REGISTRATION_HASH = 0x697F508861875B42,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_ACCESS_TUNABLE_BOOL_MODIFICATION_DETECTION_REGISTRATION_HASH"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_ACCESS_TUNABLE_BOOL_MODIFICATION_DETECTION_REGISTRATION_HASH"/></remarks>
 		[Obsolete]
 		_NETWORK_REGISTER_TUNABLE_BOOL_HASH = 0x697F508861875B42,
 
@@ -28005,7 +28005,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NETWORK_TRY_ACCESS_TUNABLE_BOOL_HASH = 0xC7420099936CE286, // 0x8AFE3D90
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_TRY_ACCESS_TUNABLE_BOOL_HASH"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_TRY_ACCESS_TUNABLE_BOOL_HASH"/></remarks>
 		[Obsolete]
 		_NETWORK_ACCESS_TUNABLE_BOOL_HASH_FAIL_VAL = 0xC7420099936CE286, // 0x8AFE3D90
 
@@ -28021,7 +28021,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		NETWORK_GET_CONTENT_MODIFIER_LIST_ID = 0x187382F8A3E0A6C3, // 0xA78571CA
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_GET_CONTENT_MODIFIER_LIST_ID"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_GET_CONTENT_MODIFIER_LIST_ID"/></remarks>
 		[Obsolete]
 		_GET_TUNABLES_CONTENT_MODIFIER_ID = 0x187382F8A3E0A6C3, // 0xA78571CA
 
@@ -28034,7 +28034,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		NETWORK_GET_NUMBER_BODY_TRACKER_HITS = 0xD38C4A6D047C019D, // 0x17CBC608
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_GET_NUMBER_BODY_TRACKER_HITS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_GET_NUMBER_BODY_TRACKER_HITS"/></remarks>
 		[Obsolete]
 		_NETWORK_GET_NUM_BODY_TRACKERS = 0xD38C4A6D047C019D, // 0x17CBC608
 
@@ -28059,7 +28059,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_TRIGGER_DAMAGE_EVENT_FOR_ZERO_DAMAGE = 0x890E2C5ABED7236D,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_TRIGGER_DAMAGE_EVENT_FOR_ZERO_DAMAGE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_TRIGGER_DAMAGE_EVENT_FOR_ZERO_DAMAGE"/></remarks>
 		[Obsolete]
 		_NETWORK_SET_VEHICLE_WHEELS_DESTRUCTIBLE = 0x890E2C5ABED7236D,
 
@@ -28168,7 +28168,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NETWORK_APPLY_CACHED_PLAYER_HEAD_BLEND_DATA = 0x99B72C7ABDE5C910, // 0x99F58A07
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_APPLY_CACHED_PLAYER_HEAD_BLEND_DATA"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_APPLY_CACHED_PLAYER_HEAD_BLEND_DATA"/></remarks>
 		[Obsolete]
 		_NETWORK_COPY_PED_BLEND_DATA = 0x99B72C7ABDE5C910, // 0x99F58A07
 
@@ -28310,7 +28310,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		CLOUD_CHECK_AVAILABILITY = 0x4F18196C8D38768D, // 0xC38E9DB0
 
-		///<remarks>This function has been replaced by <see cref="CLOUD_CHECK_AVAILABILITY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CLOUD_CHECK_AVAILABILITY"/></remarks>
 		[Obsolete]
 		_DOWNLOAD_CHECK = 0x4F18196C8D38768D, // 0xC38E9DB0
 
@@ -28320,7 +28320,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		CLOUD_GET_AVAILABILITY_CHECK_RESULT = 0x0B0CC10720653F3B, // 0x9262744C
 
-		///<remarks>This function has been replaced by <see cref="CLOUD_GET_AVAILABILITY_CHECK_RESULT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CLOUD_GET_AVAILABILITY_CHECK_RESULT"/></remarks>
 		[Obsolete]
 		NETWORK_ENABLE_MOTION_DRUGGED = 0x0B0CC10720653F3B, // 0x9262744C
 
@@ -28348,7 +28348,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		CLEAR_SERVICE_EVENT_ARGUMENTS = 0x966DD84FB6A46017,
 
-		///<remarks>This function has been replaced by <see cref="CLEAR_SERVICE_EVENT_ARGUMENTS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CLEAR_SERVICE_EVENT_ARGUMENTS"/></remarks>
 		[Obsolete]
 		_CLEAR_LAUNCH_PARAMS = 0x966DD84FB6A46017,
 
@@ -28406,7 +28406,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		UGC_QUERY_MOST_RECENTLY_CREATED_CONTENT = 0x6D4CB481FAC835E8, // 0x40CF0783
 
-		///<remarks>This function has been replaced by <see cref="UGC_QUERY_MOST_RECENTLY_CREATED_CONTENT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="UGC_QUERY_MOST_RECENTLY_CREATED_CONTENT"/></remarks>
 		[Obsolete]
 		_UGC_QUERY_RECENTLY_CREATED_CONTENT = 0x6D4CB481FAC835E8, // 0x40CF0783
 
@@ -28446,7 +28446,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		UGC_GET_GET_BY_CONTENT_ID = 0x815E5E3073DA1D67, // 0xE123C7AC
 
-		///<remarks>This function has been replaced by <see cref="UGC_GET_GET_BY_CONTENT_ID"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="UGC_GET_GET_BY_CONTENT_ID"/></remarks>
 		[Obsolete]
 		SET_BALANCE_ADD_MACHINE = 0x815E5E3073DA1D67, // 0xE123C7AC
 
@@ -28456,7 +28456,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		UGC_GET_GET_BY_CONTENT_IDS = 0xB8322EEB38BE7C26, // 0x22C33603
 
-		///<remarks>This function has been replaced by <see cref="UGC_GET_GET_BY_CONTENT_IDS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="UGC_GET_GET_BY_CONTENT_IDS"/></remarks>
 		[Obsolete]
 		SET_BALANCE_ADD_MACHINES = 0xB8322EEB38BE7C26, // 0x22C33603
 
@@ -28514,11 +28514,11 @@ namespace GTA.Native
 		/// <returns>const char*</returns>
 		UGC_GET_CONTENT_USER_ID = 0xCD67AD041A394C9C, // 0x8F3137E6
 
-		///<remarks>This function has been replaced by <see cref="UGC_GET_CONTENT_USER_ID"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="UGC_GET_CONTENT_USER_ID"/></remarks>
 		[Obsolete]
 		_GET_CONTENT_USER_ID = 0xCD67AD041A394C9C, // 0x8F3137E6
 
-		///<remarks>This function has been replaced by <see cref="UGC_GET_CONTENT_USER_ID"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="UGC_GET_CONTENT_USER_ID"/></remarks>
 		[Obsolete]
 		GET_PLAYER_ADVANCED_MODIFIER_PRIVILEGES = 0xCD67AD041A394C9C, // 0x8F3137E6
 
@@ -28552,7 +28552,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		UGC_GET_CONTENT_CATEGORY = 0xA7BAB11E7C9C6C5A, // 0x5E8A7559
 
-		///<remarks>This function has been replaced by <see cref="UGC_GET_CONTENT_CATEGORY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="UGC_GET_CONTENT_CATEGORY"/></remarks>
 		[Obsolete]
 		_GET_CONTENT_CATEGORY = 0xA7BAB11E7C9C6C5A, // 0x5E8A7559
 
@@ -28565,7 +28565,7 @@ namespace GTA.Native
 		/// <returns>const char*</returns>
 		UGC_GET_CONTENT_ID = 0x55AA95F481D694D2, // 0x331AEABF
 
-		///<remarks>This function has been replaced by <see cref="UGC_GET_CONTENT_ID"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="UGC_GET_CONTENT_ID"/></remarks>
 		[Obsolete]
 		_GET_CONTENT_ID = 0x55AA95F481D694D2, // 0x331AEABF
 
@@ -28578,7 +28578,7 @@ namespace GTA.Native
 		/// <returns>const char*</returns>
 		UGC_GET_ROOT_CONTENT_ID = 0xC0173D6BFF4E0348, // 0x0E5E8E5C
 
-		///<remarks>This function has been replaced by <see cref="UGC_GET_ROOT_CONTENT_ID"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="UGC_GET_ROOT_CONTENT_ID"/></remarks>
 		[Obsolete]
 		_GET_ROOT_CONTENT_ID = 0xC0173D6BFF4E0348, // 0x0E5E8E5C
 
@@ -28594,7 +28594,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		UGC_GET_CONTENT_DESCRIPTION_HASH = 0x7CF0448787B23758, // 0x91534C6E
 
-		///<remarks>This function has been replaced by <see cref="UGC_GET_CONTENT_DESCRIPTION_HASH"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="UGC_GET_CONTENT_DESCRIPTION_HASH"/></remarks>
 		[Obsolete]
 		_GET_CONTENT_DESCRIPTION_HASH = 0x7CF0448787B23758, // 0x91534C6E
 
@@ -28604,7 +28604,7 @@ namespace GTA.Native
 		/// <returns>const char*</returns>
 		UGC_GET_CONTENT_PATH = 0xBAF6BABF9E7CCC13, // 0x744A9EA5
 
-		///<remarks>This function has been replaced by <see cref="UGC_GET_CONTENT_PATH"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="UGC_GET_CONTENT_PATH"/></remarks>
 		[Obsolete]
 		_UGC_GET_CLOUD_PATH = 0xBAF6BABF9E7CCC13, // 0x744A9EA5
 
@@ -28620,7 +28620,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		UGC_GET_CONTENT_FILE_VERSION = 0x37025B27D9B658B1, // 0xFF7D44E6
 
-		///<remarks>This function has been replaced by <see cref="UGC_GET_CONTENT_FILE_VERSION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="UGC_GET_CONTENT_FILE_VERSION"/></remarks>
 		[Obsolete]
 		_GET_CONTENT_FILE_VERSION = 0x37025B27D9B658B1, // 0xFF7D44E6
 
@@ -28795,7 +28795,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		UGC_LOAD_OFFLINE_QUERY = 0x5CAE833B0EE0C500, // 0x0D4F845D
 
-		///<remarks>This function has been replaced by <see cref="UGC_LOAD_OFFLINE_QUERY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="UGC_LOAD_OFFLINE_QUERY"/></remarks>
 		[Obsolete]
 		UGC_POLICIES_MAKE_PRIVATE = 0x5CAE833B0EE0C500, // 0x0D4F845D
 
@@ -28826,14 +28826,14 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		FACEBOOK_POST_COMPLETED_HEIST = 0x098AB65B9ED9A9EC, // 0x30B51753
 
-		///<remarks>This function has been replaced by <see cref="FACEBOOK_POST_COMPLETED_HEIST"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="FACEBOOK_POST_COMPLETED_HEIST"/></remarks>
 		[Obsolete]
 		_FACEBOOK_SET_HEIST_COMPLETE = 0x098AB65B9ED9A9EC, // 0x30B51753
 
 		/// <returns>BOOL</returns>
 		FACEBOOK_POST_CREATE_CHARACTER = 0xDC48473142545431, // 0x02DAD93F
 
-		///<remarks>This function has been replaced by <see cref="FACEBOOK_POST_CREATE_CHARACTER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="FACEBOOK_POST_CREATE_CHARACTER"/></remarks>
 		[Obsolete]
 		_FACEBOOK_SET_CREATE_CHARACTER_COMPLETE = 0xDC48473142545431, // 0x02DAD93F
 
@@ -28843,28 +28843,28 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		FACEBOOK_POST_COMPLETED_MILESTONE = 0x0AE1F1653B554AB9, // 0x2D947814
 
-		///<remarks>This function has been replaced by <see cref="FACEBOOK_POST_COMPLETED_MILESTONE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="FACEBOOK_POST_COMPLETED_MILESTONE"/></remarks>
 		[Obsolete]
 		_FACEBOOK_SET_MILESTONE_COMPLETE = 0x0AE1F1653B554AB9, // 0x2D947814
 
 		/// <returns>BOOL</returns>
 		FACEBOOK_HAS_POST_COMPLETED = 0x62B9FEC9A11F10EF, // 0x37A28C26
 
-		///<remarks>This function has been replaced by <see cref="FACEBOOK_HAS_POST_COMPLETED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="FACEBOOK_HAS_POST_COMPLETED"/></remarks>
 		[Obsolete]
 		_FACEBOOK_IS_SENDING_DATA = 0x62B9FEC9A11F10EF, // 0x37A28C26
 
 		/// <returns>BOOL</returns>
 		FACEBOOK_DID_POST_SUCCEED = 0xA75E2B6733DA5142, // 0x11E8B5CD
 
-		///<remarks>This function has been replaced by <see cref="FACEBOOK_DID_POST_SUCCEED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="FACEBOOK_DID_POST_SUCCEED"/></remarks>
 		[Obsolete]
 		_FACEBOOK_DO_UNK_CHECK = 0xA75E2B6733DA5142, // 0x11E8B5CD
 
 		/// <returns>BOOL</returns>
 		FACEBOOK_CAN_POST_TO_FACEBOOK = 0x43865688AE10F0D7, // 0x429AEAB3
 
-		///<remarks>This function has been replaced by <see cref="FACEBOOK_CAN_POST_TO_FACEBOOK"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="FACEBOOK_CAN_POST_TO_FACEBOOK"/></remarks>
 		[Obsolete]
 		_FACEBOOK_IS_AVAILABLE = 0x43865688AE10F0D7, // 0x429AEAB3
 
@@ -28915,7 +28915,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		GET_STATUS_OF_TEXTURE_DOWNLOAD = 0x8BD6C6DEA20E82C6, // 0x03225BA3
 
-		///<remarks>This function has been replaced by <see cref="GET_STATUS_OF_TEXTURE_DOWNLOAD"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_STATUS_OF_TEXTURE_DOWNLOAD"/></remarks>
 		[Obsolete]
 		_GET_STATUS_OF_TEXTURE_DOWNLOAD = 0x8BD6C6DEA20E82C6, // 0x03225BA3
 
@@ -28931,7 +28931,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NETWORK_SHOULD_SHOW_STRICT_NAT_WARNING = 0x82A2B386716608F1,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SHOULD_SHOW_STRICT_NAT_WARNING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SHOULD_SHOW_STRICT_NAT_WARNING"/></remarks>
 		[Obsolete]
 		_NETWORK_SHOULD_SHOW_CONNECTIVITY_TROUBLESHOOTING = 0x82A2B386716608F1,
 
@@ -28941,58 +28941,58 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NETWORK_HAVE_SCS_PRIVATE_MSG_PRIV = 0x66B59CFFD78467AF, // 0x0CA1167F
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_HAVE_SCS_PRIVATE_MSG_PRIV"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_HAVE_SCS_PRIVATE_MSG_PRIV"/></remarks>
 		[Obsolete]
 		_NETWORK_GET_ROS_PRIVILEGE_9 = 0x66B59CFFD78467AF, // 0x0CA1167F
 
 		/// <returns>BOOL</returns>
 		NETWORK_HAVE_ROS_SOCIAL_CLUB_PRIV = 0x606E4D3E3CCCF3EB, // 0x424C6E27
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_HAVE_ROS_SOCIAL_CLUB_PRIV"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_HAVE_ROS_SOCIAL_CLUB_PRIV"/></remarks>
 		[Obsolete]
 		_NETWORK_GET_ROS_PRIVILEGE_10 = 0x606E4D3E3CCCF3EB, // 0x424C6E27
 
 		/// <returns>BOOL</returns>
 		NETWORK_HAVE_ROS_BANNED_PRIV = 0x8020A73847E0CA7D, // 0xD3BBE42F
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_HAVE_ROS_BANNED_PRIV"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_HAVE_ROS_BANNED_PRIV"/></remarks>
 		[Obsolete]
 		_IS_ROCKSTAR_BANNED = 0x8020A73847E0CA7D, // 0xD3BBE42F
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_HAVE_ROS_BANNED_PRIV"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_HAVE_ROS_BANNED_PRIV"/></remarks>
 		[Obsolete]
 		_NETWORK_HAS_PLAYER_BEEN_BANNED = 0x8020A73847E0CA7D, // 0xD3BBE42F
 
 		/// <returns>BOOL</returns>
 		NETWORK_HAVE_ROS_CREATE_TICKET_PRIV = 0xA0AD7E2AF5349F61, // 0xBDBB5948
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_HAVE_ROS_CREATE_TICKET_PRIV"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_HAVE_ROS_CREATE_TICKET_PRIV"/></remarks>
 		[Obsolete]
 		_IS_SOCIALCLUB_BANNED = 0xA0AD7E2AF5349F61, // 0xBDBB5948
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_HAVE_ROS_CREATE_TICKET_PRIV"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_HAVE_ROS_CREATE_TICKET_PRIV"/></remarks>
 		[Obsolete]
 		_NETWORK_HAVE_SOCIAL_CLUB_PRIVILEGE = 0xA0AD7E2AF5349F61, // 0xBDBB5948
 
 		/// <returns>BOOL</returns>
 		NETWORK_HAVE_ROS_MULTIPLAYER_PRIV = 0x5F91D5D0B36AA310, // 0x97287D68
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_HAVE_ROS_MULTIPLAYER_PRIV"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_HAVE_ROS_MULTIPLAYER_PRIV"/></remarks>
 		[Obsolete]
 		_IS_PLAYER_BANNED = 0x5F91D5D0B36AA310, // 0x97287D68
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_HAVE_ROS_MULTIPLAYER_PRIV"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_HAVE_ROS_MULTIPLAYER_PRIV"/></remarks>
 		[Obsolete]
 		_CAN_PLAY_ONLINE = 0x5F91D5D0B36AA310, // 0x97287D68
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_HAVE_ROS_MULTIPLAYER_PRIV"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_HAVE_ROS_MULTIPLAYER_PRIV"/></remarks>
 		[Obsolete]
 		_NETWORK_GET_ROS_PRIVILEGE_3 = 0x5F91D5D0B36AA310, // 0x97287D68
 
 		/// <returns>BOOL</returns>
 		NETWORK_HAVE_ROS_LEADERBOARD_WRITE_PRIV = 0x422D396F80A96547, // 0xC6EA802E
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_HAVE_ROS_LEADERBOARD_WRITE_PRIV"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_HAVE_ROS_LEADERBOARD_WRITE_PRIV"/></remarks>
 		[Obsolete]
 		_NETWORK_GET_ROS_PRIVILEGE_4 = 0x422D396F80A96547, // 0xC6EA802E
 
@@ -29011,21 +29011,21 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NETWORK_HAS_ROS_PRIVILEGE_END_DATE = 0xC22912B1D85F26B1, // 0x8570DD34
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_HAS_ROS_PRIVILEGE_END_DATE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_HAS_ROS_PRIVILEGE_END_DATE"/></remarks>
 		[Obsolete]
 		_NETWORK_GET_BAN_DATA = 0xC22912B1D85F26B1, // 0x8570DD34
 
 		/// <returns>BOOL</returns>
 		NETWORK_HAS_ROS_PRIVILEGE_PLAYED_LAST_GEN = 0x593570C289A77688,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_HAS_ROS_PRIVILEGE_PLAYED_LAST_GEN"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_HAS_ROS_PRIVILEGE_PLAYED_LAST_GEN"/></remarks>
 		[Obsolete]
 		_NETWORK_GET_ROS_PRIVILEGE_24 = 0x593570C289A77688,
 
 		/// <returns>BOOL</returns>
 		NETWORK_HAS_ROS_PRIVILEGE_SPECIAL_EDITION_CONTENT = 0x91B87C55093DE351,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_HAS_ROS_PRIVILEGE_SPECIAL_EDITION_CONTENT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_HAS_ROS_PRIVILEGE_SPECIAL_EDITION_CONTENT"/></remarks>
 		[Obsolete]
 		_NETWORK_GET_ROS_PRIVILEGE_25 = 0x91B87C55093DE351,
 
@@ -29057,7 +29057,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NETWORK_SKIP_RADIO_WARNING = 0x659CF2EF7F550C4F,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_SKIP_RADIO_WARNING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_SKIP_RADIO_WARNING"/></remarks>
 		[Obsolete]
 		_NETWORK_HAS_GAME_BEEN_ALTERED = 0x659CF2EF7F550C4F,
 
@@ -29067,7 +29067,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_FORCE_LOCAL_PLAYER_SCAR_SYNC = 0xB7C7F6AD6424304B, // 0x371BBA08
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_FORCE_LOCAL_PLAYER_SCAR_SYNC"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_FORCE_LOCAL_PLAYER_SCAR_SYNC"/></remarks>
 		[Obsolete]
 		_NETWORK_UPDATE_PLAYER_SCARS = 0xB7C7F6AD6424304B, // 0x371BBA08
 
@@ -29083,7 +29083,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_ALLOW_REMOTE_ATTACHMENT_MODIFICATION = 0x267C78C60E806B9A, // 0xBB2D33D3
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_ALLOW_REMOTE_ATTACHMENT_MODIFICATION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_ALLOW_REMOTE_ATTACHMENT_MODIFICATION"/></remarks>
 		[Obsolete]
 		_NETWORK_ALLOW_LOCAL_ENTITY_ATTACHMENT = 0x267C78C60E806B9A, // 0xBB2D33D3
 
@@ -29117,7 +29117,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		NETWORK_IS_CONNECTED_VIA_RELAY = 0x16D3D49902F697BB,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_IS_CONNECTED_VIA_RELAY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_IS_CONNECTED_VIA_RELAY"/></remarks>
 		[Obsolete]
 		_NETWORK_IS_CONNECTION_ENDPOINT_RELAY_SERVER = 0x16D3D49902F697BB,
 
@@ -29127,7 +29127,7 @@ namespace GTA.Native
 		/// <returns>float</returns>
 		NETWORK_GET_AVERAGE_LATENCY = 0xD414BE129BB81B32,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_GET_AVERAGE_LATENCY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_GET_AVERAGE_LATENCY"/></remarks>
 		[Obsolete]
 		_NETWORK_GET_AVERAGE_LATENCY_FOR_PLAYER = 0xD414BE129BB81B32,
 
@@ -29140,7 +29140,7 @@ namespace GTA.Native
 		/// <returns>float</returns>
 		NETWORK_GET_AVERAGE_PING = 0x0E3A041ED6AC2B45,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_GET_AVERAGE_PING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_GET_AVERAGE_PING"/></remarks>
 		[Obsolete]
 		_NETWORK_GET_AVERAGE_LATENCY_FOR_PLAYER_2 = 0x0E3A041ED6AC2B45,
 
@@ -29150,7 +29150,7 @@ namespace GTA.Native
 		/// <returns>float</returns>
 		NETWORK_GET_AVERAGE_PACKET_LOSS = 0x350C23949E43686C,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_GET_AVERAGE_PACKET_LOSS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_GET_AVERAGE_PACKET_LOSS"/></remarks>
 		[Obsolete]
 		_NETWORK_GET_AVERAGE_PACKET_LOSS_FOR_PLAYER = 0x350C23949E43686C,
 
@@ -29160,7 +29160,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		NETWORK_GET_NUM_UNACKED_RELIABLES = 0xFF8FCF9FFC458A1C,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_GET_NUM_UNACKED_RELIABLES"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_GET_NUM_UNACKED_RELIABLES"/></remarks>
 		[Obsolete]
 		_NETWORK_GET_NUM_UNACKED_FOR_PLAYER = 0xFF8FCF9FFC458A1C,
 
@@ -29170,7 +29170,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		NETWORK_GET_UNRELIABLE_RESEND_COUNT = 0x3765C3A3E8192E10,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_GET_UNRELIABLE_RESEND_COUNT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_GET_UNRELIABLE_RESEND_COUNT"/></remarks>
 		[Obsolete]
 		_NETWORK_GET_UNRELIABLE_RESEND_COUNT_FOR_PLAYER = 0x3765C3A3E8192E10,
 
@@ -29180,14 +29180,14 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		NETWORK_GET_HIGHEST_RELIABLE_RESEND_COUNT = 0x52C1EADAF7B10302,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_GET_HIGHEST_RELIABLE_RESEND_COUNT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_GET_HIGHEST_RELIABLE_RESEND_COUNT"/></remarks>
 		[Obsolete]
 		_NETWORK_GET_OLDEST_RESEND_COUNT_FOR_PLAYER = 0x52C1EADAF7B10302,
 
 		/// <returns>void</returns>
 		NETWORK_REPORT_CODE_TAMPER = 0x5626D9D6810730D5,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_REPORT_CODE_TAMPER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_REPORT_CODE_TAMPER"/></remarks>
 		[Obsolete]
 		_NETWORK_REPORT_MYSELF = 0x5626D9D6810730D5,
 
@@ -29207,7 +29207,7 @@ namespace GTA.Native
 		/// <returns>Vector3</returns>
 		NETWORK_GET_LAST_PLAYER_POS_RECEIVED_OVER_NETWORK = 0x125E6D638B8605D4,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_GET_LAST_PLAYER_POS_RECEIVED_OVER_NETWORK"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_GET_LAST_PLAYER_POS_RECEIVED_OVER_NETWORK"/></remarks>
 		[Obsolete]
 		_NETWORK_GET_PLAYER_COORDS = 0x125E6D638B8605D4,
 
@@ -29220,7 +29220,7 @@ namespace GTA.Native
 		/// <returns>Vector3</returns>
 		NETWORK_GET_LAST_VEL_RECEIVED_OVER_NETWORK = 0x33DE49EDF4DDE77A,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_GET_LAST_VEL_RECEIVED_OVER_NETWORK"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_GET_LAST_VEL_RECEIVED_OVER_NETWORK"/></remarks>
 		[Obsolete]
 		_NETWORK_GET_LAST_VELOCITY_RECEIVED = 0x33DE49EDF4DDE77A,
 
@@ -29266,7 +29266,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_UGC_NAV = 0xC1447451DDB512F0,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_UGC_NAV"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_UGC_NAV"/></remarks>
 		[Obsolete]
 		_NETWORK_UGC_NAV = 0xC1447451DDB512F0,
 
@@ -29313,7 +29313,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		PLACE_OBJECT_ON_GROUND_OR_OBJECT_PROPERLY = 0xD76EEEF746057FD6,
 
-		///<remarks>This function has been replaced by <see cref="PLACE_OBJECT_ON_GROUND_OR_OBJECT_PROPERLY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLACE_OBJECT_ON_GROUND_OR_OBJECT_PROPERLY"/></remarks>
 		[Obsolete]
 		_PLACE_OBJECT_ON_GROUND_PROPERLY_2 = 0xD76EEEF746057FD6,
 
@@ -29350,7 +29350,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_OBJECT_FORCE_VEHICLES_TO_AVOID = 0x77F33F2CCF64B3AA, // 0x483C5C88
 
-		///<remarks>This function has been replaced by <see cref="SET_OBJECT_FORCE_VEHICLES_TO_AVOID"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_OBJECT_FORCE_VEHICLES_TO_AVOID"/></remarks>
 		[Obsolete]
 		_SET_OBJECT_SOMETHING = 0x77F33F2CCF64B3AA, // 0x483C5C88
 
@@ -29394,7 +29394,7 @@ namespace GTA.Native
 		/// <returns>Vector3</returns>
 		GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS = 0x163E252DE035A133, // 0x87A42A12
 
-		///<remarks>This function has been replaced by <see cref="GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS"/></remarks>
 		[Obsolete]
 		_GET_OBJECT_OFFSET_FROM_COORDS = 0x163E252DE035A133, // 0x87A42A12
 
@@ -29447,7 +29447,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_LOCKED_UNSTREAMED_IN_DOOR_OF_TYPE = 0x9B12F9A24FABEDB0, // 0x4E0A260B
 
-		///<remarks>This function has been replaced by <see cref="SET_LOCKED_UNSTREAMED_IN_DOOR_OF_TYPE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_LOCKED_UNSTREAMED_IN_DOOR_OF_TYPE"/></remarks>
 		[Obsolete]
 		_DOOR_CONTROL = 0x9B12F9A24FABEDB0, // 0x4E0A260B
 
@@ -29500,7 +29500,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		DOOR_SYSTEM_SET_DOOR_STATE = 0x6BAB9442830C7F53, // 0xDF83DB47
 
-		///<remarks>This function has been replaced by <see cref="DOOR_SYSTEM_SET_DOOR_STATE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DOOR_SYSTEM_SET_DOOR_STATE"/></remarks>
 		[Obsolete]
 		_SET_DOOR_ACCELERATION_LIMIT = 0x6BAB9442830C7F53, // 0xDF83DB47
 
@@ -29546,7 +29546,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		DOOR_SYSTEM_SET_OPEN_RATIO = 0xB6E6FBA95C7324AC, // 0x34883DE3
 
-		///<remarks>This function has been replaced by <see cref="DOOR_SYSTEM_SET_OPEN_RATIO"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DOOR_SYSTEM_SET_OPEN_RATIO"/></remarks>
 		[Obsolete]
 		_SET_DOOR_AJAR_ANGLE = 0xB6E6FBA95C7324AC, // 0x34883DE3
 
@@ -29556,7 +29556,7 @@ namespace GTA.Native
 		/// <returns>float</returns>
 		DOOR_SYSTEM_GET_AUTOMATIC_DISTANCE = 0xE851471AEFC3374F,
 
-		///<remarks>This function has been replaced by <see cref="DOOR_SYSTEM_GET_AUTOMATIC_DISTANCE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DOOR_SYSTEM_GET_AUTOMATIC_DISTANCE"/></remarks>
 		[Obsolete]
 		_DOOR_SYSTEM_GET_AUTOMATIC_DISTANCE = 0xE851471AEFC3374F,
 
@@ -29606,7 +29606,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		IS_DOOR_REGISTERED_WITH_SYSTEM = 0xC153C43EA202C8C1, // 0x5AFCD8A1
 
-		///<remarks>This function has been replaced by <see cref="IS_DOOR_REGISTERED_WITH_SYSTEM"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_DOOR_REGISTERED_WITH_SYSTEM"/></remarks>
 		[Obsolete]
 		_DOES_DOOR_EXIST = 0xC153C43EA202C8C1, // 0x5AFCD8A1
 
@@ -29698,7 +29698,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		CLEAR_GARAGE = 0xDA05194260CDCDF9,
 
-		///<remarks>This function has been replaced by <see cref="CLEAR_GARAGE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CLEAR_GARAGE"/></remarks>
 		[Obsolete]
 		_CLEAR_GARAGE_AREA = 0xDA05194260CDCDF9,
 
@@ -29759,7 +29759,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_OBJECT_ALLOW_LOW_LOD_BUOYANCY = 0x4D89D607CB3DD1D2, // 0x19B17769
 
-		///<remarks>This function has been replaced by <see cref="SET_OBJECT_ALLOW_LOW_LOD_BUOYANCY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_OBJECT_ALLOW_LOW_LOD_BUOYANCY"/></remarks>
 		[Obsolete]
 		_SET_OBJECT_CAN_CLIMB_ON = 0x4D89D607CB3DD1D2, // 0x19B17769
 
@@ -29855,7 +29855,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		ALLOW_DAMAGE_EVENTS_FOR_NON_NETWORKED_OBJECTS = 0xABDABF4E1EDECBFA,
 
-		///<remarks>This function has been replaced by <see cref="ALLOW_DAMAGE_EVENTS_FOR_NON_NETWORKED_OBJECTS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="ALLOW_DAMAGE_EVENTS_FOR_NON_NETWORKED_OBJECTS"/></remarks>
 		[Obsolete]
 		_SET_UNK_GLOBAL_BOOL_RELATED_TO_DAMAGE = 0xABDABF4E1EDECBFA,
 
@@ -29868,7 +29868,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_CUTSCENES_WEAPON_FLASHLIGHT_ON_THIS_FRAME = 0xBCE595371A5FBAAF, // 0x3A68AA46
 
-		///<remarks>This function has been replaced by <see cref="SET_CUTSCENES_WEAPON_FLASHLIGHT_ON_THIS_FRAME"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_CUTSCENES_WEAPON_FLASHLIGHT_ON_THIS_FRAME"/></remarks>
 		[Obsolete]
 		_SET_CREATE_WEAPON_OBJECT_LIGHT_SOURCE = 0xBCE595371A5FBAAF, // 0x3A68AA46
 
@@ -29882,7 +29882,7 @@ namespace GTA.Native
 		/// <returns>Object</returns>
 		GET_RAYFIRE_MAP_OBJECT = 0xB48FCED898292E52, // 0xA286DE96
 
-		///<remarks>This function has been replaced by <see cref="GET_RAYFIRE_MAP_OBJECT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_RAYFIRE_MAP_OBJECT"/></remarks>
 		[Obsolete]
 		_GET_DES_OBJECT = 0xB48FCED898292E52, // 0xA286DE96
 
@@ -29900,7 +29900,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_STATE_OF_RAYFIRE_MAP_OBJECT = 0x5C29F698D404C5E1, // 0x21F51560
 
-		///<remarks>This function has been replaced by <see cref="SET_STATE_OF_RAYFIRE_MAP_OBJECT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_STATE_OF_RAYFIRE_MAP_OBJECT"/></remarks>
 		[Obsolete]
 		_SET_DES_OBJECT_STATE = 0x5C29F698D404C5E1, // 0x21F51560
 
@@ -29916,7 +29916,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		GET_STATE_OF_RAYFIRE_MAP_OBJECT = 0x899BA936634A322E, // 0xF1B8817A
 
-		///<remarks>This function has been replaced by <see cref="GET_STATE_OF_RAYFIRE_MAP_OBJECT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_STATE_OF_RAYFIRE_MAP_OBJECT"/></remarks>
 		[Obsolete]
 		_GET_DES_OBJECT_STATE = 0x899BA936634A322E, // 0xF1B8817A
 
@@ -29929,7 +29929,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		DOES_RAYFIRE_MAP_OBJECT_EXIST = 0x52AF537A0C5B8AAD, // 0xE08C834D
 
-		///<remarks>This function has been replaced by <see cref="DOES_RAYFIRE_MAP_OBJECT_EXIST"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DOES_RAYFIRE_MAP_OBJECT_EXIST"/></remarks>
 		[Obsolete]
 		_DOES_DES_OBJECT_EXIST = 0x52AF537A0C5B8AAD, // 0xE08C834D
 
@@ -29943,7 +29943,7 @@ namespace GTA.Native
 		/// <returns>float</returns>
 		GET_RAYFIRE_MAP_OBJECT_ANIM_PHASE = 0x260EE4FDBDF4DB01, // 0x020497DE
 
-		///<remarks>This function has been replaced by <see cref="GET_RAYFIRE_MAP_OBJECT_ANIM_PHASE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_RAYFIRE_MAP_OBJECT_ANIM_PHASE"/></remarks>
 		[Obsolete]
 		_GET_DES_OBJECT_ANIM_PROGRESS = 0x260EE4FDBDF4DB01, // 0x020497DE
 
@@ -29992,7 +29992,7 @@ namespace GTA.Native
 		/// <returns>Object</returns>
 		CREATE_NON_NETWORKED_AMBIENT_PICKUP = 0x9C93764223E29C50,
 
-		///<remarks>This function has been replaced by <see cref="CREATE_NON_NETWORKED_AMBIENT_PICKUP"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CREATE_NON_NETWORKED_AMBIENT_PICKUP"/></remarks>
 		[Obsolete]
 		_CREATE_NON_NETWORKED_AMBIENT_PICKUP = 0x9C93764223E29C50,
 
@@ -30020,7 +30020,7 @@ namespace GTA.Native
 		/// <returns>Object</returns>
 		CREATE_NON_NETWORKED_PORTABLE_PICKUP = 0x125494B98A21AAF7, // 0x56A02502
 
-		///<remarks>This function has been replaced by <see cref="CREATE_NON_NETWORKED_PORTABLE_PICKUP"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CREATE_NON_NETWORKED_PORTABLE_PICKUP"/></remarks>
 		[Obsolete]
 		_CREATE_PORTABLE_PICKUP_2 = 0x125494B98A21AAF7, // 0x56A02502
 
@@ -30048,7 +30048,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		HIDE_PORTABLE_PICKUP_WHEN_DETACHED = 0x867458251D47CCB2, // 0x1F63B042
 
-		///<remarks>This function has been replaced by <see cref="HIDE_PORTABLE_PICKUP_WHEN_DETACHED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="HIDE_PORTABLE_PICKUP_WHEN_DETACHED"/></remarks>
 		[Obsolete]
 		_HIDE_PICKUP = 0x867458251D47CCB2, // 0x1F63B042
 
@@ -30178,7 +30178,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		DOES_PICKUP_OF_TYPE_EXIST_IN_AREA = 0xF9C36251F6E48E33, // 0xF139681B
 
-		///<remarks>This function has been replaced by <see cref="DOES_PICKUP_OF_TYPE_EXIST_IN_AREA"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DOES_PICKUP_OF_TYPE_EXIST_IN_AREA"/></remarks>
 		[Obsolete]
 		_IS_PICKUP_WITHIN_RADIUS = 0xF9C36251F6E48E33, // 0xF139681B
 
@@ -30210,7 +30210,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_PLAYER_PERMITTED_TO_COLLECT_PICKUPS_OF_TYPE = 0x616093EC6B139DD9, // 0x7FADB4B9
 
-		///<remarks>This function has been replaced by <see cref="SET_PLAYER_PERMITTED_TO_COLLECT_PICKUPS_OF_TYPE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_PLAYER_PERMITTED_TO_COLLECT_PICKUPS_OF_TYPE"/></remarks>
 		[Obsolete]
 		_TOGGLE_USE_PICKUPS_FOR_PLAYER = 0x616093EC6B139DD9, // 0x7FADB4B9
 
@@ -30223,7 +30223,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_LOCAL_PLAYER_PERMITTED_TO_COLLECT_PICKUPS_WITH_MODEL = 0x88EAEC617CD26926, // 0x3A8F1BF7
 
-		///<remarks>This function has been replaced by <see cref="SET_LOCAL_PLAYER_PERMITTED_TO_COLLECT_PICKUPS_WITH_MODEL"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_LOCAL_PLAYER_PERMITTED_TO_COLLECT_PICKUPS_WITH_MODEL"/></remarks>
 		[Obsolete]
 		_SET_LOCAL_PLAYER_CAN_USE_PICKUPS_WITH_THIS_MODEL = 0x88EAEC617CD26926, // 0x3A8F1BF7
 
@@ -30305,7 +30305,7 @@ namespace GTA.Native
 		/// <returns>float</returns>
 		GET_PICKUP_GENERATION_RANGE_MULTIPLIER = 0xB3ECA65C7317F174,
 
-		///<remarks>This function has been replaced by <see cref="GET_PICKUP_GENERATION_RANGE_MULTIPLIER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_PICKUP_GENERATION_RANGE_MULTIPLIER"/></remarks>
 		[Obsolete]
 		_GET_PICKUP_GENERATION_RANGE_MULTIPLIER = 0xB3ECA65C7317F174,
 
@@ -30422,7 +30422,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		RENDER_FAKE_PICKUP_GLOW = 0x3430676B11CDF21D, // 0x63B02FAD
 
-		///<remarks>This function has been replaced by <see cref="RENDER_FAKE_PICKUP_GLOW"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="RENDER_FAKE_PICKUP_GLOW"/></remarks>
 		[Obsolete]
 		_HIGHLIGHT_PLACEMENT_COORDS = 0x3430676B11CDF21D, // 0x63B02FAD
 
@@ -30462,7 +30462,7 @@ namespace GTA.Native
 		/// <returns>Hash</returns>
 		GET_WEAPON_TYPE_FROM_PICKUP_TYPE = 0x08F96CA6C551AD51, // 0xEDD01937
 
-		///<remarks>This function has been replaced by <see cref="GET_WEAPON_TYPE_FROM_PICKUP_TYPE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_WEAPON_TYPE_FROM_PICKUP_TYPE"/></remarks>
 		[Obsolete]
 		_GET_WEAPON_HASH_FROM_PICKUP = 0x08F96CA6C551AD51, // 0xEDD01937
 
@@ -30475,7 +30475,7 @@ namespace GTA.Native
 		/// <returns>Hash</returns>
 		GET_PICKUP_TYPE_FROM_WEAPON_HASH = 0xD6429A016084F1A5,
 
-		///<remarks>This function has been replaced by <see cref="GET_PICKUP_TYPE_FROM_WEAPON_HASH"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_PICKUP_TYPE_FROM_WEAPON_HASH"/></remarks>
 		[Obsolete]
 		_GET_PICKUP_HASH_FROM_WEAPON = 0xD6429A016084F1A5,
 
@@ -30491,7 +30491,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		GET_OBJECT_TINT_INDEX = 0xE84EB93729C5F36A,
 
-		///<remarks>This function has been replaced by <see cref="GET_OBJECT_TINT_INDEX"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_OBJECT_TINT_INDEX"/></remarks>
 		[Obsolete]
 		_GET_OBJECT_TEXTURE_VARIATION = 0xE84EB93729C5F36A,
 
@@ -30522,11 +30522,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_OBJECT_TINT_INDEX = 0x971DA0055324D033,
 
-		///<remarks>This function has been replaced by <see cref="SET_OBJECT_TINT_INDEX"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_OBJECT_TINT_INDEX"/></remarks>
 		[Obsolete]
 		_SET_OBJECT_TEXTURE_VARIANT = 0x971DA0055324D033,
 
-		///<remarks>This function has been replaced by <see cref="SET_OBJECT_TINT_INDEX"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_OBJECT_TINT_INDEX"/></remarks>
 		[Obsolete]
 		_SET_OBJECT_TEXTURE_VARIATION = 0x971DA0055324D033,
 
@@ -30536,7 +30536,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		SET_TINT_INDEX_CLOSEST_BUILDING_OF_TYPE = 0xF12E33034D887F66,
 
-		///<remarks>This function has been replaced by <see cref="SET_TINT_INDEX_CLOSEST_BUILDING_OF_TYPE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_TINT_INDEX_CLOSEST_BUILDING_OF_TYPE"/></remarks>
 		[Obsolete]
 		_SET_TEXTURE_VARIATION_OF_CLOSEST_OBJECT_OF_TYPE = 0xF12E33034D887F66,
 
@@ -30552,7 +30552,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		SET_PROP_LIGHT_COLOR = 0x5F048334B4A4E774,
 
-		///<remarks>This function has been replaced by <see cref="SET_PROP_LIGHT_COLOR"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_PROP_LIGHT_COLOR"/></remarks>
 		[Obsolete]
 		_SET_OBJECT_LIGHT_COLOR = 0x5F048334B4A4E774,
 
@@ -30568,7 +30568,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_OBJECT_IS_VISIBLE_IN_MIRRORS = 0x3B2FD68DB5F8331C,
 
-		///<remarks>This function has been replaced by <see cref="SET_OBJECT_IS_VISIBLE_IN_MIRRORS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_OBJECT_IS_VISIBLE_IN_MIRRORS"/></remarks>
 		[Obsolete]
 		_SET_OBJECT_COLOUR = 0x3B2FD68DB5F8331C,
 
@@ -30578,7 +30578,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_OBJECT_SPEED_BOOST_AMOUNT = 0x96EE0EBA0163DF80,
 
-		///<remarks>This function has been replaced by <see cref="SET_OBJECT_SPEED_BOOST_AMOUNT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_OBJECT_SPEED_BOOST_AMOUNT"/></remarks>
 		[Obsolete]
 		_SET_OBJECT_STUNT_PROP_SPEEDUP = 0x96EE0EBA0163DF80,
 
@@ -30588,7 +30588,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_OBJECT_SPEED_BOOST_DURATION = 0xDF6CA0330F2E737B,
 
-		///<remarks>This function has been replaced by <see cref="SET_OBJECT_SPEED_BOOST_DURATION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_OBJECT_SPEED_BOOST_DURATION"/></remarks>
 		[Obsolete]
 		_SET_OBJECT_STUNT_PROP_DURATION = 0xDF6CA0330F2E737B,
 
@@ -30602,7 +30602,7 @@ namespace GTA.Native
 		/// <returns>Hash</returns>
 		CONVERT_OLD_PICKUP_TYPE_TO_NEW = 0x5EAAD83F8CFB4575, // 0x6AE36192
 
-		///<remarks>This function has been replaced by <see cref="CONVERT_OLD_PICKUP_TYPE_TO_NEW"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CONVERT_OLD_PICKUP_TYPE_TO_NEW"/></remarks>
 		[Obsolete]
 		_GET_PICKUP_HASH = 0x5EAAD83F8CFB4575, // 0x6AE36192
 
@@ -30621,7 +30621,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		ONLY_CLEAN_UP_OBJECT_WHEN_OUT_OF_RANGE = 0xADBE4809F19F927A, // 0x2048A7DD
 
-		///<remarks>This function has been replaced by <see cref="ONLY_CLEAN_UP_OBJECT_WHEN_OUT_OF_RANGE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="ONLY_CLEAN_UP_OBJECT_WHEN_OUT_OF_RANGE"/></remarks>
 		[Obsolete]
 		_MARK_OBJECT_FOR_DELETION = 0xADBE4809F19F927A, // 0x2048A7DD
 
@@ -30646,7 +30646,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_DRIVE_ARTICULATED_JOINT = 0x911024442F4898F0,
 
-		///<remarks>This function has been replaced by <see cref="SET_DRIVE_ARTICULATED_JOINT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_DRIVE_ARTICULATED_JOINT"/></remarks>
 		[Obsolete]
 		_SET_ENABLE_ARENA_PROP_PHYSICS = 0x911024442F4898F0,
 
@@ -30656,7 +30656,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_DRIVE_ARTICULATED_JOINT_WITH_INFLICTOR = 0xB20834A7DD3D8896,
 
-		///<remarks>This function has been replaced by <see cref="SET_DRIVE_ARTICULATED_JOINT_WITH_INFLICTOR"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_DRIVE_ARTICULATED_JOINT_WITH_INFLICTOR"/></remarks>
 		[Obsolete]
 		_SET_ENABLE_ARENA_PROP_PHYSICS_ON_PED = 0xB20834A7DD3D8896,
 
@@ -30678,7 +30678,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		GET_IS_ARTICULATED_JOINT_AT_MIN_ANGLE = 0x43C677F1E1158005,
 
-		///<remarks>This function has been replaced by <see cref="GET_IS_ARTICULATED_JOINT_AT_MIN_ANGLE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_IS_ARTICULATED_JOINT_AT_MIN_ANGLE"/></remarks>
 		[Obsolete]
 		_GET_IS_ARENA_PROP_PHYSICS_DISABLED = 0x43C677F1E1158005,
 
@@ -30800,7 +30800,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		SET_CONTROL_VALUE_NEXT_FRAME = 0xE8A25867FBA3B05E,
 
-		///<remarks>This function has been replaced by <see cref="SET_CONTROL_VALUE_NEXT_FRAME"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_CONTROL_VALUE_NEXT_FRAME"/></remarks>
 		[Obsolete]
 		_SET_CONTROL_NORMAL = 0xE8A25867FBA3B05E,
 
@@ -30869,7 +30869,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		GET_CONTROL_HOW_LONG_AGO = 0xD7D22F5592AED8BA, // 0x0E8EF929
 
-		///<remarks>This function has been replaced by <see cref="GET_CONTROL_HOW_LONG_AGO"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_CONTROL_HOW_LONG_AGO"/></remarks>
 		[Obsolete]
 		_GET_MS_SINCE_LAST_INPUT = 0xD7D22F5592AED8BA, // 0x0E8EF929
 
@@ -30882,15 +30882,15 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		IS_USING_KEYBOARD_AND_MOUSE = 0xA571D46727E2B718,
 
-		///<remarks>This function has been replaced by <see cref="IS_USING_KEYBOARD_AND_MOUSE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_USING_KEYBOARD_AND_MOUSE"/></remarks>
 		[Obsolete]
 		_GET_LAST_INPUT_METHOD = 0xA571D46727E2B718,
 
-		///<remarks>This function has been replaced by <see cref="IS_USING_KEYBOARD_AND_MOUSE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_USING_KEYBOARD_AND_MOUSE"/></remarks>
 		[Obsolete]
 		_IS_INPUT_DISABLED = 0xA571D46727E2B718,
 
-		///<remarks>This function has been replaced by <see cref="IS_USING_KEYBOARD_AND_MOUSE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_USING_KEYBOARD_AND_MOUSE"/></remarks>
 		[Obsolete]
 		_IS_USING_KEYBOARD = 0xA571D46727E2B718,
 
@@ -30903,11 +30903,11 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		IS_USING_CURSOR = 0x13337B38DB572509,
 
-		///<remarks>This function has been replaced by <see cref="IS_USING_CURSOR"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_USING_CURSOR"/></remarks>
 		[Obsolete]
 		_IS_INPUT_JUST_DISABLED = 0x13337B38DB572509,
 
-		///<remarks>This function has been replaced by <see cref="IS_USING_CURSOR"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_USING_CURSOR"/></remarks>
 		[Obsolete]
 		_IS_USING_KEYBOARD_2 = 0x13337B38DB572509,
 
@@ -30917,7 +30917,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		SET_CURSOR_POSITION = 0xFC695459D4D0E219,
 
-		///<remarks>This function has been replaced by <see cref="SET_CURSOR_POSITION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_CURSOR_POSITION"/></remarks>
 		[Obsolete]
 		_SET_CURSOR_LOCATION = 0xFC695459D4D0E219,
 
@@ -30955,7 +30955,7 @@ namespace GTA.Native
 		/// <returns>const char*</returns>
 		GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING = 0x0499D7B09FC9B407,
 
-		///<remarks>This function has been replaced by <see cref="GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_CONTROL_INSTRUCTIONAL_BUTTONS_STRING"/></remarks>
 		[Obsolete]
 		GET_CONTROL_INSTRUCTIONAL_BUTTON = 0x0499D7B09FC9B407,
 
@@ -30968,7 +30968,7 @@ namespace GTA.Native
 		/// <returns>const char*</returns>
 		GET_CONTROL_GROUP_INSTRUCTIONAL_BUTTONS_STRING = 0x80C2FD58D720C801,
 
-		///<remarks>This function has been replaced by <see cref="GET_CONTROL_GROUP_INSTRUCTIONAL_BUTTONS_STRING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_CONTROL_GROUP_INSTRUCTIONAL_BUTTONS_STRING"/></remarks>
 		[Obsolete]
 		GET_CONTROL_GROUP_INSTRUCTIONAL_BUTTON = 0x80C2FD58D720C801,
 
@@ -30981,7 +30981,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_CONTROL_LIGHT_EFFECT_COLOR = 0x8290252FFF36ACB5,
 
-		///<remarks>This function has been replaced by <see cref="SET_CONTROL_LIGHT_EFFECT_COLOR"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_CONTROL_LIGHT_EFFECT_COLOR"/></remarks>
 		[Obsolete]
 		_SET_CONTROL_GROUP_COLOR = 0x8290252FFF36ACB5,
 
@@ -31007,7 +31007,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_CONTROL_SHAKE = 0x48B3886C1358D0D5,
 
-		///<remarks>This function has been replaced by <see cref="SET_CONTROL_SHAKE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_CONTROL_SHAKE"/></remarks>
 		[Obsolete]
 		SET_PAD_SHAKE = 0x48B3886C1358D0D5,
 
@@ -31029,7 +31029,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		STOP_CONTROL_SHAKE = 0x38C16A305E8CDC8D,
 
-		///<remarks>This function has been replaced by <see cref="STOP_CONTROL_SHAKE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="STOP_CONTROL_SHAKE"/></remarks>
 		[Obsolete]
 		STOP_PAD_SHAKE = 0x38C16A305E8CDC8D,
 
@@ -31042,7 +31042,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_CONTROL_SHAKE_SUPPRESSED_ID = 0xF239400E16C23E08,
 
-		///<remarks>This function has been replaced by <see cref="SET_CONTROL_SHAKE_SUPPRESSED_ID"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_CONTROL_SHAKE_SUPPRESSED_ID"/></remarks>
 		[Obsolete]
 		SET_PAD_SHAKE_SUPPRESSED_ID = 0xF239400E16C23E08,
 
@@ -31055,7 +31055,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		CLEAR_CONTROL_SHAKE_SUPPRESSED_ID = 0xA0CEFCEA390AAB9B,
 
-		///<remarks>This function has been replaced by <see cref="CLEAR_CONTROL_SHAKE_SUPPRESSED_ID"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CLEAR_CONTROL_SHAKE_SUPPRESSED_ID"/></remarks>
 		[Obsolete]
 		_CLEAR_SUPPRESSED_PAD_RUMBLE = 0xA0CEFCEA390AAB9B,
 
@@ -31092,14 +31092,14 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		GET_LOCAL_PLAYER_GAMEPAD_AIM_STATE = 0x59B9A7AF4C95133C,
 
-		///<remarks>This function has been replaced by <see cref="GET_LOCAL_PLAYER_GAMEPAD_AIM_STATE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_LOCAL_PLAYER_GAMEPAD_AIM_STATE"/></remarks>
 		[Obsolete]
 		_GET_LOCAL_PLAYER_AIM_STATE_2 = 0x59B9A7AF4C95133C,
 
 		/// <returns>BOOL</returns>
 		GET_IS_USING_ALTERNATE_HANDBRAKE = 0x25AAA32BDC98F2A3,
 
-		///<remarks>This function has been replaced by <see cref="GET_IS_USING_ALTERNATE_HANDBRAKE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_IS_USING_ALTERNATE_HANDBRAKE"/></remarks>
 		[Obsolete]
 		_GET_IS_USING_ALTERNATE_HANDBRAKE = 0x25AAA32BDC98F2A3,
 
@@ -31175,7 +31175,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		INIT_PC_SCRIPTED_CONTROLS = 0x3D42B92563939375, // 0xD2C80B2E
 
-		///<remarks>This function has been replaced by <see cref="INIT_PC_SCRIPTED_CONTROLS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="INIT_PC_SCRIPTED_CONTROLS"/></remarks>
 		[Obsolete]
 		_SWITCH_TO_INPUT_MAPPING_SCHEME = 0x3D42B92563939375, // 0xD2C80B2E
 
@@ -31188,14 +31188,14 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		SWITCH_PC_SCRIPTED_CONTROLS = 0x4683149ED1DDE7A1, // 0xBBFC9050
 
-		///<remarks>This function has been replaced by <see cref="SWITCH_PC_SCRIPTED_CONTROLS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SWITCH_PC_SCRIPTED_CONTROLS"/></remarks>
 		[Obsolete]
 		_SWITCH_TO_INPUT_MAPPING_SCHEME_2 = 0x4683149ED1DDE7A1, // 0xBBFC9050
 
 		/// <returns>void</returns>
 		SHUTDOWN_PC_SCRIPTED_CONTROLS = 0x643ED62D5EA3BEBD, // 0x42140FF9
 
-		///<remarks>This function has been replaced by <see cref="SHUTDOWN_PC_SCRIPTED_CONTROLS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SHUTDOWN_PC_SCRIPTED_CONTROLS"/></remarks>
 		[Obsolete]
 		_RESET_INPUT_MAPPING_SCHEME = 0x643ED62D5EA3BEBD, // 0x42140FF9
 
@@ -31381,7 +31381,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		GET_VEHICLE_NODE_IS_GPS_ALLOWED = 0xA2AE5C478B96E3B6, // 0xEE4B1219
 
-		///<remarks>This function has been replaced by <see cref="GET_VEHICLE_NODE_IS_GPS_ALLOWED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_VEHICLE_NODE_IS_GPS_ALLOWED"/></remarks>
 		[Obsolete]
 		_GET_SUPPORTS_GPS_ROUTE_FLAG = 0xA2AE5C478B96E3B6, // 0xEE4B1219
 
@@ -31395,7 +31395,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		GET_VEHICLE_NODE_IS_SWITCHED_OFF = 0x4F5070AA58F69279, // 0x56737A3C
 
-		///<remarks>This function has been replaced by <see cref="GET_VEHICLE_NODE_IS_SWITCHED_OFF"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_VEHICLE_NODE_IS_SWITCHED_OFF"/></remarks>
 		[Obsolete]
 		_GET_IS_SLOW_ROAD_FLAG = 0x4F5070AA58F69279, // 0x56737A3C
 
@@ -31414,7 +31414,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_ALLOW_STREAM_PROLOGUE_NODES = 0x228E5C6AD4D74BFD, // 0xD6A3B458
 
-		///<remarks>This function has been replaced by <see cref="SET_ALLOW_STREAM_PROLOGUE_NODES"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_ALLOW_STREAM_PROLOGUE_NODES"/></remarks>
 		[Obsolete]
 		SET_ALL_PATHS_CACHE_BOUNDINGSTRUCT = 0x228E5C6AD4D74BFD, // 0xD6A3B458
 
@@ -31427,7 +31427,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_ALLOW_STREAM_HEIST_ISLAND_NODES = 0xF74B1FFA4A15FBEA,
 
-		///<remarks>This function has been replaced by <see cref="SET_ALLOW_STREAM_HEIST_ISLAND_NODES"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_ALLOW_STREAM_HEIST_ISLAND_NODES"/></remarks>
 		[Obsolete]
 		_SET_AI_GLOBAL_PATH_NODES_TYPE = 0xF74B1FFA4A15FBEA,
 
@@ -31437,7 +31437,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		ARE_NODES_LOADED_FOR_AREA = 0xF7B79A50B905A30D, // 0x86E80A17
 
-		///<remarks>This function has been replaced by <see cref="ARE_NODES_LOADED_FOR_AREA"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="ARE_NODES_LOADED_FOR_AREA"/></remarks>
 		[Obsolete]
 		_ARE_PATH_NODES_LOADED_IN_AREA = 0xF7B79A50B905A30D, // 0x86E80A17
 
@@ -31450,7 +31450,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		REQUEST_PATH_NODES_IN_AREA_THIS_FRAME = 0x07FB139B592FA687, // 0x2CDA5012
 
-		///<remarks>This function has been replaced by <see cref="REQUEST_PATH_NODES_IN_AREA_THIS_FRAME"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="REQUEST_PATH_NODES_IN_AREA_THIS_FRAME"/></remarks>
 		[Obsolete]
 		REQUEST_PATHS_PREFER_ACCURATE_BOUNDINGSTRUCT = 0x07FB139B592FA687, // 0x2CDA5012
 
@@ -31546,7 +31546,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_IGNORE_NO_GPS_FLAG_UNTIL_FIRST_NORMAL_NODE = 0x1FC289A0C3FF470F, // 0x90DF7A4C
 
-		///<remarks>This function has been replaced by <see cref="SET_IGNORE_NO_GPS_FLAG_UNTIL_FIRST_NORMAL_NODE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_IGNORE_NO_GPS_FLAG_UNTIL_FIRST_NORMAL_NODE"/></remarks>
 		[Obsolete]
 		_SET_IGNORE_SECONDARY_ROUTE_NODES = 0x1FC289A0C3FF470F, // 0x90DF7A4C
 
@@ -31568,7 +31568,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		GET_POS_ALONG_GPS_TYPE_ROUTE = 0xF3162836C28F9DA5,
 
-		///<remarks>This function has been replaced by <see cref="GET_POS_ALONG_GPS_TYPE_ROUTE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_POS_ALONG_GPS_TYPE_ROUTE"/></remarks>
 		[Obsolete]
 		GET_GPS_WAYPOINT_ROUTE_END = 0xF3162836C28F9DA5,
 
@@ -31581,7 +31581,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		GET_ROAD_BOUNDARY_USING_HEADING = 0xA0F8A7517A273C05, // 0x5E440AC7
 
-		///<remarks>This function has been replaced by <see cref="GET_ROAD_BOUNDARY_USING_HEADING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_ROAD_BOUNDARY_USING_HEADING"/></remarks>
 		[Obsolete]
 		_GET_ROAD_SIDE_POINT_WITH_HEADING = 0xA0F8A7517A273C05, // 0x5E440AC7
 
@@ -31591,7 +31591,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		GET_POSITION_BY_SIDE_OF_ROAD = 0x16F46FB18C8009E4, // 0xF6422F9A
 
-		///<remarks>This function has been replaced by <see cref="GET_POSITION_BY_SIDE_OF_ROAD"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_POSITION_BY_SIDE_OF_ROAD"/></remarks>
 		[Obsolete]
 		_GET_POINT_ON_ROAD_SIDE = 0x16F46FB18C8009E4, // 0xF6422F9A
 
@@ -31633,7 +31633,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		CLEAR_GPS_DISABLED_ZONE_AT_INDEX = 0x2801D0012266DF07, // 0x59090745
 
-		///<remarks>This function has been replaced by <see cref="CLEAR_GPS_DISABLED_ZONE_AT_INDEX"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CLEAR_GPS_DISABLED_ZONE_AT_INDEX"/></remarks>
 		[Obsolete]
 		_CLEAR_GPS_DISABLED_ZONE_AT_INDEX = 0x2801D0012266DF07, // 0x59090745
 
@@ -31649,7 +31649,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		IS_NAVMESH_REQUIRED_REGION_IN_USE = 0x705A844002B39DC0,
 
-		///<remarks>This function has been replaced by <see cref="IS_NAVMESH_REQUIRED_REGION_IN_USE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_NAVMESH_REQUIRED_REGION_IN_USE"/></remarks>
 		[Obsolete]
 		_IS_NAVMESH_REQUIRED_REGION_OWNED_BY_ANY_THREAD = 0x705A844002B39DC0,
 
@@ -31715,7 +31715,7 @@ namespace GTA.Native
 		/// <returns>float</returns>
 		GET_APPROX_HEIGHT_FOR_POINT = 0x29C24BFBED8AB8FB, // 0x3FE8C5A0
 
-		///<remarks>This function has been replaced by <see cref="GET_APPROX_HEIGHT_FOR_POINT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_APPROX_HEIGHT_FOR_POINT"/></remarks>
 		[Obsolete]
 		_GET_HEIGHTMAP_TOP_Z_FOR_POSITION = 0x29C24BFBED8AB8FB, // 0x3FE8C5A0
 
@@ -31728,7 +31728,7 @@ namespace GTA.Native
 		/// <returns>float</returns>
 		GET_APPROX_HEIGHT_FOR_AREA = 0x8ABE8608576D9CE3, // 0x3ED21C90
 
-		///<remarks>This function has been replaced by <see cref="GET_APPROX_HEIGHT_FOR_AREA"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_APPROX_HEIGHT_FOR_AREA"/></remarks>
 		[Obsolete]
 		_GET_HEIGHTMAP_TOP_Z_FOR_AREA = 0x8ABE8608576D9CE3, // 0x3ED21C90
 
@@ -31741,7 +31741,7 @@ namespace GTA.Native
 		/// <returns>float</returns>
 		GET_APPROX_FLOOR_FOR_POINT = 0x336511A34F2E5185, // 0xA07C5B7D
 
-		///<remarks>This function has been replaced by <see cref="GET_APPROX_FLOOR_FOR_POINT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_APPROX_FLOOR_FOR_POINT"/></remarks>
 		[Obsolete]
 		_GET_HEIGHTMAP_BOTTOM_Z_FOR_POSITION = 0x336511A34F2E5185, // 0xA07C5B7D
 
@@ -31754,7 +31754,7 @@ namespace GTA.Native
 		/// <returns>float</returns>
 		GET_APPROX_FLOOR_FOR_AREA = 0x3599D741C9AC6310, // 0x76751DD4
 
-		///<remarks>This function has been replaced by <see cref="GET_APPROX_FLOOR_FOR_AREA"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_APPROX_FLOOR_FOR_AREA"/></remarks>
 		[Obsolete]
 		_GET_HEIGHTMAP_BOTTOM_Z_FOR_AREA = 0x3599D741C9AC6310, // 0x76751DD4
 
@@ -31804,11 +31804,11 @@ namespace GTA.Native
 		/// <returns>Ped</returns>
 		CLONE_PED_ALT = 0x668FD40BCBA5DE48,
 
-		///<remarks>This function has been replaced by <see cref="CLONE_PED_ALT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CLONE_PED_ALT"/></remarks>
 		[Obsolete]
 		_CLONE_PED_2 = 0x668FD40BCBA5DE48,
 
-		///<remarks>This function has been replaced by <see cref="CLONE_PED_ALT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CLONE_PED_ALT"/></remarks>
 		[Obsolete]
 		_CLONE_PED_EX = 0x668FD40BCBA5DE48,
 
@@ -31821,7 +31821,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		CLONE_PED_TO_TARGET = 0xE952D6431689AD9A, // 0xFC70EEC7
 
-		///<remarks>This function has been replaced by <see cref="CLONE_PED_TO_TARGET"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CLONE_PED_TO_TARGET"/></remarks>
 		[Obsolete]
 		_ASSIGN_PLAYER_TO_PED = 0xE952D6431689AD9A, // 0xFC70EEC7
 
@@ -31831,7 +31831,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		CLONE_PED_TO_TARGET_ALT = 0x148B08C2D2ACB884,
 
-		///<remarks>This function has been replaced by <see cref="CLONE_PED_TO_TARGET_ALT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CLONE_PED_TO_TARGET_ALT"/></remarks>
 		[Obsolete]
 		_CLONE_PED_TO_TARGET_EX = 0x148B08C2D2ACB884,
 
@@ -31964,7 +31964,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		FORCE_ALL_HEADING_VALUES_TO_ALIGN = 0xFF287323B0E2C69A, // 0x290421BE
 
-		///<remarks>This function has been replaced by <see cref="FORCE_ALL_HEADING_VALUES_TO_ALIGN"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="FORCE_ALL_HEADING_VALUES_TO_ALIGN"/></remarks>
 		[Obsolete]
 		_FREEZE_PED_CAMERA_ROTATION = 0xFF287323B0E2C69A, // 0x290421BE
 
@@ -32419,7 +32419,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		GET_PED_DIES_IN_WATER = 0x65671A4FB8218930,
 
-		///<remarks>This function has been replaced by <see cref="GET_PED_DIES_IN_WATER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_PED_DIES_IN_WATER"/></remarks>
 		[Obsolete]
 		_GET_PED_DIES_IN_WATER = 0x65671A4FB8218930,
 
@@ -32513,7 +32513,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_USE_CAMERA_HEADING_FOR_DESIRED_DIRECTION_LOCK_ON_TEST = 0xFD325494792302D7, // 0x7F67671D
 
-		///<remarks>This function has been replaced by <see cref="SET_USE_CAMERA_HEADING_FOR_DESIRED_DIRECTION_LOCK_ON_TEST"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_USE_CAMERA_HEADING_FOR_DESIRED_DIRECTION_LOCK_ON_TEST"/></remarks>
 		[Obsolete]
 		SET_TIME_EXCLUSIVE_DISPLAY_TEXTURE = 0xFD325494792302D7, // 0x7F67671D
 
@@ -32592,7 +32592,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		IS_PED_OPENING_DOOR = 0x26AF0E8E30BD2A2C,
 
-		///<remarks>This function has been replaced by <see cref="IS_PED_OPENING_DOOR"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_PED_OPENING_DOOR"/></remarks>
 		[Obsolete]
 		_IS_PED_OPENING_A_DOOR = 0x26AF0E8E30BD2A2C,
 
@@ -32648,7 +32648,7 @@ namespace GTA.Native
 		/// <returns>Object</returns>
 		CREATE_PARACHUTE_BAG_OBJECT = 0x8C4F3BF23B6237DB, // 0x19198A16
 
-		///<remarks>This function has been replaced by <see cref="CREATE_PARACHUTE_BAG_OBJECT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CREATE_PARACHUTE_BAG_OBJECT"/></remarks>
 		[Obsolete]
 		_CREATE_PARACHUTE_OBJECT = 0x8C4F3BF23B6237DB, // 0x19198A16
 
@@ -32691,7 +32691,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_COP_PERCEPTION_OVERRIDES = 0x2F074C904D85129E,
 
-		///<remarks>This function has been replaced by <see cref="SET_COP_PERCEPTION_OVERRIDES"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_COP_PERCEPTION_OVERRIDES"/></remarks>
 		[Obsolete]
 		_SET_PED_PERCEPTION_OVERRIDE_THIS_FRAME = 0x2F074C904D85129E,
 
@@ -32768,7 +32768,7 @@ namespace GTA.Native
 		/// <returns>float</returns>
 		GET_PED_VISUAL_FIELD_CENTER_ANGLE = 0xEF2C71A32CAD5FBD,
 
-		///<remarks>This function has been replaced by <see cref="GET_PED_VISUAL_FIELD_CENTER_ANGLE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_PED_VISUAL_FIELD_CENTER_ANGLE"/></remarks>
 		[Obsolete]
 		_GET_PED_VISUAL_FIELD_CENTER_ANGLE = 0xEF2C71A32CAD5FBD,
 
@@ -32888,7 +32888,7 @@ namespace GTA.Native
 		/// <returns>Entity</returns>
 		GET_PED_TARGET_FROM_COMBAT_PED = 0x32C27A11307B01CC,
 
-		///<remarks>This function has been replaced by <see cref="GET_PED_TARGET_FROM_COMBAT_PED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_PED_TARGET_FROM_COMBAT_PED"/></remarks>
 		[Obsolete]
 		_GET_PED_TASK_COMBAT_TARGET = 0x32C27A11307B01CC,
 
@@ -32964,7 +32964,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		IS_PED_IN_HIGH_COVER = 0x6A03BF943D767C93, // 0xDD5D08A7
 
-		///<remarks>This function has been replaced by <see cref="IS_PED_IN_HIGH_COVER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_PED_IN_HIGH_COVER"/></remarks>
 		[Obsolete]
 		_IS_PED_STANDING_IN_COVER = 0x6A03BF943D767C93, // 0xDD5D08A7
 
@@ -33005,7 +33005,7 @@ namespace GTA.Native
 		/// <returns>Entity</returns>
 		GET_PED_SOURCE_OF_DEATH = 0x93C8B64DEB84728C, // 0x84ADF9EB
 
-		///<remarks>This function has been replaced by <see cref="GET_PED_SOURCE_OF_DEATH"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_PED_SOURCE_OF_DEATH"/></remarks>
 		[Obsolete]
 		_GET_PED_KILLER = 0x93C8B64DEB84728C, // 0x84ADF9EB
 
@@ -33024,7 +33024,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		GET_PED_TIME_OF_DEATH = 0x1E98817B311AE98A, // 0xDF6D5D54
 
-		///<remarks>This function has been replaced by <see cref="GET_PED_TIME_OF_DEATH"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_PED_TIME_OF_DEATH"/></remarks>
 		[Obsolete]
 		_GET_PED_TIME_OF_DEATH = 0x1E98817B311AE98A, // 0xDF6D5D54
 
@@ -33114,7 +33114,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		DOES_RELATIONSHIP_GROUP_EXIST = 0xCC6E3B6BB69501F1,
 
-		///<remarks>This function has been replaced by <see cref="DOES_RELATIONSHIP_GROUP_EXIST"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DOES_RELATIONSHIP_GROUP_EXIST"/></remarks>
 		[Obsolete]
 		_DOES_RELATIONSHIP_GROUP_EXIST = 0xCC6E3B6BB69501F1,
 
@@ -33177,7 +33177,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_RELATIONSHIP_GROUP_AFFECTS_WANTED_LEVEL = 0x5615E0C5EB2BC6E2,
 
-		///<remarks>This function has been replaced by <see cref="SET_RELATIONSHIP_GROUP_AFFECTS_WANTED_LEVEL"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_RELATIONSHIP_GROUP_AFFECTS_WANTED_LEVEL"/></remarks>
 		[Obsolete]
 		_SET_RELATIONSHIP_GROUP_DONT_AFFECT_WANTED_LEVEL = 0x5615E0C5EB2BC6E2,
 
@@ -33211,7 +33211,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		GET_POS_FROM_FIRED_EVENT = 0xBA656A3BB01BDEA3,
 
-		///<remarks>This function has been replaced by <see cref="GET_POS_FROM_FIRED_EVENT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_POS_FROM_FIRED_EVENT"/></remarks>
 		[Obsolete]
 		_GET_PED_EVENT_DATA = 0xBA656A3BB01BDEA3,
 
@@ -33368,7 +33368,7 @@ namespace GTA.Native
 		/// <returns>Vehicle</returns>
 		GET_VEHICLE_PED_IS_ENTERING = 0xF92691AED837A5FC, // 0x56E0C163
 
-		///<remarks>This function has been replaced by <see cref="GET_VEHICLE_PED_IS_ENTERING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_VEHICLE_PED_IS_ENTERING"/></remarks>
 		[Obsolete]
 		SET_EXCLUSIVE_PHONE_RELATIONSHIPS = 0xF92691AED837A5FC, // 0x56E0C163
 
@@ -33399,7 +33399,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		GET_TIME_PED_DAMAGED_BY_WEAPON = 0x36B77BB84687C318, // 0x0170C6E1
 
-		///<remarks>This function has been replaced by <see cref="GET_TIME_PED_DAMAGED_BY_WEAPON"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_TIME_PED_DAMAGED_BY_WEAPON"/></remarks>
 		[Obsolete]
 		_GET_TIME_OF_LAST_PED_WEAPON_DAMAGE = 0x36B77BB84687C318, // 0x0170C6E1
 
@@ -33544,7 +33544,7 @@ namespace GTA.Native
 		/// <returns>Ped</returns>
 		GET_PED_AS_GROUP_LEADER = 0x5CCE68DBD5FE93EC, // 0x52873C6A
 
-		///<remarks>This function has been replaced by <see cref="GET_PED_AS_GROUP_LEADER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_PED_AS_GROUP_LEADER"/></remarks>
 		[Obsolete]
 		_GET_PED_AS_GROUP_LEADER = 0x5CCE68DBD5FE93EC, // 0x52873C6A
 
@@ -33826,7 +33826,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_PED_MOTION_IN_COVER_CLIPSET_OVERRIDE = 0x9DBA107B4937F809,
 
-		///<remarks>This function has been replaced by <see cref="SET_PED_MOTION_IN_COVER_CLIPSET_OVERRIDE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_PED_MOTION_IN_COVER_CLIPSET_OVERRIDE"/></remarks>
 		[Obsolete]
 		_SET_PED_COVER_CLIPSET_OVERRIDE = 0x9DBA107B4937F809,
 
@@ -33836,7 +33836,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		CLEAR_PED_MOTION_IN_COVER_CLIPSET_OVERRIDE = 0xC79196DCB36F6121,
 
-		///<remarks>This function has been replaced by <see cref="CLEAR_PED_MOTION_IN_COVER_CLIPSET_OVERRIDE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CLEAR_PED_MOTION_IN_COVER_CLIPSET_OVERRIDE"/></remarks>
 		[Obsolete]
 		_CLEAR_PED_COVER_CLIPSET_OVERRIDE = 0xC79196DCB36F6121,
 
@@ -34176,7 +34176,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		GET_PED_HEAD_BLEND_DATA = 0x2746BD9D88C5C5D0, // 0x44E1680C
 
-		///<remarks>This function has been replaced by <see cref="GET_PED_HEAD_BLEND_DATA"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_PED_HEAD_BLEND_DATA"/></remarks>
 		[Obsolete]
 		_GET_PED_HEAD_BLEND_DATA = 0x2746BD9D88C5C5D0, // 0x44E1680C
 
@@ -34230,7 +34230,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_HEAD_BLEND_EYE_COLOR = 0x50B56988B170AFDF,
 
-		///<remarks>This function has been replaced by <see cref="SET_HEAD_BLEND_EYE_COLOR"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_HEAD_BLEND_EYE_COLOR"/></remarks>
 		[Obsolete]
 		_SET_PED_EYE_COLOR = 0x50B56988B170AFDF,
 
@@ -34243,7 +34243,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		GET_HEAD_BLEND_EYE_COLOR = 0x76BBA2CEE66D47E9,
 
-		///<remarks>This function has been replaced by <see cref="GET_HEAD_BLEND_EYE_COLOR"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_HEAD_BLEND_EYE_COLOR"/></remarks>
 		[Obsolete]
 		_GET_PED_EYE_COLOR = 0x76BBA2CEE66D47E9,
 
@@ -34280,7 +34280,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		GET_PED_HEAD_OVERLAY = 0xA60EF3B6461A4D43,
 
-		///<remarks>This function has been replaced by <see cref="GET_PED_HEAD_OVERLAY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_PED_HEAD_OVERLAY"/></remarks>
 		[Obsolete]
 		_GET_PED_HEAD_OVERLAY_VALUE = 0xA60EF3B6461A4D43,
 
@@ -34290,7 +34290,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		GET_PED_HEAD_OVERLAY_NUM = 0xCF1CE768BB43480E, // 0xFF43C18D
 
-		///<remarks>This function has been replaced by <see cref="GET_PED_HEAD_OVERLAY_NUM"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_PED_HEAD_OVERLAY_NUM"/></remarks>
 		[Obsolete]
 		_GET_NUM_HEAD_OVERLAY_VALUES = 0xCF1CE768BB43480E, // 0xFF43C18D
 
@@ -34304,7 +34304,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_PED_HEAD_OVERLAY_TINT = 0x497BF74A7B9CB952,
 
-		///<remarks>This function has been replaced by <see cref="SET_PED_HEAD_OVERLAY_TINT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_PED_HEAD_OVERLAY_TINT"/></remarks>
 		[Obsolete]
 		_SET_PED_HEAD_OVERLAY_COLOR = 0x497BF74A7B9CB952,
 
@@ -34314,21 +34314,21 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_PED_HAIR_TINT = 0x4CFFC65454C93A49,
 
-		///<remarks>This function has been replaced by <see cref="SET_PED_HAIR_TINT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_PED_HAIR_TINT"/></remarks>
 		[Obsolete]
 		_SET_PED_HAIR_COLOR = 0x4CFFC65454C93A49,
 
 		/// <returns>int</returns>
 		GET_NUM_PED_HAIR_TINTS = 0xE5C0CF872C2AD150,
 
-		///<remarks>This function has been replaced by <see cref="GET_NUM_PED_HAIR_TINTS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_NUM_PED_HAIR_TINTS"/></remarks>
 		[Obsolete]
 		_GET_NUM_HAIR_COLORS = 0xE5C0CF872C2AD150,
 
 		/// <returns>int</returns>
 		GET_NUM_PED_MAKEUP_TINTS = 0xD1F7CA1535D22818,
 
-		///<remarks>This function has been replaced by <see cref="GET_NUM_PED_MAKEUP_TINTS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_NUM_PED_MAKEUP_TINTS"/></remarks>
 		[Obsolete]
 		_GET_NUM_MAKEUP_COLORS = 0xD1F7CA1535D22818,
 
@@ -34344,11 +34344,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		GET_PED_HAIR_TINT_COLOR = 0x4852FC386E2E1BB5,
 
-		///<remarks>This function has been replaced by <see cref="GET_PED_HAIR_TINT_COLOR"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_PED_HAIR_TINT_COLOR"/></remarks>
 		[Obsolete]
 		_GET_HAIR_RGB_COLOR = 0x4852FC386E2E1BB5,
 
-		///<remarks>This function has been replaced by <see cref="GET_PED_HAIR_TINT_COLOR"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_PED_HAIR_TINT_COLOR"/></remarks>
 		[Obsolete]
 		_GET_PED_HAIR_RGB_COLOR = 0x4852FC386E2E1BB5,
 
@@ -34364,11 +34364,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		GET_PED_MAKEUP_TINT_COLOR = 0x013E5CFC38CD5387,
 
-		///<remarks>This function has been replaced by <see cref="GET_PED_MAKEUP_TINT_COLOR"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_PED_MAKEUP_TINT_COLOR"/></remarks>
 		[Obsolete]
 		_GET_MAKEUP_RGB_COLOR = 0x013E5CFC38CD5387,
 
-		///<remarks>This function has been replaced by <see cref="GET_PED_MAKEUP_TINT_COLOR"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_PED_MAKEUP_TINT_COLOR"/></remarks>
 		[Obsolete]
 		_GET_PED_MAKEUP_RGB_COLOR = 0x013E5CFC38CD5387,
 
@@ -34378,11 +34378,11 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		IS_PED_HAIR_TINT_FOR_CREATOR = 0xED6D8E27A43B8CDE,
 
-		///<remarks>This function has been replaced by <see cref="IS_PED_HAIR_TINT_FOR_CREATOR"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_PED_HAIR_TINT_FOR_CREATOR"/></remarks>
 		[Obsolete]
 		_IS_PED_HAIR_COLOR_VALID_2 = 0xED6D8E27A43B8CDE,
 
-		///<remarks>This function has been replaced by <see cref="IS_PED_HAIR_TINT_FOR_CREATOR"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_PED_HAIR_TINT_FOR_CREATOR"/></remarks>
 		[Obsolete]
 		_IS_PED_HAIR_VALID_CREATOR_COLOR = 0xED6D8E27A43B8CDE,
 
@@ -34392,7 +34392,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		GET_DEFAULT_SECONDARY_TINT_FOR_CREATOR = 0xEA9960D07DADCF10,
 
-		///<remarks>This function has been replaced by <see cref="GET_DEFAULT_SECONDARY_TINT_FOR_CREATOR"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_DEFAULT_SECONDARY_TINT_FOR_CREATOR"/></remarks>
 		[Obsolete]
 		_GET_DEFAULT_SECONDARY_HAIR_CREATOR_COLOR = 0xEA9960D07DADCF10,
 
@@ -34402,11 +34402,11 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		IS_PED_LIPSTICK_TINT_FOR_CREATOR = 0x3E802F11FBE27674,
 
-		///<remarks>This function has been replaced by <see cref="IS_PED_LIPSTICK_TINT_FOR_CREATOR"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_PED_LIPSTICK_TINT_FOR_CREATOR"/></remarks>
 		[Obsolete]
 		_IS_PED_LIPSTICK_COLOR_VALID_2 = 0x3E802F11FBE27674,
 
-		///<remarks>This function has been replaced by <see cref="IS_PED_LIPSTICK_TINT_FOR_CREATOR"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_PED_LIPSTICK_TINT_FOR_CREATOR"/></remarks>
 		[Obsolete]
 		_IS_PED_LIPSTICK_VALID_CREATOR_COLOR = 0x3E802F11FBE27674,
 
@@ -34416,11 +34416,11 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		IS_PED_BLUSH_TINT_FOR_CREATOR = 0xF41B5D290C99A3D6,
 
-		///<remarks>This function has been replaced by <see cref="IS_PED_BLUSH_TINT_FOR_CREATOR"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_PED_BLUSH_TINT_FOR_CREATOR"/></remarks>
 		[Obsolete]
 		_IS_PED_BLUSH_COLOR_VALID_2 = 0xF41B5D290C99A3D6,
 
-		///<remarks>This function has been replaced by <see cref="IS_PED_BLUSH_TINT_FOR_CREATOR"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_PED_BLUSH_TINT_FOR_CREATOR"/></remarks>
 		[Obsolete]
 		_IS_PED_BLUSH_VALID_CREATOR_COLOR = 0xF41B5D290C99A3D6,
 
@@ -34430,11 +34430,11 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		IS_PED_HAIR_TINT_FOR_BARBER = 0xE0D36E5D9E99CC21,
 
-		///<remarks>This function has been replaced by <see cref="IS_PED_HAIR_TINT_FOR_BARBER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_PED_HAIR_TINT_FOR_BARBER"/></remarks>
 		[Obsolete]
 		_IS_PED_HAIR_COLOR_VALID = 0xE0D36E5D9E99CC21,
 
-		///<remarks>This function has been replaced by <see cref="IS_PED_HAIR_TINT_FOR_BARBER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_PED_HAIR_TINT_FOR_BARBER"/></remarks>
 		[Obsolete]
 		_IS_PED_HAIR_VALID_BARBER_COLOR = 0xE0D36E5D9E99CC21,
 
@@ -34444,7 +34444,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		GET_DEFAULT_SECONDARY_TINT_FOR_BARBER = 0xAAA6A3698A69E048,
 
-		///<remarks>This function has been replaced by <see cref="GET_DEFAULT_SECONDARY_TINT_FOR_BARBER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_DEFAULT_SECONDARY_TINT_FOR_BARBER"/></remarks>
 		[Obsolete]
 		_GET_DEFAULT_SECONDARY_HAIR_BARBER_COLOR = 0xAAA6A3698A69E048,
 
@@ -34454,11 +34454,11 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		IS_PED_LIPSTICK_TINT_FOR_BARBER = 0x0525A2C2562F3CD4,
 
-		///<remarks>This function has been replaced by <see cref="IS_PED_LIPSTICK_TINT_FOR_BARBER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_PED_LIPSTICK_TINT_FOR_BARBER"/></remarks>
 		[Obsolete]
 		_IS_PED_LIPSTICK_COLOR_VALID = 0x0525A2C2562F3CD4,
 
-		///<remarks>This function has been replaced by <see cref="IS_PED_LIPSTICK_TINT_FOR_BARBER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_PED_LIPSTICK_TINT_FOR_BARBER"/></remarks>
 		[Obsolete]
 		_IS_PED_LIPSTICK_VALID_BARBER_COLOR = 0x0525A2C2562F3CD4,
 
@@ -34468,11 +34468,11 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		IS_PED_BLUSH_TINT_FOR_BARBER = 0x604E810189EE3A59,
 
-		///<remarks>This function has been replaced by <see cref="IS_PED_BLUSH_TINT_FOR_BARBER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_PED_BLUSH_TINT_FOR_BARBER"/></remarks>
 		[Obsolete]
 		_IS_PED_BLUSH_COLOR_VALID = 0x604E810189EE3A59,
 
-		///<remarks>This function has been replaced by <see cref="IS_PED_BLUSH_TINT_FOR_BARBER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_PED_BLUSH_TINT_FOR_BARBER"/></remarks>
 		[Obsolete]
 		_IS_PED_BLUSH_VALID_BARBER_COLOR = 0x604E810189EE3A59,
 
@@ -34482,11 +34482,11 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		IS_PED_BLUSH_FACEPAINT_TINT_FOR_BARBER = 0x09E7ECA981D9B210,
 
-		///<remarks>This function has been replaced by <see cref="IS_PED_BLUSH_FACEPAINT_TINT_FOR_BARBER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_PED_BLUSH_FACEPAINT_TINT_FOR_BARBER"/></remarks>
 		[Obsolete]
 		_IS_PED_BODY_BLEMISH_VALID = 0x09E7ECA981D9B210,
 
-		///<remarks>This function has been replaced by <see cref="IS_PED_BLUSH_FACEPAINT_TINT_FOR_BARBER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_PED_BLUSH_FACEPAINT_TINT_FOR_BARBER"/></remarks>
 		[Obsolete]
 		_IS_PED_BLUSH_FACEPAINT_VALID_BARBER_COLOR = 0x09E7ECA981D9B210,
 
@@ -34496,7 +34496,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		GET_TINT_INDEX_FOR_LAST_GEN_HAIR_TEXTURE = 0xC56FBF2F228E1DAC,
 
-		///<remarks>This function has been replaced by <see cref="GET_TINT_INDEX_FOR_LAST_GEN_HAIR_TEXTURE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_TINT_INDEX_FOR_LAST_GEN_HAIR_TEXTURE"/></remarks>
 		[Obsolete]
 		_GET_TINT_OF_HAIR_COMPONENT_VARIATION = 0xC56FBF2F228E1DAC,
 
@@ -34529,11 +34529,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_PED_MICRO_MORPH = 0x71A5C1DBA060049E,
 
-		///<remarks>This function has been replaced by <see cref="SET_PED_MICRO_MORPH"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_PED_MICRO_MORPH"/></remarks>
 		[Obsolete]
 		_SET_PED_FACE_FEATURE = 0x71A5C1DBA060049E,
 
-		///<remarks>This function has been replaced by <see cref="SET_PED_MICRO_MORPH"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_PED_MICRO_MORPH"/></remarks>
 		[Obsolete]
 		_SET_PED_MICRO_MORPH_VALUE = 0x71A5C1DBA060049E,
 
@@ -34575,7 +34575,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		GET_PED_HEAD_BLEND_FIRST_INDEX = 0x68D353AB88B97E0C, // 0x211DEFEC
 
-		///<remarks>This function has been replaced by <see cref="GET_PED_HEAD_BLEND_FIRST_INDEX"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_PED_HEAD_BLEND_FIRST_INDEX"/></remarks>
 		[Obsolete]
 		_GET_FIRST_PARENT_ID_FOR_PED_TYPE = 0x68D353AB88B97E0C, // 0x211DEFEC
 
@@ -34588,7 +34588,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		GET_PED_HEAD_BLEND_NUM_HEADS = 0x5EF37013A6539C9D, // 0x095D3BD8
 
-		///<remarks>This function has been replaced by <see cref="GET_PED_HEAD_BLEND_NUM_HEADS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_PED_HEAD_BLEND_NUM_HEADS"/></remarks>
 		[Obsolete]
 		_GET_NUM_PARENT_PEDS_OF_TYPE = 0x5EF37013A6539C9D, // 0x095D3BD8
 
@@ -34625,7 +34625,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		SET_PED_PRELOAD_PROP_DATA = 0x2B16A3BFF1FBCE49, // 0xC0E23671
 
-		///<remarks>This function has been replaced by <see cref="SET_PED_PRELOAD_PROP_DATA"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_PED_PRELOAD_PROP_DATA"/></remarks>
 		[Obsolete]
 		_IS_PED_PROP_VALID = 0x2B16A3BFF1FBCE49, // 0xC0E23671
 
@@ -34731,7 +34731,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_PED_SCUBA_GEAR_VARIATION = 0x36C6984C3ED0C911,
 
-		///<remarks>This function has been replaced by <see cref="SET_PED_SCUBA_GEAR_VARIATION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_PED_SCUBA_GEAR_VARIATION"/></remarks>
 		[Obsolete]
 		_SET_PED_SCUBA_GEAR_VARIATION = 0x36C6984C3ED0C911,
 
@@ -34744,7 +34744,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		CLEAR_PED_SCUBA_GEAR_VARIATION = 0xB50EB4CCB29704AC, // 0x080275EE
 
-		///<remarks>This function has been replaced by <see cref="CLEAR_PED_SCUBA_GEAR_VARIATION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CLEAR_PED_SCUBA_GEAR_VARIATION"/></remarks>
 		[Obsolete]
 		_REMOVE_PED_SCUBA_GEAR_NOW = 0xB50EB4CCB29704AC, // 0x080275EE
 
@@ -35029,7 +35029,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_RAGDOLL_BLOCKING_FLAGS = 0x26695EC767728D84, // 0x9C8F830D
 
-		///<remarks>This function has been replaced by <see cref="SET_RAGDOLL_BLOCKING_FLAGS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_RAGDOLL_BLOCKING_FLAGS"/></remarks>
 		[Obsolete]
 		_SET_PED_RAGDOLL_BLOCKING_FLAGS = 0x26695EC767728D84, // 0x9C8F830D
 
@@ -35042,7 +35042,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		CLEAR_RAGDOLL_BLOCKING_FLAGS = 0xD86D101FCFD00A4B, // 0x77CBA290
 
-		///<remarks>This function has been replaced by <see cref="CLEAR_RAGDOLL_BLOCKING_FLAGS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CLEAR_RAGDOLL_BLOCKING_FLAGS"/></remarks>
 		[Obsolete]
 		_RESET_PED_RAGDOLL_BLOCKING_FLAGS = 0xD86D101FCFD00A4B, // 0x77CBA290
 
@@ -35406,11 +35406,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		ADD_PED_DECORATION_FROM_HASHES = 0x5F5D1665E352A839, // 0x70559AC7
 
-		///<remarks>This function has been replaced by <see cref="ADD_PED_DECORATION_FROM_HASHES"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="ADD_PED_DECORATION_FROM_HASHES"/></remarks>
 		[Obsolete]
 		_APPLY_PED_OVERLAY = 0x5F5D1665E352A839, // 0x70559AC7
 
-		///<remarks>This function has been replaced by <see cref="ADD_PED_DECORATION_FROM_HASHES"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="ADD_PED_DECORATION_FROM_HASHES"/></remarks>
 		[Obsolete]
 		_SET_PED_DECORATION = 0x5F5D1665E352A839, // 0x70559AC7
 
@@ -35423,7 +35423,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		ADD_PED_DECORATION_FROM_HASHES_IN_CORONA = 0x5619BFA07CFD7833, // 0x8CD3E487
 
-		///<remarks>This function has been replaced by <see cref="ADD_PED_DECORATION_FROM_HASHES_IN_CORONA"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="ADD_PED_DECORATION_FROM_HASHES_IN_CORONA"/></remarks>
 		[Obsolete]
 		_SET_PED_FACIAL_DECORATION = 0x5619BFA07CFD7833, // 0x8CD3E487
 
@@ -35448,7 +35448,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		GET_PED_DECORATION_ZONE_FROM_HASHES = 0x9FD452BFBE7A7A8B, // 0x3543019E
 
-		///<remarks>This function has been replaced by <see cref="GET_PED_DECORATION_ZONE_FROM_HASHES"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_PED_DECORATION_ZONE_FROM_HASHES"/></remarks>
 		[Obsolete]
 		_GET_TATTOO_ZONE = 0x9FD452BFBE7A7A8B, // 0x3543019E
 
@@ -35464,7 +35464,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		CLEAR_PED_DECORATIONS_LEAVE_SCARS = 0xE3B27E70CEAB9F0C, // 0xEFD58EB9
 
-		///<remarks>This function has been replaced by <see cref="CLEAR_PED_DECORATIONS_LEAVE_SCARS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CLEAR_PED_DECORATIONS_LEAVE_SCARS"/></remarks>
 		[Obsolete]
 		_CLEAR_PED_FACIAL_DECORATIONS = 0xE3B27E70CEAB9F0C, // 0xEFD58EB9
 
@@ -35554,7 +35554,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		DOES_SCENARIO_BLOCKING_AREA_EXISTS = 0x8A24B067D175A7BD,
 
-		///<remarks>This function has been replaced by <see cref="DOES_SCENARIO_BLOCKING_AREA_EXISTS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DOES_SCENARIO_BLOCKING_AREA_EXISTS"/></remarks>
 		[Obsolete]
 		_DOES_SCENARIO_BLOCKING_AREA_EXIST = 0x8A24B067D175A7BD,
 
@@ -35585,7 +35585,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		TOGGLE_SCENARIO_PED_COWER_IN_PLACE = 0x9A77DFD295E29B09, // 0xC08FE5F6
 
-		///<remarks>This function has been replaced by <see cref="TOGGLE_SCENARIO_PED_COWER_IN_PLACE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="TOGGLE_SCENARIO_PED_COWER_IN_PLACE"/></remarks>
 		[Obsolete]
 		_SET_PED_SCARED_WHEN_USING_SCENARIO = 0x9A77DFD295E29B09, // 0xC08FE5F6
 
@@ -35601,7 +35601,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		SET_PED_SHOULD_PLAY_DIRECTED_NORMAL_SCENARIO_EXIT = 0xEC6935EBE0847B90,
 
-		///<remarks>This function has been replaced by <see cref="SET_PED_SHOULD_PLAY_DIRECTED_NORMAL_SCENARIO_EXIT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_PED_SHOULD_PLAY_DIRECTED_NORMAL_SCENARIO_EXIT"/></remarks>
 		[Obsolete]
 		_SET_PED_SHOULD_PLAY_DIRECTED_SCENARIO_EXIT = 0xEC6935EBE0847B90,
 
@@ -35673,7 +35673,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_FACIAL_CLIPSET = 0x5687C7F05B39E401,
 
-		///<remarks>This function has been replaced by <see cref="SET_FACIAL_CLIPSET"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_FACIAL_CLIPSET"/></remarks>
 		[Obsolete]
 		_SET_FACIAL_CLIPSET_OVERRIDE = 0x5687C7F05B39E401,
 
@@ -35713,7 +35713,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_PED_IS_IGNORED_BY_AUTO_OPEN_DOORS = 0x33A60D8BDD6E508C, // 0xADB2511A
 
-		///<remarks>This function has been replaced by <see cref="SET_PED_IS_IGNORED_BY_AUTO_OPEN_DOORS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_PED_IS_IGNORED_BY_AUTO_OPEN_DOORS"/></remarks>
 		[Obsolete]
 		_SET_PED_CAN_PLAY_INJURED_ANIMS = 0x33A60D8BDD6E508C, // 0xADB2511A
 
@@ -35807,7 +35807,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_PED_CLOTH_PIN_FRAMES = 0x78C4E9961DB3EB5B,
 
-		///<remarks>This function has been replaced by <see cref="SET_PED_CLOTH_PIN_FRAMES"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_PED_CLOTH_PIN_FRAMES"/></remarks>
 		[Obsolete]
 		SET_PED_CLOTH_PACKAGE_INDEX = 0x78C4E9961DB3EB5B,
 
@@ -36374,7 +36374,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		BLOCK_PED_FROM_GENERATING_DEAD_BODY_EVENTS_WHEN_DEAD = 0xE43A13C9E4CCCBCF, // 0xFF1F6AEB
 
-		///<remarks>This function has been replaced by <see cref="BLOCK_PED_FROM_GENERATING_DEAD_BODY_EVENTS_WHEN_DEAD"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="BLOCK_PED_FROM_GENERATING_DEAD_BODY_EVENTS_WHEN_DEAD"/></remarks>
 		[Obsolete]
 		_BLOCK_PED_DEAD_BODY_SHOCKING_EVENTS = 0xE43A13C9E4CCCBCF, // 0xFF1F6AEB
 
@@ -36445,7 +36445,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_PED_HELMET_VISOR_PROP_INDICES = 0x3F7325574E41B44D,
 
-		///<remarks>This function has been replaced by <see cref="SET_PED_HELMET_VISOR_PROP_INDICES"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_PED_HELMET_VISOR_PROP_INDICES"/></remarks>
 		[Obsolete]
 		_SET_PED_HELMET_UNK = 0x3F7325574E41B44D,
 
@@ -36455,7 +36455,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		IS_PED_HELMET_VISOR_UP = 0xB9496CE47546DB2C,
 
-		///<remarks>This function has been replaced by <see cref="IS_PED_HELMET_VISOR_UP"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_PED_HELMET_VISOR_UP"/></remarks>
 		[Obsolete]
 		_IS_PED_HELMET_UNK = 0xB9496CE47546DB2C,
 
@@ -36776,7 +36776,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		IS_PED_PERFORMING_A_COUNTER_ATTACK = 0xEBD0EDBA5BE957CF, // 0x9BE7C860
 
-		///<remarks>This function has been replaced by <see cref="IS_PED_PERFORMING_A_COUNTER_ATTACK"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_PED_PERFORMING_A_COUNTER_ATTACK"/></remarks>
 		[Obsolete]
 		IS_PED_PERFORMING_DEPENDENT_COMBO_LIMIT = 0xEBD0EDBA5BE957CF, // 0x9BE7C860
 
@@ -36907,7 +36907,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		REQUEST_PED_VEHICLE_VISIBILITY_TRACKING = 0x2BC338A7B21F4608, // 0x31C31DAA
 
-		///<remarks>This function has been replaced by <see cref="REQUEST_PED_VEHICLE_VISIBILITY_TRACKING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="REQUEST_PED_VEHICLE_VISIBILITY_TRACKING"/></remarks>
 		[Obsolete]
 		GET_PED_FLOOD_INVINCIBILITY = 0x2BC338A7B21F4608, // 0x31C31DAA
 
@@ -36939,7 +36939,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		GET_TRACKED_PED_PIXELCOUNT = 0x511F1A683387C7E2, // 0x5B1B70AA
 
-		///<remarks>This function has been replaced by <see cref="GET_TRACKED_PED_PIXELCOUNT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_TRACKED_PED_PIXELCOUNT"/></remarks>
 		[Obsolete]
 		_GET_TRACKED_PED_VISIBILITY = 0x511F1A683387C7E2, // 0x5B1B70AA
 
@@ -36961,7 +36961,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		CAN_PED_SEE_HATED_PED = 0x6CD5A433374D4CFB, // 0x74A0F291
 
-		///<remarks>This function has been replaced by <see cref="CAN_PED_SEE_HATED_PED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CAN_PED_SEE_HATED_PED"/></remarks>
 		[Obsolete]
 		_CAN_PED_SEE_PED = 0x6CD5A433374D4CFB, // 0x74A0F291
 
@@ -37152,15 +37152,15 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_PED_EMISSIVE_SCALE = 0x4E90D746056E273D,
 
-		///<remarks>This function has been replaced by <see cref="SET_PED_EMISSIVE_SCALE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_PED_EMISSIVE_SCALE"/></remarks>
 		[Obsolete]
 		_SET_PED_REFLECTION_INTENSITY = 0x4E90D746056E273D,
 
-		///<remarks>This function has been replaced by <see cref="SET_PED_EMISSIVE_SCALE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_PED_EMISSIVE_SCALE"/></remarks>
 		[Obsolete]
 		_SET_PED_ILLUMINATED_CLOTHING_GLOW_INTENSITY = 0x4E90D746056E273D,
 
-		///<remarks>This function has been replaced by <see cref="SET_PED_EMISSIVE_SCALE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_PED_EMISSIVE_SCALE"/></remarks>
 		[Obsolete]
 		_SET_PED_EMISSIVE_INTENSITY = 0x4E90D746056E273D,
 
@@ -37174,15 +37174,15 @@ namespace GTA.Native
 		/// <returns>float</returns>
 		GET_PED_EMISSIVE_SCALE = 0x1461B28A06717D68,
 
-		///<remarks>This function has been replaced by <see cref="GET_PED_EMISSIVE_SCALE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_PED_EMISSIVE_SCALE"/></remarks>
 		[Obsolete]
 		_GET_PED_REFLECTION_INTENSITY = 0x1461B28A06717D68,
 
-		///<remarks>This function has been replaced by <see cref="GET_PED_EMISSIVE_SCALE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_PED_EMISSIVE_SCALE"/></remarks>
 		[Obsolete]
 		_GET_PED_ILLUMINATED_CLOTHING_GLOW_INTENSITY = 0x1461B28A06717D68,
 
-		///<remarks>This function has been replaced by <see cref="GET_PED_EMISSIVE_SCALE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_PED_EMISSIVE_SCALE"/></remarks>
 		[Obsolete]
 		_GET_PED_EMISSIVE_INTENSITY = 0x1461B28A06717D68,
 
@@ -37192,7 +37192,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		IS_PED_SHADER_READY = 0x81AA517FBBA05D39,
 
-		///<remarks>This function has been replaced by <see cref="IS_PED_SHADER_READY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_PED_SHADER_READY"/></remarks>
 		[Obsolete]
 		_IS_PED_SHADER_EFFECT_VALID = 0x81AA517FBBA05D39,
 
@@ -37243,7 +37243,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		CREATE_SYNCHRONIZED_SCENE_AT_MAP_OBJECT = 0x62EC273D00187DCA, // 0xF3876894
 
-		///<remarks>This function has been replaced by <see cref="CREATE_SYNCHRONIZED_SCENE_AT_MAP_OBJECT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CREATE_SYNCHRONIZED_SCENE_AT_MAP_OBJECT"/></remarks>
 		[Obsolete]
 		_CREATE_SYNCHRONIZED_SCENE_2 = 0x62EC273D00187DCA, // 0xF3876894
 
@@ -37304,7 +37304,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_SYNCHRONIZED_SCENE_HOLD_LAST_FRAME = 0x394B9CD12435C981, // 0x2DE48DA1
 
-		///<remarks>This function has been replaced by <see cref="SET_SYNCHRONIZED_SCENE_HOLD_LAST_FRAME"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_SYNCHRONIZED_SCENE_HOLD_LAST_FRAME"/></remarks>
 		[Obsolete]
 		_SET_SYNCHRONIZED_SCENE_OCCLUSION_PORTAL = 0x394B9CD12435C981, // 0x2DE48DA1
 
@@ -37332,7 +37332,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		TAKE_OWNERSHIP_OF_SYNCHRONIZED_SCENE = 0xCD9CC7E200A52A6F, // 0xBF7F9035
 
-		///<remarks>This function has been replaced by <see cref="TAKE_OWNERSHIP_OF_SYNCHRONIZED_SCENE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="TAKE_OWNERSHIP_OF_SYNCHRONIZED_SCENE"/></remarks>
 		[Obsolete]
 		_DISPOSE_SYNCHRONIZED_SCENE = 0xCD9CC7E200A52A6F, // 0xBF7F9035
 
@@ -37378,7 +37378,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		GET_PED_CURRENT_MOVE_BLEND_RATIO = 0xF60165E1D2C5370B,
 
-		///<remarks>This function has been replaced by <see cref="GET_PED_CURRENT_MOVE_BLEND_RATIO"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_PED_CURRENT_MOVE_BLEND_RATIO"/></remarks>
 		[Obsolete]
 		_GET_PED_CURRENT_MOVEMENT_SPEED = 0xF60165E1D2C5370B,
 
@@ -37484,7 +37484,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		HAVE_ALL_STREAMING_REQUESTS_COMPLETED = 0x7350823473013C02, // 0xF9FB4B71
 
-		///<remarks>This function has been replaced by <see cref="HAVE_ALL_STREAMING_REQUESTS_COMPLETED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="HAVE_ALL_STREAMING_REQUESTS_COMPLETED"/></remarks>
 		[Obsolete]
 		_HAS_STREAMED_PED_ASSETS_LOADED = 0x7350823473013C02, // 0xF9FB4B71
 
@@ -37538,7 +37538,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		REGISTER_PEDHEADSHOT_HIRES = 0xBA8805A1108A2515,
 
-		///<remarks>This function has been replaced by <see cref="REGISTER_PEDHEADSHOT_HIRES"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="REGISTER_PEDHEADSHOT_HIRES"/></remarks>
 		[Obsolete]
 		_REGISTER_PEDHEADSHOT_3 = 0xBA8805A1108A2515,
 
@@ -37746,7 +37746,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_PED_CAN_PLAY_IN_CAR_IDLES = 0x820E9892A77E97CD,
 
-		///<remarks>This function has been replaced by <see cref="SET_PED_CAN_PLAY_IN_CAR_IDLES"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_PED_CAN_PLAY_IN_CAR_IDLES"/></remarks>
 		[Obsolete]
 		_SET_PED_CAN_PLAY_IN_CAR_IDLES = 0x820E9892A77E97CD,
 
@@ -37777,7 +37777,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_DISABLE_HIGH_FALL_DEATH = 0x711794453CFD692B,
 
-		///<remarks>This function has been replaced by <see cref="SET_DISABLE_HIGH_FALL_DEATH"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_DISABLE_HIGH_FALL_DEATH"/></remarks>
 		[Obsolete]
 		_SET_DISABLE_PED_FALL_DAMAGE = 0x711794453CFD692B,
 
@@ -37793,7 +37793,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_PED_STEER_BIAS = 0x288DF530C92DAD6F,
 
-		///<remarks>This function has been replaced by <see cref="SET_PED_STEER_BIAS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_PED_STEER_BIAS"/></remarks>
 		[Obsolete]
 		_SET_PED_STEER_BIAS = 0x288DF530C92DAD6F,
 
@@ -37803,7 +37803,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		IS_PED_SWITCHING_WEAPON = 0x3795688A307E1EB6,
 
-		///<remarks>This function has been replaced by <see cref="IS_PED_SWITCHING_WEAPON"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_PED_SWITCHING_WEAPON"/></remarks>
 		[Obsolete]
 		_IS_PED_SWAPPING_WEAPON = 0x3795688A307E1EB6,
 
@@ -37825,7 +37825,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		ENABLE_MP_LIGHT = 0xEE2476B9EE4A094F,
 
-		///<remarks>This function has been replaced by <see cref="ENABLE_MP_LIGHT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="ENABLE_MP_LIGHT"/></remarks>
 		[Obsolete]
 		_SET_ENABLE_SCUBA_GEAR_LIGHT = 0xEE2476B9EE4A094F,
 
@@ -37835,7 +37835,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		GET_MP_LIGHT_ENABLED = 0x88274C11CF0D866D,
 
-		///<remarks>This function has been replaced by <see cref="GET_MP_LIGHT_ENABLED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_MP_LIGHT_ENABLED"/></remarks>
 		[Obsolete]
 		_IS_SCUBA_GEAR_LIGHT_ENABLED = 0x88274C11CF0D866D,
 
@@ -37845,7 +37845,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		CLEAR_COVER_POINT_FOR_PED = 0x637822DC2AFEEBF8,
 
-		///<remarks>This function has been replaced by <see cref="CLEAR_COVER_POINT_FOR_PED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CLEAR_COVER_POINT_FOR_PED"/></remarks>
 		[Obsolete]
 		_CLEAR_FACIAL_CLIPSET_OVERRIDE = 0x637822DC2AFEEBF8,
 
@@ -38055,7 +38055,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		DOES_SCRIPT_OWN_ROPE = 0x271C9D3ACA5D6409,
 
-		///<remarks>This function has been replaced by <see cref="DOES_SCRIPT_OWN_ROPE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DOES_SCRIPT_OWN_ROPE"/></remarks>
 		[Obsolete]
 		_DOES_ROPE_BELONG_TO_THIS_SCRIPT = 0x271C9D3ACA5D6409,
 
@@ -38083,7 +38083,7 @@ namespace GTA.Native
 		/// <returns>float</returns>
 		ROPE_GET_DISTANCE_BETWEEN_ENDS = 0x73040398DFF9A4A6, // 0xFD309DC8
 
-		///<remarks>This function has been replaced by <see cref="ROPE_GET_DISTANCE_BETWEEN_ENDS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="ROPE_GET_DISTANCE_BETWEEN_ENDS"/></remarks>
 		[Obsolete]
 		_GET_ROPE_LENGTH = 0x73040398DFF9A4A6, // 0xFD309DC8
 
@@ -38153,11 +38153,11 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		GET_IS_ENTITY_A_FRAG = 0x0C112765300C7E1E,
 
-		///<remarks>This function has been replaced by <see cref="GET_IS_ENTITY_A_FRAG"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_IS_ENTITY_A_FRAG"/></remarks>
 		[Obsolete]
 		_DOES_ENTITY_HAVE_FRAG_INST = 0x0C112765300C7E1E,
 
-		///<remarks>This function has been replaced by <see cref="GET_IS_ENTITY_A_FRAG"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_IS_ENTITY_A_FRAG"/></remarks>
 		[Obsolete]
 		_GET_HAS_OBJECT_FRAG_INST = 0x0C112765300C7E1E,
 
@@ -38188,7 +38188,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_USE_KINEMATIC_PHYSICS = 0x15F944730C832252,
 
-		///<remarks>This function has been replaced by <see cref="SET_USE_KINEMATIC_PHYSICS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_USE_KINEMATIC_PHYSICS"/></remarks>
 		[Obsolete]
 		_SET_ENTITY_PROOF_UNK = 0x15F944730C832252,
 
@@ -38207,7 +38207,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_IN_ARENA_MODE = 0xAA6A6098851C396F,
 
-		///<remarks>This function has been replaced by <see cref="SET_IN_ARENA_MODE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_IN_ARENA_MODE"/></remarks>
 		[Obsolete]
 		_SET_LAUNCH_CONTROL_ENABLED = 0xAA6A6098851C396F,
 
@@ -38287,7 +38287,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		GET_NUMBER_OF_PLAYERS_IN_TEAM = 0x1FC200409F10E6F1,
 
-		///<remarks>This function has been replaced by <see cref="GET_NUMBER_OF_PLAYERS_IN_TEAM"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_NUMBER_OF_PLAYERS_IN_TEAM"/></remarks>
 		[Obsolete]
 		_GET_NUMBER_OF_PLAYERS_IN_TEAM = 0x1FC200409F10E6F1,
 
@@ -38506,7 +38506,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_ALL_NEUTRAL_RANDOM_PEDS_FLEE = 0xDE45D1A1EF45EE61, // 0x274631FE
 
-		///<remarks>This function has been replaced by <see cref="SET_ALL_NEUTRAL_RANDOM_PEDS_FLEE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_ALL_NEUTRAL_RANDOM_PEDS_FLEE"/></remarks>
 		[Obsolete]
 		SET_HUD_ANIM_STOP_LEVEL = 0xDE45D1A1EF45EE61, // 0x274631FE
 
@@ -38519,7 +38519,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_ALL_NEUTRAL_RANDOM_PEDS_FLEE_THIS_FRAME = 0xC3376F42B1FACCC6, // 0x02DF7AF4
 
-		///<remarks>This function has been replaced by <see cref="SET_ALL_NEUTRAL_RANDOM_PEDS_FLEE_THIS_FRAME"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_ALL_NEUTRAL_RANDOM_PEDS_FLEE_THIS_FRAME"/></remarks>
 		[Obsolete]
 		SET_AREAS_GENERATOR_ORIENTATION = 0xC3376F42B1FACCC6, // 0x02DF7AF4
 
@@ -38559,7 +38559,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		GET_WANTED_LEVEL_TIME_TO_ESCAPE = 0xA72200F51875FEA4,
 
-		///<remarks>This function has been replaced by <see cref="GET_WANTED_LEVEL_TIME_TO_ESCAPE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_WANTED_LEVEL_TIME_TO_ESCAPE"/></remarks>
 		[Obsolete]
 		_GET_WANTED_LEVEL_PAROLE_DURATION = 0xA72200F51875FEA4,
 
@@ -38569,7 +38569,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_WANTED_LEVEL_HIDDEN_ESCAPE_TIME = 0x49B856B1360C47C7,
 
-		///<remarks>This function has been replaced by <see cref="SET_WANTED_LEVEL_HIDDEN_ESCAPE_TIME"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_WANTED_LEVEL_HIDDEN_ESCAPE_TIME"/></remarks>
 		[Obsolete]
 		_SET_WANTED_LEVEL_HIDDEN_EVASION_TIME = 0x49B856B1360C47C7,
 
@@ -38579,7 +38579,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		RESET_WANTED_LEVEL_HIDDEN_ESCAPE_TIME = 0x823EC8E82BA45986,
 
-		///<remarks>This function has been replaced by <see cref="RESET_WANTED_LEVEL_HIDDEN_ESCAPE_TIME"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="RESET_WANTED_LEVEL_HIDDEN_ESCAPE_TIME"/></remarks>
 		[Obsolete]
 		_RESET_WANTED_LEVEL_HIDDEN_EVASION_TIME = 0x823EC8E82BA45986,
 
@@ -38659,7 +38659,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SUPPRESS_CRIME_THIS_FRAME = 0x9A987297ED8BD838, // 0x59B5C2A2
 
-		///<remarks>This function has been replaced by <see cref="SUPPRESS_CRIME_THIS_FRAME"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SUPPRESS_CRIME_THIS_FRAME"/></remarks>
 		[Obsolete]
 		_SWITCH_CRIME_TYPE = 0x9A987297ED8BD838, // 0x59B5C2A2
 
@@ -38878,7 +38878,7 @@ namespace GTA.Native
 		/// <returns>float</returns>
 		SET_PLAYER_UNDERWATER_BREATH_PERCENT_REMAINING = 0xA0D3E4F7AAFB7E78,
 
-		///<remarks>This function has been replaced by <see cref="SET_PLAYER_UNDERWATER_BREATH_PERCENT_REMAINING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_PLAYER_UNDERWATER_BREATH_PERCENT_REMAINING"/></remarks>
 		[Obsolete]
 		_SET_PLAYER_UNDERWATER_TIME_REMAINING = 0xA0D3E4F7AAFB7E78,
 
@@ -38915,7 +38915,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		GET_ARE_CAMERA_CONTROLS_DISABLED = 0x7C814D2FB49F40C0,
 
-		///<remarks>This function has been replaced by <see cref="GET_ARE_CAMERA_CONTROLS_DISABLED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_ARE_CAMERA_CONTROLS_DISABLED"/></remarks>
 		[Obsolete]
 		_IS_PLAYER_CAM_CONTROL_DISABLED = 0x7C814D2FB49F40C0,
 
@@ -39172,11 +39172,11 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		SET_ACHIEVEMENT_PROGRESS = 0xC2AFFFDABBDC2C5C,
 
-		///<remarks>This function has been replaced by <see cref="SET_ACHIEVEMENT_PROGRESS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_ACHIEVEMENT_PROGRESS"/></remarks>
 		[Obsolete]
 		_SET_ACHIEVEMENT_PROGRESSION = 0xC2AFFFDABBDC2C5C,
 
-		///<remarks>This function has been replaced by <see cref="SET_ACHIEVEMENT_PROGRESS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_ACHIEVEMENT_PROGRESS"/></remarks>
 		[Obsolete]
 		_SET_ACHIEVEMENT_PROGRESS = 0xC2AFFFDABBDC2C5C,
 
@@ -39190,11 +39190,11 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		GET_ACHIEVEMENT_PROGRESS = 0x1C186837D0619335,
 
-		///<remarks>This function has been replaced by <see cref="GET_ACHIEVEMENT_PROGRESS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_ACHIEVEMENT_PROGRESS"/></remarks>
 		[Obsolete]
 		_GET_ACHIEVEMENT_PROGRESSION = 0x1C186837D0619335,
 
-		///<remarks>This function has been replaced by <see cref="GET_ACHIEVEMENT_PROGRESS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_ACHIEVEMENT_PROGRESS"/></remarks>
 		[Obsolete]
 		_GET_ACHIEVEMENT_PROGRESS = 0x1C186837D0619335,
 
@@ -39279,7 +39279,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_PLAYER_INVINCIBLE_BUT_HAS_REACTIONS = 0x6BC97F4F4BB3C04B,
 
-		///<remarks>This function has been replaced by <see cref="SET_PLAYER_INVINCIBLE_BUT_HAS_REACTIONS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_PLAYER_INVINCIBLE_BUT_HAS_REACTIONS"/></remarks>
 		[Obsolete]
 		_SET_PLAYER_INVINCIBLE_KEEP_RAGDOLL_ENABLED = 0x6BC97F4F4BB3C04B,
 
@@ -39485,7 +39485,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SPECIAL_ABILITY_ACTIVATE = 0x821FDC827D6F4090,
 
-		///<remarks>This function has been replaced by <see cref="SPECIAL_ABILITY_ACTIVATE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SPECIAL_ABILITY_ACTIVATE"/></remarks>
 		[Obsolete]
 		_SPECIAL_ABILITY_ACTIVATE = 0x821FDC827D6F4090,
 
@@ -39495,7 +39495,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_SPECIAL_ABILITY_MP = 0xB214D570EAD7F81A,
 
-		///<remarks>This function has been replaced by <see cref="SET_SPECIAL_ABILITY_MP"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_SPECIAL_ABILITY_MP"/></remarks>
 		[Obsolete]
 		_SET_SPECIAL_ABILITY = 0xB214D570EAD7F81A,
 
@@ -39508,7 +39508,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SPECIAL_ABILITY_DEACTIVATE_MP = 0x17F7471EACA78290,
 
-		///<remarks>This function has been replaced by <see cref="SPECIAL_ABILITY_DEACTIVATE_MP"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SPECIAL_ABILITY_DEACTIVATE_MP"/></remarks>
 		[Obsolete]
 		_SPECIAL_ABILITY_DEPLETE = 0x17F7471EACA78290,
 
@@ -39591,7 +39591,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SPECIAL_ABILITY_CHARGE_NORMALIZED = 0xA0696A65F009EE18, // 0x8C7E68C1
 
-		///<remarks>This function has been replaced by <see cref="SPECIAL_ABILITY_CHARGE_NORMALIZED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SPECIAL_ABILITY_CHARGE_NORMALIZED"/></remarks>
 		[Obsolete]
 		RESET_SPECIAL_ABILITY_CONTROLS_CINEMATIC = 0xA0696A65F009EE18, // 0x8C7E68C1
 
@@ -39709,7 +39709,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		UPDATE_PLAYER_TELEPORT = 0xE23D5873C2394C61,
 
-		///<remarks>This function has been replaced by <see cref="UPDATE_PLAYER_TELEPORT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="UPDATE_PLAYER_TELEPORT"/></remarks>
 		[Obsolete]
 		_HAS_PLAYER_TELEPORT_FINISHED = 0xE23D5873C2394C61,
 
@@ -39744,7 +39744,7 @@ namespace GTA.Native
 		/// <returns>float</returns>
 		GET_PLAYER_HEALTH_RECHARGE_MAX_PERCENT = 0x8BC515BAE4AAF8FF,
 
-		///<remarks>This function has been replaced by <see cref="GET_PLAYER_HEALTH_RECHARGE_MAX_PERCENT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_PLAYER_HEALTH_RECHARGE_MAX_PERCENT"/></remarks>
 		[Obsolete]
 		_GET_PLAYER_HEALTH_RECHARGE_LIMIT = 0x8BC515BAE4AAF8FF,
 
@@ -39754,7 +39754,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_PLAYER_HEALTH_RECHARGE_MAX_PERCENT = 0xC388A0F065F5BC34,
 
-		///<remarks>This function has been replaced by <see cref="SET_PLAYER_HEALTH_RECHARGE_MAX_PERCENT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_PLAYER_HEALTH_RECHARGE_MAX_PERCENT"/></remarks>
 		[Obsolete]
 		_SET_PLAYER_HEALTH_RECHARGE_LIMIT = 0xC388A0F065F5BC34,
 
@@ -39764,7 +39764,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_PLAYER_FALL_DISTANCE_TO_TRIGGER_RAGDOLL_OVERRIDE = 0xEFD79FA81DFBA9CB,
 
-		///<remarks>This function has been replaced by <see cref="SET_PLAYER_FALL_DISTANCE_TO_TRIGGER_RAGDOLL_OVERRIDE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_PLAYER_FALL_DISTANCE_TO_TRIGGER_RAGDOLL_OVERRIDE"/></remarks>
 		[Obsolete]
 		_SET_PLAYER_FALL_DISTANCE = 0xEFD79FA81DFBA9CB,
 
@@ -39797,7 +39797,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_PLAYER_WEAPON_MINIGUN_DEFENSE_MODIFIER = 0xBCFDE9EDE4CF27DC,
 
-		///<remarks>This function has been replaced by <see cref="SET_PLAYER_WEAPON_MINIGUN_DEFENSE_MODIFIER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_PLAYER_WEAPON_MINIGUN_DEFENSE_MODIFIER"/></remarks>
 		[Obsolete]
 		_SET_PLAYER_WEAPON_DEFENSE_MODIFIER_2 = 0xBCFDE9EDE4CF27DC,
 
@@ -40013,7 +40013,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_PLAYER_PHONE_PALETTE_IDX = 0x11D5F725F0E780E0,
 
-		///<remarks>This function has been replaced by <see cref="SET_PLAYER_PHONE_PALETTE_IDX"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_PLAYER_PHONE_PALETTE_IDX"/></remarks>
 		[Obsolete]
 		SET_PLAYER_RESET_FLAG_PREFER_REAR_SEATS = 0x11D5F725F0E780E0,
 
@@ -40165,7 +40165,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		EXTEND_WORLD_BOUNDARY_FOR_PLAYER = 0x5006D96C995A5827, // 0x64DDB07D
 
-		///<remarks>This function has been replaced by <see cref="EXTEND_WORLD_BOUNDARY_FOR_PLAYER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="EXTEND_WORLD_BOUNDARY_FOR_PLAYER"/></remarks>
 		[Obsolete]
 		_EXPAND_WORLD_LIMITS = 0x5006D96C995A5827, // 0x64DDB07D
 
@@ -40221,7 +40221,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_PLAYER_RESERVE_PARACHUTE_MODEL_OVERRIDE = 0x0764486AEDE748DB,
 
-		///<remarks>This function has been replaced by <see cref="SET_PLAYER_RESERVE_PARACHUTE_MODEL_OVERRIDE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_PLAYER_RESERVE_PARACHUTE_MODEL_OVERRIDE"/></remarks>
 		[Obsolete]
 		_SET_PLAYER_RESERVE_PARACHUTE_MODEL_OVERRIDE = 0x0764486AEDE748DB,
 
@@ -40231,7 +40231,7 @@ namespace GTA.Native
 		/// <returns>Hash</returns>
 		GET_PLAYER_PARACHUTE_MODEL_OVERRIDE = 0xC219887CA3E65C41,
 
-		///<remarks>This function has been replaced by <see cref="GET_PLAYER_PARACHUTE_MODEL_OVERRIDE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_PLAYER_PARACHUTE_MODEL_OVERRIDE"/></remarks>
 		[Obsolete]
 		_GET_PLAYER_PARACHUTE_MODEL_OVERRIDE = 0xC219887CA3E65C41,
 
@@ -40241,7 +40241,7 @@ namespace GTA.Native
 		/// <returns>Hash</returns>
 		GET_PLAYER_RESERVE_PARACHUTE_MODEL_OVERRIDE = 0x37FAAA68DCA9D08D,
 
-		///<remarks>This function has been replaced by <see cref="GET_PLAYER_RESERVE_PARACHUTE_MODEL_OVERRIDE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_PLAYER_RESERVE_PARACHUTE_MODEL_OVERRIDE"/></remarks>
 		[Obsolete]
 		_GET_PLAYER_RESERVE_PARACHUTE_MODEL_OVERRIDE = 0x37FAAA68DCA9D08D,
 
@@ -40257,7 +40257,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		CLEAR_PLAYER_RESERVE_PARACHUTE_MODEL_OVERRIDE = 0x290D248E25815AE8,
 
-		///<remarks>This function has been replaced by <see cref="CLEAR_PLAYER_RESERVE_PARACHUTE_MODEL_OVERRIDE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CLEAR_PLAYER_RESERVE_PARACHUTE_MODEL_OVERRIDE"/></remarks>
 		[Obsolete]
 		_CLEAR_PLAYER_RESERVE_PARACHUTE_MODEL_OVERRIDE = 0x290D248E25815AE8,
 
@@ -40342,7 +40342,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_PLAYER_HOMING_DISABLED_FOR_ALL_VEHICLE_WEAPONS = 0xEE4EBDD2593BA844,
 
-		///<remarks>This function has been replaced by <see cref="SET_PLAYER_HOMING_DISABLED_FOR_ALL_VEHICLE_WEAPONS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_PLAYER_HOMING_DISABLED_FOR_ALL_VEHICLE_WEAPONS"/></remarks>
 		[Obsolete]
 		_SET_PLAYER_HOMING_ROCKET_DISABLED = 0xEE4EBDD2593BA844,
 
@@ -40415,7 +40415,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		REPLAY_PREVENT_RECORDING_THIS_FRAME = 0xEB2D525B57F42B40,
 
-		///<remarks>This function has been replaced by <see cref="REPLAY_PREVENT_RECORDING_THIS_FRAME"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="REPLAY_PREVENT_RECORDING_THIS_FRAME"/></remarks>
 		[Obsolete]
 		_STOP_RECORDING_THIS_FRAME = 0xEB2D525B57F42B40,
 
@@ -40428,7 +40428,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		REPLAY_DISABLE_CAMERA_MOVEMENT_THIS_FRAME = 0xAF66DCEE6609B148,
 
-		///<remarks>This function has been replaced by <see cref="REPLAY_DISABLE_CAMERA_MOVEMENT_THIS_FRAME"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="REPLAY_DISABLE_CAMERA_MOVEMENT_THIS_FRAME"/></remarks>
 		[Obsolete]
 		_DISABLE_ROCKSTAR_EDITOR_CAMERA_CHANGES = 0xAF66DCEE6609B148,
 
@@ -40453,7 +40453,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		START_REPLAY_RECORDING = 0xC3AC2FFF9612AC81,
 
-		///<remarks>This function has been replaced by <see cref="START_REPLAY_RECORDING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="START_REPLAY_RECORDING"/></remarks>
 		[Obsolete]
 		_START_RECORDING = 0xC3AC2FFF9612AC81,
 
@@ -40463,11 +40463,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		STOP_REPLAY_RECORDING = 0x071A5197D6AFC8B3,
 
-		///<remarks>This function has been replaced by <see cref="STOP_REPLAY_RECORDING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="STOP_REPLAY_RECORDING"/></remarks>
 		[Obsolete]
 		_STOP_RECORDING = 0x071A5197D6AFC8B3,
 
-		///<remarks>This function has been replaced by <see cref="STOP_REPLAY_RECORDING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="STOP_REPLAY_RECORDING"/></remarks>
 		[Obsolete]
 		_STOP_RECORDING_AND_SAVE_CLIP = 0x071A5197D6AFC8B3,
 
@@ -40477,14 +40477,14 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		CANCEL_REPLAY_RECORDING = 0x88BB3507ED41A240,
 
-		///<remarks>This function has been replaced by <see cref="CANCEL_REPLAY_RECORDING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CANCEL_REPLAY_RECORDING"/></remarks>
 		[Obsolete]
 		_STOP_RECORDING_AND_DISCARD_CLIP = 0x88BB3507ED41A240,
 
 		/// <returns>BOOL</returns>
 		SAVE_REPLAY_RECORDING = 0x644546EC5287471B,
 
-		///<remarks>This function has been replaced by <see cref="SAVE_REPLAY_RECORDING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SAVE_REPLAY_RECORDING"/></remarks>
 		[Obsolete]
 		_SAVE_RECORDING_CLIP = 0x644546EC5287471B,
 
@@ -40496,7 +40496,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		IS_REPLAY_RECORDING = 0x1897CA71995A90B4,
 
-		///<remarks>This function has been replaced by <see cref="IS_REPLAY_RECORDING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_REPLAY_RECORDING"/></remarks>
 		[Obsolete]
 		_IS_RECORDING = 0x1897CA71995A90B4,
 
@@ -40531,7 +40531,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		REPLAY_SYSTEM_HAS_REQUESTED_A_SCRIPT_CLEANUP = 0x95AB8B5C992C7B58,
 
-		///<remarks>This function has been replaced by <see cref="REPLAY_SYSTEM_HAS_REQUESTED_A_SCRIPT_CLEANUP"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="REPLAY_SYSTEM_HAS_REQUESTED_A_SCRIPT_CLEANUP"/></remarks>
 		[Obsolete]
 		_IS_INTERIOR_RENDERING_DISABLED = 0x95AB8B5C992C7B58,
 
@@ -40553,7 +40553,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		REPLAY_CONTROL_SHUTDOWN = 0x3353D13F09307691,
 
-		///<remarks>This function has been replaced by <see cref="REPLAY_CONTROL_SHUTDOWN"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="REPLAY_CONTROL_SHUTDOWN"/></remarks>
 		[Obsolete]
 		_RESET_EDITOR_VALUES = 0x3353D13F09307691,
 
@@ -40566,7 +40566,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		ACTIVATE_ROCKSTAR_EDITOR = 0x49DA8145672B2725,
 
-		///<remarks>This function has been replaced by <see cref="ACTIVATE_ROCKSTAR_EDITOR"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="ACTIVATE_ROCKSTAR_EDITOR"/></remarks>
 		[Obsolete]
 		_ACTIVATE_ROCKSTAR_EDITOR = 0x49DA8145672B2725,
 
@@ -40638,7 +40638,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		REQUEST_SCRIPT_WITH_NAME_HASH = 0xD62A67D26D9653E6, // 0x1C68D9DC
 
-		///<remarks>This function has been replaced by <see cref="REQUEST_SCRIPT_WITH_NAME_HASH"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="REQUEST_SCRIPT_WITH_NAME_HASH"/></remarks>
 		[Obsolete]
 		_REQUEST_STREAMED_SCRIPT = 0xD62A67D26D9653E6, // 0x1C68D9DC
 
@@ -40648,7 +40648,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_SCRIPT_WITH_NAME_HASH_AS_NO_LONGER_NEEDED = 0xC5BC038960E9DB27, // 0x96C26F66
 
-		///<remarks>This function has been replaced by <see cref="SET_SCRIPT_WITH_NAME_HASH_AS_NO_LONGER_NEEDED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_SCRIPT_WITH_NAME_HASH_AS_NO_LONGER_NEEDED"/></remarks>
 		[Obsolete]
 		_SET_STREAMED_SCRIPT_AS_NO_LONGER_NEEDED = 0xC5BC038960E9DB27, // 0x96C26F66
 
@@ -40658,7 +40658,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		HAS_SCRIPT_WITH_NAME_HASH_LOADED = 0x5F0F0C783EB16C04, // 0x06674818
 
-		///<remarks>This function has been replaced by <see cref="HAS_SCRIPT_WITH_NAME_HASH_LOADED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="HAS_SCRIPT_WITH_NAME_HASH_LOADED"/></remarks>
 		[Obsolete]
 		_HAS_STREAMED_SCRIPT_LOADED = 0x5F0F0C783EB16C04, // 0x06674818
 
@@ -40668,7 +40668,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		DOES_SCRIPT_WITH_NAME_HASH_EXIST = 0xF86AA3C56BA31381, // 0x19EAE282
 
-		///<remarks>This function has been replaced by <see cref="DOES_SCRIPT_WITH_NAME_HASH_EXIST"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DOES_SCRIPT_WITH_NAME_HASH_EXIST"/></remarks>
 		[Obsolete]
 		_DOES_SCRIPT_WITH_NAME_HASH_EXIST = 0xF86AA3C56BA31381, // 0x19EAE282
 
@@ -40690,11 +40690,11 @@ namespace GTA.Native
 		/// <returns>const char*</returns>
 		GET_NAME_OF_SCRIPT_WITH_THIS_ID = 0x05A42BA9FC8DA96B, // 0xBE7ACD89
 
-		///<remarks>This function has been replaced by <see cref="GET_NAME_OF_SCRIPT_WITH_THIS_ID"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_NAME_OF_SCRIPT_WITH_THIS_ID"/></remarks>
 		[Obsolete]
 		_GET_THREAD_NAME = 0x05A42BA9FC8DA96B, // 0xBE7ACD89
 
-		///<remarks>This function has been replaced by <see cref="GET_NAME_OF_SCRIPT_WITH_THIS_ID"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_NAME_OF_SCRIPT_WITH_THIS_ID"/></remarks>
 		[Obsolete]
 		_GET_NAME_OF_THREAD = 0x05A42BA9FC8DA96B, // 0xBE7ACD89
 
@@ -40705,7 +40705,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SCRIPT_THREAD_ITERATOR_RESET = 0xDADFADA5A20143A8, // 0xBB4E2F66
 
-		///<remarks>This function has been replaced by <see cref="SCRIPT_THREAD_ITERATOR_RESET"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SCRIPT_THREAD_ITERATOR_RESET"/></remarks>
 		[Obsolete]
 		_BEGIN_ENUMERATING_THREADS = 0xDADFADA5A20143A8, // 0xBB4E2F66
 
@@ -40715,7 +40715,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		SCRIPT_THREAD_ITERATOR_GET_NEXT_THREAD_ID = 0x30B4FA1C82DD4B9F, // 0x1E28B28F
 
-		///<remarks>This function has been replaced by <see cref="SCRIPT_THREAD_ITERATOR_GET_NEXT_THREAD_ID"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SCRIPT_THREAD_ITERATOR_GET_NEXT_THREAD_ID"/></remarks>
 		[Obsolete]
 		_GET_ID_OF_NEXT_THREAD_IN_ENUMERATION = 0x30B4FA1C82DD4B9F, // 0x1E28B28F
 
@@ -40738,15 +40738,15 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH = 0x2C83A9DA6BFFC4F9, // 0x029D3841
 
-		///<remarks>This function has been replaced by <see cref="GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH"/></remarks>
 		[Obsolete]
 		_GET_NUMBER_OF_INSTANCES_OF_STREAMED_SCRIPT = 0x2C83A9DA6BFFC4F9, // 0x029D3841
 
-		///<remarks>This function has been replaced by <see cref="GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH"/></remarks>
 		[Obsolete]
 		_GET_NUMBER_OF_INSTANCES_OF_SCRIPT_WITH_NAME_HASH = 0x2C83A9DA6BFFC4F9, // 0x029D3841
 
-		///<remarks>This function has been replaced by <see cref="GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH"/></remarks>
 		[Obsolete]
 		_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH = 0x2C83A9DA6BFFC4F9, // 0x029D3841
 
@@ -40756,7 +40756,7 @@ namespace GTA.Native
 		/// <returns>Hash</returns>
 		GET_HASH_OF_THIS_SCRIPT_NAME = 0x8A1C8B1738FFE87E, // 0x2BEE1F45
 
-		///<remarks>This function has been replaced by <see cref="GET_HASH_OF_THIS_SCRIPT_NAME"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_HASH_OF_THIS_SCRIPT_NAME"/></remarks>
 		[Obsolete]
 		_GET_THIS_SCRIPT_HASH = 0x8A1C8B1738FFE87E, // 0x2BEE1F45
 
@@ -40820,7 +40820,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		GET_NO_LOADING_SCREEN = 0x18C1270EA7F199BC, // 0x27512BA0
 
-		///<remarks>This function has been replaced by <see cref="GET_NO_LOADING_SCREEN"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_NO_LOADING_SCREEN"/></remarks>
 		[Obsolete]
 		_GET_NO_LOADING_SCREEN = 0x18C1270EA7F199BC, // 0x27512BA0
 
@@ -40833,7 +40833,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		BG_IS_EXITFLAG_SET = 0x836B62713E0534CA, // 0x22B9F132
 
-		///<remarks>This function has been replaced by <see cref="BG_IS_EXITFLAG_SET"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="BG_IS_EXITFLAG_SET"/></remarks>
 		[Obsolete]
 		_BG_EXITED_BECAUSE_BACKGROUND_THREAD_STOPPED = 0x836B62713E0534CA, // 0x22B9F132
 
@@ -40906,7 +40906,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SEND_TU_SCRIPT_EVENT = 0xA40CC53DF8E50837,
 
-		///<remarks>This function has been replaced by <see cref="SEND_TU_SCRIPT_EVENT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SEND_TU_SCRIPT_EVENT"/></remarks>
 		[Obsolete]
 		_TRIGGER_SCRIPT_EVENT_2 = 0xA40CC53DF8E50837,
 
@@ -40923,7 +40923,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		REGISTER_SCRIPT_VARIABLE = 0x40EB1EFD921822BC,
 
-		///<remarks>This function has been replaced by <see cref="REGISTER_SCRIPT_VARIABLE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="REGISTER_SCRIPT_VARIABLE"/></remarks>
 		[Obsolete]
 		_REGISTER_PROTECTED_VARIABLE = 0x40EB1EFD921822BC,
 
@@ -40933,14 +40933,14 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		UNREGISTER_SCRIPT_VARIABLE = 0x340A36A700E99699,
 
-		///<remarks>This function has been replaced by <see cref="UNREGISTER_SCRIPT_VARIABLE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="UNREGISTER_SCRIPT_VARIABLE"/></remarks>
 		[Obsolete]
 		_UNREGISTER_PROTECTED_VARIABLE = 0x340A36A700E99699,
 
 		/// <returns>void</returns>
 		FORCE_CHECK_SCRIPT_VARIABLES = 0x8E580AB902917360,
 
-		///<remarks>This function has been replaced by <see cref="FORCE_CHECK_SCRIPT_VARIABLES"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="FORCE_CHECK_SCRIPT_VARIABLES"/></remarks>
 		[Obsolete]
 		_FORCE_CHECK_PROTECTED_VARIABLES_NOW = 0x8E580AB902917360,
 
@@ -40968,11 +40968,11 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		START_EXPENSIVE_SYNCHRONOUS_SHAPE_TEST_LOS_PROBE = 0x377906D8A31E5586, // 0x8251485D
 
-		///<remarks>This function has been replaced by <see cref="START_EXPENSIVE_SYNCHRONOUS_SHAPE_TEST_LOS_PROBE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="START_EXPENSIVE_SYNCHRONOUS_SHAPE_TEST_LOS_PROBE"/></remarks>
 		[Obsolete]
 		_CAST_RAY_POINT_TO_POINT = 0x377906D8A31E5586, // 0x8251485D
 
-		///<remarks>This function has been replaced by <see cref="START_EXPENSIVE_SYNCHRONOUS_SHAPE_TEST_LOS_PROBE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="START_EXPENSIVE_SYNCHRONOUS_SHAPE_TEST_LOS_PROBE"/></remarks>
 		[Obsolete]
 		_START_SHAPE_TEST_RAY = 0x377906D8A31E5586, // 0x8251485D
 
@@ -41009,7 +41009,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		START_SHAPE_TEST_CAPSULE = 0x28579D1B8F8AAC80, // 0x591EA833
 
-		///<remarks>This function has been replaced by <see cref="START_SHAPE_TEST_CAPSULE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="START_SHAPE_TEST_CAPSULE"/></remarks>
 		[Obsolete]
 		_CAST_3D_RAY_POINT_TO_POINT = 0x28579D1B8F8AAC80, // 0x591EA833
 
@@ -41019,7 +41019,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		START_SHAPE_TEST_SWEPT_SPHERE = 0xE6AC6C45FBE83004, // 0x4559460A
 
-		///<remarks>This function has been replaced by <see cref="START_SHAPE_TEST_SWEPT_SPHERE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="START_SHAPE_TEST_SWEPT_SPHERE"/></remarks>
 		[Obsolete]
 		_START_SHAPE_TEST_CAPSULE_2 = 0xE6AC6C45FBE83004, // 0x4559460A
 
@@ -41033,7 +41033,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		START_SHAPE_TEST_MOUSE_CURSOR_LOS_PROBE = 0xFF6BE494C7987F34,
 
-		///<remarks>This function has been replaced by <see cref="START_SHAPE_TEST_MOUSE_CURSOR_LOS_PROBE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="START_SHAPE_TEST_MOUSE_CURSOR_LOS_PROBE"/></remarks>
 		[Obsolete]
 		_START_SHAPE_TEST_SURROUNDING_COORDS = 0xFF6BE494C7987F34,
 
@@ -41047,7 +41047,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		GET_SHAPE_TEST_RESULT = 0x3D87450E15D98694, // 0xF3C2875A
 
-		///<remarks>This function has been replaced by <see cref="GET_SHAPE_TEST_RESULT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_SHAPE_TEST_RESULT"/></remarks>
 		[Obsolete]
 		_GET_RAYCAST_RESULT = 0x3D87450E15D98694, // 0xF3C2875A
 
@@ -41062,7 +41062,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		GET_SHAPE_TEST_RESULT_INCLUDING_MATERIAL = 0x65287525D951F6BE, // 0x4301E10C
 
-		///<remarks>This function has been replaced by <see cref="GET_SHAPE_TEST_RESULT_INCLUDING_MATERIAL"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_SHAPE_TEST_RESULT_INCLUDING_MATERIAL"/></remarks>
 		[Obsolete]
 		_GET_SHAPE_TEST_RESULT_EX = 0x65287525D951F6BE, // 0x4301E10C
 
@@ -41075,7 +41075,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		RELEASE_SCRIPT_GUID_FROM_ENTITY = 0x2B3334BCA57CD799, // 0xEC2AAF06
 
-		///<remarks>This function has been replaced by <see cref="RELEASE_SCRIPT_GUID_FROM_ENTITY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="RELEASE_SCRIPT_GUID_FROM_ENTITY"/></remarks>
 		[Obsolete]
 		_SHAPE_TEST_RESULT_ENTITY = 0x2B3334BCA57CD799, // 0xEC2AAF06
 
@@ -41086,7 +41086,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		SC_INBOX_GET_TOTAL_NUM_MESSAGES = 0x03A93FF1A2CA0864, // 0x6BE5DF29
 
-		///<remarks>This function has been replaced by <see cref="SC_INBOX_GET_TOTAL_NUM_MESSAGES"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SC_INBOX_GET_TOTAL_NUM_MESSAGES"/></remarks>
 		[Obsolete]
 		_GET_TOTAL_SC_INBOX_IDS = 0x03A93FF1A2CA0864, // 0x6BE5DF29
 
@@ -41120,7 +41120,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		SC_INBOX_MESSAGE_GET_DATA_BOOL = 0xFFE5C16F402D851D,
 
-		///<remarks>This function has been replaced by <see cref="SC_INBOX_MESSAGE_GET_DATA_BOOL"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SC_INBOX_MESSAGE_GET_DATA_BOOL"/></remarks>
 		[Obsolete]
 		_SC_INBOX_MESSAGE_GET_DATA_BOOL = 0xFFE5C16F402D851D,
 
@@ -41136,7 +41136,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		SC_INBOX_MESSAGE_DO_APPLY = 0x9A2C8064B6C1E41A, // 0xEBE420A4
 
-		///<remarks>This function has been replaced by <see cref="SC_INBOX_MESSAGE_DO_APPLY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SC_INBOX_MESSAGE_DO_APPLY"/></remarks>
 		[Obsolete]
 		_SC_INBOX_MESSAGE_PUSH = 0x9A2C8064B6C1E41A, // 0xEBE420A4
 
@@ -41146,7 +41146,7 @@ namespace GTA.Native
 		/// <returns>const char*</returns>
 		SC_INBOX_MESSAGE_GET_RAW_TYPE_AT_INDEX = 0xF3E31D16CBDCB304, // 0x2C959AF9
 
-		///<remarks>This function has been replaced by <see cref="SC_INBOX_MESSAGE_GET_RAW_TYPE_AT_INDEX"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SC_INBOX_MESSAGE_GET_RAW_TYPE_AT_INDEX"/></remarks>
 		[Obsolete]
 		_SC_INBOX_MESSAGE_GET_STRING = 0xF3E31D16CBDCB304, // 0x2C959AF9
 
@@ -41162,7 +41162,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SC_INBOX_SEND_UGCSTATUPDATE_TO_RECIP_LIST = 0xA68D3D229F4F3B06, // 0x75324674
 
-		///<remarks>This function has been replaced by <see cref="SC_INBOX_SEND_UGCSTATUPDATE_TO_RECIP_LIST"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SC_INBOX_SEND_UGCSTATUPDATE_TO_RECIP_LIST"/></remarks>
 		[Obsolete]
 		_SC_INBOX_MESSAGE_SEND_UGC_STAT_UPDATE_EVENT = 0xA68D3D229F4F3B06, // 0x75324674
 
@@ -41178,7 +41178,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		SC_INBOX_SEND_BOUNTY_TO_RECIP_LIST = 0x6AFD2CD753FEEF83, // 0x628F489B
 
-		///<remarks>This function has been replaced by <see cref="SC_INBOX_SEND_BOUNTY_TO_RECIP_LIST"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SC_INBOX_SEND_BOUNTY_TO_RECIP_LIST"/></remarks>
 		[Obsolete]
 		_SC_INBOX_MESSAGE_SEND_BOUNTY_PRESENCE_EVENT = 0x6AFD2CD753FEEF83, // 0x628F489B
 
@@ -41188,7 +41188,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		SC_INBOX_GET_BOUNTY_DATA_AT_INDEX = 0x87E0052F08BD64E6, // 0xAB3346B5
 
-		///<remarks>This function has been replaced by <see cref="SC_INBOX_GET_BOUNTY_DATA_AT_INDEX"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SC_INBOX_GET_BOUNTY_DATA_AT_INDEX"/></remarks>
 		[Obsolete]
 		_SC_INBOX_MESSAGE_GET_BOUNTY_DATA = 0x87E0052F08BD64E6, // 0xAB3346B5
 
@@ -41198,7 +41198,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SC_EMAIL_RETRIEVE_EMAILS = 0x040ADDCBAFA1018A,
 
-		///<remarks>This function has been replaced by <see cref="SC_EMAIL_RETRIEVE_EMAILS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SC_EMAIL_RETRIEVE_EMAILS"/></remarks>
 		[Obsolete]
 		_SC_INBOX_GET_EMAILS = 0x040ADDCBAFA1018A,
 
@@ -41247,21 +41247,21 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SC_CACHE_NEW_ROCKSTAR_MSGS = 0xBFA0A56A817C6C7D, // 0x2FB9F53C
 
-		///<remarks>This function has been replaced by <see cref="SC_CACHE_NEW_ROCKSTAR_MSGS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SC_CACHE_NEW_ROCKSTAR_MSGS"/></remarks>
 		[Obsolete]
 		_SET_HANDLE_ROCKSTAR_MESSAGE_VIA_SCRIPT = 0xBFA0A56A817C6C7D, // 0x2FB9F53C
 
 		/// <returns>BOOL</returns>
 		SC_HAS_NEW_ROCKSTAR_MSG = 0xBC1CC91205EC8D6E, // 0x6C5738AB
 
-		///<remarks>This function has been replaced by <see cref="SC_HAS_NEW_ROCKSTAR_MSG"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SC_HAS_NEW_ROCKSTAR_MSG"/></remarks>
 		[Obsolete]
 		_IS_ROCKSTAR_MESSAGE_READY_FOR_SCRIPT = 0xBC1CC91205EC8D6E, // 0x6C5738AB
 
 		/// <returns>const char*</returns>
 		SC_GET_NEW_ROCKSTAR_MSG = 0xDF649C4E9AFDD788, // 0x468668F0
 
-		///<remarks>This function has been replaced by <see cref="SC_GET_NEW_ROCKSTAR_MSG"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SC_GET_NEW_ROCKSTAR_MSG"/></remarks>
 		[Obsolete]
 		_ROCKSTAR_MESSAGE_GET_STRING = 0xDF649C4E9AFDD788, // 0x468668F0
 
@@ -41307,7 +41307,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		SC_GAMERDATA_GET_BOOL = 0x8416FE4E4629D7D7, // 0xDF45B2A7
 
-		///<remarks>This function has been replaced by <see cref="SC_GAMERDATA_GET_BOOL"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SC_GAMERDATA_GET_BOOL"/></remarks>
 		[Obsolete]
 		_SC_GET_IS_PROFILE_ATTRIBUTE_SET = 0x8416FE4E4629D7D7, // 0xDF45B2A7
 
@@ -41333,7 +41333,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		SC_PROFANITY_CHECK_STRING = 0x75632C5ECD7ED843, // 0xDF084A6B
 
-		///<remarks>This function has been replaced by <see cref="SC_PROFANITY_CHECK_STRING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SC_PROFANITY_CHECK_STRING"/></remarks>
 		[Obsolete]
 		_SC_START_CHECK_STRING_TASK = 0x75632C5ECD7ED843, // 0xDF084A6B
 
@@ -41343,7 +41343,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		SC_PROFANITY_CHECK_STRING_UGC = 0xEB2BF817463DFA28,
 
-		///<remarks>This function has been replaced by <see cref="SC_PROFANITY_CHECK_STRING_UGC"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SC_PROFANITY_CHECK_STRING_UGC"/></remarks>
 		[Obsolete]
 		_SC_PROFANITY_CHECK_UGC_STRING = 0xEB2BF817463DFA28,
 
@@ -41353,7 +41353,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		SC_PROFANITY_GET_CHECK_IS_VALID = 0x1753344C770358AE, // 0xFFED3676
 
-		///<remarks>This function has been replaced by <see cref="SC_PROFANITY_GET_CHECK_IS_VALID"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SC_PROFANITY_GET_CHECK_IS_VALID"/></remarks>
 		[Obsolete]
 		_SC_HAS_CHECK_STRING_TASK_COMPLETED = 0x1753344C770358AE, // 0xFFED3676
 
@@ -41363,7 +41363,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		SC_PROFANITY_GET_CHECK_IS_PENDING = 0x82E4A58BABC15AE7, // 0xA796D7A7
 
-		///<remarks>This function has been replaced by <see cref="SC_PROFANITY_GET_CHECK_IS_PENDING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SC_PROFANITY_GET_CHECK_IS_PENDING"/></remarks>
 		[Obsolete]
 		_SC_GET_CHECK_STRING_STATUS = 0x82E4A58BABC15AE7, // 0xA796D7A7
 
@@ -41604,7 +41604,7 @@ namespace GTA.Native
 		/// <returns>const char*</returns>
 		SC_ACCOUNT_INFO_GET_NICKNAME = 0x198D161F458ECC7F,
 
-		///<remarks>This function has been replaced by <see cref="SC_ACCOUNT_INFO_GET_NICKNAME"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SC_ACCOUNT_INFO_GET_NICKNAME"/></remarks>
 		[Obsolete]
 		_SC_GET_NICKNAME = 0x198D161F458ECC7F,
 
@@ -41623,7 +41623,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		SC_HAS_ACHIEVEMENT_BEEN_PASSED = 0x418DC16FAE452C1C,
 
-		///<remarks>This function has been replaced by <see cref="SC_HAS_ACHIEVEMENT_BEEN_PASSED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SC_HAS_ACHIEVEMENT_BEEN_PASSED"/></remarks>
 		[Obsolete]
 		_SC_GET_HAS_ACHIEVEMENT_BEEN_PASSED = 0x418DC16FAE452C1C,
 
@@ -42031,7 +42031,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		STAT_SET_PROFILE_SETTING_VALUE = 0x68F01422BE1D838F, // 0x24DD4929
 
-		///<remarks>This function has been replaced by <see cref="STAT_SET_PROFILE_SETTING_VALUE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="STAT_SET_PROFILE_SETTING_VALUE"/></remarks>
 		[Obsolete]
 		_STAT_SET_PROFILE_SETTING = 0x68F01422BE1D838F, // 0x24DD4929
 
@@ -42053,7 +42053,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		PACKED_STAT_GET_INT_STAT_INDEX = 0x94F12ABF9C79E339, // 0xCA160BCC
 
-		///<remarks>This function has been replaced by <see cref="PACKED_STAT_GET_INT_STAT_INDEX"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PACKED_STAT_GET_INT_STAT_INDEX"/></remarks>
 		[Obsolete]
 		_STAT_GET_PACKED_INT_MASK = 0x94F12ABF9C79E339, // 0xCA160BCC
 
@@ -42063,7 +42063,7 @@ namespace GTA.Native
 		/// <returns>Hash</returns>
 		GET_PACKED_INT_STAT_KEY = 0x61E111E323419E07, // 0x1F938864
 
-		///<remarks>This function has been replaced by <see cref="GET_PACKED_INT_STAT_KEY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_PACKED_INT_STAT_KEY"/></remarks>
 		[Obsolete]
 		_GET_PSTAT_INT_HASH = 0x61E111E323419E07, // 0x1F938864
 
@@ -42073,11 +42073,11 @@ namespace GTA.Native
 		/// <returns>Hash</returns>
 		GET_PACKED_TU_INT_STAT_KEY = 0xD16C2AD6B8E32854, // 0xFB93C5A2
 
-		///<remarks>This function has been replaced by <see cref="GET_PACKED_TU_INT_STAT_KEY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_PACKED_TU_INT_STAT_KEY"/></remarks>
 		[Obsolete]
 		_GET_TUPSTAT_INT_HASH = 0xD16C2AD6B8E32854, // 0xFB93C5A2
 
-		///<remarks>This function has been replaced by <see cref="GET_PACKED_TU_INT_STAT_KEY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_PACKED_TU_INT_STAT_KEY"/></remarks>
 		[Obsolete]
 		_GET_PACKED_TITLE_UPDATE_INT_STAT_KEY = 0xD16C2AD6B8E32854, // 0xFB93C5A2
 
@@ -42107,7 +42107,7 @@ namespace GTA.Native
 		/// <returns>Hash</returns>
 		GET_PACKED_NG_INT_STAT_KEY = 0x2B4CDCA6F07FF3DA,
 
-		///<remarks>This function has been replaced by <see cref="GET_PACKED_NG_INT_STAT_KEY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_PACKED_NG_INT_STAT_KEY"/></remarks>
 		[Obsolete]
 		_GET_NGSTAT_INT_HASH = 0x2B4CDCA6F07FF3DA,
 
@@ -42117,7 +42117,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		GET_PACKED_STAT_BOOL_CODE = 0xDA7EBFC49AE3F1B0,
 
-		///<remarks>This function has been replaced by <see cref="GET_PACKED_STAT_BOOL_CODE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_PACKED_STAT_BOOL_CODE"/></remarks>
 		[Obsolete]
 		_GET_PACKED_STAT_BOOL = 0xDA7EBFC49AE3F1B0,
 
@@ -42127,7 +42127,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		GET_PACKED_STAT_INT_CODE = 0x0BC900A6FE73770C,
 
-		///<remarks>This function has been replaced by <see cref="GET_PACKED_STAT_INT_CODE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_PACKED_STAT_INT_CODE"/></remarks>
 		[Obsolete]
 		_GET_PACKED_STAT_INT = 0x0BC900A6FE73770C,
 
@@ -42137,7 +42137,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_PACKED_STAT_BOOL_CODE = 0xDB8A58AEAA67CD07,
 
-		///<remarks>This function has been replaced by <see cref="SET_PACKED_STAT_BOOL_CODE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_PACKED_STAT_BOOL_CODE"/></remarks>
 		[Obsolete]
 		_SET_PACKED_STAT_BOOL = 0xDB8A58AEAA67CD07,
 
@@ -42147,7 +42147,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_PACKED_STAT_INT_CODE = 0x1581503AE529CD2E,
 
-		///<remarks>This function has been replaced by <see cref="SET_PACKED_STAT_INT_CODE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_PACKED_STAT_INT_CODE"/></remarks>
 		[Obsolete]
 		_SET_PACKED_STAT_INT = 0x1581503AE529CD2E,
 
@@ -42250,7 +42250,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_CRATE_DROP_MISSION_DONE = 0x1CAE5D2E3F9A07F0, // 0x6602CED6
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_CRATE_DROP_MISSION_DONE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_CRATE_DROP_MISSION_DONE"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_CRATE_DROP = 0x1CAE5D2E3F9A07F0, // 0x6602CED6
 
@@ -42260,11 +42260,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_CRATE_CREATED = 0xAFC7E5E075A96F46, // 0xD003E648
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_CRATE_CREATED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_CRATE_CREATED"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_AMBIENT_MISSION_CRATE_CREATED = 0xAFC7E5E075A96F46, // 0xD003E648
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_CRATE_CREATED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_CRATE_CREATED"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_CRATE_CREATED_MISSION_DONE = 0xAFC7E5E075A96F46, // 0xD003E648
 
@@ -42274,7 +42274,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_HOLD_UP_MISSION_DONE = 0xCB00196B31C39EB1, // 0x759E0EC9
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_HOLD_UP_MISSION_DONE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_HOLD_UP_MISSION_DONE"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_HOLD_UP = 0xCB00196B31C39EB1, // 0x759E0EC9
 
@@ -42284,7 +42284,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_IMPORT_EXPORT_MISSION_DONE = 0x2B69F5074C894811, // 0x62073DF7
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_IMPORT_EXPORT_MISSION_DONE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_IMPORT_EXPORT_MISSION_DONE"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_IMP_EXP = 0x2B69F5074C894811, // 0x62073DF7
 
@@ -42294,7 +42294,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_RACE_TO_POINT_MISSION_DONE = 0xADDD1C754E2E2914, // 0x06CE3692
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_RACE_TO_POINT_MISSION_DONE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_RACE_TO_POINT_MISSION_DONE"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_RACE_TO_POINT = 0xADDD1C754E2E2914, // 0x06CE3692
 
@@ -42400,7 +42400,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_HEIST_SAVE_CHEAT = 0xF4FF020A08BC8863, // 0xB731DF54
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_HEIST_SAVE_CHEAT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_HEIST_SAVE_CHEAT"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_HEIST_SAVE_CHEAT = 0xF4FF020A08BC8863, // 0xB731DF54
 
@@ -42410,7 +42410,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_APPEND_DIRECTOR_METRIC = 0x46326E13DA4E0546,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_APPEND_DIRECTOR_METRIC"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_APPEND_DIRECTOR_METRIC"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_DIRECTOR_MODE = 0x46326E13DA4E0546,
 
@@ -42420,7 +42420,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_AWARD_BAD_SPORT = 0x47B32F5611E6E483,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_AWARD_BAD_SPORT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_AWARD_BAD_SPORT"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_AWARD_BADSPORT = 0x47B32F5611E6E483,
 
@@ -42430,7 +42430,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_PEGASUS_AS_PERSONAL_AIRCRAFT = 0x9572BD4DD6B72122,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_PEGASUS_AS_PERSONAL_AIRCRAFT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_PEGASUS_AS_PERSONAL_AIRCRAFT"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_PEGASAIRCRAFT = 0x9572BD4DD6B72122,
 
@@ -42440,7 +42440,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_FM_EVENT_CHALLENGES = 0x6A60E43998228229,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_FM_EVENT_CHALLENGES"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_FM_EVENT_CHALLENGES"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_FREEMODE_CHALLENGES = 0x6A60E43998228229,
 
@@ -42450,7 +42450,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_FM_EVENT_VEHICLETARGET = 0xBFAFDB5FAAA5C5AB,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_FM_EVENT_VEHICLETARGET"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_FM_EVENT_VEHICLETARGET"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_FREEMODE_VEHICLE_TARGET = 0xBFAFDB5FAAA5C5AB,
 
@@ -42460,7 +42460,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_FM_EVENT_URBANWARFARE = 0x8C9D11605E59D955,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_FM_EVENT_URBANWARFARE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_FM_EVENT_URBANWARFARE"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_FREEMODE_URBAN_WARFARE = 0x8C9D11605E59D955,
 
@@ -42470,7 +42470,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_FM_EVENT_CHECKPOINTCOLLECTION = 0x3DE3AA516FB126A4,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_FM_EVENT_CHECKPOINTCOLLECTION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_FM_EVENT_CHECKPOINTCOLLECTION"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_FREEMODE_CHECKPOINT_COLLECTION = 0x3DE3AA516FB126A4,
 
@@ -42480,7 +42480,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_FM_EVENT_ATOB = 0xBAA2F0490E146BE8,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_FM_EVENT_ATOB"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_FM_EVENT_ATOB"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_FREEMODE_ATOB = 0xBAA2F0490E146BE8,
 
@@ -42490,7 +42490,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_FM_EVENT_PENNEDIN = 0x1A7CE7CD3E653485,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_FM_EVENT_PENNEDIN"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_FM_EVENT_PENNEDIN"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_FREEMODE_PENNED_IN = 0x1A7CE7CD3E653485,
 
@@ -42500,7 +42500,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_FM_EVENT_PASSTHEPARCEL = 0x419615486BBF1956,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_FM_EVENT_PASSTHEPARCEL"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_FM_EVENT_PASSTHEPARCEL"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_FREEMODE_PASS_THE_PARCEL = 0x419615486BBF1956,
 
@@ -42510,7 +42510,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_FM_EVENT_HOTPROPERTY = 0x84DFC579C2FC214C,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_FM_EVENT_HOTPROPERTY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_FM_EVENT_HOTPROPERTY"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_FREEMODE_HOT_PROPERTY = 0x84DFC579C2FC214C,
 
@@ -42520,7 +42520,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_FM_EVENT_DEADDROP = 0x0A9C7F36E5D7B683,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_FM_EVENT_DEADDROP"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_FM_EVENT_DEADDROP"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_FREEMODE_DEADDROP = 0x0A9C7F36E5D7B683,
 
@@ -42530,7 +42530,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_FM_EVENT_KINGOFTHECASTLE = 0x164C5FF663790845,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_FM_EVENT_KINGOFTHECASTLE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_FM_EVENT_KINGOFTHECASTLE"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_FREEMODE_KING_OF_THE_CASTLE = 0x164C5FF663790845,
 
@@ -42540,7 +42540,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_FM_EVENT_CRIMINALDAMAGE = 0xEDBF6C9B0D2C65C8,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_FM_EVENT_CRIMINALDAMAGE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_FM_EVENT_CRIMINALDAMAGE"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_FREEMODE_CRIMINAL_DAMAGE = 0xEDBF6C9B0D2C65C8,
 
@@ -42550,7 +42550,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_FM_EVENT_COMPETITIVEURBANWARFARE = 0x6551B1F7F6CD46EA,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_FM_EVENT_COMPETITIVEURBANWARFARE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_FM_EVENT_COMPETITIVEURBANWARFARE"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_FREEMODE_COMPETITIVE_URBAN_WARFARE = 0x6551B1F7F6CD46EA,
 
@@ -42560,7 +42560,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_FM_EVENT_HUNTBEAST = 0x2CD90358F67D0AA8,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_FM_EVENT_HUNTBEAST"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_FM_EVENT_HUNTBEAST"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_FREEMODE_HUNT_BEAST = 0x2CD90358F67D0AA8,
 
@@ -42570,7 +42570,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_PIMENU_HIDE_OPTIONS = 0x203B381133817079,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_PIMENU_HIDE_OPTIONS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_PIMENU_HIDE_OPTIONS"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_PI_MENU_HIDE_SETTINGS = 0x203B381133817079,
 
@@ -42670,7 +42670,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		LEADERBOARDS2_READ_BY_PLAFORM = 0xF1AE5DCDBFCA2721,
 
-		///<remarks>This function has been replaced by <see cref="LEADERBOARDS2_READ_BY_PLAFORM"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="LEADERBOARDS2_READ_BY_PLAFORM"/></remarks>
 		[Obsolete]
 		_LEADERBOARDS2_READ_BY_PLATFORM = 0xF1AE5DCDBFCA2721,
 
@@ -42680,14 +42680,14 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		LEADERBOARDS2_READ_GET_ROW_DATA_START = 0xA0F93D5465B3094D, // 0xC977D6E2
 
-		///<remarks>This function has been replaced by <see cref="LEADERBOARDS2_READ_GET_ROW_DATA_START"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="LEADERBOARDS2_READ_GET_ROW_DATA_START"/></remarks>
 		[Obsolete]
 		LEADERBOARDS2_READ_BY_HELP_PURPLE_START = 0xA0F93D5465B3094D, // 0xC977D6E2
 
 		/// <returns>void</returns>
 		LEADERBOARDS2_READ_GET_ROW_DATA_END = 0x71B008056E5692D6, // 0xF2DB6A82
 
-		///<remarks>This function has been replaced by <see cref="LEADERBOARDS2_READ_GET_ROW_DATA_END"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="LEADERBOARDS2_READ_GET_ROW_DATA_END"/></remarks>
 		[Obsolete]
 		LEADERBOARDS2_READ_BY_HELP_PURPLE_END = 0x71B008056E5692D6, // 0xF2DB6A82
 
@@ -42697,7 +42697,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		LEADERBOARDS2_READ_GET_ROW_DATA_INFO = 0x34770B9CE0E03B91, // 0x766A74FE
 
-		///<remarks>This function has been replaced by <see cref="LEADERBOARDS2_READ_GET_ROW_DATA_INFO"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="LEADERBOARDS2_READ_GET_ROW_DATA_INFO"/></remarks>
 		[Obsolete]
 		LEADERBOARDS2_READ_BY_HELP_PURPLE_INFO = 0x34770B9CE0E03B91, // 0x766A74FE
 
@@ -42707,7 +42707,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		LEADERBOARDS2_READ_GET_ROW_DATA_INT = 0x88578F6EC36B4A3A, // 0x6B90E730
 
-		///<remarks>This function has been replaced by <see cref="LEADERBOARDS2_READ_GET_ROW_DATA_INT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="LEADERBOARDS2_READ_GET_ROW_DATA_INT"/></remarks>
 		[Obsolete]
 		LEADERBOARDS2_READ_BY_HELP_PURPLE_INT = 0x88578F6EC36B4A3A, // 0x6B90E730
 
@@ -42717,7 +42717,7 @@ namespace GTA.Native
 		/// <returns>float</returns>
 		LEADERBOARDS2_READ_GET_ROW_DATA_FLOAT = 0x38491439B6BA7F7D, // 0x509A286F
 
-		///<remarks>This function has been replaced by <see cref="LEADERBOARDS2_READ_GET_ROW_DATA_FLOAT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="LEADERBOARDS2_READ_GET_ROW_DATA_FLOAT"/></remarks>
 		[Obsolete]
 		LEADERBOARDS2_READ_BY_HELP_PURPLE_FLOAT = 0x38491439B6BA7F7D, // 0x509A286F
 
@@ -42784,7 +42784,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PRESENCE_EVENT_UPDATESTAT_INT = 0x11FF1C80276097ED, // 0x4AC39C6C
 
-		///<remarks>This function has been replaced by <see cref="PRESENCE_EVENT_UPDATESTAT_INT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PRESENCE_EVENT_UPDATESTAT_INT"/></remarks>
 		[Obsolete]
 		_UPDATE_STAT_INT = 0x11FF1C80276097ED, // 0x4AC39C6C
 
@@ -42794,7 +42794,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PRESENCE_EVENT_UPDATESTAT_FLOAT = 0x30A6614C1F7799B8, // 0x3E69E7C3
 
-		///<remarks>This function has been replaced by <see cref="PRESENCE_EVENT_UPDATESTAT_FLOAT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PRESENCE_EVENT_UPDATESTAT_FLOAT"/></remarks>
 		[Obsolete]
 		_UPDATE_STAT_FLOAT = 0x30A6614C1F7799B8, // 0x3E69E7C3
 
@@ -42897,7 +42897,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		STAT_MIGRATE_SAVEGAME_START = 0xA5C80D8E768A9E66,
 
-		///<remarks>This function has been replaced by <see cref="STAT_MIGRATE_SAVEGAME_START"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="STAT_MIGRATE_SAVEGAME_START"/></remarks>
 		[Obsolete]
 		_STAT_MIGRATE_SAVE = 0xA5C80D8E768A9E66,
 
@@ -42931,14 +42931,14 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		STAT_SAVE_MIGRATION_CANCEL_PENDING_OPERATION = 0x4FEF53183C3C6414,
 
-		///<remarks>This function has been replaced by <see cref="STAT_SAVE_MIGRATION_CANCEL_PENDING_OPERATION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="STAT_SAVE_MIGRATION_CANCEL_PENDING_OPERATION"/></remarks>
 		[Obsolete]
 		_STAT_SAVE_MIGRATION_CANCEL = 0x4FEF53183C3C6414,
 
 		/// <returns>int</returns>
 		STAT_GET_CANCEL_SAVE_MIGRATION_STATUS = 0x567384DFA67029E6,
 
-		///<remarks>This function has been replaced by <see cref="STAT_GET_CANCEL_SAVE_MIGRATION_STATUS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="STAT_GET_CANCEL_SAVE_MIGRATION_STATUS"/></remarks>
 		[Obsolete]
 		_STAT_GET_CANCEL_SAVE_MIGRATION_STATUS = 0x567384DFA67029E6,
 
@@ -42948,7 +42948,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		STAT_SAVE_MIGRATION_CONSUME_CONTENT = 0x3270F67EED31FBC1,
 
-		///<remarks>This function has been replaced by <see cref="STAT_SAVE_MIGRATION_CONSUME_CONTENT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="STAT_SAVE_MIGRATION_CONSUME_CONTENT"/></remarks>
 		[Obsolete]
 		_STAT_SAVE_MIGRATION_CONSUME_CONTENT_UNLOCK = 0x3270F67EED31FBC1,
 
@@ -42958,14 +42958,14 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		STAT_GET_SAVE_MIGRATION_CONSUME_CONTENT_STATUS = 0xCE5AA445ABA8DEE0,
 
-		///<remarks>This function has been replaced by <see cref="STAT_GET_SAVE_MIGRATION_CONSUME_CONTENT_STATUS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="STAT_GET_SAVE_MIGRATION_CONSUME_CONTENT_STATUS"/></remarks>
 		[Obsolete]
 		_STAT_GET_SAVE_MIGRATION_CONSUME_CONTENT_UNLOCK_STATUS = 0xCE5AA445ABA8DEE0,
 
 		/// <returns>void</returns>
 		STAT_ENABLE_STATS_TRACKING = 0x98E2BC1CA26287C3,
 
-		///<remarks>This function has been replaced by <see cref="STAT_ENABLE_STATS_TRACKING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="STAT_ENABLE_STATS_TRACKING"/></remarks>
 		[Obsolete]
 		_STAT_MANAGER_SET_MUTABLE = 0x98E2BC1CA26287C3,
 
@@ -42975,14 +42975,14 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		STAT_DISABLE_STATS_TRACKING = 0x629526ABA383BCAA,
 
-		///<remarks>This function has been replaced by <see cref="STAT_DISABLE_STATS_TRACKING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="STAT_DISABLE_STATS_TRACKING"/></remarks>
 		[Obsolete]
 		_STAT_MANAGER_SET_IMMUTABLE = 0x629526ABA383BCAA,
 
 		/// <returns>BOOL</returns>
 		STAT_IS_STATS_TRACKING_ENABLED = 0xBE3DB208333D9844,
 
-		///<remarks>This function has been replaced by <see cref="STAT_IS_STATS_TRACKING_ENABLED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="STAT_IS_STATS_TRACKING_ENABLED"/></remarks>
 		[Obsolete]
 		_STAT_MANAGER_IS_MUTABLE = 0xBE3DB208333D9844,
 
@@ -43034,14 +43034,14 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		STAT_START_RECORD_STAT = 0x33D72899E24C3365,
 
-		///<remarks>This function has been replaced by <see cref="STAT_START_RECORD_STAT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="STAT_START_RECORD_STAT"/></remarks>
 		[Obsolete]
 		_STAT_TRACKING_ENABLE = 0x33D72899E24C3365,
 
 		/// <returns>BOOL</returns>
 		STAT_STOP_RECORD_STAT = 0xA761D4AC6115623D,
 
-		///<remarks>This function has been replaced by <see cref="STAT_STOP_RECORD_STAT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="STAT_STOP_RECORD_STAT"/></remarks>
 		[Obsolete]
 		_STAT_TRACKING_CLEAR_PROGRESS = 0xA761D4AC6115623D,
 
@@ -43051,14 +43051,14 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		STAT_GET_RECORDED_VALUE = 0xF11F01D98113536A,
 
-		///<remarks>This function has been replaced by <see cref="STAT_GET_RECORDED_VALUE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="STAT_GET_RECORDED_VALUE"/></remarks>
 		[Obsolete]
 		_STAT_GET_PROGRESS_OF_TRACKED_STAT = 0xF11F01D98113536A,
 
 		/// <returns>BOOL</returns>
 		STAT_IS_RECORDING_STAT = 0x8B9CDBD6C566C38C,
 
-		///<remarks>This function has been replaced by <see cref="STAT_IS_RECORDING_STAT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="STAT_IS_RECORDING_STAT"/></remarks>
 		[Obsolete]
 		_STAT_IS_TRACKING_ENABLED = 0x8B9CDBD6C566C38C,
 
@@ -43068,7 +43068,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		STAT_GET_CURRENT_NEAR_MISS_NOCRASH_PRECISE = 0xE8853FBCE7D8D0D6,
 
-		///<remarks>This function has been replaced by <see cref="STAT_GET_CURRENT_NEAR_MISS_NOCRASH_PRECISE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="STAT_GET_CURRENT_NEAR_MISS_NOCRASH_PRECISE"/></remarks>
 		[Obsolete]
 		_STAT_GET_CHALLENGE_NEAR_MISSES = 0xE8853FBCE7D8D0D6,
 
@@ -43078,7 +43078,7 @@ namespace GTA.Native
 		/// <returns>float</returns>
 		STAT_GET_CURRENT_REAR_WHEEL_DISTANCE = 0xA943FD1722E11EFD,
 
-		///<remarks>This function has been replaced by <see cref="STAT_GET_CURRENT_REAR_WHEEL_DISTANCE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="STAT_GET_CURRENT_REAR_WHEEL_DISTANCE"/></remarks>
 		[Obsolete]
 		_STAT_GET_CHALLENGE_LONGEST_WHEELIE = 0xA943FD1722E11EFD,
 
@@ -43088,7 +43088,7 @@ namespace GTA.Native
 		/// <returns>float</returns>
 		STAT_GET_CURRENT_FRONT_WHEEL_DISTANCE = 0x84A810B375E69C0E,
 
-		///<remarks>This function has been replaced by <see cref="STAT_GET_CURRENT_FRONT_WHEEL_DISTANCE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="STAT_GET_CURRENT_FRONT_WHEEL_DISTANCE"/></remarks>
 		[Obsolete]
 		_STAT_GET_CHALLENGE_LONGEST_STOPPIE = 0x84A810B375E69C0E,
 
@@ -43098,7 +43098,7 @@ namespace GTA.Native
 		/// <returns>float</returns>
 		STAT_GET_CURRENT_JUMP_DISTANCE = 0x9EC8858184CD253A,
 
-		///<remarks>This function has been replaced by <see cref="STAT_GET_CURRENT_JUMP_DISTANCE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="STAT_GET_CURRENT_JUMP_DISTANCE"/></remarks>
 		[Obsolete]
 		_STAT_GET_CHALLENGE_LONGEST_JUMP = 0x9EC8858184CD253A,
 
@@ -43108,7 +43108,7 @@ namespace GTA.Native
 		/// <returns>float</returns>
 		STAT_GET_CURRENT_DRIVE_NOCRASH_DISTANCE = 0xBA9749CC94C1FD85,
 
-		///<remarks>This function has been replaced by <see cref="STAT_GET_CURRENT_DRIVE_NOCRASH_DISTANCE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="STAT_GET_CURRENT_DRIVE_NOCRASH_DISTANCE"/></remarks>
 		[Obsolete]
 		_STAT_GET_CHALLENGE_NO_CRASHES = 0xBA9749CC94C1FD85,
 
@@ -43118,7 +43118,7 @@ namespace GTA.Native
 		/// <returns>float</returns>
 		STAT_GET_CURRENT_SPEED = 0x55A8BECAF28A4EB7,
 
-		///<remarks>This function has been replaced by <see cref="STAT_GET_CURRENT_SPEED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="STAT_GET_CURRENT_SPEED"/></remarks>
 		[Obsolete]
 		_STAT_GET_CHALLENGE_HIGHEST_SPEED = 0x55A8BECAF28A4EB7,
 
@@ -43128,7 +43128,7 @@ namespace GTA.Native
 		/// <returns>float</returns>
 		STAT_GET_CURRENT_DRIVING_REVERSE_DISTANCE = 0x32CAC93C9DE73D32,
 
-		///<remarks>This function has been replaced by <see cref="STAT_GET_CURRENT_DRIVING_REVERSE_DISTANCE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="STAT_GET_CURRENT_DRIVING_REVERSE_DISTANCE"/></remarks>
 		[Obsolete]
 		_STAT_GET_CHALLENGE_REVERSE_DRIVING = 0x32CAC93C9DE73D32,
 
@@ -43138,7 +43138,7 @@ namespace GTA.Native
 		/// <returns>float</returns>
 		STAT_GET_CURRENT_SKYDIVING_DISTANCE = 0xAFF47709F1D5DCCE,
 
-		///<remarks>This function has been replaced by <see cref="STAT_GET_CURRENT_SKYDIVING_DISTANCE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="STAT_GET_CURRENT_SKYDIVING_DISTANCE"/></remarks>
 		[Obsolete]
 		_STAT_GET_CHALLENGE_LONGEST_FREEFALL = 0xAFF47709F1D5DCCE,
 
@@ -43148,7 +43148,7 @@ namespace GTA.Native
 		/// <returns>float</returns>
 		STAT_GET_CHALLENGE_FLYING_DIST = 0x6E0A5253375C4584,
 
-		///<remarks>This function has been replaced by <see cref="STAT_GET_CHALLENGE_FLYING_DIST"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="STAT_GET_CHALLENGE_FLYING_DIST"/></remarks>
 		[Obsolete]
 		_STAT_GET_CHALLENGE_LOW_FLYING = 0x6E0A5253375C4584,
 
@@ -43158,7 +43158,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		STAT_GET_FLYING_ALTITUDE = 0x1A8EA222F9C67DBB,
 
-		///<remarks>This function has been replaced by <see cref="STAT_GET_FLYING_ALTITUDE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="STAT_GET_FLYING_ALTITUDE"/></remarks>
 		[Obsolete]
 		_STAT_GET_HEIGHT_ABOVE_GROUND = 0x1A8EA222F9C67DBB,
 
@@ -43168,7 +43168,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		STAT_IS_PLAYER_VEHICLE_ABOVE_OCEAN = 0xF9F2922717B819EC,
 
-		///<remarks>This function has been replaced by <see cref="STAT_IS_PLAYER_VEHICLE_ABOVE_OCEAN"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="STAT_IS_PLAYER_VEHICLE_ABOVE_OCEAN"/></remarks>
 		[Obsolete]
 		_STAT_IS_ABOVE_DEEP_WATER = 0xF9F2922717B819EC,
 
@@ -43178,7 +43178,7 @@ namespace GTA.Native
 		/// <returns>float</returns>
 		STAT_GET_VEHICLE_BAIL_DISTANCE = 0x0B8B7F74BF061C6D,
 
-		///<remarks>This function has been replaced by <see cref="STAT_GET_VEHICLE_BAIL_DISTANCE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="STAT_GET_VEHICLE_BAIL_DISTANCE"/></remarks>
 		[Obsolete]
 		_STAT_GET_LONGEST_BAIL = 0x0B8B7F74BF061C6D,
 
@@ -43197,7 +43197,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_HAS_SPECIALEDITION_CONTENT = 0xDAC073C7901F9E15,
 
-		///<remarks>This function has been replaced by <see cref="SET_HAS_SPECIALEDITION_CONTENT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_HAS_SPECIALEDITION_CONTENT"/></remarks>
 		[Obsolete]
 		_SET_HAS_CONTENT_UNLOCKS_FLAGS = 0xDAC073C7901F9E15,
 
@@ -43210,7 +43210,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_SAVE_MIGRATION_TRANSACTION_ID_WARNING = 0xF6792800AC95350D,
 
-		///<remarks>This function has been replaced by <see cref="SET_SAVE_MIGRATION_TRANSACTION_ID_WARNING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_SAVE_MIGRATION_TRANSACTION_ID_WARNING"/></remarks>
 		[Obsolete]
 		_SET_SAVE_MIGRATION_TRANSACTION_ID = 0xF6792800AC95350D,
 
@@ -43226,7 +43226,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_BW_BOSSONBOSSDEATHMATCH = 0x8D8ADB562F09A245,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_BW_BOSSONBOSSDEATHMATCH"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_BW_BOSSONBOSSDEATHMATCH"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_BW_BOSS_ON_BOSS_DEATH_MATCH = 0x8D8ADB562F09A245,
 
@@ -43236,7 +43236,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_BW_YATCHATTACK = 0xD1A1EE3B4FA8E760,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_BW_YATCHATTACK"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_BW_YATCHATTACK"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_BW_YACHT_ATTACK = 0xD1A1EE3B4FA8E760,
 
@@ -43246,7 +43246,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_BW_HUNT_THE_BOSS = 0x88087EE1F28024AE,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_BW_HUNT_THE_BOSS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_BW_HUNT_THE_BOSS"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_BW_HUNT_THE_BOSS = 0x88087EE1F28024AE,
 
@@ -43256,7 +43256,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_BW_SIGHTSEER = 0xFCC228E07217FCAC,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_BW_SIGHTSEER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_BW_SIGHTSEER"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_BW_SIGHTSEER = 0xFCC228E07217FCAC,
 
@@ -43266,7 +43266,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_BW_ASSAULT = 0x678F86D8FC040BDB,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_BW_ASSAULT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_BW_ASSAULT"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_BW_ASSAULT = 0x678F86D8FC040BDB,
 
@@ -43276,7 +43276,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_BW_BELLY_OF_THE_BEAST = 0xA6F54BB2FFCA35EA,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_BW_BELLY_OF_THE_BEAST"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_BW_BELLY_OF_THE_BEAST"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_BW_BELLY_OF_THE_BEAST = 0xA6F54BB2FFCA35EA,
 
@@ -43286,7 +43286,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_BW_HEAD_HUNTER = 0x5FF2C33B13A02A11,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_BW_HEAD_HUNTER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_BW_HEAD_HUNTER"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_BW_HEADHUNTER = 0x5FF2C33B13A02A11,
 
@@ -43296,7 +43296,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_BW_FRAGILE_GOODS = 0x282B6739644F4347,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_BW_FRAGILE_GOODS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_BW_FRAGILE_GOODS"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_BW_FRAGILE_GOOODS = 0x282B6739644F4347,
 
@@ -43306,7 +43306,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_BW_AIR_FREIGHT = 0xF06A6F41CB445443,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_BW_AIR_FREIGHT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_BW_AIR_FREIGHT"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_BW_AIR_FREIGHT = 0xF06A6F41CB445443,
 
@@ -43316,7 +43316,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_BC_CAR_JACKING = 0x7B18DA61F6BAE9D5,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_BC_CAR_JACKING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_BC_CAR_JACKING"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_BC_CAR_JACKING = 0x7B18DA61F6BAE9D5,
 
@@ -43326,7 +43326,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_BC_SMASH_AND_GRAB = 0x06EAF70AE066441E,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_BC_SMASH_AND_GRAB"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_BC_SMASH_AND_GRAB"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_BC_SMASH_AND_GRAB = 0x06EAF70AE066441E,
 
@@ -43336,7 +43336,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_BC_PROTECTION_RACKET = 0x14EDA9EE27BD1626,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_BC_PROTECTION_RACKET"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_BC_PROTECTION_RACKET"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_BC_PROTECTION_RACKET = 0x14EDA9EE27BD1626,
 
@@ -43346,7 +43346,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_BC_MOST_WANTED = 0x930F504203F561C9,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_BC_MOST_WANTED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_BC_MOST_WANTED"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_BC_MOST_WANTED = 0x930F504203F561C9,
 
@@ -43356,7 +43356,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_BC_FINDERS_KEEPERS = 0xE3261D791EB44ACB,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_BC_FINDERS_KEEPERS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_BC_FINDERS_KEEPERS"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_BC_FINDERS_KEEPERS = 0xE3261D791EB44ACB,
 
@@ -43366,7 +43366,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_BC_POINT_TO_POINT = 0x73001E34F85137F8,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_BC_POINT_TO_POINT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_BC_POINT_TO_POINT"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_BC_POINT_TO_POINT = 0x73001E34F85137F8,
 
@@ -43376,7 +43376,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_BC_CASHING = 0x53CAE13E9B426993,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_BC_CASHING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_BC_CASHING"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_BC_CASHING = 0x53CAE13E9B426993,
 
@@ -43386,7 +43386,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_BC_SALVAGE = 0x7D36291161859389,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_BC_SALVAGE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_BC_SALVAGE"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_BC_SALVAGE = 0x7D36291161859389,
 
@@ -43396,7 +43396,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_SPENT_PI_CUSTOM_LOADOUT = 0xBE509B0A3693DE8B,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_SPENT_PI_CUSTOM_LOADOUT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_SPENT_PI_CUSTOM_LOADOUT"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_SPENT_PI_CUSTOM_LOADOUT = 0xBE509B0A3693DE8B,
 
@@ -43406,7 +43406,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_BUY_CONTRABAND_MISSION = 0xD6781E42755531F7,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_BUY_CONTRABAND_MISSION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_BUY_CONTRABAND_MISSION"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_BUY_CONTRABAND = 0xD6781E42755531F7,
 
@@ -43416,7 +43416,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_SELL_CONTRABAND_MISSION = 0xC729991A9065376E,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_SELL_CONTRABAND_MISSION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_SELL_CONTRABAND_MISSION"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_SELL_CONTRABAND = 0xC729991A9065376E,
 
@@ -43426,7 +43426,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_DEFEND_CONTRABAND_MISSION = 0x2605663BD4F23B5D,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_DEFEND_CONTRABAND_MISSION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_DEFEND_CONTRABAND_MISSION"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_DEFEND_CONTRABAND = 0x2605663BD4F23B5D,
 
@@ -43436,7 +43436,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_RECOVER_CONTRABAND_MISSION = 0x04D90BA8207ADA2D,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_RECOVER_CONTRABAND_MISSION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_RECOVER_CONTRABAND_MISSION"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_RECOVER_CONTRABAND = 0x04D90BA8207ADA2D,
 
@@ -43446,7 +43446,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_HIT_CONTRABAND_DESTROY_LIMIT = 0x60EEDC12AF66E846,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_HIT_CONTRABAND_DESTROY_LIMIT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_HIT_CONTRABAND_DESTROY_LIMIT"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_HIT_CONTRABAND_DESTROY_LIMIT = 0x60EEDC12AF66E846,
 
@@ -43456,7 +43456,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		START_BEING_BOSS = 0x3EBEAC6C3F81F6BD,
 
-		///<remarks>This function has been replaced by <see cref="START_BEING_BOSS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="START_BEING_BOSS"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_BECOME_BOSS = 0x3EBEAC6C3F81F6BD,
 
@@ -43466,7 +43466,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		START_BEING_GOON = 0x96E6D5150DBF1C09,
 
-		///<remarks>This function has been replaced by <see cref="START_BEING_GOON"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="START_BEING_GOON"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_BECOME_GOON = 0x96E6D5150DBF1C09,
 
@@ -43476,7 +43476,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		END_BEING_BOSS = 0xA3C53804BDB68ED2,
 
-		///<remarks>This function has been replaced by <see cref="END_BEING_BOSS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="END_BEING_BOSS"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_END_BEING_BOSS = 0xA3C53804BDB68ED2,
 
@@ -43486,7 +43486,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		END_BEING_GOON = 0x6BCCF9948492FD85,
 
-		///<remarks>This function has been replaced by <see cref="END_BEING_GOON"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="END_BEING_GOON"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_END_BEING_GOON = 0x6BCCF9948492FD85,
 
@@ -43496,7 +43496,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		HIRED_LIMO = 0x792271AB35C356A4,
 
-		///<remarks>This function has been replaced by <see cref="HIRED_LIMO"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="HIRED_LIMO"/></remarks>
 		[Obsolete]
 		_HIRED_LIMO = 0x792271AB35C356A4,
 
@@ -43506,7 +43506,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		ORDER_BOSS_VEHICLE = 0xCEA553E35C2246E1,
 
-		///<remarks>This function has been replaced by <see cref="ORDER_BOSS_VEHICLE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="ORDER_BOSS_VEHICLE"/></remarks>
 		[Obsolete]
 		_ORDERED_BOSS_VEHICLE = 0xCEA553E35C2246E1,
 
@@ -43516,7 +43516,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		CHANGE_UNIFORM = 0xD1C9B92BDD3F151D,
 
-		///<remarks>This function has been replaced by <see cref="CHANGE_UNIFORM"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CHANGE_UNIFORM"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_CHANGE_UNIFORM = 0xD1C9B92BDD3F151D,
 
@@ -43526,7 +43526,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		CHANGE_GOON_LOOKING_FOR_WORK = 0x44919CC079BB60BF,
 
-		///<remarks>This function has been replaced by <see cref="CHANGE_GOON_LOOKING_FOR_WORK"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CHANGE_GOON_LOOKING_FOR_WORK"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_CHANGE_GOON_LOOKING_FOR_WORK = 0x44919CC079BB60BF,
 
@@ -43536,7 +43536,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SEND_METRIC_GHOSTING_TO_PLAYER = 0x7033EEFD9B28088E,
 
-		///<remarks>This function has been replaced by <see cref="SEND_METRIC_GHOSTING_TO_PLAYER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SEND_METRIC_GHOSTING_TO_PLAYER"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_GHOSTING_TO_PLAYER = 0x7033EEFD9B28088E,
 
@@ -43546,7 +43546,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SEND_METRIC_VIP_POACH = 0xAA525DFF66BB82F5,
 
-		///<remarks>This function has been replaced by <see cref="SEND_METRIC_VIP_POACH"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SEND_METRIC_VIP_POACH"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_VIP_POACH = 0xAA525DFF66BB82F5,
 
@@ -43556,7 +43556,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SEND_METRIC_PUNISH_BODYGUARD = 0x015B03EE1C43E6EC,
 
-		///<remarks>This function has been replaced by <see cref="SEND_METRIC_PUNISH_BODYGUARD"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SEND_METRIC_PUNISH_BODYGUARD"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_PUNISH_BODYGUARD = 0x015B03EE1C43E6EC,
 
@@ -43566,7 +43566,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_START_TRACKING_STUNTS = 0x928DBFB892638EF3,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_START_TRACKING_STUNTS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_START_TRACKING_STUNTS"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_STUNT_PERFORMED_EVENT_ALLOW_TRIGGER = 0x928DBFB892638EF3,
 
@@ -43576,7 +43576,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_STOP_TRACKING_STUNTS = 0x8A800DACCC0DA55D,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_STOP_TRACKING_STUNTS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_STOP_TRACKING_STUNTS"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_STUNT_PERFORMED_EVENT_DISALLOW_TRIGGER = 0x8A800DACCC0DA55D,
 
@@ -43586,7 +43586,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_MISSION_ENDED = 0xBF371CD2B64212FD,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_MISSION_ENDED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_MISSION_ENDED"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_MISSION_ENDED = 0xBF371CD2B64212FD,
 
@@ -43596,7 +43596,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_IMPEXP_MISSION_ENDED = 0x7D8BA05688AD64C7,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_IMPEXP_MISSION_ENDED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_IMPEXP_MISSION_ENDED"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_IMPEXP_MISSION_ENDED = 0x7D8BA05688AD64C7,
 
@@ -43606,7 +43606,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_CHANGE_MC_ROLE = 0x0B565B0AAE56A0E8,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_CHANGE_MC_ROLE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_CHANGE_MC_ROLE"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_CHANGE_MC_ROLE = 0x0B565B0AAE56A0E8,
 
@@ -43616,7 +43616,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_CHANGE_MC_OUTFIT = 0x28ECB8AC2F607DB2,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_CHANGE_MC_OUTFIT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_CHANGE_MC_OUTFIT"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_CHANGE_MC_OUTFIT = 0x28ECB8AC2F607DB2,
 
@@ -43626,7 +43626,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_SWITCH_MC_EMBLEM = 0x0A50D2604E05CB94,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_SWITCH_MC_EMBLEM"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_SWITCH_MC_EMBLEM"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_CHANGE_MC_EMBLEM = 0x0A50D2604E05CB94,
 
@@ -43636,7 +43636,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_MC_REQUEST_BIKE = 0xCC25A4553DFBF9EA,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_MC_REQUEST_BIKE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_MC_REQUEST_BIKE"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_MC_REQUEST_BIKE = 0xCC25A4553DFBF9EA,
 
@@ -43646,7 +43646,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_MC_KILLED_RIVAL_MC_MEMBER = 0xF534D94DFA2EAD26,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_MC_KILLED_RIVAL_MC_MEMBER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_MC_KILLED_RIVAL_MC_MEMBER"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_KILLED_RIVAL_MC_MEMBER = 0xF534D94DFA2EAD26,
 
@@ -43656,7 +43656,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_ABANDONED_MC = 0xD558BEC0BBA7E8D2,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_ABANDONED_MC"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_ABANDONED_MC"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_ABANDONING_MC = 0xD558BEC0BBA7E8D2,
 
@@ -43666,7 +43666,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_EARNED_MC_POINTS = 0x501478855A6074CE,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_EARNED_MC_POINTS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_EARNED_MC_POINTS"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_EARNED_MC_POINTS = 0x501478855A6074CE,
 
@@ -43676,7 +43676,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_MC_FORMATION_ENDS = 0x03C2EEBB04B3FB72,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_MC_FORMATION_ENDS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_MC_FORMATION_ENDS"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_MC_FORMATION_ENDS = 0x03C2EEBB04B3FB72,
 
@@ -43686,7 +43686,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_MC_CLUBHOUSE_ACTIVITY = 0x8989CBD7B4E82534,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_MC_CLUBHOUSE_ACTIVITY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_MC_CLUBHOUSE_ACTIVITY"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_MC_CLUBHOUSE_ACTIVITY = 0x8989CBD7B4E82534,
 
@@ -43696,7 +43696,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_RIVAL_BEHAVIOR = 0x27AA1C973CACFE63,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_RIVAL_BEHAVIOR"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_RIVAL_BEHAVIOR"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_RIVAL_BEHAVIOUR = 0x27AA1C973CACFE63,
 
@@ -43706,7 +43706,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_COPY_RANK_INTO_NEW_SLOT = 0xB7257BA2550EA10A,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_COPY_RANK_INTO_NEW_SLOT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_COPY_RANK_INTO_NEW_SLOT"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_COPY_RANK_INTO_NEW_SLOT = 0xB7257BA2550EA10A,
 
@@ -43716,7 +43716,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_DUPE_DETECTED = 0x848B66100EE33B05,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_DUPE_DETECTED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_DUPE_DETECTED"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_DUPE_DETECTION = 0x848B66100EE33B05,
 
@@ -43726,7 +43726,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_BAN_ALERT = 0x516FC96EB88EEFE5,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_BAN_ALERT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_BAN_ALERT"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_BAN_ALERT = 0x516FC96EB88EEFE5,
 
@@ -43736,7 +43736,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_GUNRUNNING_MISSION_ENDED = 0x0EACDF8487D5155A,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_GUNRUNNING_MISSION_ENDED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_GUNRUNNING_MISSION_ENDED"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_GUNRUN_MISSION_ENDED = 0x0EACDF8487D5155A,
 
@@ -43746,7 +43746,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_GUNRUNNING_RND = 0xDAF80797FC534BEC,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_GUNRUNNING_RND"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_GUNRUNNING_RND"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_GUNRUN_RND = 0xDAF80797FC534BEC,
 
@@ -43756,7 +43756,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_BUSINESS_BATTLE_ENDED = 0x316DB59CD14C1774,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_BUSINESS_BATTLE_ENDED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_BUSINESS_BATTLE_ENDED"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_BUSINESS_BATTLE_ENDED = 0x316DB59CD14C1774,
 
@@ -43766,7 +43766,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_WAREHOUSE_MISSION_ENDED = 0x2D7A9B577E72385E,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_WAREHOUSE_MISSION_ENDED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_WAREHOUSE_MISSION_ENDED"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_WAREHOUSE_MISSION_ENDED = 0x2D7A9B577E72385E,
 
@@ -43776,7 +43776,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_NIGHTCLUB_MISSION_ENDED = 0x830C3A44EB3F2CF9,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_NIGHTCLUB_MISSION_ENDED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_NIGHTCLUB_MISSION_ENDED"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_NIGHTCLUB_MISSION_ENDED = 0x830C3A44EB3F2CF9,
 
@@ -43786,7 +43786,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_DJ_USAGE = 0xB26F670685631727,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_DJ_USAGE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_DJ_USAGE"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_DJ_USAGE = 0xB26F670685631727,
 
@@ -43796,7 +43796,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_MINIGAME_USAGE = 0xC14BD9F5337219B2,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_MINIGAME_USAGE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_MINIGAME_USAGE"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_MINIGAME_USAGE = 0xC14BD9F5337219B2,
 
@@ -43806,7 +43806,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_STONE_HATCHET_ENDED = 0x35E39E5570358630,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_STONE_HATCHET_ENDED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_STONE_HATCHET_ENDED"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_STONE_HATCHET_END = 0x35E39E5570358630,
 
@@ -43816,7 +43816,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_SMUGGLER_MISSION_ENDED = 0x320C35147D5B5DDD,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_SMUGGLER_MISSION_ENDED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_SMUGGLER_MISSION_ENDED"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_SMUG_MISSION_ENDED = 0x320C35147D5B5DDD,
 
@@ -43826,7 +43826,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_FM_HEIST_PREP_ENDED = 0xD8AFB345A9C5CCBB,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_FM_HEIST_PREP_ENDED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_FM_HEIST_PREP_ENDED"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_H2_FMPREP_END = 0xD8AFB345A9C5CCBB,
 
@@ -43836,7 +43836,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_INSTANCED_HEIST_ENDED = 0x1E1497D0D2108115,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_INSTANCED_HEIST_ENDED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_INSTANCED_HEIST_ENDED"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_H2_INSTANCE_END = 0x1E1497D0D2108115,
 
@@ -43846,7 +43846,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_DAR_CHECKPOINT = 0x0BC254FF3A911501,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_DAR_CHECKPOINT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_DAR_CHECKPOINT"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_DAR_MISSION_END = 0x0BC254FF3A911501,
 
@@ -43856,7 +43856,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_ENTER_SESSION_PACK = 0x878FF156D36E9956,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_ENTER_SESSION_PACK"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_ENTER_SESSION_PACK"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_ENTER_SESSION_PACK = 0x878FF156D36E9956,
 
@@ -43866,7 +43866,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_DRONE_USAGE = 0x66C7BB2416ED3FCE,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_DRONE_USAGE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_DRONE_USAGE"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_DRONE_USAGE = 0x66C7BB2416ED3FCE,
 
@@ -43876,7 +43876,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_SPIN_WHEEL = 0x6731DE84A38BFAD0,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_SPIN_WHEEL"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_SPIN_WHEEL"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_SPECTATOR_WHEEL_SPIN = 0x6731DE84A38BFAD0,
 
@@ -43886,7 +43886,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_ARENA_WARS_SPECTATOR = 0x6F4F599753F8200A,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_ARENA_WARS_SPECTATOR"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_ARENA_WARS_SPECTATOR"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_ARENA_WAR_SPECTATOR = 0x6F4F599753F8200A,
 
@@ -43896,7 +43896,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_ARENA_WARS_ENDED = 0xB479D9F0D48A1BC5,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_ARENA_WARS_ENDED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_ARENA_WARS_ENDED"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_ARENA_WARS_ENDED = 0xB479D9F0D48A1BC5,
 
@@ -43906,7 +43906,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_SWITCH_PASSIVE_MODE = 0x35EEC6C2BC821A71,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_SWITCH_PASSIVE_MODE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_SWITCH_PASSIVE_MODE"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_PASSIVE_MODE = 0x35EEC6C2BC821A71,
 
@@ -43916,7 +43916,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_COLLECTIBLE_PICKED_UP = 0xCD0A8A9338681CF2,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_COLLECTIBLE_PICKED_UP"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_COLLECTIBLE_PICKED_UP"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_COLLECTIBLE = 0xCD0A8A9338681CF2,
 
@@ -43926,7 +43926,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_CASINO_STORY_MISSION_ENDED = 0xFCCCAC2BD3C1F180,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_CASINO_STORY_MISSION_ENDED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_CASINO_STORY_MISSION_ENDED"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_CASINO_STORY_MISSION_ENDED = 0xFCCCAC2BD3C1F180,
 
@@ -43936,7 +43936,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_CASINO_CHIP = 0x0999F3F090EC5012,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_CASINO_CHIP"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_CASINO_CHIP"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_CASINO_CHIP = 0x0999F3F090EC5012,
 
@@ -43946,7 +43946,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_CASINO_ROULETTE = 0x95101C443A84E7F1,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_CASINO_ROULETTE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_CASINO_ROULETTE"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_CASINO_ROULETTE = 0x95101C443A84E7F1,
 
@@ -43956,7 +43956,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_CASINO_BLACKJACK = 0x3EAE97309727E7AD,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_CASINO_BLACKJACK"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_CASINO_BLACKJACK"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_CASINO_BLACKJACK = 0x3EAE97309727E7AD,
 
@@ -43966,7 +43966,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_CASINO_THREE_CARD_POKER = 0xF740FB339D471C35,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_CASINO_THREE_CARD_POKER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_CASINO_THREE_CARD_POKER"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_CASINO_THREECARDPOKER = 0xF740FB339D471C35,
 
@@ -43976,7 +43976,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_CASINO_SLOT_MACHINE = 0xEF5EC67D392B830A,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_CASINO_SLOT_MACHINE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_CASINO_SLOT_MACHINE"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_CASINO_SLOTMACHINE = 0xEF5EC67D392B830A,
 
@@ -43986,7 +43986,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_CASINO_INSIDE_TRACK = 0x049F059625058A86,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_CASINO_INSIDE_TRACK"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_CASINO_INSIDE_TRACK"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_CASINO_INSIDETRACK = 0x049F059625058A86,
 
@@ -43996,7 +43996,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_CASINO_LUCKY_SEVEN = 0x0C432C1435F5E4FA,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_CASINO_LUCKY_SEVEN"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_CASINO_LUCKY_SEVEN"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_CASINO_LUCKYSEVEN = 0x0C432C1435F5E4FA,
 
@@ -44006,7 +44006,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_CASINO_ROULETTE_LIGHT = 0x6572ABA3DE1197FC,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_CASINO_ROULETTE_LIGHT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_CASINO_ROULETTE_LIGHT"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_CASINO_ROULETTE_LIGHT = 0x6572ABA3DE1197FC,
 
@@ -44016,7 +44016,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_CASINO_BLACKJACK_LIGHT = 0xD5451C7BF151EB6F,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_CASINO_BLACKJACK_LIGHT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_CASINO_BLACKJACK_LIGHT"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_CASINO_BLACKJACK_LIGHT = 0xD5451C7BF151EB6F,
 
@@ -44026,7 +44026,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_CASINO_THREE_CARD_POKER_LIGHT = 0xC9001364B4388F22,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_CASINO_THREE_CARD_POKER_LIGHT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_CASINO_THREE_CARD_POKER_LIGHT"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_CASINO_THREECARDPOKER_LIGHT = 0xC9001364B4388F22,
 
@@ -44036,7 +44036,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_CASINO_SLOT_MACHINE_LIGHT = 0xE60054A0FAE8227F,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_CASINO_SLOT_MACHINE_LIGHT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_CASINO_SLOT_MACHINE_LIGHT"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_CASINO_SLOTMACHINE_LIGHT = 0xE60054A0FAE8227F,
 
@@ -44046,7 +44046,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_CASINO_INSIDE_TRACK_LIGHT = 0x23A3CBCD50D54E47,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_CASINO_INSIDE_TRACK_LIGHT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_CASINO_INSIDE_TRACK_LIGHT"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_CASINO_INSIDETRACK_LIGHT = 0x23A3CBCD50D54E47,
 
@@ -44056,7 +44056,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_ARCADE_GAME = 0x533A7D1EA58DF958,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_ARCADE_GAME"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_ARCADE_GAME"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_ARCADEGAME = 0x533A7D1EA58DF958,
 
@@ -44066,7 +44066,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_ARCADE_LOVE_MATCH = 0x4FCDBD3F0A813C25,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_ARCADE_LOVE_MATCH"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_ARCADE_LOVE_MATCH"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_ARCADE_LOVEMATCH = 0x4FCDBD3F0A813C25,
 
@@ -44076,7 +44076,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_FREEMODE_CASINO_MISSION_ENDED = 0x1A0D4A6C336B7BC5,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_FREEMODE_CASINO_MISSION_ENDED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_FREEMODE_CASINO_MISSION_ENDED"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_CASINO_MISSION_ENDED = 0x1A0D4A6C336B7BC5,
 
@@ -44086,7 +44086,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_HEIST3_DRONE = 0xDFBD93BF2943E29B,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_HEIST3_DRONE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_HEIST3_DRONE"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_HEIST3_DRONE = 0xDFBD93BF2943E29B,
 
@@ -44096,7 +44096,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_HEIST3_HACK = 0x92FC0EEDFAC04A14,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_HEIST3_HACK"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_HEIST3_HACK"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_HEIST3_HACK = 0x92FC0EEDFAC04A14,
 
@@ -44106,7 +44106,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_NPC_PHONE = 0x0077F15613D36993,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_NPC_PHONE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_NPC_PHONE"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_NPC_PHONE = 0x0077F15613D36993,
 
@@ -44116,7 +44116,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_ARCADE_CABINET = 0xF9096193DF1F99D4,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_ARCADE_CABINET"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_ARCADE_CABINET"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_ARCADE_CABINET = 0xF9096193DF1F99D4,
 
@@ -44126,7 +44126,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_HEIST3_FINALE = 0x2E0259BABC27A327,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_HEIST3_FINALE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_HEIST3_FINALE"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_HEIST3_FINALE = 0x2E0259BABC27A327,
 
@@ -44136,7 +44136,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_HEIST3_PREP = 0x53C31853EC9531FF,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_HEIST3_PREP"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_HEIST3_PREP"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_HEIST3_PREP = 0x53C31853EC9531FF,
 
@@ -44146,7 +44146,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_MASTER_CONTROL = 0x810B5FCC52EC7FF0,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_MASTER_CONTROL"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_MASTER_CONTROL"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_MASTER_CONTROL = 0x810B5FCC52EC7FF0,
 
@@ -44156,7 +44156,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_QUIT_MODE = 0x5BF29846C6527C54,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_QUIT_MODE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_QUIT_MODE"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_QUIT_MODE = 0x5BF29846C6527C54,
 
@@ -44166,7 +44166,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_MISSION_VOTE = 0xC03FAB2C2F92289B,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_MISSION_VOTE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_MISSION_VOTE"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_MISSION_VOTE = 0xC03FAB2C2F92289B,
 
@@ -44176,7 +44176,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_NJVS_VOTE = 0x5CDAED54B34B0ED0,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_NJVS_VOTE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_NJVS_VOTE"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_NJVS_VOTE = 0x5CDAED54B34B0ED0,
 
@@ -44189,7 +44189,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_FM_MISSION_END = 0x46A70777BE6CEAB9,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_FM_MISSION_END"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_FM_MISSION_END"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_FREEMODE_MISSION_END = 0x46A70777BE6CEAB9,
 
@@ -44199,7 +44199,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_HEIST4_PREP = 0xDFCDB14317A9B361,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_HEIST4_PREP"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_HEIST4_PREP"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_HEIST4_PREP = 0xDFCDB14317A9B361,
 
@@ -44209,7 +44209,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_HEIST4_FINALE = 0xC1E963C58664B556,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_HEIST4_FINALE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_HEIST4_FINALE"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_HEIST4_FINALE = 0xC1E963C58664B556,
 
@@ -44219,7 +44219,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_HEIST4_HACK = 0x2FA3173480008493,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_HEIST4_HACK"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_HEIST4_HACK"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_HEIST4_HACK = 0x2FA3173480008493,
 
@@ -44229,7 +44229,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_SUB_WEAP = 0xD4367D310F079DB0,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_SUB_WEAP"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_SUB_WEAP"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_SUB_WEAP = 0xD4367D310F079DB0,
 
@@ -44239,7 +44239,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_FAST_TRVL = 0x4DC416F246A41FC8,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_FAST_TRVL"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_FAST_TRVL"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_FAST_TRVL = 0x4DC416F246A41FC8,
 
@@ -44249,7 +44249,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_HUB_ENTRY = 0x2818FF6638CB09DE,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_HUB_ENTRY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_HUB_ENTRY"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_HUB_ENTRY = 0x2818FF6638CB09DE,
 
@@ -44259,7 +44259,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_DJ_MISSION_ENDED = 0xD6CA58B3B53A0F22,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_DJ_MISSION_ENDED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_DJ_MISSION_ENDED"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_DJ_MISSION_ENDED = 0xD6CA58B3B53A0F22,
 
@@ -44269,7 +44269,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_ROBBERY_PREP = 0x1A67DFBF1F5C3835,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_ROBBERY_PREP"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_ROBBERY_PREP"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_ROBBERY_PREP = 0x1A67DFBF1F5C3835,
 
@@ -44279,7 +44279,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_ROBBERY_FINALE = 0xBBA55BE9AAAABF44,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_ROBBERY_FINALE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_ROBBERY_FINALE"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_ROBBERY_FINALE = 0xBBA55BE9AAAABF44,
 
@@ -44289,7 +44289,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_EXTRA_EVENT = 0xFA5B74BAB8A7EF99,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_EXTRA_EVENT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_EXTRA_EVENT"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_EXTRA_EVENT = 0xFA5B74BAB8A7EF99,
 
@@ -44299,7 +44299,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_CARCLUB_POINTS = 0xFF14D6FEEC507BBE,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_CARCLUB_POINTS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_CARCLUB_POINTS"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_CARCLUB_POINTS = 0xFF14D6FEEC507BBE,
 
@@ -44309,7 +44309,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_CARCLUB_CHALLENGE = 0x1187CB58D7F3BED7,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_CARCLUB_CHALLENGE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_CARCLUB_CHALLENGE"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_CARCLUB_CHALLENGE = 0x1187CB58D7F3BED7,
 
@@ -44319,7 +44319,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_CARCLUB_PRIZE = 0x69C922B677621428,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_CARCLUB_PRIZE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_CARCLUB_PRIZE"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_CARCLUB_PRIZE = 0x69C922B677621428,
 
@@ -44329,7 +44329,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_AWARD_NAV = 0x70F52471E758EBAE,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_AWARD_NAV"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_AWARD_NAV"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_AWARDS_NAV = 0x70F52471E758EBAE,
 
@@ -44339,7 +44339,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_INST_MISSION_END = 0xFEA3F7E83C0610FA,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_INST_MISSION_END"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_INST_MISSION_END"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_INST_MISSION_END = 0xFEA3F7E83C0610FA,
 
@@ -44349,7 +44349,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_HUB_EXIT = 0x5A46ACE5C4661132,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_HUB_EXIT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_HUB_EXIT"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_HUB_EXIT = 0x5A46ACE5C4661132,
 
@@ -44359,7 +44359,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		PLAYSTATS_INVENTORY = 0x887DAD63CF5B7908,
 
-		///<remarks>This function has been replaced by <see cref="PLAYSTATS_INVENTORY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="PLAYSTATS_INVENTORY"/></remarks>
 		[Obsolete]
 		_PLAYSTATS_INVENTORY = 0x887DAD63CF5B7908,
 
@@ -44426,7 +44426,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		REQUEST_MODELS_IN_ROOM = 0x8A7A40100EDFEC58, // 0x939243FB
 
-		///<remarks>This function has been replaced by <see cref="REQUEST_MODELS_IN_ROOM"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="REQUEST_MODELS_IN_ROOM"/></remarks>
 		[Obsolete]
 		_REQUEST_INTERIOR_ROOM_BY_NAME = 0x8A7A40100EDFEC58, // 0x939243FB
 
@@ -44653,14 +44653,14 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		LOAD_GLOBAL_WATER_FILE = 0x7E3F55ED251B76D3,
 
-		///<remarks>This function has been replaced by <see cref="LOAD_GLOBAL_WATER_FILE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="LOAD_GLOBAL_WATER_FILE"/></remarks>
 		[Obsolete]
 		_LOAD_GLOBAL_WATER_TYPE = 0x7E3F55ED251B76D3,
 
 		/// <returns>int</returns>
 		GET_GLOBAL_WATER_FILE = 0xF741BD853611592D,
 
-		///<remarks>This function has been replaced by <see cref="GET_GLOBAL_WATER_FILE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_GLOBAL_WATER_FILE"/></remarks>
 		[Obsolete]
 		_GET_GLOBAL_WATER_TYPE = 0xF741BD853611592D,
 
@@ -44740,7 +44740,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		REMOVE_NAMED_PTFX_ASSET = 0x5F61EBBE1A00F96D, // 0xC44762A1
 
-		///<remarks>This function has been replaced by <see cref="REMOVE_NAMED_PTFX_ASSET"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="REMOVE_NAMED_PTFX_ASSET"/></remarks>
 		[Obsolete]
 		_REMOVE_NAMED_PTFX_ASSET = 0x5F61EBBE1A00F96D, // 0xC44762A1
 
@@ -44773,7 +44773,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_FOCUS_POS_AND_VEL = 0xBB7454BAFF08FE25, // 0x14680A60
 
-		///<remarks>This function has been replaced by <see cref="SET_FOCUS_POS_AND_VEL"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_FOCUS_POS_AND_VEL"/></remarks>
 		[Obsolete]
 		_SET_FOCUS_AREA = 0xBB7454BAFF08FE25, // 0x14680A60
 
@@ -44827,7 +44827,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		STREAMVOL_CREATE_SPHERE = 0x219C7B8D53E429FD, // 0x10B6AB36
 
-		///<remarks>This function has been replaced by <see cref="STREAMVOL_CREATE_SPHERE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="STREAMVOL_CREATE_SPHERE"/></remarks>
 		[Obsolete]
 		FORMAT_FOCUS_HEADING = 0x219C7B8D53E429FD, // 0x10B6AB36
 
@@ -45019,7 +45019,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SWITCH_TO_MULTI_FIRSTPART = 0xAAB3200ED59016BC, // 0xFB4D062D
 
-		///<remarks>This function has been replaced by <see cref="SWITCH_TO_MULTI_FIRSTPART"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SWITCH_TO_MULTI_FIRSTPART"/></remarks>
 		[Obsolete]
 		_SWITCH_OUT_PLAYER = 0xAAB3200ED59016BC, // 0xFB4D062D
 
@@ -45029,7 +45029,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SWITCH_TO_MULTI_SECONDPART = 0xD8295AF639FD9CB8, // 0x2349373B
 
-		///<remarks>This function has been replaced by <see cref="SWITCH_TO_MULTI_SECONDPART"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SWITCH_TO_MULTI_SECONDPART"/></remarks>
 		[Obsolete]
 		_SWITCH_IN_PLAYER = 0xD8295AF639FD9CB8, // 0x2349373B
 
@@ -45039,7 +45039,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		GET_PLAYER_SWITCH_INTERP_OUT_DURATION = 0x08C2D6C52A3104BB, // 0x569847E3
 
-		///<remarks>This function has been replaced by <see cref="GET_PLAYER_SWITCH_INTERP_OUT_DURATION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_PLAYER_SWITCH_INTERP_OUT_DURATION"/></remarks>
 		[Obsolete]
 		SET_PLAYER_INVERTED_UP = 0x08C2D6C52A3104BB, // 0x569847E3
 
@@ -45049,7 +45049,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		IS_SWITCH_SKIPPING_DESCENT = 0x5B74EA8CFD5E3E7E, // 0x90F64284
 
-		///<remarks>This function has been replaced by <see cref="IS_SWITCH_SKIPPING_DESCENT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_SWITCH_SKIPPING_DESCENT"/></remarks>
 		[Obsolete]
 		DESTROY_PLAYER_IN_PAUSE_MENU = 0x5B74EA8CFD5E3E7E, // 0x90F64284
 
@@ -45175,7 +45175,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		INIT_CREATOR_BUDGET = 0xB5A4DB34FE89B88A, // 0xE243B2AF
 
-		///<remarks>This function has been replaced by <see cref="INIT_CREATOR_BUDGET"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="INIT_CREATOR_BUDGET"/></remarks>
 		[Obsolete]
 		_LOAD_MISSION_CREATOR_DATA = 0xB5A4DB34FE89B88A, // 0xE243B2AF
 
@@ -45202,7 +45202,7 @@ namespace GTA.Native
 		/// <returns>float</returns>
 		GET_USED_CREATOR_BUDGET = 0x3D3D8B3BE5A83D35, // 0x3E9C4CBE
 
-		///<remarks>This function has been replaced by <see cref="GET_USED_CREATOR_BUDGET"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_USED_CREATOR_BUDGET"/></remarks>
 		[Obsolete]
 		_GET_USED_CREATOR_MODEL_MEMORY_PERCENTAGE = 0x3D3D8B3BE5A83D35, // 0x3E9C4CBE
 
@@ -45215,7 +45215,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_ISLAND_ENABLED = 0x9A9D1BA639675CF1,
 
-		///<remarks>This function has been replaced by <see cref="SET_ISLAND_ENABLED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_ISLAND_ENABLED"/></remarks>
 		[Obsolete]
 		_SET_ISLAND_HOPPER_ENABLED = 0x9A9D1BA639675CF1,
 
@@ -45327,7 +45327,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		TASK_GET_OFF_BOAT = 0x9C00E77AF14B2DFF, // 0x4293601F
 
-		///<remarks>This function has been replaced by <see cref="TASK_GET_OFF_BOAT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="TASK_GET_OFF_BOAT"/></remarks>
 		[Obsolete]
 		_TASK_GET_OFF_BOAT = 0x9C00E77AF14B2DFF, // 0x4293601F
 
@@ -45617,7 +45617,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_PED_PATH_MAY_ENTER_WATER = 0xF35425A4204367EC, // 0x9C606EE3
 
-		///<remarks>This function has been replaced by <see cref="SET_PED_PATH_MAY_ENTER_WATER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_PED_PATH_MAY_ENTER_WATER"/></remarks>
 		[Obsolete]
 		SET_PED_PATHS_WIDTH_PLANT = 0xF35425A4204367EC, // 0x9C606EE3
 
@@ -45838,7 +45838,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_ANIM_PHASE = 0xDDF3CB5A0A4C0B49, // 0xB621E7E4
 
-		///<remarks>This function has been replaced by <see cref="SET_ANIM_PHASE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_ANIM_PHASE"/></remarks>
 		[Obsolete]
 		_SET_ANIM_PLAYBACK_TIME = 0xDDF3CB5A0A4C0B49, // 0xB621E7E4
 
@@ -45885,7 +45885,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		TASK_STOP_PHONE_GESTURE_ANIMATION = 0x3FA00D4F4641BFAE, // 0x5A32D4B4
 
-		///<remarks>This function has been replaced by <see cref="TASK_STOP_PHONE_GESTURE_ANIMATION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="TASK_STOP_PHONE_GESTURE_ANIMATION"/></remarks>
 		[Obsolete]
 		_TASK_STOP_PHONE_GESTURE_ANIMATION = 0x3FA00D4F4641BFAE, // 0x5A32D4B4
 
@@ -46254,7 +46254,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		TASK_VEHICLE_FOLLOW = 0xFC545A9F0626E3B6, // 0xA8B917D7
 
-		///<remarks>This function has been replaced by <see cref="TASK_VEHICLE_FOLLOW"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="TASK_VEHICLE_FOLLOW"/></remarks>
 		[Obsolete]
 		_TASK_VEHICLE_FOLLOW = 0xFC545A9F0626E3B6, // 0xA8B917D7
 
@@ -46343,7 +46343,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		CLEAR_PRIMARY_VEHICLE_TASK = 0xDBBC7A2432524127,
 
-		///<remarks>This function has been replaced by <see cref="CLEAR_PRIMARY_VEHICLE_TASK"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CLEAR_PRIMARY_VEHICLE_TASK"/></remarks>
 		[Obsolete]
 		_CLEAR_VEHICLE_TASKS = 0xDBBC7A2432524127,
 
@@ -46630,7 +46630,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		TASK_RAPPEL_DOWN_WALL_USING_CLIPSET_OVERRIDE = 0xEAF66ACDDC794793,
 
-		///<remarks>This function has been replaced by <see cref="TASK_RAPPEL_DOWN_WALL_USING_CLIPSET_OVERRIDE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="TASK_RAPPEL_DOWN_WALL_USING_CLIPSET_OVERRIDE"/></remarks>
 		[Obsolete]
 		TASK_RAPPEL_DOWN_WALL = 0xEAF66ACDDC794793,
 
@@ -46758,7 +46758,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		ADD_SCRIPTED_COVER_AREA = 0x28B7B9BFDAF274AA,
 
-		///<remarks>This function has been replaced by <see cref="ADD_SCRIPTED_COVER_AREA"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="ADD_SCRIPTED_COVER_AREA"/></remarks>
 		[Obsolete]
 		_ADD_SCRIPTED_BLOCKING_AREA = 0x28B7B9BFDAF274AA,
 
@@ -46927,7 +46927,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		REMOVE_COVER_BLOCKING_AREAS_AT_POSITION = 0xFA83CA6776038F64,
 
-		///<remarks>This function has been replaced by <see cref="REMOVE_COVER_BLOCKING_AREAS_AT_POSITION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="REMOVE_COVER_BLOCKING_AREAS_AT_POSITION"/></remarks>
 		[Obsolete]
 		_REMOVE_COVER_BLOCKING_AREAS_AT_COORD = 0xFA83CA6776038F64,
 
@@ -46937,7 +46937,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		REMOVE_SPECIFIC_COVER_BLOCKING_AREAS = 0x1F351CF1C6475734,
 
-		///<remarks>This function has been replaced by <see cref="REMOVE_SPECIFIC_COVER_BLOCKING_AREAS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="REMOVE_SPECIFIC_COVER_BLOCKING_AREAS"/></remarks>
 		[Obsolete]
 		_REMOVE_SPECIFIC_COVER_BLOCKING_AREA = 0x1F351CF1C6475734,
 
@@ -47433,7 +47433,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		GET_PATROL_TASK_INFO = 0x52F734CEBE20DFBA,
 
-		///<remarks>This function has been replaced by <see cref="GET_PATROL_TASK_INFO"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_PATROL_TASK_INFO"/></remarks>
 		[Obsolete]
 		_GET_PATROL_TASK_STATUS = 0x52F734CEBE20DFBA,
 
@@ -47900,7 +47900,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		TASK_MOVE_NETWORK_BY_NAME = 0x2D537BA194896636, // 0x6F5D215F
 
-		///<remarks>This function has been replaced by <see cref="TASK_MOVE_NETWORK_BY_NAME"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="TASK_MOVE_NETWORK_BY_NAME"/></remarks>
 		[Obsolete]
 		_TASK_MOVE_NETWORK = 0x2D537BA194896636, // 0x6F5D215F
 
@@ -47914,7 +47914,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		TASK_MOVE_NETWORK_ADVANCED_BY_NAME = 0xD5B35BEA41919ACB, // 0x71A5C5DB
 
-		///<remarks>This function has been replaced by <see cref="TASK_MOVE_NETWORK_ADVANCED_BY_NAME"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="TASK_MOVE_NETWORK_ADVANCED_BY_NAME"/></remarks>
 		[Obsolete]
 		_TASK_MOVE_NETWORK_ADVANCED = 0xD5B35BEA41919ACB, // 0x71A5C5DB
 
@@ -47927,11 +47927,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		TASK_MOVE_NETWORK_BY_NAME_WITH_INIT_PARAMS = 0x3D45B0B355C5E0C9,
 
-		///<remarks>This function has been replaced by <see cref="TASK_MOVE_NETWORK_BY_NAME_WITH_INIT_PARAMS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="TASK_MOVE_NETWORK_BY_NAME_WITH_INIT_PARAMS"/></remarks>
 		[Obsolete]
 		_TASK_MOVE_NETWORK_SCRIPTED = 0x3D45B0B355C5E0C9,
 
-		///<remarks>This function has been replaced by <see cref="TASK_MOVE_NETWORK_BY_NAME_WITH_INIT_PARAMS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="TASK_MOVE_NETWORK_BY_NAME_WITH_INIT_PARAMS"/></remarks>
 		[Obsolete]
 		_TASK_MOVE_NETWORK_BY_NAME_WITH_INIT_PARAMS = 0x3D45B0B355C5E0C9,
 
@@ -47992,7 +47992,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_TASK_MOVE_NETWORK_SIGNAL_FLOAT = 0xD5BB4025AE449A4E, // 0xA79BE783
 
-		///<remarks>This function has been replaced by <see cref="SET_TASK_MOVE_NETWORK_SIGNAL_FLOAT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_TASK_MOVE_NETWORK_SIGNAL_FLOAT"/></remarks>
 		[Obsolete]
 		_SET_TASK_PROPERTY_FLOAT = 0xD5BB4025AE449A4E, // 0xA79BE783
 
@@ -48002,7 +48002,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_TASK_MOVE_NETWORK_SIGNAL_LOCAL_FLOAT = 0x373EF409B82697A3,
 
-		///<remarks>This function has been replaced by <see cref="SET_TASK_MOVE_NETWORK_SIGNAL_LOCAL_FLOAT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_TASK_MOVE_NETWORK_SIGNAL_LOCAL_FLOAT"/></remarks>
 		[Obsolete]
 		_SET_TASK_MOVE_NETWORK_SIGNAL_FLOAT_2 = 0x373EF409B82697A3,
 
@@ -48018,7 +48018,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_TASK_MOVE_NETWORK_SIGNAL_BOOL = 0xB0A6CFD2C69C1088, // 0xF3538041
 
-		///<remarks>This function has been replaced by <see cref="SET_TASK_MOVE_NETWORK_SIGNAL_BOOL"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_TASK_MOVE_NETWORK_SIGNAL_BOOL"/></remarks>
 		[Obsolete]
 		_SET_TASK_PROPERTY_BOOL = 0xB0A6CFD2C69C1088, // 0xF3538041
 
@@ -48028,7 +48028,7 @@ namespace GTA.Native
 		/// <returns>float</returns>
 		GET_TASK_MOVE_NETWORK_SIGNAL_FLOAT = 0x44AB0B3AFECCE242,
 
-		///<remarks>This function has been replaced by <see cref="GET_TASK_MOVE_NETWORK_SIGNAL_FLOAT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_TASK_MOVE_NETWORK_SIGNAL_FLOAT"/></remarks>
 		[Obsolete]
 		_GET_TASK_MOVE_NETWORK_SIGNAL_FLOAT = 0x44AB0B3AFECCE242,
 
@@ -48126,7 +48126,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		TASK_AGITATED_ACTION_CONFRONT_RESPONSE = 0x19D1B791CB3670FE,
 
-		///<remarks>This function has been replaced by <see cref="TASK_AGITATED_ACTION_CONFRONT_RESPONSE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="TASK_AGITATED_ACTION_CONFRONT_RESPONSE"/></remarks>
 		[Obsolete]
 		TASK_AGITATED_ACTION = 0x19D1B791CB3670FE,
 
@@ -48243,7 +48243,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_VEHICLE_ALLOW_HOMING_MISSLE_LOCKON_SYNCED = 0x1DDA078D12879EEE,
 
-		///<remarks>This function has been replaced by <see cref="SET_VEHICLE_ALLOW_HOMING_MISSLE_LOCKON_SYNCED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_VEHICLE_ALLOW_HOMING_MISSLE_LOCKON_SYNCED"/></remarks>
 		[Obsolete]
 		_SET_VEHICLE_CAN_BE_LOCKED_ON = 0x1DDA078D12879EEE,
 
@@ -48376,7 +48376,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		SET_VEHICLE_USE_CUTSCENE_WHEEL_COMPRESSION = 0xE023E8AC4EF7C117, // 0xA0909ADB
 
-		///<remarks>This function has been replaced by <see cref="SET_VEHICLE_USE_CUTSCENE_WHEEL_COMPRESSION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_VEHICLE_USE_CUTSCENE_WHEEL_COMPRESSION"/></remarks>
 		[Obsolete]
 		SET_ALL_VEHICLES_SPAWN = 0xE023E8AC4EF7C117, // 0xA0909ADB
 
@@ -48435,7 +48435,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		GET_VEHICLE_MODEL_NUMBER_OF_SEATS = 0x2AD93716F184EDA4, // 0x838F7BF7
 
-		///<remarks>This function has been replaced by <see cref="GET_VEHICLE_MODEL_NUMBER_OF_SEATS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_VEHICLE_MODEL_NUMBER_OF_SEATS"/></remarks>
 		[Obsolete]
 		_GET_VEHICLE_MODEL_MAX_NUMBER_OF_PASSENGERS = 0x2AD93716F184EDA4, // 0x838F7BF7
 
@@ -48460,7 +48460,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		DOES_VEHICLE_ALLOW_RAPPEL = 0x4E417C547182C84D,
 
-		///<remarks>This function has been replaced by <see cref="DOES_VEHICLE_ALLOW_RAPPEL"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DOES_VEHICLE_ALLOW_RAPPEL"/></remarks>
 		[Obsolete]
 		_DOES_VEHICLE_ALLOW_RAPPEL = 0x4E417C547182C84D,
 
@@ -48494,7 +48494,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_DISABLE_RANDOM_TRAINS_THIS_FRAME = 0xD4B8E3D1917BC86B, // 0x09462665
 
-		///<remarks>This function has been replaced by <see cref="SET_DISABLE_RANDOM_TRAINS_THIS_FRAME"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_DISABLE_RANDOM_TRAINS_THIS_FRAME"/></remarks>
 		[Obsolete]
 		_SET_SOMETHING_MULTIPLIER_THIS_FRAME = 0xD4B8E3D1917BC86B, // 0x09462665
 
@@ -48504,7 +48504,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_AMBIENT_VEHICLE_RANGE_MULTIPLIER_THIS_FRAME = 0x90B6DA738A9A25DA, // 0xDAE2A2BE
 
-		///<remarks>This function has been replaced by <see cref="SET_AMBIENT_VEHICLE_RANGE_MULTIPLIER_THIS_FRAME"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_AMBIENT_VEHICLE_RANGE_MULTIPLIER_THIS_FRAME"/></remarks>
 		[Obsolete]
 		_SET_SOME_VEHICLE_DENSITY_MULTIPLIER_THIS_FRAME = 0x90B6DA738A9A25DA, // 0xDAE2A2BE
 
@@ -48551,11 +48551,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_VEHICLE_INDIVIDUAL_DOORS_LOCKED = 0xBE70724027F85BCD, // 0xD61D182D
 
-		///<remarks>This function has been replaced by <see cref="SET_VEHICLE_INDIVIDUAL_DOORS_LOCKED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_VEHICLE_INDIVIDUAL_DOORS_LOCKED"/></remarks>
 		[Obsolete]
 		SET_PED_TARGETTABLE_VEHICLE_DESTROY = 0xBE70724027F85BCD, // 0xD61D182D
 
-		///<remarks>This function has been replaced by <see cref="SET_VEHICLE_INDIVIDUAL_DOORS_LOCKED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_VEHICLE_INDIVIDUAL_DOORS_LOCKED"/></remarks>
 		[Obsolete]
 		_SET_VEHICLE_DOOR_DESTROY_TYPE = 0xBE70724027F85BCD, // 0xD61D182D
 
@@ -48568,11 +48568,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_VEHICLE_HAS_MUTED_SIRENS = 0xD8050E0EB60CF274, // 0xC54156A9
 
-		///<remarks>This function has been replaced by <see cref="SET_VEHICLE_HAS_MUTED_SIRENS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_VEHICLE_HAS_MUTED_SIRENS"/></remarks>
 		[Obsolete]
 		DISABLE_VEHICLE_IMPACT_EXPLOSION_ACTIVATION = 0xD8050E0EB60CF274, // 0xC54156A9
 
-		///<remarks>This function has been replaced by <see cref="SET_VEHICLE_HAS_MUTED_SIRENS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_VEHICLE_HAS_MUTED_SIRENS"/></remarks>
 		[Obsolete]
 		_SET_DISABLE_VEHICLE_SIREN_SOUND = 0xD8050E0EB60CF274, // 0xC54156A9
 
@@ -48619,7 +48619,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_VEHICLE_DOORS_LOCKED_FOR_ALL_TEAMS = 0x203B527D1B77904C,
 
-		///<remarks>This function has been replaced by <see cref="SET_VEHICLE_DOORS_LOCKED_FOR_ALL_TEAMS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_VEHICLE_DOORS_LOCKED_FOR_ALL_TEAMS"/></remarks>
 		[Obsolete]
 		_SET_VEHICLE_DOORS_LOCKED_FOR_UNK = 0x203B527D1B77904C,
 
@@ -48666,7 +48666,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		CLEAR_VEHICLE_PHONE_EXPLOSIVE_DEVICE = 0xAA3F739ABDDCF21F,
 
-		///<remarks>This function has been replaced by <see cref="CLEAR_VEHICLE_PHONE_EXPLOSIVE_DEVICE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CLEAR_VEHICLE_PHONE_EXPLOSIVE_DEVICE"/></remarks>
 		[Obsolete]
 		_CLEAR_VEHICLE_PHONE_EXPLOSIVE_DEVICE = 0xAA3F739ABDDCF21F,
 
@@ -48676,7 +48676,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		DETONATE_VEHICLE_PHONE_EXPLOSIVE_DEVICE = 0xEF49CF0270307CBE, // 0x65255524
 
-		///<remarks>This function has been replaced by <see cref="DETONATE_VEHICLE_PHONE_EXPLOSIVE_DEVICE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DETONATE_VEHICLE_PHONE_EXPLOSIVE_DEVICE"/></remarks>
 		[Obsolete]
 		_REQUEST_VEHICLE_PHONE_EXPLOSION = 0xEF49CF0270307CBE, // 0x65255524
 
@@ -48742,7 +48742,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_VEHICLE_IS_RACING = 0x07116E24E9D1929D, // 0xA59E3DCD
 
-		///<remarks>This function has been replaced by <see cref="SET_VEHICLE_IS_RACING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_VEHICLE_IS_RACING"/></remarks>
 		[Obsolete]
 		STEER_UNLOCK_BIAS = 0x07116E24E9D1929D, // 0xA59E3DCD
 
@@ -48812,7 +48812,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_VEHICLE_ENVEFF_SCALE = 0x3AFDC536C3D01674, // 0x8332730C
 
-		///<remarks>This function has been replaced by <see cref="SET_VEHICLE_ENVEFF_SCALE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_VEHICLE_ENVEFF_SCALE"/></remarks>
 		[Obsolete]
 		_SET_VEHICLE_PAINT_FADE = 0x3AFDC536C3D01674, // 0x8332730C
 
@@ -48825,7 +48825,7 @@ namespace GTA.Native
 		/// <returns>float</returns>
 		GET_VEHICLE_ENVEFF_SCALE = 0xA82819CAC9C4C403, // 0xD5F1EEE1
 
-		///<remarks>This function has been replaced by <see cref="GET_VEHICLE_ENVEFF_SCALE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_VEHICLE_ENVEFF_SCALE"/></remarks>
 		[Obsolete]
 		_GET_VEHICLE_PAINT_FADE = 0xA82819CAC9C4C403, // 0xD5F1EEE1
 
@@ -48871,7 +48871,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_SUBMARINE_CRUSH_DEPTHS = 0xC59872A5134879C7, // 0x4A46E814
 
-		///<remarks>This function has been replaced by <see cref="SET_SUBMARINE_CRUSH_DEPTHS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_SUBMARINE_CRUSH_DEPTHS"/></remarks>
 		[Obsolete]
 		_JITTER_VEHICLE = 0xC59872A5134879C7, // 0x4A46E814
 
@@ -48881,7 +48881,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		GET_SUBMARINE_IS_UNDER_DESIGN_DEPTH = 0x3E71D0B300B7AA79,
 
-		///<remarks>This function has been replaced by <see cref="GET_SUBMARINE_IS_UNDER_DESIGN_DEPTH"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_SUBMARINE_IS_UNDER_DESIGN_DEPTH"/></remarks>
 		[Obsolete]
 		_GET_SUBMARINE_IS_BELOW_FIRST_CRUSH_DEPTH = 0x3E71D0B300B7AA79,
 
@@ -48891,7 +48891,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		GET_SUBMARINE_NUMBER_OF_AIR_LEAKS = 0x093D6DDCA5B8FBAE,
 
-		///<remarks>This function has been replaced by <see cref="GET_SUBMARINE_NUMBER_OF_AIR_LEAKS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_SUBMARINE_NUMBER_OF_AIR_LEAKS"/></remarks>
 		[Obsolete]
 		_GET_SUBMARINE_CRUSH_DEPTH_WARNING_STATE = 0x093D6DDCA5B8FBAE,
 
@@ -48913,11 +48913,11 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		CAN_ANCHOR_BOAT_HERE = 0x26C10ECBDA5D043B, // 0xE97A4F5E
 
-		///<remarks>This function has been replaced by <see cref="CAN_ANCHOR_BOAT_HERE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CAN_ANCHOR_BOAT_HERE"/></remarks>
 		[Obsolete]
 		_GET_BOAT_ANCHOR = 0x26C10ECBDA5D043B, // 0xE97A4F5E
 
-		///<remarks>This function has been replaced by <see cref="CAN_ANCHOR_BOAT_HERE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CAN_ANCHOR_BOAT_HERE"/></remarks>
 		[Obsolete]
 		_CAN_BOAT_BE_ANCHORED = 0x26C10ECBDA5D043B, // 0xE97A4F5E
 
@@ -48927,11 +48927,11 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		CAN_ANCHOR_BOAT_HERE_IGNORE_PLAYERS = 0x24F4121D07579880,
 
-		///<remarks>This function has been replaced by <see cref="CAN_ANCHOR_BOAT_HERE_IGNORE_PLAYERS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CAN_ANCHOR_BOAT_HERE_IGNORE_PLAYERS"/></remarks>
 		[Obsolete]
 		_CAN_BOAT_BE_ANCHORED_2 = 0x24F4121D07579880,
 
-		///<remarks>This function has been replaced by <see cref="CAN_ANCHOR_BOAT_HERE_IGNORE_PLAYERS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CAN_ANCHOR_BOAT_HERE_IGNORE_PLAYERS"/></remarks>
 		[Obsolete]
 		_CAN_ANCHOR_BOAT_HERE_2 = 0x24F4121D07579880,
 
@@ -48941,7 +48941,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_BOAT_REMAINS_ANCHORED_WHILE_PLAYER_IS_DRIVER = 0xE3EBAAE484798530, // 0x0ED84792
 
-		///<remarks>This function has been replaced by <see cref="SET_BOAT_REMAINS_ANCHORED_WHILE_PLAYER_IS_DRIVER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_BOAT_REMAINS_ANCHORED_WHILE_PLAYER_IS_DRIVER"/></remarks>
 		[Obsolete]
 		_SET_BOAT_FROZEN_WHEN_ANCHORED = 0xE3EBAAE484798530, // 0x0ED84792
 
@@ -48960,11 +48960,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_BOAT_LOW_LOD_ANCHOR_DISTANCE = 0xE842A9398079BD82, // 0x66FA450C
 
-		///<remarks>This function has been replaced by <see cref="SET_BOAT_LOW_LOD_ANCHOR_DISTANCE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_BOAT_LOW_LOD_ANCHOR_DISTANCE"/></remarks>
 		[Obsolete]
 		_SET_BOAT_ANCHOR_BUOYANCY_COEFFICIENT = 0xE842A9398079BD82, // 0x66FA450C
 
-		///<remarks>This function has been replaced by <see cref="SET_BOAT_LOW_LOD_ANCHOR_DISTANCE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_BOAT_LOW_LOD_ANCHOR_DISTANCE"/></remarks>
 		[Obsolete]
 		_SET_BOAT_MOVEMENT_RESISTANCE = 0xE842A9398079BD82, // 0x66FA450C
 
@@ -48974,7 +48974,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		IS_BOAT_ANCHORED = 0xB0AD1238A709B1A2,
 
-		///<remarks>This function has been replaced by <see cref="IS_BOAT_ANCHORED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_BOAT_ANCHORED"/></remarks>
 		[Obsolete]
 		_IS_BOAT_ANCHORED_AND_FROZEN = 0xB0AD1238A709B1A2,
 
@@ -48984,7 +48984,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_BOAT_SINKS_WHEN_WRECKED = 0x8F719973E1445BA2, // 0x35614622
 
-		///<remarks>This function has been replaced by <see cref="SET_BOAT_SINKS_WHEN_WRECKED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_BOAT_SINKS_WHEN_WRECKED"/></remarks>
 		[Obsolete]
 		_SET_BOAT_EXPLODES_ON_WRECKED_ACTION = 0x8F719973E1445BA2, // 0x35614622
 
@@ -48994,11 +48994,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_BOAT_WRECKED = 0xBD32E46AA95C1DD2,
 
-		///<remarks>This function has been replaced by <see cref="SET_BOAT_WRECKED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_BOAT_WRECKED"/></remarks>
 		[Obsolete]
 		_SET_BOAT_SINKING = 0xBD32E46AA95C1DD2,
 
-		///<remarks>This function has been replaced by <see cref="SET_BOAT_WRECKED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_BOAT_WRECKED"/></remarks>
 		[Obsolete]
 		_SET_BOAT_IS_SINKING = 0xBD32E46AA95C1DD2,
 
@@ -49023,7 +49023,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		IS_VEHICLE_SIREN_AUDIO_ON = 0xB5CC40FBCB586380, // 0xC9458688
 
-		///<remarks>This function has been replaced by <see cref="IS_VEHICLE_SIREN_AUDIO_ON"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_VEHICLE_SIREN_AUDIO_ON"/></remarks>
 		[Obsolete]
 		_IS_VEHICLE_SIREN_SOUND_ON = 0xB5CC40FBCB586380, // 0xC9458688
 
@@ -49140,7 +49140,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		BRING_VEHICLE_TO_HALT = 0x260BE8F09E326A20, // 0xCBC7D3C8
 
-		///<remarks>This function has been replaced by <see cref="BRING_VEHICLE_TO_HALT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="BRING_VEHICLE_TO_HALT"/></remarks>
 		[Obsolete]
 		_SET_VEHICLE_HALT = 0x260BE8F09E326A20, // 0xCBC7D3C8
 
@@ -49171,7 +49171,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		STOP_BRINGING_VEHICLE_TO_HALT = 0x7C06330BFDDA182E,
 
-		///<remarks>This function has been replaced by <see cref="STOP_BRINGING_VEHICLE_TO_HALT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="STOP_BRINGING_VEHICLE_TO_HALT"/></remarks>
 		[Obsolete]
 		_STOP_BRING_VEHICLE_TO_HALT = 0x7C06330BFDDA182E,
 
@@ -49184,7 +49184,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		IS_VEHICLE_BEING_BROUGHT_TO_HALT = 0xC69BB1D832A710EF,
 
-		///<remarks>This function has been replaced by <see cref="IS_VEHICLE_BEING_BROUGHT_TO_HALT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_VEHICLE_BEING_BROUGHT_TO_HALT"/></remarks>
 		[Obsolete]
 		_IS_VEHICLE_BEING_HALTED = 0xC69BB1D832A710EF,
 
@@ -49203,11 +49203,11 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		IS_ENTITY_ATTACHED_TO_HANDLER_FRAME = 0x57715966069157AD, // 0x7FB25568
 
-		///<remarks>This function has been replaced by <see cref="IS_ENTITY_ATTACHED_TO_HANDLER_FRAME"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_ENTITY_ATTACHED_TO_HANDLER_FRAME"/></remarks>
 		[Obsolete]
 		SET_PED_ENABLED_BIKE_RINGTONE = 0x57715966069157AD, // 0x7FB25568
 
-		///<remarks>This function has been replaced by <see cref="IS_ENTITY_ATTACHED_TO_HANDLER_FRAME"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_ENTITY_ATTACHED_TO_HANDLER_FRAME"/></remarks>
 		[Obsolete]
 		_IS_VEHICLE_NEAR_ENTITY = 0x57715966069157AD, // 0x7FB25568
 
@@ -49227,11 +49227,11 @@ namespace GTA.Native
 		/// <returns>Vehicle</returns>
 		FIND_HANDLER_VEHICLE_CONTAINER_IS_ATTACHED_TO = 0x375E7FC44F21C8AB, // 0x70DD5E25
 
-		///<remarks>This function has been replaced by <see cref="FIND_HANDLER_VEHICLE_CONTAINER_IS_ATTACHED_TO"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="FIND_HANDLER_VEHICLE_CONTAINER_IS_ATTACHED_TO"/></remarks>
 		[Obsolete]
 		_GET_VEHICLE_ATTACHED_TO_ENTITY = 0x375E7FC44F21C8AB, // 0x70DD5E25
 
-		///<remarks>This function has been replaced by <see cref="FIND_HANDLER_VEHICLE_CONTAINER_IS_ATTACHED_TO"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="FIND_HANDLER_VEHICLE_CONTAINER_IS_ATTACHED_TO"/></remarks>
 		[Obsolete]
 		_FIND_VEHICLE_CARRYING_THIS_ENTITY = 0x375E7FC44F21C8AB, // 0x70DD5E25
 
@@ -49241,7 +49241,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		IS_HANDLER_FRAME_LINED_UP_WITH_CONTAINER = 0x89D630CF5EA96D23, // 0xFBF5536A
 
-		///<remarks>This function has been replaced by <see cref="IS_HANDLER_FRAME_LINED_UP_WITH_CONTAINER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_HANDLER_FRAME_LINED_UP_WITH_CONTAINER"/></remarks>
 		[Obsolete]
 		_IS_HANDLER_FRAME_ABOVE_CONTAINER = 0x89D630CF5EA96D23, // 0xFBF5536A
 
@@ -49483,7 +49483,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		POP_OUT_VEHICLE_WINDSCREEN = 0x6D645D59FB5F5AD3, // 0xCC95C96B
 
-		///<remarks>This function has been replaced by <see cref="POP_OUT_VEHICLE_WINDSCREEN"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="POP_OUT_VEHICLE_WINDSCREEN"/></remarks>
 		[Obsolete]
 		_DETACH_VEHICLE_WINDSCREEN = 0x6D645D59FB5F5AD3, // 0xCC95C96B
 
@@ -49496,7 +49496,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		POP_OFF_VEHICLE_ROOF_WITH_IMPULSE = 0xE38CB9D7D39FDBCC, // 0xFDA7B6CA
 
-		///<remarks>This function has been replaced by <see cref="POP_OFF_VEHICLE_ROOF_WITH_IMPULSE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="POP_OFF_VEHICLE_ROOF_WITH_IMPULSE"/></remarks>
 		[Obsolete]
 		_EJECT_JB700_ROOF = 0xE38CB9D7D39FDBCC, // 0xFDA7B6CA
 
@@ -49523,7 +49523,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_VEHICLE_USE_PLAYER_LIGHT_SETTINGS = 0xC45C27EF50F36ADC, // 0x4221E435
 
-		///<remarks>This function has been replaced by <see cref="SET_VEHICLE_USE_PLAYER_LIGHT_SETTINGS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_VEHICLE_USE_PLAYER_LIGHT_SETTINGS"/></remarks>
 		[Obsolete]
 		_SET_VEHICLE_USE_PLAYER_LIGHT_SETTINGS = 0xC45C27EF50F36ADC, // 0x4221E435
 
@@ -49540,7 +49540,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_VEHICLE_HEADLIGHT_SHADOWS = 0x1FD09E7390A74D54,
 
-		///<remarks>This function has been replaced by <see cref="SET_VEHICLE_HEADLIGHT_SHADOWS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_VEHICLE_HEADLIGHT_SHADOWS"/></remarks>
 		[Obsolete]
 		_SET_VEHICLE_LIGHTS_MODE = 0x1FD09E7390A74D54,
 
@@ -49643,7 +49643,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_TRAILER_LEGS_LOWERED = 0x878C75C09FBDB942,
 
-		///<remarks>This function has been replaced by <see cref="SET_TRAILER_LEGS_LOWERED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_TRAILER_LEGS_LOWERED"/></remarks>
 		[Obsolete]
 		_SET_TRAILER_LEGS_LOWERED = 0x878C75C09FBDB942,
 
@@ -49814,7 +49814,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_RANDOM_BOATS_MP = 0xDA5E12F728DB30CA,
 
-		///<remarks>This function has been replaced by <see cref="SET_RANDOM_BOATS_MP"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_RANDOM_BOATS_MP"/></remarks>
 		[Obsolete]
 		_SET_RANDOM_BOATS_IN_MP = 0xDA5E12F728DB30CA,
 
@@ -50168,7 +50168,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		IS_MISSION_TRAIN = 0xAD464F2E18836BFC,
 
-		///<remarks>This function has been replaced by <see cref="IS_MISSION_TRAIN"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_MISSION_TRAIN"/></remarks>
 		[Obsolete]
 		_IS_MISSION_TRAIN = 0xAD464F2E18836BFC,
 
@@ -50208,11 +50208,11 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		IS_THIS_MODEL_A_JETSKI = 0x9537097412CF75FE,
 
-		///<remarks>This function has been replaced by <see cref="IS_THIS_MODEL_A_JETSKI"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_THIS_MODEL_A_JETSKI"/></remarks>
 		[Obsolete]
 		_IS_THIS_MODEL_A_SUBMERSIBLE = 0x9537097412CF75FE,
 
-		///<remarks>This function has been replaced by <see cref="IS_THIS_MODEL_A_JETSKI"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_THIS_MODEL_A_JETSKI"/></remarks>
 		[Obsolete]
 		_IS_THIS_MODEL_AN_EMERGENCY_BOAT = 0x9537097412CF75FE,
 
@@ -50267,7 +50267,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		IS_THIS_MODEL_AN_AMPHIBIOUS_CAR = 0x633F6F44A537EBB6,
 
-		///<remarks>This function has been replaced by <see cref="IS_THIS_MODEL_AN_AMPHIBIOUS_CAR"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_THIS_MODEL_AN_AMPHIBIOUS_CAR"/></remarks>
 		[Obsolete]
 		_IS_THIS_MODEL_AN_AMPHIBIOUS_CAR = 0x633F6F44A537EBB6,
 
@@ -50277,7 +50277,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		IS_THIS_MODEL_AN_AMPHIBIOUS_QUADBIKE = 0xA1A9FC1C76A6730D,
 
-		///<remarks>This function has been replaced by <see cref="IS_THIS_MODEL_AN_AMPHIBIOUS_QUADBIKE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_THIS_MODEL_AN_AMPHIBIOUS_QUADBIKE"/></remarks>
 		[Obsolete]
 		_IS_THIS_MODEL_AN_AMPHIBIOUS_QUADBIKE = 0xA1A9FC1C76A6730D,
 
@@ -50335,7 +50335,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_VEHICLE_HAS_UNBREAKABLE_LIGHTS = 0x1AA8A837D2169D94, // 0x009AB49E
 
-		///<remarks>This function has been replaced by <see cref="SET_VEHICLE_HAS_UNBREAKABLE_LIGHTS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_VEHICLE_HAS_UNBREAKABLE_LIGHTS"/></remarks>
 		[Obsolete]
 		_SET_VEHICLE_LIGHTS_CAN_BE_VISIBLY_DAMAGED = 0x1AA8A837D2169D94, // 0x009AB49E
 
@@ -50379,7 +50379,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		GET_DOES_VEHICLE_HAVE_DAMAGE_DECALS = 0xBCDC5017D3CE1E9E, // 0xDAC523BC
 
-		///<remarks>This function has been replaced by <see cref="GET_DOES_VEHICLE_HAVE_DAMAGE_DECALS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_DOES_VEHICLE_HAVE_DAMAGE_DECALS"/></remarks>
 		[Obsolete]
 		_IS_VEHICLE_DAMAGED = 0xBCDC5017D3CE1E9E, // 0xDAC523BC
 
@@ -50454,7 +50454,7 @@ namespace GTA.Native
 		/// <returns>Ped</returns>
 		GET_PED_USING_VEHICLE_DOOR = 0x218297BF0CFD853B, // 0x0630101F
 
-		///<remarks>This function has been replaced by <see cref="GET_PED_USING_VEHICLE_DOOR"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_PED_USING_VEHICLE_DOOR"/></remarks>
 		[Obsolete]
 		_GET_PED_USING_VEHICLE_DOOR = 0x218297BF0CFD853B, // 0x0630101F
 
@@ -50563,15 +50563,15 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_VEHICLE_XENON_LIGHT_COLOR_INDEX = 0xE41033B25D003A07,
 
-		///<remarks>This function has been replaced by <see cref="SET_VEHICLE_XENON_LIGHT_COLOR_INDEX"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_VEHICLE_XENON_LIGHT_COLOR_INDEX"/></remarks>
 		[Obsolete]
 		_SET_VEHICLE_HEADLIGHTS_COLOUR = 0xE41033B25D003A07,
 
-		///<remarks>This function has been replaced by <see cref="SET_VEHICLE_XENON_LIGHT_COLOR_INDEX"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_VEHICLE_XENON_LIGHT_COLOR_INDEX"/></remarks>
 		[Obsolete]
 		_SET_VEHICLE_XENON_LIGHTS_COLOUR = 0xE41033B25D003A07,
 
-		///<remarks>This function has been replaced by <see cref="SET_VEHICLE_XENON_LIGHT_COLOR_INDEX"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_VEHICLE_XENON_LIGHT_COLOR_INDEX"/></remarks>
 		[Obsolete]
 		_SET_VEHICLE_XENON_LIGHTS_COLOR = 0xE41033B25D003A07,
 
@@ -50587,15 +50587,15 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		GET_VEHICLE_XENON_LIGHT_COLOR_INDEX = 0x3DFF319A831E0CDB,
 
-		///<remarks>This function has been replaced by <see cref="GET_VEHICLE_XENON_LIGHT_COLOR_INDEX"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_VEHICLE_XENON_LIGHT_COLOR_INDEX"/></remarks>
 		[Obsolete]
 		_GET_VEHICLE_HEADLIGHTS_COLOUR = 0x3DFF319A831E0CDB,
 
-		///<remarks>This function has been replaced by <see cref="GET_VEHICLE_XENON_LIGHT_COLOR_INDEX"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_VEHICLE_XENON_LIGHT_COLOR_INDEX"/></remarks>
 		[Obsolete]
 		_GET_VEHICLE_XENON_LIGHTS_COLOUR = 0x3DFF319A831E0CDB,
 
-		///<remarks>This function has been replaced by <see cref="GET_VEHICLE_XENON_LIGHT_COLOR_INDEX"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_VEHICLE_XENON_LIGHT_COLOR_INDEX"/></remarks>
 		[Obsolete]
 		_GET_VEHICLE_XENON_LIGHTS_COLOR = 0x3DFF319A831E0CDB,
 
@@ -50670,7 +50670,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		GET_VEHICLE_INDIVIDUAL_DOOR_LOCK_STATUS = 0xCA4AC3EAAE46EC7B,
 
-		///<remarks>This function has been replaced by <see cref="GET_VEHICLE_INDIVIDUAL_DOOR_LOCK_STATUS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_VEHICLE_INDIVIDUAL_DOOR_LOCK_STATUS"/></remarks>
 		[Obsolete]
 		_GET_VEHICLE_DOOR_DESTROY_TYPE = 0xCA4AC3EAAE46EC7B,
 
@@ -50692,11 +50692,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_DOOR_ALLOWED_TO_BE_BROKEN_OFF = 0x2FA133A4A9D37ED8, // 0x065B92B3
 
-		///<remarks>This function has been replaced by <see cref="SET_DOOR_ALLOWED_TO_BE_BROKEN_OFF"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_DOOR_ALLOWED_TO_BE_BROKEN_OFF"/></remarks>
 		[Obsolete]
 		_SET_VEHICLE_DOOR_BREAKABLE = 0x2FA133A4A9D37ED8, // 0x065B92B3
 
-		///<remarks>This function has been replaced by <see cref="SET_DOOR_ALLOWED_TO_BE_BROKEN_OFF"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_DOOR_ALLOWED_TO_BE_BROKEN_OFF"/></remarks>
 		[Obsolete]
 		_SET_VEHICLE_DOOR_CAN_BREAK = 0x2FA133A4A9D37ED8, // 0x065B92B3
 
@@ -50745,7 +50745,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		GET_VEHICLE_MODEL_VALUE = 0x5873C14A52D74236, // 0x58FEFC3D
 
-		///<remarks>This function has been replaced by <see cref="GET_VEHICLE_MODEL_VALUE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_VEHICLE_MODEL_VALUE"/></remarks>
 		[Obsolete]
 		_GET_VEHICLE_MODEL_MONETARY_VALUE = 0x5873C14A52D74236, // 0x58FEFC3D
 
@@ -50794,11 +50794,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_VEHICLE_EXTRA_COLOUR_5 = 0xF40DD601A65F7F19,
 
-		///<remarks>This function has been replaced by <see cref="SET_VEHICLE_EXTRA_COLOUR_5"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_VEHICLE_EXTRA_COLOUR_5"/></remarks>
 		[Obsolete]
 		_SET_VEHICLE_INTERIOR_COLOUR = 0xF40DD601A65F7F19,
 
-		///<remarks>This function has been replaced by <see cref="SET_VEHICLE_EXTRA_COLOUR_5"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_VEHICLE_EXTRA_COLOUR_5"/></remarks>
 		[Obsolete]
 		_SET_VEHICLE_INTERIOR_COLOR = 0xF40DD601A65F7F19,
 
@@ -50808,11 +50808,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		GET_VEHICLE_EXTRA_COLOUR_5 = 0x7D1464D472D32136,
 
-		///<remarks>This function has been replaced by <see cref="GET_VEHICLE_EXTRA_COLOUR_5"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_VEHICLE_EXTRA_COLOUR_5"/></remarks>
 		[Obsolete]
 		_GET_VEHICLE_INTERIOR_COLOUR = 0x7D1464D472D32136,
 
-		///<remarks>This function has been replaced by <see cref="GET_VEHICLE_EXTRA_COLOUR_5"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_VEHICLE_EXTRA_COLOUR_5"/></remarks>
 		[Obsolete]
 		_GET_VEHICLE_INTERIOR_COLOR = 0x7D1464D472D32136,
 
@@ -50822,11 +50822,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_VEHICLE_EXTRA_COLOUR_6 = 0x6089CDF6A57F326C,
 
-		///<remarks>This function has been replaced by <see cref="SET_VEHICLE_EXTRA_COLOUR_6"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_VEHICLE_EXTRA_COLOUR_6"/></remarks>
 		[Obsolete]
 		_SET_VEHICLE_DASHBOARD_COLOUR = 0x6089CDF6A57F326C,
 
-		///<remarks>This function has been replaced by <see cref="SET_VEHICLE_EXTRA_COLOUR_6"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_VEHICLE_EXTRA_COLOUR_6"/></remarks>
 		[Obsolete]
 		_SET_VEHICLE_DASHBOARD_COLOR = 0x6089CDF6A57F326C,
 
@@ -50836,11 +50836,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		GET_VEHICLE_EXTRA_COLOUR_6 = 0xB7635E80A5C31BFF,
 
-		///<remarks>This function has been replaced by <see cref="GET_VEHICLE_EXTRA_COLOUR_6"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_VEHICLE_EXTRA_COLOUR_6"/></remarks>
 		[Obsolete]
 		_GET_VEHICLE_DASHBOARD_COLOUR = 0xB7635E80A5C31BFF,
 
-		///<remarks>This function has been replaced by <see cref="GET_VEHICLE_EXTRA_COLOUR_6"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_VEHICLE_EXTRA_COLOUR_6"/></remarks>
 		[Obsolete]
 		_GET_VEHICLE_DASHBOARD_COLOR = 0xB7635E80A5C31BFF,
 
@@ -50872,7 +50872,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_VEHICLE_CAN_ENGINE_MISSFIRE = 0x206BC5DC9D1AC70A, // 0x8EACBD13
 
-		///<remarks>This function has been replaced by <see cref="SET_VEHICLE_CAN_ENGINE_MISSFIRE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_VEHICLE_CAN_ENGINE_MISSFIRE"/></remarks>
 		[Obsolete]
 		_SET_VEHICLE_CAN_ENGINE_OPERATE_ON_FIRE = 0x206BC5DC9D1AC70A, // 0x8EACBD13
 
@@ -50991,7 +50991,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		IS_EXTRA_BROKEN_OFF = 0x534E36D4DB9ECC5D,
 
-		///<remarks>This function has been replaced by <see cref="IS_EXTRA_BROKEN_OFF"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_EXTRA_BROKEN_OFF"/></remarks>
 		[Obsolete]
 		_DOES_VEHICLE_TYRE_EXIST = 0x534E36D4DB9ECC5D,
 
@@ -51044,11 +51044,11 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		TRANSFORM_TO_SUBMARINE = 0xBE4C854FFDB6EEBE, // 0xCAFE5FE0
 
-		///<remarks>This function has been replaced by <see cref="TRANSFORM_TO_SUBMARINE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="TRANSFORM_TO_SUBMARINE"/></remarks>
 		[Obsolete]
 		_TRANSFORM_STORMBERG_TO_WATER_VEHICLE = 0xBE4C854FFDB6EEBE, // 0xCAFE5FE0
 
-		///<remarks>This function has been replaced by <see cref="TRANSFORM_TO_SUBMARINE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="TRANSFORM_TO_SUBMARINE"/></remarks>
 		[Obsolete]
 		_TRANSFORM_VEHICLE_TO_SUBMARINE = 0xBE4C854FFDB6EEBE, // 0xCAFE5FE0
 
@@ -51061,11 +51061,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		TRANSFORM_TO_CAR = 0x2A69FFD1B42BFF9E, // 0xD8B90941
 
-		///<remarks>This function has been replaced by <see cref="TRANSFORM_TO_CAR"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="TRANSFORM_TO_CAR"/></remarks>
 		[Obsolete]
 		_TRANSFORM_STORMBERG_TO_ROAD_VEHICLE = 0x2A69FFD1B42BFF9E, // 0xD8B90941
 
-		///<remarks>This function has been replaced by <see cref="TRANSFORM_TO_CAR"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="TRANSFORM_TO_CAR"/></remarks>
 		[Obsolete]
 		_TRANSFORM_SUBMARINE_TO_VEHICLE = 0x2A69FFD1B42BFF9E, // 0xD8B90941
 
@@ -51075,7 +51075,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		IS_VEHICLE_IN_SUBMARINE_MODE = 0xA77DC70BD689A1E5, // 0xE2FF06DB
 
-		///<remarks>This function has been replaced by <see cref="IS_VEHICLE_IN_SUBMARINE_MODE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_VEHICLE_IN_SUBMARINE_MODE"/></remarks>
 		[Obsolete]
 		_GET_IS_SUBMARINE_VEHICLE_TRANSFORMED = 0xA77DC70BD689A1E5, // 0xE2FF06DB
 
@@ -51142,7 +51142,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_PLANE_ENGINE_HEALTH = 0x2A86A0475B6A1434,
 
-		///<remarks>This function has been replaced by <see cref="SET_PLANE_ENGINE_HEALTH"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_PLANE_ENGINE_HEALTH"/></remarks>
 		[Obsolete]
 		_SET_PLANE_ENGINE_HEALTH = 0x2A86A0475B6A1434,
 
@@ -51264,7 +51264,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_VEHICLE_IN_CAR_MOD_SHOP = 0x9D44FCCE98450843, // 0x968E5770
 
-		///<remarks>This function has been replaced by <see cref="SET_VEHICLE_IN_CAR_MOD_SHOP"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_VEHICLE_IN_CAR_MOD_SHOP"/></remarks>
 		[Obsolete]
 		_SET_VEHICLE_SILENT = 0x9D44FCCE98450843, // 0x968E5770
 
@@ -51303,7 +51303,7 @@ namespace GTA.Native
 		/// <returns>const char*</returns>
 		GET_MAKE_NAME_FROM_VEHICLE_MODEL = 0xF7AF4F159FF99F97,
 
-		///<remarks>This function has been replaced by <see cref="GET_MAKE_NAME_FROM_VEHICLE_MODEL"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_MAKE_NAME_FROM_VEHICLE_MODEL"/></remarks>
 		[Obsolete]
 		_GET_MAKE_NAME_FROM_VEHICLE_MODEL = 0xF7AF4F159FF99F97,
 
@@ -51354,7 +51354,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_VEHICLE_LIVERY2 = 0xA6D3A8750DC73270,
 
-		///<remarks>This function has been replaced by <see cref="SET_VEHICLE_LIVERY2"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_VEHICLE_LIVERY2"/></remarks>
 		[Obsolete]
 		_SET_VEHICLE_ROOF_LIVERY = 0xA6D3A8750DC73270,
 
@@ -51367,7 +51367,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		GET_VEHICLE_LIVERY2 = 0x60190048C0764A26,
 
-		///<remarks>This function has been replaced by <see cref="GET_VEHICLE_LIVERY2"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_VEHICLE_LIVERY2"/></remarks>
 		[Obsolete]
 		_GET_VEHICLE_ROOF_LIVERY = 0x60190048C0764A26,
 
@@ -51380,7 +51380,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		GET_VEHICLE_LIVERY2_COUNT = 0x5ECB40269053C0D4,
 
-		///<remarks>This function has been replaced by <see cref="GET_VEHICLE_LIVERY2_COUNT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_VEHICLE_LIVERY2_COUNT"/></remarks>
 		[Obsolete]
 		_GET_VEHICLE_ROOF_LIVERY_COUNT = 0x5ECB40269053C0D4,
 
@@ -51408,7 +51408,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		ARE_ALL_VEHICLE_WINDOWS_INTACT = 0x11D862A3E977A9EF, // 0xBB619744
 
-		///<remarks>This function has been replaced by <see cref="ARE_ALL_VEHICLE_WINDOWS_INTACT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="ARE_ALL_VEHICLE_WINDOWS_INTACT"/></remarks>
 		[Obsolete]
 		_ARE_ALL_VEHICLE_WINDOWS_INTACT = 0x11D862A3E977A9EF, // 0xBB619744
 
@@ -51421,7 +51421,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		ARE_ANY_VEHICLE_SEATS_FREE = 0x2D34FC3BC4ADB780, // 0x648E685A
 
-		///<remarks>This function has been replaced by <see cref="ARE_ANY_VEHICLE_SEATS_FREE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="ARE_ANY_VEHICLE_SEATS_FREE"/></remarks>
 		[Obsolete]
 		_IS_ANY_VEHICLE_SEAT_EMPTY = 0x2D34FC3BC4ADB780, // 0x648E685A
 
@@ -51447,7 +51447,7 @@ namespace GTA.Native
 		/// <returns>float</returns>
 		GET_HELI_MAIN_ROTOR_HEALTH = 0xE4CB7541F413D2C5, // 0xF01E2AAB
 
-		///<remarks>This function has been replaced by <see cref="GET_HELI_MAIN_ROTOR_HEALTH"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_HELI_MAIN_ROTOR_HEALTH"/></remarks>
 		[Obsolete]
 		_GET_HELI_MAIN_ROTOR_HEALTH = 0xE4CB7541F413D2C5, // 0xF01E2AAB
 
@@ -51461,7 +51461,7 @@ namespace GTA.Native
 		/// <returns>float</returns>
 		GET_HELI_TAIL_ROTOR_HEALTH = 0xAE8CE82A4219AC8C, // 0xA41BC13D
 
-		///<remarks>This function has been replaced by <see cref="GET_HELI_TAIL_ROTOR_HEALTH"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_HELI_TAIL_ROTOR_HEALTH"/></remarks>
 		[Obsolete]
 		_GET_HELI_TAIL_ROTOR_HEALTH = 0xAE8CE82A4219AC8C, // 0xA41BC13D
 
@@ -51475,7 +51475,7 @@ namespace GTA.Native
 		/// <returns>float</returns>
 		GET_HELI_TAIL_BOOM_HEALTH = 0xAC51915D27E4A5F7, // 0x8A68388F
 
-		///<remarks>This function has been replaced by <see cref="GET_HELI_TAIL_BOOM_HEALTH"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_HELI_TAIL_BOOM_HEALTH"/></remarks>
 		[Obsolete]
 		_GET_HELI_ENGINE_HEALTH = 0xAC51915D27E4A5F7, // 0x8A68388F
 
@@ -51485,7 +51485,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_HELI_MAIN_ROTOR_HEALTH = 0x4056EA1105F5ABD7,
 
-		///<remarks>This function has been replaced by <see cref="SET_HELI_MAIN_ROTOR_HEALTH"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_HELI_MAIN_ROTOR_HEALTH"/></remarks>
 		[Obsolete]
 		_SET_HELI_MAIN_ROTOR_HEALTH = 0x4056EA1105F5ABD7,
 
@@ -51495,7 +51495,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_HELI_TAIL_ROTOR_HEALTH = 0xFE205F38AAA58E5B,
 
-		///<remarks>This function has been replaced by <see cref="SET_HELI_TAIL_ROTOR_HEALTH"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_HELI_TAIL_ROTOR_HEALTH"/></remarks>
 		[Obsolete]
 		_SET_HELI_TAIL_ROTOR_HEALTH = 0xFE205F38AAA58E5B,
 
@@ -51505,11 +51505,11 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		SET_HELI_TAIL_BOOM_CAN_BREAK_OFF = 0x3EC8BF18AA453FE9, // 0x2916D69B
 
-		///<remarks>This function has been replaced by <see cref="SET_HELI_TAIL_BOOM_CAN_BREAK_OFF"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_HELI_TAIL_BOOM_CAN_BREAK_OFF"/></remarks>
 		[Obsolete]
 		WAS_COUNTER_ACTIVATED = 0x3EC8BF18AA453FE9, // 0x2916D69B
 
-		///<remarks>This function has been replaced by <see cref="SET_HELI_TAIL_BOOM_CAN_BREAK_OFF"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_HELI_TAIL_BOOM_CAN_BREAK_OFF"/></remarks>
 		[Obsolete]
 		SET_HELI_TAIL_EXPLODE_THROW_DASHBOARD = 0x3EC8BF18AA453FE9, // 0x2916D69B
 
@@ -51555,11 +51555,11 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		GET_VEHICLE_HAS_LANDING_GEAR = 0xE43701C36CAFF1A4,
 
-		///<remarks>This function has been replaced by <see cref="GET_VEHICLE_HAS_LANDING_GEAR"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_VEHICLE_HAS_LANDING_GEAR"/></remarks>
 		[Obsolete]
 		_GET_VEHICLE_HAS_LANDING_GEAR = 0xE43701C36CAFF1A4,
 
-		///<remarks>This function has been replaced by <see cref="GET_VEHICLE_HAS_LANDING_GEAR"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_VEHICLE_HAS_LANDING_GEAR"/></remarks>
 		[Obsolete]
 		_DOES_VEHICLE_HAVE_LANDING_GEAR = 0xE43701C36CAFF1A4,
 
@@ -51577,7 +51577,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		CONTROL_LANDING_GEAR = 0xCFC8BE9A5E1FE575, // 0x24F873FB
 
-		///<remarks>This function has been replaced by <see cref="CONTROL_LANDING_GEAR"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CONTROL_LANDING_GEAR"/></remarks>
 		[Obsolete]
 		_SET_VEHICLE_LANDING_GEAR = 0xCFC8BE9A5E1FE575, // 0x24F873FB
 
@@ -51596,7 +51596,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		GET_LANDING_GEAR_STATE = 0x9B0F3DCA3DB0F4CD, // 0xA6F02670
 
-		///<remarks>This function has been replaced by <see cref="GET_LANDING_GEAR_STATE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_LANDING_GEAR_STATE"/></remarks>
 		[Obsolete]
 		_GET_VEHICLE_LANDING_GEAR = 0x9B0F3DCA3DB0F4CD, // 0xA6F02670
 
@@ -51658,11 +51658,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_VEHICLE_TOW_TRUCK_ARM_POSITION = 0xFE54B92A344583CA, // 0x88236E22
 
-		///<remarks>This function has been replaced by <see cref="SET_VEHICLE_TOW_TRUCK_ARM_POSITION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_VEHICLE_TOW_TRUCK_ARM_POSITION"/></remarks>
 		[Obsolete]
 		_SET_TOW_TRUCK_CRANE_RAISED = 0xFE54B92A344583CA, // 0x88236E22
 
-		///<remarks>This function has been replaced by <see cref="SET_VEHICLE_TOW_TRUCK_ARM_POSITION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_VEHICLE_TOW_TRUCK_ARM_POSITION"/></remarks>
 		[Obsolete]
 		_SET_TOW_TRUCK_CRANE_HEIGHT = 0xFE54B92A344583CA, // 0x88236E22
 
@@ -51750,7 +51750,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		DISABLE_VEHICLE_TURRET_MOVEMENT_THIS_FRAME = 0x32CAEDF24A583345,
 
-		///<remarks>This function has been replaced by <see cref="DISABLE_VEHICLE_TURRET_MOVEMENT_THIS_FRAME"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DISABLE_VEHICLE_TURRET_MOVEMENT_THIS_FRAME"/></remarks>
 		[Obsolete]
 		_DISABLE_VEHICLE_TURRET_MOVEMENT_THIS_FRAME = 0x32CAEDF24A583345,
 
@@ -51760,11 +51760,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_VEHICLE_FLIGHT_NOZZLE_POSITION = 0x30D779DE7C4F6DD3, // 0xA7DF64D7
 
-		///<remarks>This function has been replaced by <see cref="SET_VEHICLE_FLIGHT_NOZZLE_POSITION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_VEHICLE_FLIGHT_NOZZLE_POSITION"/></remarks>
 		[Obsolete]
 		_SET_DESIRED_VERTICAL_FLIGHT_PHASE = 0x30D779DE7C4F6DD3, // 0xA7DF64D7
 
-		///<remarks>This function has been replaced by <see cref="SET_VEHICLE_FLIGHT_NOZZLE_POSITION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_VEHICLE_FLIGHT_NOZZLE_POSITION"/></remarks>
 		[Obsolete]
 		_SET_PLANE_VTOL_DESIRED_DIRECTION = 0x30D779DE7C4F6DD3, // 0xA7DF64D7
 
@@ -51774,11 +51774,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_VEHICLE_FLIGHT_NOZZLE_POSITION_IMMEDIATE = 0x9AA47FFF660CB932, // 0xDD7936F5
 
-		///<remarks>This function has been replaced by <see cref="SET_VEHICLE_FLIGHT_NOZZLE_POSITION_IMMEDIATE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_VEHICLE_FLIGHT_NOZZLE_POSITION_IMMEDIATE"/></remarks>
 		[Obsolete]
 		_SET_VERTICAL_FLIGHT_PHASE = 0x9AA47FFF660CB932, // 0xDD7936F5
 
-		///<remarks>This function has been replaced by <see cref="SET_VEHICLE_FLIGHT_NOZZLE_POSITION_IMMEDIATE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_VEHICLE_FLIGHT_NOZZLE_POSITION_IMMEDIATE"/></remarks>
 		[Obsolete]
 		_SET_PLANE_VTOL_DIRECTION = 0x9AA47FFF660CB932, // 0xDD7936F5
 
@@ -51788,19 +51788,19 @@ namespace GTA.Native
 		/// <returns>float</returns>
 		GET_VEHICLE_FLIGHT_NOZZLE_POSITION = 0xDA62027C8BDB326E, // 0xAD40AD55
 
-		///<remarks>This function has been replaced by <see cref="GET_VEHICLE_FLIGHT_NOZZLE_POSITION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_VEHICLE_FLIGHT_NOZZLE_POSITION"/></remarks>
 		[Obsolete]
 		_GET_PLANE_HOVER_MODE_PERCENTAGE = 0xDA62027C8BDB326E, // 0xAD40AD55
 
-		///<remarks>This function has been replaced by <see cref="GET_VEHICLE_FLIGHT_NOZZLE_POSITION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_VEHICLE_FLIGHT_NOZZLE_POSITION"/></remarks>
 		[Obsolete]
 		_GET_VEHICLE_HOVER_MODE_PERCENTAGE = 0xDA62027C8BDB326E, // 0xAD40AD55
 
-		///<remarks>This function has been replaced by <see cref="GET_VEHICLE_FLIGHT_NOZZLE_POSITION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_VEHICLE_FLIGHT_NOZZLE_POSITION"/></remarks>
 		[Obsolete]
 		_GET_PLANE_VTOL_DIRECTION = 0xDA62027C8BDB326E, // 0xAD40AD55
 
-		///<remarks>This function has been replaced by <see cref="GET_VEHICLE_FLIGHT_NOZZLE_POSITION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_VEHICLE_FLIGHT_NOZZLE_POSITION"/></remarks>
 		[Obsolete]
 		_GET_VEHICLE_FLIGHT_NOZZLE_POSITION = 0xDA62027C8BDB326E, // 0xAD40AD55
 
@@ -51813,11 +51813,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_DISABLE_VERTICAL_FLIGHT_MODE_TRANSITION = 0xCE2B43770B655F8F,
 
-		///<remarks>This function has been replaced by <see cref="SET_DISABLE_VERTICAL_FLIGHT_MODE_TRANSITION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_DISABLE_VERTICAL_FLIGHT_MODE_TRANSITION"/></remarks>
 		[Obsolete]
 		_SET_PLANE_VTOL_ANIMATION_DISABLED = 0xCE2B43770B655F8F,
 
-		///<remarks>This function has been replaced by <see cref="SET_DISABLE_VERTICAL_FLIGHT_MODE_TRANSITION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_DISABLE_VERTICAL_FLIGHT_MODE_TRANSITION"/></remarks>
 		[Obsolete]
 		_SET_DISABLE_VEHICLE_FLIGHT_NOZZLE_POSITION = 0xCE2B43770B655F8F,
 
@@ -51868,7 +51868,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_VEHICLE_REDUCE_GRIP_LEVEL = 0x6DEE944E1EE90CFB,
 
-		///<remarks>This function has been replaced by <see cref="SET_VEHICLE_REDUCE_GRIP_LEVEL"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_VEHICLE_REDUCE_GRIP_LEVEL"/></remarks>
 		[Obsolete]
 		_SET_VEHICLE_REDUCE_TRACTION = 0x6DEE944E1EE90CFB,
 
@@ -51906,7 +51906,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		HAS_INSTANT_FILL_VEHICLE_POPULATION_FINISHED = 0x91D6DD290888CBAB, // 0x71D898EF
 
-		///<remarks>This function has been replaced by <see cref="HAS_INSTANT_FILL_VEHICLE_POPULATION_FINISHED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="HAS_INSTANT_FILL_VEHICLE_POPULATION_FINISHED"/></remarks>
 		[Obsolete]
 		_HAS_FILLED_VEHICLE_POPULATION = 0x91D6DD290888CBAB, // 0x71D898EF
 
@@ -51961,7 +51961,7 @@ namespace GTA.Native
 		/// <returns>float</returns>
 		GET_VEHICLE_ESTIMATED_MAX_SPEED = 0x53AF99BAA671CA47, // 0x7D1A0616
 
-		///<remarks>This function has been replaced by <see cref="GET_VEHICLE_ESTIMATED_MAX_SPEED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_VEHICLE_ESTIMATED_MAX_SPEED"/></remarks>
 		[Obsolete]
 		_GET_VEHICLE_MAX_SPEED = 0x53AF99BAA671CA47, // 0x7D1A0616
 
@@ -51996,7 +51996,7 @@ namespace GTA.Native
 		/// <returns>float</returns>
 		GET_VEHICLE_MODEL_ESTIMATED_MAX_SPEED = 0xF417C2502FFFED43, // 0x8F291C4A
 
-		///<remarks>This function has been replaced by <see cref="GET_VEHICLE_MODEL_ESTIMATED_MAX_SPEED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_VEHICLE_MODEL_ESTIMATED_MAX_SPEED"/></remarks>
 		[Obsolete]
 		_GET_VEHICLE_MODEL_MAX_SPEED = 0xF417C2502FFFED43, // 0x8F291C4A
 
@@ -52019,7 +52019,7 @@ namespace GTA.Native
 		/// <returns>float</returns>
 		GET_VEHICLE_MODEL_MAX_BRAKING_MAX_MODS = 0xBFBA3BA79CFF7EBF, // 0xF3A7293F
 
-		///<remarks>This function has been replaced by <see cref="GET_VEHICLE_MODEL_MAX_BRAKING_MAX_MODS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_VEHICLE_MODEL_MAX_BRAKING_MAX_MODS"/></remarks>
 		[Obsolete]
 		_GET_VEHICLE_MODEL_HAND_BRAKE = 0xBFBA3BA79CFF7EBF, // 0xF3A7293F
 
@@ -52053,11 +52053,11 @@ namespace GTA.Native
 		/// <returns>float</returns>
 		GET_VEHICLE_MODEL_ACCELERATION_MAX_MODS = 0x53409B5163D5B846, // 0x37FBA7BC
 
-		///<remarks>This function has been replaced by <see cref="GET_VEHICLE_MODEL_ACCELERATION_MAX_MODS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_VEHICLE_MODEL_ACCELERATION_MAX_MODS"/></remarks>
 		[Obsolete]
 		_GET_VEHICLE_MODEL_DOWN_FORCE = 0x53409B5163D5B846, // 0x37FBA7BC
 
-		///<remarks>This function has been replaced by <see cref="GET_VEHICLE_MODEL_ACCELERATION_MAX_MODS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_VEHICLE_MODEL_ACCELERATION_MAX_MODS"/></remarks>
 		[Obsolete]
 		_GET_VEHICLE_MODEL_ESTIMATED_AGILITY = 0x53409B5163D5B846, // 0x37FBA7BC
 
@@ -52070,7 +52070,7 @@ namespace GTA.Native
 		/// <returns>float</returns>
 		GET_FLYING_VEHICLE_MODEL_AGILITY = 0xC6AD107DDC9054CC, // 0x95BB67EB
 
-		///<remarks>This function has been replaced by <see cref="GET_FLYING_VEHICLE_MODEL_AGILITY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_FLYING_VEHICLE_MODEL_AGILITY"/></remarks>
 		[Obsolete]
 		_GET_VEHICLE_MODEL_MAX_KNOTS = 0xC6AD107DDC9054CC, // 0x95BB67EB
 
@@ -52083,7 +52083,7 @@ namespace GTA.Native
 		/// <returns>float</returns>
 		GET_BOAT_VEHICLE_MODEL_AGILITY = 0x5AA3F878A178C4FC, // 0x87C5D271
 
-		///<remarks>This function has been replaced by <see cref="GET_BOAT_VEHICLE_MODEL_AGILITY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_BOAT_VEHICLE_MODEL_AGILITY"/></remarks>
 		[Obsolete]
 		_GET_VEHICLE_MODEL_MOVE_RESISTANCE = 0x5AA3F878A178C4FC, // 0x87C5D271
 
@@ -52093,7 +52093,7 @@ namespace GTA.Native
 		/// <returns>float</returns>
 		GET_VEHICLE_CLASS_ESTIMATED_MAX_SPEED = 0x00C09F246ABEDD82, // 0xCE67162C
 
-		///<remarks>This function has been replaced by <see cref="GET_VEHICLE_CLASS_ESTIMATED_MAX_SPEED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_VEHICLE_CLASS_ESTIMATED_MAX_SPEED"/></remarks>
 		[Obsolete]
 		_GET_VEHICLE_CLASS_MAX_SPEED = 0x00C09F246ABEDD82, // 0xCE67162C
 
@@ -52127,7 +52127,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		ADD_ROAD_NODE_SPEED_ZONE = 0x2CE544C68FB812A0, // 0xD6685803
 
-		///<remarks>This function has been replaced by <see cref="ADD_ROAD_NODE_SPEED_ZONE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="ADD_ROAD_NODE_SPEED_ZONE"/></remarks>
 		[Obsolete]
 		_ADD_SPEED_ZONE_FOR_COORD = 0x2CE544C68FB812A0, // 0xD6685803
 
@@ -52137,7 +52137,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		REMOVE_ROAD_NODE_SPEED_ZONE = 0x1033371FC8E842A7, // 0x0C0332A6
 
-		///<remarks>This function has been replaced by <see cref="REMOVE_ROAD_NODE_SPEED_ZONE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="REMOVE_ROAD_NODE_SPEED_ZONE"/></remarks>
 		[Obsolete]
 		_REMOVE_SPEED_ZONE = 0x1033371FC8E842A7, // 0x0C0332A6
 
@@ -52147,7 +52147,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		OPEN_BOMB_BAY_DOORS = 0x87E7F24270732CB1, // 0x6574041D
 
-		///<remarks>This function has been replaced by <see cref="OPEN_BOMB_BAY_DOORS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="OPEN_BOMB_BAY_DOORS"/></remarks>
 		[Obsolete]
 		_OPEN_VEHICLE_BOMB_BAY = 0x87E7F24270732CB1, // 0x6574041D
 
@@ -52166,11 +52166,11 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		GET_ARE_BOMB_BAY_DOORS_OPEN = 0xD0917A423314BBA8,
 
-		///<remarks>This function has been replaced by <see cref="GET_ARE_BOMB_BAY_DOORS_OPEN"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_ARE_BOMB_BAY_DOORS_OPEN"/></remarks>
 		[Obsolete]
 		_GET_ARE_BOMB_BAY_DOORS_OPEN = 0xD0917A423314BBA8,
 
-		///<remarks>This function has been replaced by <see cref="GET_ARE_BOMB_BAY_DOORS_OPEN"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_ARE_BOMB_BAY_DOORS_OPEN"/></remarks>
 		[Obsolete]
 		_ARE_BOMB_BAY_DOORS_OPEN = 0xD0917A423314BBA8,
 
@@ -52199,7 +52199,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		DOES_VEHICLE_HAVE_SEARCHLIGHT = 0x99015ED7DBEA5113,
 
-		///<remarks>This function has been replaced by <see cref="DOES_VEHICLE_HAVE_SEARCHLIGHT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DOES_VEHICLE_HAVE_SEARCHLIGHT"/></remarks>
 		[Obsolete]
 		_DOES_VEHICLE_HAVE_SEARCHLIGHT = 0x99015ED7DBEA5113,
 
@@ -52216,7 +52216,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		IS_ENTRY_POINT_FOR_SEAT_CLEAR = 0x639431E895B9AA57, // 0xAB0E79EB
 
-		///<remarks>This function has been replaced by <see cref="IS_ENTRY_POINT_FOR_SEAT_CLEAR"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_ENTRY_POINT_FOR_SEAT_CLEAR"/></remarks>
 		[Obsolete]
 		_IS_VEHICLE_SEAT_ACCESSIBLE = 0x639431E895B9AA57, // 0xAB0E79EB
 
@@ -52229,7 +52229,7 @@ namespace GTA.Native
 		/// <returns>Vector3</returns>
 		GET_ENTRY_POINT_POSITION = 0xC0572928C0ABFDA3,
 
-		///<remarks>This function has been replaced by <see cref="GET_ENTRY_POINT_POSITION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_ENTRY_POINT_POSITION"/></remarks>
 		[Obsolete]
 		_GET_ENTRY_POSITION_OF_DOOR = 0xC0572928C0ABFDA3,
 
@@ -52403,7 +52403,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		HAVE_VEHICLE_MODS_STREAMED_IN = 0x9A83F5F9963775EF, // 0x112D637A
 
-		///<remarks>This function has been replaced by <see cref="HAVE_VEHICLE_MODS_STREAMED_IN"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="HAVE_VEHICLE_MODS_STREAMED_IN"/></remarks>
 		[Obsolete]
 		_IS_VEHICLE_MOD_LOAD_DONE = 0x9A83F5F9963775EF, // 0x112D637A
 
@@ -52416,7 +52416,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		IS_VEHICLE_MOD_GEN9_EXCLUSIVE = 0x00834EAC4A96E010,
 
-		///<remarks>This function has been replaced by <see cref="IS_VEHICLE_MOD_GEN9_EXCLUSIVE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_VEHICLE_MOD_GEN9_EXCLUSIVE"/></remarks>
 		[Obsolete]
 		_IS_VEHICLE_MOD_HSW_EXCLUSIVE = 0x00834EAC4A96E010,
 
@@ -52575,7 +52575,7 @@ namespace GTA.Native
 		/// <returns>Hash</returns>
 		GET_VEHICLE_MOD_IDENTIFIER_HASH = 0x4593CF82AA179706, // 0x94850968
 
-		///<remarks>This function has been replaced by <see cref="GET_VEHICLE_MOD_IDENTIFIER_HASH"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_VEHICLE_MOD_IDENTIFIER_HASH"/></remarks>
 		[Obsolete]
 		_GET_VEHICLE_MOD_DATA = 0x4593CF82AA179706, // 0x94850968
 
@@ -52686,7 +52686,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		OVERRIDE_PLANE_DAMAGE_THREHSOLD = 0x5EE5632F47AE9695,
 
-		///<remarks>This function has been replaced by <see cref="OVERRIDE_PLANE_DAMAGE_THREHSOLD"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="OVERRIDE_PLANE_DAMAGE_THREHSOLD"/></remarks>
 		[Obsolete]
 		_OVERRIDE_OVERHEAT_HEALTH = 0x5EE5632F47AE9695,
 
@@ -52699,7 +52699,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		GET_IS_LEFT_VEHICLE_HEADLIGHT_DAMAGED = 0x5EF77C9ADD3B11A3, // 0xA0777943
 
-		///<remarks>This function has been replaced by <see cref="GET_IS_LEFT_VEHICLE_HEADLIGHT_DAMAGED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_IS_LEFT_VEHICLE_HEADLIGHT_DAMAGED"/></remarks>
 		[Obsolete]
 		_IS_HEADLIGHT_L_BROKEN = 0x5EF77C9ADD3B11A3, // 0xA0777943
 
@@ -52712,7 +52712,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		GET_IS_RIGHT_VEHICLE_HEADLIGHT_DAMAGED = 0xA7ECB73355EB2F20, // 0xF178390B
 
-		///<remarks>This function has been replaced by <see cref="GET_IS_RIGHT_VEHICLE_HEADLIGHT_DAMAGED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_IS_RIGHT_VEHICLE_HEADLIGHT_DAMAGED"/></remarks>
 		[Obsolete]
 		_IS_HEADLIGHT_R_BROKEN = 0xA7ECB73355EB2F20, // 0xF178390B
 
@@ -52725,7 +52725,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		GET_BOTH_VEHICLE_HEADLIGHTS_DAMAGED = 0xEC69ADF931AAE0C3,
 
-		///<remarks>This function has been replaced by <see cref="GET_BOTH_VEHICLE_HEADLIGHTS_DAMAGED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_BOTH_VEHICLE_HEADLIGHTS_DAMAGED"/></remarks>
 		[Obsolete]
 		_IS_VEHICLE_ENGINE_ON_FIRE = 0xEC69ADF931AAE0C3,
 
@@ -52735,7 +52735,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		MODIFY_VEHICLE_TOP_SPEED = 0x93A3996368C94158, // 0xE943B09C
 
-		///<remarks>This function has been replaced by <see cref="MODIFY_VEHICLE_TOP_SPEED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="MODIFY_VEHICLE_TOP_SPEED"/></remarks>
 		[Obsolete]
 		_SET_VEHICLE_ENGINE_POWER_MULTIPLIER = 0x93A3996368C94158, // 0xE943B09C
 
@@ -52748,7 +52748,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_VEHICLE_MAX_SPEED = 0xBAA045B4E42F3C06,
 
-		///<remarks>This function has been replaced by <see cref="SET_VEHICLE_MAX_SPEED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_VEHICLE_MAX_SPEED"/></remarks>
 		[Obsolete]
 		_SET_VEHICLE_MAX_SPEED = 0xBAA045B4E42F3C06,
 
@@ -52783,7 +52783,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		ADD_VEHICLE_COMBAT_ANGLED_AVOIDANCE_AREA = 0x54B0F614960F4A5F, // 0x5AB26C2B
 
-		///<remarks>This function has been replaced by <see cref="ADD_VEHICLE_COMBAT_ANGLED_AVOIDANCE_AREA"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="ADD_VEHICLE_COMBAT_ANGLED_AVOIDANCE_AREA"/></remarks>
 		[Obsolete]
 		_ADD_VEHICLE_COMBAT_AVOIDANCE_AREA = 0x54B0F614960F4A5F, // 0x5AB26C2B
 
@@ -52799,11 +52799,11 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		IS_ANY_PED_RAPPELLING_FROM_HELI = 0x291E373D483E7EE7, // 0xD656E7E5
 
-		///<remarks>This function has been replaced by <see cref="IS_ANY_PED_RAPPELLING_FROM_HELI"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_ANY_PED_RAPPELLING_FROM_HELI"/></remarks>
 		[Obsolete]
 		_ANY_PASSENGERS_RAPPELING = 0x291E373D483E7EE7, // 0xD656E7E5
 
-		///<remarks>This function has been replaced by <see cref="IS_ANY_PED_RAPPELLING_FROM_HELI"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_ANY_PED_RAPPELLING_FROM_HELI"/></remarks>
 		[Obsolete]
 		_IS_ANY_PASSENGER_RAPPELING_FROM_VEHICLE = 0x291E373D483E7EE7, // 0xD656E7E5
 
@@ -52821,7 +52821,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_VEHICLE_CHEAT_POWER_INCREASE = 0xB59E4BD37AE292DB, // 0x642DA5AA
 
-		///<remarks>This function has been replaced by <see cref="SET_VEHICLE_CHEAT_POWER_INCREASE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_VEHICLE_CHEAT_POWER_INCREASE"/></remarks>
 		[Obsolete]
 		_SET_VEHICLE_ENGINE_TORQUE_MULTIPLIER = 0xB59E4BD37AE292DB, // 0x642DA5AA
 
@@ -52851,7 +52851,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SWING_BOAT_BOOM_TO_RATIO = 0xF488C566413B4232, // 0xA25CCB8C
 
-		///<remarks>This function has been replaced by <see cref="SWING_BOAT_BOOM_TO_RATIO"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SWING_BOAT_BOOM_TO_RATIO"/></remarks>
 		[Obsolete]
 		_SET_BOAT_BOOM_POSITION_RATIO = 0xF488C566413B4232, // 0xA25CCB8C
 
@@ -52864,7 +52864,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SWING_BOAT_BOOM_FREELY = 0xC1F981A6F74F0C23, // 0x00966934
 
-		///<remarks>This function has been replaced by <see cref="SWING_BOAT_BOOM_FREELY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SWING_BOAT_BOOM_FREELY"/></remarks>
 		[Obsolete]
 		_GET_BOAT_BOOM_POSITION_RATIO_2 = 0xC1F981A6F74F0C23, // 0x00966934
 
@@ -52874,7 +52874,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		ALLOW_BOAT_BOOM_TO_ANIMATE = 0x0F3B4D4E43177236, // 0x113DF5FD
 
-		///<remarks>This function has been replaced by <see cref="ALLOW_BOAT_BOOM_TO_ANIMATE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="ALLOW_BOAT_BOOM_TO_ANIMATE"/></remarks>
 		[Obsolete]
 		_GET_BOAT_BOOM_POSITION_RATIO_3 = 0x0F3B4D4E43177236, // 0x113DF5FD
 
@@ -52899,7 +52899,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		GET_IS_VEHICLE_ENGINE_RUNNING = 0xAE31E7DF9B5B132E, // 0x7DC6D022
 
-		///<remarks>This function has been replaced by <see cref="GET_IS_VEHICLE_ENGINE_RUNNING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_IS_VEHICLE_ENGINE_RUNNING"/></remarks>
 		[Obsolete]
 		_IS_VEHICLE_ENGINE_ON = 0xAE31E7DF9B5B132E, // 0x7DC6D022
 
@@ -52922,7 +52922,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_BIKE_ON_STAND = 0x9CFA4896C3A53CBB, // 0x15D40761
 
-		///<remarks>This function has been replaced by <see cref="SET_BIKE_ON_STAND"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_BIKE_ON_STAND"/></remarks>
 		[Obsolete]
 		_SET_BIKE_LEAN_ANGLE = 0x9CFA4896C3A53CBB, // 0x15D40761
 
@@ -52962,11 +52962,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_TASK_VEHICLE_GOTO_PLANE_MIN_HEIGHT_ABOVE_TERRAIN = 0xB893215D8D4C015B, // 0x8C4B63E2
 
-		///<remarks>This function has been replaced by <see cref="SET_TASK_VEHICLE_GOTO_PLANE_MIN_HEIGHT_ABOVE_TERRAIN"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_TASK_VEHICLE_GOTO_PLANE_MIN_HEIGHT_ABOVE_TERRAIN"/></remarks>
 		[Obsolete]
 		_SET_PLANE_MIN_HEIGHT_ABOVE_GROUND = 0xB893215D8D4C015B, // 0x8C4B63E2
 
-		///<remarks>This function has been replaced by <see cref="SET_TASK_VEHICLE_GOTO_PLANE_MIN_HEIGHT_ABOVE_TERRAIN"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_TASK_VEHICLE_GOTO_PLANE_MIN_HEIGHT_ABOVE_TERRAIN"/></remarks>
 		[Obsolete]
 		_SET_PLANE_MIN_HEIGHT_ABOVE_TERRAIN = 0xB893215D8D4C015B, // 0x8C4B63E2
 
@@ -52991,7 +52991,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		GET_VEHICLE_NUM_OF_BROKEN_OFF_PARTS = 0x42A4BEB35D372407, // 0x8CDB0C09
 
-		///<remarks>This function has been replaced by <see cref="GET_VEHICLE_NUM_OF_BROKEN_OFF_PARTS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_VEHICLE_NUM_OF_BROKEN_OFF_PARTS"/></remarks>
 		[Obsolete]
 		_GET_VEHICLE_NUMBER_OF_BROKEN_OFF_BONES = 0x42A4BEB35D372407, // 0x8CDB0C09
 
@@ -53001,7 +53001,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		GET_VEHICLE_NUM_OF_BROKEN_LOOSEN_PARTS = 0x2C8CBFE1EA5FC631, // 0xABC99E21
 
-		///<remarks>This function has been replaced by <see cref="GET_VEHICLE_NUM_OF_BROKEN_LOOSEN_PARTS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_VEHICLE_NUM_OF_BROKEN_LOOSEN_PARTS"/></remarks>
 		[Obsolete]
 		_GET_VEHICLE_NUMBER_OF_BROKEN_BONES = 0x2C8CBFE1EA5FC631, // 0xABC99E21
 
@@ -53054,7 +53054,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		GET_VEHICLE_LOCK_ON_TARGET = 0x8F5EBAB1F260CFCE, // 0x4A557117
 
-		///<remarks>This function has been replaced by <see cref="GET_VEHICLE_LOCK_ON_TARGET"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_VEHICLE_LOCK_ON_TARGET"/></remarks>
 		[Obsolete]
 		_GET_VEHICLE_OWNER = 0x8F5EBAB1F260CFCE, // 0x4A557117
 
@@ -53127,7 +53127,7 @@ namespace GTA.Native
 		/// <returns>float</returns>
 		GET_VEHICLE_CURRENT_TIME_IN_SLIP_STREAM = 0x36492C2F0D134C56, // 0xA4A75FCF
 
-		///<remarks>This function has been replaced by <see cref="GET_VEHICLE_CURRENT_TIME_IN_SLIP_STREAM"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_VEHICLE_CURRENT_TIME_IN_SLIP_STREAM"/></remarks>
 		[Obsolete]
 		_GET_VEHICLE_CURRENT_SLIPSTREAM_DRAFT = 0x36492C2F0D134C56, // 0xA4A75FCF
 
@@ -53140,7 +53140,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		IS_VEHICLE_PRODUCING_SLIP_STREAM = 0x48C633E94A8142A7,
 
-		///<remarks>This function has been replaced by <see cref="IS_VEHICLE_PRODUCING_SLIP_STREAM"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_VEHICLE_PRODUCING_SLIP_STREAM"/></remarks>
 		[Obsolete]
 		_IS_VEHICLE_SLIPSTREAM_LEADER = 0x48C633E94A8142A7,
 
@@ -53165,7 +53165,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		IS_VEHICLE_SPRAYABLE = 0x8D474C8FAEFF6CDE, // 0x5EB00A6A
 
-		///<remarks>This function has been replaced by <see cref="IS_VEHICLE_SPRAYABLE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_VEHICLE_SPRAYABLE"/></remarks>
 		[Obsolete]
 		_IS_VEHICLE_SHOP_RESPRAY_ALLOWED = 0x8D474C8FAEFF6CDE, // 0x5EB00A6A
 
@@ -53185,7 +53185,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		DISABLE_VEHCILE_DYNAMIC_AMBIENT_SCALES = 0xF0E4BA16D1DB546C, // 0x5BD8D82D
 
-		///<remarks>This function has been replaced by <see cref="DISABLE_VEHCILE_DYNAMIC_AMBIENT_SCALES"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DISABLE_VEHCILE_DYNAMIC_AMBIENT_SCALES"/></remarks>
 		[Obsolete]
 		_SET_VEHICLE_SHADOW_EFFECT = 0xF0E4BA16D1DB546C, // 0x5BD8D82D
 
@@ -53198,7 +53198,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		ENABLE_VEHICLE_DYNAMIC_AMBIENT_SCALES = 0xF87D9F2301F7D206, // 0x450AD03A
 
-		///<remarks>This function has been replaced by <see cref="ENABLE_VEHICLE_DYNAMIC_AMBIENT_SCALES"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="ENABLE_VEHICLE_DYNAMIC_AMBIENT_SCALES"/></remarks>
 		[Obsolete]
 		_REMOVE_VEHICLE_SHADOW_EFFECT = 0xF87D9F2301F7D206, // 0x450AD03A
 
@@ -53208,7 +53208,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		IS_PLANE_LANDING_GEAR_INTACT = 0x4198AB0022B15F87, // 0xBD085DCA
 
-		///<remarks>This function has been replaced by <see cref="IS_PLANE_LANDING_GEAR_INTACT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_PLANE_LANDING_GEAR_INTACT"/></remarks>
 		[Obsolete]
 		_VEHICLE_HAS_LANDING_GEAR = 0x4198AB0022B15F87, // 0xBD085DCA
 
@@ -53218,7 +53218,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		ARE_PLANE_PROPELLERS_INTACT = 0x755D6D5267CBBD7E, // 0xABBDD5C6
 
-		///<remarks>This function has been replaced by <see cref="ARE_PLANE_PROPELLERS_INTACT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="ARE_PLANE_PROPELLERS_INTACT"/></remarks>
 		[Obsolete]
 		_ARE_PROPELLERS_UNDAMAGED = 0x755D6D5267CBBD7E, // 0xABBDD5C6
 
@@ -53228,7 +53228,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		SET_PLANE_PROPELLER_HEALTH = 0x4C815EB175086F84,
 
-		///<remarks>This function has been replaced by <see cref="SET_PLANE_PROPELLER_HEALTH"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_PLANE_PROPELLER_HEALTH"/></remarks>
 		[Obsolete]
 		_SET_PLANE_PROPELLERS_HEALTH = 0x4C815EB175086F84,
 
@@ -53271,15 +53271,15 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		ARE_WINGS_OF_PLANE_INTACT = 0x5991A01434CE9677, // 0xAF8CB3DF
 
-		///<remarks>This function has been replaced by <see cref="ARE_WINGS_OF_PLANE_INTACT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="ARE_WINGS_OF_PLANE_INTACT"/></remarks>
 		[Obsolete]
 		ADD_A_MARKER_OVER_VEHICLE = 0x5991A01434CE9677, // 0xAF8CB3DF
 
-		///<remarks>This function has been replaced by <see cref="ARE_WINGS_OF_PLANE_INTACT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="ARE_WINGS_OF_PLANE_INTACT"/></remarks>
 		[Obsolete]
 		_ARE_VEHICLE_WINGS_INTACT = 0x5991A01434CE9677, // 0xAF8CB3DF
 
-		///<remarks>This function has been replaced by <see cref="ARE_WINGS_OF_PLANE_INTACT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="ARE_WINGS_OF_PLANE_INTACT"/></remarks>
 		[Obsolete]
 		_ARE_PLANE_WINGS_INTACT = 0x5991A01434CE9677, // 0xAF8CB3DF
 
@@ -53311,7 +53311,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		DETACH_ENTITY_FROM_CARGOBOB = 0xAF03011701811146,
 
-		///<remarks>This function has been replaced by <see cref="DETACH_ENTITY_FROM_CARGOBOB"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DETACH_ENTITY_FROM_CARGOBOB"/></remarks>
 		[Obsolete]
 		_DETACH_ENTITY_FROM_CARGOBOB = 0xAF03011701811146,
 
@@ -53336,7 +53336,7 @@ namespace GTA.Native
 		/// <returns>Entity</returns>
 		GET_ENTITY_ATTACHED_TO_CARGOBOB = 0x99093F60746708CA,
 
-		///<remarks>This function has been replaced by <see cref="GET_ENTITY_ATTACHED_TO_CARGOBOB"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_ENTITY_ATTACHED_TO_CARGOBOB"/></remarks>
 		[Obsolete]
 		_GET_ENTITY_ATTACHED_TO_CARGOBOB = 0x99093F60746708CA,
 
@@ -53361,7 +53361,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_CARGOBOB_FORCE_DONT_DETACH_VEHICLE = 0x571FEB383F629926, // 0x49949FDA
 
-		///<remarks>This function has been replaced by <see cref="SET_CARGOBOB_FORCE_DONT_DETACH_VEHICLE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_CARGOBOB_FORCE_DONT_DETACH_VEHICLE"/></remarks>
 		[Obsolete]
 		_SET_CARGOBOB_HOOK_CAN_DETACH = 0x571FEB383F629926, // 0x49949FDA
 
@@ -53386,7 +53386,7 @@ namespace GTA.Native
 		/// <returns>Vector3</returns>
 		GET_ATTACHED_PICK_UP_HOOK_POSITION = 0xCBDB9B923CACC92D, // 0xE6633DCF
 
-		///<remarks>This function has been replaced by <see cref="GET_ATTACHED_PICK_UP_HOOK_POSITION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_ATTACHED_PICK_UP_HOOK_POSITION"/></remarks>
 		[Obsolete]
 		_GET_CARGOBOB_HOOK_POSITION = 0xCBDB9B923CACC92D, // 0xE6633DCF
 
@@ -53399,7 +53399,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		DOES_CARGOBOB_HAVE_PICK_UP_ROPE = 0x1821D91AD4B56108, // 0xAF769B81
 
-		///<remarks>This function has been replaced by <see cref="DOES_CARGOBOB_HAVE_PICK_UP_ROPE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DOES_CARGOBOB_HAVE_PICK_UP_ROPE"/></remarks>
 		[Obsolete]
 		_IS_CARGOBOB_HOOK_ACTIVE = 0x1821D91AD4B56108, // 0xAF769B81
 
@@ -53418,7 +53418,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		CREATE_PICK_UP_ROPE_FOR_CARGOBOB = 0x7BEB0C7A235F6F3B, // 0x4D3C9A99
 
-		///<remarks>This function has been replaced by <see cref="CREATE_PICK_UP_ROPE_FOR_CARGOBOB"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CREATE_PICK_UP_ROPE_FOR_CARGOBOB"/></remarks>
 		[Obsolete]
 		_ENABLE_CARGOBOB_HOOK = 0x7BEB0C7A235F6F3B, // 0x4D3C9A99
 
@@ -53432,7 +53432,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		REMOVE_PICK_UP_ROPE_FOR_CARGOBOB = 0x9768CF648F54C804, // 0xA8211EE9
 
-		///<remarks>This function has been replaced by <see cref="REMOVE_PICK_UP_ROPE_FOR_CARGOBOB"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="REMOVE_PICK_UP_ROPE_FOR_CARGOBOB"/></remarks>
 		[Obsolete]
 		_RETRACT_CARGOBOB_HOOK = 0x9768CF648F54C804, // 0xA8211EE9
 
@@ -53445,7 +53445,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_PICKUP_ROPE_LENGTH_FOR_CARGOBOB = 0x877C1EAEAC531023, // 0x3A8AB081
 
-		///<remarks>This function has been replaced by <see cref="SET_PICKUP_ROPE_LENGTH_FOR_CARGOBOB"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_PICKUP_ROPE_LENGTH_FOR_CARGOBOB"/></remarks>
 		[Obsolete]
 		_SET_CARGOBOB_HOOK_POSITION = 0x877C1EAEAC531023, // 0x3A8AB081
 
@@ -53476,11 +53476,11 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		DOES_CARGOBOB_HAVE_PICKUP_MAGNET = 0x6E08BF5B3722BAC9, // 0x4778CA0A
 
-		///<remarks>This function has been replaced by <see cref="DOES_CARGOBOB_HAVE_PICKUP_MAGNET"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DOES_CARGOBOB_HAVE_PICKUP_MAGNET"/></remarks>
 		[Obsolete]
 		_IS_CARGOBOB_MAGNET_ACTIVE = 0x6E08BF5B3722BAC9, // 0x4778CA0A
 
-		///<remarks>This function has been replaced by <see cref="DOES_CARGOBOB_HAVE_PICKUP_MAGNET"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DOES_CARGOBOB_HAVE_PICKUP_MAGNET"/></remarks>
 		[Obsolete]
 		_DOES_CARGOBOB_HAVE_PICKUP_MAGNET = 0x6E08BF5B3722BAC9, // 0x4778CA0A
 
@@ -53493,11 +53493,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_CARGOBOB_PICKUP_MAGNET_ACTIVE = 0x9A665550F8DA349B, // 0xF57066DA
 
-		///<remarks>This function has been replaced by <see cref="SET_CARGOBOB_PICKUP_MAGNET_ACTIVE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_CARGOBOB_PICKUP_MAGNET_ACTIVE"/></remarks>
 		[Obsolete]
 		_CARGOBOB_MAGNET_GRAB_VEHICLE = 0x9A665550F8DA349B, // 0xF57066DA
 
-		///<remarks>This function has been replaced by <see cref="SET_CARGOBOB_PICKUP_MAGNET_ACTIVE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_CARGOBOB_PICKUP_MAGNET_ACTIVE"/></remarks>
 		[Obsolete]
 		_SET_CARGOBOB_PICKUP_MAGNET_ACTIVE = 0x9A665550F8DA349B, // 0xF57066DA
 
@@ -53507,7 +53507,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_CARGOBOB_PICKUP_MAGNET_STRENGTH = 0xBCBFCD9D1DAC19E2, // 0xCC3CF97D
 
-		///<remarks>This function has been replaced by <see cref="SET_CARGOBOB_PICKUP_MAGNET_STRENGTH"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_CARGOBOB_PICKUP_MAGNET_STRENGTH"/></remarks>
 		[Obsolete]
 		_SET_CARGOBOB_PICKUP_MAGNET_STRENGTH = 0xBCBFCD9D1DAC19E2, // 0xCC3CF97D
 
@@ -53517,7 +53517,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_CARGOBOB_PICKUP_MAGNET_FALLOFF = 0xA17BAD153B51547E,
 
-		///<remarks>This function has been replaced by <see cref="SET_CARGOBOB_PICKUP_MAGNET_FALLOFF"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_CARGOBOB_PICKUP_MAGNET_FALLOFF"/></remarks>
 		[Obsolete]
 		SET_CARGOBOB_PICKUP_MAGNET_EFFECT_RADIUS = 0xA17BAD153B51547E,
 
@@ -53527,7 +53527,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_CARGOBOB_PICKUP_MAGNET_REDUCED_STRENGTH = 0x66979ACF5102FD2F,
 
-		///<remarks>This function has been replaced by <see cref="SET_CARGOBOB_PICKUP_MAGNET_REDUCED_STRENGTH"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_CARGOBOB_PICKUP_MAGNET_REDUCED_STRENGTH"/></remarks>
 		[Obsolete]
 		SET_CARGOBOB_PICKUP_MAGNET_REDUCED_FALLOFF = 0x66979ACF5102FD2F,
 
@@ -53592,7 +53592,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		IS_VEHICLE_WEAPON_DISABLED = 0x563B65A643ED072E,
 
-		///<remarks>This function has been replaced by <see cref="IS_VEHICLE_WEAPON_DISABLED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_VEHICLE_WEAPON_DISABLED"/></remarks>
 		[Obsolete]
 		_IS_VEHICLE_WEAPON_DISABLED = 0x563B65A643ED072E,
 
@@ -53608,7 +53608,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_VEHICLE_ACTIVE_FOR_PED_NAVIGATION = 0x21115BCD6E44656A, // 0xEBC225C1
 
-		///<remarks>This function has been replaced by <see cref="SET_VEHICLE_ACTIVE_FOR_PED_NAVIGATION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_VEHICLE_ACTIVE_FOR_PED_NAVIGATION"/></remarks>
 		[Obsolete]
 		_SET_VEHICLE_CLOSE_DOOR_DEFERED_ACTION = 0x21115BCD6E44656A, // 0xEBC225C1
 
@@ -53688,7 +53688,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_VEHICLE_DROPS_MONEY_WHEN_BLOWN_UP = 0x068F64F2470F9656, // 0x4BB5605D
 
-		///<remarks>This function has been replaced by <see cref="SET_VEHICLE_DROPS_MONEY_WHEN_BLOWN_UP"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_VEHICLE_DROPS_MONEY_WHEN_BLOWN_UP"/></remarks>
 		[Obsolete]
 		_SET_VEHICLE_CREATES_MONEY_PICKUPS_WHEN_EXPLODED = 0x068F64F2470F9656, // 0x4BB5605D
 
@@ -53698,7 +53698,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_VEHICLE_KEEP_ENGINE_ON_WHEN_ABANDONED = 0xB8FBC8B1330CA9B4, // 0x51E0064F
 
-		///<remarks>This function has been replaced by <see cref="SET_VEHICLE_KEEP_ENGINE_ON_WHEN_ABANDONED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_VEHICLE_KEEP_ENGINE_ON_WHEN_ABANDONED"/></remarks>
 		[Obsolete]
 		_SET_VEHICLE_JET_ENGINE_ON = 0xB8FBC8B1330CA9B4, // 0x51E0064F
 
@@ -53720,7 +53720,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_VEHICLE_HANDLING_OVERRIDE = 0x10655FAB9915623D,
 
-		///<remarks>This function has been replaced by <see cref="SET_VEHICLE_HANDLING_OVERRIDE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_VEHICLE_HANDLING_OVERRIDE"/></remarks>
 		[Obsolete]
 		_SET_VEHICLE_HANDLING_HASH_FOR_AI = 0x10655FAB9915623D,
 
@@ -53748,7 +53748,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_HELI_CONTROL_LAGGING_RATE_SCALAR = 0x6E0859B530A365CC, // 0x6E67FD35
 
-		///<remarks>This function has been replaced by <see cref="SET_HELI_CONTROL_LAGGING_RATE_SCALAR"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_HELI_CONTROL_LAGGING_RATE_SCALAR"/></remarks>
 		[Obsolete]
 		_SET_HELICOPTER_ROLL_PITCH_YAW_MULT = 0x6E0859B530A365CC, // 0x6E67FD35
 
@@ -53767,7 +53767,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_VEHICLE_WHEELS_CAN_BREAK_OFF_WHEN_BLOW_UP = 0xA37B9A517B133349, // 0x670913A4
 
-		///<remarks>This function has been replaced by <see cref="SET_VEHICLE_WHEELS_CAN_BREAK_OFF_WHEN_BLOW_UP"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_VEHICLE_WHEELS_CAN_BREAK_OFF_WHEN_BLOW_UP"/></remarks>
 		[Obsolete]
 		SET_VEHICLE_MAX_STR_TRAP = 0xA37B9A517B133349, // 0x670913A4
 
@@ -53783,7 +53783,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_VEHICLE_CEILING_HEIGHT = 0xA46413066687A328, // 0x98A10A86
 
-		///<remarks>This function has been replaced by <see cref="SET_VEHICLE_CEILING_HEIGHT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_VEHICLE_CEILING_HEIGHT"/></remarks>
 		[Obsolete]
 		GET_VEHICLE_DEFORMATION_GET_TREE = 0xA46413066687A328, // 0x98A10A86
 
@@ -53831,7 +53831,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		IS_PED_EXCLUSIVE_DRIVER_OF_VEHICLE = 0xB09D25E77C33EB3F,
 
-		///<remarks>This function has been replaced by <see cref="IS_PED_EXCLUSIVE_DRIVER_OF_VEHICLE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_PED_EXCLUSIVE_DRIVER_OF_VEHICLE"/></remarks>
 		[Obsolete]
 		_IS_PED_EXCLUSIVE_DRIVER_OF_VEHICLE = 0xB09D25E77C33EB3F,
 
@@ -53856,7 +53856,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_DONT_PROCESS_VEHICLE_GLASS = 0x1087BC8EC540DAEB,
 
-		///<remarks>This function has been replaced by <see cref="SET_DONT_PROCESS_VEHICLE_GLASS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_DONT_PROCESS_VEHICLE_GLASS"/></remarks>
 		[Obsolete]
 		_SET_DISABLE_VEHICLE_WINDOW_COLLISIONS = 0x1087BC8EC540DAEB,
 
@@ -53893,7 +53893,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_DISTANT_CARS_ENABLED = 0xF796359A959DF65D, // 0xB5CC548B
 
-		///<remarks>This function has been replaced by <see cref="SET_DISTANT_CARS_ENABLED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_DISTANT_CARS_ENABLED"/></remarks>
 		[Obsolete]
 		_DISPLAY_DISTANT_VEHICLES = 0xF796359A959DF65D, // 0xB5CC548B
 
@@ -53906,7 +53906,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_VEHICLE_NEON_COLOUR = 0x8E0A582209A62695,
 
-		///<remarks>This function has been replaced by <see cref="SET_VEHICLE_NEON_COLOUR"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_VEHICLE_NEON_COLOUR"/></remarks>
 		[Obsolete]
 		_SET_VEHICLE_NEON_LIGHTS_COLOUR = 0x8E0A582209A62695,
 
@@ -53919,7 +53919,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_VEHICLE_NEON_INDEX_COLOUR = 0xB93B2867F7B479D1,
 
-		///<remarks>This function has been replaced by <see cref="SET_VEHICLE_NEON_INDEX_COLOUR"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_VEHICLE_NEON_INDEX_COLOUR"/></remarks>
 		[Obsolete]
 		_SET_VEHICLE_NEON_LIGHTS_COLOUR_INDEX = 0xB93B2867F7B479D1,
 
@@ -53933,7 +53933,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		GET_VEHICLE_NEON_COLOUR = 0x7619EEE8C886757F,
 
-		///<remarks>This function has been replaced by <see cref="GET_VEHICLE_NEON_COLOUR"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_VEHICLE_NEON_COLOUR"/></remarks>
 		[Obsolete]
 		_GET_VEHICLE_NEON_LIGHTS_COLOUR = 0x7619EEE8C886757F,
 
@@ -53951,7 +53951,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_VEHICLE_NEON_ENABLED = 0x2AA720E4287BF269,
 
-		///<remarks>This function has been replaced by <see cref="SET_VEHICLE_NEON_ENABLED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_VEHICLE_NEON_ENABLED"/></remarks>
 		[Obsolete]
 		_SET_VEHICLE_NEON_LIGHT_ENABLED = 0x2AA720E4287BF269,
 
@@ -53968,7 +53968,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		GET_VEHICLE_NEON_ENABLED = 0x8C4B92553E4766A5,
 
-		///<remarks>This function has been replaced by <see cref="GET_VEHICLE_NEON_ENABLED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_VEHICLE_NEON_ENABLED"/></remarks>
 		[Obsolete]
 		_IS_VEHICLE_NEON_LIGHT_ENABLED = 0x8C4B92553E4766A5,
 
@@ -53984,7 +53984,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SUPPRESS_NEONS_ON_VEHICLE = 0x83F813570FF519DE,
 
-		///<remarks>This function has been replaced by <see cref="SUPPRESS_NEONS_ON_VEHICLE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SUPPRESS_NEONS_ON_VEHICLE"/></remarks>
 		[Obsolete]
 		_DISABLE_VEHICLE_NEON_LIGHTS = 0x83F813570FF519DE,
 
@@ -53994,7 +53994,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_DISABLE_SUPERDUMMY = 0xB088E9A47AE6EDD5,
 
-		///<remarks>This function has been replaced by <see cref="SET_DISABLE_SUPERDUMMY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_DISABLE_SUPERDUMMY"/></remarks>
 		[Obsolete]
 		_SET_DISABLE_SUPERDUMMY_MODE = 0xB088E9A47AE6EDD5,
 
@@ -54004,7 +54004,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		REQUEST_VEHICLE_DIAL = 0xDBA3C090E3D74690,
 
-		///<remarks>This function has been replaced by <see cref="REQUEST_VEHICLE_DIAL"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="REQUEST_VEHICLE_DIAL"/></remarks>
 		[Obsolete]
 		_REQUEST_VEHICLE_DASHBOARD_SCALEFORM_MOVIE = 0xDBA3C090E3D74690,
 
@@ -54039,7 +54039,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		GET_VEHICLE_SIZE = 0xDF7E3EEB29642C38,
 
-		///<remarks>This function has been replaced by <see cref="GET_VEHICLE_SIZE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_VEHICLE_SIZE"/></remarks>
 		[Obsolete]
 		_GET_VEHICLE_SUSPENSION_BOUNDS = 0xDF7E3EEB29642C38,
 
@@ -54055,7 +54055,7 @@ namespace GTA.Native
 		/// <returns>float</returns>
 		GET_FAKE_SUSPENSION_LOWERING_AMOUNT = 0x53952FD2BAA19F17, // 0xB73A1486
 
-		///<remarks>This function has been replaced by <see cref="GET_FAKE_SUSPENSION_LOWERING_AMOUNT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_FAKE_SUSPENSION_LOWERING_AMOUNT"/></remarks>
 		[Obsolete]
 		_GET_VEHICLE_SUSPENSION_HEIGHT = 0x53952FD2BAA19F17, // 0xB73A1486
 
@@ -54065,7 +54065,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_CAR_HIGH_SPEED_BUMP_SEVERITY_MULTIPLIER = 0x84FD40F56075E816,
 
-		///<remarks>This function has been replaced by <see cref="SET_CAR_HIGH_SPEED_BUMP_SEVERITY_MULTIPLIER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_CAR_HIGH_SPEED_BUMP_SEVERITY_MULTIPLIER"/></remarks>
 		[Obsolete]
 		_SET_CAR_HIGH_SPEED_BUMP_SEVERITY_MULTIPLIER = 0x84FD40F56075E816,
 
@@ -54075,7 +54075,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		GET_NUMBER_OF_VEHICLE_DOORS = 0x92922A607497B14D,
 
-		///<remarks>This function has been replaced by <see cref="GET_NUMBER_OF_VEHICLE_DOORS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_NUMBER_OF_VEHICLE_DOORS"/></remarks>
 		[Obsolete]
 		_GET_NUMBER_OF_VEHICLE_DOORS = 0x92922A607497B14D,
 
@@ -54089,7 +54089,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_HYDRAULICS_CONTROL = 0x28B18377EB6E25F6,
 
-		///<remarks>This function has been replaced by <see cref="SET_HYDRAULICS_CONTROL"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_HYDRAULICS_CONTROL"/></remarks>
 		[Obsolete]
 		_SET_HYDRAULIC_RAISED = 0x28B18377EB6E25F6,
 
@@ -54123,7 +54123,7 @@ namespace GTA.Native
 		/// <returns>float</returns>
 		GET_VEHICLE_HEALTH_PERCENTAGE = 0xB8EF61207C2393A9, // 0x196BA503
 
-		///<remarks>This function has been replaced by <see cref="GET_VEHICLE_HEALTH_PERCENTAGE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_VEHICLE_HEALTH_PERCENTAGE"/></remarks>
 		[Obsolete]
 		_GET_VEHICLE_BODY_HEALTH_2 = 0xB8EF61207C2393A9, // 0x196BA503
 
@@ -54145,7 +54145,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_VEHICLE_KERS_ALLOWED = 0x99C82F8A139F3E4E, // 0x71CDD52F
 
-		///<remarks>This function has been replaced by <see cref="SET_VEHICLE_KERS_ALLOWED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_VEHICLE_KERS_ALLOWED"/></remarks>
 		[Obsolete]
 		_SET_VEHICLE_HUD_SPECIAL_ABILITY_BAR_ACTIVE = 0x99C82F8A139F3E4E, // 0x71CDD52F
 
@@ -54158,7 +54158,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		GET_VEHICLE_HAS_KERS = 0x50634E348C8D44EF, // 0x0761E635
 
-		///<remarks>This function has been replaced by <see cref="GET_VEHICLE_HAS_KERS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_VEHICLE_HAS_KERS"/></remarks>
 		[Obsolete]
 		_HAS_VEHICLE_KERS_BOOST = 0x50634E348C8D44EF, // 0x0761E635
 
@@ -54174,7 +54174,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_HELI_RESIST_TO_EXPLOSION = 0x8074CC1886802912,
 
-		///<remarks>This function has been replaced by <see cref="SET_HELI_RESIST_TO_EXPLOSION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_HELI_RESIST_TO_EXPLOSION"/></remarks>
 		[Obsolete]
 		_SET_HELI_RESIST_TO_EXPLOSION = 0x8074CC1886802912,
 
@@ -54193,11 +54193,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_HYDRAULIC_SUSPENSION_RAISE_FACTOR = 0x84EA99C62CB3EF0C,
 
-		///<remarks>This function has been replaced by <see cref="SET_HYDRAULIC_SUSPENSION_RAISE_FACTOR"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_HYDRAULIC_SUSPENSION_RAISE_FACTOR"/></remarks>
 		[Obsolete]
 		_SET_HYDRAULIC_STATE = 0x84EA99C62CB3EF0C,
 
-		///<remarks>This function has been replaced by <see cref="SET_HYDRAULIC_SUSPENSION_RAISE_FACTOR"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_HYDRAULIC_SUSPENSION_RAISE_FACTOR"/></remarks>
 		[Obsolete]
 		_SET_HYDRAULIC_WHEEL_VALUE = 0x84EA99C62CB3EF0C,
 
@@ -54207,7 +54207,7 @@ namespace GTA.Native
 		/// <returns>float</returns>
 		GET_HYDRAULIC_SUSPENSION_RAISE_FACTOR = 0x0BB5CBDDD0F25AE3,
 
-		///<remarks>This function has been replaced by <see cref="GET_HYDRAULIC_SUSPENSION_RAISE_FACTOR"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_HYDRAULIC_SUSPENSION_RAISE_FACTOR"/></remarks>
 		[Obsolete]
 		_GET_HYDRAULIC_WHEEL_VALUE = 0x0BB5CBDDD0F25AE3,
 
@@ -54217,7 +54217,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_CAN_USE_HYDRAULICS = 0x1201E8A3290A3B98,
 
-		///<remarks>This function has been replaced by <see cref="SET_CAN_USE_HYDRAULICS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_CAN_USE_HYDRAULICS"/></remarks>
 		[Obsolete]
 		_SET_CAMBERED_WHEELS_DISABLED = 0x1201E8A3290A3B98,
 
@@ -54233,7 +54233,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_HYDRAULIC_VEHICLE_STATE = 0x8EA86DF356801C7D,
 
-		///<remarks>This function has been replaced by <see cref="SET_HYDRAULIC_VEHICLE_STATE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_HYDRAULIC_VEHICLE_STATE"/></remarks>
 		[Obsolete]
 		_SET_HYDRAULIC_WHEEL_STATE = 0x8EA86DF356801C7D,
 
@@ -54249,7 +54249,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_HYDRAULIC_WHEEL_STATE = 0xC24075310A8B9CD1,
 
-		///<remarks>This function has been replaced by <see cref="SET_HYDRAULIC_WHEEL_STATE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_HYDRAULIC_WHEEL_STATE"/></remarks>
 		[Obsolete]
 		_SET_HYDRAULIC_WHEEL_STATE_TRANSITION = 0xC24075310A8B9CD1,
 
@@ -54287,7 +54287,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		SET_VEHICLE_DAMAGE_SCALE = 0x4E20D2A627011E8E,
 
-		///<remarks>This function has been replaced by <see cref="SET_VEHICLE_DAMAGE_SCALE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_VEHICLE_DAMAGE_SCALE"/></remarks>
 		[Obsolete]
 		_SET_VEHICLE_DAMAGE_MODIFIER = 0x4E20D2A627011E8E,
 
@@ -54297,7 +54297,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		SET_VEHICLE_WEAPON_DAMAGE_SCALE = 0x45A561A9421AB6AD,
 
-		///<remarks>This function has been replaced by <see cref="SET_VEHICLE_WEAPON_DAMAGE_SCALE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_VEHICLE_WEAPON_DAMAGE_SCALE"/></remarks>
 		[Obsolete]
 		_SET_VEHICLE_UNK_DAMAGE_MULTIPLIER = 0x45A561A9421AB6AD,
 
@@ -54332,7 +54332,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_INVERT_VEHICLE_CONTROLS = 0x5B91B229243351A8,
 
-		///<remarks>This function has been replaced by <see cref="SET_INVERT_VEHICLE_CONTROLS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_INVERT_VEHICLE_CONTROLS"/></remarks>
 		[Obsolete]
 		_SET_VEHICLE_CONTROLS_INVERTED = 0x5B91B229243351A8,
 
@@ -54384,7 +54384,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_SCRIPT_RAMP_IMPULSE_SCALE = 0xEFC13B1CE30D755D,
 
-		///<remarks>This function has been replaced by <see cref="SET_SCRIPT_RAMP_IMPULSE_SCALE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_SCRIPT_RAMP_IMPULSE_SCALE"/></remarks>
 		[Obsolete]
 		_SET_VEHICLE_RAMP_LAUNCH_MODIFIER = 0xEFC13B1CE30D755D,
 
@@ -54397,11 +54397,11 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		GET_IS_DOOR_VALID = 0x645F4B6E8499F632,
 
-		///<remarks>This function has been replaced by <see cref="GET_IS_DOOR_VALID"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_IS_DOOR_VALID"/></remarks>
 		[Obsolete]
 		_DOES_VEHICLE_HAVE_DOOR = 0x645F4B6E8499F632,
 
-		///<remarks>This function has been replaced by <see cref="GET_IS_DOOR_VALID"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_IS_DOOR_VALID"/></remarks>
 		[Obsolete]
 		_GET_IS_DOOR_VALID = 0x645F4B6E8499F632,
 
@@ -54411,7 +54411,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_SCRIPT_ROCKET_BOOST_RECHARGE_TIME = 0xE00F2AB100B76E89,
 
-		///<remarks>This function has been replaced by <see cref="SET_SCRIPT_ROCKET_BOOST_RECHARGE_TIME"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_SCRIPT_ROCKET_BOOST_RECHARGE_TIME"/></remarks>
 		[Obsolete]
 		_SET_VEHICLE_ROCKET_BOOST_REFILL_TIME = 0xE00F2AB100B76E89,
 
@@ -54421,15 +54421,15 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		GET_HAS_ROCKET_BOOST = 0x36D782F68B309BDA,
 
-		///<remarks>This function has been replaced by <see cref="GET_HAS_ROCKET_BOOST"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_HAS_ROCKET_BOOST"/></remarks>
 		[Obsolete]
 		_HAS_VEHICLE_ROCKET_BOOST = 0x36D782F68B309BDA,
 
-		///<remarks>This function has been replaced by <see cref="GET_HAS_ROCKET_BOOST"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_HAS_ROCKET_BOOST"/></remarks>
 		[Obsolete]
 		_DOES_VEHICLE_HAVE_ROCKET_BOOST = 0x36D782F68B309BDA,
 
-		///<remarks>This function has been replaced by <see cref="GET_HAS_ROCKET_BOOST"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_HAS_ROCKET_BOOST"/></remarks>
 		[Obsolete]
 		_GET_HAS_ROCKET_BOOST = 0x36D782F68B309BDA,
 
@@ -54439,7 +54439,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		IS_ROCKET_BOOST_ACTIVE = 0x3D34E80EED4AE3BE,
 
-		///<remarks>This function has been replaced by <see cref="IS_ROCKET_BOOST_ACTIVE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_ROCKET_BOOST_ACTIVE"/></remarks>
 		[Obsolete]
 		_IS_VEHICLE_ROCKET_BOOST_ACTIVE = 0x3D34E80EED4AE3BE,
 
@@ -54449,7 +54449,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_ROCKET_BOOST_ACTIVE = 0x81E1552E35DC3839,
 
-		///<remarks>This function has been replaced by <see cref="SET_ROCKET_BOOST_ACTIVE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_ROCKET_BOOST_ACTIVE"/></remarks>
 		[Obsolete]
 		_SET_VEHICLE_ROCKET_BOOST_ACTIVE = 0x81E1552E35DC3839,
 
@@ -54459,15 +54459,15 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		GET_HAS_RETRACTABLE_WHEELS = 0xDCA174A42133F08C,
 
-		///<remarks>This function has been replaced by <see cref="GET_HAS_RETRACTABLE_WHEELS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_HAS_RETRACTABLE_WHEELS"/></remarks>
 		[Obsolete]
 		_GET_HAS_LOWERABLE_WHEELS = 0xDCA174A42133F08C,
 
-		///<remarks>This function has been replaced by <see cref="GET_HAS_RETRACTABLE_WHEELS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_HAS_RETRACTABLE_WHEELS"/></remarks>
 		[Obsolete]
 		_DOES_VEHICLE_HAVE_RETRACTABLE_WHEELS = 0xDCA174A42133F08C,
 
-		///<remarks>This function has been replaced by <see cref="GET_HAS_RETRACTABLE_WHEELS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_HAS_RETRACTABLE_WHEELS"/></remarks>
 		[Obsolete]
 		_GET_HAS_RETRACTABLE_WHEELS = 0xDCA174A42133F08C,
 
@@ -54477,7 +54477,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		GET_IS_WHEELS_RETRACTED = 0x1DA0DA9CB3F0C8BF,
 
-		///<remarks>This function has been replaced by <see cref="GET_IS_WHEELS_RETRACTED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_IS_WHEELS_RETRACTED"/></remarks>
 		[Obsolete]
 		_GET_IS_WHEELS_LOWERED_STATE_ACTIVE = 0x1DA0DA9CB3F0C8BF,
 
@@ -54487,11 +54487,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_WHEELS_EXTENDED_INSTANTLY = 0xF660602546D27BA8,
 
-		///<remarks>This function has been replaced by <see cref="SET_WHEELS_EXTENDED_INSTANTLY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_WHEELS_EXTENDED_INSTANTLY"/></remarks>
 		[Obsolete]
 		_RAISE_LOWERABLE_WHEELS = 0xF660602546D27BA8,
 
-		///<remarks>This function has been replaced by <see cref="SET_WHEELS_EXTENDED_INSTANTLY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_WHEELS_EXTENDED_INSTANTLY"/></remarks>
 		[Obsolete]
 		_RAISE_RETRACTABLE_WHEELS = 0xF660602546D27BA8,
 
@@ -54501,7 +54501,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_WHEELS_RETRACTED_INSTANTLY = 0x5335BE58C083E74E,
 
-		///<remarks>This function has been replaced by <see cref="SET_WHEELS_RETRACTED_INSTANTLY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_WHEELS_RETRACTED_INSTANTLY"/></remarks>
 		[Obsolete]
 		_LOWER_RETRACTABLE_WHEELS = 0x5335BE58C083E74E,
 
@@ -54514,15 +54514,15 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		GET_CAR_HAS_JUMP = 0x9078C0C5EF8C19E9,
 
-		///<remarks>This function has been replaced by <see cref="GET_CAR_HAS_JUMP"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_CAR_HAS_JUMP"/></remarks>
 		[Obsolete]
 		_HAS_VEHICLE_JUMPING_ABILITY = 0x9078C0C5EF8C19E9,
 
-		///<remarks>This function has been replaced by <see cref="GET_CAR_HAS_JUMP"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_CAR_HAS_JUMP"/></remarks>
 		[Obsolete]
 		_DOES_VEHICLE_HAVE_JUMPING_ABILITY = 0x9078C0C5EF8C19E9,
 
-		///<remarks>This function has been replaced by <see cref="GET_CAR_HAS_JUMP"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_CAR_HAS_JUMP"/></remarks>
 		[Obsolete]
 		_GET_CAN_VEHICLE_JUMP = 0x9078C0C5EF8C19E9,
 
@@ -54535,7 +54535,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_USE_HIGHER_CAR_JUMP = 0xF06A16CA55D138D8,
 
-		///<remarks>This function has been replaced by <see cref="SET_USE_HIGHER_CAR_JUMP"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_USE_HIGHER_CAR_JUMP"/></remarks>
 		[Obsolete]
 		_SET_USE_HIGHER_VEHICLE_JUMP_FORCE = 0xF06A16CA55D138D8,
 
@@ -54556,7 +54556,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_VEHICLE_WEAPON_RESTRICTED_AMMO = 0x44CD1F493DB2A0A6,
 
-		///<remarks>This function has been replaced by <see cref="SET_VEHICLE_WEAPON_RESTRICTED_AMMO"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_VEHICLE_WEAPON_RESTRICTED_AMMO"/></remarks>
 		[Obsolete]
 		_SET_VEHICLE_WEAPON_CAPACITY = 0x44CD1F493DB2A0A6,
 
@@ -54566,7 +54566,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		GET_VEHICLE_WEAPON_RESTRICTED_AMMO = 0x8181CE2F25CB9BB7,
 
-		///<remarks>This function has been replaced by <see cref="GET_VEHICLE_WEAPON_RESTRICTED_AMMO"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_VEHICLE_WEAPON_RESTRICTED_AMMO"/></remarks>
 		[Obsolete]
 		_GET_VEHICLE_WEAPON_CAPACITY = 0x8181CE2F25CB9BB7,
 
@@ -54576,15 +54576,15 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		GET_VEHICLE_HAS_PARACHUTE = 0xBC9CFF381338CB4F,
 
-		///<remarks>This function has been replaced by <see cref="GET_VEHICLE_HAS_PARACHUTE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_VEHICLE_HAS_PARACHUTE"/></remarks>
 		[Obsolete]
 		_HAS_VEHICLE_PARACHUTE = 0xBC9CFF381338CB4F,
 
-		///<remarks>This function has been replaced by <see cref="GET_VEHICLE_HAS_PARACHUTE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_VEHICLE_HAS_PARACHUTE"/></remarks>
 		[Obsolete]
 		_DOES_VEHICLE_HAVE_PARACHUTE = 0xBC9CFF381338CB4F,
 
-		///<remarks>This function has been replaced by <see cref="GET_VEHICLE_HAS_PARACHUTE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_VEHICLE_HAS_PARACHUTE"/></remarks>
 		[Obsolete]
 		_GET_VEHICLE_HAS_PARACHUTE = 0xBC9CFF381338CB4F,
 
@@ -54594,11 +54594,11 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		GET_VEHICLE_CAN_DEPLOY_PARACHUTE = 0xA916396DF4154EE3,
 
-		///<remarks>This function has been replaced by <see cref="GET_VEHICLE_CAN_DEPLOY_PARACHUTE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_VEHICLE_CAN_DEPLOY_PARACHUTE"/></remarks>
 		[Obsolete]
 		_CAN_VEHICLE_PARACHUTE_BE_ACTIVATED = 0xA916396DF4154EE3,
 
-		///<remarks>This function has been replaced by <see cref="GET_VEHICLE_CAN_DEPLOY_PARACHUTE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_VEHICLE_CAN_DEPLOY_PARACHUTE"/></remarks>
 		[Obsolete]
 		_GET_VEHICLE_CAN_ACTIVATE_PARACHUTE = 0xA916396DF4154EE3,
 
@@ -54608,7 +54608,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		VEHICLE_START_PARACHUTING = 0x0BFFB028B3DD0A97,
 
-		///<remarks>This function has been replaced by <see cref="VEHICLE_START_PARACHUTING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="VEHICLE_START_PARACHUTING"/></remarks>
 		[Obsolete]
 		_SET_VEHICLE_PARACHUTE_ACTIVE = 0x0BFFB028B3DD0A97,
 
@@ -54618,7 +54618,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		IS_VEHICLE_PARACHUTE_DEPLOYED = 0x3DE51E9C80B116CF,
 
-		///<remarks>This function has been replaced by <see cref="IS_VEHICLE_PARACHUTE_DEPLOYED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_VEHICLE_PARACHUTE_DEPLOYED"/></remarks>
 		[Obsolete]
 		_IS_VEHICLE_PARACHUTE_ACTIVE = 0x3DE51E9C80B116CF,
 
@@ -54628,11 +54628,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		VEHICLE_SET_RAMP_AND_RAMMING_CARS_TAKE_DAMAGE = 0x28D034A93FE31BF5,
 
-		///<remarks>This function has been replaced by <see cref="VEHICLE_SET_RAMP_AND_RAMMING_CARS_TAKE_DAMAGE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="VEHICLE_SET_RAMP_AND_RAMMING_CARS_TAKE_DAMAGE"/></remarks>
 		[Obsolete]
 		_SET_RAMP_VEHICLE_RECEIVES_RAMP_DAMAGE = 0x28D034A93FE31BF5,
 
-		///<remarks>This function has been replaced by <see cref="VEHICLE_SET_RAMP_AND_RAMMING_CARS_TAKE_DAMAGE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="VEHICLE_SET_RAMP_AND_RAMMING_CARS_TAKE_DAMAGE"/></remarks>
 		[Obsolete]
 		_SET_VEHICLE_RECEIVES_RAMP_DAMAGE = 0x28D034A93FE31BF5,
 
@@ -54642,7 +54642,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		VEHICLE_SET_ENABLE_RAMP_CAR_SIDE_IMPULSE = 0x1BBAC99C0BC53656,
 
-		///<remarks>This function has been replaced by <see cref="VEHICLE_SET_ENABLE_RAMP_CAR_SIDE_IMPULSE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="VEHICLE_SET_ENABLE_RAMP_CAR_SIDE_IMPULSE"/></remarks>
 		[Obsolete]
 		_SET_VEHICLE_RAMP_SIDEWAYS_LAUNCH_MOTION = 0x1BBAC99C0BC53656,
 
@@ -54652,7 +54652,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		VEHICLE_SET_ENABLE_NORMALISE_RAMP_CAR_VERTICAL_VELOCTIY = 0x756AE6E962168A04,
 
-		///<remarks>This function has been replaced by <see cref="VEHICLE_SET_ENABLE_NORMALISE_RAMP_CAR_VERTICAL_VELOCTIY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="VEHICLE_SET_ENABLE_NORMALISE_RAMP_CAR_VERTICAL_VELOCTIY"/></remarks>
 		[Obsolete]
 		_SET_VEHICLE_RAMP_UPWARDS_LAUNCH_MOTION = 0x756AE6E962168A04,
 
@@ -54668,7 +54668,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_VEHICLE_WEAPON_CAN_TARGET_OBJECTS = 0x86B4B6212CB8B627,
 
-		///<remarks>This function has been replaced by <see cref="SET_VEHICLE_WEAPON_CAN_TARGET_OBJECTS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_VEHICLE_WEAPON_CAN_TARGET_OBJECTS"/></remarks>
 		[Obsolete]
 		_SET_VEHICLE_WEAPONS_DISABLED = 0x86B4B6212CB8B627,
 
@@ -54693,11 +54693,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		VEHICLE_SET_PARACHUTE_MODEL_OVERRIDE = 0x4D610C6B56031351,
 
-		///<remarks>This function has been replaced by <see cref="VEHICLE_SET_PARACHUTE_MODEL_OVERRIDE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="VEHICLE_SET_PARACHUTE_MODEL_OVERRIDE"/></remarks>
 		[Obsolete]
 		_VEHICLE_SET_CUSTOM_PARACHUTE_MODEL = 0x4D610C6B56031351,
 
-		///<remarks>This function has been replaced by <see cref="VEHICLE_SET_PARACHUTE_MODEL_OVERRIDE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="VEHICLE_SET_PARACHUTE_MODEL_OVERRIDE"/></remarks>
 		[Obsolete]
 		_SET_VEHICLE_PARACHUTE_MODEL = 0x4D610C6B56031351,
 
@@ -54718,11 +54718,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		VEHICLE_SET_PARACHUTE_MODEL_TINT_INDEX = 0xA74AD2439468C883,
 
-		///<remarks>This function has been replaced by <see cref="VEHICLE_SET_PARACHUTE_MODEL_TINT_INDEX"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="VEHICLE_SET_PARACHUTE_MODEL_TINT_INDEX"/></remarks>
 		[Obsolete]
 		_VEHICLE_SET_CUSTOM_PARACHUTE_TEXTURE = 0xA74AD2439468C883,
 
-		///<remarks>This function has been replaced by <see cref="VEHICLE_SET_PARACHUTE_MODEL_TINT_INDEX"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="VEHICLE_SET_PARACHUTE_MODEL_TINT_INDEX"/></remarks>
 		[Obsolete]
 		_SET_VEHICLE_PARACHUTE_TEXTURE_VARIATION = 0xA74AD2439468C883,
 
@@ -54750,7 +54750,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		GET_ALL_VEHICLES = 0x9B8E1BF04B51F2E8,
 
-		///<remarks>This function has been replaced by <see cref="GET_ALL_VEHICLES"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_ALL_VEHICLES"/></remarks>
 		[Obsolete]
 		_GET_ALL_VEHICLES = 0x9B8E1BF04B51F2E8,
 
@@ -54799,7 +54799,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_ROCKET_BOOST_FILL = 0xFEB2DDED3509562E,
 
-		///<remarks>This function has been replaced by <see cref="SET_ROCKET_BOOST_FILL"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_ROCKET_BOOST_FILL"/></remarks>
 		[Obsolete]
 		_SET_VEHICLE_ROCKET_BOOST_PERCENTAGE = 0xFEB2DDED3509562E,
 
@@ -54812,7 +54812,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_GLIDER_ACTIVE = 0x544996C0081ABDEB,
 
-		///<remarks>This function has been replaced by <see cref="SET_GLIDER_ACTIVE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_GLIDER_ACTIVE"/></remarks>
 		[Obsolete]
 		_SET_OPPRESSOR_TRANSFORM_STATE = 0x544996C0081ABDEB,
 
@@ -54849,7 +54849,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_DISABLE_MAP_COLLISION = 0x75627043C6AA90AD,
 
-		///<remarks>This function has been replaced by <see cref="SET_DISABLE_MAP_COLLISION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_DISABLE_MAP_COLLISION"/></remarks>
 		[Obsolete]
 		_DISABLE_VEHICLE_WORLD_COLLISION = 0x75627043C6AA90AD,
 
@@ -54880,7 +54880,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_HELI_CAN_PICKUP_ENTITY_THAT_HAS_PICK_UP_DISABLED = 0x94A68DA412C4007D,
 
-		///<remarks>This function has been replaced by <see cref="SET_HELI_CAN_PICKUP_ENTITY_THAT_HAS_PICK_UP_DISABLED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_HELI_CAN_PICKUP_ENTITY_THAT_HAS_PICK_UP_DISABLED"/></remarks>
 		[Obsolete]
 		_SET_CARGOBOB_HOOK_CAN_ATTACH = 0x94A68DA412C4007D,
 
@@ -54893,15 +54893,15 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_VEHICLE_BOMB_AMMO = 0xF4B2ED59DEB5D774,
 
-		///<remarks>This function has been replaced by <see cref="SET_VEHICLE_BOMB_AMMO"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_VEHICLE_BOMB_AMMO"/></remarks>
 		[Obsolete]
 		_SET_VEHICLE_BOMBS = 0xF4B2ED59DEB5D774,
 
-		///<remarks>This function has been replaced by <see cref="SET_VEHICLE_BOMB_AMMO"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_VEHICLE_BOMB_AMMO"/></remarks>
 		[Obsolete]
 		_SET_AIRCRAFT_BOMB_COUNT = 0xF4B2ED59DEB5D774,
 
-		///<remarks>This function has been replaced by <see cref="SET_VEHICLE_BOMB_AMMO"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_VEHICLE_BOMB_AMMO"/></remarks>
 		[Obsolete]
 		_SET_VEHICLE_BOMB_COUNT = 0xF4B2ED59DEB5D774,
 
@@ -54914,11 +54914,11 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		GET_VEHICLE_BOMB_AMMO = 0xEA12BD130D7569A1,
 
-		///<remarks>This function has been replaced by <see cref="GET_VEHICLE_BOMB_AMMO"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_VEHICLE_BOMB_AMMO"/></remarks>
 		[Obsolete]
 		_GET_AIRCRAFT_BOMB_COUNT = 0xEA12BD130D7569A1,
 
-		///<remarks>This function has been replaced by <see cref="GET_VEHICLE_BOMB_AMMO"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_VEHICLE_BOMB_AMMO"/></remarks>
 		[Obsolete]
 		_GET_VEHICLE_BOMB_COUNT = 0xEA12BD130D7569A1,
 
@@ -54932,11 +54932,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_VEHICLE_COUNTERMEASURE_AMMO = 0x9BDA23BF666F0855,
 
-		///<remarks>This function has been replaced by <see cref="SET_VEHICLE_COUNTERMEASURE_AMMO"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_VEHICLE_COUNTERMEASURE_AMMO"/></remarks>
 		[Obsolete]
 		_SET_AIRCRAFT_COUNTERMEASURE_COUNT = 0x9BDA23BF666F0855,
 
-		///<remarks>This function has been replaced by <see cref="SET_VEHICLE_COUNTERMEASURE_AMMO"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_VEHICLE_COUNTERMEASURE_AMMO"/></remarks>
 		[Obsolete]
 		_SET_VEHICLE_COUNTERMEASURE_COUNT = 0x9BDA23BF666F0855,
 
@@ -54950,11 +54950,11 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		GET_VEHICLE_COUNTERMEASURE_AMMO = 0xF846AA63DF56B804,
 
-		///<remarks>This function has been replaced by <see cref="GET_VEHICLE_COUNTERMEASURE_AMMO"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_VEHICLE_COUNTERMEASURE_AMMO"/></remarks>
 		[Obsolete]
 		_GET_AIRCRAFT_COUNTERMEASURE_COUNT = 0xF846AA63DF56B804,
 
-		///<remarks>This function has been replaced by <see cref="GET_VEHICLE_COUNTERMEASURE_AMMO"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_VEHICLE_COUNTERMEASURE_AMMO"/></remarks>
 		[Obsolete]
 		_GET_VEHICLE_COUNTERMEASURE_COUNT = 0xF846AA63DF56B804,
 
@@ -54999,7 +54999,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_SPECIAL_FLIGHT_MODE_RATIO = 0xD138FA15C9776837,
 
-		///<remarks>This function has been replaced by <see cref="SET_SPECIAL_FLIGHT_MODE_RATIO"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_SPECIAL_FLIGHT_MODE_RATIO"/></remarks>
 		[Obsolete]
 		_SET_VEHICLE_HOVER_TRANSFORM_RATIO = 0xD138FA15C9776837,
 
@@ -55019,11 +55019,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_SPECIAL_FLIGHT_MODE_TARGET_RATIO = 0x438B3D7CA026FE91,
 
-		///<remarks>This function has been replaced by <see cref="SET_SPECIAL_FLIGHT_MODE_TARGET_RATIO"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_SPECIAL_FLIGHT_MODE_TARGET_RATIO"/></remarks>
 		[Obsolete]
 		_SET_VEHICLE_TRANSFORM_STATE = 0x438B3D7CA026FE91,
 
-		///<remarks>This function has been replaced by <see cref="SET_SPECIAL_FLIGHT_MODE_TARGET_RATIO"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_SPECIAL_FLIGHT_MODE_TARGET_RATIO"/></remarks>
 		[Obsolete]
 		_SET_VEHICLE_HOVER_TRANSFORM_PERCENTAGE = 0x438B3D7CA026FE91,
 
@@ -55036,7 +55036,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_SPECIAL_FLIGHT_MODE_ALLOWED = 0xF1211889DF15A763,
 
-		///<remarks>This function has been replaced by <see cref="SET_SPECIAL_FLIGHT_MODE_ALLOWED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_SPECIAL_FLIGHT_MODE_ALLOWED"/></remarks>
 		[Obsolete]
 		_SET_VEHICLE_HOVER_TRANSFORM_ENABLED = 0xF1211889DF15A763,
 
@@ -55052,7 +55052,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_DISABLE_HOVER_MODE_FLIGHT = 0x2D55FE374D5FDB91,
 
-		///<remarks>This function has been replaced by <see cref="SET_DISABLE_HOVER_MODE_FLIGHT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_DISABLE_HOVER_MODE_FLIGHT"/></remarks>
 		[Obsolete]
 		_SET_VEHICLE_HOVER_TRANSFORM_ACTIVE = 0x2D55FE374D5FDB91,
 
@@ -55067,7 +55067,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		GET_OUTRIGGERS_DEPLOYED = 0x3A9128352EAC9E85,
 
-		///<remarks>This function has been replaced by <see cref="GET_OUTRIGGERS_DEPLOYED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_OUTRIGGERS_DEPLOYED"/></remarks>
 		[Obsolete]
 		_ARE_CHERNOBOG_STABILIZERS_DEPLOYED = 0x3A9128352EAC9E85,
 
@@ -55081,7 +55081,7 @@ namespace GTA.Native
 		/// <returns>Vector3</returns>
 		FIND_SPAWN_COORDINATES_FOR_HELI = 0x8DC9675797123522,
 
-		///<remarks>This function has been replaced by <see cref="FIND_SPAWN_COORDINATES_FOR_HELI"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="FIND_SPAWN_COORDINATES_FOR_HELI"/></remarks>
 		[Obsolete]
 		_FIND_RANDOM_POINT_IN_SPACE = 0x8DC9675797123522,
 
@@ -55094,7 +55094,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_DEPLOY_FOLDING_WINGS = 0xB251E0B33E58B424,
 
-		///<remarks>This function has been replaced by <see cref="SET_DEPLOY_FOLDING_WINGS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_DEPLOY_FOLDING_WINGS"/></remarks>
 		[Obsolete]
 		_SET_DEPLOY_HELI_STUB_WINGS = 0xB251E0B33E58B424,
 
@@ -55107,7 +55107,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		ARE_FOLDING_WINGS_DEPLOYED = 0xAEF12960FA943792,
 
-		///<remarks>This function has been replaced by <see cref="ARE_FOLDING_WINGS_DEPLOYED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="ARE_FOLDING_WINGS_DEPLOYED"/></remarks>
 		[Obsolete]
 		_ARE_HELI_STUB_WINGS_DEPLOYED = 0xAEF12960FA943792,
 
@@ -55126,7 +55126,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_TURRET_HIDDEN = 0xC60060EB0D8AC7B1,
 
-		///<remarks>This function has been replaced by <see cref="SET_TURRET_HIDDEN"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_TURRET_HIDDEN"/></remarks>
 		[Obsolete]
 		_SET_VEHICLE_TURRET_UNK = 0xC60060EB0D8AC7B1,
 
@@ -55136,7 +55136,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_HOVER_MODE_WING_RATIO = 0x70A252F60A3E036B,
 
-		///<remarks>This function has been replaced by <see cref="SET_HOVER_MODE_WING_RATIO"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_HOVER_MODE_WING_RATIO"/></remarks>
 		[Obsolete]
 		_SET_SPECIALFLIGHT_WING_RATIO = 0x70A252F60A3E036B,
 
@@ -55149,11 +55149,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_DISABLE_TURRET_MOVEMENT = 0xE615BB7A7752C76A,
 
-		///<remarks>This function has been replaced by <see cref="SET_DISABLE_TURRET_MOVEMENT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_DISABLE_TURRET_MOVEMENT"/></remarks>
 		[Obsolete]
 		_SET_DISABLE_TURRET_MOVEMENT = 0xE615BB7A7752C76A,
 
-		///<remarks>This function has been replaced by <see cref="SET_DISABLE_TURRET_MOVEMENT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_DISABLE_TURRET_MOVEMENT"/></remarks>
 		[Obsolete]
 		_SET_DISABLE_TURRET_MOVEMENT_THIS_FRAME = 0xE615BB7A7752C76A,
 
@@ -55172,7 +55172,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_TRANSFORM_RATE_FOR_ANIMATION = 0x498218259FB7C72D,
 
-		///<remarks>This function has been replaced by <see cref="SET_TRANSFORM_RATE_FOR_ANIMATION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_TRANSFORM_RATE_FOR_ANIMATION"/></remarks>
 		[Obsolete]
 		_SET_UNK_FLOAT_FOR_SUBMARINE_VEHICLE_TASK = 0x498218259FB7C72D,
 
@@ -55185,7 +55185,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_TRANSFORM_TO_SUBMARINE_USES_ALTERNATE_INPUT = 0x41B9FB92EDED32A6,
 
-		///<remarks>This function has been replaced by <see cref="SET_TRANSFORM_TO_SUBMARINE_USES_ALTERNATE_INPUT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_TRANSFORM_TO_SUBMARINE_USES_ALTERNATE_INPUT"/></remarks>
 		[Obsolete]
 		_SET_UNK_BOOL_FOR_SUBMARINE_VEHICLE_TASK = 0x41B9FB92EDED32A6,
 
@@ -55222,7 +55222,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		GET_IS_VEHICLE_SHUNTING = 0xA2459F72C14E2E8D,
 
-		///<remarks>This function has been replaced by <see cref="GET_IS_VEHICLE_SHUNTING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_IS_VEHICLE_SHUNTING"/></remarks>
 		[Obsolete]
 		_GET_IS_VEHICLE_SHUNT_BOOST_ACTIVE = 0xA2459F72C14E2E8D,
 
@@ -55241,7 +55241,7 @@ namespace GTA.Native
 		/// <returns>Vehicle</returns>
 		GET_LAST_SHUNT_VEHICLE = 0x04F2FA6E234162F7,
 
-		///<remarks>This function has been replaced by <see cref="GET_LAST_SHUNT_VEHICLE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_LAST_SHUNT_VEHICLE"/></remarks>
 		[Obsolete]
 		_GET_LAST_RAMMED_VEHICLE = 0x04F2FA6E234162F7,
 
@@ -55251,7 +55251,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_DISABLE_VEHICLE_EXPLOSIONS_DAMAGE = 0x143921E45EC44D62,
 
-		///<remarks>This function has been replaced by <see cref="SET_DISABLE_VEHICLE_EXPLOSIONS_DAMAGE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_DISABLE_VEHICLE_EXPLOSIONS_DAMAGE"/></remarks>
 		[Obsolete]
 		_SET_DISABLE_VEHICLE_UNK = 0x143921E45EC44D62,
 
@@ -55261,7 +55261,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_OVERRIDE_NITROUS_LEVEL = 0xC8E9B6B71B8E660D,
 
-		///<remarks>This function has been replaced by <see cref="SET_OVERRIDE_NITROUS_LEVEL"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_OVERRIDE_NITROUS_LEVEL"/></remarks>
 		[Obsolete]
 		_SET_VEHICLE_NITRO_ENABLED = 0xC8E9B6B71B8E660D,
 
@@ -55271,7 +55271,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_INCREASE_WHEEL_CRUSH_DAMAGE = 0x2970EAA18FD5E42F,
 
-		///<remarks>This function has been replaced by <see cref="SET_INCREASE_WHEEL_CRUSH_DAMAGE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_INCREASE_WHEEL_CRUSH_DAMAGE"/></remarks>
 		[Obsolete]
 		_SET_VEHICLE_WHEELS_DEAL_DAMAGE = 0x2970EAA18FD5E42F,
 
@@ -55284,7 +55284,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_DISABLE_WEAPON_BLADE_FORCES = 0x211E95CE9903940C,
 
-		///<remarks>This function has been replaced by <see cref="SET_DISABLE_WEAPON_BLADE_FORCES"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_DISABLE_WEAPON_BLADE_FORCES"/></remarks>
 		[Obsolete]
 		_SET_DISABLE_VEHICLE_UNK_2 = 0x211E95CE9903940C,
 
@@ -55306,7 +55306,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		GET_DOES_VEHICLE_HAVE_TOMBSTONE = 0x71AFB258CCED3A27,
 
-		///<remarks>This function has been replaced by <see cref="GET_DOES_VEHICLE_HAVE_TOMBSTONE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_DOES_VEHICLE_HAVE_TOMBSTONE"/></remarks>
 		[Obsolete]
 		_GET_DOES_VEHICLE_HAVE_TOMBSTONE = 0x71AFB258CCED3A27,
 
@@ -55319,7 +55319,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		HIDE_TOMBSTONE = 0xAE71FB656C600587,
 
-		///<remarks>This function has been replaced by <see cref="HIDE_TOMBSTONE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="HIDE_TOMBSTONE"/></remarks>
 		[Obsolete]
 		_HIDE_VEHICLE_TOMBSTONE = 0xAE71FB656C600587,
 
@@ -55332,7 +55332,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		GET_IS_VEHICLE_DISABLED_BY_EMP = 0x0506ED94363AD905,
 
-		///<remarks>This function has been replaced by <see cref="GET_IS_VEHICLE_DISABLED_BY_EMP"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_IS_VEHICLE_DISABLED_BY_EMP"/></remarks>
 		[Obsolete]
 		_GET_IS_VEHICLE_EMP_DISABLED = 0x0506ED94363AD905,
 
@@ -55357,7 +55357,7 @@ namespace GTA.Native
 		/// <returns>float</returns>
 		GET_TYRE_HEALTH = 0x55EAB010FAEE9380,
 
-		///<remarks>This function has been replaced by <see cref="GET_TYRE_HEALTH"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_TYRE_HEALTH"/></remarks>
 		[Obsolete]
 		_GET_TYRE_HEALTH = 0x55EAB010FAEE9380,
 
@@ -55377,7 +55377,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_TYRE_HEALTH = 0x74C68EF97645E79D,
 
-		///<remarks>This function has been replaced by <see cref="SET_TYRE_HEALTH"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_TYRE_HEALTH"/></remarks>
 		[Obsolete]
 		_SET_TYRE_HEALTH = 0x74C68EF97645E79D,
 
@@ -55397,7 +55397,7 @@ namespace GTA.Native
 		/// <returns>float</returns>
 		GET_TYRE_WEAR_RATE = 0x6E387895952F4F71,
 
-		///<remarks>This function has been replaced by <see cref="GET_TYRE_WEAR_RATE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_TYRE_WEAR_RATE"/></remarks>
 		[Obsolete]
 		_GET_TYRE_WEAR_MULTIPLIER = 0x6E387895952F4F71,
 
@@ -55418,7 +55418,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_TYRE_WEAR_RATE = 0x01894E2EDE923CA2,
 
-		///<remarks>This function has been replaced by <see cref="SET_TYRE_WEAR_RATE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_TYRE_WEAR_RATE"/></remarks>
 		[Obsolete]
 		_SET_TYRE_WEAR_MULTIPLIER = 0x01894E2EDE923CA2,
 
@@ -55442,7 +55442,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_TYRE_WEAR_RATE_SCALE = 0x392183BB9EA57697,
 
-		///<remarks>This function has been replaced by <see cref="SET_TYRE_WEAR_RATE_SCALE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_TYRE_WEAR_RATE_SCALE"/></remarks>
 		[Obsolete]
 		_SET_TYRE_SOFTNESS_MULTIPLIER = 0x392183BB9EA57697,
 
@@ -55466,7 +55466,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_TYRE_MAXIMUM_GRIP_DIFFERENCE_DUE_TO_WEAR_RATE = 0xC970D0E0FC31D768,
 
-		///<remarks>This function has been replaced by <see cref="SET_TYRE_MAXIMUM_GRIP_DIFFERENCE_DUE_TO_WEAR_RATE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_TYRE_MAXIMUM_GRIP_DIFFERENCE_DUE_TO_WEAR_RATE"/></remarks>
 		[Obsolete]
 		_SET_TYRE_TRACTION_LOSS_MULTIPLIER = 0xC970D0E0FC31D768,
 
@@ -55485,7 +55485,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_REDUCED_SUSPENSION_FORCE = 0x3A375167F5782A65,
 
-		///<remarks>This function has been replaced by <see cref="SET_REDUCED_SUSPENSION_FORCE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_REDUCED_SUSPENSION_FORCE"/></remarks>
 		[Obsolete]
 		_SET_REDUCE_DRIFT_VEHICLE_SUSPENSION = 0x3A375167F5782A65,
 
@@ -55495,7 +55495,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_DRIFT_TYRES = 0x5AC79C98C5C17F05,
 
-		///<remarks>This function has been replaced by <see cref="SET_DRIFT_TYRES"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_DRIFT_TYRES"/></remarks>
 		[Obsolete]
 		_SET_DRIFT_TYRES_ENABLED = 0x5AC79C98C5C17F05,
 
@@ -55505,7 +55505,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		GET_DRIFT_TYRES_SET = 0x2F5A72430E78C8D3,
 
-		///<remarks>This function has been replaced by <see cref="GET_DRIFT_TYRES_SET"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_DRIFT_TYRES_SET"/></remarks>
 		[Obsolete]
 		_GET_DRIFT_TYRES_ENABLED = 0x2F5A72430E78C8D3,
 
@@ -55518,7 +55518,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		NETWORK_USE_HIGH_PRECISION_TRAIN_BLENDING = 0xEC0C1D4922AF9754,
 
-		///<remarks>This function has been replaced by <see cref="NETWORK_USE_HIGH_PRECISION_TRAIN_BLENDING"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="NETWORK_USE_HIGH_PRECISION_TRAIN_BLENDING"/></remarks>
 		[Obsolete]
 		_NETWORK_USE_HIGH_PRECISION_VEHICLE_BLENDING = 0xEC0C1D4922AF9754,
 
@@ -55596,7 +55596,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		ADD_EXTRA_CALMING_QUAD = 0xFDBF4CDBC07E1706, // 0xA9419B6D
 
-		///<remarks>This function has been replaced by <see cref="ADD_EXTRA_CALMING_QUAD"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="ADD_EXTRA_CALMING_QUAD"/></remarks>
 		[Obsolete]
 		_ADD_CURRENT_RISE = 0xFDBF4CDBC07E1706, // 0xA9419B6D
 
@@ -55609,7 +55609,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		REMOVE_EXTRA_CALMING_QUAD = 0xB1252E3E59A82AAF, // 0x45268B6F
 
-		///<remarks>This function has been replaced by <see cref="REMOVE_EXTRA_CALMING_QUAD"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="REMOVE_EXTRA_CALMING_QUAD"/></remarks>
 		[Obsolete]
 		_REMOVE_CURRENT_RISE = 0xB1252E3E59A82AAF, // 0x45268B6F
 
@@ -55623,11 +55623,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_DEEP_OCEAN_SCALER = 0xB96B00E976BE977F, // 0x53B694B1
 
-		///<remarks>This function has been replaced by <see cref="SET_DEEP_OCEAN_SCALER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_DEEP_OCEAN_SCALER"/></remarks>
 		[Obsolete]
 		_SET_WAVES_INTENSITY = 0xB96B00E976BE977F, // 0x53B694B1
 
-		///<remarks>This function has been replaced by <see cref="SET_DEEP_OCEAN_SCALER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_DEEP_OCEAN_SCALER"/></remarks>
 		[Obsolete]
 		_SET_CURRENT_INTENSITY = 0xB96B00E976BE977F, // 0x53B694B1
 
@@ -55637,11 +55637,11 @@ namespace GTA.Native
 		/// <returns>float</returns>
 		GET_DEEP_OCEAN_SCALER = 0x2B2A2CC86778B619, // 0xBD0A67FB
 
-		///<remarks>This function has been replaced by <see cref="GET_DEEP_OCEAN_SCALER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_DEEP_OCEAN_SCALER"/></remarks>
 		[Obsolete]
 		_GET_WAVES_INTENSITY = 0x2B2A2CC86778B619, // 0xBD0A67FB
 
-		///<remarks>This function has been replaced by <see cref="GET_DEEP_OCEAN_SCALER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_DEEP_OCEAN_SCALER"/></remarks>
 		[Obsolete]
 		_GET_CURRENT_INTENSITY = 0x2B2A2CC86778B619, // 0xBD0A67FB
 
@@ -55657,11 +55657,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		RESET_DEEP_OCEAN_SCALER = 0x5E5E99285AE812DB, // 0x4AD23212
 
-		///<remarks>This function has been replaced by <see cref="RESET_DEEP_OCEAN_SCALER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="RESET_DEEP_OCEAN_SCALER"/></remarks>
 		[Obsolete]
 		_RESET_WAVES_INTENSITY = 0x5E5E99285AE812DB, // 0x4AD23212
 
-		///<remarks>This function has been replaced by <see cref="RESET_DEEP_OCEAN_SCALER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="RESET_DEEP_OCEAN_SCALER"/></remarks>
 		[Obsolete]
 		_RESET_CURRENT_INTENSITY = 0x5E5E99285AE812DB, // 0x4AD23212
 
@@ -55718,7 +55718,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		GET_WEAPON_COMPONENT_VARIANT_EXTRA_COUNT = 0x6558AC7C17BFEF58,
 
-		///<remarks>This function has been replaced by <see cref="GET_WEAPON_COMPONENT_VARIANT_EXTRA_COUNT"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_WEAPON_COMPONENT_VARIANT_EXTRA_COUNT"/></remarks>
 		[Obsolete]
 		_GET_WEAPON_COMPONENT_VARIANT_EXTRA_COMPONENT_COUNT = 0x6558AC7C17BFEF58,
 
@@ -55731,7 +55731,7 @@ namespace GTA.Native
 		/// <returns>Hash</returns>
 		GET_WEAPON_COMPONENT_VARIANT_EXTRA_MODEL = 0x4D1CB8DC40208A17,
 
-		///<remarks>This function has been replaced by <see cref="GET_WEAPON_COMPONENT_VARIANT_EXTRA_MODEL"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_WEAPON_COMPONENT_VARIANT_EXTRA_MODEL"/></remarks>
 		[Obsolete]
 		_GET_WEAPON_COMPONENT_VARIANT_EXTRA_COMPONENT_MODEL = 0x4D1CB8DC40208A17,
 
@@ -56082,11 +56082,11 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		GET_MAX_AMMO_BY_TYPE = 0x585847C5E4E11709,
 
-		///<remarks>This function has been replaced by <see cref="GET_MAX_AMMO_BY_TYPE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_MAX_AMMO_BY_TYPE"/></remarks>
 		[Obsolete]
 		_GET_MAX_AMMO_2 = 0x585847C5E4E11709,
 
-		///<remarks>This function has been replaced by <see cref="GET_MAX_AMMO_BY_TYPE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_MAX_AMMO_BY_TYPE"/></remarks>
 		[Obsolete]
 		_GET_MAX_AMMO_BY_TYPE = 0x585847C5E4E11709,
 
@@ -56099,11 +56099,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		ADD_PED_AMMO_BY_TYPE = 0x2472622CE1F2D45F,
 
-		///<remarks>This function has been replaced by <see cref="ADD_PED_AMMO_BY_TYPE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="ADD_PED_AMMO_BY_TYPE"/></remarks>
 		[Obsolete]
 		_ADD_PED_AMMO = 0x2472622CE1F2D45F,
 
-		///<remarks>This function has been replaced by <see cref="ADD_PED_AMMO_BY_TYPE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="ADD_PED_AMMO_BY_TYPE"/></remarks>
 		[Obsolete]
 		_ADD_AMMO_TO_PED_BY_TYPE = 0x2472622CE1F2D45F,
 
@@ -56146,7 +56146,7 @@ namespace GTA.Native
 		/// <returns>Hash</returns>
 		GET_PED_AMMO_TYPE_FROM_WEAPON = 0x7FEAD38B326B9F74, // 0x09337863
 
-		///<remarks>This function has been replaced by <see cref="GET_PED_AMMO_TYPE_FROM_WEAPON"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_PED_AMMO_TYPE_FROM_WEAPON"/></remarks>
 		[Obsolete]
 		_GET_PED_AMMO_TYPE = 0x7FEAD38B326B9F74, // 0x09337863
 
@@ -56161,7 +56161,7 @@ namespace GTA.Native
 		/// <returns>Hash</returns>
 		GET_PED_ORIGINAL_AMMO_TYPE_FROM_WEAPON = 0xF489B44DD5AF4BD9,
 
-		///<remarks>This function has been replaced by <see cref="GET_PED_ORIGINAL_AMMO_TYPE_FROM_WEAPON"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_PED_ORIGINAL_AMMO_TYPE_FROM_WEAPON"/></remarks>
 		[Obsolete]
 		_GET_PED_AMMO_TYPE_FROM_WEAPON_2 = 0xF489B44DD5AF4BD9,
 
@@ -56237,7 +56237,7 @@ namespace GTA.Native
 		/// <returns>float</returns>
 		GET_LOCKON_DISTANCE_OF_CURRENT_PED_WEAPON = 0x840F03E9041E2C9C, // 0x3612110D
 
-		///<remarks>This function has been replaced by <see cref="GET_LOCKON_DISTANCE_OF_CURRENT_PED_WEAPON"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_LOCKON_DISTANCE_OF_CURRENT_PED_WEAPON"/></remarks>
 		[Obsolete]
 		_GET_LOCKON_RANGE_OF_CURRENT_PED_WEAPON = 0x840F03E9041E2C9C, // 0x3612110D
 
@@ -56298,7 +56298,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		REFILL_AMMO_INSTANTLY = 0x8C0D57EA686FAD87, // 0x82EEAF0F
 
-		///<remarks>This function has been replaced by <see cref="REFILL_AMMO_INSTANTLY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="REFILL_AMMO_INSTANTLY"/></remarks>
 		[Obsolete]
 		_PED_SKIP_NEXT_RELOADING = 0x8C0D57EA686FAD87, // 0x82EEAF0F
 
@@ -56406,7 +56406,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		GIVE_LOADOUT_TO_PED = 0x68F8BE6AF5CDF8A6,
 
-		///<remarks>This function has been replaced by <see cref="GIVE_LOADOUT_TO_PED"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GIVE_LOADOUT_TO_PED"/></remarks>
 		[Obsolete]
 		_GIVE_LOADOUT_TO_PED = 0x68F8BE6AF5CDF8A6,
 
@@ -56503,7 +56503,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_PED_WEAPON_COMPONENT_TINT_INDEX = 0x9FE5633880ECD8ED,
 
-		///<remarks>This function has been replaced by <see cref="SET_PED_WEAPON_COMPONENT_TINT_INDEX"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_PED_WEAPON_COMPONENT_TINT_INDEX"/></remarks>
 		[Obsolete]
 		_SET_PED_WEAPON_LIVERY_COLOR = 0x9FE5633880ECD8ED,
 
@@ -56517,7 +56517,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		GET_PED_WEAPON_COMPONENT_TINT_INDEX = 0xF0A60040BE558F2D,
 
-		///<remarks>This function has been replaced by <see cref="GET_PED_WEAPON_COMPONENT_TINT_INDEX"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_PED_WEAPON_COMPONENT_TINT_INDEX"/></remarks>
 		[Obsolete]
 		_GET_PED_WEAPON_LIVERY_COLOR = 0xF0A60040BE558F2D,
 
@@ -56563,7 +56563,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_WEAPON_OBJECT_COMPONENT_TINT_INDEX = 0x5DA825A85D0EA6E6,
 
-		///<remarks>This function has been replaced by <see cref="SET_WEAPON_OBJECT_COMPONENT_TINT_INDEX"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_WEAPON_OBJECT_COMPONENT_TINT_INDEX"/></remarks>
 		[Obsolete]
 		_SET_WEAPON_OBJECT_LIVERY_COLOR = 0x5DA825A85D0EA6E6,
 
@@ -56577,7 +56577,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		GET_WEAPON_OBJECT_COMPONENT_TINT_INDEX = 0xB3EA4FEABF41464B,
 
-		///<remarks>This function has been replaced by <see cref="GET_WEAPON_OBJECT_COMPONENT_TINT_INDEX"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_WEAPON_OBJECT_COMPONENT_TINT_INDEX"/></remarks>
 		[Obsolete]
 		_GET_WEAPON_OBJECT_LIVERY_COLOR = 0xB3EA4FEABF41464B,
 
@@ -56636,7 +56636,7 @@ namespace GTA.Native
 		/// <returns>float</returns>
 		GET_WEAPON_DAMAGE = 0x3133B907D8B32053, // 0xE81649C0
 
-		///<remarks>This function has been replaced by <see cref="GET_WEAPON_DAMAGE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_WEAPON_DAMAGE"/></remarks>
 		[Obsolete]
 		_GET_WEAPON_DAMAGE = 0x3133B907D8B32053, // 0xE81649C0
 
@@ -56671,7 +56671,7 @@ namespace GTA.Native
 		/// <returns>float</returns>
 		GET_WEAPON_TIME_BETWEEN_SHOTS = 0x065D2AACAD8CF7A4,
 
-		///<remarks>This function has been replaced by <see cref="GET_WEAPON_TIME_BETWEEN_SHOTS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="GET_WEAPON_TIME_BETWEEN_SHOTS"/></remarks>
 		[Obsolete]
 		_GET_WEAPON_TIME_BETWEEN_SHOTS = 0x065D2AACAD8CF7A4,
 
@@ -56706,11 +56706,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_WEAPON_DAMAGE_MODIFIER = 0x4757F00BC6323CFE,
 
-		///<remarks>This function has been replaced by <see cref="SET_WEAPON_DAMAGE_MODIFIER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_WEAPON_DAMAGE_MODIFIER"/></remarks>
 		[Obsolete]
 		_SET_WEAPON_DAMAGE_MODIFIER = 0x4757F00BC6323CFE,
 
-		///<remarks>This function has been replaced by <see cref="SET_WEAPON_DAMAGE_MODIFIER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_WEAPON_DAMAGE_MODIFIER"/></remarks>
 		[Obsolete]
 		_SET_WEAPON_DAMAGE_MODIFIER_THIS_FRAME = 0x4757F00BC6323CFE,
 
@@ -56720,7 +56720,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_WEAPON_AOE_MODIFIER = 0x4AE5AC8B852D642C,
 
-		///<remarks>This function has been replaced by <see cref="SET_WEAPON_AOE_MODIFIER"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_WEAPON_AOE_MODIFIER"/></remarks>
 		[Obsolete]
 		_SET_WEAPON_EXPLOSION_RADIUS_MULTIPLIER = 0x4AE5AC8B852D642C,
 
@@ -56749,7 +56749,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		IS_FLASH_LIGHT_ON = 0x4B7620C47217126C, // 0x76876154
 
-		///<remarks>This function has been replaced by <see cref="IS_FLASH_LIGHT_ON"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_FLASH_LIGHT_ON"/></remarks>
 		[Obsolete]
 		SET_WEAPON_SMOKEGRENADE_ASSIGNED = 0x4B7620C47217126C, // 0x76876154
 
@@ -56768,7 +56768,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_FLASH_LIGHT_ACTIVE_HISTORY = 0x988DB6FE9B3AC000,
 
-		///<remarks>This function has been replaced by <see cref="SET_FLASH_LIGHT_ACTIVE_HISTORY"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_FLASH_LIGHT_ACTIVE_HISTORY"/></remarks>
 		[Obsolete]
 		_SET_FLASH_LIGHT_ENABLED = 0x988DB6FE9B3AC000,
 
@@ -56866,7 +56866,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		CREATE_AIR_DEFENCE_SPHERE = 0x91EF34584710BE99,
 
-		///<remarks>This function has been replaced by <see cref="CREATE_AIR_DEFENCE_SPHERE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CREATE_AIR_DEFENCE_SPHERE"/></remarks>
 		[Obsolete]
 		_CREATE_AIR_DEFENSE_SPHERE = 0x91EF34584710BE99,
 
@@ -56879,7 +56879,7 @@ namespace GTA.Native
 		/// <returns>int</returns>
 		CREATE_AIR_DEFENCE_ANGLED_AREA = 0x9DA58CDBF6BDBC08,
 
-		///<remarks>This function has been replaced by <see cref="CREATE_AIR_DEFENCE_ANGLED_AREA"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="CREATE_AIR_DEFENCE_ANGLED_AREA"/></remarks>
 		[Obsolete]
 		_CREATE_AIR_DEFENSE_AREA = 0x9DA58CDBF6BDBC08,
 
@@ -56889,14 +56889,14 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		REMOVE_AIR_DEFENCE_SPHERE = 0x0ABF535877897560,
 
-		///<remarks>This function has been replaced by <see cref="REMOVE_AIR_DEFENCE_SPHERE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="REMOVE_AIR_DEFENCE_SPHERE"/></remarks>
 		[Obsolete]
 		_REMOVE_AIR_DEFENSE_ZONE = 0x0ABF535877897560,
 
 		/// <returns>void</returns>
 		REMOVE_ALL_AIR_DEFENCE_SPHERES = 0x1E45B34ADEBEE48E,
 
-		///<remarks>This function has been replaced by <see cref="REMOVE_ALL_AIR_DEFENCE_SPHERES"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="REMOVE_ALL_AIR_DEFENCE_SPHERES"/></remarks>
 		[Obsolete]
 		_REMOVE_ALL_AIR_DEFENSE_ZONES = 0x1E45B34ADEBEE48E,
 
@@ -56906,7 +56906,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_PLAYER_TARGETTABLE_FOR_AIR_DEFENCE_SPHERE = 0xECDC202B25E5CF48,
 
-		///<remarks>This function has been replaced by <see cref="SET_PLAYER_TARGETTABLE_FOR_AIR_DEFENCE_SPHERE"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_PLAYER_TARGETTABLE_FOR_AIR_DEFENCE_SPHERE"/></remarks>
 		[Obsolete]
 		_SET_PLAYER_AIR_DEFENSE_ZONE_FLAG = 0xECDC202B25E5CF48,
 
@@ -56916,11 +56916,11 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		IS_AIR_DEFENCE_SPHERE_IN_AREA = 0xDAB963831DBFD3F4,
 
-		///<remarks>This function has been replaced by <see cref="IS_AIR_DEFENCE_SPHERE_IN_AREA"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_AIR_DEFENCE_SPHERE_IN_AREA"/></remarks>
 		[Obsolete]
 		_IS_AIR_DEFENSE_ZONE_INSIDE_SPHERE = 0xDAB963831DBFD3F4,
 
-		///<remarks>This function has been replaced by <see cref="IS_AIR_DEFENCE_SPHERE_IN_AREA"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="IS_AIR_DEFENCE_SPHERE_IN_AREA"/></remarks>
 		[Obsolete]
 		_IS_ANY_AIR_DEFENSE_ZONE_INSIDE_SPHERE = 0xDAB963831DBFD3F4,
 
@@ -56930,7 +56930,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		FIRE_AIR_DEFENCE_SPHERE_WEAPON_AT_POSITION = 0x44F1012B69313374,
 
-		///<remarks>This function has been replaced by <see cref="FIRE_AIR_DEFENCE_SPHERE_WEAPON_AT_POSITION"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="FIRE_AIR_DEFENCE_SPHERE_WEAPON_AT_POSITION"/></remarks>
 		[Obsolete]
 		_FIRE_AIR_DEFENSE_WEAPON = 0x44F1012B69313374,
 
@@ -56940,7 +56940,7 @@ namespace GTA.Native
 		/// <returns>BOOL</returns>
 		DOES_AIR_DEFENCE_SPHERE_EXIST = 0xCD79A550999D7D4F,
 
-		///<remarks>This function has been replaced by <see cref="DOES_AIR_DEFENCE_SPHERE_EXIST"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="DOES_AIR_DEFENCE_SPHERE_EXIST"/></remarks>
 		[Obsolete]
 		_DOES_AIR_DEFENSE_ZONE_EXIST = 0xCD79A550999D7D4F,
 
@@ -56954,11 +56954,11 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_CAN_PED_SELECT_INVENTORY_WEAPON = 0xB4771B9AAF4E68E4,
 
-		///<remarks>This function has been replaced by <see cref="SET_CAN_PED_SELECT_INVENTORY_WEAPON"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_CAN_PED_SELECT_INVENTORY_WEAPON"/></remarks>
 		[Obsolete]
 		_SET_CAN_PED_SELECT_WEAPON = 0xB4771B9AAF4E68E4,
 
-		///<remarks>This function has been replaced by <see cref="SET_CAN_PED_SELECT_INVENTORY_WEAPON"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_CAN_PED_SELECT_INVENTORY_WEAPON"/></remarks>
 		[Obsolete]
 		_SET_CAN_PED_EQUIP_WEAPON = 0xB4771B9AAF4E68E4,
 
@@ -56971,7 +56971,7 @@ namespace GTA.Native
 		/// <returns>void</returns>
 		SET_CAN_PED_SELECT_ALL_WEAPONS = 0xEFF296097FF1E509,
 
-		///<remarks>This function has been replaced by <see cref="SET_CAN_PED_SELECT_ALL_WEAPONS"/></remarks>
+		/// <remarks>This function has been replaced by <see cref="SET_CAN_PED_SELECT_ALL_WEAPONS"/></remarks>
 		[Obsolete]
 		_SET_CAN_PED_EQUIP_ALL_WEAPONS = 0xEFF296097FF1E509,
 

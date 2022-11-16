@@ -122,7 +122,7 @@ namespace NativeGen
 
         private void AddObsolete(string name = null)
         {
-            Add($"///<remarks>This function has been replaced by <see cref=\"{name ?? Name}\"/></remarks>");
+            Add($"/// <remarks>This function has been replaced by <see cref=\"{name ?? Name}\"/></remarks>");
             Add("[Obsolete]");
         }
 
@@ -163,20 +163,19 @@ namespace NativeGen
                 {
                     if (added.Contains(old)) return;
                     Add();
-                    if (o.HasFlag(GenOptions.MarkObsolete)) AddObsolete();
-                    WriteMethod(hash, old);
+                    WriteMethod(hash, old, o.HasFlag(GenOptions.MarkObsolete));
                     added.Add(old);
                 }
         }
 
-        private void WriteMethod(string hash, string name = null)
+        private void WriteMethod(string hash, string name = null, bool obsolete = false)
         {
             name ??= Name;
             var paras = "";
             foreach (var p in Parameters) paras += $", {p.name}";
             var ret = ReturnType != "void" ? $"<{ReturnType.ToSharpType()}>" : "";
-            if(ret=="<IntPtr>") Add($"/// <returns>{ReturnType}</returns>");
-
+            if (ret == "<IntPtr>") Add($"/// <returns>{ReturnType}</returns>");
+            if (obsolete) AddObsolete();
             Add($"public static {ReturnType.ToSharpType()} {name}" +
                 $"({string.Join(", ", Parameters.Select(x => $"{x.type.ToSharpType()} {x.name}"))})");
             Add($"\t=> Function.Call{ret}((Hash){hash}{paras});");
