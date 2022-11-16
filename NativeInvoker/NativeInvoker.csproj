@@ -4,10 +4,24 @@
     <OutputType>Library</OutputType>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <Title>GTA.Native.NativeInvoker</Title>
+    <Description>Auto-generated code for calling gta 5 natives via storg-typed static method in SHVDN</Description>
+    <IncludeSymbols>False</IncludeSymbols>
+    <RepositoryUrl>https://github.com/Sardelka9515/SHVDN-NativeGen</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/Sardelka9515/SHVDN-NativeGen</PackageProjectUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
     <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
