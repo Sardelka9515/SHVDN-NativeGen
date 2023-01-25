@@ -1,3 +1,5 @@
+# Deprecated - further development moved to [this repo](https://github.com/Sardelka9515/scripthookvdotnetcore/tree/master/tools/CodeGen)
+
 # SHVDN-NativeGen
 Source generator for [ScriptHookVDotNet](https://github.com/crosire/scripthookvdotnet)
 
